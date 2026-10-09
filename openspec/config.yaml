@@ -1,0 +1,21 @@
+schema: spec-driven
+context: |
+  AI4S Hot: Grenzlinie/ai4s-hot. Python collectors + static HTML/CSS/JS.
+  GitHub Actions collects sources and site-data stores public archives; GitHub Pages hosts the website.
+  No email service or server-side user account. API secrets remain outside public files.
+  Zotero collections guide research topics; collections and references MUST NOT be modified by website classification.
+  Private Zotero references, collection keys and vectors MUST NOT be transmitted to OpenRouter or public artifacts.
+  OpenRouter summaries may consume public source titles/excerpts only.
+  Write prose in zh-CN, keeping structural headings and SHALL/MUST in English.
+  openspec/specs records implemented behavior; changes contains proposed future behavior.
+  A checked task requires evidence. Schema validation, unit tests, label-quality evaluation and deployed behavior are distinct.
+rules:
+  proposal:
+    - State scope and dependencies; distinguish code defects from accuracy hypotheses.
+  specs:
+    - Each requirement has observable WHEN/THEN scenarios, including failure or compatibility cases.
+  design:
+    - Define migration, data boundaries, evaluation denominator, release gates and rollback.
+  tasks:
+    - Each task identifies an output, dependency and concrete acceptance evidence.
+    - Keep future implementation tasks unchecked in design-only work.
