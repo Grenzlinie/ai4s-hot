@@ -1,0 +1,2579 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-09T03:55:11.171802+00:00",
+  "timezone": "Asia/Shanghai",
+  "items": [
+    {
+      "id": "0730f83f6e98c34676009f6f",
+      "url": "https://arxiv.org/abs/2610.12325",
+      "title": "Prior or Feedback? What an LLM Uses When Adapting Neural Operators",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-10-08T17:06:23+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Do LLM scientific agents rely only on their initial task context, or do they adapt their decisions in response to experimental feedback? We study this question in neural operator adaptation, where a large language model (LLM) selects fine-tuning configurations under a limited trial budget. Across transfers within and between partial differential equation (PDE) families, the LLM achieves lower held-out test nRMSE than random search and Bayesian optimisation in nearly every matched comparison. Endpoint performance alone cannot distinguish what happens, so we verify each attribution with controlled interventions. Before observing any validation score, the LLM's first configuration already ranks near the top of the corresponding random-search pool, indicating a useful initial bias. A complementary cold-start intervention shows that the selected base learning rate shifts with the PDE description. Once feedback becomes available, reassigning validation scores among evaluated configurations changes the next proposal in every case tested, whereas a value-preserving rewrite produces no comparable aggregate effect. These interventions establish that the LLM's decision-level actions respond to the given task and observed outcomes, showing that it combines a task-dependent prior with sensitivity to experimental feedback.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Julian Chan",
+        "Javier Mora Jimenez"
+      ]
+    },
+    {
+      "id": "db7b9e6fe248e3146f87743a",
+      "url": "https://openai.com/index/oracle",
+      "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-10-08T16:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "855092fba1df7e8a668bec1b",
+      "url": "https://openai.com/index/pollo-ai",
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "frontier"
+      ],
+      "published_at": "2026-10-08T12:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "45d6a2b79938283a07ca47b3",
+      "url": "https://openai.com/index/legalon-halves-codex-costs",
+      "title": "LegalOn halves Codex costs while maintaining development speed",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-10-08T12:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "c758335f4f7f1c3937a0452f",
+      "url": "https://arxiv.org/abs/2610.11451",
+      "title": "SAIL: Scientific Agentic Intelligence via a Science-Aware Loop",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-08T08:04:22+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "We introduce SAIL, an open model with 35B total and 3B active parameters for literature research, scientific coding, and multi-step research workflows. SAIL is developed through a science-aware improvement loop: agents built on frontier AI models analyze its task failures and construct training tasks that address the underlying capability gaps. The diagnosis examines search and evidence selection in literature tasks, scientific assumptions and reasoning in coding, and planning and revision in longer investigations. The agents draw on paper collections and scientific code repositories to build problems, interaction trajectories, and executable tasks with the required environments and tools. We repeat this loop over multiple development cycles and train SAIL through supervised fine-tuning, specialist training, multi-teacher on-policy distillation, and agentic reinforcement learning. SAIL achieves competitive performance across scientific research tasks with substantially fewer parameters than leading open-weight models.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "SAIL Model Team",
+        "Boyuan Sun",
+        "Bryan Dai",
+        "Che Liu",
+        "Chi Liu",
+        "Derek Li",
+        "Hongming Piao",
+        "Mengzhuo Chen",
+        "Xidong Wang",
+        "Yan Shu",
+        "Yinda Chen",
+        "Ziyang Zeng"
+      ]
+    },
+    {
+      "id": "5a60d1c96954c59fcfe568b5",
+      "url": "https://arxiv.org/abs/2610.11331",
+      "title": "Data-Driven Variable-Exponent Analysis for Photoemission Yield Spectroscopy: An Autonomous Self-Diagnosing Framework Based on Integrated Residual Metrics",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-08T06:28:34+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Photoemission yield spectroscopy (PYS) is widely used for evaluating the electronic states of materials. As automated materials discovery advances, unsupervised extraction of physical information from ambient-air PYS data becomes important. Conventional fixed-exponent analyses and logarithmic transformations suffer from heteroscedasticity, which destabilizes estimation in low-signal regions. To address this, we propose a data-driven analysis framework based on the 1/n-Scan method, which operates directly in the original signal space, removing the geometric bias inherent in log-transform approaches. We further integrate a self-diagnostic quality-evaluation system that quantifies estimation uncertainty with Akaike weights, together with independent residual metrics--the normalized mean absolute error (NMAE), the RMSE-to-MAE ratio (RMR), the Durbin-Watson (DW) statistic, and a macroscopic metric ($ΔR^2$)--that distinguish hardware-related data degradation from a physical-model mismatch. Applying the framework to differently doped Si and a polycrystalline Au reference in air, we demonstrate autonomous detection, without assumptions on the emission mechanism, of the breakdown of the single-component approximation in heavily doped p-type Si, arising from the overlap of two emission components with different thresholds, as a statistical anomaly--a decrease in DW below its critical value with an auxiliary increase in $ΔR^2$, despite sound NMAE and RMR--independently confirmed by a two-component fit ($Δ$AIC $\\approx$ 57, DW recovering from 0.8 to 2.0). For heavily doped n-type Si, the gradual surface evolution was classified as a change within the single-component description. This framework provides a robust, self-diagnosing analysis engine for closed-loop autonomous materials exploration.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Shinjiro Yagyu",
+        "Takahiro Nagata",
+        "Yoshiyuki Nakajima"
+      ]
+    },
+    {
+      "id": "a73458c8ea613d2a6d6c4a5b",
+      "url": "https://arxiv.org/abs/2610.11246",
+      "title": "Assessing the Reliability of Foundational Machine Learning Potentials for Evaluating the Veracity of the Crystallography Open Database",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "biology",
+        "tools"
+      ],
+      "published_at": "2026-10-08T04:48:33+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "The Crystallography Open Database (COD) contains over half a million experimentally determined crystal structures. Validation of crystallographic data proceeds at three hierarchical levels, the third of which assesses the physical plausibility of structures. This level has typically relied on empirical heuristics or expert judgment, which are slow and error-prone given the size of crystallographic databases and the rate at which new structures are deposited. Here we assess whether universal machine-learning interatomic potentials (MLIPs) can automate this level of validation. Of the 522 086 COD entries, 317 457 (60.8\\%) passed a data-quality filter removing disordered structures, formula mismatches and unmodelled solvent. These structures were relaxed with M3GNet, and 314 153 (99.0\\%) converged without a large change in cell volume. For most entries the relaxed and deposited volumes are nearly identical. Convergence and volume change thus provide simple criteria for identifying relaxations that do not confirm the deposited structure. A manual inspection of 327 structures showed that no single descriptor threshold (energy, largest force, or atomic displacement) separates valid from invalid structures. A comparison of M3GNet, CHGNet, PET-MAD and PET-OAM on 524 selected structures revealed model-specific failures: M3GNet distorts cyclopentadienyl and other $π$ ligands, and both M3GNet and CHGNet distort thiophene and thiazole rings, whereas the PET models preserve these motifs. All models detected missing hydrogen atoms, and at least some detected spurious hydrogens, incorrectly assigned atom types, and two previously unreported coordinate errors. No single model detected all error types. MLIP relaxation is therefore a useful but model-dependent screening tool, and combining several models is preferable to relying on any single one.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Justinas Šlepavičius",
+        "Antanas Vaitkus",
+        "Andrius Merkys",
+        "Saulius Gražulis",
+        "Linas Vilčiauskas"
+      ]
+    },
+    {
+      "id": "d9e485b409fe8517ac6e3a5b",
+      "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+      "title": "Disrupting AI-enabled “false front” operations",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "frontier"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "4e66a7e453a3193bb5cb6a8f",
+      "url": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "title": "2026 Usage Policy update",
+      "source_ids": [
+        "anthropic-news"
+      ],
+      "source_names": [
+        "Anthropic"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "2026 Usage Policy update Each year, Anthropic updates its Usage Policy in response to the evolving capabilities of our models, and the feedback we’ve received from our customers. We're publishing a new version of the policy today. In this post, we summarize the changes we’ve made. Most of the updates in the latest version are intended to clarify existing rules. In the year since our last refresh, Claude has taken on longer, more independent work. This update provides new examples that show how our rules apply to Claude’s new capabilities. It draws on new patterns of misuse in influence operations, weapons development, and surveillance that we’ve observed in the past year (as we’ve documented in our latest threat intelligence report). We’ve also made updates to clarify our requirements for high-risk use cases in areas like health and finance, to add controls for when Claude is used to autonomously take physical actions, and to address abusive behavior toward our models. The updated policy takes effect on November 12. The full Usage Policy and Supported Regions Policy can be found on their respective pages. A new section on deceptive activity As we wrote about last month, we’ve seen examples of state media outlets, government propaganda offices, and commercial firms using Claude to run networks of fake accounts and fabricated news sites. Our policy already prohibited this activity, but the restrictions were scattered across our elections, fraud, privacy, and disinformation sections. We've consolidated those rules into a new section titled Do Not Engage in Deceptive Campaigns or Artificial Activity, which applies to deceptive activity of any kind (whether political or commercial). It covers efforts to obscure who is behind a message or amplify content through fake accounts or posts, along with building the tools and infrastructure for running influence operation campaigns. Refocusing our elections section We’ve refined our political content restrictions in each version of our Usage Policy in order to ensure that our models can be used appropriately in democratic processes. In this version, we’ve further sharpened our section on elections, focusing it specifically o",
+      "summary": "",
+      "summary_kind": "source_excerpt"
+    },
+    {
+      "id": "6c062b861d6d205bc313e939",
+      "url": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "title": "Building on our commitment to American scientific discovery",
+      "source_ids": [
+        "anthropic-news"
+      ],
+      "source_names": [
+        "Anthropic"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Building on our commitment to American scientific discovery Anthropic is deepening its support for American scientific research by committing $150 million over three years to the Genesis Mission, a federal initiative to accelerate scientific and technological discovery through AI. The funding will go toward making Claude available to more than 15 agencies that are part of the mission, including NASA, the National Institutes of Health, and the National Science Foundation. We first announced our partnership with the US Department of Energy (DOE) and the Genesis Mission last December. Since then, we have worked with DOE to bring Claude to scientists across the national laboratories. Today, we announced this new commitment as part of the Science: A New Golden Age Summit hosted by the White House Office of Science and Technology Policy in Washington, DC. Supporting American scientists We share the administration’s view, laid out in “Science: A New Golden Age,” that AI can have a profound and positive impact on scientific discovery, and we are glad to back its efforts to support American scientists. Researchers at federal agencies and national laboratories work on some of the world’s most difficult scientific problems. Through our commitment, we aim to help them use Claude to meaningfully advance their work. Over the next three years, we will: - Provide Claude, Claude Code, and API credits to several hundred Genesis Mission research projects; - Partner closely with agencies and national laboratories on the administration’s top science priorities, including fusion energy and quantum computing; and - Provide training, onboarding, and technical support to scientists on Genesis Mission projects, and help agencies new to the Genesis Mission get their first projects running. Accelerating scientific research This commitment is part of our broader effort to support scientific research. Earlier this year we launched Claude Science, an AI workbench that integrates the tools and packages researchers most commonly use, and opened 10,000 free and discounted Claude seats for academic scientists. We also expanded our AI for Science program, which gives credits to researchers on high",
+      "summary": "",
+      "summary_kind": "source_excerpt"
+    },
+    {
+      "id": "c4a1f46e5a98744a7c57fd6e",
+      "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "title": "Introducing the Anthropic Cyber Mission",
+      "source_ids": [
+        "anthropic-news"
+      ],
+      "source_names": [
+        "Anthropic"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Introducing the Anthropic Cyber Mission Today we’re launching the Anthropic Cyber Mission, a long-term commitment to securing the systems everyone depends on. The Cyber Mission is a new effort to support defenders with tools, research, and resources to secure their software and systems. We’re starting with two areas: - Critical infrastructure: Starting with securing the operational technology behind power grids, water systems, and transportation networks, and protecting government systems. Today, we’re introducing the Critical Infrastructure Defense Program (CIDP), which brings frontier models, on-site engineers, and threat research to the defenders that protect operational technology. - Open-source software: Finding vulnerabilities and proposing patches in the free, shared code that most software depends on, and hardening the underlying code. Today, we’re launching OSS Scanner, which offers open-source projects regular security scans from our strongest models, for free. Frontier models can be misused to exploit vulnerabilities and conduct cyber operations. Despite best efforts, many areas of technology remain dangerously exposed. State-sponsored adversaries have spent years gaining footholds in these systems, across many sectors, so that they can disrupt them. Defenders of critical infrastructure and the OSS community have decades of security experience but have faced severe resource shortages that are exacerbated by this moment. We are recognizing their expertise in these domains and offering our support. We will also expand the Cyber Mission to release tools, research, and resources in new areas to help secure the world. As part of Project Glasswing, partners uncovered many vulnerabilities, but we haven’t yet achieved a sufficient reduction in cyber risk. It’s easier than ever to find vulnerabilities, but verifying, prioritizing, and fixing these findings remains challenging. Based on lessons from Project Glasswing, we’re starting these new efforts to support defenders. Earlier this week, we merged Project Glasswing into our expanded Cyber Verification Program, which gives many more defenders access to our most capable models. And through the Anthropic Cyber ",
+      "summary": "",
+      "summary_kind": "source_excerpt"
+    },
+    {
+      "id": "2c97203026168fa4f677baa4",
+      "url": "https://arxiv.org/abs/2610.12299",
+      "title": "Multi-Agent Egocentric World Model with Fine-Grained Embodied Interaction",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Egocentric world models predict first-person observations conditioned on an agent's actions, but most focus on a single agent. Real embodied settings often involve multiple agents that act and interact within a shared environment. Existing multi-agent world models rely on coarse actions like locomotion, camera control, or discrete commands, leaving fine-grained embodied interactions underexplored. We formulate multi-agent egocentric world modeling as synchronized ego-stream generation for multiple agents interacting through fine-grained actions in a shared world. This requires cross-view action consistency, shared-environment consistency, and consistent propagation of interaction-induced state updates. We propose Multi-agent Egocentric World Model (ME-World), which jointly denoises multiple ego streams in a shared token sequence, conditions each stream on all agents' target-view poses, and grounds generation with shared environment memory. We train and evaluate on real and synthetic multi-agent data and introduce shared-world consistency metrics for environment, update, and identity consistency. Experiments show ME-World improves shared-world consistency, action control, identity preservation, and video quality over existing methods.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2610.12299",
+      "authors": [
+        "Dahyun Chung",
+        "Siyoon Jin",
+        "Hyunwook Choi",
+        "Honggyu An",
+        "Junyoung Seo",
+        "Hyunsung Kim",
+        "Seung Wook Kim",
+        "Seungryong Kim"
+      ]
+    },
+    {
+      "id": "15ebd2f0c38c3b18d7b9a5da",
+      "url": "https://arxiv.org/abs/2610.12419",
+      "title": "OneSearch-VL: Unified Multimodal Deep Research Agent for Image and Video",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Single-image, multi-image, and video deep research require different visual operations but share a workflow of visual grounding, external retrieval, and fact composition. A key challenge is to preserve the dependencies linking localized visual anchors, entity relations, source-supported facts, and answer-producing operations. We introduce OneSearch-VL, a unified agent centered on the Visually Grounded Evidence Graph (VGEG), which encodes these dependencies as a shared task-level reference for data construction, process supervision, and operation-level evaluation. Our VGEG-based data engine constructs and verifies multi-image and video questions and filters expert trajectories. Using these data, we assemble OneSearch-VL-SFT-110K and OneSearch-VL-RL-10K for SFT and RL, respectively. We further derive the Evidence-aware Visual-Grounded Rubric reward (EVGR) from VGEG annotations to supervise evidence traceability and visual grounding during RL. For fine-grained evaluation, we construct OneSearch-MI-Bench and OneSearch-Video-Bench, organizing questions by the research operations encoded in their VGEGs. Experiments show that OneSearch-VL-8B improves over Qwen3-VL-8B with tool access by 20.2 and 17.6 percentage points on the two new benchmarks, respectively, while also achieving substantial gains across 7 image benchmarks and VideoDR. Project repository: https://github.com/appletea233/OneSearch-VL",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2610.12419",
+      "authors": [
+        "Hongyu Li",
+        "Manyuan Zhang",
+        "Kaituo Feng",
+        "Shu Chen",
+        "Dian Zheng",
+        "Hao Li",
+        "Hao Yu",
+        "Zhangquan Chen",
+        "Zoey Guo",
+        "Ray Zhang",
+        "Shaofei Huang",
+        "Tianrui Hui",
+        "Linjiang Huang",
+        "Si Liu"
+      ]
+    },
+    {
+      "id": "4e9d1a6041fd3285933a53c2",
+      "url": "https://arxiv.org/abs/2610.12355",
+      "title": "Distilling Routed 3D Privilege for Spatial Reasoning in Vision-Language Models",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Spatial reasoning remains a persistent weakness of vision-language models (VLMs), because RGB inputs do not directly provide geometric evidence. Existing remedies either inject 3D into the model at inference, paying architecture and latency costs, or train with outcome rewards that supervise only the final answer. Spatial errors originate in perception: a misjudged depth or direction can be corrected only by the scene's true geometry, which the 3D-scanned sources of spatial training corpora already provide. We propose GPD (Geometry-Privileged Distillation), which makes geometric evidence the privilege in on-policy self-distillation (OPSD). For each question, depth, semantic, and bird's-eye-view (BEV) cues are rendered as compact text and routed to the teacher alongside the reference answer; a privileged KL, applied only to incorrect trajectories, augments GRPO, and the deployed model remains RGB-only. On the 4B backbone, GPD achieves 57.1 on VSI-Bench and 37.6 average across MindCube, SPARBench, MMSI-Bench, and ViewSpatial, outperforming both GRPO and answer-privileged OPSD across spatial reasoning benchmarks. Ablations confirm the complementarity of 3D and answer privilege, the advantage of question-conditioned routing over full-context injection, and the benefit of restricting distillation to incorrect trajectories.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2610.12355",
+      "authors": [
+        "Hongxing Li",
+        "Yixin Li",
+        "Dingming Li",
+        "Zixuan Wang",
+        "Yuchen Yan",
+        "Wenqi Zhang",
+        "Weiming Lu",
+        "Yongliang Shen"
+      ]
+    },
+    {
+      "id": "92ceedb2a713923bfe975ac5",
+      "url": "https://arxiv.org/abs/2610.12289",
+      "title": "TestPrism: Rethinking Test Evaluation Beyond a Single Reference",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Large language model (LLM) coding agents have advanced test generation across diverse programming tasks. However, the common practice of evaluating tests against a single reference solution overlooks alternative valid implementations and can overstate test quality. We introduce TestPrism, comprising 300 test tasks from 17 sources and 3000 candidate implementations, evenly split between valid and invalid solutions. Its primary metric, Joint Success Function, requires the generated tests to fail on the initial program state, accept every valid candidate, and reject every invalid candidate. Across fourteen baseline coding agent configurations, Joint Success Function reaches only 28.00%, whereas single reference success reaches 59.67%. Our analysis reveals missed behaviors, unsupported assertions, and faulty test construction. To address these weaknesses, we introduce TestHelix, which combines heterogeneous synthesis of test and repair pairs with peer cross validation and recursive self improvement (RSI). Across two models, TestHelix improves Joint Success Function by 8.67 to 9.00 percentage points over the native harness comparators in the TestHelix evaluation",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2610.12289",
+      "authors": [
+        "Han Li",
+        "Lingxiang Hu",
+        "Jiacheng Huang",
+        "Ziqian Jiang",
+        "Jingkai Luo",
+        "Wei Gao",
+        "Yunfan Tan",
+        "Zun Wang",
+        "Jiaheng Liu"
+      ]
+    },
+    {
+      "id": "7f6e6ae89ccc4117b4d96274",
+      "url": "https://arxiv.org/abs/2610.12402",
+      "title": "SpaceCast-Bench: Evaluating Predictive Spatial Reasoning in Vision-Language Models",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Existing spatial reasoning benchmarks mainly test spatial perception: reading off relations already visible in the input. Yet real-world spatial intelligence demands predictive spatial reasoning: constructing a scene from observations, anticipating how an intervention changes it, and reasoning about the unseen outcome. We introduce SpaceCast-Bench, the first benchmark to directly and diagnostically evaluate this capability. Built around an observe-transform-infer framework, its 3,862 questions from 182 real-world scenes span 16 task types at three levels: static perception, local prediction, and global prediction, progressively requiring scene understanding, spatial state updating, and relational inference over unobserved outcomes. Evaluating 21 models exposes a stark gap: the strongest model reaches only 58.0% against 87.2% human performance, while spatially specialized models remain near random chance. Controlled analyses further reveal that bridge views are critical for integrating distributed observations, and that explicit 3D evidence benefits models more reliably than generated outcome images or videos. Fine-tuning on our programmatically generated data lifts Qwen3-VL-4B from 34.0% to 65.7% with macro-average gains across six out-of-domain benchmarks.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2610.12402",
+      "authors": [
+        "Hongxing Li",
+        "Jinyue Su",
+        "Dingming Li",
+        "Wenqi Zhang",
+        "Weiming Lu",
+        "Jun Xiao",
+        "Yueting Zhuang",
+        "Yongliang Shen"
+      ]
+    },
+    {
+      "id": "bb89913fa79b242ac88afc43",
+      "url": "https://arxiv.org/abs/2610.12403",
+      "title": "ViSkill: Reinforcing VLM Agents with Evolving Visual-Native Skills",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Skill-augmented agents improve sample efficiency by distilling successful trajectories into reusable strategies. Yet most existing approaches remain text-centric, linearizing spatial layouts and action-state correspondences into language that loses critical geometric structure. Recent efforts have begun incorporating visual evidence, but construct and update skills separately from policy optimization, leaving their mutual improvement underexplored. We propose ViSkill, a visual-native skill learning framework that encodes successful interactions as composite visual skill cards directly accessible to VLM agents. Retrieved skills guide both inference and reward shaping, while successful trajectories are distilled back into the library, forming a closed feedback loop in which skill accumulation and policy improvement reinforce each other. An optional cold-start mechanism further accelerates early-stage learning. Evaluated on Sokoban, FrozenLake, and PrimitiveSkill, ViSkill achieves an overall success rate of 0.89, rising to 0.91 with cold-start initialization, outperforming all evaluated proprietary and open-source baselines while converging faster than standard PPO. Our code is available at https://github.com/ZJU-REAL/ViSkill.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2610.12403",
+      "authors": [
+        "Hongxing Li",
+        "Dingming Li",
+        "Yixin Li",
+        "Yong Du",
+        "Wenqi Zhang",
+        "Weiming Lu",
+        "Jun Xiao",
+        "Yueting Zhuang",
+        "Yongliang Shen"
+      ]
+    },
+    {
+      "id": "062c0a62bc8829e0f407ca91",
+      "url": "https://arxiv.org/abs/2610.08215",
+      "title": "Learn2Play Bench: How Well Do LLM Agents Learn from Experience in Unfamiliar Environments?",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Learning from experience is essential for LLM agents to adapt to unfamiliar and dynmaic environments. Evaluating this ability is therefore important for understanding how effectively agents acquire and use new knowledge. Existing benchmarks have sought to evaluate this ability, but they primarily evaluate tasks whose rules are provided in the instructions or already familiar to pretrained models, making it difficult to distinguish learning from interactions from reasoning with existing knowledge. To address this, we introduce Learn2Play Bench, a benchmark of newly designed text-based games, whose rules are novel or counterintuitive, requiring agents to acquire knowledge through interaction rather than rely solely on pretrained knowledge. These games provide reproducible feedback and automatic scoring, enabling controlled evaluation of learning across repeated attempts. We also vary game instances to test whether agents can apply what they have learned to new situations. Therefore, we evaluate how backbone models, self-evolving methods, and agent harnesses affect agents' learning ability, revealing three findings: (1) Experience retention: Retaining complete records of actions and feedback can support more effective learning than summarizing these experiences into rules or strategies. (2) Human agent gap: Top-performing human players achieve higher peak scores than the evaluated agents. Human explore more varied strategies, and repeat actions less. (3) Harness matters: With the backbone fixed, changing the harness can improve performance while reducing estimated inference cost. Together, these findings provide insights into how LLM agents learn from experience and suggest directions for future work to improve their learning ability. Project website: https://liushiliushi.github.io/learn2play-bench-website/",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2610.08215",
+      "authors": [
+        "Yibo Li",
+        "Jinhang Qiu",
+        "Zhi Zheng",
+        "Qianyun Guo",
+        "Jiaying Wu",
+        "Shuo Ji",
+        "Bryan Hooi"
+      ]
+    },
+    {
+      "id": "7f08d7bd7643536d2dfded52",
+      "url": "https://arxiv.org/abs/2610.12468",
+      "title": "DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "We present DreamTrue, a multi-view, cross-embodiment robot world model for action-faithful and physically plausible video prediction. Training such a model on existing robot datasets faces two obstacles: imprecise calibration can impair action following, while limited coverage of unsuccessful interactions can bias predictions toward successful outcomes. To improve action following across embodiments, we render action trajectories into image-space conditions and introduce offline geometric calibration to align these conditions with the target videos. To broaden interaction coverage, we introduce counterfactual post-training, modifying recorded action trajectories and generating future videos under a wider range of actions and contact configurations. To provide feedback on these predictions without paired ground-truth futures, we construct a human-annotated video dataset covering robot, object, and interaction defects and use it to train an embodied video reward model. Its scores guide reinforcement-learning post-training toward more physically plausible interaction outcomes. On AgiBot, DreamTrue attains state-of-the-art action following, while reducing the human-assessed interaction defect rate from from 48.12% to 6.25%. Notably, our model ranks first in the world model track of the AgiBot World Challenge 2026. The project page can be found at https://brave-eai.github.io/DreamTrue.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2610.12468",
+      "authors": [
+        "Junyan Li",
+        "Ruizhi Li",
+        "Yu Liu",
+        "Xiangshuo Liu",
+        "Mingchao Sun",
+        "Hongyu Pan",
+        "Mu Xu",
+        "Lue Fan",
+        "Zhaoxiang Zhang"
+      ]
+    },
+    {
+      "id": "a79d870c8c51fa65ee16334d",
+      "url": "https://arxiv.org/abs/2610.11366",
+      "title": "SpatialOPSD: Self-Distilling Spatial Intelligence from Verified Coding Agent Traces",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Spatial coding agents significantly improve spatial reasoning in Multimodal Large Language Models (MLLMs) by using external tools to generate verified execution traces. However, this paradigm inherently suffers from prohibitive inference-time overhead and external dependencies. In this paper, we explore whether an MLLM can internalize this agentic capability to operate entirely tool-free. We begin with a simple observation: prompting an MLLM with summarized execution traces of a spatial coding agent naturally unlocks the model's internal spatial Chain-of-Thought (CoT). Motivated by this, we introduce SpatialOPSD, an on-policy self-distillation framework that internalizes spatial reasoning into a standalone MLLM by formulating verified agent traces as privileged information. To mitigate privileged-information leakage during distillation, we introduce Repetition-Aware Distillation, which combines repetition masking with unlikelihood regularization. Experiments across multiple benchmarks demonstrate that self-distilling SpatialOPSD achieves higher average accuracy than SFT and GRPO on both spatial and OOD datasets, exhibiting superior performance and generalization.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2610.11366",
+      "authors": [
+        "Rongxue Li",
+        "Meng Yang",
+        "Yiru Mao",
+        "Yongliang Tao",
+        "Lulu Hu",
+        "Bin Yang",
+        "Zhao Xu",
+        "Weihua Luo",
+        "Bowen Xu"
+      ]
+    },
+    {
+      "id": "e6f994cf6a23e1b3a2a168db",
+      "url": "https://arxiv.org/abs/2610.12442",
+      "title": "LEGO: A Lifting-Free Approach for Exocentric-to-Egocentric Video Generation",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Generating an egocentric video from a single exocentric recording is a challenging case of novel view synthesis, as the two cameras share little overlap and much of the target view is unobserved. Current state-of-the-art methods reconstruct the scene explicitly by estimating depth, lifting the video into a point cloud, and re-rendering it from the egocentric camera to condition a video diffusion model. This deterministic mapping assigns each pixel to a single reprojected location, which preserves texture but translates depth errors into misplaced content. We ask what a video diffusion model should receive as its condition and propose a lifting-free answer: a learned view synthesizer, an LVSM-style transformer fine-tuned to render the egocentric view directly without depth, point clouds, or reprojection, resolving cross-view correspondence internally. In contrast, its probabilistic mapping averages each region over candidate source locations according to a learned correspondence distribution, preserving structure while fine texture is averaged away. We argue that this trade-off suits a diffusion generator, whose denoising training excels at restoring detail, so an effective condition should prioritize structural alignment over sharpness. This distribution's concentration also yields a per-region confidence, used both to mask low-confidence regions and to guide the generator toward high-confidence areas during early layout-forming denoising steps. Our approach consistently outperforms the state-of-the-art explicit pipeline and generalizes to other datasets without retraining. The synthesizer thus supplies view structure, and the diffusion model its detail.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2610.12442",
+      "authors": [
+        "Suhwan Cho",
+        "Yonwoo Choi",
+        "Soongjin Kim",
+        "Jicheol Park",
+        "Taegyu Lim"
+      ]
+    },
+    {
+      "id": "2794e21dec6bb8a7a7d6052e",
+      "url": "https://arxiv.org/abs/2610.10528",
+      "title": "Long-WAM: Scaling the Context of World-Action Models",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-10-07T17:58:04+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Real-time robot control demands enough visual history to infer motion and task progress, but processing that history can delay action. We present Long-WAM, a model-system framework for scaling the context of causal world-action models under real-time control constraints. Our central finding is that access to history is not the same as using it: longer histories pay off far more when the video foundation is pretrained autoregressively (AR). We first learn causal prediction from robot and egocentric videos without action labels, then preserve this history-to-future structure during world-action adaptation. On RoboCasa GR-1, increasing context from 0.0 to 19.2 seconds raises success from 63.3% to 78.7%, whereas a bidirectionally pretrained initialization shows no net gain; robot-domain AR pretraining further raises peak success on GR-1 and LIBERO-Long. Long-WAM also achieves the best results among compared methods on LIBERO-Long, RoboTwin 2.0, and DOMINO. Streaming observation encoding, asynchronous execution, and hardware-specific acceleration enable deployment on RTX 5090, DGX Spark, and Jetson AGX Thor without dropping future prediction; on RTX 5090, each action chunk, including future-video latent prediction, takes 107.4 ms. Real-time deployment on Unitree G1 and YAM supports dynamic and long-horizon manipulation, including 95% success on dynamic cup stacking, where Pi0.5 and Fast-WAM succeed in none of 20 trials. As a memory-informed executor, Long-WAM also complements higher-level planning in composite tasks.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "alpha_rank": 1,
+      "authors": [
+        "Wei Huang",
+        "Bohan Zhang",
+        "Chenzhi Liu",
+        "Isabella Liu",
+        "Shuai Yang",
+        "Weian Mao",
+        "Luozhou Wang",
+        "Yicheng Xiao",
+        "Weifeng Lin",
+        "Qixin Hu",
+        "Bryan Chu",
+        "Sifei Liu",
+        "Linxi Fan",
+        "Xiaojuan Qi",
+        "Song Han",
+        "Yukang Chen"
+      ]
+    },
+    {
+      "id": "b66fa1e99299db92ad39cf6b",
+      "url": "https://arxiv.org/abs/2610.10515",
+      "title": "RoboJEPA: Scaling Robotic Latent World Models",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-07T17:54:42+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Latent world models have shown a remarkable ability to predict future states and to plan in the real world. In practice, however, we lack a principled way to estimate how their capabilities scale with model size, data, and compute, an open problem that slows progress in the field. In this work we present RoboJEPA, a world model based on the Joint Embedding Predictive Architecture (JEPA) and trained on a large-scale dataset spanning 12 robotic embodiments. We show that RoboJEPA's imagination error, the error of its latent rollouts, follows a second-order power law in compute, allowing us to predict model quality well beyond the scale at which the law is fit. We further show that downstream robotic planning performance improves predictably with compute, and that imagination error is strongly correlated with it, making it a reliable proxy for real-robot evaluation. Finally, we demonstrate that latent world models can be deployed zero-shot as robotic agents, planning toward a single goal image to solve tasks requiring long-horizon planning on real hardware. We release all model checkpoints together with our training and robot deployment code. To our knowledge, this is the first work to establish scaling laws for multi-embodiment robotic world models trained on real robot data, and RoboJEPA, at 8B parameters, is the largest JEPA predictor model trained to date.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "alpha_rank": 3,
+      "authors": [
+        "Artem Zholus",
+        "Nicolas Beltran-Velez",
+        "Jianhao Yuan",
+        "Sarath Chandar",
+        "Tushar Nagarajan",
+        "Daniel Severo",
+        "Koustuv Sinha",
+        "Michal Drozdzal",
+        "Adriana Romero Soriano",
+        "Jeannette Bohg",
+        "Nicolas Ballas",
+        "Mahmoud Assran"
+      ]
+    },
+    {
+      "id": "d96a697ea9be3d7ce8e4abbd",
+      "url": "https://arxiv.org/abs/2610.10498",
+      "title": "EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-07T17:48:02+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Robot foundation models provide strong visuomotor control, yet their performance can degrade when object positions or task instructions change. Further improvements often require post-training on substantial robot data, which can be costly to collect through methods such as teleoperation. Agentic harnesses can adapt around the model, but current self-evolving harnesses use robot trials inefficiently when deciding which code and skill changes to pursue. We introduce EmbodiedRSI, a self-evolving agentic harness that autonomously decides where to explore next and turns the resulting physical interaction into improved code and skills. EmbodiedRSI realizes this through a Fast-Slow Dual-System Architecture, in which competing code and skill hypotheses are maintained in a Hypothesis Graph. Value-of-Information Experiment Selection chooses physical experiments that can distinguish these hypotheses. Their outcomes guide Code-Skill Co-Evolution. The Slow System builds Hierarchical Memory, and Reward-Grounded Memory Learning selects effective memory according to their value for later Fast-System improvement. On RoboCasa365, EmbodiedRSI reaches 77.0% overall success and 71.3% on Composite-Unseen, compared with 40.1% for the best baseline. EmbodiedRSI also reaches 86.8% overall success on LIBERO-Pro. Beyond benchmark performance, EmbodiedRSI transfers zero-shot to real-world robot, achieving 71.3% overall success across multiple challenging tasks.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "alpha_rank": 6,
+      "authors": [
+        "Python Song",
+        "Zhixuan Liang",
+        "Kelsey Fu",
+        "Mengdi Wang",
+        "Junfeng Yang",
+        "Shilong Liu"
+      ]
+    },
+    {
+      "id": "3f8c4424303b37f14f65df31",
+      "url": "https://arxiv.org/abs/2610.10478",
+      "title": "Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-07T17:37:19+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "How can we predict which base checkpoint is worth an expensive round of agentic post-training? End-to-end pass@$K$ tests whether successful behavior already appears in a base model's distribution, but it is a poor fit for agentic coding: many base checkpoints cannot reliably produce the well-formed tool invocation required to complete a task end-to-end. Single-shot or short-horizon tasks avoid these tool-calling failures by collapsing a multi-step interaction into a fixed prompt and a single patch, but they sidestep the core capability we care about: maintaining coherent state over many tool-using steps as the repository evolves. To bridge this gap, we treat successful post-trained agent trajectories as a lookahead signal of base-model potential. Replaying each trajectory and rerunning tests after every code-changing step identifies the decisive step: the first step whose cumulative patch flips the repository from failing to passing, certifying that the recorded action solves the task given the prior context. Motivated by a coverage principle for agentic traces, we build three screens at this step that do not require a base checkpoint to drive the harness from a cold start: (i) Decisive-Action BPB (bits per byte) measures the probability mass on the certified action, (ii) Patch MCQ tests the checkpoint's choice between that action and alternatives rejected by the same verifier, and (iii) prefix-conditioned pass@$K$ evaluates support for functionally-correct generations and credits any continuation that the tests accept. Across ten pairs of public base and post-trained models, all three screens rank the cohort in close agreement with post-trained SWE-bench Verified pass@$1$. As our methods need only a benchmark's successful trajectories and its verifier, they can be applied to turn future agentic coding benchmarks into base-model evaluations.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "alpha_rank": 7,
+      "authors": [
+        "Tan Yu",
+        "Alexander Bukharin",
+        "Khushi Bhardwaj",
+        "Jennifer Williams",
+        "Zirui Liu",
+        "Jonathan Lingjie Li",
+        "Soumye Singhal",
+        "Joseph Jennings",
+        "Sanjeev Satheesh",
+        "Yash Jain",
+        "Ashish Vaswani",
+        "Venkat Krishna Srinivasan",
+        "Matthew Papakipos",
+        "Hyunwoo Kim",
+        "Jian Zhang",
+        "Oleksii Kuchaiev",
+        "Markus Kliegl",
+        "Mostofa Patwary",
+        "Mohammad Shoeybi",
+        "Bryan Catanzaro",
+        "Jonathan Cohen",
+        "Jiantao Jiao"
+      ]
+    },
+    {
+      "id": "6e87228c64a8ec80ea99b5d8",
+      "url": "https://arxiv.org/abs/2610.10468",
+      "title": "A Society of Researchers: Designing Institutions for Populations of Autonomous Research Agents",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-07T17:30:45+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Deployments of research agents are moving to populations of thousands that share one pool of compute, while most current systems organize one project at a time or leave the population unorganized. We argue that such a population will acquire an organization whether or not its designers provide one, so designers should provide it explicitly, and that the multi-agent systems community holds the tools to do so. We propose a society of agents, a population of persistent agents under explicit institutions, and develop it for science as a society of researchers built on six principles. Principal investigators compete for compute through requests for proposals, independent review, and grants; a human governor, the mayor, allocates resources and assigns no tasks. In a running society of ten thousand researchers, asked only to improve the pretraining of language models, one lab reported a way to reach the same quality with about 30% less compute, a result the labs that tested it do not yet agree on. We close with six open problems for the agents community.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Ali Asaria",
+        "Deep Gandhi",
+        "Tony Salomone"
+      ]
+    },
+    {
+      "id": "57ea905e919a42ca66535a58",
+      "url": "https://arxiv.org/abs/2610.10429",
+      "title": "SGF+: Decoupling Gradient Flows for Autoregressive Video Generation",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-07T17:09:04+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Autoregressive video generation requires denoising the current frames while writing their key-value representations as context for future predictions. However, these two roles typically share parameters, and we find that their gradients exhibit distinct patterns and systematic negative alignment, hindering the joint optimization of visual quality and temporal consistency. We introduce Self Gradient Forcing Plus (SGF+), which assigns separate parameters to context writing and denoising while preserving their interaction through causal attention. Both roles are jointly optimized using the original generation objective without auxiliary losses, with context writing supervised through its contribution to future predictions. This simple change improves visual quality and long-horizon consistency over the evaluated baselines in both framewise and chunkwise generation, without additional video training data or a longer training horizon. Trained on only 5s rollouts, SGF+ supports continuous generation for up to 24 hours without long-video fine-tuning. These results highlight role-specific parameterization as an effective design principle for high-quality autoregressive video generation and native long-horizon extrapolation.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "alpha_rank": 10,
+      "authors": [
+        "Zihan Su",
+        "Junhao Zhuang",
+        "Yaowei Li",
+        "Siwen Lu",
+        "Haoran Li",
+        "Lingen Li",
+        "Haoyu Wu",
+        "Weiyang Jin",
+        "Songchun Zhang",
+        "Haoyang Huang",
+        "Chun Yuan",
+        "Zeyue Xue",
+        "Nan Duan"
+      ]
+    },
+    {
+      "id": "8ff1ef4b045d41c1cf5b1c35",
+      "url": "https://arxiv.org/abs/2610.10409",
+      "title": "RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-07T16:55:24+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "General-purpose agents increasingly write code, use tools, and complete complex digital tasks, raising the question of how far these capabilities carry into the physical world. To investigate this, we introduce RobotWorld, a challenging simulation testbed for robot use: turning instructions and observations into physical task execution through robot interfaces. Its 84 tasks span manipulation, mobile manipulation, locomotion, driving, and aerial control, with explicit interaction budgets and executable success checks. By analysing task outcomes alongside execution traces, we identify both the capabilities that transfer and the gaps that prevent reliable completion. Furthermore, we find that current agents can construct sophisticated perception and control workflows, including image segmentation, camera calibration, spatial estimation, and dynamics-based computation. These capabilities, however, do not consistently compose into successful behaviour: agents lose task-relevant object states despite reaching commanded poses, fail to correct ineffective actions, recover too late, or mistake unfinished tasks for completion. This uneven transfer also differs across models: Astra succeeds more often on spatial and constrained-contact goals, whereas Opus 5.5 succeeds more often on continuous-balance and timed-interaction goals. By linking these outcomes to execution behaviour, RobotWorld provides both a rigorous proving ground and an empirical account of the remaining capability gaps, thereby establishing concrete targets for training and designing more reliable physical-world agents.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "alpha_rank": 11,
+      "authors": [
+        "Zhiqin Yang",
+        "Chenxin Li",
+        "Xiaomeng Hu",
+        "Yibin Liu",
+        "Weidong Huang",
+        "Jiankai Sun",
+        "Haitao Li",
+        "Zijian Wu",
+        "Yuzhi Huang",
+        "Fanding Huang",
+        "Hanwen Sun",
+        "Jiashun Liu",
+        "Jingqi Tong",
+        "Mingxin Huang",
+        "Shaoli Hu",
+        "Shijue Huang",
+        "Tianyi Bai",
+        "Xinyuan Wang",
+        "Yunlong Lin",
+        "Zhengyang Tang",
+        "Zhexin Zhang",
+        "Zhuo Chen",
+        "Xierui Song",
+        "Juntao Dai",
+        "Boyuan Chen",
+        "Jiaming Ji",
+        "Fangneng Zhan",
+        "Mengkang Hu",
+        "Wei Xue",
+        "Yonggang Zhang",
+        "Han Hu",
+        "Tsung-Yi Ho",
+        "Yike Guo"
+      ]
+    },
+    {
+      "id": "5946c006a4e58dd83ea3e23f",
+      "url": "https://arxiv.org/abs/2610.10310",
+      "title": "RSIGym: A Flexible Environment for Recursive Self-Improvement",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-07T16:05:15+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Recursive self-improvement requires carrying accepted changes into later improvement cycles, while studying agent-proposed changes also requires substantial research infrastructure. Existing settings often leave agents to rebuild routine infrastructure or restrict exploration to individual components. We introduce RSIGym, an agent-native research environment based on Everything as a Service (EaaS). RSIGym exposes training, inference, rollout, evaluation, and sandbox execution through reusable services, with shared budget and permission controls supporting Data, Harness, and Joint improvement tracks. This design enables agents to investigate individual interventions and jointly optimize data, training settings, and execution harnesses within the same environment. We define RSI-Index as the mean fraction of the remaining performance gap closed across five benchmarks covering software engineering, terminal interaction, mathematics, scientific reasoning, and skill-based tasks. Comparing six frontier research models in independent Joint runs, Opus 5 achieves the highest RSI-Index of 0.4809 under a $500 platform-service budget per benchmark run. Its selected systems improve all five benchmarks, raising SWE-bench Verified from 17.67% to 50.33% and AIME from 31.67% to 97.78%. Additional experiments examine DSH-harness refinement, budget variation, and restricted network access, while recorded trajectories reveal how agents diagnose failures and select candidates. We open-source the full RSIGym codebase and results to support reproducibility and further research.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "alpha_rank": 5,
+      "authors": [
+        "Fanqing Meng",
+        "Lingxiao Du",
+        "Haocheng Lu",
+        "Qiguang Chen",
+        "Ziqi Zhao",
+        "Zijian Wu",
+        "Jiayuan Zhuo",
+        "Mengkang Hu",
+        "Michael Qizhe Shieh"
+      ]
+    },
+    {
+      "id": "661f64ddb5f472a2675ed75a",
+      "url": "https://openai.com/index/teens-learn-and-plan",
+      "title": "Helping teens learn, plan, and shape the future of AI",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "frontier"
+      ],
+      "published_at": "2026-10-07T12:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "1259e0ed2ca07c973dcac362",
+      "url": "https://arxiv.org/abs/2610.09685",
+      "title": "How Good Is DFT for Solid-Liquid Interfaces? A Comparison With the Random-Phase Approximation for Water on Graphene",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "chemistry"
+      ],
+      "published_at": "2026-10-07T08:47:59+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Simulations of water at solid interfaces routinely disagree on basic properties, from contact angle to friction, depending on the model used, whether an empirical force field or a density functional theory (DFT) exchange-correlation (XC) approximation. Yet no accurate computational reference has been available to determine which, if any, is reliable. Here we assess XC approximations spanning the rungs of Jacob's Ladder against the random-phase approximation (RPA) at the graphene-water interface. Using machine-learned potentials (MLPs) trained on both DFT and RPA data, we achieve the extensive sampling required to characterize interfacial structure, wettability, friction, and vibrational sum-frequency generation spectra. We find that XC approximations disagree substantially with RPA and with each other. To make sense of this, we introduce a transferable, multi-observable scoring framework that distills each functional's agreement with RPA into a single measure. Six functionals emerge as reliable starting points for studies of graphene-water and other dispersion-dominated interfaces, namely B3LYP-D3(0), revPBE-D3(0), revPBE-D3(BJ), B97M-rV, r$^{2}$SCAN, and revPBE0-D3(0). Notably, this ranking follows no simple rule based on functional family or rung of Jacob's Ladder. What does hold across functionals is that dynamical and spectroscopic properties tend to be harder for DFT to reproduce than structural ones, with direct consequences for functional selection. Our framework also offers a general strategy for benchmarking any atomistic model, including the new generation of foundational MLPs, against high-accuracy references at solid--liquid interfaces. Beyond simulation, this work identifies which models can be trusted to connect measured contact angles, friction, and vibrational spectra to the molecular structure behind them.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Xavier R. Advincula",
+        "Yair Litman",
+        "Jiuyang Shi",
+        "Flaviano Della Pia",
+        "Christoph Schran",
+        "Angelos Michaelides"
+      ]
+    },
+    {
+      "id": "4e324623ab7ca6fee0e14241",
+      "url": "https://openai.com/index/radisson",
+      "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "frontier"
+      ],
+      "published_at": "2026-10-07T07:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "b2ffd7fc8b19cf4e3b0202af",
+      "url": "https://arxiv.org/abs/2610.09255",
+      "title": "The Symbol of the Surrogate: Measuring Numerical Provenance in Neural PDE Solvers",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "science"
+      ],
+      "published_at": "2026-10-07T00:42:11+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Neural PDE surrogates are trained on numerical solver outputs that contain both physical evolution and solver-specific discretization errors. Because surrogates are also evaluated against held-out trajectories from the same solver, standard benchmarks cannot distinguish fidelity to the exact evolution from imitation of the numerical scheme. We introduce an empirical Fourier-symbol diagnostic that probes a trained surrogate's linearized one-step operator with individual Fourier modes and compares it with both exact-evolution and training-scheme references. To address architectural spectral bias, we train identical networks on schemes with orthogonal dissipative and dispersive signatures and compare their learned operators. In linear advection, the learned surrogates reproduce the training schemes' amplitude and phase errors, with the twin-scheme difference reaching more than 99.8\\% of the analytically predicted full-imitation ceiling. The same behavior occurs for a non-local Fourier neural operator and at the operator level for nonlinear Burgers dynamics. These results show that agreement with solver-generated test data does not by itself establish fidelity to the exact evolution. Fourier-symbol measurements provide a direct diagnostic of numerical provenance.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Ridham Patel"
+      ]
+    },
+    {
+      "id": "6b4b10225cd734eba7d26b70",
+      "url": "https://arxiv.org/abs/2610.09254",
+      "title": "RoboRender: Robot-Oriented Video Generation for Visual Sim-to-Real Transfer",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-07T00:39:56+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Simulation enables large-scale, low-cost robot data generation, but policies trained in simulation often fail to transfer to the real world due to the sim-to-real visual discrepancies. Existing approaches often rely on intermediate representations, which can discard rich semantic information or require additional perception modules at deployment. We address this visual sim-to-real gap with RoboRender, a framework that converts simulated trajectories into photorealistic RGB videos for policy learning. RoboRender trains a robot-oriented video generation model conditioned on simulated depth videos, language instructions, and robot RGB mask videos, preserving simulator geometry, robot motion, and action labels while synthesizing realistic textures, backgrounds, and distractors. The generated RGB videos are paired with simulator-provided states and actions to train policies for zero-shot real-world deployment. On robot video test sets, our video model outperforms depth-conditioned video generation baselines in generation quality. In real-world experiments across pick-and-place, articulated-object manipulation, and mobile manipulation tasks, policies trained on RoboRender-generated data achieve a 71% average success rate, outperforming raw simulation renderings and conventional visual domain randomization by approximately 7.1x and 3.6x, respectively. We further show that policy performance improves with more generated videos per simulation trajectory, increasing opening-task success by 65 percentage points. These results demonstrate that generative video rendering mitigates the visual sim-to-real gap for zero-shot policy transfer. Project website: https://robo-render.github.io/.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "alpha_rank": 9,
+      "authors": [
+        "Huang Huang",
+        "Wensi Ai",
+        "Ziyu Chen",
+        "Youhui Wang",
+        "Zijian Du",
+        "Yang Liu",
+        "Jiaolong Yang",
+        "Li Fei-Fei",
+        "Jiajun Wu"
+      ]
+    },
+    {
+      "id": "a097ef0d441a7216b7cd0e23",
+      "url": "https://openai.com/index/gpt-6-for-everyone",
+      "title": "GPT-6 and Intelligent UI for everyone",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "frontier"
+      ],
+      "published_at": "2026-10-07T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "75d146f665fd7b10d33acebf",
+      "url": "https://www.isomorphiclabs.com/articles/isomorphic-labs-joins-the-virtual-biology-initiative",
+      "title": "Isomorphic Labs joins the Virtual Biology Initiative to build foundational data for AI models to predict and treat disease - Isomorphic Labs",
+      "source_ids": [
+        "isomorphic"
+      ],
+      "source_names": [
+        "Isomorphic Labs"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "report",
+      "tags": [
+        "biology"
+      ],
+      "published_at": "2026-10-07T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Convened by Biohub, participating organisations are investing funding, data, computation and new measurement technology - the largest coordinated commitment to generating AI-ready biological data to date. The result will be an open resource for the research community that provides the foundation for greater understanding and ultimately treating human diseases. Read more in the news release below.",
+      "summary": "",
+      "summary_kind": "source_excerpt"
+    },
+    {
+      "id": "2ee55c894d54d6ef378cd7d1",
+      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
+      "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "source_ids": [
+        "deepmind"
+      ],
+      "source_names": [
+        "Google DeepMind"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "report",
+      "tags": [
+        "science"
+      ],
+      "published_at": "2026-10-06T19:57:04+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "9b79ef931717e3e3db97a828",
+      "url": "https://arxiv.org/abs/2610.08789",
+      "title": "QF3: Fast Flow RL with Filtered Q-Gradients",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-06T17:59:34+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Flow policies have become a standard policy class for learning robot behaviors from demonstrations, but reinforcement learning is still critical for improving pre-trained flow policies or learning them from scratch through interaction. We introduce QF3 (Fast Flow RL with Filtered Q-Gradients), an online off-policy RL algorithm that trains a flow policy with flow matching plus the critic's action gradient, backpropagated through a one-step prediction of the flow's output. To keep updates where the critic and this prediction are reliable, QF3 applies the critic gradient only to action dimensions that stay near the replay action. To our knowledge, QF3 is the first off-policy flow RL method to train humanoid locomotion policies from scratch and transfer them zero-shot to hardware. Paired with a high-throughput off-policy training recipe, it trains humanoid locomotion and motion-tracking policies with a 10x wall-clock speedup over FPO++, a recent on-policy flow RL method. We further apply QF3 to fine-tune pretrained flow-based manipulation policies on both ABC-Sim and Robomimic tasks. These results suggest that QF3 can both learn robot policies from scratch and refine those acquired from demonstrations. Website: https://qf3-rl.github.io/",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "alpha_rank": 4,
+      "authors": [
+        "Chung Min Kim",
+        "Brent Yi",
+        "David McAllister",
+        "Hongsuk Choi",
+        "Himanshu Gaurav Singh",
+        "Jinkun Cao",
+        "Ken Goldberg",
+        "Pieter Abbeel",
+        "Carmelo Sferrazza",
+        "Angjoo Kanazawa"
+      ]
+    },
+    {
+      "id": "6f55737addfb022f9ba9f0aa",
+      "url": "https://arxiv.org/abs/2610.08691",
+      "title": "ScienceClaw: Benchmarking Continual Self-Evolution of AI-for-Science Agents Across the Natural and Social Sciences",
+      "source_ids": [
+        "arxiv-ai4s",
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "arXiv / AI4S",
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-06T17:08:03+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Large language model agents are accelerating scientific automation, yet verified executions rarely become persistent program-level improvements, and existing evaluations do not examine this process across sequential tasks in both the natural and social sciences. We formalize ScienceClaw as fixed-parameter program self-evolution that unifies task solving, scientific verification, and program updates. ScienceClaw-Eval spans 23 disciplines and measures scientific correctness, evolutionary gain, retention, cross-dataset transfer, and evolution cost through sequential streams and independent reset evaluation. Our framework repairs executable workflows through multi-turn interaction, converts re-execution-verified failure--success trajectories into linked Skill and Operator candidates, and retains an update only when source-task replay reproduces the repair and independent scientific tasks improve. Code is available at https://github.com/beita6969/ScienceClaw.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Ming-Da Zhang",
+        "Wen-Jin Liu",
+        "Tiesunlong Shen",
+        "Zi-Kai Xiao",
+        "Zheng-Hong Lin",
+        "Qin-Feng Xu",
+        "Erik Cambria",
+        "Xiao-Ying Tang",
+        "Hao-Ran Luo"
+      ]
+    },
+    {
+      "id": "2896758265cec81d95898858",
+      "url": "https://openai.com/index/atlassian-partnership",
+      "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "frontier"
+      ],
+      "published_at": "2026-10-06T16:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "8b875b05aa2624d12df432a5",
+      "url": "https://arxiv.org/abs/2610.08296",
+      "title": "OxiGen: Oxidation-State-Aware Crystal Generation",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "tools"
+      ],
+      "published_at": "2026-10-06T13:01:35+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Generative models have the potential to accelerate inorganic materials discovery by enabling inverse design, but generating experimentally realisable crystals remains challenging. Oxidation states are widely used to assess the compositional validity of crystals and guide inorganic materials discovery. While existing generative models for crystals can generate materials with charge-neutral oxidation-state assignments, they poorly reproduce the distributions of oxidation states observed in synthesised materials. To address this limitation, we propose OxiGen, an oxidation-state-aware crystal diffusion model that explicitly represents oxidation states during generation. OxiGen enforces global charge neutrality by construction using a structured output layer with exact inference over a finite-state automaton. Empirically, OxiGen substantially improves oxidation-state fidelity, generates the highest rate of stable, unique, and novel crystals among evaluated methods, and maintains high compositional validity even under property conditioning.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Dylan John",
+        "Kim E. Jelfs",
+        "Alex M. Ganose",
+        "Eleonora Giunchiglia"
+      ]
+    },
+    {
+      "id": "ebb413cc5359756bf9234b81",
+      "url": "https://openai.com/index/jump-trading",
+      "title": "How Jump Trading is scaling quant research with ChatGPT",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "frontier"
+      ],
+      "published_at": "2026-10-06T12:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "00427e47df5ef3064509e152",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+      "title": "Sharing AI progress in mathematics",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "frontier"
+      ],
+      "published_at": "2026-10-06T12:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "f57eff9c23a4454b476bbb26",
+      "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+      "title": "Advancing computer use with Ironclad",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-10-06T10:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "dbb1347ba54b5e1fb2c0b71d",
+      "url": "https://arxiv.org/abs/2610.07922",
+      "title": "OpenWAM: An Open Framework for Composable World-Action Models",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-10-06T08:02:12+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "World-action models (WAMs) couple future prediction with robot control, yet existing systems often vary the video backbone, interaction structure, supervision, and inference procedure simultaneously, making their design choices difficult to compare. We introduce OPENWAM, an open world-action modeling framework built around a common causal robot-video foundation and configurable video-action interaction. Starting from Wan2.2-5B, we perform causal robot-video pretraining on over 10,000 hours of video, then integrate an action expert through a shared Mixture-of-Transformers architecture that supports joint, video-then-action, action-then-video, and decoupled generation. OPENWAM achieves high success rates on four LIBERO suites and real-world bimanual tasks; robot-video training with causal adaptation improves VTA success on LIBERO-Long from 68.4% to 97.8%. The same configurable architecture naturally extends to inverse and forward dynamics, allowing us to study how counterfactual transitions improve independently trained dynamics models beyond demonstrations alone. When only the video predictor is adapted to a new task, a frozen local-context inverse dynamics model trained on counterfactual data and demonstrations achieves 84.0% mean success across four held-out LIBERO-90 tasks, compared with 47.0% for a full-context inverse model and 21.5% for a local-context model trained only on demonstrations. For forward dynamics, counterfactual supervision reduces RGB prediction error by 34.5% and raises outcome identification from 21.1% to 71.3% among 16 same-state outcomes. OPENWAM provides a common testbed for comparing WAM interaction designs and for studying dynamics learning from video data beyond successful demonstrations.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "alpha_rank": 8,
+      "authors": [
+        "Heng Yu",
+        "David D. Yuan",
+        "Juze Zhang",
+        "Changan Chen",
+        "Yao Feng",
+        "Michelle Baldonado",
+        "Steve Cousins",
+        "Li Fei-Fei",
+        "Jiajun Wu",
+        "Ehsan Adeli"
+      ]
+    },
+    {
+      "id": "ccb0dcbd45745856526c0393",
+      "url": "https://arxiv.org/abs/2610.07862",
+      "title": "A self-learning scientific agent for X-ray diffraction",
+      "source_ids": [
+        "arxiv-ai4s",
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "arXiv / AI4S",
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "chemistry",
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-06T07:09:39+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "A central challenge for scientific agents is to turn analytical experience into reusable expertise grounded in physical evidence. Here we introduce Gan Jiang, a self-learning agent for powder X-ray diffraction built on a diffraction-analysis ecosystem we developed: XMatcher, XQueryer, XDecomposer and WPEM. Together, these engines span phase identification, multiphase decomposition and physics-constrained whole-pattern modelling. Gan Jiang converts analytical experience into executable skills by diagnosing failures, revising skill instructions and code, and validating revisions before reuse, without retraining the language model or changing the underlying physical models. Skills selected using development data and frozen before held-out evaluation achieve higher refinement scores than the original expert-designed skills across FullProf, GSAS-II and PyWPEM. The agent resolves strongly overlapping reflections, quantifies a five-phase ancient Egyptian cosmetic, tracks lattice evolution in an operating battery and compares atomic configurations in a disordered oxide catalyst. On DeltaXRDbench, it leads the evaluated methods in single- and multiphase identification across simulated and experimental data. Without supplied composition, single-phase top-1 accuracies reach 96.30\\%, 81.78\\% and 40.83\\% on MP500, RRUFF and opXRD, respectively, compared with 58.00\\%, 58.47\\% and 26.45\\% for the strongest comparator. These results demonstrate how an integrated scientific tool ecosystem can support agents that extract structural knowledge from measurements while accumulating validated analytical expertise that transfers to new samples.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Bin Cao",
+        "Hui-Chi Zhou",
+        "Ru-Yun Yang",
+        "Jing-Song Li",
+        "Shu-Chen Sun",
+        "Yan Song",
+        "Han-Yu Gao",
+        "Zhong-Wei Yu",
+        "Tong-Yi Zhang",
+        "Jun Wang"
+      ]
+    },
+    {
+      "id": "d31d320a981779c854460bd3",
+      "url": "https://arxiv.org/abs/2610.07552",
+      "title": "Reliability of AI/ML Computational Searches for Magnetic Materials: Databases, Validation, and Synthesizability",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "chemistry"
+      ],
+      "published_at": "2026-10-06T00:31:30+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "The rapid growth of AI/ML methods for materials discovery has increased the importance of the quality, physical completeness, and information content of computational databases. We examine these issues for magnetic materials, where incomplete sampling of competing magnetic states, chemical disorder, and finite-temperature properties can lead to apparently accurate but physically unreliable predictions. We propose a hierarchical discovery workflow combining independent ML models with explicit electronic-structure, magnetic, dynamical, thermodynamic, kinetic, and experimental validation. To incorporate kinetic accessibility into high-throughput screening, we introduce a dimensionless synthesis-window descriptor based on the relation between the chemical order-disorder and Tammann temperatures. A cluster-expansion analysis of Fe-Co-B illustrates the importance of this criterion: although ordered Fe3CoB2 is energetically favored at T=0, its small ordering energy produces an order-disorder temperature far below room temperature, making long-range Fe/Co ordering kinetically unachievable. These results demonstrate that reliable AI/ML discovery of magnetic materials requires databases and validation procedures that contain physical information relevant to the target functionality, rather than simply larger numbers of calculated structures.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Vladimir Antropov",
+        "Subhadip Pradhan",
+        "Kirill D. Belashchenko"
+      ]
+    },
+    {
+      "id": "2bd8707fdab8226a9f675f85",
+      "url": "https://www.anthropic.com/news/cyber-verification-program",
+      "title": "Expanding the Cyber Verification Program",
+      "source_ids": [
+        "anthropic-news"
+      ],
+      "source_names": [
+        "Anthropic"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-06T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Expanding the Cyber Verification Program We’re launching a new, expanded version of our Cyber Verification Program (CVP), which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals. The program now consists of three access tiers, which allow security teams to apply for the level of access that best suits their work. Each tier includes access to our most capable models, including Claude Opus 5.5, Claude Sonnet 5.5, Claude Mythos 5.1, and new models moving forward. Interested customers can apply here. Cybersecurity is inherently dual use: the same capabilities that enable a security team to find and fix a vulnerability can also help a malicious actor exploit it. For this reason, our generally available models, such as Claude Opus 5.5, Claude Fable 5.1, and Claude Sonnet 5.5, have conservative cyber safeguards that block most cyber work. This is intended to limit the harmful activities malicious actors can carry out using our models, while we continue to work to reduce false positives for secure coding. But defenders also need access to the best tools and most powerful capabilities to secure their systems. For the past six months, we’ve enabled trusted access through two programs: Project Glasswing and the CVP. The former gave a group of organizations securing the most critical software access to Claude Mythos; the latter gave vetted security teams access to reduced safeguards on Claude Opus and Claude Sonnet models. Now, we’re integrating these programs into one expanded offering, designed to give more security organizations access to the capabilities they need to protect their systems. New access tiers The updated access tiers make specific model capabilities available to security professionals based on the scope of their cyber work. Each has different verification requirements and security controls. Defense Access is for defensive work, including security operations center and incident response tasks, reverse-engineering malware, and analyzing and validating vulnerabilities. Examples of qualifying organizations include security teams at companies, nonprofits, universities, and government bodies who are",
+      "summary": "",
+      "summary_kind": "source_excerpt"
+    },
+    {
+      "id": "15622ddfaaafde29c031e28e",
+      "url": "https://www.semanticscholar.org/paper/c94b028359828dd76ae2238aed9c1569e3cd7a53",
+      "title": "Enhancing the Efficiency and Flexibility of AutoMeKin: Integrating ORCA and Machine-Learning Potentials",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "chemistry"
+      ],
+      "published_at": "2026-10-06T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Automated reaction discovery is often limited by the cost of high-level refinement of large reaction networks. Here, we extend AutoMeKin, an automated reaction-discovery program, by presenting a complete integration of ORCA 6 into its high-level refinement workflow, providing access to a broad range of electronic-structure methods through a package freely available to academic users. We also integrate the UMA and MACE-OMOL-0 machine-learning interatomic potentials and Δ-ML energy corrections, enabling automated refinement of reaction networks using conventional electronic-structure methods, foundation ML potentials, or ML-corrected quantum-mechanical approaches within a unified framework. The workflow is assessed for five systems, monoethanolamine, three cyclobutadiene-derived radicals, and N-[bis(2H-triazol-4-yl)methylidene]hydroxylamine, spanning both in-distribution and challenging out-of-distribution chemistry. Comparisons with reference data show that UMA and MACE-OMOL-0 generally recover the relevant reaction mechanisms and provide energy profiles of comparable quality to DFT at substantially reduced cost. RRKM analyses further reveal that vibrational frequencies can significantly affect product population fractions, especially for loose transition states. These results show that the new implementation increases the accessibility and flexibility of AutoMeKin and further support the view that foundation ML potentials can serve as practical surrogates for DFT in automated reaction-network discovery.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "O. Rodríguez-López",
+        "Emilio Martínez-Núñez",
+        "Berta Fernández",
+        "Saulo A. Vázquez"
+      ]
+    },
+    {
+      "id": "b917d7f6811c0786f94925a5",
+      "url": "https://www.semanticscholar.org/paper/82fca10ba87a6b27592f442c235cb021a919e6dd",
+      "title": "Local atomic environments reveal structural controls on MgSiO3 liquid-crystal similarity",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-06T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "MgSiO3 is a fundamental silicate system in Earth and rocky planetary interiors, where its structures control crystallization, differentiation, and evolution of host planets. Yet, silicate structure has usually been analyzed through aggregate structural observables that do not place individual local atomic environments from crystals and liquids into a common similarity space. Here we compare local environments across eight MgSiO3 polymorphs and the liquid up to 700 GPa and 12,000 K generated via a machine-learning potential and first-principles calculations. We use the Smooth Overlap of Atomic Positions (SOAP) descriptor, principal component analysis (PCA), and k-nearest-neighbor distances in the full descriptor space. PCA shows that the dominant variation largely follows density-driven packing, whereas full-space distances reveal pronounced differences in structural similarity among MgSiO3 polymorphs and the liquid. Pyroxene-family phases, majorite, and akimotoite remain comparatively close to the liquid, but bridgmanite and post-perovskite are systematically less liquid-like. This separation is not explained by the SiO4-to-SiO6 coordination change alone, and instead stems from a coupled variation in multiple structural features. These results show that local atomic descriptors expose structural distinctions hidden by conventional averaged metrics and suggest that high-pressure liquid thermodynamics, including the non-monotonic pressure dependence of liquid Grüneisen parameters, need not be interpreted simply as progressive convergence toward the stable lower-mantle crystal structures.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "J. Acquadro",
+        "Xi-Yuan Bao",
+        "Jie Deng"
+      ]
+    },
+    {
+      "id": "3777cbbb164ef1aa20759b86",
+      "url": "https://arxiv.org/abs/2610.07517",
+      "title": "What Rate Theories Compute: Chemical kinetics from Arrhenius to machine-learned potentials",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "chemistry"
+      ],
+      "published_at": "2026-10-05T23:28:09+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Major advances in chemical rate theory changed what was computed and what a barrier meant. I organize this conceptual history around those changes, while retaining the controlled corrections and limiting relations between theories. The calculated quantities include an empirical rate constant, a collision count, a thermodynamic activation free energy, a statistical flux across a dividing surface, a stochastic escape rate, an energy-resolved microcanonical rate, a quantum flux correlation function, and an ensemble of reactive paths computed with electronic-structure or machine-learned potentials. I compare the assumptions with the limits stated by the pioneering authors. A rate constant is inferred from measurements under a stated rate law; its temperature dependence defines an apparent activation energy $E_a$. Activation free energy $ΔG^{\\ddagger}$, activation enthalpy $ΔH^{\\ddagger}$, activation entropy $ΔS^{\\ddagger}$, the prefactor, transmission coefficient $κ$, and saddle height require a kinetic model and, where relevant, a standard state, dividing surface, ensemble, and dynamical correction for their interpretation in a rate calculation. In hydrogen transfer by soybean lipoxygenase-1, similar single-isotope activation parameters accompany a large change in isotope-sensitive dynamics. Five rate benchmarks illustrate the errors different comparisons test and motivate seven reporting items. These distinctions guide comparisons of rates and interpretations of activation parameters.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Rodney S. Ruoff"
+      ]
+    },
+    {
+      "id": "16d1003fb34eec9cce9b9f3a",
+      "url": "https://arxiv.org/abs/2610.06805",
+      "title": "H-JEPA: End-to-End Learning of Hierarchical World Models for Visual Planning",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-05T17:53:34+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Long-horizon planning with latent world models requires reasoning across timescales and levels of abstraction. Existing task-agnostic JEPA world models predict and plan at a single timescale or with multiple horizons in one shared latent space. We introduce H-JEPA, an end-to-end recipe for training a hierarchy of action-conditioned JEPAs in which each level predicts farther ahead in its own learned latent space. Planning proceeds top-down: the top level optimizes progress toward the goal, and each level's predictions become subgoals for the planner below it. When factors in the data evolve at separated timescales, higher levels discard fast, unpredictable detail and retain slower task-relevant state. Across four simulated navigation and manipulation environments, hierarchical planning improves over a flat JEPA; on Visual AntMaze, a three-level hierarchy raises success from 18% to 73% using less planner compute. Ablations attribute these gains to both temporal decomposition and higher-level goal representations. With inverse-dynamics supervision, the approach extends to diverse real-robot videos from DROID, where hierarchy improves offline planning fidelity at lower planner compute.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "alpha_rank": 2,
+      "authors": [
+        "Wancong Zhang",
+        "Basile Terver",
+        "Michael Rabbat",
+        "Yann LeCun",
+        "Randall Balestriero"
+      ]
+    },
+    {
+      "id": "d2b5b29b4c815525619915dc",
+      "url": "https://openai.com/index/eu-text-provenance",
+      "title": "Our approach to EU text provenance rules",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "frontier"
+      ],
+      "published_at": "2026-10-05T15:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "26003ff834f48be538b4a45d",
+      "url": "https://www.semanticscholar.org/paper/cf2ece903b48511b544d06f97c3da553434ebdd0",
+      "title": "Hybrid sampling approach to machine-learning potentials for gas adsorption: Hydrogen adsorption in MOF-303",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "chemistry"
+      ],
+      "published_at": "2026-10-05T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Porous materials such as metal-organic frameworks (MOFs) are widely studied for applications in catalysis and gas adsorption, including carbon dioxide capture and hydrogen storage for energy and environmental challenges. Accurate simulation of gas adsorption in these materials remains challenging because most approaches rely on force fields (FFs), which lack first-principles accuracy. Here, we present a hybrid sampling approach, complemented by an active-learning-style refinement step, for generating machine-learning potentials (MLPs) tailored for grand canonical Monte Carlo (GCMC) simulations of gas adsorption. The training dataset combines snapshots from FF-based GCMC sampling, evaluated by single-point density functional theory (DFT) calculations, with trajectories from DFT-based molecular dynamics (MD). We demonstrate this approach for hydrogen adsorption in MOF-303, achieving accurate energy and force evaluation, as well as robust GCMC simulation including on-the-fly quantum corrections for nuclei. The MLP-based calculation also revealed four primary and four secondary adsorption sites formed near N, O, C, and –OH motifs, highlighting the material's structural heterogeneity and adsorption behavior. The resulting MLPs enable calculation of adsorption isotherms, isosteric heat values, and diffusion coefficients across temperatures. This hybrid-sampling framework bridges DFT-level accuracy and larger-scale simulation capability than a b i n i t i o MD, and can in principle be applied to other porous materials and gas types to support the design of materials for gas storage and separation.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "K. Sau",
+        "I. Hamada",
+        "T. Ikeshoji",
+        "Yi-Ming Lu",
+        "Susmita Roy",
+        "Shohichi Furukawa",
+        "Linda Zhang",
+        "Hung Ba Tran",
+        "Takahiro Kondo",
+        "Hao Li",
+        "S. Orimo"
+      ]
+    },
+    {
+      "id": "cc3a8155f9b744f29d5b928e",
+      "url": "https://arxiv.org/abs/2610.06158",
+      "title": "Compressed magnetic Moment Tensor Potentials via low-rank matrix and tensor factorizations",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "chemistry"
+      ],
+      "published_at": "2026-10-05T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "We propose a parameter-reduced version of magnetic Moment Tensor Potential (mMTP) based on various matrix and tensor decompositions. The resulting compressed magnetic machine-learning potential reduces the number of parameters by a factor of approximately 1.5-3 without compromising predictive performance on the validation set. We evaluate the performance of the compressed potentials for magnetic, structural, and vibrational properties, as well as in molecular dynamics simulations of Fe-Al and CrN systems. We demonstrate that the simulation results obtained with the compressed mMTP are numerically consistent with those of the original uncompressed model and are in agreement with density functional theory calculations and experimental data.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Alexey S. Kotykhov",
+        "Alexander V. Shapeev",
+        "Maxim V. Rakhuba",
+        "Ivan S. Novikov"
+      ]
+    },
+    {
+      "id": "b2a0d39235a3f48803a04432",
+      "url": "https://arxiv.org/abs/2610.05140",
+      "title": "AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "biology",
+        "agents"
+      ],
+      "published_at": "2026-10-04T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "As agents rapidly evolve, existing benchmarks can become saturated, limiting their ability to distinguish capabilities and reveal remaining failure modes. Particularly in scientific domains, constructing and updating benchmarks requires substantial time, labor, and domain expertise, making it difficult to keep evaluation aligned with advances in agent capabilities. We address this challenge by investigating whether scientific-agent benchmarks can be automatically generated and iteratively adapted as agent capabilities evolve. We introduce AutoSciBench, a framework that represents each task as a high-level concept specifying the scientific domain, data modality, and required reasoning approach, together with a low-level recipe specifying how the question, environment, and ground-truth answer are constructed and verified. Agents attempt to solve each task, producing solver trajectories and corresponding judge feedback which AutoSciBench uses to revise the recipe or concept, closing observed shortcuts and shifting tasks toward raw-data re-examination, interpretation of intermediate results, and evidence integration. Experience distilled from completed refinement trajectories further guides new concept generation, allowing lessons from earlier task refinement to inform subsequent benchmark construction. Starting from existing benchmarks, we evaluate AutoSciBench across computational biology, materials science, and clinical imaging. Generated benchmarks reduce average solver accuracy by 22.4 and 25.5 percentage points relative to the human-curated benchmarks in computational biology and materials science, respectively, while generated tasks receive higher average quality ratings across all three domains, suggesting that scientific-agent evaluation can adapt as agent capabilities advance.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Dongki Kim",
+        "Namkyeong Lee",
+        "Surag Nair",
+        "Carl N. Edwards",
+        "Xin-Er Li",
+        "Edward De Brouwer",
+        "Jenna Collier",
+        "Sung Ju Hwang",
+        "G. Scalia",
+        "Ehsan Hajiramezanali"
+      ]
+    },
+    {
+      "id": "bfc4355d370530a85bd88314",
+      "url": "https://www.anthropic.com/news/claude-frontier-academy",
+      "title": "Claude Frontier Academy: $100M to train 10,000 engineers",
+      "source_ids": [
+        "anthropic-news"
+      ],
+      "source_names": [
+        "Anthropic"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "biology",
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-02T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap The first-of-its-kind Academy trains Frontier Deployed Engineers using the same standard of skills as Anthropic’s own engineers, starting with cohorts from Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley, Novo Nordisk and others. Today we are launching Claude Frontier Academy to solve one of the most pressing issues in AI implementation: talent. Backed by a $100 million commitment, Anthropic aims to train 10,000 Frontier Deployed Engineers (FDEs) by the end of 2027. Engineers from Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley and Novo Nordisk are in the first cohorts. Every enterprise is racing to bring AI into its organization, but the people with the skills to make it work inside a real business have become the hardest talent to find. Inside the companies we work with, a small group of deeply skilled people drives an outsized share of what AI delivers. The Academy is the first of its kind from an AI company, built from our own work deploying Claude inside the world’s largest enterprises and the professional services organizations that serve them. “A small team of high-agency people with the right skills, access to Claude, and a deep understanding of how their business runs can transform an entire company. The hard part is building that depth of talent, engineers with the highest level of AI fluency who can take Claude from an idea to a system in production and turn it into faster processes and new products and services. No AI company has invested in developing that talent inside its customers and partners at this depth. Claude Frontier Academy trains people the way our own engineers learn, and we want those who graduate to set the standard for how AI gets built inside a business.” – Steve Corfield, Global Head of Business Development and Partnerships at Anthropic The first program trains 10,000 Frontier Deployed Engineers The Academy’s first program, the Frontier Deployed Engineer Residency, follows the medical model for building expertise. Doctors learn from practicing ",
+      "summary": "",
+      "summary_kind": "source_excerpt"
+    },
+    {
+      "id": "1ee818c0a97e91518baae3cf",
+      "url": "https://arxiv.org/abs/2610.02959",
+      "title": "TerraVis: Towards Evaluation of World-Grounded Visual Consistency in Text-to-Image Generation via MLLM Workflows",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-10-02T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Recent text-to-image models have made substantial progress in photorealism, aesthetics, and text-image alignment. Yet visually appealing images can still violate real-world plausibility, exhibiting malformed object structures, impossible anatomy, physically implausible interactions, or inconsistent spatial relationships. Such failures are not well captured by existing fidelity, aesthetics, preference, or alignment metrics. To address this gap, we introduce TerraVis, a framework for evaluating world-grounded visual consistency in generated images. TerraVis defines a structured taxonomy of world-consistency violations spanning object-, interaction-, and scene-level failures, and employs a multi-stage evaluation framework to identify and quantify them. Given an image, TerraVis first uses an MLLM to assess its eligibility for evaluation, then detects violations across 18 taxonomy-defined types and classifies them as minor or major to derive an overall world-consistency score. Across diverse open-source and proprietary text-to-image models on two widely used benchmarks, TerraVis achieves the strongest correlation with human judgments of world consistency among existing metrics. Our benchmark results further show that models that achieve strong performance on conventional metrics can still exhibit substantial world-consistency failures. These findings highlight world consistency as a complementary evaluation dimension and demonstrate that TerraVis enables systematic quantification, diagnosis, and comparison of such failures. Our code is publicly available at https://github.com/ShyFoo/TerraVis.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2610.02959",
+      "authors": [
+        "Shuai Fu",
+        "Jing Gu",
+        "Jian Zhou",
+        "Zicheng Duan",
+        "Gengze Zhou",
+        "Qi Wu"
+      ]
+    },
+    {
+      "id": "74ea6f05c61d9b4cf20cfdc0",
+      "url": "https://www.semanticscholar.org/paper/fb537f5849f650a6c6c71227994833e8ee23b2a3",
+      "title": "Beyond Energies and Forces: Systematic Evaluation of Machine-Learned Potentials for Solid–Liquid Interfaces",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "chemistry",
+        "tools"
+      ],
+      "published_at": "2026-10-02T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Atomistic simulations have proven to be a powerful tool in obtaining chemical insights for complex solid–liquid interfaces. However, studying solid–liquid interfaces with first-principles methods is a challenging task due to the underlying computational limitations. Empirical force fields have been extensively applied as an alternative; however, they are limited by the accuracy of the underlying force field. Machine learning potentials (MLPs) have emerged as a powerful solution to overcome this accuracy vs computational cost trade-off. Developments in ML algorithms and molecular representations have led to accurately simulating diverse complex molecular systems, including solid–liquid interfaces. The accuracy of the MLP is currently determined by the errors in energies and forces of the system and by observing structural properties. However, such metrics are insufficient in capturing the true insights into interfaces. In this study, we present a workflow for constructing robust MLPs for solid–liquid interfaces and demonstrate their accuracy beyond energy and force errors with evaluating structural and dynamical properties. Through a systematic dataset construction, we provide valuable insights into developing robust and accurate MLPs, their failure modes, and solutions to overcome their shortcomings. With this work, we aim to provide a guide in building accurate, transferable, and robust MLPs for solid–liquid interface systems.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Nisarg Joshi",
+        "Rahul Verma",
+        "Jim Pfaendtner"
+      ]
+    },
+    {
+      "id": "dab95f157b8439bf04d74449",
+      "url": "https://arxiv.org/abs/2610.04115",
+      "title": "Distilling universal machine-learning potentials for moir\\'e lattices across one million atoms",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "biology",
+        "tools"
+      ],
+      "published_at": "2026-10-02T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Atomic reconstruction reshapes moir\\'e materials across multiple scales, from local structure and polarization textures to global electronic topology, yet direct \\textit{ab initio} modeling becomes prohibitive for large superstructures such as marginal-twist-angle moir\\'es and moir\\'e-of-moir\\'es. We develop Moir\\'eMLIP by fine-tuning a universal atomistic model on the density functional theory labeled Moir\\'e Kaleidoscope dataset, which spans transition metal dichalcogenide compositions, symmetries, stackings, and twist angles. Moir\\'eMLIP reproduces \\textit{ab initio} reconstruction with force errors of 6--8\\,meV/\\AA{} and transfers to smaller twist angles and unseen structures. Knowledge distillation yields Moir\\'eMLIP-mini, which retains this accuracy while extending single-GPU inference to one million atoms. Applied to an alternate-twist MoTe$_2$ trilayer, it reveals a hierarchical polarization network spanning tens of nanometers arising from large moir\\'e-cell distortions sharply localized along the moir\\'e-of-moir\\'e domain walls. These results overcome key accuracy, transferability, and scaling bottlenecks of existing atomistic models and enable predictive simulations across emergent moir\\'e length scales.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Thomas Huang",
+        "Yue-Yao Fan",
+        "Kai-Chen Xie",
+        "Bo-Lun Li",
+        "Kai-Jie Yang",
+        "Jenna A. Bilbrey",
+        "E. Bylaska",
+        "P. Sushko",
+        "Di Xiao",
+        "Ting Cao"
+      ]
+    },
+    {
+      "id": "c08402b8f22a4b159df3858c",
+      "url": "https://www.anthropic.com/news/barclays-scales-claude",
+      "title": "Barclays scales Claude to upgrade operations and improve client experience",
+      "source_ids": [
+        "anthropic-news"
+      ],
+      "source_names": [
+        "Anthropic"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-01T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Barclays scales Claude to upgrade operations and improve client experience Barclays, the British universal bank, is expanding its strategic collaboration with Anthropic to integrate secure, enterprise-grade AI systems across its global operations. Barclays is extending Claude across the bank to accelerate software development, modernize legacy systems, and improve operational efficiency. As part of this rollout, Barclays expects Claude Code adoption to reach 50% of its developer population by the end of 2026, rising to a majority of software engineers in 2027. Barclays builds with Claude to better serve customers Integrating AI across a large, complex, and highly regulated organization requires both capable technology and disciplined governance. Expanding its collaboration with Anthropic reflects a shared commitment to deploying AI responsibly, reliably, and in ways that deliver real outcomes, such as providing faster support for customers. “The true measure of any technology is the impact it has on customers, clients, and colleagues, and the outcomes it enables,” said Anne Marie Darling, Group Co-Chief Operating Officer at Barclays. “Expanding the use of Claude across Barclays is about more than adopting AI. It is about transforming how work gets done: reimagining processes, enhancing customer and client experiences, and building a simpler, more efficient organization within a secure and well-governed environment. By reducing time spent on routine activities and streamlining decision-making, we can enable colleagues to focus their expertise where it matters most, solving more complex problems, accelerating innovation, and delivering better outcomes for our customers, clients, and business.” “Software engineering and cyber security are both being reshaped by increasingly capable AI systems,” said Craig Bright, Group Co-Chief Operating Officer at Barclays. “We're moving towards AI as an increasingly agentic capability embedded within how we build, test, secure, and operate technology. At Barclays, we're using Claude to help modernize legacy platforms, improve software quality, and allow our technical experts to focus on the most complex challenges. The combinatio",
+      "summary": "",
+      "summary_kind": "source_excerpt"
+    },
+    {
+      "id": "dbb4aebc68a9494123f1b12b",
+      "url": "https://www.semanticscholar.org/paper/f9fcb966d6af2557811c8040f9733a4141a6c52f",
+      "title": "Artificial intelligence in mechanical engineering: foundations, opportunities, challenges, and responsibilities",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-01T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Artificial intelligence (AI) is rapidly transforming mechanical engineering (ME) practice, influencing activities that range from modeling and simulation to optimization, diagnostics, design, and technical communication. This article consolidates perspectives discussed at a dedicated round-table during the 28th ABCM International Congress on Mechanical Engineering—COBEM 2025—and offers a structured reflection for the Brazilian and international ME communities. Rather than providing an exhaustive survey, the paper develops a coherent narrative around the conditions under which AI can strengthen—rather than dilute—engineering rigor. The article begins by clarifying how contemporary AI systems operate, distinguishing statistical learning from human cognition and outlining their capabilities, limitations, and emerging agentic AI systems. It then examines industrial adoption, workforce transformation, and the growing role of AI in scientific discovery and engineering workflows. Particular attention is devoted to the energy and infrastructure demands of AI-driven computation and their implications for sustainability, power systems, and thermal management. Building on these constraints, the paper discusses integrating physical knowledge, structured reasoning, and domain expertise into AI systems for safety-relevant engineering applications. Emphasis is placed on representative ME applications, physics-informed and hybrid learning frameworks, model development under physical constraints, validation, uncertainty quantification, and certification challenges. The paper also addresses the educational, epistemological, and ethical implications of AI, including curriculum modernization, human-agent collaboration, professional accountability, and the long-term sustainability of engineering knowledge. It concludes with a synthesis of principles for the responsible adoption of AI in ME, encompassing physical consistency, validation, awareness of uncertainty, energy sustainability, human oversight, and ethical responsibility. Our central message is that AI should be viewed not as a substitute for engineering judgment, but as a powerful tool whose value depends on disciplined inte",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Americo Cunha",
+        "C. Nataraj",
+        "Luciano M. Lorenzo",
+        "Hervé Panetto",
+        "A. Scotti",
+        "J. V. C. Vargas"
+      ]
+    },
+    {
+      "id": "0cc9342b3c5b2916f2ff2b01",
+      "url": "https://www.semanticscholar.org/paper/e70a05052a1953382bbcb34a8dfcc738f4135432",
+      "title": "Keep AI-augmented science contestable.",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "biology",
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-01T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Artificial intelligence (AI) is moving upstream in science. Systems such as AlphaFold have already transformed protein-structure prediction, while newer agentic systems can search literatures, generate hypotheses, write and execute code, interpret results, and automate much of the path from idea to paper. Recent debates have asked how such systems may change scientific progress, surprise, and human understanding. Yet they also change something more fundamental: who-or what-participates in deciding which questions are asked, which evidence is surfaced, and which alternatives survive. As machine intelligence becomes part of science's epistemic infrastructure, steps must be taken to ensure that researchers who did not build, own, or operate the system can still contest how ideas and evidence became a claim.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Christoph Trattner"
+      ]
+    },
+    {
+      "id": "e5b83430cc88567b6e4210cf",
+      "url": "https://www.semanticscholar.org/paper/c208180f5adcefbf409f64c0885ce56da512b0b0",
+      "title": "Electrochemical ammonia synthesis over copper oxide derived catalysts studied by electric field dependent machine learning potential",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "chemistry"
+      ],
+      "published_at": "2026-10-01T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Xiao-Yan Fu",
+        "Dong Luan",
+        "Chen-Yu Yang",
+        "Jian-Ping Xiao"
+      ]
+    },
+    {
+      "id": "b49099cde7e97e60f531fdab",
+      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence",
+      "title": "Gemini 4 Argon: our next era of frontier intelligence",
+      "source_ids": [
+        "deepmind"
+      ],
+      "source_names": [
+        "Google DeepMind"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "report",
+      "tags": [
+        "science"
+      ],
+      "published_at": "2026-09-30T20:01:45+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "08aa8115cb5d9c8920990d12",
+      "url": "https://deepmind.google/blog/introducing-synthid-bio",
+      "title": "Introducing SynthID Bio",
+      "source_ids": [
+        "deepmind"
+      ],
+      "source_names": [
+        "Google DeepMind"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "report",
+      "tags": [
+        "biology"
+      ],
+      "published_at": "2026-09-30T15:03:07+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Proof of concept for watermarking AI-generated proteins while preserving biological function.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "280b717b244339df46bc5708",
+      "url": "https://arxiv.org/abs/2609.39068",
+      "title": "SparseEngine: Sparse-First Inference Engine",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-09-30T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Long-context LLM agents accumulate interaction histories that strain KV-cache memory and attention computation. Although sparse attention reduces these costs, heterogeneous cache representations and workflows hinder integration with existing inference engines, while prior sparse-serving abstractions support only specific layouts or workflows. We present SparseEngine, a ground-up, sparse-first inference engine whose shared lifecycle contract lets each method control its KV representation and computation while coordinating state transitions with common serving infrastructure. SparseEngine supports 15 methods across four categories and enables cross-request state management through Chain Cache, which resumes KV-eviction methods from retained history, and controllable Prefix-Cache Pruning, which removes KV from selected history regions while preserving logical-prefix matching. While maintaining method quality, SparseEngine delivers over 10x higher throughput with KV eviction, over 2.5x faster decoding at matched concurrency than vLLM, and over 2x end-to-end speedup on agent benchmarks. The code is available at https://github.com/CURRENTF/SparseEngine.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2609.39068",
+      "authors": [
+        "Jitai Hao",
+        "Quansheng Gu",
+        "Qiang Huang",
+        "Jun Yu"
+      ]
+    },
+    {
+      "id": "fc615e071bcda5270221bed4",
+      "url": "https://www.isomorphiclabs.com/articles/building-a-new-path-to-make-medicines-with-ai",
+      "title": "Building a new path to make medicines with AI - Isomorphic Labs",
+      "source_ids": [
+        "isomorphic"
+      ],
+      "source_names": [
+        "Isomorphic Labs"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "report",
+      "tags": [
+        "chemistry",
+        "biology",
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-09-29T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Solving all disease is one of the most monumentally complex challenges in science. Today, for the first time, AI provides the foundation to make it achievable. Tackling the frontier of human health is our mission, and it means identifying exactly where modern AI can make the greatest difference. We see drug discovery as the critical wedge in solving all disease, and therefore our initial focal point where AI can have a transformative impact on human health. Developing a drug that successfully and effectively treats disease fundamentally involves understanding biological mechanisms and designing exquisitely engineered molecules that can modulate them safely. So we are taking a straight shot at making that a reality. We are generating the data, training the AI models, developing the software, and laying down the physical infrastructure to make new medicines; taking these potential therapeutics all the way to patients in the clinic. We are building this new architecture in a way that will scale across multiple disease areas, and different types of medicines, from small molecules to antibodies, peptides, and beyond. In 2021, when we started Isomorphic Labs, AI drug discovery was just a hypothesis. Conventional approaches were bottlenecked by slow, resource-intensive iterative design-make-test cycles, viewing AI as an experimental tool for narrow tasks. At the same time the AI revolution was well underway across multiple industries. A seismic shift was happening with the emergence of foundation models, moving away from single-task algorithms toward highly versatile systems capable of world-understanding, zero-shot reasoning and generating complex text and images. Up to this point, I had spent my education and career in core AI, building intelligent systems by scaling up neural networks and deep reinforcement learning to solve the hardest problems at a superhuman level. But having grown up in a medical family, I recognised the potential to apply this superhuman new technology to humanity’s most meaningful challenge: human health. Working with Sir Demis Hassabis, we created the founding team at Isomorphic Labs to pivot breakthroughs in AI toward solving the drug discov",
+      "summary": "",
+      "summary_kind": "source_excerpt"
+    },
+    {
+      "id": "6add3dd62456569f19427e45",
+      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
+      "title": "Introducing Gemini 3.8 Live with Live Avatar",
+      "source_ids": [
+        "deepmind"
+      ],
+      "source_names": [
+        "Google DeepMind"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "report",
+      "tags": [
+        "science"
+      ],
+      "published_at": "2026-09-24T16:20:39+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "1043d9fe80283e6f409b90e0",
+      "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory",
+      "title": "Advancing Private AI Compute with secure, server-side memory",
+      "source_ids": [
+        "deepmind"
+      ],
+      "source_names": [
+        "Google DeepMind"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "report",
+      "tags": [
+        "science"
+      ],
+      "published_at": "2026-09-23T16:00:57+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Introducing private, server-side memory to Private AI Compute for personal AI.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "721de6922a1a6b9fd6bd57fa",
+      "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech",
+      "title": "Gemini 3.8 text-to-speech says hello",
+      "source_ids": [
+        "deepmind"
+      ],
+      "source_names": [
+        "Google DeepMind"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "report",
+      "tags": [
+        "science"
+      ],
+      "published_at": "2026-09-23T15:25:14+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "ef1b3a4772eab8370f467eb4",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "title": "Claude discovers a novel enzyme system",
+      "source_ids": [
+        "anthropic-news"
+      ],
+      "source_names": [
+        "Anthropic"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "chemistry",
+        "biology",
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-09-23T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Subscribe to Anthropic Science Features on AI-assisted discoveries, practical workflows, and field notes across the sciences. We’re introducing a new life sciences research group and laboratory at Anthropic. Our focus is on fundamental biology research using Claude: exploring datasets of DNA to identify uncharacterized protein families, generating hypotheses at scale, and testing them through experiments in the lab. This post introduces the team behind this work and shares early results in which Claude discovered a novel enzyme system with properties reminiscent of CRISPR, with only high-level direction from our scientists. Many discoveries that have revolutionized biology and medicine started with a scientist noticing something odd in the staggering diversity of molecular machines found in nature. Restriction enzymes, proteins that cut DNA at specific short sequences, were found in bacterial immune systems, where they destroy the DNA of invading viruses. Researchers realized they could use these enzymes to cut DNA at chosen places and splice genes from one organism into another, which launched the biotechnology industry. Taq polymerase, an enzyme that copies DNA at high temperatures, was identified in a bacterium in a Yellowstone hot spring. It became the basis for PCR, the DNA-copying method used in much of modern diagnostics. CRISPR was first noticed as an unusual repeat sequence in the DNA of certain bacteria, and is now the foundation of gene editing-based medicines. In the spring of 2026, we formed a research group to see whether general AI models can systematize and accelerate such discoveries. We believe that this acceleration will come from establishing a new way of doing biology research, in which agents collaborate with humans in every step of the process. Developing this new way of working required that we build our own lab and a single team working on everything from training Claude in biology to running experiments in the lab. Today, we’re sharing early results from one of our first research programs, in which Claude autonomously discovered a novel enzyme system that is associated with an array of DNA repeats, a pattern reminiscent of CRISPR. Altho",
+      "summary": "",
+      "summary_kind": "source_excerpt"
+    },
+    {
+      "id": "413e4ee860ab5e965ff1844e",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
+      "title": "Qwen/Qwen-Image-2.1-PE-I2I",
+      "source_ids": [
+        "qwen-models"
+      ],
+      "source_names": [
+        "Qwen 模型发布"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "release",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-09-20T08:46:47+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "🤖 ModelScope | 🤗 HuggingFace | 📑 Blog | 🖥️ Demo | 🫨 Discord ## Introduction We are excited to open-source **Qwen-Image-2.1**, a unified text-to-image generation and image editing model in the Qwen family. With just **7B parameters in its visual generation component** (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: - **Compact and Efficient** — A lightweight architecture with mixed-granularity attention and prefix KV cache reuse delivers strong image quality at low computational cost. - **Native Transparency, Unified Creation and Editing** — Generate regular or transparent (RGBA) images from text, edit transparent layers, and extract subjects from photographs—all in one model. - **Versatile Editing** — Support up to **10 reference images**, specify local edits via circles, painted annotations, or separate masks, and preserve identity for people and products. - **Realistic Textures and Refined Aesthetics** — Improved typography, portrait lighting, and fine details for more visually compelling results. # Qwen-Image-2.1-PE-I2I Image editing **prompt rewriting model** for [Qwen-Image-2.1](https://huggingface.co/Qwen/Qwen-Image-2.1). A fine-tuned Qwen3.5-VL 9B that takes a vague editing instruction plus input image(s) and produces a precise, actionable prompt suitable for downstream image editing. For more details, see the [GitHub repo](https://github.com/QwenLM/Qwen-Image-2.1) and [Blog](https://qwen.ai/blog?id=qwen-image-2.1). ## Quick Start ### Installation ```bash pip install transformers>=5.4.0 torch>=2.4.0 accelerate pillow ``` ### Usage with Transformers ```python import json import torch from PIL import Image from transformers import AutoModelForImageTextToText, AutoProcessor model_id = \"Qwen/Qwen-Image-2.1-PE-I2I\" processor = AutoProcessor.from_pretrained(model_id) model = AutoModelForImageTextToText.from_pretrained( model_id, dtype=torch.bfloat16, device_map=\"auto\" ).eval() # Load the system prompt shipped with the model import huggingface_hub sys_prompt_path = huggingface_hub.hf_hub_download(model_id, \"system_prompt.txt\") system_prompt = open(sys_pro",
+      "summary": "",
+      "summary_kind": "source_excerpt"
+    },
+    {
+      "id": "5eedd09eb4922e0c4f487d2d",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
+      "title": "Qwen/Qwen-Image-2.1-PE-T2I",
+      "source_ids": [
+        "qwen-models"
+      ],
+      "source_names": [
+        "Qwen 模型发布"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "release",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-09-20T08:45:29+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "🤖 ModelScope | 🤗 HuggingFace | 📑 Blog | 🖥️ Demo | 🫨 Discord ## Introduction We are excited to open-source **Qwen-Image-2.1**, a unified text-to-image generation and image editing model in the Qwen family. With just **7B parameters in its visual generation component** (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: - **Compact and Efficient** — A lightweight architecture with mixed-granularity attention and prefix KV cache reuse delivers strong image quality at low computational cost. - **Native Transparency, Unified Creation and Editing** — Generate regular or transparent (RGBA) images from text, edit transparent layers, and extract subjects from photographs—all in one model. - **Versatile Editing** — Support up to **10 reference images**, specify local edits via circles, painted annotations, or separate masks, and preserve identity for people and products. - **Realistic Textures and Refined Aesthetics** — Improved typography, portrait lighting, and fine details for more visually compelling results. # Qwen-Image-2.1-PE-T2I Text-to-image **prompt rewriting model** for [Qwen-Image-2.1](https://huggingface.co/Qwen/Qwen-Image-2.1). A fine-tuned Qwen3.5-VL 9B that turns a brief image request in any language into a detailed English prompt plus a recommended aspect ratio. For more details, see the [GitHub repo](https://github.com/QwenLM/Qwen-Image-2.1) and [Blog](https://qwen.ai/blog?id=qwen-image-2.1). ## Quick Start ### Installation ```bash pip install transformers>=5.4.0 torch>=2.4.0 accelerate pillow ``` ### Usage with Transformers ```python import json import torch from transformers import AutoModelForCausalLM, AutoTokenizer model_id = \"Qwen/Qwen-Image-2.1-PE-T2I\" tokenizer = AutoTokenizer.from_pretrained(model_id) model = AutoModelForCausalLM.from_pretrained( model_id, dtype=torch.bfloat16, device_map=\"auto\" ).eval() # Load the system prompt shipped with the model import huggingface_hub sys_prompt_path = huggingface_hub.hf_hub_download(model_id, \"system_prompt.txt\") system_prompt = open(sys_prompt_path).read().strip() user_prompt = \"一只在雨中弹吉他的柯基\" text = tok",
+      "summary": "",
+      "summary_kind": "source_excerpt"
+    },
+    {
+      "id": "5ec4e61a2a5169ebbf2e4ee0",
+      "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "title": "Partnering with Accenture on embedded evaluation",
+      "source_ids": [
+        "anthropic-news"
+      ],
+      "source_names": [
+        "Anthropic"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-09-18T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Partnering with Accenture on embedded evaluation We're partnering with Accenture on independent evaluation of frontier AI. This is an important step toward the commitment, made in our CEO’s essay “We Must Pace the Frontier,” to embed evaluators within Anthropic. The partnership will be led by Faculty, Accenture’s specialist AI business, and will include evaluating and red-teaming models, conducting alignment assessments, and testing model safeguards. Accenture helps businesses and governments deploy AI across many industries. Their understanding of how enterprises use AI in practice informs their safety approach, and they will bring that perspective to evaluating our models. Anthropic and Accenture each expect to invest at least $1 billion in building capacity in this area over the next five years. Embedded evaluation is new, and many of the details about how it will operate are still being worked out. Unlike today’s external evaluators, embedded evaluators will work inside AI companies, with access comparable to an employee's. That access allows them to watch models take shape in training, follow the decisions that govern how those models are built and deployed, and speak directly to employees. From this vantage point, embedded evaluators can assess how a company operates, verify that it is keeping its safety commitments, and identify blind spots. They can also report incidents and give the public a more informed account of benefits and risks. To be clear, independent embedded evaluators do not reduce our accountability, but help to make it more verifiable. The safety of our models remains our responsibility. There are, as yet, no standards for what information embedded evaluators should have access to, or how they should report what they find. There is also no settled system for funding independent evaluation. Long-term, we think funding should come from pooled or government sources, as we called for in our Advanced AI Framework in June. As neither exists today, we plan to work with different evaluators under different funding arrangements. Given the importance and urgency of this work, Anthropic will fund Accenture's work directly. We are also in dialogue wit",
+      "summary": "",
+      "summary_kind": "source_excerpt"
+    },
+    {
+      "id": "a3c8e138d995ff558ec9129c",
+      "url": "https://www.anthropic.com/news/life-sciences-verification-program",
+      "title": "Introducing the Life Sciences Verification Program",
+      "source_ids": [
+        "anthropic-news"
+      ],
+      "source_names": [
+        "Anthropic"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "biology",
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-09-17T00:00:00+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "Introducing the Life Sciences Verification Program Today, we are introducing the Life Sciences Verification Program (LSVP), which gives life science professionals access to our Mythos, Opus, and Sonnet models with a refined set of safeguards more permissive for biology-related work. We have already onboarded dozens of organizations through an early-access program, and are now opening applications to the broader life science community (join waitlist here). The program is launching in beta, initially for teams and institutions. We will continue to improve the program and expand access to individual Pro and Max plans over time. The LSVP is designed to enable life science professionals to use our models across a wide range of tasks that are currently blocked in our generally available Fable models, like drug discovery, research biology, clinical development, and manufacturing. It’s built for teams of all kinds—from academic labs to startups, pharma companies, and more. Verification and access types To qualify for these grants, each applicant goes through a verification process that includes a review of their research credentials, security standards, and ethical research oversight. Once verified, teams may apply for two types of LSVP grants, “Standard Use” or “High-risk Use,” depending on their access needs. These grants can be used through all our product surfaces, including Claude Science, Claude.ai, Claude Code and the API. Standard Use grants are suitable for most life science work, including the majority of biology research and development workflows. These grants can be extended to entire teams for diverse, daily workloads, and are renewed once a year. They give those teams access to our Mythos, Opus, and Sonnet models, with refined classifiers that are more permissive for science tasks than our generally available models. Standard Use grants apply to Mythos 5.1, Opus 5, and Sonnet 5 today, and to future models as they launch. They’re specifically designed to enable the full breadth of life science activities in areas spanning basic science, R&D, supply chain and manufacturing, clinical development, quality assurance, regulatory affairs, investing and diligence,",
+      "summary": "",
+      "summary_kind": "source_excerpt"
+    },
+    {
+      "id": "6aae488b1bb65e59bc913efd",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking",
+      "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "source_ids": [
+        "deepmind"
+      ],
+      "source_names": [
+        "Google DeepMind"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "report",
+      "tags": [
+        "science"
+      ],
+      "published_at": "2026-09-15T17:05:57+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": []
+    },
+    {
+      "id": "3cc50d0356230bcbb9959d92",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "title": "Qwen/Qwen-Image-2.1",
+      "source_ids": [
+        "qwen-models"
+      ],
+      "source_names": [
+        "Qwen 模型发布"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "release",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-09-14T03:47:26+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "🤖 ModelScope | 🤗 HuggingFace | 📑 Blog | 🖥️ Demo | 🫨 Discord | 💬 WeChat ## Introduction We are excited to open-source **Qwen-Image-2.1**, a unified text-to-image generation and image editing model in the Qwen family. With just **7B parameters in its visual generation component** (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: - **Compact and Efficient** — A lightweight architecture with mixed-granularity attention and prefix KV cache reuse delivers strong image quality at low computational cost. - **Native Transparency, Unified Creation and Editing** — Generate regular or transparent (RGBA) images from text, edit transparent layers, and extract subjects from photographs—all in one model. - **Versatile Editing** — Support up to **10 reference images**, specify local edits via circles, painted annotations, or separate masks, and preserve identity for people and products. - **Realistic Textures and Refined Aesthetics** — Improved typography, portrait lighting, and fine details for more visually compelling results. For more details, see the [GitHub repo](https://github.com/QwenLM/Qwen-Image-2.1) and [Blog](https://qwen.ai/blog?id=qwen-image-2.1). ## Quick Start ### Installation ```bash pip install torch>=2.4.0 pip install transformers>=5.17 pip install git+https://github.com/huggingface/diffusers pip install accelerate pillow ``` ### Text-to-Image ```python import torch from diffusers import QwenImage21Pipeline pipe = QwenImage21Pipeline.from_pretrained( \"Qwen/Qwen-Image-2.1\", torch_dtype=torch.bfloat16 ).to(\"cuda\") image = pipe( prompt=\"A neon shop sign that reads \\\"QWEN IMAGE 2.1\\\", rainy night, reflections on wet pavement\", width=2048, height=2048, num_inference_steps=40, generator=torch.Generator(\"cuda\").manual_seed(42), ).images[0] image.save(\"t2i_example.png\") ``` ### Image Editing ```python import torch from PIL import Image from diffusers import QwenImage21Pipeline pipe = QwenImage21Pipeline.from_pretrained( \"Qwen/Qwen-Image-2.1\", torch_dtype=torch.bfloat16 ).to(\"cuda\") input_image = Image.open(\"input.png\") image = pipe( prompt=\"Change the background t",
+      "summary": "",
+      "summary_kind": "source_excerpt"
+    },
+    {
+      "id": "5c348986a15182f2f224ee2c",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "source_ids": [
+        "deepseek-models"
+      ],
+      "source_names": [
+        "DeepSeek 模型发布"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "release",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-09-10T02:17:58+00:00",
+      "first_seen": "2026-10-09T03:55:11.171802+00:00",
+      "excerpt": "# DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression Technical Report 👁️ ## Introduction We introduce **DeepSeek-V4.1-Flash**, a multimodal Mixture-of-Experts (MoE) model with 552B backbone parameters and support for contexts of up to one million tokens. The model natively processes images and text, and generates text autoregressively. **Architecture.** DeepSeek-V4.1-Flash adopts a **Causal Encoder-Decoder (CED)** architecture: a 40-layer Transformer organized as a 20-layer causal encoder followed by a 20-layer decoder. With CED, the decoder's global KV cache is projected from the final encoder hidden states rather than derived from each decoder layer's own hidden states. This allows the model to activate only **8B parameters per token during prefill** and **16B during decode**, substantially improving cost efficiency for input-heavy agentic workloads. **SWA Bounded Replay** reconstructs missing SWA KV states by replaying only the most recent *n*_win tokens, avoiding the need to persist SWA KV to SSD and reducing the persistent KV cache footprint to roughly **1/8** of that of DeepSeek-V4-Flash. **Compressed Sparse Attention 2 (CSA2).** DeepSeek-V4.1-Flash uses CSA2, which assigns each attention layer one of three static modes — **Full**, **Reindex**, or **Reuse** — to share main KV and indexer K across layers and reuse Top-K sparse-attention indices. In the decoder, a **Hierarchical Sparse Indexer** further restricts later indexing layers to a candidate pool constructed by the first Full Mode layer, bounding deeper indexer cost independently of context length. Combined with **FP4 main KV caching** (E2M1 format, one E4M3 scale per 16 channels), these designs reduce the global KV cache footprint to **890 bytes per token** — roughly **1/4** of DeepSeek-V4-Flash. **Additional architectural components** include Single-Pass mHC (revised residual-stream mixing with an efficient Mega-mHC kernel), Engram conditional memory (196B parameters, sparsely accessed via token-based lookup), and DSpark speculative decoding (semi-autoregressive draft generation with confidence-scheduled verification). The model uses 1 shared expert and 384 routed experts per MoE layer",
+      "summary": "",
+      "summary_kind": "source_excerpt"
+    }
+  ],
+  "sources": [
+    {
+      "id": "alphaxiv",
+      "name": "alphaXiv Hot",
+      "url": "https://api.alphaxiv.org/mcp/v1",
+      "last_attempt": "2026-10-09T03:55:11.171802+00:00",
+      "last_success": "2026-10-09T03:55:11.171802+00:00",
+      "status": "ok",
+      "count": 11
+    },
+    {
+      "id": "anthropic-engineering",
+      "name": "Claude Code / Engineering",
+      "url": "https://www.anthropic.com/engineering",
+      "last_attempt": "2026-10-09T03:55:11.171802+00:00",
+      "last_success": "2026-10-09T03:55:11.171802+00:00",
+      "status": "ok",
+      "count": 0
+    },
+    {
+      "id": "anthropic-news",
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/news",
+      "last_attempt": "2026-10-09T03:55:11.171802+00:00",
+      "last_success": "2026-10-09T03:55:11.171802+00:00",
+      "status": "ok",
+      "count": 9
+    },
+    {
+      "id": "arxiv-ai4s",
+      "name": "arXiv / AI4S",
+      "url": "https://github.com/",
+      "last_attempt": "2026-10-09T03:55:11.171802+00:00",
+      "last_success": "2026-10-09T03:55:11.171802+00:00",
+      "status": "ok",
+      "count": 12
+    },
+    {
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "last_attempt": "2026-10-09T03:55:11.171802+00:00",
+      "last_success": "2026-10-09T03:55:11.171802+00:00",
+      "status": "ok",
+      "count": 7
+    },
+    {
+      "id": "deepseek-models",
+      "name": "DeepSeek 模型发布",
+      "url": "https://huggingface.co/deepseek-ai",
+      "last_attempt": "2026-10-09T03:55:11.171802+00:00",
+      "last_success": "2026-10-09T03:55:11.171802+00:00",
+      "status": "ok",
+      "count": 1
+    },
+    {
+      "id": "hf-daily",
+      "name": "Hugging Face Daily Papers",
+      "url": "https://huggingface.co/papers",
+      "last_attempt": "2026-10-09T03:55:11.171802+00:00",
+      "last_success": "2026-10-09T03:55:11.171802+00:00",
+      "status": "ok",
+      "count": 12
+    },
+    {
+      "id": "isomorphic",
+      "name": "Isomorphic Labs",
+      "url": "https://www.isomorphiclabs.com/news",
+      "last_attempt": "2026-10-09T03:55:11.171802+00:00",
+      "last_success": "2026-10-09T03:55:11.171802+00:00",
+      "status": "ok",
+      "count": 2
+    },
+    {
+      "id": "kimi-models",
+      "name": "Kimi 模型发布",
+      "url": "https://huggingface.co/moonshotai",
+      "last_attempt": "2026-10-09T03:55:11.171802+00:00",
+      "last_success": "2026-10-09T03:55:11.171802+00:00",
+      "status": "ok",
+      "count": 0
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "url": "https://openai.com/news/rss.xml",
+      "last_attempt": "2026-10-09T03:55:11.171802+00:00",
+      "last_success": "2026-10-09T03:55:11.171802+00:00",
+      "status": "ok",
+      "count": 12
+    },
+    {
+      "id": "qwen-models",
+      "name": "Qwen 模型发布",
+      "url": "https://huggingface.co/Qwen",
+      "last_attempt": "2026-10-09T03:55:11.171802+00:00",
+      "last_success": "2026-10-09T03:55:11.171802+00:00",
+      "status": "ok",
+      "count": 3
+    },
+    {
+      "id": "recursion",
+      "name": "Recursion",
+      "url": "https://www.recursion.com/blogs",
+      "last_attempt": "2026-10-09T03:55:11.171802+00:00",
+      "last_success": "2026-10-09T03:55:11.171802+00:00",
+      "status": "ok",
+      "count": 0
+    },
+    {
+      "id": "semantic-scholar",
+      "name": "Semantic Scholar",
+      "url": "https://github.com/",
+      "last_attempt": "2026-10-09T03:55:11.171802+00:00",
+      "last_success": "2026-10-09T03:55:11.171802+00:00",
+      "status": "ok",
+      "count": 12
+    },
+    {
+      "id": "zotero",
+      "name": "Zotero 为你推荐",
+      "status": "pending",
+      "message": "等待论文任务导出；已归档论文仍可阅读",
+      "last_attempt": "2026-10-09T03:55:11.171802+00:00"
+    }
+  ],
+  "summaries": {
+    "status": "unconfigured",
+    "generated": 0,
+    "message": "未配置摘要 API，显示来源摘录"
+  },
+  "policy": {
+    "lookback_days": 30,
+    "max_items_per_source": 12,
+    "alpha_window": "30 days"
+  }
+}
