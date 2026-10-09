@@ -20,7 +20,7 @@ Hugging Face Daily API 与官网 HTML 提取需要随来源结构变化维护。
 
 GitHub Actions Secrets：`ZOTERO_ID`、`ZOTERO_KEY`、`OPENAI_API_KEY`、`OPENAI_API_BASE`、`ALPHAXIV_API_KEY`。可选 `SEMANTIC_SCHOLAR_API_KEY` 可改善共享 API 的限流体验。
 
-`CUSTOM_CONFIG` 继续使用原值；新闻中文摘要直接使用其中 `llm.generation_kwargs.model`，无需另设模型。每次新闻摘要最多 24 条，连续 3 次请求失败即停止，未生成的条目显示来源摘录。论文摘要数量仍由既有 `executor.max_paper_num` 决定。
+`CUSTOM_CONFIG` 复用原采集与 LLM 参数并去掉 `email` 节；Zotero 凭据补齐后设置仓库变量 `ZOTERO_ENABLED=true` 才启动论文推荐，配置未齐时先发布其他来源；新闻中文摘要直接使用其中 `llm.generation_kwargs.model`，无需另设模型。每次新闻摘要最多 24 条，连续 3 次请求失败即停止，未生成的条目显示来源摘录。论文摘要数量仍由既有 `executor.max_paper_num` 决定。
 
 不需要 `SENDER`、`RECEIVER`、`SENDER_PASSWORD`。历史邮件尚未导入；网站的长期归档从首次采集开始。
 
