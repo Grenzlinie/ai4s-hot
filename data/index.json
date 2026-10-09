@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-09T05:23:56.835960+00:00",
+  "generated_at": "2026-10-09T05:57:25.977695+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -2172,6 +2172,43 @@
       "topic_method": "local_similarity"
     },
     {
+      "id": "9295410fd8db0c0ac895ae20",
+      "url": "https://arxiv.org/abs/2610.12461",
+      "title": "OuroWorld: Bringing Any 3D World Alive as Diverse, Endlessly Looping 3D Cinemagraphs",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T05:57:25.977695+00:00",
+      "excerpt": "Recent 3D world models generate photorealistic, explorable scenes that remain frozen in time. OuroWorld is a mask-free framework that turns any static 3D Gaussian Splatting scene into a 3D cinemagraph: a dynamic scene with vivid, diverse motion looping seamlessly from any viewpoint. A vision-language model infers plausible dynamics and guides a video model to synthesize a reference video, which we lift and complete into multi-view videos. To learn from this imperfect supervision, we propose Inconsistency-Robust Periodic 4DGS: a Fourier-series deformation field guarantees looping by construction, while a Grounded Drift Field anchored at the reference view absorbs cross-view inconsistency. Unlike prior Eulerian methods limited to fluid-like motion, we capture general deformation, object motion, and illumination change. We introduce a ground-truth-free evaluation covering vividness, naturalness, loop seam coherence, and scene quality. On 39 reconstructed and generated scenes, OuroWorld outperforms all baselines and wins 70.8%-99.0% of user-study comparisons. Project page: https://ouroworld.userwei.com",
+      "summary": "本文提出了一种无需掩码的框架，可将任意静态三维高斯泼溅场景转化为多视角一致、无缝循环的三维动态影像，并通过傅里叶级数变形场保证循环性、以参考视图锚定的漂移场吸收跨视角不一致。该工作在39个重建和生成场景上进行了无真值评估，覆盖生动性、自然度、循环接缝一致性和场景质量，但摘要仅报告其优于基线并在用户研究中获胜，相关性能数字与结论仍需以论文正文和独立验证为准。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.12461",
+      "authors": [
+        "You-Zhe Xie",
+        "Ting-Wei Chou",
+        "Yu-Hsuan Li",
+        "Kaipeng Zhang",
+        "Zhixiang Wang",
+        "Yu-Lun Liu"
+      ],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "4fbb9a6d735bbb5244c93b0d68a213cd6d4c73b0ac986322308aa7f6de2c0e71",
+      "topic_method": "local_similarity"
+    },
+    {
       "id": "2794e21dec6bb8a7a7d6052e",
       "url": "https://arxiv.org/abs/2610.10528",
       "title": "Long-WAM: Scaling the Context of World-Action Models",
@@ -4026,8 +4063,8 @@
       "published_at": "2026-10-01T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Barclays scales Claude to upgrade operations and improve client experience Barclays, the British universal bank, is expanding its strategic collaboration with Anthropic to integrate secure, enterprise-grade AI systems across its global operations. Barclays is extending Claude across the bank to accelerate software development, modernize legacy systems, and improve operational efficiency. As part of this rollout, Barclays expects Claude Code adoption to reach 50% of its developer population by the end of 2026, rising to a majority of software engineers in 2027. Barclays builds with Claude to better serve customers Integrating AI across a large, complex, and highly regulated organization requires both capable technology and disciplined governance. Expanding its collaboration with Anthropic reflects a shared commitment to deploying AI responsibly, reliably, and in ways that deliver real outcomes, such as providing faster support for customers. “The true measure of any technology is the impact it has on customers, clients, and colleagues, and the outcomes it enables,” said Anne Marie Darling, Group Co-Chief Operating Officer at Barclays. “Expanding the use of Claude across Barclays is about more than adopting AI. It is about transforming how work gets done: reimagining processes, enhancing customer and client experiences, and building a simpler, more efficient organization within a secure and well-governed environment. By reducing time spent on routine activities and streamlining decision-making, we can enable colleagues to focus their expertise where it matters most, solving more complex problems, accelerating innovation, and delivering better outcomes for our customers, clients, and business.” “Software engineering and cyber security are both being reshaped by increasingly capable AI systems,” said Craig Bright, Group Co-Chief Operating Officer at Barclays. “We're moving towards AI as an increasingly agentic capability embedded within how we build, test, secure, and operate technology. At Barclays, we're using Claude to help modernize legacy platforms, improve software quality, and allow our technical experts to focus on the most complex challenges. The combinatio",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "Barclays正在扩大与Anthropic的战略合作，在全行范围内部署Claude以加速软件开发、现代化遗留系统并提升运营效率，并计划到2026年底使Claude Code覆盖其50%的开发者。该推广的用途是支持在高度监管环境中以受治理的方式应用AI，但公司所提效率与客户体验改善仍属其自身声明，尚未作为经独立验证的结论。",
+      "summary_kind": "ai_summary",
       "topic_leaf_ids": [
         "zt-c56da7bb87be",
         "zt-cd2ec49509af",
@@ -4247,8 +4284,8 @@
       "published_at": "2026-09-30T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Long-context LLM agents accumulate interaction histories that strain KV-cache memory and attention computation. Although sparse attention reduces these costs, heterogeneous cache representations and workflows hinder integration with existing inference engines, while prior sparse-serving abstractions support only specific layouts or workflows. We present SparseEngine, a ground-up, sparse-first inference engine whose shared lifecycle contract lets each method control its KV representation and computation while coordinating state transitions with common serving infrastructure. SparseEngine supports 15 methods across four categories and enables cross-request state management through Chain Cache, which resumes KV-eviction methods from retained history, and controllable Prefix-Cache Pruning, which removes KV from selected history regions while preserving logical-prefix matching. While maintaining method quality, SparseEngine delivers over 10x higher throughput with KV eviction, over 2.5x faster decoding at matched concurrency than vLLM, and over 2x end-to-end speedup on agent benchmarks. The code is available at https://github.com/CURRENTF/SparseEngine.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出并实现了 SparseEngine，一种以稀疏注意力为优先的推理引擎，通过共享生命周期契约支持四类共15种稀疏方法，并提供 Chain Cache 和可控 Prefix-Cache Pruning 机制。该引擎可用于长上下文大模型智能体的稀疏推理服务，但摘要中报告的性能提升数据来自作者测量，尚需用户根据自身工作负载验证其适用性。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2609.39068",
       "authors": [
         "Jitai Hao",
@@ -4335,8 +4372,8 @@
       "published_at": "2026-09-28T00:00:00+00:00",
       "first_seen": "2026-10-09T05:19:32.042444+00:00",
       "excerpt": "Reinforcement learning from verifiable rewards (RLVR) frequently reuses rollouts across multiple policy updates, increasing the mismatch between the current policy and the data-generating policy. We identify a sign-dependent gradient starvation problem in clipped policy optimization: clipping suppresses under-generated positive responses at the low-importance-weight tail while permitting severely over-generated negative responses to dominate the high-weight tail. To address this, we propose ReSPO (Reshaped Sequence Policy Optimization), which replaces clipping with a smooth, two-branch sequence-level kernel derived from an α-divergence variational objective and an exponential variance-control tilt. The positive branch preserves a nonzero gradient weight for under-generated positive responses, while the negative branch suppresses heavily over-generated negative responses. We demonstrate that ReSPO effectively learns from long positive reasoning trajectories during early training, even when accumulated policy drift relegates them to the low-importance-weight tail. On dense and MoE Qwen3 models, ReSPO accelerates early optimization, improves final training scores, and achieves higher held-out benchmark performance under a rollout reuse, validating our approach on importance-weight tail control in off-policy learning.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出ReSPO，用基于α散度变分目标与指数方差控制倾斜的平滑双分支序列级核替代裁剪，以缓解离策略学习中裁剪导致的符号相关梯度饥饿，并重新利用低重要性权重尾部的正样本、抑制高权重尾部过度生成的负样本。该方法适用于存在 rollout 复用、当前策略与数据生成策略失配的 RLVR 训练场景，可在 Qwen3 dense和MoE模型上加速早期优化、提高最终训练分数与留出基准表现；这些结果来自作者报告，尚需独立验证。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2609.35433",
       "authors": [
         "Yihang Chen",
@@ -4465,8 +4502,8 @@
       "published_at": "2026-09-23T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Subscribe to Anthropic Science Features on AI-assisted discoveries, practical workflows, and field notes across the sciences. We’re introducing a new life sciences research group and laboratory at Anthropic. Our focus is on fundamental biology research using Claude: exploring datasets of DNA to identify uncharacterized protein families, generating hypotheses at scale, and testing them through experiments in the lab. This post introduces the team behind this work and shares early results in which Claude discovered a novel enzyme system with properties reminiscent of CRISPR, with only high-level direction from our scientists. Many discoveries that have revolutionized biology and medicine started with a scientist noticing something odd in the staggering diversity of molecular machines found in nature. Restriction enzymes, proteins that cut DNA at specific short sequences, were found in bacterial immune systems, where they destroy the DNA of invading viruses. Researchers realized they could use these enzymes to cut DNA at chosen places and splice genes from one organism into another, which launched the biotechnology industry. Taq polymerase, an enzyme that copies DNA at high temperatures, was identified in a bacterium in a Yellowstone hot spring. It became the basis for PCR, the DNA-copying method used in much of modern diagnostics. CRISPR was first noticed as an unusual repeat sequence in the DNA of certain bacteria, and is now the foundation of gene editing-based medicines. In the spring of 2026, we formed a research group to see whether general AI models can systematize and accelerate such discoveries. We believe that this acceleration will come from establishing a new way of doing biology research, in which agents collaborate with humans in every step of the process. Developing this new way of working required that we build our own lab and a single team working on everything from training Claude in biology to running experiments in the lab. Today, we’re sharing early results from one of our first research programs, in which Claude autonomously discovered a novel enzyme system that is associated with an array of DNA repeats, a pattern reminiscent of CRISPR. Altho",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "据该报告，Anthropic 成立生命科学研究团队和实验室，让 Claude 在高层次指导下探索 DNA 数据集、识别未表征蛋白家族并生成假设，早期结果称 Claude 自主发现了一个与多种 DNA 重复序列相关、类似 CRISPR 的新型酶系统。该工作展示了一种以智能体与人类协作贯穿各环节的生物学研究新方式，但其结果属于公司早期报告，尚需进一步验证，文中也未给出可核实的性能数字。",
+      "summary_kind": "ai_summary",
       "topic_leaf_ids": [
         "zt-ebc110d5a04c"
       ],
@@ -4499,8 +4536,8 @@
       "published_at": "2026-09-20T08:46:47+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "🤖 ModelScope | 🤗 HuggingFace | 📑 Blog | 🖥️ Demo | 🫨 Discord ## Introduction We are excited to open-source **Qwen-Image-2.1**, a unified text-to-image generation and image editing model in the Qwen family. With just **7B parameters in its visual generation component** (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: - **Compact and Efficient** — A lightweight architecture with mixed-granularity attention and prefix KV cache reuse delivers strong image quality at low computational cost. - **Native Transparency, Unified Creation and Editing** — Generate regular or transparent (RGBA) images from text, edit transparent layers, and extract subjects from photographs—all in one model. - **Versatile Editing** — Support up to **10 reference images**, specify local edits via circles, painted annotations, or separate masks, and preserve identity for people and products. - **Realistic Textures and Refined Aesthetics** — Improved typography, portrait lighting, and fine details for more visually compelling results. # Qwen-Image-2.1-PE-I2I Image editing **prompt rewriting model** for [Qwen-Image-2.1](https://huggingface.co/Qwen/Qwen-Image-2.1). A fine-tuned Qwen3.5-VL 9B that takes a vague editing instruction plus input image(s) and produces a precise, actionable prompt suitable for downstream image editing. For more details, see the [GitHub repo](https://github.com/QwenLM/Qwen-Image-2.1) and [Blog](https://qwen.ai/blog?id=qwen-image-2.1). ## Quick Start ### Installation ```bash pip install transformers>=5.4.0 torch>=2.4.0 accelerate pillow ``` ### Usage with Transformers ```python import json import torch from PIL import Image from transformers import AutoModelForImageTextToText, AutoProcessor model_id = \"Qwen/Qwen-Image-2.1-PE-I2I\" processor = AutoProcessor.from_pretrained(model_id) model = AutoModelForImageTextToText.from_pretrained( model_id, dtype=torch.bfloat16, device_map=\"auto\" ).eval() # Load the system prompt shipped with the model import huggingface_hub sys_prompt_path = huggingface_hub.hf_hub_download(model_id, \"system_prompt.txt\") system_prompt = open(sys_pro",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文开源了Qwen-Image-2.1统一文生图与图像编辑模型，并发布面向该模型的图像编辑提示词重写模型Qwen-Image-2.1-PE-I2I，后者基于微调的Qwen3.5-VL 9B，可将模糊的编辑指令与输入图像转换为精确、可执行的提示词。该重写模型可供下游图像编辑流程用于改善提示质量，但摘要未给出重写准确率或编辑性能指标，相关能力仍需按官方文档和实际测试确认。",
+      "summary_kind": "ai_summary",
       "topic_leaf_ids": [],
       "topic_ids": [],
       "topic_version": "24f3c0d860192b5dd7c4fcc833cc81142f5e7680b37792271273e76c03bc027a",
@@ -4527,8 +4564,8 @@
       "published_at": "2026-09-20T08:45:29+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "🤖 ModelScope | 🤗 HuggingFace | 📑 Blog | 🖥️ Demo | 🫨 Discord ## Introduction We are excited to open-source **Qwen-Image-2.1**, a unified text-to-image generation and image editing model in the Qwen family. With just **7B parameters in its visual generation component** (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: - **Compact and Efficient** — A lightweight architecture with mixed-granularity attention and prefix KV cache reuse delivers strong image quality at low computational cost. - **Native Transparency, Unified Creation and Editing** — Generate regular or transparent (RGBA) images from text, edit transparent layers, and extract subjects from photographs—all in one model. - **Versatile Editing** — Support up to **10 reference images**, specify local edits via circles, painted annotations, or separate masks, and preserve identity for people and products. - **Realistic Textures and Refined Aesthetics** — Improved typography, portrait lighting, and fine details for more visually compelling results. # Qwen-Image-2.1-PE-T2I Text-to-image **prompt rewriting model** for [Qwen-Image-2.1](https://huggingface.co/Qwen/Qwen-Image-2.1). A fine-tuned Qwen3.5-VL 9B that turns a brief image request in any language into a detailed English prompt plus a recommended aspect ratio. For more details, see the [GitHub repo](https://github.com/QwenLM/Qwen-Image-2.1) and [Blog](https://qwen.ai/blog?id=qwen-image-2.1). ## Quick Start ### Installation ```bash pip install transformers>=5.4.0 torch>=2.4.0 accelerate pillow ``` ### Usage with Transformers ```python import json import torch from transformers import AutoModelForCausalLM, AutoTokenizer model_id = \"Qwen/Qwen-Image-2.1-PE-T2I\" tokenizer = AutoTokenizer.from_pretrained(model_id) model = AutoModelForCausalLM.from_pretrained( model_id, dtype=torch.bfloat16, device_map=\"auto\" ).eval() # Load the system prompt shipped with the model import huggingface_hub sys_prompt_path = huggingface_hub.hf_hub_download(model_id, \"system_prompt.txt\") system_prompt = open(sys_prompt_path).read().strip() user_prompt = \"一只在雨中弹吉他的柯基\" text = tok",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本次发布开源了 Qwen-Image-2.1 统一文生图与图像编辑模型，并推出 Qwen-Image-2.1-PE-T2I 提示改写模型（基于 Qwen3.5-VL 9B 微调），可将任意语言的简短图像请求转换为详细英文提示词及推荐宽高比。该提示改写模型可用于为 Qwen-Image-2.1 生成配套提示词，但其具体改写质量与效果需由使用者结合实际任务验证，发布方所述改进均属其声明。",
+      "summary_kind": "ai_summary",
       "topic_leaf_ids": [],
       "topic_ids": [],
       "topic_version": "8fc35709da6e3bf41640a4f1df31045121f481ab01a5a744df103c6ef20417bb",
@@ -4555,8 +4592,8 @@
       "published_at": "2026-09-18T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Partnering with Accenture on embedded evaluation We're partnering with Accenture on independent evaluation of frontier AI. This is an important step toward the commitment, made in our CEO’s essay “We Must Pace the Frontier,” to embed evaluators within Anthropic. The partnership will be led by Faculty, Accenture’s specialist AI business, and will include evaluating and red-teaming models, conducting alignment assessments, and testing model safeguards. Accenture helps businesses and governments deploy AI across many industries. Their understanding of how enterprises use AI in practice informs their safety approach, and they will bring that perspective to evaluating our models. Anthropic and Accenture each expect to invest at least $1 billion in building capacity in this area over the next five years. Embedded evaluation is new, and many of the details about how it will operate are still being worked out. Unlike today’s external evaluators, embedded evaluators will work inside AI companies, with access comparable to an employee's. That access allows them to watch models take shape in training, follow the decisions that govern how those models are built and deployed, and speak directly to employees. From this vantage point, embedded evaluators can assess how a company operates, verify that it is keeping its safety commitments, and identify blind spots. They can also report incidents and give the public a more informed account of benefits and risks. To be clear, independent embedded evaluators do not reduce our accountability, but help to make it more verifiable. The safety of our models remains our responsibility. There are, as yet, no standards for what information embedded evaluators should have access to, or how they should report what they find. There is also no settled system for funding independent evaluation. Long-term, we think funding should come from pooled or government sources, as we called for in our Advanced AI Framework in June. As neither exists today, we plan to work with different evaluators under different funding arrangements. Given the importance and urgency of this work, Anthropic will fund Accenture's work directly. We are also in dialogue wit",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文报告Anthropic与Accenture合作，由Accenture旗下AI业务Faculty牵头，对前沿AI模型开展独立嵌入式评估，包括评估与红队测试、对齐评估及模型保障措施测试。该合作旨在通过嵌入评估人员观察模型训练与部署过程来核查安全承诺，但嵌入式评估尚无信息访问和报告标准，其具体运作细节仍在制定中，模型安全责任仍由Anthropic承担。",
+      "summary_kind": "ai_summary",
       "topic_leaf_ids": [],
       "topic_ids": [],
       "topic_version": "b72b79570cb3b72be9d8cd94471fef314a2ce94a3993ecf80bbfff05e25530cb",
@@ -4585,8 +4622,8 @@
       "published_at": "2026-09-17T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Introducing the Life Sciences Verification Program Today, we are introducing the Life Sciences Verification Program (LSVP), which gives life science professionals access to our Mythos, Opus, and Sonnet models with a refined set of safeguards more permissive for biology-related work. We have already onboarded dozens of organizations through an early-access program, and are now opening applications to the broader life science community (join waitlist here). The program is launching in beta, initially for teams and institutions. We will continue to improve the program and expand access to individual Pro and Max plans over time. The LSVP is designed to enable life science professionals to use our models across a wide range of tasks that are currently blocked in our generally available Fable models, like drug discovery, research biology, clinical development, and manufacturing. It’s built for teams of all kinds—from academic labs to startups, pharma companies, and more. Verification and access types To qualify for these grants, each applicant goes through a verification process that includes a review of their research credentials, security standards, and ethical research oversight. Once verified, teams may apply for two types of LSVP grants, “Standard Use” or “High-risk Use,” depending on their access needs. These grants can be used through all our product surfaces, including Claude Science, Claude.ai, Claude Code and the API. Standard Use grants are suitable for most life science work, including the majority of biology research and development workflows. These grants can be extended to entire teams for diverse, daily workloads, and are renewed once a year. They give those teams access to our Mythos, Opus, and Sonnet models, with refined classifiers that are more permissive for science tasks than our generally available models. Standard Use grants apply to Mythos 5.1, Opus 5, and Sonnet 5 today, and to future models as they launch. They’re specifically designed to enable the full breadth of life science activities in areas spanning basic science, R&D, supply chain and manufacturing, clinical development, quality assurance, regulatory affairs, investing and diligence,",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文介绍了生命科学验证计划，该计划面向生命科学专业人员提供经过调整的Mythos、Opus和Sonnet模型访问权限，采用对生物学相关工作更为宽松的保障措施，并通过验证流程审核申请者的研究资质、安全标准和伦理监督，提供标准使用和高风险使用两类授权。该计划目前处于测试阶段，主要面向团队和机构，旨在让生命科学专业人员能够将这些模型用于当前在通用Fable模型中被阻止的广泛任务，如药物发现、研究生物学、临床开发和制造等领域。",
+      "summary_kind": "ai_summary",
       "topic_leaf_ids": [
         "zt-ebc110d5a04c"
       ],
@@ -4648,8 +4685,8 @@
       "published_at": "2026-09-14T03:47:26+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "🤖 ModelScope | 🤗 HuggingFace | 📑 Blog | 🖥️ Demo | 🫨 Discord | 💬 WeChat ## Introduction We are excited to open-source **Qwen-Image-2.1**, a unified text-to-image generation and image editing model in the Qwen family. With just **7B parameters in its visual generation component** (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: - **Compact and Efficient** — A lightweight architecture with mixed-granularity attention and prefix KV cache reuse delivers strong image quality at low computational cost. - **Native Transparency, Unified Creation and Editing** — Generate regular or transparent (RGBA) images from text, edit transparent layers, and extract subjects from photographs—all in one model. - **Versatile Editing** — Support up to **10 reference images**, specify local edits via circles, painted annotations, or separate masks, and preserve identity for people and products. - **Realistic Textures and Refined Aesthetics** — Improved typography, portrait lighting, and fine details for more visually compelling results. For more details, see the [GitHub repo](https://github.com/QwenLM/Qwen-Image-2.1) and [Blog](https://qwen.ai/blog?id=qwen-image-2.1). ## Quick Start ### Installation ```bash pip install torch>=2.4.0 pip install transformers>=5.17 pip install git+https://github.com/huggingface/diffusers pip install accelerate pillow ``` ### Text-to-Image ```python import torch from diffusers import QwenImage21Pipeline pipe = QwenImage21Pipeline.from_pretrained( \"Qwen/Qwen-Image-2.1\", torch_dtype=torch.bfloat16 ).to(\"cuda\") image = pipe( prompt=\"A neon shop sign that reads \\\"QWEN IMAGE 2.1\\\", rainy night, reflections on wet pavement\", width=2048, height=2048, num_inference_steps=40, generator=torch.Generator(\"cuda\").manual_seed(42), ).images[0] image.save(\"t2i_example.png\") ``` ### Image Editing ```python import torch from PIL import Image from diffusers import QwenImage21Pipeline pipe = QwenImage21Pipeline.from_pretrained( \"Qwen/Qwen-Image-2.1\", torch_dtype=torch.bfloat16 ).to(\"cuda\") input_image = Image.open(\"input.png\") image = pipe( prompt=\"Change the background t",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "Qwen-Image-2.1 是一个统一的开源文生图与图像编辑模型，其视觉生成组件为7B参数、包含32层单流DiT，并支持原生透明（RGBA）图像生成与编辑、最多10张参考图、通过圈选或掩码进行局部编辑，以及改善文字排版和细节。该版本可用于文生图与图像编辑任务，并提供了通过diffusers加载和调用的示例，但具体性能与效果需以实际使用和进一步验证为准。",
+      "summary_kind": "ai_summary",
       "topic_leaf_ids": [],
       "topic_ids": [],
       "topic_version": "86fbf419df5964b12e4d0132a50cb7f99bc769f9a187a8ba9cb4b0a6ab85d439",
@@ -4677,8 +4714,8 @@
       "published_at": "2026-09-10T02:17:58+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "# DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression Technical Report 👁️ ## Introduction We introduce **DeepSeek-V4.1-Flash**, a multimodal Mixture-of-Experts (MoE) model with 552B backbone parameters and support for contexts of up to one million tokens. The model natively processes images and text, and generates text autoregressively. **Architecture.** DeepSeek-V4.1-Flash adopts a **Causal Encoder-Decoder (CED)** architecture: a 40-layer Transformer organized as a 20-layer causal encoder followed by a 20-layer decoder. With CED, the decoder's global KV cache is projected from the final encoder hidden states rather than derived from each decoder layer's own hidden states. This allows the model to activate only **8B parameters per token during prefill** and **16B during decode**, substantially improving cost efficiency for input-heavy agentic workloads. **SWA Bounded Replay** reconstructs missing SWA KV states by replaying only the most recent *n*_win tokens, avoiding the need to persist SWA KV to SSD and reducing the persistent KV cache footprint to roughly **1/8** of that of DeepSeek-V4-Flash. **Compressed Sparse Attention 2 (CSA2).** DeepSeek-V4.1-Flash uses CSA2, which assigns each attention layer one of three static modes — **Full**, **Reindex**, or **Reuse** — to share main KV and indexer K across layers and reuse Top-K sparse-attention indices. In the decoder, a **Hierarchical Sparse Indexer** further restricts later indexing layers to a candidate pool constructed by the first Full Mode layer, bounding deeper indexer cost independently of context length. Combined with **FP4 main KV caching** (E2M1 format, one E4M3 scale per 16 channels), these designs reduce the global KV cache footprint to **890 bytes per token** — roughly **1/4** of DeepSeek-V4-Flash. **Additional architectural components** include Single-Pass mHC (revised residual-stream mixing with an efficient Mega-mHC kernel), Engram conditional memory (196B parameters, sparsely accessed via token-based lookup), and DSpark speculative decoding (semi-autoregressive draft generation with confidence-scheduled verification). The model uses 1 shared expert and 384 routed experts per MoE layer",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文介绍DeepSeek-V4.1-Flash多模态MoE模型，采用因果编码器-解码器架构、SWA有界回放、CSA2稀疏注意力、FP4主KV缓存及Engram条件记忆等设计，支持最多百万token上下文，并在预填充和解码时分别激活约8B和16B参数。该发布可用于处理输入密集型智能体工作负载及长上下文多模态任务；但因内容为模型发布材料，其效率与占用等数据来自技术报告或公司声明，尚需独立复现验证。",
+      "summary_kind": "ai_summary",
       "topic_leaf_ids": [],
       "topic_ids": [],
       "topic_version": "81a9cc4c25f075ce8e2773369f32e2a9857a69ea1413f6fd008eb7f372b70e5e",
@@ -5008,13 +5045,13 @@
       }
     ],
     "version": "f8ca96dad73cb232b56978384a63d81026ef1008b3efd1a04b13649d8e251653",
-    "last_success": "2026-10-09T05:23:56.835960+00:00",
+    "last_success": "2026-10-09T05:57:25.977695+00:00",
     "method": "Local TF-IDF similarity to Zotero collection examples; inferred labels",
     "classification": {
       "status": "ok",
-      "classified": 18,
+      "classified": 1,
       "method": "local_tfidf",
-      "unclassified": 32
+      "unclassified": 33
     }
   },
   "sources": [
@@ -5022,8 +5059,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-10-09T05:23:56.835960+00:00",
-      "last_success": "2026-10-09T05:23:56.835960+00:00",
+      "last_attempt": "2026-10-09T05:57:25.977695+00:00",
+      "last_success": "2026-10-09T05:57:25.977695+00:00",
       "status": "ok",
       "count": 11
     },
@@ -5031,8 +5068,8 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-10-09T05:23:56.835960+00:00",
-      "last_success": "2026-10-09T05:23:56.835960+00:00",
+      "last_attempt": "2026-10-09T05:57:25.977695+00:00",
+      "last_success": "2026-10-09T05:57:25.977695+00:00",
       "status": "ok",
       "count": 0
     },
@@ -5040,8 +5077,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-10-09T05:23:56.835960+00:00",
-      "last_success": "2026-10-09T05:23:56.835960+00:00",
+      "last_attempt": "2026-10-09T05:57:25.977695+00:00",
+      "last_success": "2026-10-09T05:57:25.977695+00:00",
       "status": "ok",
       "count": 9
     },
@@ -5049,8 +5086,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-10-09T05:23:56.835960+00:00",
-      "last_success": "2026-10-09T05:23:56.835960+00:00",
+      "last_attempt": "2026-10-09T05:57:25.977695+00:00",
+      "last_success": "2026-10-09T05:57:25.977695+00:00",
       "status": "ok",
       "count": 12
     },
@@ -5058,8 +5095,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-10-09T05:23:56.835960+00:00",
-      "last_success": "2026-10-09T05:23:56.835960+00:00",
+      "last_attempt": "2026-10-09T05:57:25.977695+00:00",
+      "last_success": "2026-10-09T05:57:25.977695+00:00",
       "status": "ok",
       "count": 7
     },
@@ -5067,8 +5104,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-10-09T05:23:56.835960+00:00",
-      "last_success": "2026-10-09T05:23:56.835960+00:00",
+      "last_attempt": "2026-10-09T05:57:25.977695+00:00",
+      "last_success": "2026-10-09T05:57:25.977695+00:00",
       "status": "ok",
       "count": 1
     },
@@ -5076,8 +5113,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-10-09T05:23:56.835960+00:00",
-      "last_success": "2026-10-09T05:23:56.835960+00:00",
+      "last_attempt": "2026-10-09T05:57:25.977695+00:00",
+      "last_success": "2026-10-09T05:57:25.977695+00:00",
       "status": "ok",
       "count": 12
     },
@@ -5085,8 +5122,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-10-09T05:23:56.835960+00:00",
-      "last_success": "2026-10-09T05:23:56.835960+00:00",
+      "last_attempt": "2026-10-09T05:57:25.977695+00:00",
+      "last_success": "2026-10-09T05:57:25.977695+00:00",
       "status": "ok",
       "count": 2
     },
@@ -5094,8 +5131,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-10-09T05:23:56.835960+00:00",
-      "last_success": "2026-10-09T05:23:56.835960+00:00",
+      "last_attempt": "2026-10-09T05:57:25.977695+00:00",
+      "last_success": "2026-10-09T05:57:25.977695+00:00",
       "status": "ok",
       "count": 0
     },
@@ -5103,8 +5140,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-10-09T05:23:56.835960+00:00",
-      "last_success": "2026-10-09T05:23:56.835960+00:00",
+      "last_attempt": "2026-10-09T05:57:25.977695+00:00",
+      "last_success": "2026-10-09T05:57:25.977695+00:00",
       "status": "ok",
       "count": 12
     },
@@ -5112,8 +5149,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-10-09T05:23:56.835960+00:00",
-      "last_success": "2026-10-09T05:23:56.835960+00:00",
+      "last_attempt": "2026-10-09T05:57:25.977695+00:00",
+      "last_success": "2026-10-09T05:57:25.977695+00:00",
       "status": "ok",
       "count": 3
     },
@@ -5121,8 +5158,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-10-09T05:23:56.835960+00:00",
-      "last_success": "2026-10-09T05:23:56.835960+00:00",
+      "last_attempt": "2026-10-09T05:57:25.977695+00:00",
+      "last_success": "2026-10-09T05:57:25.977695+00:00",
       "status": "ok",
       "count": 0
     },
@@ -5130,8 +5167,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-10-09T05:23:56.835960+00:00",
-      "last_success": "2026-10-09T05:23:56.835960+00:00",
+      "last_attempt": "2026-10-09T05:57:25.977695+00:00",
+      "last_success": "2026-10-09T05:57:25.977695+00:00",
       "status": "ok",
       "count": 12
     },
@@ -5140,7 +5177,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 20,
-      "last_attempt": "2026-10-09T05:23:56.835960+00:00",
+      "last_attempt": "2026-10-09T05:57:25.977695+00:00",
       "last_success": "2026-10-09T05:23:32.221355+00:00",
       "run_id": "37883000672",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -5148,7 +5185,7 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 24,
+    "generated": 11,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash"
   },
