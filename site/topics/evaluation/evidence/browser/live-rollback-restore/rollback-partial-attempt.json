@@ -1,0 +1,21 @@
+{
+  "status": "partial_browser_attempt",
+  "evidence_kind": "reconstructed from actual tool assertion output, not a completed native receipt",
+  "rollback_archive_revision": "b83dd0839f18a599fc7b883cbee5b8d39915a1fe",
+  "frontend_revision": "72cd88d6ba746478434692c0b28e016a543cc438",
+  "checks_before_failure": [
+    "actual rollback archive revision",
+    "frontend revision remains current",
+    "actual native archive schema1",
+    "archive content matches rollback manifest",
+    "history archive marker visible",
+    "v2 favorite still displayed after actual rollback",
+    "v2 read still displayed after actual rollback",
+    "local correction added during v1 is shown",
+    "profile storage unchanged since v1 correction baseline"
+  ],
+  "failed_assertion": "unavailable stable URL topic clears with explanation",
+  "failure": "AssertionError: actual false, expected true",
+  "follow_up_attempt": "Actual restore had already completed; second attempt failed expected rollback archive revision. No further historical rollback was requested or performed by browser agent.",
+  "limitation": "Historical v1 has no stable topic alias metadata; v2 stable-topic filters cannot be assumed preserved. The notice assertion failed, so no complete rollback browser pass is claimed."
+}

@@ -74,3 +74,5 @@ python scripts/configure.py --env .env --config config.local.yaml --run
 新版支持历史 schema 1 与新版 schema 2 归档。每次部署的 `deployment-manifest.json` 记录精确的代码、公开归档 commit 与资源 hash。每日采集或构建失败时不会提交新归档或发布，仍保留最后一次成功页面；目录读取失败时显示上次目录和最近成功时间。
 
 维护者通过 `Restore public Pages snapshot` 手动工作流恢复快照：填入 manifest 中的完整 `code_revision` 和 `archive_revision`。`publish=false` 先生成审查 artifact，`publish=true` 发布；流程只读取公开快照，不采集、不调用摘要模型、不需要服务密钥。历史前端仅支持 schema 1 时禁止与 schema 2 混搭；可使用当前前端搭配历史归档。浏览器收藏、已读和本机修正按条目 ID 保留；退役主题修正需要复核。
+
+实际回滚演练限制：历史schema1归档没有新版稳定主题ID的反向映射，切回该归档期间，新版主题筛选会被清除；收藏、已读保持。恢复schema2后，旧主题链接及本机修正恢复正常。2026-10-09已实际验证公开快照回滚和恢复，当前线上为新版。

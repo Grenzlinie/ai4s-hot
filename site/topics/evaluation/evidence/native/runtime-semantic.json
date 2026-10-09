@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "dataset_sha256": "ce538bfd834905c7f00d102babec0476d656e057f9e172c265764d0a9b1af38e",
+  "code_sha": "72cd88d6ba746478434692c0b28e016a543cc438",
+  "working_tree_dirty": false,
+  "runner": {
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "python": "3.13.16",
+    "cpu_count": 4
+  },
+  "backend": "semantic",
+  "stages": [
+    {
+      "stage": "cold",
+      "status": "ok",
+      "backend_requested": "semantic",
+      "backend_actual": [
+        "semantic"
+      ],
+      "reference_n": 500,
+      "available_deduplicated_reference_n": 522,
+      "public_item_n": 200,
+      "force": true,
+      "classified_n": 200,
+      "network_seconds": 13.8921,
+      "classification_seconds": 113.8893,
+      "total_seconds": 127.9181,
+      "peak_rss_bytes": 1712734208,
+      "rss_unit": "bytes",
+      "runtime_pass": true,
+      "reference_exclusion": {
+        "input_reference_n": 532,
+        "excluded_holdout_reference_n": 0
+      },
+      "gold_consumed": false
+    },
+    {
+      "stage": "warm",
+      "status": "ok",
+      "backend_requested": "semantic",
+      "backend_actual": [
+        "semantic"
+      ],
+      "reference_n": 500,
+      "available_deduplicated_reference_n": 522,
+      "public_item_n": 200,
+      "force": true,
+      "classified_n": 200,
+      "network_seconds": 13.8993,
+      "classification_seconds": 107.1957,
+      "total_seconds": 121.2323,
+      "peak_rss_bytes": 1686589440,
+      "rss_unit": "bytes",
+      "runtime_pass": true,
+      "reference_exclusion": {
+        "input_reference_n": 532,
+        "excluded_holdout_reference_n": 0
+      },
+      "gold_consumed": false
+    }
+  ],
+  "model_cold_cache_verified": true,
+  "runtime_pass": true,
+  "quality_pass": false,
+  "quality_note": "Performance receipt only; human labels and quality gates are separate."
+}

@@ -1,6 +1,8 @@
 # 实施证据索引
 
-当前状态：v2 影子实施；生产默认 v1；用户在 2026-10-09 选择“先保持影子测试，稍后标注”。人工质量、dev 校准、留出评分和最终切换均未完成，不 archive。
+当前状态（2026-10-09）：用户最新明确“直接采用新版”，最终提交`72cd88d6ba746478434692c0b28e016a543cc438`已推送，默认v2已发布并HTTP读回，不新增opt-in/selector。真实质量为`unmeasured`；人工gold目前0，dev校准和holdout质量属于Deferred measurement，不阻塞本次上线，也未完成。Pages `37892904488`、CI `37892904490`、semantic shadow `37892914767`均成功；原生恢复与HTTP读回完成。逐条error收据、进一步故障注入及延期量化仍保持未勾，不archive。
+
+当前离线汇总：148/148 Python测试，前端29+37=66行为断言；真实Chrome 1440px/390px矩阵25+4=29项通过，另有2项新版标记检查（仅路由调整公开fixture的schema，用于UI标记，不是分类质量）。本机回滚9项通过但未替代远端原生恢复/部署收据。下方历史段落保持当时版本与边界，任何“默认v1/未部署”等描述仅指历史验证时点。
 
 | 任务 | 已完成证据 | 边界 |
 |---|---|---|
@@ -14,7 +16,7 @@
 | 本机影子 | 53主题、532参考、106公开输入；Zotero20.147s、词语分类1.052s、峰值76,251,136bytes | macOS本机词语后端；不是500/200 native runner或准确率证明 |
 | OpenSpec结构 | `openspec validate --all --strict` 4/4 | 仅结构合法，不计实现/质量完成 |
 
-## 独立离线验证（2026-10-09）
+## 历史独立离线验证（2026-10-09，保留当时版本与状态）
 
 独立 Agent 执行 `../site-venv/bin/python -m unittest discover -s site/tests`：108/108 通过。新增 `test_shadow_safety.py` 的8项合成回归通过：mock Zotero 私有语料只在内存使用；公开影子文件和日志无私有 sentinel；采集异常仅输出异常类型且不创建 artifact；无效公开字段、嵌套 classification/override 私有字段和未知/重复身份被拒绝；原子写入校验失败保留原文件；按 item 选择的 backfill 仅传入对应 overrides，保留 v1 alias 迁移。测试对所有修改环境变量的 CLI 调用恢复环境，生产缺省仍为 v1。
 
@@ -32,14 +34,45 @@
 
 用户授权直接采用v2后，独立新增实际模块集成 `test_v2_publication_integration.py`：2/2通过。仅mock Zotero与新闻输入，真实执行 collector→v2 identity/classifier→公开schema验证→build→manifest，确认schema2、exact标签receipt、quality_status=unmeasured、calibration_status=pending_human_gold与私有sentinel不公开。workflow静态验证TOPICS_MODE=v2/私密配置Secret已传入、build成功后才commit site-data、manifest成功后才上传Pages，无always绕过。最后全套Python148/148通过、前端行为29断言与explorer37断言通过。失败不覆盖远端快照仅由workflow步骤顺序和默认success guard证明，未执行远端故障注入；未部署、提交或读取真实凭据，浏览器/Pages/原生Actions仍由主Agent验收。
 
-## 待补证据
+## 当前技术完成项与对应证据
 
-- 人工确认gold（目前0）、四轴阳性支持/非研究支持、独立复核、同源排除、v1同输入基线、dev选择依据、冻结holdout指标。
-- 固定Ubuntu runner 500真实去重参考/200公共新内容 cold/warm 与本地语义候选RSS；不足500不可复制补足。
-- 1440px/390px真实浏览器矩阵、发布/回滚收据、Pages HTTP读回。
-- `.github/workflows/topics-shadow.yml`仅产出public-shadow artifact，无生产写入或deploy权限。benchmark步骤即使不满足门槛仍保存失败收据，job绿色不能代替收据runtime_pass。
-- CI固定OpenSpec1.13.0并检查新前端逻辑。实际Actions链接将在运行后补入。
+| 任务 | 证据 | 边界 |
+|---|---|---|
+| 3.1 | `site/topics_{corpus,candidates,decision,classifier,schema,reclassify}.py`；`test_topics_v2_core.py`、`test_core_independent.py`、`test_thresholds.py` | 乱序、完整签名/阈值/backend失效、公开不透明收据；不是准确率证明 |
+| 3.3 | `test_topics_v2_core.py` T03–T08，catalog/thresholds独立回归 | 四轴、冷启动、OOV、组织范围与证据不足合成检查 |
+| 4.3 | `browser/version-marker/results.json`的纠错打开/本机生效/刷新/公开导出，`test_identity_curation.py`导入校验 | 访客修正本机范围，CLI维护者导入；无前端写凭据 |
+| 5.2–5.5 | `site/topics/evaluation/evidence/browser/version-marker/results.json`25项、`combinations.json`4项；同目录`input-manifest.json`绑定静态资源 | 真实Chrome 154.0.8037.99、1440×1000/390×844；树键盘、搜索、URL历史、手机焦点、纠错与空结果；公开理由另经schema/privacy测试 |
+| 6.1 | 历史独立验证中的全套148项Python和66项前端断言；对应测试文件保留 | 合成/集成契约，未给真实holdout精度 |
+| 7.1 | `.github/workflows/site-ci.yml`固定`@fission-ai/openspec@1.13.0`，本索引与strict 4/4 | CI行为已实现；最终72cd原生CI运行结果仍单独等待 |
+
+浏览器完整说明、初次矩阵、截图与本机回滚：`site/topics/evaluation/evidence/browser/README.md`、`results.json`、`combinations.json`、`rollback.json`。新版标记复验在`browser/version-marker/`；其2项标记检查只改变公开fixture的schema，不冒充真实v2精度或线上读回。本机旧UI不能解析新版q/topics URL筛选，限制已如实保留；收藏、已读、纠错数据及恢复新版后的URL状态通过。
+
+## 原生运行与当前待补证据
+
+- 历史旧提交`fe70`词语影子[37891067362](https://github.com/Grenzlinie/ai4s-hot/actions/runs/37891067362)成功，不替代最终提交的原生收据。
+- 最终`72cd88d6`：[Pages 37892904488](https://github.com/Grenzlinie/ai4s-hot/actions/runs/37892904488)、[CI 37892904490](https://github.com/Grenzlinie/ai4s-hot/actions/runs/37892904490)、[semantic shadow 37892914767](https://github.com/Grenzlinie/ai4s-hot/actions/runs/37892914767)在本次文档快照进行中。最终状态、500/200 cold/warm收据和默认v2 HTTP读回待补；job绿色不能替代runtime_pass。
+- 真实远端恢复/回滚、每日分类/同步失败不覆盖有效快照的故障注入，以及最终默认版本/前端/归档HTTP一致性尚未记为完成；本机回滚和workflow success guard不是这些原生收据。
+- 3.6逐条error状态尚缺具体失败收据，保持未勾；语义模型原生运行尚未验收，3.4保持未勾；未测后端不默认启用。
+- Deferred measurement：人工确认gold、四轴/非研究支持数、独立复核、同源排除量化、v1同输入质量基线、dev选择依据、冻结holdout指标。保留未完成状态，按用户最新决定不阻塞直接采用新版。
+
+## 历史本机性能与实现验证（非最终原生验收）
 
 本机固定500/200词语测试：500实际去重参考（可用521）、200公共输入；cold26.238s/warm18.346s，RSS83,968,000/83,623,936bytes；来源为`runtime-local-informational.json`。代码当时未提交，收据明确dirty；只能作为本机流程/性能信息，不能替代native runner或质量验收。
 
 2.4：`test_v2_wrapper.py` 6项验证v2失败保留、范围读取和最后有效目录；`topics_schema.py`版本与引用验证。3.7：`test_shadow_safety.py`选择backfill、alias迁移、override缩小范围、原子写拒绝保留原档；真实本地影子原子写完成且未请求LLM。
+
+## 默认新版生产读回（72cd88d6）
+
+原生 CI `37892904490` 和 Pages `37892904488` 均成功。HTTP manifest 读回 code_revision=72cd88d6ba746478434692c0b28e016a543cc438，archive_revision=1aeb22e303b9229097f83d13dc31d7ceb0c0e1bd；线上 schema2、53主题、53条旧ID alias、110内容（76论文/30报告/4发布），分类算法faceted-local-v2.3、quality_status=unmeasured。与上一公开归档107条比较，原ID及first_seen全部保持，新增3条；完整schema验证与archive SHA256一致。证据见 `site/topics/evaluation/evidence/native/publication-http.json` 与 deployment-manifest.json。summary.classified 表示本次处理110条，不是细分类成功数或准确率。
+
+独立 Agent 使用真实Chrome154在正式网址验证13项通过，显式1440×1000和390×844视口：默认schema2/未量化标记、structured labels、旧主题URL→稳定ID、收藏与已读刷新保留、手机抽屉/焦点/Esc、无溢出和页面异常。证据 `site/topics/evaluation/evidence/browser/live-v2/`。
+
+只读恢复预览 `37893133065` 成功。实际回滚 `37893230406` 已成功发布上一公开归档b83dd0839f18a599fc7b883cbee5b8d39915a1fe，使用新版前端；恢复默认v2的原生运行和HTTP收据另补。此处不将旧归档缺少新ID alias的筛选限制算作通过。
+
+## 最终原生性能与恢复验收
+
+最终代码72cd88d6影子run 37892914767成功，已下载并审查public artifact。Ubuntu24.04、Python3.13.16、4CPU，500真实去重参考/200公开输入：lexical cold22.4929s/warm20.2148s、RSS63,496,192/63,373,312bytes；semantic实际后端非degraded，cold127.9181s/warm121.2323s、RSS1,712,734,208/1,686,589,440bytes。两个runtime_pass均true、quality_pass均false（未量化）。收据见site/topics/evaluation/evidence/native/runtime-{lexical,semantic}.json；性能不代表准确率，生产默认仍lexical。
+
+恢复默认v2 run 37893363352成功；HTTP读回archive1aeb22e303b9229097f83d13dc31d7ceb0c0e1bd、schema2、archive SHA256与原发布一致。独立真实Chrome10项恢复检查通过：收藏/已读、本机修正storage字节保持，v1旧zt修正在v2映射stableID，URL主题与关键词恢复；见browser/live-rollback-restore/。实际旧归档浏览器9项前置检查通过，但最后旧stableURL说明断言失败且未完整写首轮收据；partial-attempt为tool trace重建，不宣称完整回滚浏览器矩阵通过，限制已写手册。
+
+只读故障注入37893443923使用旧前端f085+新schema2，按预期在build报Frontend does not support this archive schema，无archive写权限且deploy跳过；失败后HTTP仍为有效v2。这证明兼容构建fail-closed，不冒充真实Zotero接口故障注入。分类/同步异常保留由离线wrapper/原子写与workflow guard验证；逐条异常error收据尚未实现，3.6保持未勾。
