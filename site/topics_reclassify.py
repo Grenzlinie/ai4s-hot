@@ -48,4 +48,8 @@ def run(args):
     if args.output: atomic_write(args.output,payload)
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--input',required=True);parser.add_argument('--output');parser.add_argument('--force',action='store_true');parser.add_argument('--item',action='append');run(parser.parse_args())
+    parser=argparse.ArgumentParser();parser.add_argument('--input',required=True);parser.add_argument('--output');parser.add_argument('--force',action='store_true');parser.add_argument('--item',action='append')
+    try: run(parser.parse_args())
+    except Exception:
+        print('Reclassification failed; previous snapshot retained')
+        raise SystemExit(2) from None

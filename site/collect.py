@@ -33,6 +33,12 @@ SCIENCE = {
 }
 
 
+class UpdateFailure(RuntimeError):
+    def __init__(self,stage):
+        super().__init__('Update failed; previous snapshot retained')
+        self.stage=stage
+
+
 class NeedsConfiguration(Exception):
     pass
 
@@ -420,15 +426,27 @@ def run(args):
         raise RuntimeError("All collectors failed; no new archive or deployment was produced")
     all_items = list(items.values())
     recent = [p for p in all_items if datetime.fromisoformat(p["first_seen"]) >= NOW - timedelta(days=3)]
-    summary_status = summarize(recent, args.summary_budget if args.summary_budget is not None else config["summary_budget"]) if not args.no_summary else {"status": "disabled", "generated": 0}
     all_items.sort(key=lambda p: p.get("published_at") or p["first_seen"], reverse=True)
     taxonomy, topic_corpus = site_topics.read_taxonomy(previous.get("taxonomy", {}), NOW.isoformat())
-    taxonomy["classification"] = site_topics.classify(all_items, taxonomy, topic_corpus)
+    if os.environ.get('TOPICS_MODE')=='v2' and taxonomy.get('status')!='ok':
+        raise UpdateFailure('taxonomy')
+    try:
+        taxonomy["classification"] = site_topics.classify(all_items, taxonomy, topic_corpus)
+    except Exception as error:
+        failure=UpdateFailure('classification')
+        failure.failed_item_id=getattr(error,'failed_item_id',None)
+        raise failure from None
+    summary_status = {'status':'disabled','generated':0}
     print(f"Topics: {taxonomy['status']}; classification: {taxonomy['classification']['status']}", flush=True)
     payload = {"schema_version": 2 if taxonomy.get("identity_version") == "hmac-v1" else 1, "generated_at": NOW.isoformat(), "timezone": "Asia/Shanghai", "items": all_items,
                "taxonomy": taxonomy,
                "sources": sorted(statuses, key=lambda s: s["id"]), "summaries": summary_status,
                "policy": {"lookback_days": config["lookback_days"], "max_items_per_source": config["max_items_per_source"], "alpha_window": "30 days"}}
+    from topics_schema import validate_archive
+    try: validate_archive(payload)
+    except Exception: raise UpdateFailure('validation') from None
+    summary_status = summarize(recent, args.summary_budget if args.summary_budget is not None else config["summary_budget"]) if not args.no_summary else {"status": "disabled", "generated": 0}
+    payload["summaries"]=summary_status
     write_json(index_path, payload)
     day = NOW.astimezone(ZoneInfo("Asia/Shanghai")).date().isoformat()
     write_json(state_dir / "daily" / (day + ".json"), {"generated_at": NOW.isoformat(), "item_ids": [p["id"] for p in all_items if datetime.fromisoformat(p["first_seen"]).astimezone(ZoneInfo("Asia/Shanghai")).date().isoformat() == day], "sources": payload["sources"]})
@@ -443,4 +461,12 @@ if __name__ == "__main__":
     parser.add_argument("--source", action="append")
     parser.add_argument("--no-summary", action="store_true")
     parser.add_argument("--summary-budget", type=int)
-    run(parser.parse_args())
+    parser.add_argument('--failure-report')
+    arguments=parser.parse_args()
+    try: run(arguments)
+    except Exception as error:
+        from update_status import failure_receipt
+        report=failure_receipt(getattr(error,'stage','classification'),NOW.isoformat(),failed_item_id=getattr(error,'failed_item_id',None))
+        if arguments.failure_report: write_json(arguments.failure_report,report)
+        print('Update failed; previous snapshot retained ('+report['stage']+')',flush=True)
+        raise SystemExit(2) from None

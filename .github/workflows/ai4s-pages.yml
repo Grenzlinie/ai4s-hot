@@ -2,6 +2,12 @@ name: Update AI4S Hot
 
 on:
   workflow_dispatch:
+    inputs:
+      failure_probe:
+        description: 'Maintenance fault injection; preserves the valid archive and makes no summary requests'
+        type: choice
+        options: [none, taxonomy, classification]
+        default: none
   schedule:
     - cron: '43 23 * * *'
   workflow_run:
@@ -9,7 +15,7 @@ on:
     types: [completed]
   push:
     branches: [main]
-    paths: ['site/static/**', 'site/collect.py', 'site/site_topics.py', 'site/topics*.py', 'site/topics/**', 'site/build.py', 'site/sources.json', 'site/requirements.txt', '.github/workflows/ai4s-pages.yml']
+    paths: ['site/static/**', 'site/collect.py', 'site/site_topics.py', 'site/topics*.py', 'site/topics/**', 'site/build.py', 'site/update_status.py', 'site/deployment_manifest.py', 'scripts/probe_update_failure.py', 'site/sources.json', 'site/requirements.txt', '.github/workflows/ai4s-pages.yml']
 
 concurrency:
   group: ai4s-pages
@@ -36,6 +42,7 @@ jobs:
       - name: Install collector dependencies
         run: pip install -r site/requirements.txt
       - name: Restore durable archive
+        id: state
         shell: bash
         run: |
           if git ls-remote --exit-code --heads origin site-data >/dev/null; then
@@ -46,6 +53,7 @@ jobs:
             git -C "$RUNNER_TEMP/ai4s-state" checkout --orphan site-data
             git -C "$RUNNER_TEMP/ai4s-state" rm -rf .
           fi
+          echo "archive_revision=$(git -C "$RUNNER_TEMP/ai4s-state" rev-parse HEAD)" >> "$GITHUB_OUTPUT"
       - name: Download latest ranked papers
         env:
           GH_TOKEN: ${{ github.token }}
@@ -61,6 +69,8 @@ jobs:
             echo 'No ranked-paper artifact yet; news collection will continue.'
           fi
       - name: Collect and summarize official sources
+        id: collect
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
           ALPHAXIV_API_KEY: ${{ secrets.ALPHAXIV_API_KEY }}
@@ -72,10 +82,20 @@ jobs:
           ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
           ZOTERO_TOPIC_CONFIG: ${{ secrets.ZOTERO_TOPIC_CONFIG }}
           TOPICS_MODE: v2
-        run: python site/collect.py --data-dir "$RUNNER_TEMP/ai4s-state/data" --paper-export "$RUNNER_TEMP/ai4s-papers/papers.json"
+          FAILURE_PROBE: ${{ inputs.failure_probe }}
+        run: |
+          if [[ "$FAILURE_PROBE" == taxonomy || "$FAILURE_PROBE" == classification ]]; then
+            python scripts/probe_update_failure.py --stage "$FAILURE_PROBE" --data-dir "$RUNNER_TEMP/ai4s-state/data" --report "$RUNNER_TEMP/update-failure.json"
+          else
+            python site/collect.py --data-dir "$RUNNER_TEMP/ai4s-state/data" --paper-export "$RUNNER_TEMP/ai4s-papers/papers.json" --failure-report "$RUNNER_TEMP/update-failure.json"
+          fi
       - name: Build static site
+        id: candidate
+        if: steps.collect.outcome == 'success'
+        continue-on-error: true
         run: python site/build.py --data-dir "$RUNNER_TEMP/ai4s-state/data" --output _site
       - name: Commit public archive
+        if: steps.collect.outcome == 'success' && steps.candidate.outcome == 'success'
         shell: bash
         run: |
           git -C "$RUNNER_TEMP/ai4s-state" add data
@@ -84,7 +104,23 @@ jobs:
             git -C "$RUNNER_TEMP/ai4s-state" push origin HEAD:site-data
           fi
       - name: Record exact deployed archive and assets
+        if: steps.collect.outcome == 'success' && steps.candidate.outcome == 'success'
         run: python site/deployment_manifest.py --output _site --code-revision "$GITHUB_SHA" --archive-revision "$(git -C "$RUNNER_TEMP/ai4s-state" rev-parse HEAD)"
+      - name: Retain the valid snapshot after a failed update
+        if: steps.collect.outcome == 'failure' || steps.candidate.outcome == 'failure'
+        env:
+          ARCHIVE_SHA: ${{ steps.state.outputs.archive_revision }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/retained"
+          git -C "$RUNNER_TEMP/ai4s-state" archive "$ARCHIVE_SHA" data | tar -x -C "$RUNNER_TEMP/retained"
+          rm -rf _site
+          python site/build.py --data-dir "$RUNNER_TEMP/retained/data" --output _site
+          python site/deployment_manifest.py --output _site --code-revision "$GITHUB_SHA" --archive-revision "$ARCHIVE_SHA" --mode retention
+          python site/update_status.py --output _site --status error --stage build --failure-report "$RUNNER_TEMP/update-failure.json" --run-url "https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          echo '::warning::Update failed; publishing only the unchanged valid archive and public attempt status.'
+      - name: Record successful attempt
+        if: steps.collect.outcome == 'success' && steps.candidate.outcome == 'success'
+        run: python site/update_status.py --output _site --run-url "https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site

@@ -8,7 +8,7 @@ ASSETS=('index.html','app.js','style.css','favicon.svg')
 def write_manifest(output,code_revision,archive_revision,builder_revision=None,mode='publish'):
     for revision in (code_revision,archive_revision,builder_revision or code_revision):
         if not re.fullmatch(r'[0-9a-f]{40}',revision): raise ValueError('An immutable full Git commit is required')
-    if mode not in ('publish','rollback','preview'): raise ValueError('Unknown deployment mode')
+    if mode not in ('publish','rollback','preview','retention'): raise ValueError('Unknown deployment mode')
     output=Path(output);index=output/'data'/'index.json'
     data=json.loads(index.read_text())
     from topics_schema import validate_archive
@@ -20,4 +20,4 @@ def write_manifest(output,code_revision,archive_revision,builder_revision=None,m
     return manifest
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--output',required=True);p.add_argument('--code-revision',required=True);p.add_argument('--archive-revision',required=True);p.add_argument('--builder-revision');p.add_argument('--mode',choices=['publish','rollback','preview'],default='publish');a=p.parse_args();m=write_manifest(a.output,a.code_revision,a.archive_revision,a.builder_revision,a.mode);print('Public deployment manifest written:',m['item_count'],'items')
+    p=argparse.ArgumentParser();p.add_argument('--output',required=True);p.add_argument('--code-revision',required=True);p.add_argument('--archive-revision',required=True);p.add_argument('--builder-revision');p.add_argument('--mode',choices=['publish','rollback','preview','retention'],default='publish');a=p.parse_args();m=write_manifest(a.output,a.code_revision,a.archive_revision,a.builder_revision,a.mode);print('Public deployment manifest written:',m['item_count'],'items')

@@ -19,7 +19,7 @@ def validate_archive(payload):
         topic_ancestors([t['id']],topics)
     ids=set()
     for item in payload['items']:
-        allowed_item={'affiliations','alpha_rank','authors','excerpt','first_seen','group','groups','hf_url','id','pdf_url','published_at','source_ids','source_names','summary','summary_kind','tags','title','topic_ids','topic_leaf_ids','topic_method','topic_version','type','kind','url','zotero_score','doi','arxiv_id','topic_labels','topic_status','topic_scope','content_kind','domain_facets','topic_coverage','topic_cache_token','topic_backend','topic_override'}
+        allowed_item={'affiliations','alpha_rank','authors','excerpt','first_seen','group','groups','hf_url','id','pdf_url','published_at','source_ids','source_names','summary','summary_kind','tags','title','topic_ids','topic_leaf_ids','topic_method','topic_version','type','kind','url','zotero_score','doi','arxiv_id','topic_labels','topic_status','topic_scope','content_kind','domain_facets','topic_coverage','topic_cache_token','topic_backend','topic_override','topic_history'}
         if set(item)-allowed_item: raise ValueError('Unexpected public item fields')
         if item['id'] in ids: raise ValueError('Duplicate public item identity')
         ids.add(item['id'])
@@ -31,7 +31,10 @@ def validate_archive(payload):
         labels=item.get('topic_labels',[])
         if not isinstance(labels,list): raise ValueError('Invalid public labels')
         if (labels or payload['schema_version']==2) and (len({l.get('id') for l in labels})!=len(labels) or {l.get('id') for l in labels}!=set(explicit)): raise ValueError('Label records disagree with explicit topics')
-        for label in labels:
+        history=item.get('topic_history',[])
+        retired={t['id'] for t in topics if not t.get('active',True) or t.get('retired')}
+        if not isinstance(history,list) or any(not isinstance(l,dict) or l.get('id') not in retired for l in history) or len({l['id'] for l in history})!=len(history): raise ValueError('Invalid retired label history')
+        for label in labels+history:
             if set(label)-{'id','facet','method','score','confidence','status','public_reason'}: raise ValueError('Unexpected label fields')
             if label['id'] not in known: raise ValueError('Unknown label')
             root=next(t for t in topics if t['id'] in topic_ancestors([label['id']],topics) and not t.get('parent_id'))

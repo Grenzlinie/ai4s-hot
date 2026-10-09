@@ -33,6 +33,24 @@ def validate_catalog(value):
     return value
 
 
+def definition_for_topic(topic, definitions):
+    """Resolve a published topic using only its public name/path when newly added.
+
+    This in-memory fallback does not modify the authored catalog or Zotero.
+    Its pending definition status must remain a low-confidence candidate.
+    """
+    path=topic.get('catalog_path',topic.get('path',''))
+    if path in definitions:return definitions[path]
+    public_path=topic.get('path') or path
+    name=topic.get('name') or public_path.rsplit(' / ',1)[-1]
+    if not isinstance(public_path,str) or not public_path.strip() or not isinstance(name,str) or not name.strip():
+        raise ValueError('Published topic needs a public name and path')
+    terms=list(dict.fromkeys((name.strip(),public_path.strip())))
+    return {'path':path or public_path,'definition':'新增公开主题“'+public_path+'”；仅依据公开名称与父路径生成候选，完整定义待维护。',
+            'synonyms':terms,'include':[name.strip()],'exclude':[],
+            'definition_status':'pending','facet':public_path.split(' / ',1)[0],'rules':[]}
+
+
 def load_catalog(path=None):
     return validate_catalog(yaml.safe_load(Path(path or Path(__file__).parent/'topics'/'catalog.yaml').read_text()))
 

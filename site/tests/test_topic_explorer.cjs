@@ -30,5 +30,33 @@ assert.equal(classificationEvidence({topic_status:'broad_only',topic_labels:[{la
 assert.match(classificationEvidence({id:'v1-pending',topic_ids:[],topic_leaf_ids:[]}),/等待分类/);
 assert.doesNotMatch(classificationEvidence({id:'v1-pending',topic_ids:[],topic_leaf_ids:[]}),/已推断细分类/);
 assert.match(classificationEvidence({id:'v1-classified',topic_ids:['mof'],topic_leaf_ids:['mof']}),/已推断细分类/);
+
+// Retired topics remain browseable history, while corrections require active targets.
+data.taxonomy.topics.push({id:'retiredleaf',parent_id:'materials',name:'Archived material',path:'materials / Archived material',active:false,retired:true});
+data.taxonomy.aliases.oldretired='retiredleaf';
+data.items.push({...data.items[0],id:'history',topic_labels:undefined,topic_leaf_ids:['retiredleaf']});
+data.items.push({...data.items[0],id:'overridehistory',topic_labels:[{label_id:'ml'}],topic_override:{topic_ids:['retiredleaf'],status:'needs_review'}});
+corrections={a:{topic_ids:['retiredleaf'],reason:'Historical correction'}};
+assert.equal(taxonomyTopics().some(t=>t.id==='retiredleaf'),true);
+assert.equal(activeTopics().some(t=>t.id==='retiredleaf'),false);
+assert.equal(localCorrectionUsable(data.items[0]),false);
+assert.deepEqual(leafIDs(data.items[0]),['mof','ml']);
+assert.match(classificationEvidence(data.items[0]),/需要复核/);
+assert.equal(leafIDs(data.items.at(-1)).includes('retiredleaf'),false);
+assert.equal(browseIDs(data.items.at(-1)).has('retiredleaf'),true);
+assert.match(classificationEvidence(data.items.at(-1)),/全站人工修正待复核/);
+$('query').value='';$('source').value='';$('unread').checked=false;selectedTopics=new Set(['retiredleaf']);days=0;
+assert.deepEqual(filtered().map(p=>p.id),['history','overridehistory']);
+assert.deepEqual(topicCounts('retiredleaf'),[2,2]);
+$('topic-search').value='';expandedTopics.add('materials');assert.match(topicNavigation(),/retired-badge/);assert.match(topicName('retiredleaf'),/已归档/);
+location.href='https://example.test/?days=0&topics=oldretired';restoreURL();assert.equal(selectedTopics.has('retiredleaf'),true);assert.equal(filtered().length,2);
+location.href='https://example.test/?days=0&topics=zotero:unknown&q=keep';restoreURL();assert.equal(selectedTopics.size,0);assert.equal($('query').value,'keep');assert.match($('toast').textContent,/当前归档不支持部分主题筛选/);
+corrections.a={topic_ids:[],reason:'Explicitly no research topic'};assert.equal(itemIDs(data.items[0]).size,0);
+
+corrections={};data.items.push({...data.items[0],id:'historyfield',topic_labels:[],topic_ids:[],topic_leaf_ids:[],topic_history:[{id:'retiredleaf'}]});
+assert.equal(leafIDs(data.items.at(-1)).includes('retiredleaf'),true);assert.equal(browseIDs(data.items.at(-1)).has('retiredleaf'),true);assert.match(classificationEvidence(data.items.at(-1)),/已归档的历史分类/);
+const receipt={schema_version:1,status:'error',stage:'classification',last_attempt:'2026-10-09T00:00:00Z',last_success:'2026-10-08T00:00:00Z',retryable:true,failed_item_id:'a'};
+assert.equal(validateUpdateStatus(receipt),receipt);assert.equal(validateUpdateStatus({...receipt,stage:'unknown'}),null);assert.equal(validateUpdateStatus({...receipt,private_token:'not-allowed'}),null);assert.equal(validateUpdateStatus({...receipt,last_attempt:'bad'}),null);
+updateStatus=receipt;assert.match(updateHealth(),/本次更新失败/);assert.match(updateHealth(),/保留上次结果/);assert.match(classificationEvidence(data.items[0]),/本次分类更新失败/);assert.doesNotMatch(classificationEvidence(data.items[1]),/本次分类更新失败/);updateStatus=null;data.generated_at='2000-01-01T00:00:00Z';assert.match(updateHealth(),/超过 36 小时/);
 `,sandbox);
-console.log('Topic explorer: 37 assertions passed (pure behavior; not browser acceptance)');
+console.log('Topic explorer: 67 assertions passed (pure behavior; not browser acceptance)');

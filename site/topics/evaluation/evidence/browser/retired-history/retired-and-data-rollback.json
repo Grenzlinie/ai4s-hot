@@ -1,0 +1,36 @@
+{
+  "tested_at": "2026-10-09T06:32:59.047Z",
+  "browser": "154.0.8037.99",
+  "mode": "Real installed Chrome browser; public developer archive and synthetic retired/topic_history/sidecar/data-version fixtures supplied via per-context request routes. Not native production archive or remote rollback.",
+  "checks": [
+    "retired alias URL remains selected",
+    "retired node visibly archived",
+    "retired history and needs-review historical record are browseable",
+    "retired current/all count is deduplicated",
+    "public history labeled archival only",
+    "definition version and last-success visible",
+    "sidecar failure preserves visible labels and public card warning",
+    "failure banner stage and last-success present",
+    "retired local correction needs review and is not applied",
+    "retired target absent from correction choices",
+    "schema1 unsupported stable topic explains clear",
+    "v1 rollback retains same-profile storage bytes",
+    "v1 favorites and read retained",
+    "v1 unavailable stable local correction is needs-review",
+    "v2 restore retains same-profile storage bytes",
+    "v2 restored retired URL selected",
+    "v2 local correction restored as valid",
+    "optional sidecar404 no page error",
+    "mobile retired node browseable without overflow",
+    "mobile focus restored"
+  ],
+  "page_errors": [],
+  "fixtures_sha256": {
+    "v1": "12b86d409754e0eabf19b7f3bee5cf3c8ad62f16d788ba3cd2902cca23e5db4f",
+    "v2": "15f45b530fca567defb3de5f542d7efee5dbeafbc271f1f306300435b1ff59a5"
+  },
+  "storage_sha256": "297989b84ab3a9824e86232276bcc8958d654345f2cb9d043f65b6d1179cabc3",
+  "rollback_limitations": [
+    "Schema1 has no stable alias metadata: incoming stable topic filter is explicitly cleared. Saved/read/correction bytes persist; correction validity returns after v2 restoration."
+  ]
+}

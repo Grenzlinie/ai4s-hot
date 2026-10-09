@@ -1,5 +1,6 @@
 """Optional CPU-only E5 candidates; private embeddings exist only in RAM."""
 import os
+from topics_catalog import definition_for_topic
 MODEL='intfloat/multilingual-e5-small'
 REVISION='614241f622f53c4eeff9890bdc4f31cfecc418b3'
 
@@ -11,7 +12,7 @@ class SemanticCandidates:
         self.model=SentenceTransformer(MODEL,revision=REVISION,device='cpu',trust_remote_code=False)
         self.model.max_seq_length=512
         definitions={r['path']:r for r in catalog['topics']}
-        self.rows=[{'topics':[t['id']],'text':' '.join(definitions.get(t.get('catalog_path',t['path']),{}).get('synonyms',[]))} for t in topics]
+        self.rows=[{'topics':[t['id']],'text':' '.join(definition_for_topic(t,definitions).get('synonyms',[]))} for t in topics]
         self.rows+=corpus
         self.vectors=self.encode([r['text'] for r in self.rows])
 
