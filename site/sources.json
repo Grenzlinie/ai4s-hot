@@ -1,0 +1,20 @@
+{
+  "lookback_days": 30,
+  "max_items_per_source": 12,
+  "summary_budget": 24,
+  "sources": [
+    {"id":"openai","name":"OpenAI","kind":"rss","url":"https://openai.com/news/rss.xml","group":"frontier","type":"report"},
+    {"id":"anthropic-news","name":"Anthropic","kind":"html","url":"https://www.anthropic.com/news","paths":["/news/"],"group":"frontier","type":"report"},
+    {"id":"anthropic-engineering","name":"Claude Code / Engineering","kind":"html","url":"https://www.anthropic.com/engineering","paths":["/engineering/"],"group":"tools","type":"report"},
+    {"id":"qwen-models","name":"Qwen 模型发布","kind":"huggingface","org":"Qwen","url":"https://huggingface.co/Qwen","group":"frontier","type":"release"},
+    {"id":"kimi-models","name":"Kimi 模型发布","kind":"huggingface","org":"moonshotai","url":"https://huggingface.co/moonshotai","group":"frontier","type":"release"},
+    {"id":"deepseek-models","name":"DeepSeek 模型发布","kind":"huggingface","org":"deepseek-ai","url":"https://huggingface.co/deepseek-ai","group":"frontier","type":"release"},
+    {"id":"deepmind","name":"Google DeepMind","kind":"rss","url":"https://deepmind.google/blog/rss.xml","group":"science","type":"report"},
+    {"id":"isomorphic","name":"Isomorphic Labs","kind":"html","url":"https://www.isomorphiclabs.com/news","paths":["/articles/"],"group":"science","type":"report"},
+    {"id":"recursion","name":"Recursion","kind":"html","url":"https://www.recursion.com/blogs","paths":["/news/"],"group":"science","type":"report"},
+    {"id":"hf-daily","name":"Hugging Face Daily Papers","kind":"hf_daily","url":"https://huggingface.co/papers","group":"papers","type":"paper"},
+    {"id":"arxiv-ai4s","name":"arXiv / AI4S","kind":"arxiv","query":"(all:\"materials discovery\" OR all:\"AI for science\" OR all:\"scientific agents\" OR all:\"machine learning potential\" OR all:\"molecular foundation model\")","group":"science","type":"paper"},
+    {"id":"alphaxiv","name":"alphaXiv Hot","kind":"alphaxiv","url":"https://api.alphaxiv.org/mcp/v1","group":"papers","type":"paper"},
+    {"id":"semantic-scholar","name":"Semantic Scholar","kind":"semantic","query":"\"AI for science\" | \"AI for scientific discovery\" | \"scientific agents\" | \"machine learning potentials\"","group":"science","type":"paper"}
+  ]
+}

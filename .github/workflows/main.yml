@@ -1,0 +1,51 @@
+name: Collect Zotero papers
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 22 * * *'
+
+concurrency:
+  group: ai4s-zotero-papers
+  cancel-in-progress: false
+
+jobs:
+  calculate-and-export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          repository: ${{ vars.REPOSITORY || 'TideDra/zotero-arxiv-daily' }}
+          ref: ${{ vars.REF || 'main' }}
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v7
+
+      - name: Checkout publication adapter
+        uses: actions/checkout@v6
+        with:
+          repository: ${{ github.repository }}
+          path: publication
+
+      - name: Generate ranked papers without email
+        env:
+          ZOTERO_ID: ${{ secrets.ZOTERO_ID }}
+          ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
+          CUSTOM_CONFIG: ${{ vars.CUSTOM_CONFIG }}
+          AI4S_PAPER_EXPORT: ${{ runner.temp }}/papers/papers.json
+        run: |
+          uv run python publication/site/prepare_config.py
+          uv run python publication/site/export_daily.py
+
+      - name: Save public paper archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai4s-ranked-papers
+          path: ${{ runner.temp }}/papers/papers.json
+          if-no-files-found: error
+          retention-days: 90

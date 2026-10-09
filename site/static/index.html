@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI4S Hot：持续归档 AI for Science 论文、模型、科研工具与机构技术报告。">
+  <meta name="theme-color" content="#2459c4">
+  <title>AI4S Hot · 科研进展阅读站</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#stream">跳到内容</a>
+<header class="header">
+  <a class="brand" href="./" aria-label="AI4S Hot 首页"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 29 17 8l7 15 10-12"/><circle cx="17" cy="8" r="3"/><circle cx="24" cy="23" r="3"/><circle cx="34" cy="11" r="3"/></svg><span>AI4S <b>Hot</b></span></a>
+  <span class="site-description">科研进展阅读站</span>
+  <nav aria-label="主要导航"><button id="home" class="nav-button active">发现</button><button id="saved" class="nav-button">收藏 <span id="saved-count">0</span></button><a href="https://github.com/Grenzlinie/ai4s-hot" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
+</header>
+<div class="layout">
+  <aside class="rail" aria-label="内容筛选">
+    <div class="rail-title">阅读方向</div>
+    <div id="topics" class="topics"></div>
+    <div class="rail-title source-title">按来源阅读</div>
+    <label class="sr-only" for="source">选择来源</label><select id="source"><option value="">所有来源</option></select>
+    <div class="rail-note">论文、技术报告与代码更新持续归档。<br>收藏与已读保存在当前浏览器。</div>
+    <button id="export-saved" class="text-button">导出收藏</button>
+  </aside>
+  <main id="stream">
+    <section class="intro">
+      <div class="issue"><span class="dot"></span><span id="updated">正在读取归档</span></div>
+      <h1>把错过的进展，接着读。</h1>
+      <p>从科学发现到模型与工具，留住值得回看的研究进展。</p>
+      <div class="intro-bottom"><span id="coverage">正在加载来源</span><button id="health-toggle" class="text-button" aria-expanded="false" aria-controls="health">查看来源状态</button></div>
+    </section>
+    <section id="health" class="health" hidden aria-label="来源采集状态"></section>
+    <section class="controls" aria-label="搜索与归档筛选">
+      <div class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><label class="sr-only" for="query">搜索标题、摘要、作者或来源</label><input id="query" type="search" placeholder="搜索论文、模型、机构或关键词…" autocomplete="off"><kbd>/</kbd></div>
+      <div class="filter-row">
+        <div class="periods" id="periods" aria-label="发表时间范围"><button data-days="7">近 7 天</button><button data-days="30" class="active">近 30 天</button><button data-days="0">全部归档</button></div>
+        <label class="date-label">收录日期 <input id="archive-date" type="date"></label>
+        <label class="sr-only" for="sort">排序方式</label><select id="sort"><option value="recent">最新发表</option><option value="indexed">最新收录</option><option value="zotero">Zotero 相关度</option><option value="alpha">alphaXiv 榜单顺序</option></select>
+      </div>
+      <div class="channel-row"><div id="channels" class="channels" aria-label="内容频道"></div><label class="unread"><input id="unread" type="checkbox">只看未读</label></div>
+    </section>
+    <div class="results-header"><h2 id="results-title">进展时间线</h2><span id="result-count" role="status" aria-live="polite"></span><button id="clear" class="text-button">重置筛选</button></div>
+    <div id="entries"><div class="loading" role="status">正在加载研究归档…</div></div>
+    <button id="load-more" class="load-more" hidden>继续阅读</button>
+    <footer><span>摘要用于快速筛选，结论与细节请查看原文。<br>“收录日期”指本站首次发现时间；“发表日期”来自原始来源。</span><a href="https://github.com/Grenzlinie/ai4s-hot/tree/main/site" id="source-code" target="_blank" rel="noopener noreferrer">开源代码与采集规则</a></footer>
+  </main>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

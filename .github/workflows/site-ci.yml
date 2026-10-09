@@ -1,0 +1,24 @@
+name: AI4S site checks
+on:
+  pull_request:
+    paths: ['site/**', '.github/workflows/ai4s-pages.yml', '.github/workflows/main.yml', '.github/workflows/test.yml', '.github/workflows/site-ci.yml']
+  push:
+    branches: [main]
+    paths: ['site/**', '.github/workflows/ai4s-pages.yml', '.github/workflows/main.yml', '.github/workflows/test.yml', '.github/workflows/site-ci.yml']
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install -r site/requirements.txt
+      - run: python -m unittest discover -s site/tests -v
+      - run: node --check site/static/app.js
+      - run: node site/tests/test_frontend.cjs

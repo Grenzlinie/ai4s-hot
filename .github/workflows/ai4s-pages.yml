@@ -1,0 +1,98 @@
+name: Update AI4S Hot
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '43 23 * * *'
+  workflow_run:
+    workflows: [Collect Zotero papers]
+    types: [completed]
+  push:
+    branches: [main]
+    paths: ['site/**', '.github/workflows/ai4s-pages.yml']
+
+concurrency:
+  group: ai4s-pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    permissions:
+      contents: write
+      actions: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: site/requirements.txt
+      - name: Install collector dependencies
+        run: pip install -r site/requirements.txt
+      - name: Restore durable archive
+        shell: bash
+        run: |
+          if git ls-remote --exit-code --heads origin site-data >/dev/null; then
+            git fetch origin site-data
+            git worktree add --detach "$RUNNER_TEMP/ai4s-state" FETCH_HEAD
+          else
+            git worktree add --detach "$RUNNER_TEMP/ai4s-state"
+            git -C "$RUNNER_TEMP/ai4s-state" checkout --orphan site-data
+            git -C "$RUNNER_TEMP/ai4s-state" rm -rf .
+          fi
+      - name: Download latest ranked papers
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        shell: bash
+        run: |
+          mkdir -p "$RUNNER_TEMP/ai4s-papers"
+          artifact=$(gh api "repos/$REPOSITORY/actions/artifacts?name=ai4s-ranked-papers&per_page=10" --jq '[.artifacts[] | select(.expired == false)][0].id // empty')
+          if [ -n "$artifact" ]; then
+            gh api "repos/$REPOSITORY/actions/artifacts/$artifact/zip" > "$RUNNER_TEMP/papers.zip"
+            unzip -q "$RUNNER_TEMP/papers.zip" -d "$RUNNER_TEMP/ai4s-papers"
+          else
+            echo 'No ranked-paper artifact yet; news collection will continue.'
+          fi
+      - name: Collect and summarize official sources
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ALPHAXIV_API_KEY: ${{ secrets.ALPHAXIV_API_KEY }}
+          SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
+          CUSTOM_CONFIG: ${{ vars.CUSTOM_CONFIG }}
+        run: python site/collect.py --data-dir "$RUNNER_TEMP/ai4s-state/data" --paper-export "$RUNNER_TEMP/ai4s-papers/papers.json"
+      - name: Build static site
+        run: python site/build.py --data-dir "$RUNNER_TEMP/ai4s-state/data" --output _site
+      - name: Commit public archive
+        shell: bash
+        run: |
+          git -C "$RUNNER_TEMP/ai4s-state" add data
+          if ! git -C "$RUNNER_TEMP/ai4s-state" diff --cached --quiet; then
+            git -C "$RUNNER_TEMP/ai4s-state" -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Archive AI4S source metadata'
+            git -C "$RUNNER_TEMP/ai4s-state" push origin HEAD:site-data
+          fi
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
