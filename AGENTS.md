@@ -9,6 +9,8 @@
 - Zotero 分类同步不意味着网站生成的标签是用户的真实收藏分类；自动标签必须标明推断性质。
 - 库内记录、collection key、参考向量、凭据不得进入公开归档或 OpenRouter 摘要请求。
 
+- 访客页面为独立AI4S Hot网站，统一使用“研究主题”“研究推荐”，不叙述个人Zotero目录复用；内部来源ID及后端兼容字段保持真实。阅读界面验收见`openspec/changes/archive/2026-10-09-unify-discovery-navigation/evidence.md`和`site/discovery/evidence/`。
+
 ## OpenSpec 工作方式
 
 - 先读 `openspec/config.yaml`、`openspec/README.md` 和相关已实现 spec。

@@ -1,0 +1,316 @@
+{
+  "base": "https://grenzlinie.github.io/ai4s-hot/",
+  "mode": "live",
+  "snapshotEvidence": {
+    "captured_at": "2026-10-09T09:11:36.475Z",
+    "count": 110,
+    "unique_count": 110,
+    "generated_at": "2026-10-09T06:45:04.121988+00:00",
+    "index_sha256": "ac78e4a8b7692a54b14a8c348a37ce3dc7d68a37635e45ab3dcc2292c9c6f460",
+    "manifest": {
+      "schema_version": 1,
+      "created_at": "2026-10-09T09:04:25.619605+00:00",
+      "mode": "retention",
+      "code_revision": "9916a9cb339b34a6dc1f73678e3718dd594636c6",
+      "archive_revision": "17231ace5bdbcb517f9e0008b84ddee23934c58d",
+      "builder_revision": "9916a9cb339b34a6dc1f73678e3718dd594636c6",
+      "archive_schema": 2,
+      "archive_generated_at": "2026-10-09T06:45:04.121988+00:00",
+      "archive_sha256": "ac78e4a8b7692a54b14a8c348a37ce3dc7d68a37635e45ab3dcc2292c9c6f460",
+      "assets": {
+        "index.html": "b359f4404786fa44e5830a3fb302285a9c23075bd033726fa777f49b862f1e2a",
+        "app.js": "88af4f9798acd74e9bdeafe17db5c690d1924400105f3af19ce6a224adc0c7f9",
+        "style.css": "4e467f9c190632167ba24f004f678d0601d6e879e752c9ff215a90f7df2ec499",
+        "favicon.svg": "82ef768aeb8152ca4b219024fe0ec8a01d33f9ed646e3639f561c6f0b6697494",
+        "schema-support.json": "185f680de2d4d7ff11896b68c90ab2e1851adbc1e45a56a7adfef0485a694f87"
+      },
+      "item_count": 110,
+      "taxonomy_version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
+      "classification": {
+        "status": "ok",
+        "classified": 0,
+        "unclassified": 34,
+        "algorithm": "faceted-local-v2.4",
+        "calibration_status": "pending_human_gold",
+        "quality_status": "unmeasured",
+        "curation": {
+          "status": "ok",
+          "applied": 0,
+          "needs_review": 0
+        }
+      },
+      "source_kind": "public_archive",
+      "llm_requests": 0
+    },
+    "update_status": {
+      "status": "error",
+      "stage": "taxonomy",
+      "last_attempt": "2026-10-09T09:04:11.374575+00:00",
+      "last_success": "2026-10-09T06:45:04.121988+00:00",
+      "error_type": "UpdateFailure",
+      "retryable": true,
+      "run_url": "https://github.com/Grenzlinie/ai4s-hot/actions/runs/37908850893"
+    }
+  },
+  "limitations": [
+    "Synthetic retired/alias/four-axis/unavailable-archive scenarios retain separate local54 evidence."
+  ],
+  "browser": "Installed Chrome154 via Playwright",
+  "checks": [
+    {
+      "name": "default30 date scope matches actual public snapshot",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "live manifest binds archive bytes and denominator",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "actual update state rendered accurately at top",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "recommended deterministic with all archive candidates retained",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "all-source latest keeps missing-signal reports and all archive candidates",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "new discovery interface three reading modes",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "reader copy excludes private Zotero language",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "source panel focus enters search",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "source keyboard focus preserved after rerender",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "two sources OR and ID dedup",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "all-source counts ignore selected source axis",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "source Esc returns current trigger after selections",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "latest preserves active source filters and candidate identities",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "source search finds actual empty source",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "actual zero source cancellable empty state",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "zero source clear restores all archive candidates",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "domain axis derives from public domain tags",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "type keyboard focus and domain intersection",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "source count respects other domain/type filters",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "search empty state has clear conditions",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "search reset restores all archive candidates",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "card topic short label full path and source preservation",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "latest preserves selected source+topic",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "legacy single source keeps exact scope",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "legacy single source survives normalized URL reload",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "legacy channel tools keeps exact scope",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "legacy channel tools survives normalized URL reload",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "legacy alpha rank scope keeps exact scope",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "legacy alpha rank scope survives normalized URL reload",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "legacy research recommendation scope keeps exact scope",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "legacy research recommendation scope survives normalized URL reload",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "legacy indexed orders by first_seen and keeps all",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "history back restores prior filters and recommended mode",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "history forward restores latest without dropping filters",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "keyboard favorite retains same card action focus",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "original saved/read storage keys used",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "read and favorite survive reload",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "saved view uses local selection",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "saved URL restores local scope",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "remove last saved card returns focus to saved navigation",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "correction import applies local key without global write",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "correction export remains public maintainer schema",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "topic drawer focus enters",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "topic drawer Esc returns trigger",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "mobile source Esc returns trigger",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "live snapshot stayed locked during acceptance",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "no JavaScript page errors",
+      "passed": true,
+      "detail": true
+    }
+  ],
+  "passed": 49,
+  "failed": 0,
+  "page_errors": [],
+  "screenshots": "Fixed1440x1000/390x1000 viewport, fonts ready+2animation frames+100ms; fullPage:false. Local synthetic fixtures use public index routing only.",
+  "screenshot_note": "Screenshots refreshed on clean browser/default30 view after actual taxonomy/error sidecar resolved; fixed viewport, fonts ready+2rAF+100ms. Error warning visible. No synthetic routing.",
+  "visual_inspection": {
+    "desktop": "1440x1000: normal single header, taxonomy sidebar, failure-retention warning and real cards visible; no horizontal overflow or tile repetition.",
+    "mobile": "390x1000: normal single header, responsive controls, failure-retention warning and first real card visible; source chips scroll within their own row, page has no horizontal overflow.",
+    "result": "passed"
+  }
+}

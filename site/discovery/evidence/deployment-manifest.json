@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-09T09:04:25.619605+00:00",
+  "mode": "retention",
+  "code_revision": "9916a9cb339b34a6dc1f73678e3718dd594636c6",
+  "archive_revision": "17231ace5bdbcb517f9e0008b84ddee23934c58d",
+  "builder_revision": "9916a9cb339b34a6dc1f73678e3718dd594636c6",
+  "archive_schema": 2,
+  "archive_generated_at": "2026-10-09T06:45:04.121988+00:00",
+  "archive_sha256": "ac78e4a8b7692a54b14a8c348a37ce3dc7d68a37635e45ab3dcc2292c9c6f460",
+  "assets": {
+    "index.html": "b359f4404786fa44e5830a3fb302285a9c23075bd033726fa777f49b862f1e2a",
+    "app.js": "88af4f9798acd74e9bdeafe17db5c690d1924400105f3af19ce6a224adc0c7f9",
+    "style.css": "4e467f9c190632167ba24f004f678d0601d6e879e752c9ff215a90f7df2ec499",
+    "favicon.svg": "82ef768aeb8152ca4b219024fe0ec8a01d33f9ed646e3639f561c6f0b6697494",
+    "schema-support.json": "185f680de2d4d7ff11896b68c90ab2e1851adbc1e45a56a7adfef0485a694f87"
+  },
+  "item_count": 110,
+  "taxonomy_version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
+  "classification": {
+    "status": "ok",
+    "classified": 0,
+    "unclassified": 34,
+    "algorithm": "faceted-local-v2.4",
+    "calibration_status": "pending_human_gold",
+    "quality_status": "unmeasured",
+    "curation": {
+      "status": "ok",
+      "applied": 0,
+      "needs_review": 0
+    }
+  },
+  "source_kind": "public_archive",
+  "llm_requests": 0
+}

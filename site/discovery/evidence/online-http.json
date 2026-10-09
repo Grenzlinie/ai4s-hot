@@ -1,0 +1,43 @@
+{
+  "code_revision": "9916a9cb339b34a6dc1f73678e3718dd594636c6",
+  "mode": "retention",
+  "archive_revision": "17231ace5bdbcb517f9e0008b84ddee23934c58d",
+  "archive_hash_matches": true,
+  "item_count": 110,
+  "update_status": {
+    "status": "error",
+    "stage": "taxonomy",
+    "last_attempt": "2026-10-09T09:04:11.374575+00:00",
+    "last_success": "2026-10-09T06:45:04.121988+00:00",
+    "error_type": "UpdateFailure",
+    "retryable": true,
+    "run_url": "https://github.com/Grenzlinie/ai4s-hot/actions/runs/37908850893"
+  },
+  "assets": {
+    "index.html": {
+      "hash": "b359f4404786fa44e5830a3fb302285a9c23075bd033726fa777f49b862f1e2a",
+      "manifest_matches": true,
+      "local_matches": true
+    },
+    "app.js": {
+      "hash": "88af4f9798acd74e9bdeafe17db5c690d1924400105f3af19ce6a224adc0c7f9",
+      "manifest_matches": true,
+      "local_matches": true
+    },
+    "style.css": {
+      "hash": "4e467f9c190632167ba24f004f678d0601d6e879e752c9ff215a90f7df2ec499",
+      "manifest_matches": true,
+      "local_matches": true
+    },
+    "favicon.svg": {
+      "hash": "82ef768aeb8152ca4b219024fe0ec8a01d33f9ed646e3639f561c6f0b6697494",
+      "manifest_matches": true,
+      "local_matches": true
+    },
+    "schema-support.json": {
+      "hash": "185f680de2d4d7ff11896b68c90ab2e1851adbc1e45a56a7adfef0485a694f87",
+      "manifest_matches": true,
+      "local_matches": true
+    }
+  }
+}
