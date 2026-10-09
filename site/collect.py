@@ -19,6 +19,7 @@ import feedparser
 from lxml import html as lhtml
 import requests
 import trafilatura
+import site_topics
 
 UTC = timezone.utc
 NOW = datetime.now(UTC)
@@ -421,7 +422,11 @@ def run(args):
     recent = [p for p in all_items if datetime.fromisoformat(p["first_seen"]) >= NOW - timedelta(days=3)]
     summary_status = summarize(recent, args.summary_budget if args.summary_budget is not None else config["summary_budget"]) if not args.no_summary else {"status": "disabled", "generated": 0}
     all_items.sort(key=lambda p: p.get("published_at") or p["first_seen"], reverse=True)
+    taxonomy, topic_corpus = site_topics.read_taxonomy(previous.get("taxonomy", {}), NOW.isoformat())
+    taxonomy["classification"] = site_topics.classify(all_items, taxonomy, topic_corpus)
+    print(f"Topics: {taxonomy['status']}; classification: {taxonomy['classification']['status']}", flush=True)
     payload = {"schema_version": 1, "generated_at": NOW.isoformat(), "timezone": "Asia/Shanghai", "items": all_items,
+               "taxonomy": taxonomy,
                "sources": sorted(statuses, key=lambda s: s["id"]), "summaries": summary_status,
                "policy": {"lookback_days": config["lookback_days"], "max_items_per_source": config["max_items_per_source"], "alpha_window": "30 days"}}
     write_json(index_path, payload)

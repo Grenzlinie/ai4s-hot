@@ -45,5 +45,26 @@ vm.runInNewContext(code + `
   $('sort').value='alpha'; assert.equal(filtered().length,1);
   data.items.push({...paper,id:'other',source_ids:['hf-daily'],alpha_rank:undefined});
   assert.equal(filtered().length,1);
+  $('sort').value='recent';
+  const tree=[
+    {id:'root',name:'<Science>',path:'<Science>',parent_id:null},
+    {id:'child',name:'Materials',path:'<Science> / Materials',parent_id:'root'},
+    {id:'leaf',name:'<img src=x onerror=alert(1)>',path:'<Science> / Materials / Leaf',parent_id:'child'},
+  ];
+  paper.topic_ids=['root','child','leaf']; paper.topic_leaf_ids=['leaf'];
+  data={items:[paper,{...paper,id:'empty',topic_ids:[],topic_leaf_ids:[]}],taxonomy:{topics:tree}};
+  topic='root'; assert.equal(filtered().length,1);
+  topic='child'; assert.equal(filtered().length,1);
+  topic='leaf'; assert.equal(filtered().length,1);
+  topic='unclassified'; assert.equal(filtered().length,1);
+  topic=''; assert.equal(filtered().length,2);
+  const navigation=topicNavigation();
+  assert.equal((navigation.match(/topic-branch/g)||[]).length,2);
+  assert.equal(navigation.includes('<Science>'),false);
+  assert.equal(navigation.includes('<img src=x'),false);
+  assert.equal(navigation.includes('&lt;img src=x'),true);
+  assert.equal(itemTopics(paper).includes('data-topic="leaf"'),true);
+  assert.equal(itemTopics(paper).includes('<Science>'),false);
+  assert.equal(itemTopics(data.items[1]).includes('主题待分类'),true);
 `, sandbox);
-console.log('Frontend behavior: 17 assertions passed (minimal DOM; not a browser deployment test)');
+console.log('Frontend behavior: 29 assertions passed (minimal DOM; not a browser deployment test)');

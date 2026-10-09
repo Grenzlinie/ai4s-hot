@@ -9,7 +9,7 @@ on:
     types: [completed]
   push:
     branches: [main]
-    paths: ['site/static/**', 'site/collect.py', 'site/build.py', 'site/sources.json', 'site/requirements.txt', '.github/workflows/ai4s-pages.yml']
+    paths: ['site/static/**', 'site/collect.py', 'site/site_topics.py', 'site/build.py', 'site/sources.json', 'site/requirements.txt', '.github/workflows/ai4s-pages.yml']
 
 concurrency:
   group: ai4s-pages
@@ -68,6 +68,8 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
           CUSTOM_CONFIG: ${{ vars.CUSTOM_CONFIG }}
+          ZOTERO_ID: ${{ secrets.ZOTERO_ID }}
+          ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
         run: python site/collect.py --data-dir "$RUNNER_TEMP/ai4s-state/data" --paper-export "$RUNNER_TEMP/ai4s-papers/papers.json"
       - name: Build static site
         run: python site/build.py --data-dir "$RUNNER_TEMP/ai4s-state/data" --output _site

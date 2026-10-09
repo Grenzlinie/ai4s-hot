@@ -12,6 +12,7 @@ from unittest.mock import patch
 from datetime import datetime, timezone
 
 SITE = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(SITE))
 
 
 def load(name):
