@@ -41,11 +41,11 @@ vm.runInNewContext(code + `
   assert.equal(filtered().length,0);
   $('unread').checked=false; savedView=true; assert.equal(filtered().length,0);
   saved.add('p'); assert.equal(filtered().length,1);
-  savedView=false; $('sort').value='zotero'; assert.equal(filtered().length,1);
-  $('sort').value='alpha'; assert.equal(filtered().length,1);
+  savedView=false; legacySignal='zotero'; assert.equal(filtered().length,1);
+  legacySignal='alpha'; assert.equal(filtered().length,1);
   data.items.push({...paper,id:'other',source_ids:['hf-daily'],alpha_rank:undefined});
   assert.equal(filtered().length,1);
-  $('sort').value='recent';
+  legacySignal=''; viewMode='latest';
   const tree=[
     {id:'root',name:'<Science>',path:'<Science>',parent_id:null},
     {id:'child',name:'Materials',path:'<Science> / Materials',parent_id:'root'},

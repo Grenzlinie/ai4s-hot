@@ -23,6 +23,7 @@ jobs:
       - run: node --check site/static/app.js
       - run: node site/tests/test_frontend.cjs
       - run: node site/tests/test_topic_explorer.cjs
+      - run: node site/tests/test_discovery_feed.cjs
       - run: npm install --global @fission-ai/openspec@1.13.0
       - run: openspec validate --all --strict
         env:

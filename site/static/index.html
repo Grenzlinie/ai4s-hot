@@ -3,60 +3,65 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AI4S Hot：持续归档 AI for Science 论文、模型、科研工具与机构技术报告。">
-  <meta name="theme-color" content="#2459c4">
+  <meta name="description" content="AI4S Hot：每天聚合论文、模型、科研工具与研究报告，跨来源阅读科学与 AI 前沿进展。">
+  <meta name="theme-color" content="#17695b">
   <title>AI4S Hot · 科研进展阅读站</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css">
-  <script src="./app.js" defer></script>
+  <link rel="stylesheet" href="./style.css?v=discovery-20261009">
+  <script src="./app.js?v=discovery-20261009" defer></script>
 </head>
 <body>
 <a class="skip" href="#stream">跳到内容</a>
 <header class="header">
-  <a class="brand" href="./" aria-label="AI4S Hot 首页"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 29 17 8l7 15 10-12"/><circle cx="17" cy="8" r="3"/><circle cx="24" cy="23" r="3"/><circle cx="34" cy="11" r="3"/></svg><span>AI4S <b>Hot</b></span></a>
-  <span class="site-description">科研进展阅读站</span>
-  <nav aria-label="主要导航"><button id="home" class="nav-button active">发现</button><button id="saved" class="nav-button">收藏 <span id="saved-count">0</span></button><a href="https://github.com/Grenzlinie/ai4s-hot" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
+  <a class="brand" href="./" aria-label="AI4S Hot 首页">AI4S <b>Hot.</b></a>
+  <a class="header-link" href="https://github.com/Grenzlinie/ai4s-hot" target="_blank" rel="noopener noreferrer">GitHub</a>
 </header>
 <div class="layout">
-  <button id="topic-toggle" class="topic-toggle" aria-expanded="false" aria-controls="topic-drawer">主题与来源筛选</button>
+  <button id="topic-toggle" class="topic-toggle" aria-expanded="false" aria-controls="topic-drawer">按研究主题细筛</button>
   <div id="drawer-backdrop" class="drawer-backdrop" hidden></div>
-  <aside id="topic-drawer" class="rail" aria-label="内容筛选">
-    <button id="drawer-close" class="drawer-close" aria-label="关闭主题筛选">关闭 ×</button>
-    <div class="rail-title" id="topic-heading">阅读方向</div>
-    <label class="sr-only" for="topic-search">搜索主题目录</label><input id="topic-search" class="topic-search" type="search" placeholder="搜索主题目录…">
+  <aside id="topic-drawer" class="rail" aria-label="研究主题筛选">
+    <button id="drawer-close" class="drawer-close" aria-label="关闭研究主题筛选">关闭 ×</button>
+    <div class="rail-title" id="topic-heading">按研究主题细筛</div>
+    <p class="rail-description">材料、AI 方法、数据与科研工具</p>
+    <label class="sr-only" for="topic-search">搜索研究主题</label>
+    <input id="topic-search" class="topic-search" type="search" placeholder="搜索研究主题…">
     <div class="tree-tools"><button id="expand-all">展开全部</button><button id="collapse-all">折叠全部</button></div>
-    <p class="count-note">数量：当前 / 全部归档</p><div id="topics" class="topics"></div>
-    <div class="rail-title source-title">按来源阅读</div>
-    <label class="sr-only" for="source">选择来源</label><select id="source"><option value="">所有来源</option></select>
-    <div class="rail-note">论文、技术报告与代码更新持续归档。<br>收藏与已读保存在当前浏览器。</div>
-    <button id="export-saved" class="text-button">导出收藏</button><br><button id="export-corrections" class="text-button">导出本机分类修正</button><br><label class="text-button">导入本机修正 <input id="import-corrections" type="file" accept="application/json" class="sr-only"></label>
+    <p class="count-note">数量：当前 / 全部归档</p>
+    <div id="topics" class="topics"></div>
+    <div class="rail-note"><p>按研究主题浏览前沿进展。<br>收藏与已读保存在当前浏览器。</p><p id="classification-version" class="count-note"></p></div>
+    <div class="rail-exports"><button id="export-saved" class="text-button">导出收藏</button><button id="export-corrections" class="text-button">导出本机分类修正</button><label class="text-button import-label">导入本机修正 <input id="import-corrections" type="file" accept="application/json" class="sr-only"></label></div>
   </aside>
   <main id="stream">
-    <section class="intro">
-      <div class="issue"><span class="dot"></span><span id="updated">正在读取归档</span></div>
-      <h1>把错过的进展，接着读。</h1>
-      <p>从科学发现到模型与工具，留住值得回看的研究进展。</p>
-      <p id="classification-version" class="count-note"></p>
-      <div class="intro-bottom"><span id="coverage">正在加载来源</span><button id="health-toggle" class="text-button" aria-expanded="false" aria-controls="health">查看来源状态</button></div>
+    <section class="intro" aria-labelledby="site-heading">
+      <div class="eyebrow">THE RESEARCH BRIEF</div>
+      <div class="heading"><div><h1 id="site-heading">科研进展，持续阅读。</h1><p class="lede">论文、模型、工具与研究报告，在同一份简报里接着读。</p></div><span id="updated" class="updated">正在读取归档</span></div>
+      <nav class="reading-modes" aria-label="阅读方式"><button id="home" class="nav-button active" aria-pressed="true">综合推荐</button><button id="latest" class="nav-button" aria-pressed="false">最新</button><button id="saved" class="nav-button" aria-pressed="false">收藏 <span id="saved-count">0</span></button></nav>
     </section>
-    <section id="health" class="health" hidden aria-label="来源采集状态"></section>
+    <div id="update-alert" class="update-alert" aria-live="polite" hidden></div>
     <section class="controls" aria-label="搜索与归档筛选">
       <div class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><label class="sr-only" for="query">搜索标题、摘要、作者或来源</label><input id="query" type="search" placeholder="搜索论文、模型、机构或关键词…" autocomplete="off"><kbd>/</kbd></div>
+      <div class="facet-row"><span class="facet-label" id="domain-label">领域</span><div id="domains" class="chips" role="group" aria-labelledby="domain-label"></div></div>
+      <div class="facet-row"><span class="facet-label" id="kind-label">类型</span><div id="kinds" class="chips" role="group" aria-labelledby="kind-label"></div></div>
+      <div class="facet-row sourcebar"><span class="facet-label" id="sources-label">来源</span><div id="sources" class="chips source-chips" role="group" aria-labelledby="sources-label"></div></div>
       <div class="filter-row">
-        <div class="periods" id="periods" aria-label="发表时间范围"><button data-days="7">近 7 天</button><button data-days="30" class="active">近 30 天</button><button data-days="0">全部归档</button></div>
+        <div class="periods" id="periods" aria-label="时间范围"><button data-days="7">近 7 天</button><button data-days="30" class="active">近 30 天</button><button data-days="0">全部归档</button></div>
         <label class="date-label">收录日期 <input id="archive-date" type="date"></label>
-        <label class="sr-only" for="sort">排序方式</label><select id="sort"><option value="recent">最新发表</option><option value="indexed">最新收录</option><option value="zotero">Zotero 相关度</option><option value="alpha">alphaXiv 榜单顺序</option></select>
+        <label class="unread"><input id="unread" type="checkbox">只看未读</label>
+        <label class="sort-label" for="sort">日期依据 <select id="sort"><option value="recent">发表日期优先</option><option value="indexed">收录日期</option></select></label>
       </div>
-      <div class="channel-row"><div id="channels" class="channels" aria-label="内容频道"></div><label class="unread"><input id="unread" type="checkbox">只看未读</label></div>
     </section>
-    <div class="results-header"><h2 id="results-title">进展时间线</h2><span id="result-count" role="status" aria-live="polite"></span><button id="clear" class="text-button">重置筛选</button></div>
+    <div class="results-header"><h2 id="results-title">综合推荐</h2><span id="result-count" role="status" aria-live="polite"></span><span id="sort-info" class="sort-info"></span><button id="clear" class="text-button">重置筛选</button></div>
     <div id="active-filters" class="active-filters" aria-label="生效的筛选条件"></div>
     <div id="entries"><div class="loading" role="status">正在加载研究归档…</div></div>
     <button id="load-more" class="load-more" hidden>继续阅读</button>
-    <footer><span>摘要用于快速筛选，结论与细节请查看原文。<br>“收录日期”指本站首次发现时间；“发表日期”来自原始来源。</span><a href="https://github.com/Grenzlinie/ai4s-hot/tree/main/site" id="source-code" target="_blank" rel="noopener noreferrer">开源代码与采集规则</a></footer>
+    <details id="ranking-explanation" class="ranking-explanation"><summary>如何推荐与排序</summary><p>综合推荐结合发布时间、可用的研究推荐信号与公开热榜，适当分散相近类型和来源。没有推荐信号的进展也会保留；推荐效果尚未量化。切换“最新”可按日期阅读。</p></details>
+    <div class="archive-status"><span id="coverage">正在加载来源</span><button id="health-toggle" class="text-button" aria-expanded="false" aria-controls="health">来源与更新状态</button></div>
+    <section id="health" class="health" hidden aria-label="来源采集与更新状态"></section>
+    <footer><span>摘要用于快速筛选，结论与细节请查看原文。<br>缺少发表日期时使用本站收录日期，并标明“收录”。</span><a href="https://github.com/Grenzlinie/ai4s-hot/tree/main/site" id="source-code" target="_blank" rel="noopener noreferrer">开源代码与采集规则</a></footer>
   </main>
 </div>
-<dialog id="correction-dialog" aria-labelledby="correction-heading"><form method="dialog"><h2 id="correction-heading">修正研究主题</h2><p>修正立即保存在当前浏览器。导出后由维护者审核、提交和发布，才会应用到全站；不会修改 Zotero。</p><div id="correction-options"></div><label>公开理由 <input id="correction-reason" maxlength="300" placeholder="请填写公开的分类依据" required></label><div class="dialog-actions"><button value="cancel">取消</button><button id="correction-save" type="button">保存到本机</button></div></form></dialog>
+<dialog id="source-dialog" aria-labelledby="source-dialog-heading"><div class="dialog-heading"><h2 id="source-dialog-heading">选择来源</h2><button id="source-close" type="button" class="dialog-close" aria-label="关闭来源选择">关闭 ×</button></div><p class="dialog-description">可同时选择多个来源，重合的进展只显示一次。数量为当前其他筛选条件下的结果。</p><label class="sr-only" for="source-search">搜索全部来源</label><input id="source-search" type="search" class="source-search" placeholder="搜索来源名称…" autocomplete="off"><div id="all-sources" class="all-sources" role="group" aria-label="全部来源"></div><button id="source-clear" type="button" class="text-button">清除来源选择</button></dialog>
+<dialog id="correction-dialog" aria-labelledby="correction-heading"><form method="dialog"><h2 id="correction-heading">修正研究主题</h2><p>修正立即保存在当前浏览器。导出后由维护者审核、提交和发布，才会应用到全站。</p><div id="correction-options"></div><label>公开理由 <input id="correction-reason" maxlength="300" placeholder="请填写公开的分类依据" required></label><div class="dialog-actions"><button value="cancel">取消</button><button id="correction-save" type="button">保存到本机</button></div></form></dialog>
 <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 </body>
 </html>

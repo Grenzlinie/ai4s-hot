@@ -1,0 +1,281 @@
+{
+  "base": "http://127.0.0.1:8766/",
+  "mode": "local",
+  "browser": "Installed Chrome154 via Playwright",
+  "checks": [
+    {
+      "name": "default110 deduplicated records",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "healthy update alert hidden",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "recommended ordering deterministic and candidate110 retained",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "all-source latest keeps missing-signal reports and all110 candidates",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "new discovery interface three reading modes",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "reader copy excludes private Zotero language",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "source panel focus enters search",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "source keyboard focus preserved after rerender",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "two sources OR and ID dedup",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "all-source counts ignore selected source axis",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "source Esc returns current trigger after selections",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "latest preserves active source filters and candidate identities",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "source panel name search finds only Kimi",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "zero source remains selected with cancellable empty state",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "zero source clear restores110",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "domain axis derives from public domain tags",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "type keyboard focus and domain intersection",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "source count respects other domain/type filters",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "search empty state has clear conditions",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "search reset restores110",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "card topic short label full path and source preservation",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "latest preserves selected source+topic",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "legacy single source keeps exact scope",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "legacy single source survives normalized URL reload",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "legacy channel tools keeps exact scope",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "legacy channel tools survives normalized URL reload",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "legacy alpha rank scope keeps exact scope",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "legacy alpha rank scope survives normalized URL reload",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "legacy research recommendation scope keeps exact scope",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "legacy research recommendation scope survives normalized URL reload",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "legacy indexed orders by first_seen and keeps all",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "history back restores prior filters and recommended mode",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "history forward restores latest without dropping filters",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "keyboard favorite retains same card action focus",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "original saved/read storage keys used",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "read and favorite survive reload",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "saved view uses local selection",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "saved URL restores local scope",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "remove last saved card returns focus to saved navigation",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "correction import applies local key without global write",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "correction export remains public maintainer schema",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "topic drawer focus enters",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "topic drawer Esc returns trigger",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "mobile source Esc returns trigger",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "retired alias resolves and historical item remains browsable",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "retired IDs excluded from valid correction choices",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "four research axes combine with AND",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "same-axis research topics combine OR",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "failed update sidecar shows error while preserving110 candidates",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "failed update top alert visible without footer scrolling",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "archive unavailable renders readable error",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "no JavaScript page errors",
+      "passed": true,
+      "detail": true
+    }
+  ],
+  "passed": 54,
+  "failed": 0,
+  "page_errors": [],
+  "screenshots": "Fixed1440x1000/390x1000 viewport, fonts ready+2animation frames+100ms; fullPage:false. Local synthetic fixtures use public index routing only."
+}
