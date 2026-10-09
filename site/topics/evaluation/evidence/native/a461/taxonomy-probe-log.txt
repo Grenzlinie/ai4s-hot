@@ -1,0 +1,4 @@
+build	Collect and summarize official sources	2026-10-09T06:38:20.8948167Z Injected taxonomy failure: archive unchanged; no summary requests
+build	Collect and summarize official sources	2026-10-09T06:38:20.9241895Z ##[error]Process completed with exit code 2.
+build	Retain the valid snapshot after a failed update	2026-10-09T06:38:20.9292498Z ^[[36;1mecho '::warning::Update failed; publishing only the unchanged valid archive and public attempt status.'^[[0m
+build	Retain the valid snapshot after a failed update	2026-10-09T06:38:21.2978302Z ##[warning]Update failed; publishing only the unchanged valid archive and public attempt status.

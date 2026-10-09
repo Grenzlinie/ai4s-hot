@@ -1,0 +1,4 @@
+build	Collect and summarize official sources	2026-10-09T06:39:32.3150958Z Injected classification failure: archive unchanged; no summary requests
+build	Collect and summarize official sources	2026-10-09T06:39:32.3786351Z ##[error]Process completed with exit code 2.
+build	Retain the valid snapshot after a failed update	2026-10-09T06:39:32.3877235Z ^[[36;1mecho '::warning::Update failed; publishing only the unchanged valid archive and public attempt status.'^[[0m
+build	Retain the valid snapshot after a failed update	2026-10-09T06:39:33.0065384Z ##[warning]Update failed; publishing only the unchanged valid archive and public attempt status.

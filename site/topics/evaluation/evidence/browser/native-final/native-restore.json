@@ -1,0 +1,63 @@
+{
+  "phase": "restore",
+  "mode": "Actual public production deployment; real installed Chrome, persistent profile; no fixtures, no request routes, no workflow calls",
+  "tested_at": "2026-10-09T06:43:54.183Z",
+  "checks": [
+    "expected actual archive revision",
+    "final frontend code retained",
+    "native archive hash matches deployment manifest",
+    "expected archive schema",
+    "saved/read/correction bytes preserved",
+    "favorite remains displayed",
+    "read remains displayed",
+    "v2 indicator restored",
+    "local correction valid after real restore",
+    "legacy alias for corrected stable topic exists",
+    "old topic URL resolves after restore",
+    "query retained after restore",
+    "desktop no horizontal overflow",
+    "restored mobile v2 indicator visible",
+    "restored mobile read and saved retained",
+    "restored mobile no horizontal overflow",
+    "restored mobile drawer opens with focus",
+    "restored mobile Escape returns focus"
+  ],
+  "browser": "154.0.8037.99",
+  "manifest": {
+    "schema_version": 1,
+    "created_at": "2026-10-09T06:43:40.678440+00:00",
+    "mode": "rollback",
+    "code_revision": "a46136428a041984850368328de406436ceed2bc",
+    "archive_revision": "afa651740c30fc305494a9d9826717fb31bc2dd4",
+    "builder_revision": "a46136428a041984850368328de406436ceed2bc",
+    "archive_schema": 2,
+    "archive_generated_at": "2026-10-09T06:35:49.103760+00:00",
+    "archive_sha256": "013207a2cdd65df08642b3fa6e901dfee16e44ee1661489344b87d9865506e10",
+    "assets": {
+      "index.html": "2c20052d85f2de88307f0c073ff8094585675223a86dac0256fae346f9a6a21c",
+      "app.js": "c4788917342ecb6118423f431ea1e300824ca37f24d26cba83b996c064b13695",
+      "style.css": "146ae258377053ae033cef4eb0b463fc24b699bf4e0ea83b027226df7cba7341",
+      "favicon.svg": "82ef768aeb8152ca4b219024fe0ec8a01d33f9ed646e3639f561c6f0b6697494",
+      "schema-support.json": "185f680de2d4d7ff11896b68c90ab2e1851adbc1e45a56a7adfef0485a694f87"
+    },
+    "item_count": 110,
+    "taxonomy_version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
+    "classification": {
+      "status": "ok",
+      "classified": 110,
+      "unclassified": 34,
+      "algorithm": "faceted-local-v2.4",
+      "calibration_status": "pending_human_gold",
+      "quality_status": "unmeasured",
+      "curation": {
+        "status": "ok",
+        "applied": 0,
+        "needs_review": 0
+      }
+    },
+    "source_kind": "public_archive",
+    "llm_requests": 0
+  },
+  "storage_sha256": "8e3b99198aa25041d22096e8c7e773c135e5c211b8cc5abd1892479842c33d0f",
+  "status": "passed"
+}

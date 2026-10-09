@@ -1,0 +1,28 @@
+{
+  "stage": "taxonomy",
+  "mode": "Real production sidecar failure readback, persistent Chrome profile; no fixtures or request interception",
+  "tested_at": "2026-10-09T06:38:46.197Z",
+  "checks": [
+    "native error sidecar has requested stage",
+    "visible failure banner preserves previous result message",
+    "failure stage explicitly displayed",
+    "published archive bytes unchanged after failed update",
+    "favorites read corrections storage unchanged",
+    "favorite remains visible",
+    "read remains visible",
+    "no browser runtime errors"
+  ],
+  "sidecar": {
+    "status": "error",
+    "stage": "taxonomy",
+    "last_attempt": "2026-10-09T06:38:20.877377+00:00",
+    "last_success": "2026-10-09T06:35:49.103760+00:00",
+    "error_type": "UpdateFailure",
+    "retryable": true,
+    "run_url": "https://github.com/Grenzlinie/ai4s-hot/actions/runs/37894554091"
+  },
+  "archive_sha256": "013207a2cdd65df08642b3fa6e901dfee16e44ee1661489344b87d9865506e10",
+  "browser": "154.0.8037.99",
+  "page_errors": [],
+  "status": "passed"
+}

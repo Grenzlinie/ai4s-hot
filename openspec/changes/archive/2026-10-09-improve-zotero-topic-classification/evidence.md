@@ -1,6 +1,6 @@
 # 实施证据索引
 
-当前状态（2026-10-09）：用户最新明确“直接采用新版”，最终提交`72cd88d6ba746478434692c0b28e016a543cc438`已推送，默认v2已发布并HTTP读回，不新增opt-in/selector。真实质量为`unmeasured`；人工gold目前0，dev校准和holdout质量属于Deferred measurement，不阻塞本次上线，也未完成。Pages `37892904488`、CI `37892904490`、semantic shadow `37892914767`均成功；原生恢复与HTTP读回完成。逐条error收据、进一步故障注入及延期量化仍保持未勾，不archive。
+当前状态（2026-10-09）：用户最新明确“直接采用新版”，最终提交`72cd88d6ba746478434692c0b28e016a543cc438`已推送，默认v2已发布并HTTP读回，不新增opt-in/selector。真实质量为`unmeasured`；人工gold目前0，dev校准和holdout质量属于Deferred measurement，不阻塞本次上线，也未完成。Pages `37892904488`、CI `37892904490`、semantic shadow `37892914767`均成功；原生恢复与HTTP读回完成。该段为72cd历史验收；最终a461的失败尝试状态、原生故障注入、完整回滚/恢复及健康更新见文末。延期量化独立承接，保持未完成。
 
 当前离线汇总：148/148 Python测试，前端29+37=66行为断言；真实Chrome 1440px/390px矩阵25+4=29项通过，另有2项新版标记检查（仅路由调整公开fixture的schema，用于UI标记，不是分类质量）。本机回滚9项通过但未替代远端原生恢复/部署收据。下方历史段落保持当时版本与边界，任何“默认v1/未部署”等描述仅指历史验证时点。
 
@@ -33,6 +33,8 @@
 最终迁移契约回归：`test_shadow_safety.py` 10/10通过。v2显式标签必须一对一公开receipt，v1允许缺省；首次v1→v2按item局部迁移在读取私有源之前拒绝且不产出文件。合法v2 selective backfill仅分类选中item，完整迁移所有已有receipt的id/facet，未选item公开reason/score/method等原样保留。
 
 用户授权直接采用v2后，独立新增实际模块集成 `test_v2_publication_integration.py`：2/2通过。仅mock Zotero与新闻输入，真实执行 collector→v2 identity/classifier→公开schema验证→build→manifest，确认schema2、exact标签receipt、quality_status=unmeasured、calibration_status=pending_human_gold与私有sentinel不公开。workflow静态验证TOPICS_MODE=v2/私密配置Secret已传入、build成功后才commit site-data、manifest成功后才上传Pages，无always绕过。最后全套Python148/148通过、前端行为29断言与explorer37断言通过。失败不覆盖远端快照仅由workflow步骤顺序和默认success guard证明，未执行远端故障注入；未部署、提交或读取真实凭据，浏览器/Pages/原生Actions仍由主Agent验收。
+
+失败保留实现后的独立验证：新增 `test_failure_retention.py` 8/8通过，最新全套Python160/160、前端29断言及explorer67断言通过。末项分类异常和curation异常均不提交工作副本；同步/分类失败保持原index与daily字节且不调用summary；退役label receipt保留history，schema拒绝unknown及active历史引用；status拒绝私有字段/非法identity类型，发布前剔除未归档failed_item_id。实际维护probe在无网络/summary条件下经真实collector和classifier故障路径验证两个stage均返回2且保留旧档。发现非法timestamp异常会重复私有输入，修复为固定安全消息后回归通过。workflow静态确认仅collect+candidate成功才提交candidate，失败分支从预先记录的immutable archive重建并公开匿名status；这些离线/静态证据不替代远端故障注入和HTTP读回。
 
 ## 当前技术完成项与对应证据
 
@@ -76,3 +78,19 @@
 恢复默认v2 run 37893363352成功；HTTP读回archive1aeb22e303b9229097f83d13dc31d7ceb0c0e1bd、schema2、archive SHA256与原发布一致。独立真实Chrome10项恢复检查通过：收藏/已读、本机修正storage字节保持，v1旧zt修正在v2映射stableID，URL主题与关键词恢复；见browser/live-rollback-restore/。实际旧归档浏览器9项前置检查通过，但最后旧stableURL说明断言失败且未完整写首轮收据；partial-attempt为tool trace重建，不宣称完整回滚浏览器矩阵通过，限制已写手册。
 
 只读故障注入37893443923使用旧前端f085+新schema2，按预期在build报Frontend does not support this archive schema，无archive写权限且deploy跳过；失败后HTTP仍为有效v2。这证明兼容构建fail-closed，不冒充真实Zotero接口故障注入。分类/同步异常保留由离线wrapper/原子写与workflow guard验证；逐条异常error收据尚未实现，3.6保持未勾。
+
+## 最终完成审计（a461364，替代此前待补状态）
+
+独立 Agent 再次逐项核对5份delta的24个requirements、39个scenarios，未发现尚未实现的本次技术要求。最终修复：分类采用批次副本事务、v2目录同步失败立即停止归档写入、摘要在分类/公开schema校验成功后才运行；error是独立更新尝试状态，保留上次分类，不以空标签伪装错误；topic_history保留退役显式标签，浏览器可浏览归档主题但不能将其作为有效新纠错；缺定义的新公开目录用名称/父路径建立低confidence候选，词语与语义共用公开fallback。
+
+独立执行160/160 Python测试，前端29+67=96断言；新增failure_retention8项含第二条分类异常、curation异常、同步/分类失败旧index/daily字节不变和零summary/API、历史标签、状态白名单及immutable保留workflow。真实Chrome本机29项矩阵+20项退役/sidecar/回滚fixture通过；fixture不作为native证据。
+
+最终正式代码a46136428a041984850368328de406436ceed2bc，CI37894330283成功，正常Pages37894330336成功。原生故障注入taxonomy37894554091和classification37894654207：受控collector退出2，原始archive SHA256始终013207a2cdd65df08642b3fa6e901dfee16e44ee1661489344b87d9865506e10，site-data commit被跳过，只有先前immutable archive及匿名update-status sidecar部署；真实页面错误阶段可见，收藏/已读/本机纠错保持。工作流success表示保留部署成功，不表示本次分类成功。
+
+原生回滚37894759805、恢复37895016891、正常健康更新37895143455全部成功；最终真实Chrome六阶段15+8+9+12+18+14=76次检查完整通过，证据见site/topics/evaluation/evidence/browser/native-final/。历史schema1不可用stable筛选明确提示清除并保留关键词，纠错存储字节保持且标待复核；恢复schema2后旧alias、有效纠错和阅读状态恢复，1440/390视口及抽屉焦点正常。
+
+最终主Agent HTTP独立读回：schema2，110内容/53主题，algorithm faceted-local-v2.4，quality_status unmeasured，update-status ok/run37895143455，无故障banner；archive17231ace5bdbcb517f9e0008b84ddee23934c58d，SHA256 ac78e4a8b7692a54b14a8c348a37ce3dc7d68a37635e45ab3dcc2292c9c6f460。与上次110内容逐项比较，ID和first_seen全部保持。
+
+原生runtime37894338419已下载实际收据：4CPU Ubuntu24.04/Python3.13.16，500真实去重参考/200公开输入，lexical cold18.8985s/warm22.3557s、RSS62,820,352/63,340,544bytes；semantic真实非degraded cold129.1203s/warm123.8363s、RSS1,701,859,328/1,688,432,640bytes。两者runtime_pass true，quality_pass false（未量化）；生产默认lexical。证据site/topics/evaluation/evidence/native/a461/。
+
+本次27项技术任务完成。原8.1–8.5的5项真实质量任务没有完成或勾选，已逐项转交active change measure-topic-classification-quality；用户明确稍后标注、直接采用新版。当前不报告精度达标。已实现delta同步main，技术change归档保留延期记录，后续量化独立执行。

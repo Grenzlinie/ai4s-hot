@@ -19,7 +19,7 @@
 - [x] 3.2 实现DOI/arXiv优先的可信匹配及冲突拒绝；依赖3.1；验收：T09通过，同标题冲突不能走exact，exact-seen报告独立。
 - [x] 3.3 实现四维独立词语候选、定义冷启动、词汇覆盖/OOV与内容范围识别；依赖3.1；验收：T03–T08合成反例通过，组织动态保留时间线而不硬塞研究类。
 - [x] 3.4 实现可配置本地多语言语义候选，锁模型revision并有界分段/批次；依赖3.3；验收：仅runner内计算，T12通过，真实runner记录冷/暖耗时与RSS；超预算不默认启用。
-- [ ] 3.6 实现父类回退、拒判状态和基于公开材料的理由；依赖3.3；新版使用明确provisional配置、质量unmeasured，后续8.4（原3.5）校准独立延期；验收：classified/broad_only/low_confidence/insufficient_evidence/taxonomy_gap/pending/error可区分，T04–T08/T12通过。
+- [x] 3.6 实现父类回退、拒判状态和基于公开材料的理由；依赖3.3；新版使用明确provisional配置、质量unmeasured，后续8.4（原3.5）校准独立延期；验收：classified/broad_only/low_confidence/insufficient_evidence/taxonomy_gap/pending/error可区分，T04–T08/T12通过。
 - [x] 3.7 提供重分类dry-run、范围backfill和原子写入；依赖3.6；验收：模型/定义/阈值变化触发diff，T10/T11通过，不重复生成付费摘要。
 
 ## 4. M2 — 纠错与维护
@@ -40,23 +40,25 @@
 
 - [x] 6.1 扩充离线契约与集成回归，独立agent运行T01–T13/T17–T19；依赖上述对应任务；验收：保存测试结果并区分合成逻辑检查和真实质量检查。
 - [x] 6.3 真实Actions影子运行v2，记录500参考/200新条目固定runner cold/warm收据；依赖3.7/6.1；不依赖延期质量评分8.5（原6.2）；验收：所启用后端性能门槛通过、公开artifact/log无私有资料，T12/T20通过。
-- [ ] 6.4 独立完成桌面与手机真实浏览器矩阵及回滚演练；依赖5.3/5.4/5.5；验收：T14–T18/T20有浏览器证据，旧收藏、已读和覆盖保持。
+- [x] 6.4 独立完成桌面与手机真实浏览器矩阵及回滚演练；依赖5.3/5.4/5.5；验收：T14–T18/T20有浏览器证据，旧收藏、已读和覆盖保持。
 - [x] 6.5 通过技术、隐私、真实浏览器、runtime和回滚门禁后直接发布默认v2并HTTP读回；依赖6.3/6.4/6.6/6.7；验收：无opt-in selector、默认确为v2、显示quality=unmeasured，原生Pages成功且归档/前端版本一致、来源身份计数正确；门禁未过保留最后有效版。
 
 - [x] 6.6 实现默认v2版本标记与未量化说明，验证直接访问/刷新/旧URL均使用新版且可由维护者回滚；依赖5.4/5.5；验收：不要求访客选择试用、不新增selector，真实浏览器阅读和收藏/已读状态保持。
-- [ ] 6.7 实现每日v2更新及失败保留最后有效快照/最近成功时间，演练维护者回滚；依赖3.7/6.3；验收：注入分类/同步失败不覆盖有效数据，原生Pages/HTTP读回保持有效版本且回滚不重新生成付费摘要。
+- [x] 6.7 实现每日v2更新及失败保留最后有效快照/最近成功时间，演练维护者回滚；依赖3.7/6.3；验收：注入分类/同步失败不覆盖有效数据，原生Pages/HTTP读回保持有效版本且回滚不重新生成付费摘要。
 
 ## 7. 项目持续管理
 
 - [x] 7.1 为OpenSpec添加固定CLI版本的CI校验与任务完成证据索引；依赖本方案评审；验收：严格校验全spec/change，未来需求保持active、不被提前archive。
-- [ ] 7.2 更新默认v2/维护者回滚/每日失败保留说明与运行手册，核对OpenSpec和生产收据；依赖6.5/7.1；验收：只记录已验收新版行为，默认v2、质量unmeasured和Deferred measurement状态一致；仅在本次发布必需任务完成且延期量化已有明确独立承接后archive并合并已验收delta，未完成量化不勾完成、不宣称已实现质量门槛，承接未落实则保持change active但不阻塞新版上线。
+- [x] 7.2 更新默认v2/维护者回滚/每日失败保留说明与运行手册，核对OpenSpec和生产收据；依赖6.5/7.1；验收：只记录已验收新版行为，默认v2、质量unmeasured和Deferred measurement状态一致；仅在本次发布必需任务完成且延期量化已有明确独立承接后archive并合并已验收delta，未完成量化不勾完成、不宣称已实现质量门槛，承接未落实则保持change active但不阻塞新版上线。
 
 ## 8. Deferred measurement — 后续独立量化，不阻塞本次默认v2发布
 
 2026-10-09用户最新annotation“直接采用新版”明确延期以下五项（为符合OpenSpec分组校验改用8.x编号，括号保留原任务ID）；保留原目标、工具和依赖，均不视为已完成，也不用于本次默认v2的上线判定。
 
-- [ ] 8.1 （原1.2） 建立标注界面或JSONL模板，补充薄弱类型至至少148条真实公开内容并人工确认；依赖1.1；验收：研究范围、四维标签及拒判原因完整，所有gold有复核记录。
-- [ ] 8.2 （原1.3） 按canonical identity冻结dev≥88条、holdout≥60条，audit/定义已见样本强制dev并落实参考/override排除；依赖8.1；验收：T19泄漏检查0违规，各维支持及20个非研究样本满足计划，保留manifest。
-- [ ] 8.3 （原1.4） 在相同输入运行v1基线、保存质量与耗时；依赖8.2；验收：报告有效分母、precision/recall/F1、父类-only计分与未分类分布，不用56/88代替准确率。
-- [ ] 8.4 （原3.5） 只在dev上校准词语v2/语义/融合候选、分维阈值、分差和置信度；依赖8.2/3.3/3.4；验收：保存选择依据与配置hash，不读holdout错误调参。
-- [ ] 8.5 （原6.2） 独立在冻结holdout运行自动分类，产出evaluation report并核对门槛；依赖8.3/3.7/6.1；验收：计划质量目标全满足、支持不足明确N/A、不以覆盖率替代precision。
+独立承接：2026-10-09已建立[measure-topic-classification-quality](../../measure-topic-classification-quality/proposal.md)；以下任务保留未勾，逐项transferred至其任务1.1–1.5。规划承接不表示人工gold、校准或独立质量验收已完成。
+
+- [ ] 8.1 （原1.2） 建立标注界面或JSONL模板，补充薄弱类型至至少148条真实公开内容并人工确认；依赖1.1；验收：研究范围、四维标签及拒判原因完整，所有gold有复核记录。 承接：[新change任务1.1](../../measure-topic-classification-quality/tasks.md)。
+- [ ] 8.2 （原1.3） 按canonical identity冻结dev≥88条、holdout≥60条，audit/定义已见样本强制dev并落实参考/override排除；依赖8.1；验收：T19泄漏检查0违规，各维支持及20个非研究样本满足计划，保留manifest。 承接：[新change任务1.2](../../measure-topic-classification-quality/tasks.md)。
+- [ ] 8.3 （原1.4） 在相同输入运行v1基线、保存质量与耗时；依赖8.2；验收：报告有效分母、precision/recall/F1、父类-only计分与未分类分布，不用56/88代替准确率。 承接：[新change任务1.3](../../measure-topic-classification-quality/tasks.md)。
+- [ ] 8.4 （原3.5） 只在dev上校准词语v2/语义/融合候选、分维阈值、分差和置信度；依赖8.2/3.3/3.4；验收：保存选择依据与配置hash，不读holdout错误调参。 承接：[新change任务1.4](../../measure-topic-classification-quality/tasks.md)。
+- [ ] 8.5 （原6.2） 独立在冻结holdout运行自动分类，产出evaluation report并核对门槛；依赖8.3/3.7/6.1；验收：计划质量目标全满足、支持不足明确N/A、不以覆盖率替代precision。 承接：[新change任务1.5](../../measure-topic-classification-quality/tasks.md)。

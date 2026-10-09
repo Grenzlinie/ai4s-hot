@@ -1,0 +1,66 @@
+{
+  "mode": "Actual normal production update, no fixtures or workflow calls",
+  "tested_at": "2026-10-09T06:45:38.578Z",
+  "checks": [
+    "native update status healthy",
+    "healthy status matches expected run",
+    "failure banner cleared",
+    "final code revision retained",
+    "final native archive schema2",
+    "final archive matches deployment manifest",
+    "same profile read/saved/correction bytes retained",
+    "favorite and read remain visible",
+    "classification failure card warning cleared",
+    "local correction still valid",
+    "desktop no overflow",
+    "final mobile no overflow",
+    "final mobile drawer focuses close button",
+    "final mobile Escape returns focus"
+  ],
+  "sidecar": {
+    "status": "ok",
+    "stage": "classification",
+    "last_attempt": "2026-10-09T06:45:25.453587+00:00",
+    "retryable": false,
+    "last_success": "2026-10-09T06:45:04.121988+00:00",
+    "run_url": "https://github.com/Grenzlinie/ai4s-hot/actions/runs/37895143455"
+  },
+  "manifest": {
+    "schema_version": 1,
+    "created_at": "2026-10-09T06:45:25.232122+00:00",
+    "mode": "publish",
+    "code_revision": "a46136428a041984850368328de406436ceed2bc",
+    "archive_revision": "17231ace5bdbcb517f9e0008b84ddee23934c58d",
+    "builder_revision": "a46136428a041984850368328de406436ceed2bc",
+    "archive_schema": 2,
+    "archive_generated_at": "2026-10-09T06:45:04.121988+00:00",
+    "archive_sha256": "ac78e4a8b7692a54b14a8c348a37ce3dc7d68a37635e45ab3dcc2292c9c6f460",
+    "assets": {
+      "index.html": "2c20052d85f2de88307f0c073ff8094585675223a86dac0256fae346f9a6a21c",
+      "app.js": "c4788917342ecb6118423f431ea1e300824ca37f24d26cba83b996c064b13695",
+      "style.css": "146ae258377053ae033cef4eb0b463fc24b699bf4e0ea83b027226df7cba7341",
+      "favicon.svg": "82ef768aeb8152ca4b219024fe0ec8a01d33f9ed646e3639f561c6f0b6697494",
+      "schema-support.json": "185f680de2d4d7ff11896b68c90ab2e1851adbc1e45a56a7adfef0485a694f87"
+    },
+    "item_count": 110,
+    "taxonomy_version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
+    "classification": {
+      "status": "ok",
+      "classified": 0,
+      "unclassified": 34,
+      "algorithm": "faceted-local-v2.4",
+      "calibration_status": "pending_human_gold",
+      "quality_status": "unmeasured",
+      "curation": {
+        "status": "ok",
+        "applied": 0,
+        "needs_review": 0
+      }
+    },
+    "source_kind": "public_archive",
+    "llm_requests": 0
+  },
+  "archive_sha256": "ac78e4a8b7692a54b14a8c348a37ce3dc7d68a37635e45ab3dcc2292c9c6f460",
+  "browser": "154.0.8037.99",
+  "status": "passed"
+}

@@ -1,20 +1,47 @@
 # taxonomy-sync
 
 ## Purpose
-记录现有 Zotero 目录读取、公开目录投影与同步失败时保留数据的行为；这是当前实现基线，不代表未来稳定身份和迁移机制已经完成。
+
+定义 Zotero 只读目录的稳定公开身份、发布范围、别名与退役历史，以及同步失败时保留有效快照和最近成功状态的行为；原始 collection key、身份盐和私有参考不会进入公开数据。
 
 ## Requirements
 
 ### Requirement: Collection projection
-The system SHALL 只读获取 Zotero collection 名称和父子关系，生成公开主题树，排除名称以 `00 ` 开头的目录及其后代，不在公开树中包含 collection key。
+The system SHALL 将允许发布的 Zotero collections 投影为稳定公共主题身份，保留名称和父子层级，排除00待确认子树，且不得公开collection key或身份盐。重命名和移动 SHALL 保持公共ID不变。
+
+#### Scenario: Rename and reparent
+- **WHEN** 同一collection被重命名或移动到另一父目录
+- **THEN** 公共ID保持不变，展示路径与父节点更新，原有条目标签和人工覆盖仍有效
+
+#### Scenario: Unselected root appears
+- **WHEN** 同步发现不在发布范围的新根目录
+- **THEN** 不自动公开该根目录及其子树，现有已发布目录正常更新
 
 #### Scenario: Nested collection projection
-- **WHEN** 读取到父、子和 `00 待确认` 目录
-- **THEN** 展示父子层级并排除待确认子树，公开 ID 由当前路径哈希生成
+- **WHEN** 读取到允许发布的父子目录与00待确认子树
+- **THEN** 保留允许目录的父子关系并排除待确认子树，公共树不包含collection key
 
 ### Requirement: Retain taxonomy on failure
-The system SHALL 在 Zotero 同步失败时保留上一版公开目录、最近成功时间及有效标签，并报告同步状态。
+The system SHALL 在读取失败、目录循环或身份映射冲突时保留最后有效目录和已有分类，公开标明stale及最近成功时间；不得将失效同步当作空目录覆盖归档。
+
+#### Scenario: Invalid tree
+- **WHEN** 新快照含循环关系或不可唯一迁移的身份
+- **THEN** 受影响变更不进入正式目录，产生可复核报告并保留最后有效版本
 
 #### Scenario: Read failure
-- **WHEN** Zotero 读取抛出异常且已有目录归档
-- **THEN** 使用旧目录并标为 stale，公开输出只包含错误类型而不包含异常原文
+- **WHEN** Zotero读取抛出异常且存在已发布目录
+- **THEN** 保留旧目录和最近成功时间、显示stale，不公开异常原文
+
+### Requirement: Topic identity migration
+The system SHALL 为旧公共ID提供明确别名和迁移结果，保留删除节点的历史状态，保持公开条目ID及first_seen不变。
+
+#### Scenario: Old URL and retired topic
+- **WHEN** 用户访问旧主题ID或一个已删除的主题
+- **THEN** 唯一旧ID映射到新ID；删除主题显示已归档状态及历史内容，不猜测另一个同名主题
+
+### Requirement: Daily default taxonomy retention
+The system SHALL 在默认v2每日更新中保留有效目录与分类快照，记录最近成功时间，并保持上一有效版本可恢复；新版直接采用不放宽私有身份边界。
+
+#### Scenario: Daily sync failure after adoption
+- **WHEN** 默认v2上线后的每日目录读取或迁移失败
+- **THEN** 不把有效目录覆盖为空，最近有效快照继续可读且失败状态可辨识，collection key和身份盐仍不公开
