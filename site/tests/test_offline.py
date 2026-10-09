@@ -177,6 +177,88 @@ class OfflineAcceptance(unittest.TestCase):
                 exporter.main()
             self.assertIs(sys.argv,original)
 
+    def run_raw_adapter(self, fetch_full_text=None, enrich_error=False):
+        events = {'rank_inputs':[], 'converted':[], 'summarized':[], 'affiliations':[]}
+        raw = [SimpleNamespace(title='P'+str(n),entry_id=f'https://arxiv.org/abs/2610.1000{n}',authors=[SimpleNamespace(name='A'+str(n))],summary='Abstract'+str(n),pdf_url=f'https://arxiv.org/pdf/2610.1000{n}') for n in range(3)]
+        class FakePaper:
+            def __init__(self, **kwargs):
+                self.__dict__.update(kwargs)
+                self.score = None
+                self.full_text = None
+                self.tldr = ''
+                self.affiliations = []
+            def generate_tldr(self, *args):
+                events['summarized'].append((self.url,self.full_text,self.score))
+                self.tldr = 'Summary '+self.title
+            def generate_affiliations(self, *args):
+                events['affiliations'].append(self.url)
+        class Retriever:
+            def _retrieve_raw_papers(self): return raw
+            def retrieve_papers(self): raise AssertionError('Must rank metadata before conversion')
+            def convert_to_paper(self,result):
+                events['converted'].append(result.entry_id)
+                if enrich_error:
+                    raise RuntimeError('synthetic full text extraction failure')
+                paper = FakePaper(source='arxiv',title=result.title,authors=[a.name for a in result.authors],abstract=result.summary,url=result.entry_id,pdf_url=result.pdf_url)
+                paper.full_text = 'SYNTHETIC_FULL_TEXT'
+                return paper
+        def rank(papers,corpus):
+            events['rank_inputs'] = [(p.title,p.authors,p.abstract,p.pdf_url,p.full_text) for p in papers]
+            for n,paper in enumerate(papers): paper.score = float(n+1)
+            return list(reversed(papers))
+        class FakeExecutor:
+            def __init__(self):
+                settings = SimpleNamespace(max_paper_num=2)
+                if fetch_full_text is not None: settings.fetch_full_text = fetch_full_text
+                self.config = SimpleNamespace(executor=settings,llm={})
+                self.openai_client = object()
+                self.retrievers = {'arxiv':Retriever()}
+                self.reranker = SimpleNamespace(rerank=rank)
+            def fetch_zotero_corpus(self): return ['synthetic corpus']
+            def filter_corpus(self,corpus): return corpus
+        package = ModuleType('zotero_arxiv_daily')
+        ex = ModuleType('zotero_arxiv_daily.executor')
+        ex.Executor = FakeExecutor
+        ex.logger = SimpleNamespace(info=lambda *args:None)
+        package.executor = ex
+        main = ModuleType('zotero_arxiv_daily.main')
+        main.main = lambda:FakeExecutor().run()
+        protocol = ModuleType('zotero_arxiv_daily.protocol')
+        protocol.Paper = FakePaper
+        modules = {'zotero_arxiv_daily':package,'zotero_arxiv_daily.executor':ex,'zotero_arxiv_daily.main':main,'zotero_arxiv_daily.protocol':protocol}
+        with tempfile.TemporaryDirectory() as tmp, patch.dict(sys.modules,modules), patch.dict(exporter.os.environ, {'AI4S_PAPER_EXPORT':str(Path(tmp)/'papers.json')}), patch.object(sys,'path',list(sys.path)):
+            exporter.main()
+            payload = json.loads((Path(tmp)/'papers.json').read_text())
+        return events, payload
+
+    def test_default_metadata_adapter_ranks_all_but_only_summarizes_top_n(self):
+        for setting in (None,False):
+            with self.subTest(fetch_full_text=setting):
+                events,payload = self.run_raw_adapter(setting)
+                self.assertEqual(events['converted'],[])
+                self.assertEqual(len(events['rank_inputs']),3)
+                self.assertEqual(events['rank_inputs'][0],('P0',['A0'],'Abstract0','https://arxiv.org/pdf/2610.10000',None))
+                self.assertEqual([p['title'] for p in payload['papers']],['P2','P1'])
+                self.assertEqual([event[2] for event in events['summarized']],[3.0,2.0])
+                self.assertTrue(all(event[1] is None for event in events['summarized']))
+                self.assertEqual(len(events['affiliations']),2)
+
+    def test_full_text_opt_in_enriches_only_ranked_top_n_and_keeps_scores(self):
+        events,payload = self.run_raw_adapter(True)
+        self.assertEqual(events['converted'],['https://arxiv.org/abs/2610.10002','https://arxiv.org/abs/2610.10001'])
+        self.assertEqual(len(events['rank_inputs']),3)
+        self.assertTrue(all(event[-1] is None for event in events['rank_inputs']))
+        self.assertTrue(all(event[1]=='SYNTHETIC_FULL_TEXT' for event in events['summarized']))
+        self.assertEqual([p['zotero_score'] for p in payload['papers']],[3.0,2.0])
+        self.assertNotIn('SYNTHETIC_FULL_TEXT',json.dumps(payload))
+
+    def test_full_text_enrichment_failure_keeps_abstract_and_score(self):
+        events,payload = self.run_raw_adapter(True,enrich_error=True)
+        self.assertEqual(len(events['converted']),2)
+        self.assertEqual(len(events['summarized']),2)
+        self.assertTrue(all(event[1] is None for event in events['summarized']))
+        self.assertEqual([p['zotero_score'] for p in payload['papers']],[3.0,2.0])
+
     def test_source_config_includes_hf_daily_and_excludes_dp(self):
         sources = json.loads((SITE / 'sources.json').read_text())['sources']
         self.assertTrue(any(s['kind']=='hf_daily' for s in sources))
@@ -223,6 +305,39 @@ class OfflineAcceptance(unittest.TestCase):
         self.assertEqual(result['status'],'partial')
         self.assertNotIn('PRIVATE',json.dumps(result))
         self.assertTrue(all(not p['summary'] and p['excerpt']=='abstract' for p in entries))
+
+    def test_summary_options_whitelist_is_passed_to_request(self):
+        custom = {'llm':{'generation_kwargs':{'model':'mock-model'},'summary_kwargs':{
+            'max_tokens':1024,'temperature':0.25,'reasoning':{'effort':'none'},
+            'model':'must-not-replace-model','messages':[],'api_key':'must-not-enter-request',
+        }}}
+        paper = collect.item(SOURCE,'P','https://example.com/options',excerpt='abstract')
+        response = SimpleNamespace(raise_for_status=lambda:None,json=lambda:{'choices':[{'message':{'content':'中文摘要'}}]})
+        with patch.dict(collect.os.environ, {'OPENAI_API_KEY':'synthetic','OPENAI_API_BASE':'https://example.test/v1','CUSTOM_CONFIG':json.dumps(custom)}), patch.object(collect.requests,'post',return_value=response) as post:
+            status = collect.summarize([paper],1)
+        body = post.call_args.kwargs['json']
+        self.assertEqual(body['max_tokens'],1024)
+        self.assertEqual(body['temperature'],0.25)
+        self.assertEqual(body['reasoning'],{'effort':'none'})
+        self.assertEqual(body['model'],'mock-model')
+        self.assertEqual(len(body['messages']),2)
+        self.assertNotIn('api_key',body)
+        self.assertEqual(status['generated'],1)
+        self.assertEqual(paper['summary'],'中文摘要')
+
+    def test_summary_default_budget_and_valid_boundaries(self):
+        for options, expected in [({},2048),({'max_tokens':1},1),({'max_tokens':16384},16384)]:
+            with self.subTest(options=options), patch.dict(collect.os.environ, {'CUSTOM_CONFIG':json.dumps({'llm':{'summary_kwargs':options}})}):
+                self.assertEqual(collect.summary_options()['max_tokens'],expected)
+
+    def test_invalid_summary_options_never_execute_request(self):
+        invalid = [{'max_tokens':value} for value in (0,-1,16385,True,False,1.5,'1024',None)] + [[], 'bad']
+        for options in invalid:
+            custom = {'llm':{'generation_kwargs':{'model':'mock-model'},'summary_kwargs':options}}
+            with self.subTest(options=options), patch.dict(collect.os.environ, {'OPENAI_API_KEY':'synthetic','OPENAI_API_BASE':'https://example.test/v1','CUSTOM_CONFIG':json.dumps(custom)}), patch.object(collect.requests,'post') as post:
+                with self.assertRaises(ValueError):
+                    collect.summarize([collect.item(SOURCE,'P','https://example.com/invalid',excerpt='abstract')],1)
+                post.assert_not_called()
 
     def test_prepare_config_removes_smtp_but_preserves_model_config(self):
         import os
