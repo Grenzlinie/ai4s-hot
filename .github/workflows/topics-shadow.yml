@@ -1,0 +1,49 @@
+name: Topic classification shadow
+on:
+  workflow_dispatch:
+    inputs:
+      semantic:
+        description: 'Also benchmark the optional local semantic backend'
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  shadow:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install -r site/requirements.txt
+      - if: inputs.semantic
+        run: pip install -r site/requirements-semantic.txt
+      - name: Run local private-evidence shadow
+        env:
+          ZOTERO_ID: ${{ secrets.ZOTERO_ID }}
+          ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
+          ZOTERO_TOPIC_CONFIG: ${{ secrets.ZOTERO_TOPIC_CONFIG }}
+        run: python scripts/run_topics_shadow.py --input site/topics/evaluation/baseline-input.json --output "$RUNNER_TEMP/public-shadow/index.json" --receipt "$RUNNER_TEMP/public-shadow/receipt.json"
+      - name: Benchmark lexical cold and warm
+        continue-on-error: true
+        env:
+          ZOTERO_ID: ${{ secrets.ZOTERO_ID }}
+          ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
+          ZOTERO_TOPIC_CONFIG: ${{ secrets.ZOTERO_TOPIC_CONFIG }}
+        run: python scripts/benchmark_topics.py --dataset site/topics/evaluation/annotation-dataset.json --backend lexical --output "$RUNNER_TEMP/public-shadow/runtime-lexical.json"
+      - name: Benchmark optional semantic backend
+        if: inputs.semantic
+        continue-on-error: true
+        env:
+          ZOTERO_ID: ${{ secrets.ZOTERO_ID }}
+          ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
+          ZOTERO_TOPIC_CONFIG: ${{ secrets.ZOTERO_TOPIC_CONFIG }}
+        run: python scripts/benchmark_topics.py --dataset site/topics/evaluation/annotation-dataset.json --backend semantic --model-cache "$RUNNER_TEMP/e5-model-cold" --output "$RUNNER_TEMP/public-shadow/runtime-semantic.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: public-topics-shadow
+          path: ${{ runner.temp }}/public-shadow
+          retention-days: 14

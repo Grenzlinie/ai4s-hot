@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "dataset_sha256": "ce538bfd834905c7f00d102babec0476d656e057f9e172c265764d0a9b1af38e",
+  "code_sha": "f085ba682202a8e4ce0a0cdc24d1392b53064845",
+  "runner": {
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python": "3.13.3",
+    "cpu_count": 14
+  },
+  "backend": "lexical",
+  "stages": [
+    {
+      "stage": "cold",
+      "status": "ok",
+      "backend_requested": "lexical",
+      "backend_actual": [
+        "lexical"
+      ],
+      "reference_n": 500,
+      "available_deduplicated_reference_n": 521,
+      "public_item_n": 200,
+      "force": true,
+      "classified_n": 200,
+      "network_seconds": 24.4884,
+      "classification_seconds": 1.692,
+      "total_seconds": 26.2377,
+      "peak_rss_bytes": 83968000,
+      "rss_unit": "bytes",
+      "runtime_pass": true,
+      "reference_exclusion": {
+        "input_reference_n": 532,
+        "excluded_holdout_reference_n": 0
+      },
+      "gold_consumed": false
+    },
+    {
+      "stage": "warm",
+      "status": "ok",
+      "backend_requested": "lexical",
+      "backend_actual": [
+        "lexical"
+      ],
+      "reference_n": 500,
+      "available_deduplicated_reference_n": 521,
+      "public_item_n": 200,
+      "force": true,
+      "classified_n": 200,
+      "network_seconds": 16.5427,
+      "classification_seconds": 1.763,
+      "total_seconds": 18.3459,
+      "peak_rss_bytes": 83623936,
+      "rss_unit": "bytes",
+      "runtime_pass": true,
+      "reference_exclusion": {
+        "input_reference_n": 532,
+        "excluded_holdout_reference_n": 0
+      },
+      "gold_consumed": false
+    }
+  ],
+  "model_cold_cache_verified": true,
+  "runtime_pass": true,
+  "quality_pass": false,
+  "quality_note": "Performance receipt only; human labels and quality gates are separate.",
+  "working_tree_dirty": true,
+  "acceptance_scope": "Local informational performance only; uncommitted implementation, not native runner acceptance"
+}

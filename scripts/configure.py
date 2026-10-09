@@ -1,13 +1,41 @@
 """Sync local credentials and YAML configuration without logging their values."""
 import argparse
+import importlib.util
+import os
 from pathlib import Path
 import re
+import secrets
+import stat
 import subprocess
 import sys
 import yaml
 
 REQUIRED = ('OPENAI_API_KEY', 'OPENAI_API_BASE', 'ZOTERO_ID', 'ZOTERO_KEY')
 OPTIONAL = ('ALPHAXIV_API_KEY', 'SEMANTIC_SCHOLAR_API_KEY')
+
+
+def _topic_identity():
+    path = Path(__file__).resolve().parents[1] / 'site' / 'topics_identity.py'
+    spec = importlib.util.spec_from_file_location('ai4s_topics_identity_config', path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def read_private_topics(path):
+    path = Path(path)
+    if not path.is_file() or stat.S_IMODE(path.stat().st_mode) != 0o600:
+        raise ValueError('Private topic configuration must be a regular 0600 file')
+    config = _topic_identity().load_private_config(path.read_text(encoding='utf-8'))
+    return yaml.safe_dump(config, allow_unicode=True, sort_keys=False)
+
+
+def initialize_private_topics(path):
+    """Create only; never replace an existing identity salt."""
+    payload = {'id_salt': secrets.token_hex(32), 'publish_root_keys': []}
+    descriptor = os.open(path, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
+    with os.fdopen(descriptor, 'w', encoding='utf-8') as stream:
+        yaml.safe_dump(payload, stream, sort_keys=False)
 
 
 def read_credentials(path):
@@ -70,6 +98,8 @@ def read_config(path):
     def check_keys(value):
         if isinstance(value, dict):
             for key, child in value.items():
+                if key in ('id_salt', 'publish_root_keys', 'legacy_aliases', 'retire_legacy_ids', 'ZOTERO_TOPIC_CONFIG'):
+                    raise ValueError('Private topic settings must use --topics-private, never CUSTOM_CONFIG')
                 if key in ('key', 'api_key', 'password', 'sender_password') and child is not None:
                     if not isinstance(child, str) or (child and not re.fullmatch(r'\$\{oc\.env:[A-Z][A-Z0-9_]*\}', child)):
                         raise ValueError('API credentials in YAML must use environment references')
@@ -93,14 +123,26 @@ def main():
     parser.add_argument('--repo', default='Grenzlinie/ai4s-hot')
     parser.add_argument('--env', default='.env')
     parser.add_argument('--config', default='config.local.yaml')
+    parser.add_argument('--topics-private', help='0600 private topic config; uploaded as a Secret via stdin')
+    parser.add_argument('--init-topics-private', help='Create a new 0600 topic config template without contacting GitHub')
     parser.add_argument('--run', action='store_true', help='Run both collectors after syncing')
     args = parser.parse_args()
+    if args.init_topics_private:
+        if args.topics_private or args.run:
+            parser.error('--init-topics-private cannot be combined with sync/run')
+        initialize_private_topics(args.init_topics_private)
+        print('Created private topic template; fill publication root keys before syncing')
+        return
     credentials = read_credentials(args.env)
     config, model = read_config(args.config)
+    private_topics = read_private_topics(args.topics_private) if args.topics_private else None
     for name, value in credentials.items():
         if value:
             github(['secret', 'set', name, '--repo', args.repo], value)
             print('Synced Secret: ' + name)
+    if private_topics is not None:
+        github(['secret', 'set', 'ZOTERO_TOPIC_CONFIG', '--repo', args.repo], private_topics)
+        print('Synced Secret: ZOTERO_TOPIC_CONFIG')
     github(['variable', 'set', 'CUSTOM_CONFIG', '--repo', args.repo], config)
     github(['variable', 'set', 'ZOTERO_ENABLED', '--repo', args.repo], 'true')
     print('Synced local YAML; model: ' + model)

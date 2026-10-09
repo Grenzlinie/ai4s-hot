@@ -8,8 +8,11 @@ import shutil
 def build(data_dir, output):
     data_dir, output = Path(data_dir), Path(output)
     payload = json.loads((data_dir / "index.json").read_text())
-    if payload.get("schema_version") != 1:
+    if payload.get("schema_version") not in (1, 2):
         raise ValueError("Unsupported archive schema")
+    if payload.get("schema_version") == 2:
+        from topics_schema import validate_archive
+        validate_archive(payload)
     output.mkdir(parents=True, exist_ok=True)
     static = Path(__file__).parent / "static"
     for path in static.iterdir():

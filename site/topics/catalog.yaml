@@ -1,0 +1,599 @@
+version: catalog-v2.1
+topics:
+- path: 01 材料研究
+  definition: 研究对象或主要贡献涉及01 材料研究。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id001
+  - materials science
+  - material
+  - crystal
+  include: *id001
+  exclude: []
+  definition_status: authored
+  facet: 01 材料研究
+- path: 01 材料研究 / 二维材料
+  definition: 研究对象或主要贡献涉及二维材料。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id002
+  - two-dimensional
+  - 2D material
+  - graphene
+  - transition metal dichalcogenide
+  - MXene
+  include: *id002
+  exclude: []
+  definition_status: authored
+  facet: 01 材料研究
+- path: 01 材料研究 / 复合与人工结构材料
+  definition: 研究对象或主要贡献涉及复合与人工结构材料。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id003
+  - composite
+  - metamaterial
+  - heterostructure
+  - architected material
+  include: *id003
+  exclude: []
+  definition_status: authored
+  facet: 01 材料研究
+- path: 01 材料研究 / 多孔框架材料
+  definition: 研究对象或主要贡献涉及多孔框架材料。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id004
+  - metal-organic framework
+  - MOF
+  - COF
+  - covalent organic framework
+  - porous framework
+  - zeolite
+  - MOF-303
+  include: *id004
+  exclude: []
+  definition_status: authored
+  facet: 01 材料研究
+- path: 01 材料研究 / 无机非金属材料
+  definition: 研究对象或主要贡献涉及无机非金属材料。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id005
+  - ceramic
+  - oxide
+  - silicate
+  - perovskite
+  - semiconductor
+  - MgSiO3
+  include: *id005
+  exclude: []
+  definition_status: authored
+  facet: 01 材料研究
+- path: 01 材料研究 / 有机与高分子材料
+  definition: 研究对象或主要贡献涉及有机与高分子材料。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id006
+  - polymer
+  - organic material
+  - macromolecule
+  - plastic
+  include: *id006
+  exclude: []
+  definition_status: authored
+  facet: 01 材料研究
+- path: 01 材料研究 / 跨体系材料研究
+  definition: 研究对象或主要贡献涉及跨体系材料研究。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id007
+  - materials discovery
+  - materials science
+  - cross-material
+  include: *id007
+  exclude: []
+  definition_status: authored
+  facet: 01 材料研究
+- path: 01 材料研究 / 金属与合金
+  definition: 研究对象或主要贡献涉及金属与合金。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id008
+  - metal
+  - alloy
+  - steel
+  - intermetallic
+  include: *id008
+  exclude: []
+  definition_status: authored
+  facet: 01 材料研究
+- path: 02 AI方法
+  definition: 研究对象或主要贡献涉及02 AI方法。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id009
+  - machine learning
+  - artificial intelligence
+  - neural network
+  include: *id009
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 学习、训练与优化
+  definition: 研究对象或主要贡献涉及学习、训练与优化。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id010
+  - learning
+  - training
+  - optimization
+  include: *id010
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 学习、训练与优化 / 主动学习与贝叶斯优化
+  definition: 研究对象或主要贡献涉及主动学习与贝叶斯优化。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id011
+  - active learning
+  - Bayesian optimization
+  - acquisition function
+  - query selection
+  - uncertainty sampling
+  include: *id011
+  exclude:
+  - Autonomous wording, uncertainty estimates, or parameter scans alone do not establish
+    acquisition-driven sample selection.
+  definition_status: authored
+  facet: 02 AI方法
+  rules:
+  - require_acquisition_evidence
+- path: 02 AI方法 / 学习、训练与优化 / 强化学习与Agent RL
+  definition: 研究对象或主要贡献涉及强化学习与Agent RL。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id012
+  - reinforcement learning
+  - policy gradient
+  - RLHF
+  - GRPO
+  - reward optimization
+  include: *id012
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 学习、训练与优化 / 自演化与技能学习
+  definition: 研究对象或主要贡献涉及自演化与技能学习。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id013
+  - self-evolution
+  - skill learning
+  - self-improvement
+  - skill discovery
+  include: *id013
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 学习、训练与优化 / 训练目标与多任务优化
+  definition: 研究对象或主要贡献涉及训练目标与多任务优化。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id014
+  - multi-task learning
+  - training objective
+  - loss function
+  - multiobjective
+  include: *id014
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 学习、训练与优化 / 迁移与元学习
+  definition: 研究对象或主要贡献涉及迁移与元学习。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id015
+  - transfer learning
+  - meta-learning
+  - domain adaptation
+  - few-shot learning
+  include: *id015
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 学习、训练与优化 / 预训练与后训练
+  definition: 研究对象或主要贡献涉及预训练与后训练。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id016
+  - pretraining
+  - post-training
+  - fine-tuning
+  - instruction tuning
+  include: *id016
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 生成模型
+  definition: 研究对象或主要贡献涉及生成模型。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id017
+  - generative modeling
+  - generation
+  include: *id017
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 生成模型 / VAE与GAN
+  definition: 研究对象或主要贡献涉及VAE与GAN。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id018
+  - variational autoencoder
+  - VAE
+  - generative adversarial
+  - GAN
+  include: *id018
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 生成模型 / 扩散与流模型
+  definition: 研究对象或主要贡献涉及扩散与流模型。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id019
+  - diffusion model
+  - flow matching
+  - normalizing flow
+  - denoising diffusion
+  include: *id019
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 生成模型 / 自回归及其他生成方法
+  definition: 研究对象或主要贡献涉及自回归及其他生成方法。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id020
+  - autoregressive
+  - generative model
+  - token generation
+  include: *id020
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 表征、预测与分析
+  definition: 研究对象或主要贡献涉及表征、预测与分析。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id021
+  - representation
+  - prediction
+  - analysis
+  include: *id021
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 表征、预测与分析 / 可解释性与不确定性
+  definition: 研究对象或主要贡献涉及可解释性与不确定性。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id022
+  - interpretability
+  - explainability
+  - uncertainty quantification
+  - calibration
+  - confidence interval
+  include: *id022
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 表征、预测与分析 / 图学习与结构表征
+  definition: 研究对象或主要贡献涉及图学习与结构表征。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id023
+  - graph neural network
+  - GNN
+  - graph learning
+  - structural representation
+  - equivariant
+  include: *id023
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 表征、预测与分析 / 性质预测与代理模型
+  definition: 研究对象或主要贡献涉及性质预测与代理模型。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id024
+  - property prediction
+  - surrogate model
+  - predictive model
+  - regression
+  include: *id024
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 表征、预测与分析 / 机器学习势函数
+  definition: 研究对象或主要贡献涉及机器学习势函数。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id025
+  - machine learning potential
+  - interatomic potential
+  - MLIP
+  - force field
+  - neural potential
+  include: *id025
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 表征、预测与分析 / 符号学习与科学发现
+  definition: 研究对象或主要贡献涉及符号学习与科学发现。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id026
+  - symbolic regression
+  - equation discovery
+  - symbolic learning
+  - scientific discovery
+  include: *id026
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 表征、预测与分析 / 视觉与多模态表征
+  definition: 研究对象或主要贡献涉及视觉与多模态表征。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id027
+  - computer vision
+  - image representation
+  - multimodal representation
+  include: *id027
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 语言模型与 Agent
+  definition: 研究对象或主要贡献涉及语言模型与 Agent。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id028
+  - language model
+  - agent
+  include: *id028
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 语言模型与 Agent / 基础模型与多模态
+  definition: 研究对象或主要贡献涉及基础模型与多模态。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id029
+  - foundation model
+  - large language model
+  - multimodal model
+  - LLM
+  include: *id029
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 语言模型与 Agent / 多Agent协作
+  definition: 研究对象或主要贡献涉及多Agent协作。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id030
+  - multi-agent
+  - multiagent
+  - agent collaboration
+  - agent coordination
+  include: *id030
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 语言模型与 Agent / 工具使用与代码
+  definition: 研究对象或主要贡献涉及工具使用与代码。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id031
+  - tool use
+  - tool calling
+  - code generation
+  - coding agent
+  - software engineering
+  include: *id031
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 语言模型与 Agent / 推理与规划
+  definition: 研究对象或主要贡献涉及推理与规划。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id032
+  - reasoning
+  - planning
+  - chain-of-thought
+  - search-based reasoning
+  include: *id032
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 02 AI方法 / 语言模型与 Agent / 自主科研系统
+  definition: 研究对象或主要贡献涉及自主科研系统。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id033
+  - autonomous scientist
+  - AI scientist
+  - autonomous research
+  - self-driving laboratory
+  - scientific agent
+  - research agent
+  include: *id033
+  exclude:
+  - Banking, marketing, grants, or generic coding deployment without scientific tasks
+    are outside this topic.
+  definition_status: authored
+  facet: 02 AI方法
+  rules:
+  - require_scientific_task
+- path: 02 AI方法 / 语言模型与 Agent / 记忆、RAG与知识处理
+  definition: 研究对象或主要贡献涉及记忆、RAG与知识处理。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id034
+  - retrieval augmented generation
+  - RAG
+  - agent memory
+  - knowledge graph
+  - knowledge processing
+  include: *id034
+  exclude: []
+  definition_status: authored
+  facet: 02 AI方法
+- path: 03 数据集与评测
+  definition: 研究对象或主要贡献涉及03 数据集与评测。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id035
+  - dataset
+  - benchmark
+  - evaluation
+  include: *id035
+  exclude: []
+  definition_status: authored
+  facet: 03 数据集与评测
+- path: 03 数据集与评测 / 数据资源
+  definition: 研究对象或主要贡献涉及数据资源。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id036
+  - dataset
+  - database
+  - data resource
+  include: *id036
+  exclude: []
+  definition_status: authored
+  facet: 03 数据集与评测
+- path: 03 数据集与评测 / 数据资源 / 实验、表征与工艺
+  definition: 研究对象或主要贡献涉及实验、表征与工艺。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id037
+  - experimental dataset
+  - characterization data
+  - process dataset
+  - spectroscopy dataset
+  include: *id037
+  exclude: []
+  definition_status: authored
+  facet: 03 数据集与评测
+- path: 03 数据集与评测 / 数据资源 / 材料结构、性质与计算
+  definition: 研究对象或主要贡献涉及材料结构、性质与计算。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id038
+  - materials dataset
+  - crystal dataset
+  - property database
+  - computational database
+  include: *id038
+  exclude: []
+  definition_status: authored
+  facet: 03 数据集与评测
+- path: 03 数据集与评测 / 数据资源 / 科学文献与知识
+  definition: 研究对象或主要贡献涉及科学文献与知识。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id039
+  - scientific literature dataset
+  - scientific knowledge base
+  - paper corpus
+  include: *id039
+  exclude: []
+  definition_status: authored
+  facet: 03 数据集与评测
+- path: 03 数据集与评测 / 数据资源 / 训练指令、工具与轨迹
+  definition: 研究对象或主要贡献涉及训练指令、工具与轨迹。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id040
+  - instruction dataset
+  - tool trajectory
+  - training trajectory
+  - agent trajectory
+  include: *id040
+  exclude: []
+  definition_status: authored
+  facet: 03 数据集与评测
+- path: 03 数据集与评测 / 数据资源 / 通用AI与多模态
+  definition: 研究对象或主要贡献涉及通用AI与多模态。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id041
+  - multimodal dataset
+  - language dataset
+  - vision dataset
+  include: *id041
+  exclude: []
+  definition_status: authored
+  facet: 03 数据集与评测
+- path: 03 数据集与评测 / 构建方法与评测可信度
+  definition: 研究对象或主要贡献涉及构建方法与评测可信度。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id042
+  - evaluation methodology
+  - benchmark methodology
+  include: *id042
+  exclude: []
+  definition_status: authored
+  facet: 03 数据集与评测
+- path: 03 数据集与评测 / 构建方法与评测可信度 / 任务与基准构建
+  definition: 研究对象或主要贡献涉及任务与基准构建。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id043
+  - benchmark construction
+  - task design
+  - evaluation dataset construction
+  include: *id043
+  exclude: []
+  definition_status: authored
+  facet: 03 数据集与评测
+- path: 03 数据集与评测 / 构建方法与评测可信度 / 指标、评分器与验证
+  definition: 研究对象或主要贡献涉及指标、评分器与验证。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id044
+  - evaluation metric
+  - scoring
+  - grader
+  - verifier
+  - validation metric
+  include: *id044
+  exclude: []
+  definition_status: authored
+  facet: 03 数据集与评测
+- path: 03 数据集与评测 / 构建方法与评测可信度 / 数据采集、生成与整理
+  definition: 研究对象或主要贡献涉及数据采集、生成与整理。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id045
+  - data curation
+  - data collection
+  - synthetic data
+  - data generation
+  include: *id045
+  exclude: []
+  definition_status: authored
+  facet: 03 数据集与评测
+- path: 03 数据集与评测 / 构建方法与评测可信度 / 污染、泄漏、稳健性与复现
+  definition: 研究对象或主要贡献涉及污染、泄漏、稳健性与复现。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id046
+  - data contamination
+  - data leakage
+  - robustness
+  - reproducibility
+  include: *id046
+  exclude: []
+  definition_status: authored
+  facet: 03 数据集与评测
+- path: 03 数据集与评测 / 评测基准
+  definition: 研究对象或主要贡献涉及评测基准。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id047
+  - benchmark
+  - evaluation suite
+  include: *id047
+  exclude: []
+  definition_status: authored
+  facet: 03 数据集与评测
+- path: 03 数据集与评测 / 评测基准 / 材料建模与发现
+  definition: 研究对象或主要贡献涉及材料建模与发现。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id048
+  - materials benchmark
+  - materials discovery benchmark
+  - potential benchmark
+  include: *id048
+  exclude: []
+  definition_status: authored
+  facet: 03 数据集与评测
+- path: 03 数据集与评测 / 评测基准 / 科学任务执行与科研Agent
+  definition: 研究对象或主要贡献涉及科学任务执行与科研Agent。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id049
+  - scientific agent benchmark
+  - research task benchmark
+  - laboratory benchmark
+  include: *id049
+  exclude: []
+  definition_status: authored
+  facet: 03 数据集与评测
+- path: 03 数据集与评测 / 评测基准 / 科学知识与推理
+  definition: 研究对象或主要贡献涉及科学知识与推理。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id050
+  - scientific reasoning benchmark
+  - science knowledge benchmark
+  include: *id050
+  exclude: []
+  definition_status: authored
+  facet: 03 数据集与评测
+- path: 03 数据集与评测 / 评测基准 / 通用Agent、工具与代码
+  definition: 研究对象或主要贡献涉及通用Agent、工具与代码。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id051
+  - agent benchmark
+  - coding benchmark
+  - tool benchmark
+  - SWE-bench
+  include: *id051
+  exclude: []
+  definition_status: authored
+  facet: 03 数据集与评测
+- path: 03 数据集与评测 / 评测基准 / 通用语言、推理与多模态
+  definition: 研究对象或主要贡献涉及通用语言、推理与多模态。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id052
+  - language benchmark
+  - reasoning benchmark
+  - multimodal benchmark
+  include: *id052
+  exclude: []
+  definition_status: authored
+  facet: 03 数据集与评测
+- path: 04 科研软件与计算工作流
+  definition: 研究对象或主要贡献涉及04 科研软件与计算工作流。需要标题或摘要提供直接证据，不能仅由相邻主题推断。
+  synonyms: &id053
+  - scientific software
+  - simulation workflow
+  - computational workflow
+  - DFT
+  - VASP
+  - LAMMPS
+  - workflow engine
+  include: *id053
+  exclude: []
+  definition_status: authored
+  facet: 04 科研软件与计算工作流
+web_facets:
+  content_kind:
+  - web:paper
+  - web:technical_report
+  - web:model_release
+  - web:engineering_update
+  - web:organization_policy
+  domain:
+  - web:materials
+  - web:chemistry
+  - web:life_sciences
+  - web:general_ai

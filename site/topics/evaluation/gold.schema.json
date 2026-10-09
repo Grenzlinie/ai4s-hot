@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI4S human-confirmed gold v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "human_confirmed",
+    "reviewer",
+    "reviewed_at",
+    "scope",
+    "content_kind",
+    "domain_facets",
+    "acceptable_topic_sets",
+    "fine_applicable",
+    "status",
+    "public_reason"
+  ],
+  "properties": {
+    "human_confirmed": {
+      "const": true
+    },
+    "reviewer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "scope": {
+      "enum": [
+        "research",
+        "non_research",
+        "unknown"
+      ]
+    },
+    "content_kind": {
+      "enum": [
+        "paper",
+        "technicalreport",
+        "modelrelease",
+        "engineeringupdate",
+        "organizationpolicy"
+      ]
+    },
+    "domain_facets": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "web:materials",
+          "web:chemistry",
+          "web:life_sciences",
+          "web:general_ai"
+        ]
+      }
+    },
+    "acceptable_topic_sets": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "pattern": "^zt-"
+        }
+      }
+    },
+    "fine_applicable": {
+      "type": "boolean"
+    },
+    "status": {
+      "enum": [
+        "classified",
+        "broad_only",
+        "low_confidence",
+        "insufficient_evidence",
+        "taxonomy_gap",
+        "pending",
+        "error"
+      ]
+    },
+    "public_reason": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "fine_applicable": {
+            "const": false
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "scope": {
+            "const": "research"
+          },
+          "status": {
+            "const": "broad_only"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "enum": [
+              "insufficient_evidence",
+              "taxonomy_gap"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "acceptable_topic_sets": {
+            "const": [
+              []
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

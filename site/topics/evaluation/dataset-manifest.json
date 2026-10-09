@@ -1,0 +1,2108 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "d49956853ecf5e74232d330dc4f889dab01b7dba",
+  "baseline_path": "data/index.json",
+  "baseline_input_sha256": "e863f6bad2cda36d6702b6efb2c07ca2898af42d860cab6c8dce95d305aca422",
+  "baseline_generated_at": "2026-10-09T05:23:56.835960+00:00",
+  "actual_baseline_count": 106,
+  "design_baseline_count": 88,
+  "baseline_discrepancy": "The authoritative commit contains 106 public items. All are retained as dev; no audited item is holdout.",
+  "seed": 20261009,
+  "deduplication": "Canonical DOI/arXiv/version/normalized URL and normalized title; audited groups always dev.",
+  "label_version": "unconfirmed-candidates-v1",
+  "dev_n": 106,
+  "holdout_n": 122,
+  "dataset_sha256": "ce538bfd834905c7f00d102babec0476d656e057f9e172c265764d0a9b1af38e",
+  "source_receipts": [
+    {
+      "source": "arxiv",
+      "query": "cat:cond-mat.mtrl-sci",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acond-mat.mtrl-sci&start=0&max_results=25&sortBy=submittedDate&sortOrder=descending",
+      "response_sha256": "56d6e42cd24b02b791737e5587a3628a80502806458e445a1a099d64132cd8e3",
+      "count": 25
+    },
+    {
+      "source": "arxiv",
+      "query": "all:\"machine learning\" AND all:science",
+      "url": "https://export.arxiv.org/api/query?search_query=all%3A%22machine+learning%22+AND+all%3Ascience&start=0&max_results=25&sortBy=submittedDate&sortOrder=descending",
+      "response_sha256": "efa56b6573b04edef0cf0fd95cae3734d2f4ec12a221c357f787eb2227aca9ef",
+      "count": 25
+    },
+    {
+      "source": "arxiv",
+      "query": "all:benchmark AND all:scientific",
+      "url": "https://export.arxiv.org/api/query?search_query=all%3Abenchmark+AND+all%3Ascientific&start=0&max_results=25&sortBy=submittedDate&sortOrder=descending",
+      "response_sha256": "065e383b82ca79e41bd4614ce8a87518967c760813a52394a5ad11a341b56b36",
+      "count": 25
+    },
+    {
+      "source": "arxiv",
+      "query": "all:\"scientific computing\"",
+      "url": "https://export.arxiv.org/api/query?search_query=all%3A%22scientific+computing%22&start=0&max_results=25&sortBy=submittedDate&sortOrder=descending",
+      "response_sha256": "1d05032872918a5a168e6df8293e541424d4f9d90824f4e44de9dfc9820a6722",
+      "count": 25
+    },
+    {
+      "source": "OpenAI News",
+      "url": "https://openai.com/news/rss.xml",
+      "response_sha256": "9a0e5ed89b9e1b78a090b1278f809fb6f1e10554159f922d5fa2a7950398a291",
+      "count": 40
+    }
+  ],
+  "samples": [
+    {
+      "id": "cc81784b08576aed0304",
+      "canonical_id": "arxiv:2610.07513",
+      "identity_aliases": [
+        "arxiv:2610.07513"
+      ],
+      "split": "holdout",
+      "input_sha256": "bff4884f2c238dd35eb957e3884ad7c5134fd30eed0906a62f07fc4386344046"
+    },
+    {
+      "id": "67cfb878f068ee6cd81d",
+      "canonical_id": "arxiv:2610.11370",
+      "identity_aliases": [
+        "arxiv:2610.11370"
+      ],
+      "split": "holdout",
+      "input_sha256": "e17aa3535c7fd486e9e8a005fccba44814be6e78bbf71f06b835e276baa2febe"
+    },
+    {
+      "id": "db1bc1b2c2892e9b4d8eb6c2",
+      "canonical_id": "arxiv:2610.11549",
+      "identity_aliases": [
+        "arxiv:2610.11549"
+      ],
+      "split": "dev",
+      "input_sha256": "2c7c7a233f997acde51070d258f20d72c1e5061f2318caf998cf8e75100e6daa"
+    },
+    {
+      "id": "ef1b3a4772eab8370f467eb4",
+      "canonical_id": "url:https://anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "identity_aliases": [
+        "url:https://anthropic.com/news/claude-discovers-novel-enzyme-system"
+      ],
+      "split": "dev",
+      "input_sha256": "6b0dd5020af4a79fcd3fa9df14e1cda1b5ea58e913a997c270ff0f20a5f9deb8"
+    },
+    {
+      "id": "45d6a2b79938283a07ca47b3",
+      "canonical_id": "url:https://openai.com/index/legalon-halves-codex-costs",
+      "identity_aliases": [
+        "url:https://openai.com/index/legalon-halves-codex-costs"
+      ],
+      "split": "dev",
+      "input_sha256": "8656715297d90e5f51ebb3f6e18e44d02577e052b63177996fad300c8c6e75d9"
+    },
+    {
+      "id": "c4a1f46e5a98744a7c57fd6e",
+      "canonical_id": "url:https://anthropic.com/news/anthropic-cyber-mission",
+      "identity_aliases": [
+        "url:https://anthropic.com/news/anthropic-cyber-mission"
+      ],
+      "split": "dev",
+      "input_sha256": "a1583dd23dff446e7ba0dede47f81a1f6cbe165f076b8b4d6e816681df2572c1"
+    },
+    {
+      "id": "3777cbbb164ef1aa20759b86",
+      "canonical_id": "arxiv:2610.07517",
+      "identity_aliases": [
+        "arxiv:2610.07517"
+      ],
+      "split": "dev",
+      "input_sha256": "72c0a65bde12d11221fd5c4ff697993572e6f3cf373a5211b4719d2a3b6edcb5"
+    },
+    {
+      "id": "6071f63e21f6425413eb",
+      "canonical_id": "url:https://openai.com/index/devday-2026-recap",
+      "identity_aliases": [
+        "url:https://openai.com/index/devday-2026-recap"
+      ],
+      "split": "holdout",
+      "input_sha256": "5bcddb5b21d4d64825dbdd6e2dfde3b6acc04f1aa458b5a25d69c1e648afab9a"
+    },
+    {
+      "id": "413e4ee860ab5e965ff1844e",
+      "canonical_id": "url:https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
+      "identity_aliases": [
+        "url:https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I"
+      ],
+      "split": "dev",
+      "input_sha256": "11aa8ca34da6f3cd44e595643cdbd276807e03910f23a6d528bc15194cd34f35"
+    },
+    {
+      "id": "a4fd6410942646c47507",
+      "canonical_id": "arxiv:2610.12257",
+      "identity_aliases": [
+        "arxiv:2610.12257"
+      ],
+      "split": "holdout",
+      "input_sha256": "f6459dba5451c9352890bfac4ffb0dcb5d6db948d9325754d121850d26f302ea"
+    },
+    {
+      "id": "dc4e8b080bc74f590273",
+      "canonical_id": "arxiv:2610.12465",
+      "identity_aliases": [
+        "arxiv:2610.12465"
+      ],
+      "split": "holdout",
+      "input_sha256": "3165593df26e879e60624066ffa12163dea202a6ad4b94c81ce9c541eecfc97d"
+    },
+    {
+      "id": "fc615e071bcda5270221bed4",
+      "canonical_id": "url:https://isomorphiclabs.com/articles/building-a-new-path-to-make-medicines-with-ai",
+      "identity_aliases": [
+        "url:https://isomorphiclabs.com/articles/building-a-new-path-to-make-medicines-with-ai"
+      ],
+      "split": "dev",
+      "input_sha256": "bb22865f8b9932fc4e5afbb26dbd1987da0317cf4f0ed58108939a35987943dc"
+    },
+    {
+      "id": "d96a697ea9be3d7ce8e4abbd",
+      "canonical_id": "arxiv:2610.10498",
+      "identity_aliases": [
+        "arxiv:2610.10498"
+      ],
+      "split": "dev",
+      "input_sha256": "8eb709b976a96b58eaf29da151f85339672d99ee6c077ebed6bf8bf705dd2293"
+    },
+    {
+      "id": "9718e7bbe06a50d1e756",
+      "canonical_id": "arxiv:2609.32237",
+      "identity_aliases": [
+        "arxiv:2609.32237"
+      ],
+      "split": "holdout",
+      "input_sha256": "a4e73574f880b6bce6e2f5b79530b614d9c6fb7927c75eb88c7417fa5589ec98"
+    },
+    {
+      "id": "a465ba11b50907996785",
+      "canonical_id": "arxiv:2610.11878",
+      "identity_aliases": [
+        "arxiv:2610.11878"
+      ],
+      "split": "holdout",
+      "input_sha256": "cbb5c1b34575796c4eb4687fa68568fc3b47449a3c0d27e9d37b070c966505e3"
+    },
+    {
+      "id": "637d3dfa247fa816a4c4",
+      "canonical_id": "url:https://openai.com/index/albertsons-reimagining-retail",
+      "identity_aliases": [
+        "url:https://openai.com/index/albertsons-reimagining-retail"
+      ],
+      "split": "holdout",
+      "input_sha256": "eff6611a80b43da44bef2dee8ec4c1c418b7fdae5ccad058e31207aa88510a73"
+    },
+    {
+      "id": "833e9419a34f8836dc9d",
+      "canonical_id": "url:https://openai.com/form/codex-originals",
+      "identity_aliases": [
+        "url:https://openai.com/form/codex-originals"
+      ],
+      "split": "holdout",
+      "input_sha256": "b229a3abbdf7869e804a6e792c588c02ff6a5ffc76ecdb9d9edca52b52ef2c1b"
+    },
+    {
+      "id": "062c0a62bc8829e0f407ca91",
+      "canonical_id": "arxiv:2610.08215",
+      "identity_aliases": [
+        "arxiv:2610.08215"
+      ],
+      "split": "dev",
+      "input_sha256": "2be79a77612f3d7c0d8a7086f890294632195d89af5e5b1b814e0c6c52e473ec"
+    },
+    {
+      "id": "4f0706d28b33b8b244460ac6",
+      "canonical_id": "arxiv:2610.12235",
+      "identity_aliases": [
+        "arxiv:2610.12235"
+      ],
+      "split": "dev",
+      "input_sha256": "2502c8b99c9fd175efa39c64705e23afc1f0e5a867b3b05f6498425fba10b65c"
+    },
+    {
+      "id": "7f84cd09f9e4239b9e14",
+      "canonical_id": "arxiv:2610.12444",
+      "identity_aliases": [
+        "arxiv:2610.12444"
+      ],
+      "split": "holdout",
+      "input_sha256": "714c4976859ff6a0951b378e8cf33ee2c680da544339fa45ac802f7698072210"
+    },
+    {
+      "id": "c4ac744414a8aa10db832cb2",
+      "canonical_id": "arxiv:2610.02967",
+      "identity_aliases": [
+        "arxiv:2610.02967"
+      ],
+      "split": "dev",
+      "input_sha256": "9733c4e7f78558258cbecda1891399055b3cf896aa398e37fbe4cfbcfb6801f7"
+    },
+    {
+      "id": "cc3a8155f9b744f29d5b928e",
+      "canonical_id": "arxiv:2610.06158",
+      "identity_aliases": [
+        "arxiv:2610.06158"
+      ],
+      "split": "dev",
+      "input_sha256": "a0723b2ee7b4453b718d209d65000c6975b97f98e677efd98ec4fbfc02b3760c"
+    },
+    {
+      "id": "5eedd09eb4922e0c4f487d2d",
+      "canonical_id": "url:https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
+      "identity_aliases": [
+        "url:https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I"
+      ],
+      "split": "dev",
+      "input_sha256": "d88def4ff9d7f42609382719a9f6765810dc09930e1d29ece50482bd6fa45d63"
+    },
+    {
+      "id": "e38f75900f7444401088",
+      "canonical_id": "arxiv:2609.30324",
+      "identity_aliases": [
+        "arxiv:2609.30324"
+      ],
+      "split": "holdout",
+      "input_sha256": "3a54c7ba1ca0193aab50004004e8001f530a726b877380e985b297e8fc5ca39f"
+    },
+    {
+      "id": "4e56c7312349a760a0ed",
+      "canonical_id": "url:https://openai.com/index/ringg",
+      "identity_aliases": [
+        "url:https://openai.com/index/ringg"
+      ],
+      "split": "holdout",
+      "input_sha256": "c2f1a4573501f091d6e4958a10a3b76575dc9de1f8b10daf45337cc4b200045d"
+    },
+    {
+      "id": "6add3dd62456569f19427e45",
+      "canonical_id": "url:https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
+      "identity_aliases": [
+        "url:https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar"
+      ],
+      "split": "dev",
+      "input_sha256": "57c15a42d8dece4db78dae60161a28f7fd3349156264b233416789401c88aa91"
+    },
+    {
+      "id": "1259e0ed2ca07c973dcac362",
+      "canonical_id": "arxiv:2610.09685",
+      "identity_aliases": [
+        "arxiv:2610.09685"
+      ],
+      "split": "dev",
+      "input_sha256": "ca7aaa1fbc9b17cd06218243ebdfebad58023258698db23453ead8489e4e146d"
+    },
+    {
+      "id": "a08c3ea70bd73aeb67da",
+      "canonical_id": "arxiv:2610.12448",
+      "identity_aliases": [
+        "arxiv:2610.12448"
+      ],
+      "split": "holdout",
+      "input_sha256": "cd470f74105bbd82b923442d2e1b4d40b98f89d7f0b17c806d5074730bd423a3"
+    },
+    {
+      "id": "5ab590850491008e2cef",
+      "canonical_id": "url:https://openai.com/index/grab-openai-ai-skills-southeast-asia",
+      "identity_aliases": [
+        "url:https://openai.com/index/grab-openai-ai-skills-southeast-asia"
+      ],
+      "split": "holdout",
+      "input_sha256": "a60f56e1dab84b351c8655d3222ce747a982063297a771005eec4a522705ec33"
+    },
+    {
+      "id": "db7b9e6fe248e3146f87743a",
+      "canonical_id": "url:https://openai.com/index/oracle",
+      "identity_aliases": [
+        "url:https://openai.com/index/oracle"
+      ],
+      "split": "dev",
+      "input_sha256": "aeb297ff8417822ef8cac908104feb97b157198cf6494877c5e5cbe5ba3cdbf2"
+    },
+    {
+      "id": "dec620cb7225d2434a9b",
+      "canonical_id": "url:https://openai.com/index/introducing-dots",
+      "identity_aliases": [
+        "url:https://openai.com/index/introducing-dots"
+      ],
+      "split": "holdout",
+      "input_sha256": "348fce2233855b00b0897c7dd40914fbc0b2b1e54f7d0daab4d5d2bbec837f74"
+    },
+    {
+      "id": "ecc391eaca9f4d690730",
+      "canonical_id": "arxiv:2610.09446",
+      "identity_aliases": [
+        "arxiv:2610.09446"
+      ],
+      "split": "holdout",
+      "input_sha256": "a38b15044cde2fdfbe4b8c3f62fd4901898807fb1a48f8f2cc0657c7935d884b"
+    },
+    {
+      "id": "c08402b8f22a4b159df3858c",
+      "canonical_id": "url:https://anthropic.com/news/barclays-scales-claude",
+      "identity_aliases": [
+        "url:https://anthropic.com/news/barclays-scales-claude"
+      ],
+      "split": "dev",
+      "input_sha256": "e255fdd0c3c2fd8ff4e5390bfaff59ed7ef95ad28ca089cf0fa594b56e1a6801"
+    },
+    {
+      "id": "5946c006a4e58dd83ea3e23f",
+      "canonical_id": "arxiv:2610.10310",
+      "identity_aliases": [
+        "arxiv:2610.10310"
+      ],
+      "split": "dev",
+      "input_sha256": "94722ce34e62eb60465ededc05a93ec2c162890b39573bf7de7dbf5d8a12e389"
+    },
+    {
+      "id": "c758335f4f7f1c3937a0452f",
+      "canonical_id": "arxiv:2610.11451",
+      "identity_aliases": [
+        "arxiv:2610.11451"
+      ],
+      "split": "dev",
+      "input_sha256": "960a3d02b0ebc53085f31976845f03122e714a2f9f8774fc643288b69aaf3aa0"
+    },
+    {
+      "id": "6aae488b1bb65e59bc913efd",
+      "canonical_id": "url:https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking",
+      "identity_aliases": [
+        "url:https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking"
+      ],
+      "split": "dev",
+      "input_sha256": "1e7504cc530a3640af25655a34ca09cd9dafbe34ebbd01eaef50c1d8d273b14e"
+    },
+    {
+      "id": "0765deb144589280c16b",
+      "canonical_id": "url:https://openai.com/index/airbnb-gpt-6-astra",
+      "identity_aliases": [
+        "url:https://openai.com/index/airbnb-gpt-6-astra"
+      ],
+      "split": "holdout",
+      "input_sha256": "3d13b5acd6bdef275e6530a7dbb4450f46029508f33e089ff4ccba473d41950b"
+    },
+    {
+      "id": "52d16a013be2cdec0d09",
+      "canonical_id": "arxiv:2610.11883",
+      "identity_aliases": [
+        "arxiv:2610.11883"
+      ],
+      "split": "holdout",
+      "input_sha256": "c9a4f1d18911565e3459de2a9289a52d7086abb85e7339ba3dd40f69f44b4ed1"
+    },
+    {
+      "id": "50d71cd52400f551c336",
+      "canonical_id": "url:https://openai.com/index/how-we-will-do-better-for-australia",
+      "identity_aliases": [
+        "url:https://openai.com/index/how-we-will-do-better-for-australia"
+      ],
+      "split": "holdout",
+      "input_sha256": "bd3461b0586cee8d30d5196bc026cc9b75965d0ce9a2a487e13bf6b3eb35fa4c"
+    },
+    {
+      "id": "d7ca145ecdc36382900a",
+      "canonical_id": "arxiv:2609.30049",
+      "identity_aliases": [
+        "arxiv:2609.30049"
+      ],
+      "split": "holdout",
+      "input_sha256": "8a055e427b0860f677a6b2f5a9f3e3379394d0f365c5fb50feb1294521553537"
+    },
+    {
+      "id": "8f9450ba8782c7e4d624",
+      "canonical_id": "arxiv:2610.12435",
+      "identity_aliases": [
+        "arxiv:2610.12435"
+      ],
+      "split": "holdout",
+      "input_sha256": "8fbb205e053d3b30e26ed8353eac7dbba451fdc6e5478bd49f3619bd541f56aa"
+    },
+    {
+      "id": "23cb1507cedf980727b7",
+      "canonical_id": "arxiv:2610.06825",
+      "identity_aliases": [
+        "arxiv:2610.06825"
+      ],
+      "split": "holdout",
+      "input_sha256": "a643e0c7842c75ac04a5a80fc2f5a3efb906461246f0f605861c951e7919817e"
+    },
+    {
+      "id": "882596cbc7639eb42bf2",
+      "canonical_id": "url:https://openai.com/index/chatham-financial",
+      "identity_aliases": [
+        "url:https://openai.com/index/chatham-financial"
+      ],
+      "split": "holdout",
+      "input_sha256": "ee4f1beae9d360c772ef60b0fe461680efcd9a54e39bcbcc86356998c6fabdfb"
+    },
+    {
+      "id": "8b3966db661d85805ed0",
+      "canonical_id": "arxiv:2609.32229",
+      "identity_aliases": [
+        "arxiv:2609.32229"
+      ],
+      "split": "holdout",
+      "input_sha256": "2e1f02e445e8c548c9ba23a92979e80ecb5aedb93afb644d87d5a3c2a7069def"
+    },
+    {
+      "id": "b34dcce80ffbb0c799f0",
+      "canonical_id": "arxiv:2610.00313",
+      "identity_aliases": [
+        "arxiv:2610.00313"
+      ],
+      "split": "holdout",
+      "input_sha256": "2ace898d00ab778a75ae9ca862e76efbb2c027d392b5a2a0c992e705250f4128"
+    },
+    {
+      "id": "b78e56c65c98e5abcdcb",
+      "canonical_id": "arxiv:2610.12417",
+      "identity_aliases": [
+        "arxiv:2610.12417"
+      ],
+      "split": "holdout",
+      "input_sha256": "e2cfbd85764060552dcc5e67727605bb68606278b55a4ced5f0f259360a3f2e1"
+    },
+    {
+      "id": "7f08d7bd7643536d2dfded52",
+      "canonical_id": "arxiv:2610.12468",
+      "identity_aliases": [
+        "arxiv:2610.12468"
+      ],
+      "split": "dev",
+      "input_sha256": "0060ea76faa47389615e31e9377fa58233432edab6107c9a1ab189361211e88e"
+    },
+    {
+      "id": "876a596b23d53a1772f6",
+      "canonical_id": "arxiv:2610.12420",
+      "identity_aliases": [
+        "arxiv:2610.12420"
+      ],
+      "split": "holdout",
+      "input_sha256": "12b5ab534cc4dd7f3f6543061654034dc0f45358862e1f9634e877b705ab839f"
+    },
+    {
+      "id": "336d403c05bf539c1e14",
+      "canonical_id": "arxiv:2610.12375",
+      "identity_aliases": [
+        "arxiv:2610.12375"
+      ],
+      "split": "holdout",
+      "input_sha256": "6c614ec980bf9019a5cca5734f654f9f00da9f6d868a1f668f26bd91d5cca78c"
+    },
+    {
+      "id": "dfa30aa4cfbb23e35170",
+      "canonical_id": "arxiv:2610.07763",
+      "identity_aliases": [
+        "arxiv:2610.07763"
+      ],
+      "split": "holdout",
+      "input_sha256": "922c6a601af43a7b4ae241d67d8e69de36305aa19207735226bd191f76cef8c2"
+    },
+    {
+      "id": "3b84792cbc660fc800ad",
+      "canonical_id": "arxiv:2610.09551",
+      "identity_aliases": [
+        "arxiv:2610.09551"
+      ],
+      "split": "holdout",
+      "input_sha256": "275fa36803879a8c5c3d1bfb54c99cc6d70f9fddfa517327a40806bd82b9b105"
+    },
+    {
+      "id": "6ed81c4cf7a20e354e2c",
+      "canonical_id": "arxiv:2610.12145",
+      "identity_aliases": [
+        "arxiv:2610.12145"
+      ],
+      "split": "holdout",
+      "input_sha256": "23adeac08fdff63e9ccd68cabca1d1f7719b267e7d69a2b7c3685da0954b5a23"
+    },
+    {
+      "id": "f19a3acaeaf02ec87e18",
+      "canonical_id": "arxiv:2610.08021",
+      "identity_aliases": [
+        "arxiv:2610.08021"
+      ],
+      "split": "holdout",
+      "input_sha256": "56a52a25d7e7c3794b129f796afb66beae586534139cf8c57d6eab8c47d28d77"
+    },
+    {
+      "id": "9171404a237f032642e0",
+      "canonical_id": "arxiv:2610.11087",
+      "identity_aliases": [
+        "arxiv:2610.11087"
+      ],
+      "split": "holdout",
+      "input_sha256": "3a53472fb4ade48627cf10a596748cd37259491ae056ad3ce01ea2362a2d0b66"
+    },
+    {
+      "id": "544c595a1590f0bda429",
+      "canonical_id": "arxiv:2609.20713",
+      "identity_aliases": [
+        "arxiv:2609.20713"
+      ],
+      "split": "holdout",
+      "input_sha256": "91b8be96939e41bc9e79ba1f8d4a54707eb83419b45f388ed1b245b8d81acf9c"
+    },
+    {
+      "id": "8191b597aa56258506b2",
+      "canonical_id": "arxiv:2609.16258",
+      "identity_aliases": [
+        "arxiv:2609.16258"
+      ],
+      "split": "holdout",
+      "input_sha256": "4591920218bf744916a5e872582658175a063d06195139fdcf1ef308c7725c17"
+    },
+    {
+      "id": "4c1e8b9b5ed294b5142a",
+      "canonical_id": "arxiv:2610.07358",
+      "identity_aliases": [
+        "arxiv:2610.07358"
+      ],
+      "split": "holdout",
+      "input_sha256": "033fbedebea50071015a1587a25dff6b3412f301515b54e061d946bdaf862fc8"
+    },
+    {
+      "id": "5a60d1c96954c59fcfe568b5",
+      "canonical_id": "arxiv:2610.11331",
+      "identity_aliases": [
+        "arxiv:2610.11331"
+      ],
+      "split": "dev",
+      "input_sha256": "9c8e489d20d6a9d4f14e7cbd7401025d5c0a548d22893431257a31cd8fb74523"
+    },
+    {
+      "id": "bb71e409dd7f29f762c2",
+      "canonical_id": "url:https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
+      "identity_aliases": [
+        "url:https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan"
+      ],
+      "split": "holdout",
+      "input_sha256": "8ba28ec2fa9ab744f0f8d65fd6fcd978e31a4d7f7abb0b831ff3c0f4d8e3d131"
+    },
+    {
+      "id": "2978248a4c5e8ea31606",
+      "canonical_id": "arxiv:2610.08720",
+      "identity_aliases": [
+        "arxiv:2610.08720"
+      ],
+      "split": "holdout",
+      "input_sha256": "08fe6fde136add045c88802aeca7e676f27220625841b99dcc36b68e0daf01f3"
+    },
+    {
+      "id": "92ceedb2a713923bfe975ac5",
+      "canonical_id": "arxiv:2610.12289",
+      "identity_aliases": [
+        "arxiv:2610.12289"
+      ],
+      "split": "dev",
+      "input_sha256": "847f4f1b8511f009cb652d3029c07272b01b5769bf819d99d05c9936cad70a46"
+    },
+    {
+      "id": "d2b5b29b4c815525619915dc",
+      "canonical_id": "url:https://openai.com/index/eu-text-provenance",
+      "identity_aliases": [
+        "url:https://openai.com/index/eu-text-provenance"
+      ],
+      "split": "dev",
+      "input_sha256": "a4778de051833baa2f480764dfc59c002ea913131cf5a01b14eb047815bcc99e"
+    },
+    {
+      "id": "ca7a2dd33f203aff13d7",
+      "canonical_id": "arxiv:2610.10138",
+      "identity_aliases": [
+        "arxiv:2610.10138"
+      ],
+      "split": "holdout",
+      "input_sha256": "3fd24bec5df4af01472bf8a7291c1a2c2d9fcb85aefeec231d59f0aba0cc293f"
+    },
+    {
+      "id": "f57eff9c23a4454b476bbb26",
+      "canonical_id": "url:https://openai.com/index/advancing-computer-use-with-ironclad",
+      "identity_aliases": [
+        "url:https://openai.com/index/advancing-computer-use-with-ironclad"
+      ],
+      "split": "dev",
+      "input_sha256": "6e7235beb2a41751cdf7e34b17b76e2a885f092dd2adb5f03a0ecf85d709b9f6"
+    },
+    {
+      "id": "6b4b10225cd734eba7d26b70",
+      "canonical_id": "arxiv:2610.09254",
+      "identity_aliases": [
+        "arxiv:2610.09254"
+      ],
+      "split": "dev",
+      "input_sha256": "a30193d4b767397f5ab14a65918fb630d0854aaca770a042114bb303d4e1117d"
+    },
+    {
+      "id": "eb674100bb687fff7643",
+      "canonical_id": "url:https://openai.com/index/basis-tax-workbook-with-astra",
+      "identity_aliases": [
+        "url:https://openai.com/index/basis-tax-workbook-with-astra"
+      ],
+      "split": "holdout",
+      "input_sha256": "e656c171e6a73d61e3ab9fcff76e87d9b8334567fb19c3d2b8cb601f18ca8087"
+    },
+    {
+      "id": "4e9d1a6041fd3285933a53c2",
+      "canonical_id": "arxiv:2610.12355",
+      "identity_aliases": [
+        "arxiv:2610.12355"
+      ],
+      "split": "dev",
+      "input_sha256": "740215e6eb205a8ef9288e4279ce871ab837a7f7e8387d6dec434cff76cbde2c"
+    },
+    {
+      "id": "202911e79bcb6e3299a5a7dd",
+      "canonical_id": "arxiv:2610.11527",
+      "identity_aliases": [
+        "arxiv:2610.11527"
+      ],
+      "split": "dev",
+      "input_sha256": "f6ab63ce70e27d87d44b03904a13c6e8bd65dcf1fe189c89bac4acaa4c1246a5"
+    },
+    {
+      "id": "c9743ef66c4625896053",
+      "canonical_id": "arxiv:2610.12349",
+      "identity_aliases": [
+        "arxiv:2610.12349"
+      ],
+      "split": "holdout",
+      "input_sha256": "b82f98f93134edbf06a99e043ff437998f43c6840b453ce21fd73f7142512f7f"
+    },
+    {
+      "id": "6e87228c64a8ec80ea99b5d8",
+      "canonical_id": "arxiv:2610.10468",
+      "identity_aliases": [
+        "arxiv:2610.10468"
+      ],
+      "split": "dev",
+      "input_sha256": "f0e2d66f5db836fef50392c608c4c7bb090a6d9fd9318ad3ad9fff3a6bcb5af8"
+    },
+    {
+      "id": "721de6922a1a6b9fd6bd57fa",
+      "canonical_id": "url:https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech",
+      "identity_aliases": [
+        "url:https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech"
+      ],
+      "split": "dev",
+      "input_sha256": "ab84c49e07b284c1d6a2196890d6c72e995edd09341c6e79a681f374b6752723"
+    },
+    {
+      "id": "6a743d3d698d3af1f540",
+      "canonical_id": "arxiv:2609.37137",
+      "identity_aliases": [
+        "arxiv:2609.37137"
+      ],
+      "split": "holdout",
+      "input_sha256": "ec3159c5b407ce2f5add3148953943c59564784801a1a1c9a67b6a0127242405"
+    },
+    {
+      "id": "d6b9f5e651b1891e950e",
+      "canonical_id": "url:https://openai.com/index/introducing-gpt-6-1-sol",
+      "identity_aliases": [
+        "url:https://openai.com/index/introducing-gpt-6-1-sol"
+      ],
+      "split": "holdout",
+      "input_sha256": "6bdd718ce47d5b80a4c5b8493a928aa770c248cd865a8dee526e14becc067f0f"
+    },
+    {
+      "id": "092c12697dabe8d608b8",
+      "canonical_id": "arxiv:2609.32868",
+      "identity_aliases": [
+        "arxiv:2609.32868"
+      ],
+      "split": "holdout",
+      "input_sha256": "ccd69a36753362f6685e860a778ba4cd4f447b2589d34998e933dc693c2d303b"
+    },
+    {
+      "id": "c38af6e5cae43e23a64c",
+      "canonical_id": "url:https://openai.com/index/practical-guide-building-gpt-6",
+      "identity_aliases": [
+        "url:https://openai.com/index/practical-guide-building-gpt-6"
+      ],
+      "split": "holdout",
+      "input_sha256": "039e2475f6912d62ca17938f5fd022556ce7c2289babec6d88e587f8313cc46b"
+    },
+    {
+      "id": "41e98a49f4c822827618",
+      "canonical_id": "arxiv:2609.14211",
+      "identity_aliases": [
+        "arxiv:2609.14211"
+      ],
+      "split": "holdout",
+      "input_sha256": "d79fb676f57226eccfa5d992ef78307c8474536f60c4d9274f61cbec44daeaea"
+    },
+    {
+      "id": "5c348986a15182f2f224ee2c",
+      "canonical_id": "url:https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "identity_aliases": [
+        "url:https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+      ],
+      "split": "dev",
+      "input_sha256": "cd4923db2d7066b2ab924c5b02f396b90792f86693b812421da948de56bb064d"
+    },
+    {
+      "id": "2d8e70fb45cef7470a5b",
+      "canonical_id": "url:https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "identity_aliases": [
+        "url:https://openai.com/index/new-chatgpt-ads-format-and-measurement"
+      ],
+      "split": "holdout",
+      "input_sha256": "b3cf6709b151f5b0696dcd7e279441b3fb35f81a44043d6bc6b4d35f16fc1370"
+    },
+    {
+      "id": "c3441ad9bc3424032880",
+      "canonical_id": "arxiv:2610.07329",
+      "identity_aliases": [
+        "arxiv:2610.07329"
+      ],
+      "split": "holdout",
+      "input_sha256": "43b508881a51ca60f4dc2284e1d9f29f7b67713ec732d9e1fe646e5bea28be27"
+    },
+    {
+      "id": "30c38a4f4bf9960ad2b06834",
+      "canonical_id": "arxiv:2610.10549",
+      "identity_aliases": [
+        "arxiv:2610.10549"
+      ],
+      "split": "dev",
+      "input_sha256": "cd261c40d8f91cacddb177ad7f9125342da7983f60e4abda5bd3d087bbd47f75"
+    },
+    {
+      "id": "cf2a7e40a7256b62d470",
+      "canonical_id": "arxiv:2610.12362",
+      "identity_aliases": [
+        "arxiv:2610.12362"
+      ],
+      "split": "holdout",
+      "input_sha256": "58a271e835d9a852ff5154a0e0c804c4c866ad26fdd95bb5a27aaf02351a941b"
+    },
+    {
+      "id": "71271ab2e542e35dc565",
+      "canonical_id": "arxiv:2610.10513",
+      "identity_aliases": [
+        "arxiv:2610.10513"
+      ],
+      "split": "holdout",
+      "input_sha256": "f7fbd4379fe58c5c67461bb17caf7298a8307144dbd6ed979476cacb9d72a915"
+    },
+    {
+      "id": "b8087b88cb63ae7fc829",
+      "canonical_id": "url:https://openai.com/index/the-eternal-complement",
+      "identity_aliases": [
+        "url:https://openai.com/index/the-eternal-complement"
+      ],
+      "split": "holdout",
+      "input_sha256": "9d237a57a1b7476e234020bd70ef9847414b0a71ee027902dbed020aceece06f"
+    },
+    {
+      "id": "942f9839a34207b5ceb3",
+      "canonical_id": "arxiv:2610.12207",
+      "identity_aliases": [
+        "arxiv:2610.12207"
+      ],
+      "split": "holdout",
+      "input_sha256": "f4c1fa3f5356a4b7487d7c6b6b8d40ca4acd8fef6c04b9fc62eae4524194d77b"
+    },
+    {
+      "id": "7e712b720f06ddb6f6f2",
+      "canonical_id": "arxiv:2610.11859",
+      "identity_aliases": [
+        "arxiv:2610.11859"
+      ],
+      "split": "holdout",
+      "input_sha256": "4f326f78292afa3780f01b3daacec93536d22f854e3351014b9ab7ec481d5711"
+    },
+    {
+      "id": "90099db3a9d2fd9f5267",
+      "canonical_id": "arxiv:2610.09995",
+      "identity_aliases": [
+        "arxiv:2610.09995"
+      ],
+      "split": "holdout",
+      "input_sha256": "70bdd674493654f70752844858d0ed3af16e04e2572d47d0fd8336689a0aa5ee"
+    },
+    {
+      "id": "a79d870c8c51fa65ee16334d",
+      "canonical_id": "arxiv:2610.11366",
+      "identity_aliases": [
+        "arxiv:2610.11366"
+      ],
+      "split": "dev",
+      "input_sha256": "72df9a901c7868c1be3872f17d4f7084bd856e1898acafce868ea6fcc64f9e1e"
+    },
+    {
+      "id": "e42fe658ebf58972aea7",
+      "canonical_id": "arxiv:2610.12449",
+      "identity_aliases": [
+        "arxiv:2610.12449"
+      ],
+      "split": "holdout",
+      "input_sha256": "022f941bba4f4574ec20ad727da2776f44b99c129c34f3df7c6b1101843f2995"
+    },
+    {
+      "id": "2f077cebe275aebfc8ba",
+      "canonical_id": "arxiv:2610.11733",
+      "identity_aliases": [
+        "arxiv:2610.11733"
+      ],
+      "split": "holdout",
+      "input_sha256": "a07155f71043ea16f93aa9981bd05f278b0b5f6fb3d0bd022b62093f7bace7c5"
+    },
+    {
+      "id": "9eddea79dd295a357b04",
+      "canonical_id": "arxiv:2610.11260",
+      "identity_aliases": [
+        "arxiv:2610.11260"
+      ],
+      "split": "holdout",
+      "input_sha256": "e55312f247102bd94c83ba6d62aa2e774a8163f56442932a518a11a897d84a04"
+    },
+    {
+      "id": "fa62315ba42c7e605812e7ac",
+      "canonical_id": "arxiv:2610.11476",
+      "identity_aliases": [
+        "arxiv:2610.11476"
+      ],
+      "split": "dev",
+      "input_sha256": "20a379b57182835606224a157a78733896188bb29b8b7780fe00c7eb20afd5b2"
+    },
+    {
+      "id": "0eff4fc26cd29035acda",
+      "canonical_id": "arxiv:2610.12358",
+      "identity_aliases": [
+        "arxiv:2610.12358"
+      ],
+      "split": "holdout",
+      "input_sha256": "6cb98078105106de7e7e2c69463c2f52f3da652642c4270b55956a6efe3322fe"
+    },
+    {
+      "id": "e8c7464d018404c49113d7c8",
+      "canonical_id": "arxiv:2610.12452",
+      "identity_aliases": [
+        "arxiv:2610.12452"
+      ],
+      "split": "dev",
+      "input_sha256": "067740411b0936369ccfae1a9e0524ac625cceb87cccdc33ff8bef6d255f55db"
+    },
+    {
+      "id": "2bd8707fdab8226a9f675f85",
+      "canonical_id": "url:https://anthropic.com/news/cyber-verification-program",
+      "identity_aliases": [
+        "url:https://anthropic.com/news/cyber-verification-program"
+      ],
+      "split": "dev",
+      "input_sha256": "0392a972c790e3b634c18fa23bf0f5c5d83ea864f15706c9231b809b7236bfe1"
+    },
+    {
+      "id": "b66fa1e99299db92ad39cf6b",
+      "canonical_id": "arxiv:2610.10515",
+      "identity_aliases": [
+        "arxiv:2610.10515"
+      ],
+      "split": "dev",
+      "input_sha256": "dab2c4d3293a5c74ade9b39378ccbb6296248c93bcef5c013531fa307b07a611"
+    },
+    {
+      "id": "2896758265cec81d95898858",
+      "canonical_id": "url:https://openai.com/index/atlassian-partnership",
+      "identity_aliases": [
+        "url:https://openai.com/index/atlassian-partnership"
+      ],
+      "split": "dev",
+      "input_sha256": "f7bbe258525323e012a237d54e2badb9316357a791112dc88fdc6d7c0575b237"
+    },
+    {
+      "id": "dbb1347ba54b5e1fb2c0b71d",
+      "canonical_id": "arxiv:2610.07922",
+      "identity_aliases": [
+        "arxiv:2610.07922"
+      ],
+      "split": "dev",
+      "input_sha256": "949c524ceffb137278ff099da7a58888965dba29ee5fabb492919d46fe470cb8"
+    },
+    {
+      "id": "711abea8a5086f1251daa192",
+      "canonical_id": "arxiv:2610.11959",
+      "identity_aliases": [
+        "arxiv:2610.11959"
+      ],
+      "split": "dev",
+      "input_sha256": "78c0a1a04c72fe81740f1ba12c21767a7a996d5f9a84be9a2c24f35c52f6f20b"
+    },
+    {
+      "id": "b84d11928f0f77f43a5f",
+      "canonical_id": "arxiv:2610.04108",
+      "identity_aliases": [
+        "arxiv:2610.04108"
+      ],
+      "split": "holdout",
+      "input_sha256": "288e5e5d9e99ec2aa6d95214a177951e01035c26d11a48912938547f1322f3ac"
+    },
+    {
+      "id": "fd384d02f578a389fd4c4e84",
+      "canonical_id": "arxiv:2610.12151",
+      "identity_aliases": [
+        "arxiv:2610.12151"
+      ],
+      "split": "dev",
+      "input_sha256": "43ab8d7be2c4defa1986e9b96dc3fee06cf71181874b82b1b6590b2a6151ab0a"
+    },
+    {
+      "id": "ce6ca28e99a1250e214527b1",
+      "canonical_id": "arxiv:2610.11253",
+      "identity_aliases": [
+        "arxiv:2610.11253"
+      ],
+      "split": "dev",
+      "input_sha256": "b8d11d47449cdaca149383b21c1627763a2c26f6f916c24a75001a60107ae561"
+    },
+    {
+      "id": "6f55737addfb022f9ba9f0aa",
+      "canonical_id": "arxiv:2610.08691",
+      "identity_aliases": [
+        "arxiv:2610.08691"
+      ],
+      "split": "dev",
+      "input_sha256": "2286713231a849eafd2fb294b8177256e3a19dac7faab3fc6e2ba4a61d79352f"
+    },
+    {
+      "id": "3cc50d0356230bcbb9959d92",
+      "canonical_id": "url:https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "identity_aliases": [
+        "url:https://huggingface.co/Qwen/Qwen-Image-2.1"
+      ],
+      "split": "dev",
+      "input_sha256": "2ef928a5a725116b497c8ea4a8dc8154d60bbab9e2bbd53308c5017e18500710"
+    },
+    {
+      "id": "e362e7d6612e9fc8bd2f",
+      "canonical_id": "arxiv:2609.20483",
+      "identity_aliases": [
+        "arxiv:2609.20483"
+      ],
+      "split": "holdout",
+      "input_sha256": "cee5c44c5e0558093bfbd065196eab60f4a6d777a04e71474069e024fd855a4c"
+    },
+    {
+      "id": "280b717b244339df46bc5708",
+      "canonical_id": "arxiv:2609.39068",
+      "identity_aliases": [
+        "arxiv:2609.39068"
+      ],
+      "split": "dev",
+      "input_sha256": "86a499dbab26d3f4b1c7848c26dd5a487c6544f824082cc2718b07e640985592"
+    },
+    {
+      "id": "34d22904306b17fe2a202985",
+      "canonical_id": "arxiv:2609.35433",
+      "identity_aliases": [
+        "arxiv:2609.35433"
+      ],
+      "split": "dev",
+      "input_sha256": "69d03c9a3b9782e2a222434e52488a786afca1fdc956ee0af0adf572b9d148c7"
+    },
+    {
+      "id": "35beedfee03ff1fd3de1",
+      "canonical_id": "arxiv:2610.11698",
+      "identity_aliases": [
+        "arxiv:2610.11698"
+      ],
+      "split": "holdout",
+      "input_sha256": "f5fc91bf74194e110de06ce2af82afd08d0ba1ab5e3c860a84fe79c58a7b559f"
+    },
+    {
+      "id": "1157bf5576b30425e55e",
+      "canonical_id": "arxiv:2610.12445",
+      "identity_aliases": [
+        "arxiv:2610.12445"
+      ],
+      "split": "holdout",
+      "input_sha256": "995142daf800a7f183e1c8c6604ef4f8a125fbefd5d198201cc78bbca9b1bea8"
+    },
+    {
+      "id": "3f8c4424303b37f14f65df31",
+      "canonical_id": "arxiv:2610.10478",
+      "identity_aliases": [
+        "arxiv:2610.10478"
+      ],
+      "split": "dev",
+      "input_sha256": "e398ab4754de54089e0f65f2580823bcfc4800dfc87d5fb785a8130c03cc4728"
+    },
+    {
+      "id": "5cb8687cf6a27c531789",
+      "canonical_id": "arxiv:2610.06160",
+      "identity_aliases": [
+        "arxiv:2610.06160"
+      ],
+      "split": "holdout",
+      "input_sha256": "f97a9fe30af1d38f7e3b7241d91913f1bc951812e72f76ab48f2ad35fe12f3f3"
+    },
+    {
+      "id": "5a53c3bdb60bfc08972848cc",
+      "canonical_id": "arxiv:2610.11118",
+      "identity_aliases": [
+        "arxiv:2610.11118"
+      ],
+      "split": "dev",
+      "input_sha256": "42a52c4a69c20699ea41590579527aab105657fab1bc211a9c5231da82bac84f"
+    },
+    {
+      "id": "8c8651b4d1e76bdf38f3f0bd",
+      "canonical_id": "arxiv:2610.10653",
+      "identity_aliases": [
+        "arxiv:2610.10653"
+      ],
+      "split": "dev",
+      "input_sha256": "92135acb32e77faec3e429fc17459772d44d68441be87037cdad56249099497d"
+    },
+    {
+      "id": "e0df325d4c3e84450645",
+      "canonical_id": "arxiv:2610.12410",
+      "identity_aliases": [
+        "arxiv:2610.12410"
+      ],
+      "split": "holdout",
+      "input_sha256": "cc0761dd7b881494e3e1d6f22b73757db9fcdbfd180f0328c0c6b2eae2b29457"
+    },
+    {
+      "id": "52e46e8371e1f69996c0",
+      "canonical_id": "url:https://openai.com/index/two-years-of-openai-academy",
+      "identity_aliases": [
+        "url:https://openai.com/index/two-years-of-openai-academy"
+      ],
+      "split": "holdout",
+      "input_sha256": "cc33bf7cec6572038fc3d4dc7d8fa125657b0d1c1018db7c6269dcbc52a42b00"
+    },
+    {
+      "id": "ccb0dcbd45745856526c0393",
+      "canonical_id": "arxiv:2610.07862",
+      "identity_aliases": [
+        "arxiv:2610.07862"
+      ],
+      "split": "dev",
+      "input_sha256": "b2ac1e55c89fe0707190141e95ff70d9474ac88230a1cc23910e6d740097d442"
+    },
+    {
+      "id": "52b80abd4e046c041ffb",
+      "canonical_id": "url:https://openai.com/index/harvey-from-context-to-confidence-with-astra",
+      "identity_aliases": [
+        "url:https://openai.com/index/harvey-from-context-to-confidence-with-astra"
+      ],
+      "split": "holdout",
+      "input_sha256": "f89f4182d4fadfa4cafe3a8cc0fa6e1e3d21b741f815fcba086afe7c4ee1ee2b"
+    },
+    {
+      "id": "9b6f17ca586500a74e29",
+      "canonical_id": "arxiv:2610.12421",
+      "identity_aliases": [
+        "arxiv:2610.12421"
+      ],
+      "split": "holdout",
+      "input_sha256": "c20ed7fe4d6b336ebe4d032f059fb02494ed84c14e6efa31fc550d9883e9b1b7"
+    },
+    {
+      "id": "8b875b05aa2624d12df432a5",
+      "canonical_id": "arxiv:2610.08296",
+      "identity_aliases": [
+        "arxiv:2610.08296"
+      ],
+      "split": "dev",
+      "input_sha256": "32933c7f78c6cabd8e17c01b882619193732e28e9800fd1cd30679fef8be1416"
+    },
+    {
+      "id": "ec30270490ea6cacca59a5e0",
+      "canonical_id": "arxiv:2610.12190",
+      "identity_aliases": [
+        "arxiv:2610.12190"
+      ],
+      "split": "dev",
+      "input_sha256": "8d1e8e17e2226a7b57f8fd33866be0f6814f7d94a8d065aa22772f0314972d17"
+    },
+    {
+      "id": "33c2fdca668b6c054280",
+      "canonical_id": "arxiv:2610.06248",
+      "identity_aliases": [
+        "arxiv:2610.06248"
+      ],
+      "split": "holdout",
+      "input_sha256": "6e1e8740988ebac97f8441ce29adbf89ba3601ce5ae09bfc5ddd4f5ff5b81e06"
+    },
+    {
+      "id": "980593edf9274d91674c3ec2",
+      "canonical_id": "arxiv:2610.12310",
+      "identity_aliases": [
+        "arxiv:2610.12310"
+      ],
+      "split": "dev",
+      "input_sha256": "b1c419aa80bc6b02140d5a540c6c9e916c46ff72c8f9eda6b533c12d60462b43"
+    },
+    {
+      "id": "d31d320a981779c854460bd3",
+      "canonical_id": "arxiv:2610.07552",
+      "identity_aliases": [
+        "arxiv:2610.07552"
+      ],
+      "split": "dev",
+      "input_sha256": "981d9afae5997576a89cb17f09b49dab3cc6555031b42b7464db6d5deec5547f"
+    },
+    {
+      "id": "7f1e8ad034fd1e2d869b",
+      "canonical_id": "arxiv:2610.11767",
+      "identity_aliases": [
+        "arxiv:2610.11767"
+      ],
+      "split": "holdout",
+      "input_sha256": "94d1eb26ed70ff977b2641c011b4afa9b6ed4f73be927685178f2f5af0de1309"
+    },
+    {
+      "id": "847ba6a27012ca1094e7",
+      "canonical_id": "arxiv:2610.12336",
+      "identity_aliases": [
+        "arxiv:2610.12336"
+      ],
+      "split": "holdout",
+      "input_sha256": "a260e40ed545b34b383458732ea39bf3fd5bdfe243a5a6e8f44bc07782ef3d5c"
+    },
+    {
+      "id": "0d0e539e2611857e6548",
+      "canonical_id": "arxiv:2610.12283",
+      "identity_aliases": [
+        "arxiv:2610.12283"
+      ],
+      "split": "holdout",
+      "input_sha256": "e65ac6b3dcab306b264f0a23e4b988ef0134a3057fa523297bb7f19fa55c79c2"
+    },
+    {
+      "id": "75d146f665fd7b10d33acebf",
+      "canonical_id": "url:https://isomorphiclabs.com/articles/isomorphic-labs-joins-the-virtual-biology-initiative",
+      "identity_aliases": [
+        "url:https://isomorphiclabs.com/articles/isomorphic-labs-joins-the-virtual-biology-initiative"
+      ],
+      "split": "dev",
+      "input_sha256": "0ea81d712afbd65d28da786680e369bf125f6b74a65453a6648548e4cd5a0849"
+    },
+    {
+      "id": "4e66a7e453a3193bb5cb6a8f",
+      "canonical_id": "url:https://anthropic.com/news/2026-usage-policy-update",
+      "identity_aliases": [
+        "url:https://anthropic.com/news/2026-usage-policy-update"
+      ],
+      "split": "dev",
+      "input_sha256": "455dc76bcc9114f994f6c0613f89fd89a885a040e3e46dfc363d947196b55c5d"
+    },
+    {
+      "id": "1ee818c0a97e91518baae3cf",
+      "canonical_id": "arxiv:2610.02959",
+      "identity_aliases": [
+        "arxiv:2610.02959"
+      ],
+      "split": "dev",
+      "input_sha256": "5cdf43326e1d8f2673f4811633ea5996bb9fe1e990b7035112a7d58f10597300"
+    },
+    {
+      "id": "0a22662e9a8746ff898d",
+      "canonical_id": "arxiv:2609.22342",
+      "identity_aliases": [
+        "arxiv:2609.22342"
+      ],
+      "split": "holdout",
+      "input_sha256": "8c268cd4aa97b4f2be1c8a13ddc4c06cded328420580b807f332ad8d5520c577"
+    },
+    {
+      "id": "69a1e80810d99bababc3",
+      "canonical_id": "arxiv:2610.11830",
+      "identity_aliases": [
+        "arxiv:2610.11830"
+      ],
+      "split": "holdout",
+      "input_sha256": "785c93acc24463b83211380f9db7093a8bd696169a43d9e91b46a8289a67e04f"
+    },
+    {
+      "id": "57ea905e919a42ca66535a58",
+      "canonical_id": "arxiv:2610.10429",
+      "identity_aliases": [
+        "arxiv:2610.10429"
+      ],
+      "split": "dev",
+      "input_sha256": "f5e1dc68c72f4d649a234c5a26eb9a3b75706a6f118808b5c70f858d51e307a3"
+    },
+    {
+      "id": "d61eb81d209d75567f56",
+      "canonical_id": "arxiv:2610.11910",
+      "identity_aliases": [
+        "arxiv:2610.11910"
+      ],
+      "split": "holdout",
+      "input_sha256": "5687d9384aa00c00f1ca741d9b29499f2f49aff0b5c7c5329e4c8f972ae6bd84"
+    },
+    {
+      "id": "e5b83430cc88567b6e4210cf",
+      "canonical_id": "url:https://semanticscholar.org/paper/c208180f5adcefbf409f64c0885ce56da512b0b0",
+      "identity_aliases": [
+        "url:https://semanticscholar.org/paper/c208180f5adcefbf409f64c0885ce56da512b0b0"
+      ],
+      "split": "dev",
+      "input_sha256": "33f4061ddbccdc3859df4aaaf0f70da3cb585269639fd2817fff6e571a4c47de"
+    },
+    {
+      "id": "feba87a1a8f0f8e9c6819ea4",
+      "canonical_id": "arxiv:2610.06801",
+      "identity_aliases": [
+        "arxiv:2610.06801"
+      ],
+      "split": "dev",
+      "input_sha256": "de1eb9560635aeed1e0719d0dbc0f323691213af08db0e5fdf7b8b3bda0971b4"
+    },
+    {
+      "id": "b403a2e4fc8ded20381f",
+      "canonical_id": "arxiv:2610.12437",
+      "identity_aliases": [
+        "arxiv:2610.12437"
+      ],
+      "split": "holdout",
+      "input_sha256": "270d6ff4a8d39441b9619d6024b81ed1059edcf15595c94a389eeb0250249d35"
+    },
+    {
+      "id": "cac36fe140e68dcc4b10",
+      "canonical_id": "arxiv:2610.12379",
+      "identity_aliases": [
+        "arxiv:2610.12379"
+      ],
+      "split": "holdout",
+      "input_sha256": "bad7383e850a88a16c81cac49dfbc14ec47bba811ca51bf3b2365c05f92b3b6e"
+    },
+    {
+      "id": "c0e89760c2e30631ad333e0d",
+      "canonical_id": "arxiv:2610.11289",
+      "identity_aliases": [
+        "arxiv:2610.11289"
+      ],
+      "split": "dev",
+      "input_sha256": "f441dcd89b53923643a258b5db5f42c7d17634024ab96331287e1752158eb97f"
+    },
+    {
+      "id": "558de7ce6b120bccb6da3e25",
+      "canonical_id": "arxiv:2610.12458",
+      "identity_aliases": [
+        "arxiv:2610.12458"
+      ],
+      "split": "dev",
+      "input_sha256": "e57900dea07faef90a1a1a6fd7d67ed17e6391c78f2ed85e3043c8a41748c5fa"
+    },
+    {
+      "id": "b2a0d39235a3f48803a04432",
+      "canonical_id": "arxiv:2610.05140",
+      "identity_aliases": [
+        "arxiv:2610.05140"
+      ],
+      "split": "dev",
+      "input_sha256": "00577f4afdff59189c710d795dad4dfb97752247f526dc9c86f2daad9e8a8463"
+    },
+    {
+      "id": "061338e668ed697490e5",
+      "canonical_id": "url:https://openai.com/index/helping-small-businesses-put-ai-to-work",
+      "identity_aliases": [
+        "url:https://openai.com/index/helping-small-businesses-put-ai-to-work"
+      ],
+      "split": "holdout",
+      "input_sha256": "7fd79bceb4fc6624b6d751f694330d50548eb0629de1ff903cfde903bd475536"
+    },
+    {
+      "id": "b917d7f6811c0786f94925a5",
+      "canonical_id": "url:https://semanticscholar.org/paper/82fca10ba87a6b27592f442c235cb021a919e6dd",
+      "identity_aliases": [
+        "url:https://semanticscholar.org/paper/82fca10ba87a6b27592f442c235cb021a919e6dd"
+      ],
+      "split": "dev",
+      "input_sha256": "5851d859797595f5c157bbd7a2f408661347d82fa820347e9b7d0267d9d7dcf0"
+    },
+    {
+      "id": "f1b35fdb7279c5727432",
+      "canonical_id": "arxiv:2610.11838",
+      "identity_aliases": [
+        "arxiv:2610.11838"
+      ],
+      "split": "holdout",
+      "input_sha256": "1f3fc55d8dbea877b146e7c14d77c8366208ba4bf1b735cd22960affd551a5d2"
+    },
+    {
+      "id": "a49eae8e60ced5e927f1",
+      "canonical_id": "arxiv:2609.14840",
+      "identity_aliases": [
+        "arxiv:2609.14840"
+      ],
+      "split": "holdout",
+      "input_sha256": "1914d0e1358c32f7b09cd1175a67cda8974f2bd19464385e2bbb656b0ab3c988"
+    },
+    {
+      "id": "6623360d7a009d56086f",
+      "canonical_id": "arxiv:2609.16721",
+      "identity_aliases": [
+        "arxiv:2609.16721"
+      ],
+      "split": "holdout",
+      "input_sha256": "5e8710e3845870ed00d60160c2c1dd623fdea302c54635255af66722987d1b8d"
+    },
+    {
+      "id": "7f6e6ae89ccc4117b4d96274",
+      "canonical_id": "arxiv:2610.12402",
+      "identity_aliases": [
+        "arxiv:2610.12402"
+      ],
+      "split": "dev",
+      "input_sha256": "d91895d3f859685a36cba4142f006eec0202a76701284dff001545eb1763a4d2"
+    },
+    {
+      "id": "ec8462a9e4cc24ed18667c14",
+      "canonical_id": "arxiv:2610.11454",
+      "identity_aliases": [
+        "arxiv:2610.11454"
+      ],
+      "split": "dev",
+      "input_sha256": "4d102ece7566e03a4a51415d690ad7ef8e515d29d3e83f71726755d2a491ffaa"
+    },
+    {
+      "id": "bbd00908627002dd35db",
+      "canonical_id": "arxiv:2610.08217",
+      "identity_aliases": [
+        "arxiv:2610.08217"
+      ],
+      "split": "holdout",
+      "input_sha256": "207df7371a09151ea4266cba0f63e46a598e6aa614ede9a68c02135900ad3590"
+    },
+    {
+      "id": "a73458c8ea613d2a6d6c4a5b",
+      "canonical_id": "arxiv:2610.11246",
+      "identity_aliases": [
+        "arxiv:2610.11246"
+      ],
+      "split": "dev",
+      "input_sha256": "17a3a47a42db723725099b3a7589aa398500c16a7fb3dfbd999395001a551099"
+    },
+    {
+      "id": "6c85667bb456be979ea0",
+      "canonical_id": "url:https://openai.com/index/wayfair",
+      "identity_aliases": [
+        "url:https://openai.com/index/wayfair"
+      ],
+      "split": "holdout",
+      "input_sha256": "9547738f540ea2953d6e300e99d614891f25da197eb9dbb6e304174e3f22fe8a"
+    },
+    {
+      "id": "11da1bf96c8f458166a0",
+      "canonical_id": "arxiv:2610.11807",
+      "identity_aliases": [
+        "arxiv:2610.11807"
+      ],
+      "split": "holdout",
+      "input_sha256": "2f5aadaeb38f79ca68a227c8fbc0d635c7c8cfc47e087fcaa92919e6f261ca59"
+    },
+    {
+      "id": "528767592e1efca69a07",
+      "canonical_id": "arxiv:2610.12428",
+      "identity_aliases": [
+        "arxiv:2610.12428"
+      ],
+      "split": "holdout",
+      "input_sha256": "d0886d58db3eee246864da2e8891e2d0f8bc2d0a38ab07ffe02e8b806de36c76"
+    },
+    {
+      "id": "855092fba1df7e8a668bec1b",
+      "canonical_id": "url:https://openai.com/index/pollo-ai",
+      "identity_aliases": [
+        "url:https://openai.com/index/pollo-ai"
+      ],
+      "split": "dev",
+      "input_sha256": "71f91b45f313683db7a870452c74af12b9f4d1153c31d4814a38efaaf782f66c"
+    },
+    {
+      "id": "e21d46ae44306f8ba838",
+      "canonical_id": "arxiv:2610.11689",
+      "identity_aliases": [
+        "arxiv:2610.11689"
+      ],
+      "split": "holdout",
+      "input_sha256": "3e7e1569c59addcfe374972043c72d11cf1731a6bc5ee80abd132b7c5e8be0dd"
+    },
+    {
+      "id": "a9a3bc24a8c5ff072f30",
+      "canonical_id": "arxiv:2610.12370",
+      "identity_aliases": [
+        "arxiv:2610.12370"
+      ],
+      "split": "holdout",
+      "input_sha256": "e7de9cf24e7453ca69a8151389572d3feedd33f85af5ac4b6ce55a6e63eb53b3"
+    },
+    {
+      "id": "51b2a3d50cdcffce9988",
+      "canonical_id": "arxiv:2609.21162",
+      "identity_aliases": [
+        "arxiv:2609.21162"
+      ],
+      "split": "holdout",
+      "input_sha256": "8366f5d0be8a257265e326f00ee6677177520b85b329e59c59adc8ad809cf2a1"
+    },
+    {
+      "id": "a097ef0d441a7216b7cd0e23",
+      "canonical_id": "url:https://openai.com/index/gpt-6-for-everyone",
+      "identity_aliases": [
+        "url:https://openai.com/index/gpt-6-for-everyone"
+      ],
+      "split": "dev",
+      "input_sha256": "0629cdc637cc1e30d540047e68b97f0a6ec8aaedd8acd3e7ade2d5711f2eafbf"
+    },
+    {
+      "id": "07de1331c2668bd6e4bb03e8",
+      "canonical_id": "arxiv:2610.12360",
+      "identity_aliases": [
+        "arxiv:2610.12360"
+      ],
+      "split": "dev",
+      "input_sha256": "8fa73d3caf33c8f9dd5a01c1344965dbeedbd0beb98f8120ff61617f3f8a37ea"
+    },
+    {
+      "id": "5d0025a257e8df1bcccf603e",
+      "canonical_id": "arxiv:2610.12369",
+      "identity_aliases": [
+        "arxiv:2610.12369"
+      ],
+      "split": "dev",
+      "input_sha256": "a78da7770007c1180f3f7540663565b7af32aa2a46df68e22bd62030fbd5c498"
+    },
+    {
+      "id": "7f79a91ca454996507ec29c4",
+      "canonical_id": "arxiv:2610.12176",
+      "identity_aliases": [
+        "arxiv:2610.12176"
+      ],
+      "split": "dev",
+      "input_sha256": "67e0b00acba4c61d1e76cc587767393f7a08b52ad9a2eebe093515ba1e2affea"
+    },
+    {
+      "id": "1043d9fe80283e6f409b90e0",
+      "canonical_id": "url:https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory",
+      "identity_aliases": [
+        "url:https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory"
+      ],
+      "split": "dev",
+      "input_sha256": "640463ceb66a19fd68f4953d4874559ea2942a9d5507c9e635596fca54c543ca"
+    },
+    {
+      "id": "ecdadbb9532817ee5414",
+      "canonical_id": "arxiv:2609.16403",
+      "identity_aliases": [
+        "arxiv:2609.16403"
+      ],
+      "split": "holdout",
+      "input_sha256": "7fa25c739f25fa302868ef7496536752c3e5508c3fee4c663c1de36dc765e184"
+    },
+    {
+      "id": "de3326963607b92b4bdd",
+      "canonical_id": "arxiv:2610.12467",
+      "identity_aliases": [
+        "arxiv:2610.12467"
+      ],
+      "split": "holdout",
+      "input_sha256": "62fd31d80c046e8215ee047594e917b4125acd838d0b50499de562ffa68ca966"
+    },
+    {
+      "id": "072ede035676ad0f2fc1",
+      "canonical_id": "arxiv:2610.11992",
+      "identity_aliases": [
+        "arxiv:2610.11992"
+      ],
+      "split": "holdout",
+      "input_sha256": "7671c45d3df68454fbd0530846d2e781aded6a7bacbc2057aa75f1576541da6c"
+    },
+    {
+      "id": "971bb979b7446c8c74cd3902",
+      "canonical_id": "arxiv:2610.04977",
+      "identity_aliases": [
+        "arxiv:2610.04977"
+      ],
+      "split": "dev",
+      "input_sha256": "e38bdefd0e17395f8057e05f5f82bd4ec1ad1ca14cbde6744a7633007281781d"
+    },
+    {
+      "id": "16d1003fb34eec9cce9b9f3a",
+      "canonical_id": "arxiv:2610.06805",
+      "identity_aliases": [
+        "arxiv:2610.06805"
+      ],
+      "split": "dev",
+      "input_sha256": "8de49a30f46858a8f4c3c5bd806a1970176935c35494180d4833f9aa1dc1a86e"
+    },
+    {
+      "id": "01c412c66c182815383f",
+      "canonical_id": "arxiv:2610.12041",
+      "identity_aliases": [
+        "arxiv:2610.12041"
+      ],
+      "split": "holdout",
+      "input_sha256": "fb17a90efcb61e502a47feb0eef0d8ccfd787216366b8a9da75ac6695b80c60d"
+    },
+    {
+      "id": "26003ff834f48be538b4a45d",
+      "canonical_id": "url:https://semanticscholar.org/paper/cf2ece903b48511b544d06f97c3da553434ebdd0",
+      "identity_aliases": [
+        "url:https://semanticscholar.org/paper/cf2ece903b48511b544d06f97c3da553434ebdd0"
+      ],
+      "split": "dev",
+      "input_sha256": "6476192c22049c7a52f5a27c1fb3ea5926396ffb0872730c99b76a036db4d79e"
+    },
+    {
+      "id": "5ec4e61a2a5169ebbf2e4ee0",
+      "canonical_id": "url:https://anthropic.com/news/accenture-embedded-evaluation",
+      "identity_aliases": [
+        "url:https://anthropic.com/news/accenture-embedded-evaluation"
+      ],
+      "split": "dev",
+      "input_sha256": "0bcca79974a7de5b1f27f904ec0927c202e285bdc737a80e67959ff3d265b9b9"
+    },
+    {
+      "id": "dbb4aebc68a9494123f1b12b",
+      "canonical_id": "url:https://semanticscholar.org/paper/f9fcb966d6af2557811c8040f9733a4141a6c52f",
+      "identity_aliases": [
+        "url:https://semanticscholar.org/paper/f9fcb966d6af2557811c8040f9733a4141a6c52f"
+      ],
+      "split": "dev",
+      "input_sha256": "7b46fc82882765605bac26990f02b21d6012c55b415ff5247c0959978c25c19c"
+    },
+    {
+      "id": "14479f1e48b285ce6d45",
+      "canonical_id": "arxiv:2610.12397",
+      "identity_aliases": [
+        "arxiv:2610.12397"
+      ],
+      "split": "holdout",
+      "input_sha256": "82773bdd4c00da6452601fef69ab07e8fc1100b3e00a0b33e651a67c9983f2ed"
+    },
+    {
+      "id": "d9e485b409fe8517ac6e3a5b",
+      "canonical_id": "url:https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+      "identity_aliases": [
+        "url:https://openai.com/index/disrupting-ai-enabled-false-front-operations"
+      ],
+      "split": "dev",
+      "input_sha256": "81d727b2b8ac23f869c60eda3eeffab043fb02c699085521debf8dfc6f191bff"
+    },
+    {
+      "id": "3653ca997cebd1244b45",
+      "canonical_id": "arxiv:2610.11731",
+      "identity_aliases": [
+        "arxiv:2610.11731"
+      ],
+      "split": "holdout",
+      "input_sha256": "05017472480c23f4377c658939a55bae01a1f4e55bf9e944664ff4842f923916"
+    },
+    {
+      "id": "2ee55c894d54d6ef378cd7d1",
+      "canonical_id": "url:https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
+      "identity_aliases": [
+        "url:https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model"
+      ],
+      "split": "dev",
+      "input_sha256": "ae516d9a6a96b69f79f37568624b89bb522d44297fcd532a5137b0588422ae9e"
+    },
+    {
+      "id": "e6f994cf6a23e1b3a2a168db",
+      "canonical_id": "arxiv:2610.12442",
+      "identity_aliases": [
+        "arxiv:2610.12442"
+      ],
+      "split": "dev",
+      "input_sha256": "2d5915c2f83eee9e670c277404fc9728950190dfc9de8639a5ac39277fa57eba"
+    },
+    {
+      "id": "bb89913fa79b242ac88afc43",
+      "canonical_id": "arxiv:2610.12403",
+      "identity_aliases": [
+        "arxiv:2610.12403"
+      ],
+      "split": "dev",
+      "input_sha256": "9fbaa4f7c033d4a4e8189d365a5cf90ebf7093067a9a7046966b6306802a7ff0"
+    },
+    {
+      "id": "0730f83f6e98c34676009f6f",
+      "canonical_id": "arxiv:2610.12325",
+      "identity_aliases": [
+        "arxiv:2610.12325"
+      ],
+      "split": "dev",
+      "input_sha256": "dde91874708e74be7bee14527cf9e0f05c0b9361155ac46abcec08b302d5d5d8"
+    },
+    {
+      "id": "583f5aaf5a67b0e4e1114291",
+      "canonical_id": "arxiv:2610.09639",
+      "identity_aliases": [
+        "arxiv:2610.09639"
+      ],
+      "split": "dev",
+      "input_sha256": "9ad5f4ca77178f1ecba94a62c544e5ff812af95b41dda8f8d28c1044dfa200b9"
+    },
+    {
+      "id": "dab95f157b8439bf04d74449",
+      "canonical_id": "arxiv:2610.04115",
+      "identity_aliases": [
+        "arxiv:2610.04115"
+      ],
+      "split": "dev",
+      "input_sha256": "11864f185b749a774daa1abaa3fc359ec6077ad89af0361323e4bbfd4b684e98"
+    },
+    {
+      "id": "9904e2faa3efdaa7d119",
+      "canonical_id": "arxiv:2610.12031",
+      "identity_aliases": [
+        "arxiv:2610.12031"
+      ],
+      "split": "holdout",
+      "input_sha256": "f183e576b05780b56a4d1c48ad185e854b510131244a9dbbda93873028c946f4"
+    },
+    {
+      "id": "40358c919b8450baff74",
+      "canonical_id": "arxiv:2610.12345",
+      "identity_aliases": [
+        "arxiv:2610.12345"
+      ],
+      "split": "holdout",
+      "input_sha256": "811cc60cb99711afbb2ad1d960d45535d0a92ba8e16350a53e10d9c11c3d28f6"
+    },
+    {
+      "id": "90249c2a3882c6d31b88",
+      "canonical_id": "url:https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+      "identity_aliases": [
+        "url:https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign"
+      ],
+      "split": "holdout",
+      "input_sha256": "dd303e74dce9e267b180899e4d86f6ffc111642b4183421b36fefa4f3c2388d1"
+    },
+    {
+      "id": "0adf5bb2a473897d1252",
+      "canonical_id": "url:https://openai.com/index/lenfest-ai-collaborative-expansion",
+      "identity_aliases": [
+        "url:https://openai.com/index/lenfest-ai-collaborative-expansion"
+      ],
+      "split": "holdout",
+      "input_sha256": "a4087da55d7c7c03566b020387ca97665f038a6cc0ef315d55c66108a9718129"
+    },
+    {
+      "id": "b27bbfbb5302e878d362",
+      "canonical_id": "arxiv:2610.11742",
+      "identity_aliases": [
+        "arxiv:2610.11742"
+      ],
+      "split": "holdout",
+      "input_sha256": "6e8c9c8206afbb6d81093cb1259fc42a6366b81caa20323c6d8ad936f0e9feb6"
+    },
+    {
+      "id": "9de028fbe46cac8b155a",
+      "canonical_id": "url:https://openai.com/index/proaction",
+      "identity_aliases": [
+        "url:https://openai.com/index/proaction"
+      ],
+      "split": "holdout",
+      "input_sha256": "f12e8a43e0965eb0af52be46ebcb92075f9c1a3d2343ab23c531b66dcce1906d"
+    },
+    {
+      "id": "15ebd2f0c38c3b18d7b9a5da",
+      "canonical_id": "arxiv:2610.12419",
+      "identity_aliases": [
+        "arxiv:2610.12419"
+      ],
+      "split": "dev",
+      "input_sha256": "460bc0b4ae4f30a5ecb779c56ff38a45bb5948e3756aea39eda36f58fe87014a"
+    },
+    {
+      "id": "df7c2611230e3e9ac9a1",
+      "canonical_id": "arxiv:2610.11599",
+      "identity_aliases": [
+        "arxiv:2610.11599"
+      ],
+      "split": "holdout",
+      "input_sha256": "4ca194ef42280cfea08f4ba32dca9e9c0e23e01f763f87daa735611ff4bd4f2e"
+    },
+    {
+      "id": "a3c8e138d995ff558ec9129c",
+      "canonical_id": "url:https://anthropic.com/news/life-sciences-verification-program",
+      "identity_aliases": [
+        "url:https://anthropic.com/news/life-sciences-verification-program"
+      ],
+      "split": "dev",
+      "input_sha256": "a1b8e20cf19e72218136d14ef003482cfe763f036b87a885a755ee5fea126bd8"
+    },
+    {
+      "id": "4b1fa3d521601b13103e5c2f",
+      "canonical_id": "arxiv:2610.10891",
+      "identity_aliases": [
+        "arxiv:2610.10891"
+      ],
+      "split": "dev",
+      "input_sha256": "13f2e1a3163af61f981f64b92dfe5fd1e3c530c140d5c1c8d22e44b1964448ce"
+    },
+    {
+      "id": "9102dc044c4f87dcd385",
+      "canonical_id": "arxiv:2610.12390",
+      "identity_aliases": [
+        "arxiv:2610.12390"
+      ],
+      "split": "holdout",
+      "input_sha256": "aefc675ff0147dd6122fa6529a5ed80968ffa5bd13e08660a0663b41b90de165"
+    },
+    {
+      "id": "30dcb4487241b0155b9e",
+      "canonical_id": "arxiv:2610.12432",
+      "identity_aliases": [
+        "arxiv:2610.12432"
+      ],
+      "split": "holdout",
+      "input_sha256": "0bb680584b2b68db208ff7361a14abcb9eb4eb4a376abaf7f8d834fea70d1013"
+    },
+    {
+      "id": "9b79ef931717e3e3db97a828",
+      "canonical_id": "arxiv:2610.08789",
+      "identity_aliases": [
+        "arxiv:2610.08789"
+      ],
+      "split": "dev",
+      "input_sha256": "c50f10a2658b180041519a1d4cd33e48e677cc96c9918ca3d219e0be40cef09d"
+    },
+    {
+      "id": "dadcabc67230107454a01a67",
+      "canonical_id": "arxiv:2610.12183",
+      "identity_aliases": [
+        "arxiv:2610.12183"
+      ],
+      "split": "dev",
+      "input_sha256": "2f46bf0c8a850f1ba7f75a1dd06146d3a51def3642883169e19b2f6a168efd06"
+    },
+    {
+      "id": "28de07b2a17ded912f00",
+      "canonical_id": "arxiv:2610.12278",
+      "identity_aliases": [
+        "arxiv:2610.12278"
+      ],
+      "split": "holdout",
+      "input_sha256": "54431105d0cd0281a0a20ede495150637475dd2e980bb36d82342c9a661ad642"
+    },
+    {
+      "id": "0cc9342b3c5b2916f2ff2b01",
+      "canonical_id": "url:https://semanticscholar.org/paper/e70a05052a1953382bbcb34a8dfcc738f4135432",
+      "identity_aliases": [
+        "url:https://semanticscholar.org/paper/e70a05052a1953382bbcb34a8dfcc738f4135432"
+      ],
+      "split": "dev",
+      "input_sha256": "0d341eb6bd08b7aefff44471f52fdd723fbc6663d80d71e3fc7370a9ab6f2311"
+    },
+    {
+      "id": "f12208b391d54d2eeb1f",
+      "canonical_id": "arxiv:2610.11977",
+      "identity_aliases": [
+        "arxiv:2610.11977"
+      ],
+      "split": "holdout",
+      "input_sha256": "6c235f1847e819d5835d2cf324ff4f5a944595c3f1be63fc2ba6e4666000fab4"
+    },
+    {
+      "id": "fcb586970506a491ada8",
+      "canonical_id": "arxiv:2610.12297",
+      "identity_aliases": [
+        "arxiv:2610.12297"
+      ],
+      "split": "holdout",
+      "input_sha256": "956b3170a3c7078284bae3de95eb1a9582aee689765ad699a54510a632c51207"
+    },
+    {
+      "id": "d25cdd99a2a1f48b9773",
+      "canonical_id": "arxiv:2610.12393",
+      "identity_aliases": [
+        "arxiv:2610.12393"
+      ],
+      "split": "holdout",
+      "input_sha256": "4bf75be3172f0cacdd33fa275e6cd405afade652524dc84e1f82dbfda36011ae"
+    },
+    {
+      "id": "2d55087b7587ad973261",
+      "canonical_id": "arxiv:2609.22049",
+      "identity_aliases": [
+        "arxiv:2609.22049"
+      ],
+      "split": "holdout",
+      "input_sha256": "0afd4efe8eeadd4735dfa69c5572fad44efc9d80a424322bdb143fef38a4bf5e"
+    },
+    {
+      "id": "bfc4355d370530a85bd88314",
+      "canonical_id": "url:https://anthropic.com/news/claude-frontier-academy",
+      "identity_aliases": [
+        "url:https://anthropic.com/news/claude-frontier-academy"
+      ],
+      "split": "dev",
+      "input_sha256": "34cec910ac23b7042c7db0ff240b03da0dd93b560eaa690d5b6b1f5a3fbb53fc"
+    },
+    {
+      "id": "2c97203026168fa4f677baa4",
+      "canonical_id": "arxiv:2610.12299",
+      "identity_aliases": [
+        "arxiv:2610.12299"
+      ],
+      "split": "dev",
+      "input_sha256": "f202232147eedc182e31b24ba4d08f118f369e32c7d810c87c620c5548298c1b"
+    },
+    {
+      "id": "f2ff7f76056120414cf0",
+      "canonical_id": "url:https://openai.com/index/invideo-builds-with-gpt-6-astra",
+      "identity_aliases": [
+        "url:https://openai.com/index/invideo-builds-with-gpt-6-astra"
+      ],
+      "split": "holdout",
+      "input_sha256": "5fd38747026ede26c20473452cdcdf356b102085790d5dafef7fe47c3521f8eb"
+    },
+    {
+      "id": "15d7e1b4232869778776",
+      "canonical_id": "arxiv:2610.11882",
+      "identity_aliases": [
+        "arxiv:2610.11882"
+      ],
+      "split": "holdout",
+      "input_sha256": "0c0e54a631d17564cf5fca70d1c9f2c522a04dbfb9608df4ce79fd5cb8a73522"
+    },
+    {
+      "id": "2167384f51e2a4466793",
+      "canonical_id": "url:https://openai.com/index/the-den-family-social",
+      "identity_aliases": [
+        "url:https://openai.com/index/the-den-family-social"
+      ],
+      "split": "holdout",
+      "input_sha256": "39f5dbd518d2d85fa23a1ffaf4da6d367737785b0b563c422e60798233491115"
+    },
+    {
+      "id": "795b51132cf40a82f8c94221",
+      "canonical_id": "arxiv:2610.11344",
+      "identity_aliases": [
+        "arxiv:2610.11344"
+      ],
+      "split": "dev",
+      "input_sha256": "6401f3463730406a808e5e9e2b5d5c8086a48528f79cca94ed869eb9075f0aa3"
+    },
+    {
+      "id": "1d0da743f6fd7c511087",
+      "canonical_id": "arxiv:2610.11682",
+      "identity_aliases": [
+        "arxiv:2610.11682"
+      ],
+      "split": "holdout",
+      "input_sha256": "69ef77c07afb96de5b6ecbeb3a75aa8a18106961696ba438a8f36c60430d31d9"
+    },
+    {
+      "id": "9328fa400dd37e6b9e77",
+      "canonical_id": "url:https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+      "identity_aliases": [
+        "url:https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense"
+      ],
+      "split": "holdout",
+      "input_sha256": "90e85ff905c66539111d2f7a861110ccae0f1701307f09d9ba53752de124d2fb"
+    },
+    {
+      "id": "2794e21dec6bb8a7a7d6052e",
+      "canonical_id": "arxiv:2610.10528",
+      "identity_aliases": [
+        "arxiv:2610.10528"
+      ],
+      "split": "dev",
+      "input_sha256": "d68dd7b42651b80c3221e964b2e48c9169d7f427f6e9126d66f41a46cdedebe9"
+    },
+    {
+      "id": "2fc54b690d7b20a2e143",
+      "canonical_id": "url:https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+      "identity_aliases": [
+        "url:https://openai.com/index/towards-safety-cases-for-frontier-ai-training"
+      ],
+      "split": "holdout",
+      "input_sha256": "ebf7563849ea0a45fcfd85f4a1a4b20dbe5b3da14aca52af796a75147a74d400"
+    },
+    {
+      "id": "347b65ce144a221e189c",
+      "canonical_id": "url:https://openai.com/index/sam-altman-un-security-council-remarks",
+      "identity_aliases": [
+        "url:https://openai.com/index/sam-altman-un-security-council-remarks"
+      ],
+      "split": "holdout",
+      "input_sha256": "24a05d0e554ca55693b1fa997416c1fbc612a0090c917d32a71cc8408c95f1c6"
+    },
+    {
+      "id": "08aa8115cb5d9c8920990d12",
+      "canonical_id": "url:https://deepmind.google/blog/introducing-synthid-bio",
+      "identity_aliases": [
+        "url:https://deepmind.google/blog/introducing-synthid-bio"
+      ],
+      "split": "dev",
+      "input_sha256": "70628549520a12cf3556048b4a145ebd58b122c190f8621e2770d44c4d2f8c15"
+    },
+    {
+      "id": "661f64ddb5f472a2675ed75a",
+      "canonical_id": "url:https://openai.com/index/teens-learn-and-plan",
+      "identity_aliases": [
+        "url:https://openai.com/index/teens-learn-and-plan"
+      ],
+      "split": "dev",
+      "input_sha256": "8b363bb41bf5c8e77ee54c4d022e578dff7554a469792a1fa2a114969b59bf7e"
+    },
+    {
+      "id": "b877b8f95bb7d1bef3c8",
+      "canonical_id": "arxiv:2610.04561",
+      "identity_aliases": [
+        "arxiv:2610.04561"
+      ],
+      "split": "holdout",
+      "input_sha256": "e4561b7acbbaa588a320189e1805e9bf2f59233b60ae36acbd3577fe8d497a92"
+    },
+    {
+      "id": "8ff1ef4b045d41c1cf5b1c35",
+      "canonical_id": "arxiv:2610.10409",
+      "identity_aliases": [
+        "arxiv:2610.10409"
+      ],
+      "split": "dev",
+      "input_sha256": "d5c8af6583b5e46692597cb249bfb2fb3ccf8eed8c24b4b8d7bf43b4b8b52b9d"
+    },
+    {
+      "id": "ebb413cc5359756bf9234b81",
+      "canonical_id": "url:https://openai.com/index/jump-trading",
+      "identity_aliases": [
+        "url:https://openai.com/index/jump-trading"
+      ],
+      "split": "dev",
+      "input_sha256": "cc1092b0007bb0cd23e018fc7c988be332e79b9ec97f9b2886900ab85339c623"
+    },
+    {
+      "id": "4e324623ab7ca6fee0e14241",
+      "canonical_id": "url:https://openai.com/index/radisson",
+      "identity_aliases": [
+        "url:https://openai.com/index/radisson"
+      ],
+      "split": "dev",
+      "input_sha256": "38b7a69085bccf4c8d40ddb5734afd663035a2cfcb019a80d57d7a9396c7964a"
+    },
+    {
+      "id": "15622ddfaaafde29c031e28e",
+      "canonical_id": "url:https://semanticscholar.org/paper/c94b028359828dd76ae2238aed9c1569e3cd7a53",
+      "identity_aliases": [
+        "url:https://semanticscholar.org/paper/c94b028359828dd76ae2238aed9c1569e3cd7a53"
+      ],
+      "split": "dev",
+      "input_sha256": "3b910f1492b8c21b3c158f4f7820eacc0970501227490e7e5508c74d5c34f923"
+    },
+    {
+      "id": "987d4f4215eeaa146782",
+      "canonical_id": "arxiv:2610.12401",
+      "identity_aliases": [
+        "arxiv:2610.12401"
+      ],
+      "split": "holdout",
+      "input_sha256": "cda81117b19f3e3c4d7bdc4142eb448222806bc8fa36a3287c55dd0b416c9f0a"
+    },
+    {
+      "id": "6c062b861d6d205bc313e939",
+      "canonical_id": "url:https://anthropic.com/news/genesis-mission-commitment",
+      "identity_aliases": [
+        "url:https://anthropic.com/news/genesis-mission-commitment"
+      ],
+      "split": "dev",
+      "input_sha256": "0b40904ff61d52be689b81536b7fe5914c0f71eb92bf38293baca4348800472f"
+    },
+    {
+      "id": "74ea6f05c61d9b4cf20cfdc0",
+      "canonical_id": "url:https://semanticscholar.org/paper/fb537f5849f650a6c6c71227994833e8ee23b2a3",
+      "identity_aliases": [
+        "url:https://semanticscholar.org/paper/fb537f5849f650a6c6c71227994833e8ee23b2a3"
+      ],
+      "split": "dev",
+      "input_sha256": "baa12c0191354890dd9eb9402ddd9dcb38a58896e253610465748996529bb5fa"
+    },
+    {
+      "id": "75159657cca74ca866d5",
+      "canonical_id": "arxiv:2610.09089",
+      "identity_aliases": [
+        "arxiv:2610.09089"
+      ],
+      "split": "holdout",
+      "input_sha256": "d48ad34cfd9e1af280c24e5756b25304cce8f6da505532e6259d33e70e9b406b"
+    },
+    {
+      "id": "2ae55c68567ea2d6d84f",
+      "canonical_id": "arxiv:2610.03992",
+      "identity_aliases": [
+        "arxiv:2610.03992"
+      ],
+      "split": "holdout",
+      "input_sha256": "50ba817e994326848405108ff0f4ec100f4ee61e5570c00ffab8e96165fb5d88"
+    },
+    {
+      "id": "f3a5e5df0e0b16d3a48b",
+      "canonical_id": "arxiv:2610.11552",
+      "identity_aliases": [
+        "arxiv:2610.11552"
+      ],
+      "split": "holdout",
+      "input_sha256": "c4b20a87fad4a7a9b187568874f5e9f5259fbb927b7250ced486c2970fd04f89"
+    },
+    {
+      "id": "e79ceed5a85a1bbfc14d",
+      "canonical_id": "arxiv:2610.07377",
+      "identity_aliases": [
+        "arxiv:2610.07377"
+      ],
+      "split": "holdout",
+      "input_sha256": "c963945f305298328bdee7c75342476deeb0193354d35f7c87c58b81988bcb3a"
+    },
+    {
+      "id": "908e860cb74c01fb0f5e",
+      "canonical_id": "arxiv:2610.12294",
+      "identity_aliases": [
+        "arxiv:2610.12294"
+      ],
+      "split": "holdout",
+      "input_sha256": "45b1162c4cd643e06ea543fb5548a4e8d0a079f9ff345635672917d267b9f6dd"
+    },
+    {
+      "id": "00427e47df5ef3064509e152",
+      "canonical_id": "url:https://openai.com/index/sharing-ai-progress-in-mathematics",
+      "identity_aliases": [
+        "url:https://openai.com/index/sharing-ai-progress-in-mathematics"
+      ],
+      "split": "dev",
+      "input_sha256": "12082f7e3a927cf80939b609cacb4783a8a49bcf05058d03a42695daf78505e1"
+    },
+    {
+      "id": "b2ffd7fc8b19cf4e3b0202af",
+      "canonical_id": "arxiv:2610.09255",
+      "identity_aliases": [
+        "arxiv:2610.09255"
+      ],
+      "split": "dev",
+      "input_sha256": "b36941c194f2eb474a8625cfeac14fae022ba3f28bc633d4d7106b541f627cf1"
+    },
+    {
+      "id": "3d7b9aab56c8f4fe22c0",
+      "canonical_id": "url:https://openai.com/index/introducing-mentalhealthbench",
+      "identity_aliases": [
+        "url:https://openai.com/index/introducing-mentalhealthbench"
+      ],
+      "split": "holdout",
+      "input_sha256": "5ecb994f43c5cfa631b7f76d50f2246052e921d9d58737c8c05dff8e0a7b631e"
+    },
+    {
+      "id": "b49099cde7e97e60f531fdab",
+      "canonical_id": "url:https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence",
+      "identity_aliases": [
+        "url:https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence"
+      ],
+      "split": "dev",
+      "input_sha256": "bf6ac94d95244c2c51702e2489005d8ecac1d7b8defad6e6ebeacf8c4f4c45bd"
+    }
+  ],
+  "human_confirmed_n": 0,
+  "quality_ready": false
+}

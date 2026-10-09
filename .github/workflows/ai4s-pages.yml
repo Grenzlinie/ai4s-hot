@@ -9,7 +9,7 @@ on:
     types: [completed]
   push:
     branches: [main]
-    paths: ['site/static/**', 'site/collect.py', 'site/site_topics.py', 'site/build.py', 'site/sources.json', 'site/requirements.txt', '.github/workflows/ai4s-pages.yml']
+    paths: ['site/static/**', 'site/collect.py', 'site/site_topics.py', 'site/topics*.py', 'site/topics/**', 'site/build.py', 'site/sources.json', 'site/requirements.txt', '.github/workflows/ai4s-pages.yml']
 
 concurrency:
   group: ai4s-pages
