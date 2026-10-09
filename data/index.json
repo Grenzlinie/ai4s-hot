@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-09T04:10:09.110966+00:00",
+  "generated_at": "2026-10-09T04:18:20.400099+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -24,8 +24,8 @@
       "published_at": "2026-10-08T17:06:23+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Do LLM scientific agents rely only on their initial task context, or do they adapt their decisions in response to experimental feedback? We study this question in neural operator adaptation, where a large language model (LLM) selects fine-tuning configurations under a limited trial budget. Across transfers within and between partial differential equation (PDE) families, the LLM achieves lower held-out test nRMSE than random search and Bayesian optimisation in nearly every matched comparison. Endpoint performance alone cannot distinguish what happens, so we verify each attribution with controlled interventions. Before observing any validation score, the LLM's first configuration already ranks near the top of the corresponding random-search pool, indicating a useful initial bias. A complementary cold-start intervention shows that the selected base learning rate shifts with the PDE description. Once feedback becomes available, reassigning validation scores among evaluated configurations changes the next proposal in every case tested, whereas a value-preserving rewrite produces no comparable aggregate effect. These interventions establish that the LLM's decision-level actions respond to the given task and observed outcomes, showing that it combines a task-dependent prior with sensitivity to experimental feedback.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文通过受控干预考察了大语言模型在有限试验预算下为神经算子微调选择配置时，是依赖初始任务上下文还是响应实验反馈，发现其初始配置已接近随机搜索池顶部且所选基础学习率随PDE描述变化，反馈可用后重新分配验证分数会改变下一次提议。该工作表明大语言模型在神经算子适配中结合了任务相关先验与对实验反馈的敏感性，为科研人员理解并利用这类模型作为实验配置选择代理提供了依据，但结论限于本文测试的PDE迁移与匹配比较范围。",
+      "summary_kind": "ai_summary",
       "authors": [
         "Julian Chan",
         "Javier Mora Jimenez"
@@ -128,8 +128,8 @@
       "published_at": "2026-10-08T08:04:22+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "We introduce SAIL, an open model with 35B total and 3B active parameters for literature research, scientific coding, and multi-step research workflows. SAIL is developed through a science-aware improvement loop: agents built on frontier AI models analyze its task failures and construct training tasks that address the underlying capability gaps. The diagnosis examines search and evidence selection in literature tasks, scientific assumptions and reasoning in coding, and planning and revision in longer investigations. The agents draw on paper collections and scientific code repositories to build problems, interaction trajectories, and executable tasks with the required environments and tools. We repeat this loop over multiple development cycles and train SAIL through supervised fine-tuning, specialist training, multi-teacher on-policy distillation, and agentic reinforcement learning. SAIL achieves competitive performance across scientific research tasks with substantially fewer parameters than leading open-weight models.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出并迭代训练了SAIL这一总参数35B、激活参数3B的开放模型，通过科学感知的改进循环让前沿模型智能体诊断其在文献检索与证据选择、科学编程假设与推理以及长程研究的规划与修订中的失败，并据此构建训练任务，经监督微调、专家训练、多教师在线策略蒸馏和智能体强化学习完成开发。该模型可用于文献研究、科学编程和多步科研工作流；原文只称其在科研任务上具有与领先开放权重模型相当的性能且参数显著更少，未给出具体性能数字，也未将其公司声明表述为已验证结论。",
+      "summary_kind": "ai_summary",
       "authors": [
         "SAIL Model Team",
         "Boyuan Sun",
@@ -166,8 +166,8 @@
       "published_at": "2026-10-08T06:28:34+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Photoemission yield spectroscopy (PYS) is widely used for evaluating the electronic states of materials. As automated materials discovery advances, unsupervised extraction of physical information from ambient-air PYS data becomes important. Conventional fixed-exponent analyses and logarithmic transformations suffer from heteroscedasticity, which destabilizes estimation in low-signal regions. To address this, we propose a data-driven analysis framework based on the 1/n-Scan method, which operates directly in the original signal space, removing the geometric bias inherent in log-transform approaches. We further integrate a self-diagnostic quality-evaluation system that quantifies estimation uncertainty with Akaike weights, together with independent residual metrics--the normalized mean absolute error (NMAE), the RMSE-to-MAE ratio (RMR), the Durbin-Watson (DW) statistic, and a macroscopic metric ($ΔR^2$)--that distinguish hardware-related data degradation from a physical-model mismatch. Applying the framework to differently doped Si and a polycrystalline Au reference in air, we demonstrate autonomous detection, without assumptions on the emission mechanism, of the breakdown of the single-component approximation in heavily doped p-type Si, arising from the overlap of two emission components with different thresholds, as a statistical anomaly--a decrease in DW below its critical value with an auxiliary increase in $ΔR^2$, despite sound NMAE and RMR--independently confirmed by a two-component fit ($Δ$AIC $\\approx$ 57, DW recovering from 0.8 to 2.0). For heavily doped n-type Si, the gradual surface evolution was classified as a change within the single-component description. This framework provides a robust, self-diagnosing analysis engine for closed-loop autonomous materials exploration.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出了一套基于1/n-Scan方法的数据驱动变指数光电子产额谱分析框架，可直接在原始信号空间运行以避免对数变换的几何偏差，并集成了以Akaike权重和NMAE、RMR、DW统计量及ΔR²残差指标为基础的自诊断质量评估系统，用于区分硬件数据退化与物理模型失配。该框架在无需假设发射机制的前提下可自主检测单组分近似的失效并将其标记为统计异常，从而为闭环自主材料探索提供具备自诊断能力的分析工具，但其验证仅限于空气中不同掺杂的Si和 polycrystalline Au参考样品，所报告的检测结果及双组分拟合确认（ΔAIC约57、DW由0.8恢复至2.0）仅对应这些具体实验，原文未给出更广泛材料或条件下的性能保证。",
+      "summary_kind": "ai_summary",
       "authors": [
         "Shinjiro Yagyu",
         "Takahiro Nagata",
@@ -197,8 +197,8 @@
       "published_at": "2026-10-08T04:48:33+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "The Crystallography Open Database (COD) contains over half a million experimentally determined crystal structures. Validation of crystallographic data proceeds at three hierarchical levels, the third of which assesses the physical plausibility of structures. This level has typically relied on empirical heuristics or expert judgment, which are slow and error-prone given the size of crystallographic databases and the rate at which new structures are deposited. Here we assess whether universal machine-learning interatomic potentials (MLIPs) can automate this level of validation. Of the 522 086 COD entries, 317 457 (60.8\\%) passed a data-quality filter removing disordered structures, formula mismatches and unmodelled solvent. These structures were relaxed with M3GNet, and 314 153 (99.0\\%) converged without a large change in cell volume. For most entries the relaxed and deposited volumes are nearly identical. Convergence and volume change thus provide simple criteria for identifying relaxations that do not confirm the deposited structure. A manual inspection of 327 structures showed that no single descriptor threshold (energy, largest force, or atomic displacement) separates valid from invalid structures. A comparison of M3GNet, CHGNet, PET-MAD and PET-OAM on 524 selected structures revealed model-specific failures: M3GNet distorts cyclopentadienyl and other $π$ ligands, and both M3GNet and CHGNet distort thiophene and thiazole rings, whereas the PET models preserve these motifs. All models detected missing hydrogen atoms, and at least some detected spurious hydrogens, incorrectly assigned atom types, and two previously unreported coordinate errors. No single model detected all error types. MLIP relaxation is therefore a useful but model-dependent screening tool, and combining several models is preferable to relying on any single one.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文用M3GNet对经数据质量筛选后的317457个COD晶体结构进行弛豫，发现314153个（99.0%）在晶胞体积无大幅变化的情况下收敛，并比较了M3GNet、CHGNet、PET-MAD和PET-OAM在524个选定结构上的表现，揭示各模型存在特定失真和错误检测差异，且无单一描述符阈值能区分有效与无效结构。该工作表明MLIP弛豫可作为依赖模型的三级验证筛选工具，用于识别未确认沉积结构的弛豫及部分坐标和氢原子错误，但因各模型均无法检测全部错误类型，实际使用中宜组合多个模型而非依赖单一模型。",
+      "summary_kind": "ai_summary",
       "authors": [
         "Justinas Šlepavičius",
         "Antanas Vaitkus",
@@ -857,8 +857,8 @@
       "published_at": "2026-10-07T17:30:45+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Deployments of research agents are moving to populations of thousands that share one pool of compute, while most current systems organize one project at a time or leave the population unorganized. We argue that such a population will acquire an organization whether or not its designers provide one, so designers should provide it explicitly, and that the multi-agent systems community holds the tools to do so. We propose a society of agents, a population of persistent agents under explicit institutions, and develop it for science as a society of researchers built on six principles. Principal investigators compete for compute through requests for proposals, independent review, and grants; a human governor, the mayor, allocates resources and assigns no tasks. In a running society of ten thousand researchers, asked only to improve the pretraining of language models, one lab reported a way to reach the same quality with about 30% less compute, a result the labs that tested it do not yet agree on. We close with six open problems for the agents community.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出一种由明确制度组织的持久性自主研究智能体群体“研究者社会”，其中主要研究者通过提案申请、独立评审和资助竞争计算资源，由人类治理者分配资源而不指派任务。该设计可用于组织共享计算资源的大规模研究智能体群体，但文中提及的“减少约30%计算量”结果尚未获得测试实验室一致认可。",
+      "summary_kind": "ai_summary",
       "authors": [
         "Ali Asaria",
         "Deep Gandhi",
@@ -1049,8 +1049,8 @@
       "published_at": "2026-10-07T08:47:59+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Simulations of water at solid interfaces routinely disagree on basic properties, from contact angle to friction, depending on the model used, whether an empirical force field or a density functional theory (DFT) exchange-correlation (XC) approximation. Yet no accurate computational reference has been available to determine which, if any, is reliable. Here we assess XC approximations spanning the rungs of Jacob's Ladder against the random-phase approximation (RPA) at the graphene-water interface. Using machine-learned potentials (MLPs) trained on both DFT and RPA data, we achieve the extensive sampling required to characterize interfacial structure, wettability, friction, and vibrational sum-frequency generation spectra. We find that XC approximations disagree substantially with RPA and with each other. To make sense of this, we introduce a transferable, multi-observable scoring framework that distills each functional's agreement with RPA into a single measure. Six functionals emerge as reliable starting points for studies of graphene-water and other dispersion-dominated interfaces, namely B3LYP-D3(0), revPBE-D3(0), revPBE-D3(BJ), B97M-rV, r$^{2}$SCAN, and revPBE0-D3(0). Notably, this ranking follows no simple rule based on functional family or rung of Jacob's Ladder. What does hold across functionals is that dynamical and spectroscopic properties tend to be harder for DFT to reproduce than structural ones, with direct consequences for functional selection. Our framework also offers a general strategy for benchmarking any atomistic model, including the new generation of foundational MLPs, against high-accuracy references at solid--liquid interfaces. Beyond simulation, this work identifies which models can be trusted to connect measured contact angles, friction, and vibrational spectra to the molecular structure behind them.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文以随机相位近似为参照，评估了跨越雅各布阶梯多个层级的交换关联泛函在石墨烯-水界面的表现，并基于DFT与RPA数据训练机器学习势以采样界面结构、润湿性、摩擦和振动和频光谱，同时提出一个可迁移的多观测量评分框架来汇总各泛函与RPA的一致性。该框架可用于筛选石墨烯-水等色散主导界面的可靠泛函起点，但作者明确指出动力学与光谱性质比结构性质更难被DFT复现，因此泛函选择需据此权衡，且所提可靠性排序不遵循泛函家族或雅各布阶梯层级的简单规律。",
+      "summary_kind": "ai_summary",
       "authors": [
         "Xavier R. Advincula",
         "Yair Litman",
@@ -1106,8 +1106,8 @@
       "published_at": "2026-10-07T00:42:11+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Neural PDE surrogates are trained on numerical solver outputs that contain both physical evolution and solver-specific discretization errors. Because surrogates are also evaluated against held-out trajectories from the same solver, standard benchmarks cannot distinguish fidelity to the exact evolution from imitation of the numerical scheme. We introduce an empirical Fourier-symbol diagnostic that probes a trained surrogate's linearized one-step operator with individual Fourier modes and compares it with both exact-evolution and training-scheme references. To address architectural spectral bias, we train identical networks on schemes with orthogonal dissipative and dispersive signatures and compare their learned operators. In linear advection, the learned surrogates reproduce the training schemes' amplitude and phase errors, with the twin-scheme difference reaching more than 99.8\\% of the analytically predicted full-imitation ceiling. The same behavior occurs for a non-local Fourier neural operator and at the operator level for nonlinear Burgers dynamics. These results show that agreement with solver-generated test data does not by itself establish fidelity to the exact evolution. Fourier-symbol measurements provide a direct diagnostic of numerical provenance.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出一种基于傅里叶符号的经验诊断方法，通过用单个傅里叶模态探测训练后的神经PDE代理模型的线性化单步算子，并与精确演化参考和训练格式参考进行比较，同时通过在具有正交耗散和色散特征的格式上训练相同网络来应对架构谱偏差。该方法可用于识别代理模型是在逼近精确物理演化还是主要模仿训练所用的数值格式，但原文结果表明仅凭与求解器生成测试数据的一致性并不能确立对精确演化的保真度，且相关结论尚限于所研究的线性平流、非局部傅里叶神经算子及非线性Burgers动力学设定。",
+      "summary_kind": "ai_summary",
       "authors": [
         "Ridham Patel"
       ]
@@ -1194,8 +1194,8 @@
       "published_at": "2026-10-07T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Convened by Biohub, participating organisations are investing funding, data, computation and new measurement technology - the largest coordinated commitment to generating AI-ready biological data to date. The result will be an open resource for the research community that provides the foundation for greater understanding and ultimately treating human diseases. Read more in the news release below.",
-      "summary": "",
-      "summary_kind": "source_excerpt"
+      "summary": "Isomorphic Labs加入由Biohub召集的虚拟生物学计划，与参与机构共同投入资金、数据、计算资源和新测量技术，以构建用于AI模型预测和治疗疾病的基础数据。该计划旨在形成面向研究社区的开放资源，为更深入理解并最终治疗人类疾病提供基础，但现有材料未给出已验证的性能数据或具体用途细节。",
+      "summary_kind": "ai_summary"
     },
     {
       "id": "2ee55c894d54d6ef378cd7d1",
@@ -1283,8 +1283,8 @@
       "published_at": "2026-10-06T17:08:03+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Large language model agents are accelerating scientific automation, yet verified executions rarely become persistent program-level improvements, and existing evaluations do not examine this process across sequential tasks in both the natural and social sciences. We formalize ScienceClaw as fixed-parameter program self-evolution that unifies task solving, scientific verification, and program updates. ScienceClaw-Eval spans 23 disciplines and measures scientific correctness, evolutionary gain, retention, cross-dataset transfer, and evolution cost through sequential streams and independent reset evaluation. Our framework repairs executable workflows through multi-turn interaction, converts re-execution-verified failure--success trajectories into linked Skill and Operator candidates, and retains an update only when source-task replay reproduces the repair and independent scientific tasks improve. Code is available at https://github.com/beita6969/ScienceClaw.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出了ScienceClaw这一固定参数程序自我演化框架及ScienceClaw-Eval评测，涵盖23个学科，通过顺序任务流和独立重置评估衡量科学正确性、演化增益、保持性、跨数据集迁移和演化成本，并将经再执行验证的失败—成功轨迹转化为相关联的技能与操作符候选，仅在源任务重放复现修复且独立科学任务改善时保留更新。该工作为跨自然科学与社会科学的AI科研智能体持续自我演化研究提供了统一任务求解、科学验证与程序更新的基准和可复用代码，但其验证仅限所设评测范围，具体性能提升需依据原文结果，不应将框架声明视为已验证结论。",
+      "summary_kind": "ai_summary",
       "authors": [
         "Ming-Da Zhang",
         "Wen-Jin Liu",
@@ -1344,8 +1344,8 @@
       "published_at": "2026-10-06T13:01:35+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Generative models have the potential to accelerate inorganic materials discovery by enabling inverse design, but generating experimentally realisable crystals remains challenging. Oxidation states are widely used to assess the compositional validity of crystals and guide inorganic materials discovery. While existing generative models for crystals can generate materials with charge-neutral oxidation-state assignments, they poorly reproduce the distributions of oxidation states observed in synthesised materials. To address this limitation, we propose OxiGen, an oxidation-state-aware crystal diffusion model that explicitly represents oxidation states during generation. OxiGen enforces global charge neutrality by construction using a structured output layer with exact inference over a finite-state automaton. Empirically, OxiGen substantially improves oxidation-state fidelity, generates the highest rate of stable, unique, and novel crystals among evaluated methods, and maintains high compositional validity even under property conditioning.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出OxiGen，一种在生成过程中显式表示氧化态的晶体扩散模型，通过结构化输出层对有限状态自动机进行精确推断，从构造上强制全局电荷中性，从而改进生成晶体的氧化态分布保真度。该方法可用于无机材料的逆向设计，在评估中提高了稳定、独特且新颖晶体的生成比例，但在实际合成可行性方面仍受实验验证限制，摘要中未给出具体性能数字。",
+      "summary_kind": "ai_summary",
       "authors": [
         "Dylan John",
         "Kim E. Jelfs",
@@ -1490,8 +1490,8 @@
       "published_at": "2026-10-06T07:09:39+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "A central challenge for scientific agents is to turn analytical experience into reusable expertise grounded in physical evidence. Here we introduce Gan Jiang, a self-learning agent for powder X-ray diffraction built on a diffraction-analysis ecosystem we developed: XMatcher, XQueryer, XDecomposer and WPEM. Together, these engines span phase identification, multiphase decomposition and physics-constrained whole-pattern modelling. Gan Jiang converts analytical experience into executable skills by diagnosing failures, revising skill instructions and code, and validating revisions before reuse, without retraining the language model or changing the underlying physical models. Skills selected using development data and frozen before held-out evaluation achieve higher refinement scores than the original expert-designed skills across FullProf, GSAS-II and PyWPEM. The agent resolves strongly overlapping reflections, quantifies a five-phase ancient Egyptian cosmetic, tracks lattice evolution in an operating battery and compares atomic configurations in a disordered oxide catalyst. On DeltaXRDbench, it leads the evaluated methods in single- and multiphase identification across simulated and experimental data. Without supplied composition, single-phase top-1 accuracies reach 96.30\\%, 81.78\\% and 40.83\\% on MP500, RRUFF and opXRD, respectively, compared with 58.00\\%, 58.47\\% and 26.45\\% for the strongest comparator. These results demonstrate how an integrated scientific tool ecosystem can support agents that extract structural knowledge from measurements while accumulating validated analytical expertise that transfers to new samples.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出了一种用于粉末X射线衍射的自学习智能体Gan Jiang，其基于作者开发的XMatcher、XQueryer、XDecomposer和WPEM等衍射分析引擎，通过诊断失败、修订技能指令与代码并在复用前验证修订，将分析经验转化为可执行技能，且无需重新训练语言模型或更改底层物理模型。该智能体可辅助科研人员完成物相鉴定、多相分解和物理约束的全谱建模，并在不提供成分时于MP500、RRUFF和opXRD数据集上分别取得单相top-1准确率96.30%、81.78%和40.83%；这些结果基于模拟与实验数据，其向新样品的迁移能力仍需进一步验证。",
+      "summary_kind": "ai_summary",
       "authors": [
         "Bin Cao",
         "Hui-Chi Zhou",
@@ -1527,8 +1527,8 @@
       "published_at": "2026-10-06T00:31:30+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "The rapid growth of AI/ML methods for materials discovery has increased the importance of the quality, physical completeness, and information content of computational databases. We examine these issues for magnetic materials, where incomplete sampling of competing magnetic states, chemical disorder, and finite-temperature properties can lead to apparently accurate but physically unreliable predictions. We propose a hierarchical discovery workflow combining independent ML models with explicit electronic-structure, magnetic, dynamical, thermodynamic, kinetic, and experimental validation. To incorporate kinetic accessibility into high-throughput screening, we introduce a dimensionless synthesis-window descriptor based on the relation between the chemical order-disorder and Tammann temperatures. A cluster-expansion analysis of Fe-Co-B illustrates the importance of this criterion: although ordered Fe3CoB2 is energetically favored at T=0, its small ordering energy produces an order-disorder temperature far below room temperature, making long-range Fe/Co ordering kinetically unachievable. These results demonstrate that reliable AI/ML discovery of magnetic materials requires databases and validation procedures that contain physical information relevant to the target functionality, rather than simply larger numbers of calculated structures.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文检视了磁性材料计算数据库在磁态采样、化学无序和有限温度性质方面的不完备问题，并提出一个将独立机器学习模型与电子结构、磁性、动力学、热力学、动力学及实验验证相结合的分层发现流程，同时引入基于化学有序-无序温度与Tammann温度关系的无量纲合成窗口描述符。对Fe-Co-B的团簇展开分析表明，仅靠T=0能量优势可能高估可合成性，因此该工作对利用AI/ML筛选磁性材料的研究者提供了以目标功能相关物理信息而非单纯扩大结构数量为核心的数据库与验证要求。",
+      "summary_kind": "ai_summary",
       "authors": [
         "Vladimir Antropov",
         "Subhadip Pradhan",
@@ -1582,8 +1582,8 @@
       "published_at": "2026-10-06T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Automated reaction discovery is often limited by the cost of high-level refinement of large reaction networks. Here, we extend AutoMeKin, an automated reaction-discovery program, by presenting a complete integration of ORCA 6 into its high-level refinement workflow, providing access to a broad range of electronic-structure methods through a package freely available to academic users. We also integrate the UMA and MACE-OMOL-0 machine-learning interatomic potentials and Δ-ML energy corrections, enabling automated refinement of reaction networks using conventional electronic-structure methods, foundation ML potentials, or ML-corrected quantum-mechanical approaches within a unified framework. The workflow is assessed for five systems, monoethanolamine, three cyclobutadiene-derived radicals, and N-[bis(2H-triazol-4-yl)methylidene]hydroxylamine, spanning both in-distribution and challenging out-of-distribution chemistry. Comparisons with reference data show that UMA and MACE-OMOL-0 generally recover the relevant reaction mechanisms and provide energy profiles of comparable quality to DFT at substantially reduced cost. RRKM analyses further reveal that vibrational frequencies can significantly affect product population fractions, especially for loose transition states. These results show that the new implementation increases the accessibility and flexibility of AutoMeKin and further support the view that foundation ML potentials can serve as practical surrogates for DFT in automated reaction-network discovery.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文将ORCA 6集成到AutoMeKin的高精度精修流程中，并引入UMA、MACE-OMOL-0机器学习原子间势及Δ-ML能量校正，从而可在统一框架内使用常规电子结构方法、基础机器学习势或机器学习校正的量子力学方法自动精修反应网络。该工作对五个体系进行了评估，结果表明这些机器学习势通常能恢复相关反应机理并以显著更低的成本给出与DFT质量相当的能量剖面，但振动频率可能显著影响产物分布，尤其在松散过渡态中。",
+      "summary_kind": "ai_summary",
       "authors": [
         "O. Rodríguez-López",
         "Emilio Martínez-Núñez",
@@ -1612,8 +1612,8 @@
       "published_at": "2026-10-06T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "MgSiO3 is a fundamental silicate system in Earth and rocky planetary interiors, where its structures control crystallization, differentiation, and evolution of host planets. Yet, silicate structure has usually been analyzed through aggregate structural observables that do not place individual local atomic environments from crystals and liquids into a common similarity space. Here we compare local environments across eight MgSiO3 polymorphs and the liquid up to 700 GPa and 12,000 K generated via a machine-learning potential and first-principles calculations. We use the Smooth Overlap of Atomic Positions (SOAP) descriptor, principal component analysis (PCA), and k-nearest-neighbor distances in the full descriptor space. PCA shows that the dominant variation largely follows density-driven packing, whereas full-space distances reveal pronounced differences in structural similarity among MgSiO3 polymorphs and the liquid. Pyroxene-family phases, majorite, and akimotoite remain comparatively close to the liquid, but bridgmanite and post-perovskite are systematically less liquid-like. This separation is not explained by the SiO4-to-SiO6 coordination change alone, and instead stems from a coupled variation in multiple structural features. These results show that local atomic descriptors expose structural distinctions hidden by conventional averaged metrics and suggest that high-pressure liquid thermodynamics, including the non-monotonic pressure dependence of liquid Grüneisen parameters, need not be interpreted simply as progressive convergence toward the stable lower-mantle crystal structures.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文用机器学习势与第一性原理计算，在最高700 GPa和12,000 K条件下，通过SOAP描述符、主成分分析和k近邻距离，将八种MgSiO3多晶型与液体的局域原子环境放入同一相似性空间进行比较。该工作表明局域原子描述符能揭示常规平均指标掩盖的结构差异，并提示高压液体热力学（包括液体Grüneisen参数的非单调压力依赖）不宜简单解释为逐步趋近稳定的下地幔晶体结构。",
+      "summary_kind": "ai_summary",
       "authors": [
         "J. Acquadro",
         "Xi-Yuan Bao",
@@ -1641,8 +1641,8 @@
       "published_at": "2026-10-05T23:28:09+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Major advances in chemical rate theory changed what was computed and what a barrier meant. I organize this conceptual history around those changes, while retaining the controlled corrections and limiting relations between theories. The calculated quantities include an empirical rate constant, a collision count, a thermodynamic activation free energy, a statistical flux across a dividing surface, a stochastic escape rate, an energy-resolved microcanonical rate, a quantum flux correlation function, and an ensemble of reactive paths computed with electronic-structure or machine-learned potentials. I compare the assumptions with the limits stated by the pioneering authors. A rate constant is inferred from measurements under a stated rate law; its temperature dependence defines an apparent activation energy $E_a$. Activation free energy $ΔG^{\\ddagger}$, activation enthalpy $ΔH^{\\ddagger}$, activation entropy $ΔS^{\\ddagger}$, the prefactor, transmission coefficient $κ$, and saddle height require a kinetic model and, where relevant, a standard state, dividing surface, ensemble, and dynamical correction for their interpretation in a rate calculation. In hydrogen transfer by soybean lipoxygenase-1, similar single-isotope activation parameters accompany a large change in isotope-sensitive dynamics. Five rate benchmarks illustrate the errors different comparisons test and motivate seven reporting items. These distinctions guide comparisons of rates and interpretations of activation parameters.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文梳理了从Arrhenius理论到机器学习势的化学速率理论的概念演变，比较了各理论所计算的量及其前提假设与局限。该梳理有助于在比较反应速率和解读活化参数时，明确所需动力学模型、标准态、分界面和动力学校正等条件。",
+      "summary_kind": "ai_summary",
       "authors": [
         "Rodney S. Ruoff"
       ]
@@ -1726,8 +1726,8 @@
       "published_at": "2026-10-05T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Porous materials such as metal-organic frameworks (MOFs) are widely studied for applications in catalysis and gas adsorption, including carbon dioxide capture and hydrogen storage for energy and environmental challenges. Accurate simulation of gas adsorption in these materials remains challenging because most approaches rely on force fields (FFs), which lack first-principles accuracy. Here, we present a hybrid sampling approach, complemented by an active-learning-style refinement step, for generating machine-learning potentials (MLPs) tailored for grand canonical Monte Carlo (GCMC) simulations of gas adsorption. The training dataset combines snapshots from FF-based GCMC sampling, evaluated by single-point density functional theory (DFT) calculations, with trajectories from DFT-based molecular dynamics (MD). We demonstrate this approach for hydrogen adsorption in MOF-303, achieving accurate energy and force evaluation, as well as robust GCMC simulation including on-the-fly quantum corrections for nuclei. The MLP-based calculation also revealed four primary and four secondary adsorption sites formed near N, O, C, and –OH motifs, highlighting the material's structural heterogeneity and adsorption behavior. The resulting MLPs enable calculation of adsorption isotherms, isosteric heat values, and diffusion coefficients across temperatures. This hybrid-sampling framework bridges DFT-level accuracy and larger-scale simulation capability than a b i n i t i o MD, and can in principle be applied to other porous materials and gas types to support the design of materials for gas storage and separation.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出了一种混合采样方法并结合主动学习式精修步骤，为气体吸附的大正则蒙特卡洛模拟构建机器学习势，训练集由力场GCMC快照的单点DFT计算与DFT分子动力学轨迹组成，并以MOF-303中的氢吸附为例进行了演示。该框架可在保持DFT级精度的同时实现比从头算分子动力学更大尺度的模拟，原则上可推广到其他多孔材料和气体类型，但适用范围和精度仍受训练数据与目标体系限制，需针对具体体系验证。",
+      "summary_kind": "ai_summary",
       "authors": [
         "K. Sau",
         "I. Hamada",
@@ -1763,8 +1763,8 @@
       "published_at": "2026-10-05T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "We propose a parameter-reduced version of magnetic Moment Tensor Potential (mMTP) based on various matrix and tensor decompositions. The resulting compressed magnetic machine-learning potential reduces the number of parameters by a factor of approximately 1.5-3 without compromising predictive performance on the validation set. We evaluate the performance of the compressed potentials for magnetic, structural, and vibrational properties, as well as in molecular dynamics simulations of Fe-Al and CrN systems. We demonstrate that the simulation results obtained with the compressed mMTP are numerically consistent with those of the original uncompressed model and are in agreement with density functional theory calculations and experimental data.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出基于多种矩阵和张量分解的参数缩减版磁性矩张量势（mMTP），在验证集上不牺牲预测性能的情况下将参数数量减少约1.5–3倍，并评估了其在Fe-Al和CrN体系的磁性、结构、振动性质及分子动力学模拟中的表现。该工作为使用参数更少的mMTP开展上述体系的性质计算和分子动力学模拟提供了依据，因为压缩模型的模拟结果与原始未压缩模型数值一致，并与密度泛函理论计算和实验数据吻合；原文明确的适用范围是验证集性能以及Fe-Al和CrN体系中的这些性质和模拟。",
+      "summary_kind": "ai_summary",
       "authors": [
         "Alexey S. Kotykhov",
         "Alexander V. Shapeev",
@@ -1795,8 +1795,8 @@
       "published_at": "2026-10-04T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "As agents rapidly evolve, existing benchmarks can become saturated, limiting their ability to distinguish capabilities and reveal remaining failure modes. Particularly in scientific domains, constructing and updating benchmarks requires substantial time, labor, and domain expertise, making it difficult to keep evaluation aligned with advances in agent capabilities. We address this challenge by investigating whether scientific-agent benchmarks can be automatically generated and iteratively adapted as agent capabilities evolve. We introduce AutoSciBench, a framework that represents each task as a high-level concept specifying the scientific domain, data modality, and required reasoning approach, together with a low-level recipe specifying how the question, environment, and ground-truth answer are constructed and verified. Agents attempt to solve each task, producing solver trajectories and corresponding judge feedback which AutoSciBench uses to revise the recipe or concept, closing observed shortcuts and shifting tasks toward raw-data re-examination, interpretation of intermediate results, and evidence integration. Experience distilled from completed refinement trajectories further guides new concept generation, allowing lessons from earlier task refinement to inform subsequent benchmark construction. Starting from existing benchmarks, we evaluate AutoSciBench across computational biology, materials science, and clinical imaging. Generated benchmarks reduce average solver accuracy by 22.4 and 25.5 percentage points relative to the human-curated benchmarks in computational biology and materials science, respectively, while generated tasks receive higher average quality ratings across all three domains, suggesting that scientific-agent evaluation can adapt as agent capabilities advance.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出 AutoSciBench，一个将科学智能体评测任务表示为高层概念与低层配方并利用求解轨迹和评判反馈迭代修订概念或配方的自动基准生成框架，在计算生物学、材料科学和临床影像上进行了评估。该工作可用于在智能体能力演进时自动更新科学评测基准，但所报告的求解准确率下降与质量评分均来自作者在特定任务上的实验，尚需独立验证。",
+      "summary_kind": "ai_summary",
       "authors": [
         "Dongki Kim",
         "Namkyeong Lee",
@@ -1808,6 +1808,40 @@
         "Sung Ju Hwang",
         "G. Scalia",
         "Ehsan Hajiramezanali"
+      ]
+    },
+    {
+      "id": "971bb979b7446c8c74cd3902",
+      "url": "https://arxiv.org/abs/2610.04977",
+      "title": "Do LLMs Understand Sequential Structure? A Controlled Study of Inference and Generation",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-04T00:00:00+00:00",
+      "first_seen": "2026-10-09T04:18:20.400099+00:00",
+      "excerpt": "Large language models (LLMs) are increasingly used as interactive agents and simulators, yet it remains unclear whether they can recover latent sequential structure beyond surface action frequencies. This distinction is critical for behavioral simulation, where actions are often shaped by prior context rather than marginal frequencies alone. We study this question using controlled two-player Rock--Paper--Scissors interactions and a one-player stochastic n-gram continuation task. Across these experiments, we test whether LLMs can identify latent strategies, follow simple Markov rules, and sustain higher-order conditional dependencies. Our framework separates distribution matching from conditional rule following. Results show that longer context does not improve identification, correct recognition does not ensure faithful simulation, and higher-order dependencies substantially degrade rule recovery. Apparent behavioral fidelity can therefore mask incorrect generative mechanisms.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2610.04977",
+      "authors": [
+        "Jerry Wang",
+        "Zhengxiang Wang",
+        "Ting Yu Liu",
+        "Hsin-Ling Hsu",
+        "Yi-Cheng Lai",
+        "Tengfei Ma"
       ]
     },
     {
@@ -1892,8 +1926,8 @@
       "published_at": "2026-10-02T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Atomistic simulations have proven to be a powerful tool in obtaining chemical insights for complex solid–liquid interfaces. However, studying solid–liquid interfaces with first-principles methods is a challenging task due to the underlying computational limitations. Empirical force fields have been extensively applied as an alternative; however, they are limited by the accuracy of the underlying force field. Machine learning potentials (MLPs) have emerged as a powerful solution to overcome this accuracy vs computational cost trade-off. Developments in ML algorithms and molecular representations have led to accurately simulating diverse complex molecular systems, including solid–liquid interfaces. The accuracy of the MLP is currently determined by the errors in energies and forces of the system and by observing structural properties. However, such metrics are insufficient in capturing the true insights into interfaces. In this study, we present a workflow for constructing robust MLPs for solid–liquid interfaces and demonstrate their accuracy beyond energy and force errors with evaluating structural and dynamical properties. Through a systematic dataset construction, we provide valuable insights into developing robust and accurate MLPs, their failure modes, and solutions to overcome their shortcomings. With this work, we aim to provide a guide in building accurate, transferable, and robust MLPs for solid–liquid interface systems.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出了一个用于构建固液界面机器学习势的工作流程，并通过系统数据集构建评估了其在结构性质和动力学性质上的表现，而不仅限于能量和力误差。该工作旨在为开发准确、可迁移且稳健的固液界面机器学习势提供指导，并揭示其失效模式及克服方法。",
+      "summary_kind": "ai_summary",
       "authors": [
         "Nisarg Joshi",
         "Rahul Verma",
@@ -1923,8 +1957,8 @@
       "published_at": "2026-10-02T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Atomic reconstruction reshapes moir\\'e materials across multiple scales, from local structure and polarization textures to global electronic topology, yet direct \\textit{ab initio} modeling becomes prohibitive for large superstructures such as marginal-twist-angle moir\\'es and moir\\'e-of-moir\\'es. We develop Moir\\'eMLIP by fine-tuning a universal atomistic model on the density functional theory labeled Moir\\'e Kaleidoscope dataset, which spans transition metal dichalcogenide compositions, symmetries, stackings, and twist angles. Moir\\'eMLIP reproduces \\textit{ab initio} reconstruction with force errors of 6--8\\,meV/\\AA{} and transfers to smaller twist angles and unseen structures. Knowledge distillation yields Moir\\'eMLIP-mini, which retains this accuracy while extending single-GPU inference to one million atoms. Applied to an alternate-twist MoTe$_2$ trilayer, it reveals a hierarchical polarization network spanning tens of nanometers arising from large moir\\'e-cell distortions sharply localized along the moir\\'e-of-moir\\'e domain walls. These results overcome key accuracy, transferability, and scaling bottlenecks of existing atomistic models and enable predictive simulations across emergent moir\\'e length scales.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文通过对通用原子模型进行微调并采用知识蒸馏，构建了MoiréMLIP及其轻量版本MoiréMLIP-mini，用于预测莫尔超晶格中的原子重构，其中MoiréMLIP在测试中给出的力误差为6–8 meV/Å，MoiréMLIP-mini在单GPU上可将推理扩展至一百万原子。该工作为跨越莫尔材料多尺度原子重构的预测性模拟提供了工具，但摘要仅报告了力误差、可迁移至更小扭角和未见过结构以及单GPU百万原子推理，未给出其他性能指标，也不代表公司声明已被独立验证。",
+      "summary_kind": "ai_summary",
       "authors": [
         "Thomas Huang",
         "Yue-Yao Fan",
@@ -1936,6 +1970,39 @@
         "P. Sushko",
         "Di Xiao",
         "Ting Cao"
+      ]
+    },
+    {
+      "id": "c4ac744414a8aa10db832cb2",
+      "url": "https://arxiv.org/abs/2610.02967",
+      "title": "Post-Training Frontier Text-to-Image Models by Composing Preference and Rubric Rewards",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-02T00:00:00+00:00",
+      "first_seen": "2026-10-09T04:18:20.400099+00:00",
+      "excerpt": "Recent text-to-image generation models have achieved remarkable visual quality, but improving them through post-training remains challenging because no single reward signal captures the full range of human preference. In this work, we develop a simple and effective post-training recipe for open-domain text-to-image generation based on the composition of complementary reward signals. Our reward system consists of two main components: a preference reward, trained on large-scale human preference data using a Bradley-Terry objective to capture overall human aesthetic and perceptual preferences, and rubric-based rewards, which explicitly evaluate prompt faithfulness and other desirable properties while providing safeguards against reward hacking. A key challenge is how to combine these heterogeneous reward signals. We show that a naive weighted average leads to suboptimal optimization behavior, and propose a simple reward composition strategy that more effectively balances preference optimization with rubric satisfaction. In the Arena text-to-image leaderboard (https://arena.ai/), our RL-trained Flux2dev achieves an Elo rating 69 points above the base model, and our post-trained Ideogram-4 surpasses every open-source model on the leaderboard, reaching an Elo of 1223.5. (Claims of state-of-the-art performance are based on the Arena leaderboard snapshot as of September 4, 2026.) Our results suggest that effective rewards for frontier generative-model training require broad coverage of user intent and robustness to exploitation under optimization. To support reproducible research, we release Arena-T2I-Training, a 1K subset of training data that recovers some gains of full-scale training, providing a resource that we hope will facilitate future work on post-training for text-to-image models.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2610.02967",
+      "authors": [
+        "Yuanhao Ban",
+        "I-Hung Hsu",
+        "Anastasios Angelopoulos",
+        "Wei-Lin Chiang",
+        "Ion Stoica",
+        "Cho-Jui Hsieh"
       ]
     },
     {
@@ -1985,8 +2052,8 @@
       "published_at": "2026-10-01T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Artificial intelligence (AI) is rapidly transforming mechanical engineering (ME) practice, influencing activities that range from modeling and simulation to optimization, diagnostics, design, and technical communication. This article consolidates perspectives discussed at a dedicated round-table during the 28th ABCM International Congress on Mechanical Engineering—COBEM 2025—and offers a structured reflection for the Brazilian and international ME communities. Rather than providing an exhaustive survey, the paper develops a coherent narrative around the conditions under which AI can strengthen—rather than dilute—engineering rigor. The article begins by clarifying how contemporary AI systems operate, distinguishing statistical learning from human cognition and outlining their capabilities, limitations, and emerging agentic AI systems. It then examines industrial adoption, workforce transformation, and the growing role of AI in scientific discovery and engineering workflows. Particular attention is devoted to the energy and infrastructure demands of AI-driven computation and their implications for sustainability, power systems, and thermal management. Building on these constraints, the paper discusses integrating physical knowledge, structured reasoning, and domain expertise into AI systems for safety-relevant engineering applications. Emphasis is placed on representative ME applications, physics-informed and hybrid learning frameworks, model development under physical constraints, validation, uncertainty quantification, and certification challenges. The paper also addresses the educational, epistemological, and ethical implications of AI, including curriculum modernization, human-agent collaboration, professional accountability, and the long-term sustainability of engineering knowledge. It concludes with a synthesis of principles for the responsible adoption of AI in ME, encompassing physical consistency, validation, awareness of uncertainty, energy sustainability, human oversight, and ethical responsibility. Our central message is that AI should be viewed not as a substitute for engineering judgment, but as a powerful tool whose value depends on disciplined inte",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文基于第28届ABCM国际机械工程大会圆桌讨论，围绕人工智能在机械工程中的基础、机遇、挑战与责任展开结构化论述，涵盖AI系统原理、工业应用、物理知识融合、验证与不确定性量化、教育伦理及负责任采用原则。该文可为机械工程研究人员在安全相关应用中整合领域知识与AI、审视验证认证及伦理约束提供参考框架，而非替代工程判断。",
+      "summary_kind": "ai_summary",
       "authors": [
         "Americo Cunha",
         "C. Nataraj",
@@ -2019,8 +2086,8 @@
       "published_at": "2026-10-01T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Artificial intelligence (AI) is moving upstream in science. Systems such as AlphaFold have already transformed protein-structure prediction, while newer agentic systems can search literatures, generate hypotheses, write and execute code, interpret results, and automate much of the path from idea to paper. Recent debates have asked how such systems may change scientific progress, surprise, and human understanding. Yet they also change something more fundamental: who-or what-participates in deciding which questions are asked, which evidence is surfaced, and which alternatives survive. As machine intelligence becomes part of science's epistemic infrastructure, steps must be taken to ensure that researchers who did not build, own, or operate the system can still contest how ideas and evidence became a claim.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文讨论了AI在科研中日益上游化所带来的认识论影响，并主张在机器智能成为科研基础设施时，应确保未构建、拥有或操作该系统的研究人员仍能质疑观点和证据如何转化为主张。对科研工作的用途在于提示研究者和机构关注此类系统对问题选择、证据浮现及替代方案筛选的参与，以维持科研的可争议性；原文未给出具体性能数据或已验证结论。",
+      "summary_kind": "ai_summary",
       "authors": [
         "Christoph Trattner"
       ]
@@ -2102,8 +2169,8 @@
       "published_at": "2026-09-30T15:03:07+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Proof of concept for watermarking AI-generated proteins while preserving biological function.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出SynthID Bio的概念验证，用于在AI生成的蛋白质中嵌入水印并保持其生物功能。该方法可帮助科研人员追溯AI生成的蛋白质来源，但目前仅为概念验证，实际适用性和性能尚未经验证。",
+      "summary_kind": "ai_summary",
       "authors": []
     },
     {
@@ -2162,8 +2229,8 @@
       "published_at": "2026-09-29T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Solving all disease is one of the most monumentally complex challenges in science. Today, for the first time, AI provides the foundation to make it achievable. Tackling the frontier of human health is our mission, and it means identifying exactly where modern AI can make the greatest difference. We see drug discovery as the critical wedge in solving all disease, and therefore our initial focal point where AI can have a transformative impact on human health. Developing a drug that successfully and effectively treats disease fundamentally involves understanding biological mechanisms and designing exquisitely engineered molecules that can modulate them safely. So we are taking a straight shot at making that a reality. We are generating the data, training the AI models, developing the software, and laying down the physical infrastructure to make new medicines; taking these potential therapeutics all the way to patients in the clinic. We are building this new architecture in a way that will scale across multiple disease areas, and different types of medicines, from small molecules to antibodies, peptides, and beyond. In 2021, when we started Isomorphic Labs, AI drug discovery was just a hypothesis. Conventional approaches were bottlenecked by slow, resource-intensive iterative design-make-test cycles, viewing AI as an experimental tool for narrow tasks. At the same time the AI revolution was well underway across multiple industries. A seismic shift was happening with the emergence of foundation models, moving away from single-task algorithms toward highly versatile systems capable of world-understanding, zero-shot reasoning and generating complex text and images. Up to this point, I had spent my education and career in core AI, building intelligent systems by scaling up neural networks and deep reinforcement learning to solve the hardest problems at a superhuman level. But having grown up in a medical family, I recognised the potential to apply this superhuman new technology to humanity’s most meaningful challenge: human health. Working with Sir Demis Hassabis, we created the founding team at Isomorphic Labs to pivot breakthroughs in AI toward solving the drug discov",
-      "summary": "",
-      "summary_kind": "source_excerpt"
+      "summary": "Isomorphic Labs 介绍其正在构建面向药物发现的AI基础模型、数据、软件与基础设施，目标是覆盖从小分子到抗体、肽等多种药物类型并将候选疗法推进至临床。该材料属于公司愿景与进展说明，未提供可验证的性能数字，其将AI用于药物发现以实现疾病治疗的设想仍需科研实践检验。",
+      "summary_kind": "ai_summary"
     },
     {
       "id": "6add3dd62456569f19427e45",
@@ -2445,8 +2512,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-10-09T04:10:09.110966+00:00",
-      "last_success": "2026-10-09T04:10:09.110966+00:00",
+      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
+      "last_success": "2026-10-09T04:18:20.400099+00:00",
       "status": "ok",
       "count": 11
     },
@@ -2454,8 +2521,8 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-10-09T04:10:09.110966+00:00",
-      "last_success": "2026-10-09T04:10:09.110966+00:00",
+      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
+      "last_success": "2026-10-09T04:18:20.400099+00:00",
       "status": "ok",
       "count": 0
     },
@@ -2463,8 +2530,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-10-09T04:10:09.110966+00:00",
-      "last_success": "2026-10-09T04:10:09.110966+00:00",
+      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
+      "last_success": "2026-10-09T04:18:20.400099+00:00",
       "status": "ok",
       "count": 9
     },
@@ -2472,8 +2539,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-10-09T04:10:09.110966+00:00",
-      "last_success": "2026-10-09T04:10:09.110966+00:00",
+      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
+      "last_success": "2026-10-09T04:18:20.400099+00:00",
       "status": "ok",
       "count": 12
     },
@@ -2481,8 +2548,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-10-09T04:10:09.110966+00:00",
-      "last_success": "2026-10-09T04:10:09.110966+00:00",
+      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
+      "last_success": "2026-10-09T04:18:20.400099+00:00",
       "status": "ok",
       "count": 7
     },
@@ -2490,8 +2557,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-10-09T04:10:09.110966+00:00",
-      "last_success": "2026-10-09T04:10:09.110966+00:00",
+      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
+      "last_success": "2026-10-09T04:18:20.400099+00:00",
       "status": "ok",
       "count": 1
     },
@@ -2499,8 +2566,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-10-09T04:10:09.110966+00:00",
-      "last_success": "2026-10-09T04:10:09.110966+00:00",
+      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
+      "last_success": "2026-10-09T04:18:20.400099+00:00",
       "status": "ok",
       "count": 12
     },
@@ -2508,8 +2575,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-10-09T04:10:09.110966+00:00",
-      "last_success": "2026-10-09T04:10:09.110966+00:00",
+      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
+      "last_success": "2026-10-09T04:18:20.400099+00:00",
       "status": "ok",
       "count": 2
     },
@@ -2517,8 +2584,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-10-09T04:10:09.110966+00:00",
-      "last_success": "2026-10-09T04:10:09.110966+00:00",
+      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
+      "last_success": "2026-10-09T04:18:20.400099+00:00",
       "status": "ok",
       "count": 0
     },
@@ -2526,8 +2593,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-10-09T04:10:09.110966+00:00",
-      "last_success": "2026-10-09T04:10:09.110966+00:00",
+      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
+      "last_success": "2026-10-09T04:18:20.400099+00:00",
       "status": "ok",
       "count": 12
     },
@@ -2535,8 +2602,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-10-09T04:10:09.110966+00:00",
-      "last_success": "2026-10-09T04:10:09.110966+00:00",
+      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
+      "last_success": "2026-10-09T04:18:20.400099+00:00",
       "status": "ok",
       "count": 3
     },
@@ -2544,8 +2611,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-10-09T04:10:09.110966+00:00",
-      "last_success": "2026-10-09T04:10:09.110966+00:00",
+      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
+      "last_success": "2026-10-09T04:18:20.400099+00:00",
       "status": "ok",
       "count": 0
     },
@@ -2553,8 +2620,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-10-09T04:10:09.110966+00:00",
-      "last_success": "2026-10-09T04:10:09.110966+00:00",
+      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
+      "last_success": "2026-10-09T04:18:20.400099+00:00",
       "status": "ok",
       "count": 12
     },
@@ -2563,13 +2630,13 @@
       "name": "Zotero 为你推荐",
       "status": "pending",
       "message": "等待论文任务导出；已归档论文仍可阅读",
-      "last_attempt": "2026-10-09T04:10:09.110966+00:00"
+      "last_attempt": "2026-10-09T04:18:20.400099+00:00"
     }
   ],
   "summaries": {
-    "status": "partial",
-    "generated": 0,
-    "failed": 3,
+    "status": "ok",
+    "generated": 24,
+    "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash"
   },
   "policy": {
