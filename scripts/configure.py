@@ -32,6 +32,10 @@ def read_credentials(path):
     missing = [name for name in REQUIRED if not result.get(name)]
     if missing:
         raise ValueError('Missing credentials: ' + ', '.join(missing))
+    base = result["OPENAI_API_BASE"].rstrip("/")
+    if base.endswith("/chat/completions"):
+        base = base[:-len("/chat/completions")]
+    result["OPENAI_API_BASE"] = base
     return result
 
 

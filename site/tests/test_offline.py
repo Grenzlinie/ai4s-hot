@@ -154,6 +154,29 @@ class OfflineAcceptance(unittest.TestCase):
             self.assertEqual(len(data['papers']),1)
         self.assertEqual(calls,['rank','tldr','affiliations'])
 
+    def test_export_adapter_passes_absolute_config_path_and_restores_argv(self):
+        package = ModuleType('zotero_arxiv_daily')
+        ex = ModuleType('zotero_arxiv_daily.executor')
+        ex.Executor = type('FakeExecutor',(),{})
+        package.executor = ex
+        main = ModuleType('zotero_arxiv_daily.main')
+        original = ['export_daily.py','executor.debug=false']
+        observed = []
+        def entrypoint():
+            observed.append(list(sys.argv))
+        main.main = entrypoint
+        with patch.dict(sys.modules, {'zotero_arxiv_daily':package,'zotero_arxiv_daily.executor':ex,'zotero_arxiv_daily.main':main}), patch.object(sys,'argv',original), patch.object(sys,'path',list(sys.path)):
+            exporter.main()
+            self.assertIs(sys.argv,original)
+            self.assertEqual(observed[-1],original+['--config-path',str(Path.cwd()/'config')])
+            self.assertTrue(Path(observed[-1][-1]).is_absolute())
+            def failing_entrypoint():
+                raise RuntimeError('synthetic upstream failure')
+            main.main = failing_entrypoint
+            with self.assertRaisesRegex(RuntimeError,'synthetic upstream failure'):
+                exporter.main()
+            self.assertIs(sys.argv,original)
+
     def test_source_config_includes_hf_daily_and_excludes_dp(self):
         sources = json.loads((SITE / 'sources.json').read_text())['sources']
         self.assertTrue(any(s['kind']=='hf_daily' for s in sources))

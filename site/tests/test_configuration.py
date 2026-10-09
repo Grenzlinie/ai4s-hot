@@ -33,6 +33,13 @@ class ConfigurationAcceptance(unittest.TestCase):
         self.assertEqual(parsed['OPENAI_API_KEY'], 'SYNTHETIC_PRIVATE=a=b')
         self.assertEqual(parsed['ZOTERO_KEY'], 'SYNTHETIC_ZOTERO==')
 
+    def test_api_endpoint_normalizes_to_root_without_changing_valid_root(self):
+        root = 'https://openrouter.ai/api/v1'
+        for base in (root, root+'/', root+'/chat/completions', root+'/chat/completions/'):
+            with self.subTest(base=base), tempfile.TemporaryDirectory() as tmp:
+                env, _ = self.files(tmp, ENV.replace('https://example.test/v1',base))
+                self.assertEqual(configure.read_credentials(env)['OPENAI_API_BASE'],root)
+
     def test_model_preserved_smtp_removed_inline_credentials_replaced(self):
         config = CONFIG + '  api:\n    key: SYNTHETIC_PRIVATE\n    base_url: https://inline.example/v1\nzotero:\n  api_key: SYNTHETIC_ZOTERO\n  user_id: 456\nemail:\n  sender_password: SYNTHETIC_SMTP\n'
         with tempfile.TemporaryDirectory() as tmp:
