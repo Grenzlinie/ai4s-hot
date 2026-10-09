@@ -55,7 +55,14 @@ def main():
         executor.logger.info("Exported {} papers for AI4S Hot; SMTP is disabled", len(ranked))
 
     executor.Executor.run = run_export_only
-    upstream_main()
+    # Imported Hydra entrypoints resolve relative config paths as packages.
+    # Force the checked-out upstream config directory instead.
+    original_argv = sys.argv
+    sys.argv = [original_argv[0], *original_argv[1:], "--config-path", str(upstream / "config")]
+    try:
+        upstream_main()
+    finally:
+        sys.argv = original_argv
 
 
 if __name__ == "__main__":
