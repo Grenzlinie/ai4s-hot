@@ -40,9 +40,38 @@ def read_config(path):
     if not isinstance(config, dict):
         raise ValueError('Configuration must be a YAML mapping')
     config.pop('email', None)
-    model = config.get('llm', {}).get('generation_kwargs', {}).get('model')
+    llm = config.get('llm', {})
+    if not isinstance(llm, dict) or not isinstance(llm.get('generation_kwargs', {}), dict):
+        raise ValueError('llm and llm.generation_kwargs must be YAML mappings')
+    model = llm.get('generation_kwargs', {}).get('model')
     if not isinstance(model, str) or not model.strip():
         raise ValueError('Set llm.generation_kwargs.model in the local YAML')
+    for section, fields in (
+        ('llm', {'key':'OPENAI_API_KEY', 'base_url':'OPENAI_API_BASE'}),
+        ('zotero', {'user_id':'ZOTERO_ID', 'api_key':'ZOTERO_KEY'}),
+    ):
+        parent = config.setdefault(section, {})
+        if not isinstance(parent, dict):
+            raise ValueError(section + ' must be a YAML mapping')
+        if section == 'llm':
+            parent = parent.setdefault('api', {})
+            if not isinstance(parent, dict):
+                raise ValueError('llm.api must be a YAML mapping')
+        for field, variable in fields.items():
+            parent[field] = '${oc.env:' + variable + '}'
+    # CUSTOM_CONFIG is a public repository variable. Additional API credentials
+    # must also be environment references; no inline secrets are published.
+    def check_keys(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key in ('key', 'api_key', 'password', 'sender_password') and child is not None:
+                    if not isinstance(child, str) or (child and not re.fullmatch(r'\$\{oc\.env:[A-Z][A-Z0-9_]*\}', child)):
+                        raise ValueError('API credentials in YAML must use environment references')
+                check_keys(child)
+        elif isinstance(value, list):
+            for child in value:
+                check_keys(child)
+    check_keys(config)
     return yaml.safe_dump(config, allow_unicode=True, sort_keys=False), model
 
 
