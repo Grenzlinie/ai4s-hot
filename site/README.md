@@ -4,7 +4,7 @@
 
 ## 数据与运行方式
 
-- `Collect Zotero papers`：每天 22:00 UTC（北京时间次日 06:00）运行。沿用仓库变量 `REPOSITORY` / `REF` 指定的上游实现、Zotero 兴趣向量排序和 TLDR 生成；`site/export_daily.py` 只替换末端运行编排，导出 JSON，不调用邮件发送。
+- `Collect Zotero papers`：每天 22:00 UTC（北京时间次日 06:00）运行。沿用仓库变量 `REPOSITORY` / `REF` 指定的上游 arXiv 获取、Zotero 兴趣向量排序和 TLDR 生成；先用标题/摘要排序，默认不下载候选论文全文。设置本地 `executor.fetch_full_text=true` 可只对最终推荐论文获取全文；`site/export_daily.py` 只替换末端运行编排，导出 JSON，不调用邮件发送。
 - `Update AI4S Hot`：论文 workflow 结束后更新网站；另在每天 23:43 UTC（北京时间次日 07:43）补跑，也可手动触发。重跑按稳定 URL 去重，单个来源失败时保留已有内容，全部来源失败时不覆盖归档或发布。
 - `site-data/data/index.json` 保存完整条目和来源状态，`site-data/data/daily/YYYY-MM-DD.json` 保存按北京时间的首次收录索引。Actions artifact 只作为论文结果交接，不承担长期存储。
 - 不发布 Zotero 库条目、文件夹、添加日期或任何凭证。公开条目仅含推荐结果的论文标题、摘要、作者、链接、生成摘要及相关度；Hot 榜单名次与 Zotero 相关度分别保留。

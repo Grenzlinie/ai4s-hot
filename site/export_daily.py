@@ -43,12 +43,32 @@ def main():
         if not corpus:
             raise RuntimeError("Zotero returned no usable papers; archive was not replaced")
         papers = []
+        raw_lookup = {}
+        fetch_full_text = getattr(self.config.executor, "fetch_full_text", False)
         for source, retriever in self.retrievers.items():
             executor.logger.info("Retrieving {} papers", source)
-            papers.extend(retriever.retrieve_papers())
+            if source == "arxiv" and hasattr(retriever, "_retrieve_raw_papers"):
+                from zotero_arxiv_daily.protocol import Paper
+                raw = retriever._retrieve_raw_papers()
+                for result in raw:
+                    raw_lookup[result.entry_id] = (retriever, result)
+                    papers.append(Paper(source=source, title=result.title,
+                                        authors=[a.name for a in result.authors],
+                                        abstract=result.summary, url=result.entry_id,
+                                        pdf_url=result.pdf_url))
+            else:
+                papers.extend(retriever.retrieve_papers())
         ranked = self.reranker.rerank(papers, corpus) if papers else []
         ranked = ranked[:self.config.executor.max_paper_num]
-        for paper in ranked:
+        for index, paper in enumerate(ranked):
+            if fetch_full_text and paper.url in raw_lookup:
+                retriever, raw = raw_lookup[paper.url]
+                try:
+                    enriched = retriever.convert_to_paper(raw)
+                    enriched.score = paper.score
+                    paper = ranked[index] = enriched
+                except Exception as error:
+                    executor.logger.info("Full text unavailable ({}); using abstract", type(error).__name__)
             paper.generate_tldr(self.openai_client, self.config.llm)
             paper.generate_affiliations(self.openai_client, self.config.llm)
         export(ranked, os.environ["AI4S_PAPER_EXPORT"])
