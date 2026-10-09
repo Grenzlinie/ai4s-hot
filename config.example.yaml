@@ -5,6 +5,10 @@ llm:
     base_url: ${oc.env:OPENAI_API_BASE}
     key: ${oc.env:OPENAI_API_KEY}
   language: Chinese
+  summary_kwargs:
+    max_tokens: 1024
+    reasoning:
+      effort: none
   generation_kwargs:
     model: deepseek/deepseek-v4.1-flash
 zotero:

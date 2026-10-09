@@ -47,6 +47,8 @@ def read_config(path):
     llm = config.get('llm', {})
     if not isinstance(llm, dict) or not isinstance(llm.get('generation_kwargs', {}), dict):
         raise ValueError('llm and llm.generation_kwargs must be YAML mappings')
+    if not isinstance(llm.get('summary_kwargs', {}), dict):
+        raise ValueError('llm.summary_kwargs must be a YAML mapping')
     model = llm.get('generation_kwargs', {}).get('model')
     if not isinstance(model, str) or not model.strip():
         raise ValueError('Set llm.generation_kwargs.model in the local YAML')
