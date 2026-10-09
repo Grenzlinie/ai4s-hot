@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-09T04:18:20.400099+00:00",
+  "generated_at": "2026-10-09T05:19:32.042444+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -29,7 +29,22 @@
       "authors": [
         "Julian Chan",
         "Javier Mora Jimenez"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-6940b15789e1",
+        "zt-ab3c5b4dac12",
+        "zt-ebc110d5a04c"
+      ],
+      "topic_ids": [
+        "zt-6940b15789e1",
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-ab3c5b4dac12",
+        "zt-c2d5921a8391",
+        "zt-ebc110d5a04c"
+      ],
+      "topic_version": "90290931a934aa4e6b5b5441ca2ffafee99552310338df32cf38c05910b16f52",
+      "topic_method": "local_similarity"
     },
     {
       "id": "db7b9e6fe248e3146f87743a",
@@ -52,9 +67,13 @@
       "published_at": "2026-10-08T16:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": []
+      "summary": "本文介绍了Oracle在招聘、工程和运营工作中使用ChatGPT Work与Codex将专业知识转化为快速可重复工作流的做法。这些内容来自公司方面的案例说明，可用于了解企业级AI辅助工作流的应用思路，但其中效果尚未经独立验证。",
+      "summary_kind": "ai_summary",
+      "authors": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "056b752629bad028aaa63949e219197913b6dca6260e23291a98ef360d33ef31",
+      "topic_method": "local_similarity"
     },
     {
       "id": "855092fba1df7e8a668bec1b",
@@ -77,9 +96,13 @@
       "published_at": "2026-10-08T12:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": []
+      "summary": "本文报告了Pollo AI利用GPT-5.6、GPT-6 Astra和GPT-Image-2.5，帮助创作者将创意转化为精细图像和电影感视频广告。对科研人员的潜在用途限于辅助生成图像与视频素材，但所述模型能力和效果来自公司声明，尚未验证。",
+      "summary_kind": "ai_summary",
+      "authors": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "75e74b6b83b37db74f5e34cb31a32056d344225a6319aaa209702a99bb832385",
+      "topic_method": "local_similarity"
     },
     {
       "id": "45d6a2b79938283a07ca47b3",
@@ -102,9 +125,13 @@
       "published_at": "2026-10-08T12:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": []
+      "summary": "LegalOn通过将Astra、Sol和Luna模型与任务匹配并策略性管理预算，将预估的每日Codex成本降低了65%，同时保持开发速度。该案例可为科研人员在选用和分配模型、控制计算成本时提供参考，但其效果是公司报告中的估算，尚未作为独立验证的结论。",
+      "summary_kind": "ai_summary",
+      "authors": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "a9bc8d9affe20f24e9b82605b7a9f643e8b2dc391c406ee2f93bcb2857ab541b",
+      "topic_method": "local_similarity"
     },
     {
       "id": "c758335f4f7f1c3937a0452f",
@@ -143,7 +170,24 @@
         "Yan Shu",
         "Yinda Chen",
         "Ziyang Zeng"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-6940b15789e1",
+        "zt-3e247e081c4e",
+        "zt-c56da7bb87be"
+      ],
+      "topic_ids": [
+        "zt-3e247e081c4e",
+        "zt-6940b15789e1",
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-9513e85a0edc",
+        "zt-c2d5921a8391",
+        "zt-c56da7bb87be",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "0a3915f73984fe566d56e93df9d9edca5b004f14c566d8d17b565195bb15518e",
+      "topic_method": "local_similarity"
     },
     {
       "id": "5a60d1c96954c59fcfe568b5",
@@ -172,7 +216,17 @@
         "Shinjiro Yagyu",
         "Takahiro Nagata",
         "Yoshiyuki Nakajima"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-51f8f0b68c72"
+      ],
+      "topic_ids": [
+        "zt-51f8f0b68c72",
+        "zt-8c9acb4742ac",
+        "zt-c2d5921a8391"
+      ],
+      "topic_version": "e9e305bc134fbec516834dccea1c4aa508da42ab3982fbb1c5ef4f4ec5737b19",
+      "topic_method": "local_similarity"
     },
     {
       "id": "a73458c8ea613d2a6d6c4a5b",
@@ -205,7 +259,24 @@
         "Andrius Merkys",
         "Saulius Gražulis",
         "Linas Vilčiauskas"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-35479dd1c4aa",
+        "zt-fe34282c36c8",
+        "zt-e4e3fa2de1a2"
+      ],
+      "topic_ids": [
+        "zt-17636072f9f0",
+        "zt-2757093684e8",
+        "zt-35479dd1c4aa",
+        "zt-8c9acb4742ac",
+        "zt-9513e85a0edc",
+        "zt-e4e3fa2de1a2",
+        "zt-f4a0d0a976e3",
+        "zt-fe34282c36c8"
+      ],
+      "topic_version": "2f6b80f7b867dd1d1078c5a7824f75227c44574e644baec66a68e10a4037f159",
+      "topic_method": "local_similarity"
     },
     {
       "id": "d9e485b409fe8517ac6e3a5b",
@@ -228,9 +299,13 @@
       "published_at": "2026-10-08T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": []
+      "summary": "本文报告了OpenAI对两起利用虚假记者身份和一家智库传播地缘政治信息的AI赋能影响行动所采取的干扰措施。该报告可供科研人员了解AI被用于欺骗性影响行动的具体手法，但其内容为OpenAI的声明，相关效果仍需独立验证。",
+      "summary_kind": "ai_summary",
+      "authors": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "9c1e7fc278d2a0bd6b2b4c6f0a0db145493cc0c985b9cfe0df069aaf0e0ef021",
+      "topic_method": "local_similarity"
     },
     {
       "id": "4e66a7e453a3193bb5cb6a8f",
@@ -254,8 +329,12 @@
       "published_at": "2026-10-08T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "2026 Usage Policy update Each year, Anthropic updates its Usage Policy in response to the evolving capabilities of our models, and the feedback we’ve received from our customers. We're publishing a new version of the policy today. In this post, we summarize the changes we’ve made. Most of the updates in the latest version are intended to clarify existing rules. In the year since our last refresh, Claude has taken on longer, more independent work. This update provides new examples that show how our rules apply to Claude’s new capabilities. It draws on new patterns of misuse in influence operations, weapons development, and surveillance that we’ve observed in the past year (as we’ve documented in our latest threat intelligence report). We’ve also made updates to clarify our requirements for high-risk use cases in areas like health and finance, to add controls for when Claude is used to autonomously take physical actions, and to address abusive behavior toward our models. The updated policy takes effect on November 12. The full Usage Policy and Supported Regions Policy can be found on their respective pages. A new section on deceptive activity As we wrote about last month, we’ve seen examples of state media outlets, government propaganda offices, and commercial firms using Claude to run networks of fake accounts and fabricated news sites. Our policy already prohibited this activity, but the restrictions were scattered across our elections, fraud, privacy, and disinformation sections. We've consolidated those rules into a new section titled Do Not Engage in Deceptive Campaigns or Artificial Activity, which applies to deceptive activity of any kind (whether political or commercial). It covers efforts to obscure who is behind a message or amplify content through fake accounts or posts, along with building the tools and infrastructure for running influence operation campaigns. Refocusing our elections section We’ve refined our political content restrictions in each version of our Usage Policy in order to ensure that our models can be used appropriately in democratic processes. In this version, we’ve further sharpened our section on elections, focusing it specifically o",
-      "summary": "",
-      "summary_kind": "source_excerpt"
+      "summary": "Anthropic发布了2026年使用政策更新，澄清了现有规则并新增了针对欺骗性活动、选举、健康与金融高风险用例、Claude自主物理操作以及针对模型的滥用行为的条款。该更新旨在帮助科研人员了解在影响操作、武器开发和监控等领域使用Claude时的合规边界，具体限制需查阅完整政策。",
+      "summary_kind": "ai_summary",
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "7732fd89d51cfe76ff908135ca17e4cb96b5ff247eb65d7a74b32eee8c25c1f7",
+      "topic_method": "local_similarity"
     },
     {
       "id": "6c062b861d6d205bc313e939",
@@ -279,8 +358,20 @@
       "published_at": "2026-10-08T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Building on our commitment to American scientific discovery Anthropic is deepening its support for American scientific research by committing $150 million over three years to the Genesis Mission, a federal initiative to accelerate scientific and technological discovery through AI. The funding will go toward making Claude available to more than 15 agencies that are part of the mission, including NASA, the National Institutes of Health, and the National Science Foundation. We first announced our partnership with the US Department of Energy (DOE) and the Genesis Mission last December. Since then, we have worked with DOE to bring Claude to scientists across the national laboratories. Today, we announced this new commitment as part of the Science: A New Golden Age Summit hosted by the White House Office of Science and Technology Policy in Washington, DC. Supporting American scientists We share the administration’s view, laid out in “Science: A New Golden Age,” that AI can have a profound and positive impact on scientific discovery, and we are glad to back its efforts to support American scientists. Researchers at federal agencies and national laboratories work on some of the world’s most difficult scientific problems. Through our commitment, we aim to help them use Claude to meaningfully advance their work. Over the next three years, we will: - Provide Claude, Claude Code, and API credits to several hundred Genesis Mission research projects; - Partner closely with agencies and national laboratories on the administration’s top science priorities, including fusion energy and quantum computing; and - Provide training, onboarding, and technical support to scientists on Genesis Mission projects, and help agencies new to the Genesis Mission get their first projects running. Accelerating scientific research This commitment is part of our broader effort to support scientific research. Earlier this year we launched Claude Science, an AI workbench that integrates the tools and packages researchers most commonly use, and opened 10,000 free and discounted Claude seats for academic scientists. We also expanded our AI for Science program, which gives credits to researchers on high",
-      "summary": "",
-      "summary_kind": "source_excerpt"
+      "summary": "Anthropic承诺三年投入1.5亿美元支持Genesis Mission，向NASA、NIH、NSF等超过15个参与该计划的联邦机构提供Claude及相关资源，并将与能源部国家实验室合作。该资金用于支持数百个研究项目并提供培训与技术支援，旨在帮助联邦机构研究人员利用Claude推进聚变能、量子计算等优先科学领域的工作。",
+      "summary_kind": "ai_summary",
+      "topic_leaf_ids": [
+        "zt-ebc110d5a04c",
+        "zt-c56da7bb87be"
+      ],
+      "topic_ids": [
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-c56da7bb87be",
+        "zt-ebc110d5a04c"
+      ],
+      "topic_version": "5e673627a4ebfd0e14e450b75c198682860d36b805913cf25a2171aa567cd017",
+      "topic_method": "local_similarity"
     },
     {
       "id": "c4a1f46e5a98744a7c57fd6e",
@@ -304,8 +395,12 @@
       "published_at": "2026-10-08T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Introducing the Anthropic Cyber Mission Today we’re launching the Anthropic Cyber Mission, a long-term commitment to securing the systems everyone depends on. The Cyber Mission is a new effort to support defenders with tools, research, and resources to secure their software and systems. We’re starting with two areas: - Critical infrastructure: Starting with securing the operational technology behind power grids, water systems, and transportation networks, and protecting government systems. Today, we’re introducing the Critical Infrastructure Defense Program (CIDP), which brings frontier models, on-site engineers, and threat research to the defenders that protect operational technology. - Open-source software: Finding vulnerabilities and proposing patches in the free, shared code that most software depends on, and hardening the underlying code. Today, we’re launching OSS Scanner, which offers open-source projects regular security scans from our strongest models, for free. Frontier models can be misused to exploit vulnerabilities and conduct cyber operations. Despite best efforts, many areas of technology remain dangerously exposed. State-sponsored adversaries have spent years gaining footholds in these systems, across many sectors, so that they can disrupt them. Defenders of critical infrastructure and the OSS community have decades of security experience but have faced severe resource shortages that are exacerbated by this moment. We are recognizing their expertise in these domains and offering our support. We will also expand the Cyber Mission to release tools, research, and resources in new areas to help secure the world. As part of Project Glasswing, partners uncovered many vulnerabilities, but we haven’t yet achieved a sufficient reduction in cyber risk. It’s easier than ever to find vulnerabilities, but verifying, prioritizing, and fixing these findings remains challenging. Based on lessons from Project Glasswing, we’re starting these new efforts to support defenders. Earlier this week, we merged Project Glasswing into our expanded Cyber Verification Program, which gives many more defenders access to our most capable models. And through the Anthropic Cyber ",
-      "summary": "",
-      "summary_kind": "source_excerpt"
+      "summary": "Anthropic 宣布启动 Anthropic Cyber Mission，并推出关键基础设施防御计划和面向开源项目的 OSS Scanner，为防御者提供前沿模型、现场工程师、威胁研究及定期安全扫描。该计划旨在支持关键基础设施和开源软件的安全防护，但其效果尚未验证，且脆弱性发现后的验证、优先级排序和修复仍面临挑战。",
+      "summary_kind": "ai_summary",
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "d3f1d0aed7de9be492ebec7fb94107a70c78e0c902f854624637c871bc7a7e87",
+      "topic_method": "local_similarity"
     },
     {
       "id": "2c97203026168fa4f677baa4",
@@ -328,8 +423,8 @@
       "published_at": "2026-10-08T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Egocentric world models predict first-person observations conditioned on an agent's actions, but most focus on a single agent. Real embodied settings often involve multiple agents that act and interact within a shared environment. Existing multi-agent world models rely on coarse actions like locomotion, camera control, or discrete commands, leaving fine-grained embodied interactions underexplored. We formulate multi-agent egocentric world modeling as synchronized ego-stream generation for multiple agents interacting through fine-grained actions in a shared world. This requires cross-view action consistency, shared-environment consistency, and consistent propagation of interaction-induced state updates. We propose Multi-agent Egocentric World Model (ME-World), which jointly denoises multiple ego streams in a shared token sequence, conditions each stream on all agents' target-view poses, and grounds generation with shared environment memory. We train and evaluate on real and synthetic multi-agent data and introduce shared-world consistency metrics for environment, update, and identity consistency. Experiments show ME-World improves shared-world consistency, action control, identity preservation, and video quality over existing methods.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文将多智能体第一人称世界建模定义为在共享环境中通过细粒度动作交互的多个智能体的同步自我流生成，提出ME-World，在共享令牌序列中联合去噪多个自我流、以所有智能体的目标视角位姿为条件，并利用共享环境记忆约束生成，在真实与合成多智能体数据上训练评估，同时引入环境、更新和身份一致性的共享世界一致性指标。该工作为多智能体具身场景下的第一人称观测预测提供了方法框架和一致性评价指标；但摘要仅报告实验表明其在共享世界一致性、动作控制、身份保持和视频质量上优于现有方法，未给出具体性能数字，相关结论仍需依据论文完整实验设置和复现结果进一步核实。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.12299",
       "authors": [
         "Dahyun Chung",
@@ -340,7 +435,21 @@
         "Hyunsung Kim",
         "Seung Wook Kim",
         "Seungryong Kim"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-875c656b1330",
+        "zt-cd2ec49509af"
+      ],
+      "topic_ids": [
+        "zt-875c656b1330",
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-9513e85a0edc",
+        "zt-cd2ec49509af",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "e466b2fdf6f7a3ee99b6730f7625d617fac29489e491da29afad260f0f77f8fc",
+      "topic_method": "local_similarity"
     },
     {
       "id": "15ebd2f0c38c3b18d7b9a5da",
@@ -364,8 +473,8 @@
       "published_at": "2026-10-08T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Single-image, multi-image, and video deep research require different visual operations but share a workflow of visual grounding, external retrieval, and fact composition. A key challenge is to preserve the dependencies linking localized visual anchors, entity relations, source-supported facts, and answer-producing operations. We introduce OneSearch-VL, a unified agent centered on the Visually Grounded Evidence Graph (VGEG), which encodes these dependencies as a shared task-level reference for data construction, process supervision, and operation-level evaluation. Our VGEG-based data engine constructs and verifies multi-image and video questions and filters expert trajectories. Using these data, we assemble OneSearch-VL-SFT-110K and OneSearch-VL-RL-10K for SFT and RL, respectively. We further derive the Evidence-aware Visual-Grounded Rubric reward (EVGR) from VGEG annotations to supervise evidence traceability and visual grounding during RL. For fine-grained evaluation, we construct OneSearch-MI-Bench and OneSearch-Video-Bench, organizing questions by the research operations encoded in their VGEGs. Experiments show that OneSearch-VL-8B improves over Qwen3-VL-8B with tool access by 20.2 and 17.6 percentage points on the two new benchmarks, respectively, while also achieving substantial gains across 7 image benchmarks and VideoDR. Project repository: https://github.com/appletea233/OneSearch-VL",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出OneSearch-VL这一统一智能体，以视觉锚定证据图（VGEG）为核心组织视觉定位、外部检索与事实组合的共享依赖，并据此构建训练数据、过程监督与操作级评测。该工作可用于单图、多图与视频深度研究中的数据构造、强化学习奖励设计和细粒度基准评测，但其报道的基准提升幅度来自文中的实验设置，仍需结合具体任务与实现条件独立验证。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.12419",
       "authors": [
         "Hongyu Li",
@@ -382,7 +491,24 @@
         "Tianrui Hui",
         "Linjiang Huang",
         "Si Liu"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-138521710b28",
+        "zt-5c69e2a09f67",
+        "zt-a127fa025ccf"
+      ],
+      "topic_ids": [
+        "zt-138521710b28",
+        "zt-5c69e2a09f67",
+        "zt-8c9acb4742ac",
+        "zt-9513e85a0edc",
+        "zt-a127fa025ccf",
+        "zt-c2d5921a8391",
+        "zt-d2cd412eba69",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "92ff4201d0c9ac681173959ca3836a5ce05d5053abf667504314271a98704daf",
+      "topic_method": "local_similarity"
     },
     {
       "id": "4e9d1a6041fd3285933a53c2",
@@ -405,8 +531,8 @@
       "published_at": "2026-10-08T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Spatial reasoning remains a persistent weakness of vision-language models (VLMs), because RGB inputs do not directly provide geometric evidence. Existing remedies either inject 3D into the model at inference, paying architecture and latency costs, or train with outcome rewards that supervise only the final answer. Spatial errors originate in perception: a misjudged depth or direction can be corrected only by the scene's true geometry, which the 3D-scanned sources of spatial training corpora already provide. We propose GPD (Geometry-Privileged Distillation), which makes geometric evidence the privilege in on-policy self-distillation (OPSD). For each question, depth, semantic, and bird's-eye-view (BEV) cues are rendered as compact text and routed to the teacher alongside the reference answer; a privileged KL, applied only to incorrect trajectories, augments GRPO, and the deployed model remains RGB-only. On the 4B backbone, GPD achieves 57.1 on VSI-Bench and 37.6 average across MindCube, SPARBench, MMSI-Bench, and ViewSpatial, outperforming both GRPO and answer-privileged OPSD across spatial reasoning benchmarks. Ablations confirm the complementarity of 3D and answer privilege, the advantage of question-conditioned routing over full-context injection, and the benefit of restricting distillation to incorrect trajectories.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出GPD（几何特权蒸馏），在在线自蒸馏中将深度、语义和鸟瞰图线索渲染为紧凑文本并路由给教师模型，仅对错误轨迹施加特权KL以增强GRPO，部署模型仍仅使用RGB输入。该方法面向视觉语言模型的空间推理，在4B骨干上报告了VSI-Bench等基准的数值，但摘要未给出跨模型规模的验证，其效果需以独立评测为准。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.12355",
       "authors": [
         "Hongxing Li",
@@ -417,7 +543,17 @@
         "Wenqi Zhang",
         "Weiming Lu",
         "Yongliang Shen"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-a127fa025ccf"
+      ],
+      "topic_ids": [
+        "zt-8c9acb4742ac",
+        "zt-a127fa025ccf",
+        "zt-c2d5921a8391"
+      ],
+      "topic_version": "74d2434946f1d47dff52151b3810f32fec7693be2dd6b02865ceb607a9478410",
+      "topic_method": "local_similarity"
     },
     {
       "id": "92ceedb2a713923bfe975ac5",
@@ -441,8 +577,8 @@
       "published_at": "2026-10-08T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Large language model (LLM) coding agents have advanced test generation across diverse programming tasks. However, the common practice of evaluating tests against a single reference solution overlooks alternative valid implementations and can overstate test quality. We introduce TestPrism, comprising 300 test tasks from 17 sources and 3000 candidate implementations, evenly split between valid and invalid solutions. Its primary metric, Joint Success Function, requires the generated tests to fail on the initial program state, accept every valid candidate, and reject every invalid candidate. Across fourteen baseline coding agent configurations, Joint Success Function reaches only 28.00%, whereas single reference success reaches 59.67%. Our analysis reveals missed behaviors, unsupported assertions, and faulty test construction. To address these weaknesses, we introduce TestHelix, which combines heterogeneous synthesis of test and repair pairs with peer cross validation and recursive self improvement (RSI). Across two models, TestHelix improves Joint Success Function by 8.67 to 9.00 percentage points over the native harness comparators in the TestHelix evaluation",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出TestPrism测试基准，包含来自17个来源的300个测试任务和3000个候选实现，并引入联合成功函数作为主要评价指标，要求生成的测试在初始程序状态上失败、接受所有有效候选并拒绝所有无效候选；同时提出TestHelix方法，结合测试与修复对的异构合成、同行交叉验证和递归自我改进。该基准和方法可用于评估并改进大语言模型编程代理的测试生成质量，但原文明确其联合成功函数在十四种基线配置下仅达28.00%，且TestHelix在两个模型上相对原生测试框架比较对象提升8.67至9.00个百分点，这些均为原文报告的结果，不代表经独立验证的普遍性能结论。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.12289",
       "authors": [
         "Han Li",
@@ -454,7 +590,24 @@
         "Yunfan Tan",
         "Zun Wang",
         "Jiaheng Liu"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-3e247e081c4e",
+        "zt-c56da7bb87be",
+        "zt-138521710b28"
+      ],
+      "topic_ids": [
+        "zt-138521710b28",
+        "zt-3e247e081c4e",
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-9513e85a0edc",
+        "zt-c56da7bb87be",
+        "zt-d2cd412eba69",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "74cc9446df6f2da035441bf95ebd4bd75e64363e782c00e33f9d979a43c52bb7",
+      "topic_method": "local_similarity"
     },
     {
       "id": "7f6e6ae89ccc4117b4d96274",
@@ -477,8 +630,8 @@
       "published_at": "2026-10-08T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Existing spatial reasoning benchmarks mainly test spatial perception: reading off relations already visible in the input. Yet real-world spatial intelligence demands predictive spatial reasoning: constructing a scene from observations, anticipating how an intervention changes it, and reasoning about the unseen outcome. We introduce SpaceCast-Bench, the first benchmark to directly and diagnostically evaluate this capability. Built around an observe-transform-infer framework, its 3,862 questions from 182 real-world scenes span 16 task types at three levels: static perception, local prediction, and global prediction, progressively requiring scene understanding, spatial state updating, and relational inference over unobserved outcomes. Evaluating 21 models exposes a stark gap: the strongest model reaches only 58.0% against 87.2% human performance, while spatially specialized models remain near random chance. Controlled analyses further reveal that bridge views are critical for integrating distributed observations, and that explicit 3D evidence benefits models more reliably than generated outcome images or videos. Fine-tuning on our programmatically generated data lifts Qwen3-VL-4B from 34.0% to 65.7% with macro-average gains across six out-of-domain benchmarks.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出SpaceCast-Bench，一个围绕观察—变换—推断框架构建的基准，包含来自182个真实场景的3862道问题，覆盖静态感知、局部预测和全局预测三个层次的16种任务类型，并据此评估了21个模型。该基准可用于诊断视觉语言模型的预测性空间推理能力，其评估显示最强模型仅达58.0%、人类为87.2%，且空间专用模型接近随机水平，同时受限于现有基准多只测试输入中已可见关系的空间感知。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.12402",
       "authors": [
         "Hongxing Li",
@@ -489,7 +642,19 @@
         "Jun Xiao",
         "Yueting Zhuang",
         "Yongliang Shen"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-138521710b28",
+        "zt-bf3231297921"
+      ],
+      "topic_ids": [
+        "zt-138521710b28",
+        "zt-bf3231297921",
+        "zt-d2cd412eba69",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "5eee2bfccd7203f84921d69188bf7c3dec679de88937dfd38aeddaef1d7eab3b",
+      "topic_method": "local_similarity"
     },
     {
       "id": "bb89913fa79b242ac88afc43",
@@ -513,8 +678,8 @@
       "published_at": "2026-10-08T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Skill-augmented agents improve sample efficiency by distilling successful trajectories into reusable strategies. Yet most existing approaches remain text-centric, linearizing spatial layouts and action-state correspondences into language that loses critical geometric structure. Recent efforts have begun incorporating visual evidence, but construct and update skills separately from policy optimization, leaving their mutual improvement underexplored. We propose ViSkill, a visual-native skill learning framework that encodes successful interactions as composite visual skill cards directly accessible to VLM agents. Retrieved skills guide both inference and reward shaping, while successful trajectories are distilled back into the library, forming a closed feedback loop in which skill accumulation and policy improvement reinforce each other. An optional cold-start mechanism further accelerates early-stage learning. Evaluated on Sokoban, FrozenLake, and PrimitiveSkill, ViSkill achieves an overall success rate of 0.89, rising to 0.91 with cold-start initialization, outperforming all evaluated proprietary and open-source baselines while converging faster than standard PPO. Our code is available at https://github.com/ZJU-REAL/ViSkill.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出ViSkill，一个视觉原生的技能学习框架，将成功交互编码为VLM智能体可直接访问的复合视觉技能卡，使检索到的技能同时引导推理和奖励塑造，并将成功轨迹蒸馏回技能库以形成技能积累与策略改进相互促进的闭环。该框架在Sokoban、FrozenLake和PrimitiveSkill上评估，据原文报告总体成功率为0.89，冷启动初始化后升至0.91，并称优于所评估的专有和开源基线且比标准PPO收敛更快；这些结果均为原文报告，未经过本文独立验证。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.12403",
       "authors": [
         "Hongxing Li",
@@ -526,7 +691,19 @@
         "Jun Xiao",
         "Yueting Zhuang",
         "Yongliang Shen"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-6940b15789e1",
+        "zt-a127fa025ccf"
+      ],
+      "topic_ids": [
+        "zt-6940b15789e1",
+        "zt-8c9acb4742ac",
+        "zt-a127fa025ccf",
+        "zt-c2d5921a8391"
+      ],
+      "topic_version": "24efbb7f5b076a7174c73c1510ab1cde765a675e9bb6edbd719eaad20fd0a151",
+      "topic_method": "local_similarity"
     },
     {
       "id": "062c0a62bc8829e0f407ca91",
@@ -550,8 +727,8 @@
       "published_at": "2026-10-08T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Learning from experience is essential for LLM agents to adapt to unfamiliar and dynmaic environments. Evaluating this ability is therefore important for understanding how effectively agents acquire and use new knowledge. Existing benchmarks have sought to evaluate this ability, but they primarily evaluate tasks whose rules are provided in the instructions or already familiar to pretrained models, making it difficult to distinguish learning from interactions from reasoning with existing knowledge. To address this, we introduce Learn2Play Bench, a benchmark of newly designed text-based games, whose rules are novel or counterintuitive, requiring agents to acquire knowledge through interaction rather than rely solely on pretrained knowledge. These games provide reproducible feedback and automatic scoring, enabling controlled evaluation of learning across repeated attempts. We also vary game instances to test whether agents can apply what they have learned to new situations. Therefore, we evaluate how backbone models, self-evolving methods, and agent harnesses affect agents' learning ability, revealing three findings: (1) Experience retention: Retaining complete records of actions and feedback can support more effective learning than summarizing these experiences into rules or strategies. (2) Human agent gap: Top-performing human players achieve higher peak scores than the evaluated agents. Human explore more varied strategies, and repeat actions less. (3) Harness matters: With the backbone fixed, changing the harness can improve performance while reducing estimated inference cost. Together, these findings provide insights into how LLM agents learn from experience and suggest directions for future work to improve their learning ability. Project website: https://liushiliushi.github.io/learn2play-bench-website/",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出了 Learn2Play Bench，这是一个由规则新颖或反直觉的新设计文本游戏组成的基准，要求智能体通过交互获取知识而非依赖预训练知识，并提供可复现反馈与自动评分以支持对重复尝试中学习过程的受控评估。该基准可用于考察骨干模型、自演化方法和智能体框架对学习能力的影响，但其结果基于所评估的智能体，且原文未报告具体性能数字或验证公司声明。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.08215",
       "authors": [
         "Yibo Li",
@@ -561,7 +738,24 @@
         "Jiaying Wu",
         "Shuo Ji",
         "Bryan Hooi"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-6940b15789e1",
+        "zt-138521710b28",
+        "zt-875c656b1330"
+      ],
+      "topic_ids": [
+        "zt-138521710b28",
+        "zt-6940b15789e1",
+        "zt-875c656b1330",
+        "zt-8c9acb4742ac",
+        "zt-9513e85a0edc",
+        "zt-c2d5921a8391",
+        "zt-d2cd412eba69",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "a3d05cfce4e0b66fd247bd15026aea29fbc3852eed98d03be4dcccd2951e213e",
+      "topic_method": "local_similarity"
     },
     {
       "id": "7f08d7bd7643536d2dfded52",
@@ -584,8 +778,8 @@
       "published_at": "2026-10-08T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "We present DreamTrue, a multi-view, cross-embodiment robot world model for action-faithful and physically plausible video prediction. Training such a model on existing robot datasets faces two obstacles: imprecise calibration can impair action following, while limited coverage of unsuccessful interactions can bias predictions toward successful outcomes. To improve action following across embodiments, we render action trajectories into image-space conditions and introduce offline geometric calibration to align these conditions with the target videos. To broaden interaction coverage, we introduce counterfactual post-training, modifying recorded action trajectories and generating future videos under a wider range of actions and contact configurations. To provide feedback on these predictions without paired ground-truth futures, we construct a human-annotated video dataset covering robot, object, and interaction defects and use it to train an embodied video reward model. Its scores guide reinforcement-learning post-training toward more physically plausible interaction outcomes. On AgiBot, DreamTrue attains state-of-the-art action following, while reducing the human-assessed interaction defect rate from from 48.12% to 6.25%. Notably, our model ranks first in the world model track of the AgiBot World Challenge 2026. The project page can be found at https://brave-eai.github.io/DreamTrue.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出DreamTrue，一个多视角、跨本体的机器人世界模型，通过将动作轨迹渲染为图像空间条件并引入离线几何校准以提升动作遵循能力，同时采用反事实后训练扩展交互覆盖范围，并利用人类标注视频数据集训练具身视频奖励模型来指导强化学习后训练。该模型可用于生成动作忠实且物理合理的机器人交互视频预测，在AgiBot上据称将人工评估的交互缺陷率从48.12%降至6.25%，并在AgiBot World Challenge 2026世界模型赛道中排名第一，但这些结果均为原文报告，尚待独立验证。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.12468",
       "authors": [
         "Junyan Li",
@@ -597,7 +791,17 @@
         "Mu Xu",
         "Lue Fan",
         "Zhaoxiang Zhang"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-a127fa025ccf"
+      ],
+      "topic_ids": [
+        "zt-8c9acb4742ac",
+        "zt-a127fa025ccf",
+        "zt-c2d5921a8391"
+      ],
+      "topic_version": "6525b7f22d8780df4c751d6de846daf24f6fc759b770b7d6ddc7610fe63202d5",
+      "topic_method": "local_similarity"
     },
     {
       "id": "a79d870c8c51fa65ee16334d",
@@ -621,8 +825,8 @@
       "published_at": "2026-10-08T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Spatial coding agents significantly improve spatial reasoning in Multimodal Large Language Models (MLLMs) by using external tools to generate verified execution traces. However, this paradigm inherently suffers from prohibitive inference-time overhead and external dependencies. In this paper, we explore whether an MLLM can internalize this agentic capability to operate entirely tool-free. We begin with a simple observation: prompting an MLLM with summarized execution traces of a spatial coding agent naturally unlocks the model's internal spatial Chain-of-Thought (CoT). Motivated by this, we introduce SpatialOPSD, an on-policy self-distillation framework that internalizes spatial reasoning into a standalone MLLM by formulating verified agent traces as privileged information. To mitigate privileged-information leakage during distillation, we introduce Repetition-Aware Distillation, which combines repetition masking with unlikelihood regularization. Experiments across multiple benchmarks demonstrate that self-distilling SpatialOPSD achieves higher average accuracy than SFT and GRPO on both spatial and OOD datasets, exhibiting superior performance and generalization.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出SpatialOPSD，一个在策略自蒸馏框架，通过将经过验证的编码代理执行轨迹作为特权信息、并采用重复感知蒸馏（结合重复遮蔽与不可然正则化）来把空间推理能力内化到无需外部工具的独立多模态大模型中。实验表明该方法在多个基准上平均准确率高于SFT和GRPO，并在空间与分布外数据集上表现出更好的泛化，但其效果依赖已验证代理轨迹作为特权信息，且去除了推理时的工具与外部依赖。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.11366",
       "authors": [
         "Rongxue Li",
@@ -634,7 +838,22 @@
         "Zhao Xu",
         "Weihua Luo",
         "Bowen Xu"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-c56da7bb87be",
+        "zt-6940b15789e1",
+        "zt-ab3c5b4dac12"
+      ],
+      "topic_ids": [
+        "zt-6940b15789e1",
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-ab3c5b4dac12",
+        "zt-c2d5921a8391",
+        "zt-c56da7bb87be"
+      ],
+      "topic_version": "a65e26d657fb7f77518ea5ea11b3eaf9a5dbca5e4c0e7b4a2ca275b0f9e74b83",
+      "topic_method": "local_similarity"
     },
     {
       "id": "e6f994cf6a23e1b3a2a168db",
@@ -657,8 +876,8 @@
       "published_at": "2026-10-08T00:00:00+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Generating an egocentric video from a single exocentric recording is a challenging case of novel view synthesis, as the two cameras share little overlap and much of the target view is unobserved. Current state-of-the-art methods reconstruct the scene explicitly by estimating depth, lifting the video into a point cloud, and re-rendering it from the egocentric camera to condition a video diffusion model. This deterministic mapping assigns each pixel to a single reprojected location, which preserves texture but translates depth errors into misplaced content. We ask what a video diffusion model should receive as its condition and propose a lifting-free answer: a learned view synthesizer, an LVSM-style transformer fine-tuned to render the egocentric view directly without depth, point clouds, or reprojection, resolving cross-view correspondence internally. In contrast, its probabilistic mapping averages each region over candidate source locations according to a learned correspondence distribution, preserving structure while fine texture is averaged away. We argue that this trade-off suits a diffusion generator, whose denoising training excels at restoring detail, so an effective condition should prioritize structural alignment over sharpness. This distribution's concentration also yields a per-region confidence, used both to mask low-confidence regions and to guide the generator toward high-confidence areas during early layout-forming denoising steps. Our approach consistently outperforms the state-of-the-art explicit pipeline and generalizes to other datasets without retraining. The synthesizer thus supplies view structure, and the diffusion model its detail.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出一种无需提升到点云的偏心到自我中心视频生成方法，用微调的LVSM式Transformer直接渲染自我中心视角以替代深度估计和重投影流程。该方法可为扩散生成模型提供结构对齐条件，并利用对应分布置信度遮蔽低置信区域和引导早期去噪；文中称其性能持续优于显式流程且无需再训练即可泛化到其他数据集。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.12442",
       "authors": [
         "Suhwan Cho",
@@ -666,7 +885,213 @@
         "Soongjin Kim",
         "Jicheol Park",
         "Taegyu Lim"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-f54f41c628af"
+      ],
+      "topic_ids": [
+        "zt-8c9acb4742ac",
+        "zt-e2e1da84abeb",
+        "zt-f54f41c628af"
+      ],
+      "topic_version": "e694b59b68481606d0aeb17d478cd3c1d76e0a3d52dff8e3333c9538e7e6c3bf",
+      "topic_method": "local_similarity"
+    },
+    {
+      "id": "e8c7464d018404c49113d7c8",
+      "url": "https://arxiv.org/abs/2610.12452",
+      "title": "BrickBench: Evaluating Agentic Brick Design",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T05:19:32.042444+00:00",
+      "excerpt": "We propose BrickBench, a benchmark for agentic text-conditioned LEGO-set design. Given a prompt, an agent is tasked with producing an assembly that not only satisfies semantic and design criteria, but that can also be physically built. To do so, it must select parts from a discrete library and reason jointly about local and global constraints. We score validity, alignment, and design across three settings that vary in scale and part availability. We provide BrickAgent, an environment for coding agents to construct, inspect, and validate their designs. We find that leading agents largely satisfy verifiable physical and semantic requirements, but fall short of human designs. We release our benchmark and environment at http://www.brickben.ch",
+      "summary": "本文提出了BrickBench，一个用于智能体文本条件乐高套装设计的基准，并提供了BrickAgent环境，供编码智能体构建、检查与验证设计，在三种不同规模与零件可用性设置下评估有效性、语义对齐和设计质量。该基准可用于评测和比较智能体在离散零件库选择与局部及全局约束联合推理方面的能力，但原文明确指出领先智能体虽大体满足可验证的物理与语义要求，仍不及人类设计，因此其表现上限受此限制。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.12452",
+      "authors": [
+        "Peter Kulits",
+        "Yiqing Xu",
+        "R. Kenny Jones",
+        "Cordelia Schmid",
+        "Jiajun Wu"
+      ],
+      "topic_leaf_ids": [
+        "zt-138521710b28",
+        "zt-bf3231297921",
+        "zt-875c656b1330"
+      ],
+      "topic_ids": [
+        "zt-138521710b28",
+        "zt-875c656b1330",
+        "zt-9513e85a0edc",
+        "zt-bf3231297921",
+        "zt-d2cd412eba69",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "4d0259f146912e0918bfa30ae438c9d619e6b344eabdb3e1dfbfd0667898393d",
+      "topic_method": "local_similarity"
+    },
+    {
+      "id": "558de7ce6b120bccb6da3e25",
+      "url": "https://arxiv.org/abs/2610.12458",
+      "title": "OmniCapBench: A Deep-Structured Evaluation Framework for Fine-Grained Audio-Visual Captioning",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T05:19:32.042444+00:00",
+      "excerpt": "Multimodal large language models (MLLMs) are rapidly evolving toward continuous audio--visual reasoning, creating an urgent need for evaluations that expose their capability limits. Audio--visual captioning is an ideal diagnostic task, yet current benchmarks face a coupled trade-off: whole-caption scores provide coverage without localization, local probes provide localization without coverage, and unconstrained LLM judges introduce instability. We introduce OmniCapBench (Omni-Video Caption Benchmark), a benchmark that reframes audio--visual caption evaluation as a deep-structured diagnostic framework. OmniCapBench shifts the prediction target from free-form text to sets of atomic, verifiable evaluation units across three tracks: entity references, visual shots, and audio events, enabling reliable scoring with deterministic constraint checks and localized LLM-based semantic comparisons. With 786 densely annotated videos, OmniCapBench effectively distinguishes MLLM perception errors, including temporal grounding failures, identity drift, cross-modal misalignment, and hallucinated descriptions. Evaluating frontier MLLMs reveals strong local perception but weak long-horizon audio--visual reasoning, particularly in identity drift and cross-modal misalignment, providing a fine-grained roadmap for omnimodal development.",
+      "summary": "本文提出了OmniCapBench，将音视频字幕评估重构为深度结构化诊断框架，通过实体引用、视觉镜头和音频事件三条轨道上的原子化可验证评估单元进行确定性约束检查和局部化大模型语义比较，并基于786个密集标注视频开展评估。该框架可用于区分多模态大模型的感知错误（如时间定位失败、身份漂移、跨模态错位和幻觉描述），其对前沿模型的评估显示局部感知较强但长时程音视频推理较弱，为全模态发展提供了细粒度参考；原文未给出具体性能数字，相关能力判断应视为该基准下的评估发现而非已验证的通用结论。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.12458",
+      "authors": [
+        "Zhongyu Yang",
+        "Jiale Tao",
+        "Ruitao Chen",
+        "Zuhao Yang",
+        "Yingfang Yuan",
+        "Xueliang Zhao",
+        "Auden",
+        "Kai Wang",
+        "Shuai Shao",
+        "Biao Wang",
+        "Steve Yves",
+        "Qinglin Lu"
+      ],
+      "topic_leaf_ids": [
+        "zt-5c69e2a09f67"
+      ],
+      "topic_ids": [
+        "zt-5c69e2a09f67",
+        "zt-9513e85a0edc",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "69ce2d5876d4ce90cebec29e9cdd833653236079e5ff3524e7eaa0505fca1c29",
+      "topic_method": "local_similarity"
+    },
+    {
+      "id": "07de1331c2668bd6e4bb03e8",
+      "url": "https://arxiv.org/abs/2610.12360",
+      "title": "Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T05:19:32.042444+00:00",
+      "excerpt": "When retrieved evidence contradicts an agent's prior beliefs, does it revise its answer, acknowledge uncertainty, or persist with an incorrect conclusion? Existing evaluations of agentic systems focus primarily on task success, offering limited insight into how agents handle such conflicts. We propose to evaluate agents on epistemic humility (EH): the agent's willingness to recognize, act on, and communicate uncertainty during task execution. We operationalize EH through three trajectory-level behavioral dimensions: Identify, Solve, and Escalate (ISE). Through knowledge conflict, situations where the backbone language model's parametric knowledge contradicts the evidence it encounters, or where two contextual sources disagree, we evaluate two conflict settings: (1) controlled conflict and (2) naturally occurring conflict during multi-step agentic execution, each paired with matched no-conflict controls. Evaluating four agents, we find that higher task accuracy does not necessarily correspond to greater epistemic humility: some high-accuracy configurations recognize conflicts during execution but do not communicate unresolved uncertainty in their incorrect final answers. Trajectory-level analysis further reveals that agents frequently detect conflicts in early steps of execution but fail to maintain or resolve them in later steps. Finally, we show that model-level interventions can improve EH, but often at the cost of task accuracy, suggesting that epistemic humility emerges from the interaction among the backbone model, agent harness, and evaluation environment.",
+      "summary": "本文提出以“认知谦逊”为评估视角，围绕知识冲突场景下的识别、解决与上报三个轨迹级行为维度，对LLM智能体的表现进行评测。该框架可用于考察智能体在证据与先验知识冲突时是否承认并传达不确定性，但原文表明提升认知谦逊的干预往往以任务准确率为代价。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.12360",
+      "authors": [
+        "Kaiser Sun",
+        "Bernal Jimenez Gutierrez",
+        "Hongjun Liu",
+        "Jingyu Zhang",
+        "Jie Gao",
+        "Mark Dredze",
+        "Daniel Khashabi"
+      ],
+      "topic_leaf_ids": [
+        "zt-3e247e081c4e",
+        "zt-875c656b1330",
+        "zt-138521710b28"
+      ],
+      "topic_ids": [
+        "zt-138521710b28",
+        "zt-3e247e081c4e",
+        "zt-875c656b1330",
+        "zt-9513e85a0edc",
+        "zt-d2cd412eba69",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "e9aadeeb22ea0db34c4976a9d86e6cefa40f5d728954f779e8c6e2bc4132b180",
+      "topic_method": "local_similarity"
+    },
+    {
+      "id": "5d0025a257e8df1bcccf603e",
+      "url": "https://arxiv.org/abs/2610.12369",
+      "title": "Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-09T05:19:32.042444+00:00",
+      "excerpt": "Most robot policies keep a model in the control loop: a VLA maps observations to actions, and an Agent Harness, such as Agent-as-Policy or Harness VLA queries a VLM for decision making at run time. We propose a different view: the embodied world is an Embodied Turing Machine, whose tape is the robot and environment state and rules are the policy. If this state can be represented accurately, the decision making can be written entirely in code. We therefore propose Code-Only-as-Policy (COAP): code measures and tracks the robot, environment, and task state from camera images and proprioception, and makes every decision from it. The same code applies across episodes, and different tasks share one library without a VLM or VLA in the loop. Compared with VLAs and Agent Harnesses, we analyze three advantages of COAP: (i) Explicit State: the state can be stored in code; (ii) Execution: code makes decision making controllable, recovers from failures flexibly, and runs fast and cheaply online; (iii) Extensibility: new tasks reuse, inherit, or extend the shared library, so capabilities can accumulate over tasks. These advantages make COAP a suitable medium for recursive self-improvement (RSI): coding agents develop the library in a closed loop, and each change is explicit and controllable. On RoboDojo's 42 bimanual tasks, the resulting library reaches a success rate of 70.24% without a model at test time. The upper bound of COAP lies in how accurately the state is represented for decision making and how robust the code logic is. We thus propose COAP as a new paradigm for embodied tasks; since it applies across episodes, it can also serve as an efficient data engine for VLAs and Agent Harnesses.",
+      "summary": "本文提出Code-Only-as-Policy（COAP），即用代码从相机图像和本体感觉中测量并跟踪机器人、环境和任务状态，完全依据该状态做决策，从而在测试时不使用视觉语言模型或视觉-语言-动作模型。对科研工作而言，COAP可跨回合复用、支持新任务复用或扩展共享库以累积能力，并适合作为编码智能体闭环开发库的递归自我改进媒介，同时可作为视觉-语言-动作模型和智能体框架的数据引擎；原文指出其上限取决于状态表示的准确性和代码逻辑的鲁棒性，所报告的42项双手任务70.24%成功率是特定基准上的结果。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.12369",
+      "authors": [
+        "Kairui Hu",
+        "Siyuan Hu",
+        "Fangzhou Hong",
+        "Zhaoxi Chen",
+        "Ziwei Liu"
+      ],
+      "topic_leaf_ids": [
+        "zt-6940b15789e1",
+        "zt-875c656b1330",
+        "zt-c56da7bb87be"
+      ],
+      "topic_ids": [
+        "zt-6940b15789e1",
+        "zt-875c656b1330",
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-9513e85a0edc",
+        "zt-c2d5921a8391",
+        "zt-c56da7bb87be",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "3ec0fc529ea2715b53452357403ac43431151b17b19ce720cc7498785da2cccf",
+      "topic_method": "local_similarity"
     },
     {
       "id": "2794e21dec6bb8a7a7d6052e",
@@ -689,8 +1114,8 @@
       "published_at": "2026-10-07T17:58:04+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Real-time robot control demands enough visual history to infer motion and task progress, but processing that history can delay action. We present Long-WAM, a model-system framework for scaling the context of causal world-action models under real-time control constraints. Our central finding is that access to history is not the same as using it: longer histories pay off far more when the video foundation is pretrained autoregressively (AR). We first learn causal prediction from robot and egocentric videos without action labels, then preserve this history-to-future structure during world-action adaptation. On RoboCasa GR-1, increasing context from 0.0 to 19.2 seconds raises success from 63.3% to 78.7%, whereas a bidirectionally pretrained initialization shows no net gain; robot-domain AR pretraining further raises peak success on GR-1 and LIBERO-Long. Long-WAM also achieves the best results among compared methods on LIBERO-Long, RoboTwin 2.0, and DOMINO. Streaming observation encoding, asynchronous execution, and hardware-specific acceleration enable deployment on RTX 5090, DGX Spark, and Jetson AGX Thor without dropping future prediction; on RTX 5090, each action chunk, including future-video latent prediction, takes 107.4 ms. Real-time deployment on Unitree G1 and YAM supports dynamic and long-horizon manipulation, including 95% success on dynamic cup stacking, where Pi0.5 and Fast-WAM succeed in none of 20 trials. As a memory-informed executor, Long-WAM also complements higher-level planning in composite tasks.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出Long-WAM，一个在实时控制约束下扩展因果世界-动作模型上下文的模型-系统框架，其关键发现是自回归视频预训练能使更长历史真正带来收益，并实现了流式观测编码、异步执行和硬件特定加速。该框架在RTX 5090、DGX Spark和Jetson AGX Thor上部署时不丢失未来预测，在GR-1、LIBERO-Long、RoboTwin 2.0和DOMINO上取得所比较方法中的最佳结果，并可作为记忆知情执行器配合高层规划完成复合任务；但摘要中未报告各任务的成功率上限、延迟与成功率之间的权衡关系，也未说明这些结果在未测试机器人或任务上的泛化边界。",
+      "summary_kind": "ai_summary",
       "alpha_rank": 1,
       "authors": [
         "Wei Huang",
@@ -709,7 +1134,11 @@
         "Xiaojuan Qi",
         "Song Han",
         "Yukang Chen"
-      ]
+      ],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "ef743668eb08daaf0b8e3e9765639b1b9915a4b50357d53678e0d8389d1dfc02",
+      "topic_method": "local_similarity"
     },
     {
       "id": "b66fa1e99299db92ad39cf6b",
@@ -733,8 +1162,8 @@
       "published_at": "2026-10-07T17:54:42+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Latent world models have shown a remarkable ability to predict future states and to plan in the real world. In practice, however, we lack a principled way to estimate how their capabilities scale with model size, data, and compute, an open problem that slows progress in the field. In this work we present RoboJEPA, a world model based on the Joint Embedding Predictive Architecture (JEPA) and trained on a large-scale dataset spanning 12 robotic embodiments. We show that RoboJEPA's imagination error, the error of its latent rollouts, follows a second-order power law in compute, allowing us to predict model quality well beyond the scale at which the law is fit. We further show that downstream robotic planning performance improves predictably with compute, and that imagination error is strongly correlated with it, making it a reliable proxy for real-robot evaluation. Finally, we demonstrate that latent world models can be deployed zero-shot as robotic agents, planning toward a single goal image to solve tasks requiring long-horizon planning on real hardware. We release all model checkpoints together with our training and robot deployment code. To our knowledge, this is the first work to establish scaling laws for multi-embodiment robotic world models trained on real robot data, and RoboJEPA, at 8B parameters, is the largest JEPA predictor model trained to date.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出RoboJEPA，一种基于联合嵌入预测架构（JEPA）的潜在世界模型，在涵盖12种机器人本体的数据集上训练，并报告其想象误差随计算量呈二阶幂律、下游规划性能随计算量可预测提升，以及该模型可零样本部署于真实硬件完成长时程规划任务。该工作为多本体机器人世界模型提供了基于真实机器人数据的缩放规律分析，可用于估计模型质量并作为真实机器人评估的代理指标；但相关缩放规律与相关性均基于作者所述实验条件，其泛化性及实际性能需独立验证。",
+      "summary_kind": "ai_summary",
       "alpha_rank": 3,
       "authors": [
         "Artem Zholus",
@@ -749,7 +1178,22 @@
         "Jeannette Bohg",
         "Nicolas Ballas",
         "Mahmoud Assran"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-875c656b1330",
+        "zt-138521710b28",
+        "zt-bf3231297921"
+      ],
+      "topic_ids": [
+        "zt-138521710b28",
+        "zt-875c656b1330",
+        "zt-9513e85a0edc",
+        "zt-bf3231297921",
+        "zt-d2cd412eba69",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "8fc745fd52cb3730c8b7833d7d5a0212ead74c03c828078b59f4ef095a0c0933",
+      "topic_method": "local_similarity"
     },
     {
       "id": "d96a697ea9be3d7ce8e4abbd",
@@ -783,7 +1227,17 @@
         "Mengdi Wang",
         "Junfeng Yang",
         "Shilong Liu"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-6940b15789e1"
+      ],
+      "topic_ids": [
+        "zt-6940b15789e1",
+        "zt-8c9acb4742ac",
+        "zt-c2d5921a8391"
+      ],
+      "topic_version": "338081583fa2dadd6ffd4aa29a917cdd2c77381bb247737a27ea8e6fadd060b8",
+      "topic_method": "local_similarity"
     },
     {
       "id": "3f8c4424303b37f14f65df31",
@@ -833,7 +1287,22 @@
         "Bryan Catanzaro",
         "Jonathan Cohen",
         "Jiantao Jiao"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-875c656b1330",
+        "zt-3e247e081c4e",
+        "zt-138521710b28"
+      ],
+      "topic_ids": [
+        "zt-138521710b28",
+        "zt-3e247e081c4e",
+        "zt-875c656b1330",
+        "zt-9513e85a0edc",
+        "zt-d2cd412eba69",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "7f4e826f2262a8f908b189cdca4f66020932b0167031e312d750b4ee50af6b55",
+      "topic_method": "local_similarity"
     },
     {
       "id": "6e87228c64a8ec80ea99b5d8",
@@ -863,7 +1332,21 @@
         "Ali Asaria",
         "Deep Gandhi",
         "Tony Salomone"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-ebc110d5a04c",
+        "zt-cd2ec49509af",
+        "zt-c56da7bb87be"
+      ],
+      "topic_ids": [
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-c56da7bb87be",
+        "zt-cd2ec49509af",
+        "zt-ebc110d5a04c"
+      ],
+      "topic_version": "0ca5d78e9f4b78a3f6c2827487d7467676fe90f41dd486eddd10e633d5ae27fa",
+      "topic_method": "local_similarity"
     },
     {
       "id": "57ea905e919a42ca66535a58",
@@ -903,7 +1386,19 @@
         "Chun Yuan",
         "Zeyue Xue",
         "Nan Duan"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-f54f41c628af",
+        "zt-b9bdd33ce71d"
+      ],
+      "topic_ids": [
+        "zt-8c9acb4742ac",
+        "zt-b9bdd33ce71d",
+        "zt-e2e1da84abeb",
+        "zt-f54f41c628af"
+      ],
+      "topic_version": "3b757e80e35d1d165557cc183c20a3df024644b8149a4f715e941d93cbdbc879",
+      "topic_method": "local_similarity"
     },
     {
       "id": "8ff1ef4b045d41c1cf5b1c35",
@@ -964,7 +1459,24 @@
         "Han Hu",
         "Tsung-Yi Ho",
         "Yike Guo"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-c56da7bb87be",
+        "zt-138521710b28",
+        "zt-3e247e081c4e"
+      ],
+      "topic_ids": [
+        "zt-138521710b28",
+        "zt-3e247e081c4e",
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-9513e85a0edc",
+        "zt-c56da7bb87be",
+        "zt-d2cd412eba69",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "11169ee87e1a7625a80fb6a5666012f1923148287a6732559e6894b1a7b7547e",
+      "topic_method": "local_similarity"
     },
     {
       "id": "5946c006a4e58dd83ea3e23f",
@@ -1001,7 +1513,24 @@
         "Jiayuan Zhuo",
         "Mengkang Hu",
         "Michael Qizhe Shieh"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-138521710b28",
+        "zt-c56da7bb87be",
+        "zt-6940b15789e1"
+      ],
+      "topic_ids": [
+        "zt-138521710b28",
+        "zt-6940b15789e1",
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-c2d5921a8391",
+        "zt-c56da7bb87be",
+        "zt-d2cd412eba69",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "7eb81af1c0832ae9a40ca3900588fff68c9bd58ffeac60264cd22aab50ece505",
+      "topic_method": "local_similarity"
     },
     {
       "id": "661f64ddb5f472a2675ed75a",
@@ -1026,7 +1555,11 @@
       "excerpt": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": []
+      "authors": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "775f8c640a60c4f653ab6e69a1dca6a1fb68135e2d59415ca7cc002bcc679cd9",
+      "topic_method": "local_similarity"
     },
     {
       "id": "1259e0ed2ca07c973dcac362",
@@ -1058,7 +1591,21 @@
         "Flaviano Della Pia",
         "Christoph Schran",
         "Angelos Michaelides"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-35479dd1c4aa",
+        "zt-fe34282c36c8"
+      ],
+      "topic_ids": [
+        "zt-17636072f9f0",
+        "zt-2757093684e8",
+        "zt-35479dd1c4aa",
+        "zt-8c9acb4742ac",
+        "zt-f4a0d0a976e3",
+        "zt-fe34282c36c8"
+      ],
+      "topic_version": "0a45d4c8993a8da8cc4fddb9bf6634c1d5db01a6e7eb7823f35d206776a81136",
+      "topic_method": "local_similarity"
     },
     {
       "id": "4e324623ab7ca6fee0e14241",
@@ -1083,7 +1630,11 @@
       "excerpt": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": []
+      "authors": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "743a61f48e818faab03d5bfbfa6059fa57563c1093a256c35e65831b9e071d34",
+      "topic_method": "local_similarity"
     },
     {
       "id": "b2ffd7fc8b19cf4e3b0202af",
@@ -1110,7 +1661,11 @@
       "summary_kind": "ai_summary",
       "authors": [
         "Ridham Patel"
-      ]
+      ],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "0f31b7be3b2f190a44761503eb942634813fe9f84dbfdad8acae139223875b38",
+      "topic_method": "local_similarity"
     },
     {
       "id": "6b4b10225cd734eba7d26b70",
@@ -1146,7 +1701,21 @@
         "Jiaolong Yang",
         "Li Fei-Fei",
         "Jiajun Wu"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-a127fa025ccf",
+        "zt-875c656b1330"
+      ],
+      "topic_ids": [
+        "zt-875c656b1330",
+        "zt-8c9acb4742ac",
+        "zt-9513e85a0edc",
+        "zt-a127fa025ccf",
+        "zt-c2d5921a8391",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "0ea563f477c0dc68eb6cc0f6eaa916862c04c4412dd54c699c033d160d6ca868",
+      "topic_method": "local_similarity"
     },
     {
       "id": "a097ef0d441a7216b7cd0e23",
@@ -1171,7 +1740,11 @@
       "excerpt": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": []
+      "authors": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "893aed0da82057bc8d45e3904ccf6c076cc41a0839efb086774c06cb08a5f590",
+      "topic_method": "local_similarity"
     },
     {
       "id": "75d146f665fd7b10d33acebf",
@@ -1195,7 +1768,50 @@
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Convened by Biohub, participating organisations are investing funding, data, computation and new measurement technology - the largest coordinated commitment to generating AI-ready biological data to date. The result will be an open resource for the research community that provides the foundation for greater understanding and ultimately treating human diseases. Read more in the news release below.",
       "summary": "Isomorphic Labs加入由Biohub召集的虚拟生物学计划，与参与机构共同投入资金、数据、计算资源和新测量技术，以构建用于AI模型预测和治疗疾病的基础数据。该计划旨在形成面向研究社区的开放资源，为更深入理解并最终治疗人类疾病提供基础，但现有材料未给出已验证的性能数据或具体用途细节。",
-      "summary_kind": "ai_summary"
+      "summary_kind": "ai_summary",
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "5b0137364866332eb0e1e3be8b2129cd2e235ed9d224710072a83be206f7138b",
+      "topic_method": "local_similarity"
+    },
+    {
+      "id": "583f5aaf5a67b0e4e1114291",
+      "url": "https://arxiv.org/abs/2610.09639",
+      "title": "On-Policy Distillation Teaches New Skills but Not New Knowledge",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-07T00:00:00+00:00",
+      "first_seen": "2026-10-09T05:19:32.042444+00:00",
+      "excerpt": "On-policy distillation (OPD) strengthens language-model reasoning, yet whether students acquire new factual knowledge or compositional skill for multi-step reasoning remains unknown. We separate these capabilities using a controlled synthetic framework that measures the student's initial capabilities and independently controls the teacher's additional facts, compositional skill, or both. Across four models from three families, reverse-KL OPD reliably transfers compositional skill across unseen reasoning structures, but transfers minimal factual knowledge. Decoupling the distillation recipe reveals the source of this asymmetry: replacing reverse KL with forward KL restores factual transfer, whereas student rollouts specifically improve the execution of multi-step reasoning. Experiments on recent factual QA and competition mathematics show a similar asymmetry under reverse-KL OPD, yielding notable reasoning gains without factual memory expansion. Together, these results demonstrate that on-policy distillation does not expand a model's parametric knowledge, but instead teaches it to organize and compose the knowledge it already possesses.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2610.09639",
+      "authors": [
+        "Yixuan Tang",
+        "Yi Yang"
+      ],
+      "topic_leaf_ids": [
+        "zt-6940b15789e1"
+      ],
+      "topic_ids": [
+        "zt-6940b15789e1",
+        "zt-8c9acb4742ac",
+        "zt-c2d5921a8391"
+      ],
+      "topic_version": "67702080d0b0cd166946d683f1102cedfcfd72edf6d92d9a143f4ebd67945f8f",
+      "topic_method": "local_similarity"
     },
     {
       "id": "2ee55c894d54d6ef378cd7d1",
@@ -1220,7 +1836,17 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": []
+      "authors": [],
+      "topic_leaf_ids": [
+        "zt-eeab1bfeeec9"
+      ],
+      "topic_ids": [
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-eeab1bfeeec9"
+      ],
+      "topic_version": "d452dceb398aca7eedbfd59a431a3569721a9a3db676c50fab1b7751e9ab8f15",
+      "topic_method": "local_similarity"
     },
     {
       "id": "9b79ef931717e3e3db97a828",
@@ -1257,7 +1883,17 @@
         "Pieter Abbeel",
         "Carmelo Sferrazza",
         "Angjoo Kanazawa"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-a127fa025ccf"
+      ],
+      "topic_ids": [
+        "zt-8c9acb4742ac",
+        "zt-a127fa025ccf",
+        "zt-c2d5921a8391"
+      ],
+      "topic_version": "2fe6ec82de4adca45314dca6cda98d2399f792c077820b7a01afaa44cf035cce",
+      "topic_method": "local_similarity"
     },
     {
       "id": "6f55737addfb022f9ba9f0aa",
@@ -1286,16 +1922,33 @@
       "summary": "本文提出了ScienceClaw这一固定参数程序自我演化框架及ScienceClaw-Eval评测，涵盖23个学科，通过顺序任务流和独立重置评估衡量科学正确性、演化增益、保持性、跨数据集迁移和演化成本，并将经再执行验证的失败—成功轨迹转化为相关联的技能与操作符候选，仅在源任务重放复现修复且独立科学任务改善时保留更新。该工作为跨自然科学与社会科学的AI科研智能体持续自我演化研究提供了统一任务求解、科学验证与程序更新的基准和可复用代码，但其验证仅限所设评测范围，具体性能提升需依据原文结果，不应将框架声明视为已验证结论。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Ming-Da Zhang",
-        "Wen-Jin Liu",
+        "Mingda Zhang",
+        "Wenjin Liu",
         "Tiesunlong Shen",
-        "Zi-Kai Xiao",
-        "Zheng-Hong Lin",
-        "Qin-Feng Xu",
+        "Zikai Xiao",
+        "Zhenghong Lin",
+        "Qing Xu",
         "Erik Cambria",
-        "Xiao-Ying Tang",
-        "Hao-Ran Luo"
-      ]
+        "Xiaoying Tang",
+        "Haoran Luo"
+      ],
+      "topic_leaf_ids": [
+        "zt-3e247e081c4e",
+        "zt-6940b15789e1",
+        "zt-c56da7bb87be"
+      ],
+      "topic_ids": [
+        "zt-3e247e081c4e",
+        "zt-6940b15789e1",
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-9513e85a0edc",
+        "zt-c2d5921a8391",
+        "zt-c56da7bb87be",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "cb5e6d174c470cd312b1e209d059cb68ea0aca172def3d8e29b6e59b8b916fc9",
+      "topic_method": "local_similarity"
     },
     {
       "id": "2896758265cec81d95898858",
@@ -1320,7 +1973,11 @@
       "excerpt": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": []
+      "authors": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "28b1f31d070c5f09461a0b5a04017549010a81f63e12078550e6f7d0daf2a00e",
+      "topic_method": "local_similarity"
     },
     {
       "id": "8b875b05aa2624d12df432a5",
@@ -1351,7 +2008,19 @@
         "Kim E. Jelfs",
         "Alex M. Ganose",
         "Eleonora Giunchiglia"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-f54f41c628af",
+        "zt-b9bdd33ce71d"
+      ],
+      "topic_ids": [
+        "zt-8c9acb4742ac",
+        "zt-b9bdd33ce71d",
+        "zt-e2e1da84abeb",
+        "zt-f54f41c628af"
+      ],
+      "topic_version": "da78b56eab13da98addac7a0d20aabca9f90ee165b2a5cac4d573f29ad198950",
+      "topic_method": "local_similarity"
     },
     {
       "id": "ebb413cc5359756bf9234b81",
@@ -1376,7 +2045,11 @@
       "excerpt": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": []
+      "authors": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "10c3c8828a66db2b15db1fb05093ab18fe1aa4bf8038c19cd01b8b4b2e16fa75",
+      "topic_method": "local_similarity"
     },
     {
       "id": "00427e47df5ef3064509e152",
@@ -1401,7 +2074,11 @@
       "excerpt": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": []
+      "authors": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "82ce1717cd97a53e32eaff921a1d562693952f4110aa4c684c836072b194baf5",
+      "topic_method": "local_similarity"
     },
     {
       "id": "f57eff9c23a4454b476bbb26",
@@ -1426,7 +2103,17 @@
       "excerpt": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": []
+      "authors": [],
+      "topic_leaf_ids": [
+        "zt-875c656b1330"
+      ],
+      "topic_ids": [
+        "zt-875c656b1330",
+        "zt-9513e85a0edc",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "27940042c4321c686f71ecbd34a71cbaf1e30eac052726f9409f03718845244a",
+      "topic_method": "local_similarity"
     },
     {
       "id": "dbb1347ba54b5e1fb2c0b71d",
@@ -1463,7 +2150,21 @@
         "Li Fei-Fei",
         "Jiajun Wu",
         "Ehsan Adeli"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-a127fa025ccf",
+        "zt-ab3c5b4dac12",
+        "zt-6940b15789e1"
+      ],
+      "topic_ids": [
+        "zt-6940b15789e1",
+        "zt-8c9acb4742ac",
+        "zt-a127fa025ccf",
+        "zt-ab3c5b4dac12",
+        "zt-c2d5921a8391"
+      ],
+      "topic_version": "6555acf93ea5c7c39de3afd2a96d5febabaf57db89295d6b166b1495e726a7ec",
+      "topic_method": "local_similarity"
     },
     {
       "id": "ccb0dcbd45745856526c0393",
@@ -1494,16 +2195,31 @@
       "summary_kind": "ai_summary",
       "authors": [
         "Bin Cao",
-        "Hui-Chi Zhou",
-        "Ru-Yun Yang",
-        "Jing-Song Li",
-        "Shu-Chen Sun",
+        "Huichi Zhou",
+        "Runyu Yang",
+        "Jingsong Li",
+        "Shuchen Sun",
         "Yan Song",
-        "Han-Yu Gao",
-        "Zhong-Wei Yu",
+        "Hanyu Gao",
+        "Zhongwei Yu",
         "Tong-Yi Zhang",
         "Jun Wang"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-6940b15789e1",
+        "zt-c56da7bb87be",
+        "zt-ebc110d5a04c"
+      ],
+      "topic_ids": [
+        "zt-6940b15789e1",
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-c2d5921a8391",
+        "zt-c56da7bb87be",
+        "zt-ebc110d5a04c"
+      ],
+      "topic_version": "49b912a045418a86a081a096066eef245fa836ae684cd111252009b6486206c8",
+      "topic_method": "local_similarity"
     },
     {
       "id": "d31d320a981779c854460bd3",
@@ -1533,7 +2249,24 @@
         "Vladimir Antropov",
         "Subhadip Pradhan",
         "Kirill D. Belashchenko"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-fe34282c36c8",
+        "zt-210f4a8b9325",
+        "zt-49f434d2b6c2"
+      ],
+      "topic_ids": [
+        "zt-17636072f9f0",
+        "zt-210f4a8b9325",
+        "zt-2757093684e8",
+        "zt-49f434d2b6c2",
+        "zt-8c9acb4742ac",
+        "zt-de76d2e22c7b",
+        "zt-f4a0d0a976e3",
+        "zt-fe34282c36c8"
+      ],
+      "topic_version": "eef62df3ce15dfccf167310d7fd17729509aa70819d3e59fa19fe539fc141c4b",
+      "topic_method": "local_similarity"
     },
     {
       "id": "2bd8707fdab8226a9f675f85",
@@ -1558,7 +2291,11 @@
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Expanding the Cyber Verification Program We’re launching a new, expanded version of our Cyber Verification Program (CVP), which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals. The program now consists of three access tiers, which allow security teams to apply for the level of access that best suits their work. Each tier includes access to our most capable models, including Claude Opus 5.5, Claude Sonnet 5.5, Claude Mythos 5.1, and new models moving forward. Interested customers can apply here. Cybersecurity is inherently dual use: the same capabilities that enable a security team to find and fix a vulnerability can also help a malicious actor exploit it. For this reason, our generally available models, such as Claude Opus 5.5, Claude Fable 5.1, and Claude Sonnet 5.5, have conservative cyber safeguards that block most cyber work. This is intended to limit the harmful activities malicious actors can carry out using our models, while we continue to work to reduce false positives for secure coding. But defenders also need access to the best tools and most powerful capabilities to secure their systems. For the past six months, we’ve enabled trusted access through two programs: Project Glasswing and the CVP. The former gave a group of organizations securing the most critical software access to Claude Mythos; the latter gave vetted security teams access to reduced safeguards on Claude Opus and Claude Sonnet models. Now, we’re integrating these programs into one expanded offering, designed to give more security organizations access to the capabilities they need to protect their systems. New access tiers The updated access tiers make specific model capabilities available to security professionals based on the scope of their cyber work. Each has different verification requirements and security controls. Defense Access is for defensive work, including security operations center and incident response tasks, reverse-engineering malware, and analyzing and validating vulnerabilities. Examples of qualifying organizations include security teams at companies, nonprofits, universities, and government bodies who are",
       "summary": "",
-      "summary_kind": "source_excerpt"
+      "summary_kind": "source_excerpt",
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "2fb1a3603fa48655043d92a84ca693c7763b00dd738fd0abb7d8d4d2ce4a48a1",
+      "topic_method": "local_similarity"
     },
     {
       "id": "15622ddfaaafde29c031e28e",
@@ -1589,7 +2326,17 @@
         "Emilio Martínez-Núñez",
         "Berta Fernández",
         "Saulo A. Vázquez"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-35479dd1c4aa"
+      ],
+      "topic_ids": [
+        "zt-17636072f9f0",
+        "zt-35479dd1c4aa",
+        "zt-8c9acb4742ac"
+      ],
+      "topic_version": "a3567e655d89723711af9a11024345e60feb6b0ab4e585535f9345ab54554ca0",
+      "topic_method": "local_similarity"
     },
     {
       "id": "b917d7f6811c0786f94925a5",
@@ -1618,7 +2365,19 @@
         "J. Acquadro",
         "Xi-Yuan Bao",
         "Jie Deng"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-210f4a8b9325",
+        "zt-43c2ee69eadf"
+      ],
+      "topic_ids": [
+        "zt-17636072f9f0",
+        "zt-210f4a8b9325",
+        "zt-43c2ee69eadf",
+        "zt-8c9acb4742ac"
+      ],
+      "topic_version": "e1100dbf2fa1d0da89f210cc3f1dfb86a8760f9de28bae33ab40d9f40ef95fec",
+      "topic_method": "local_similarity"
     },
     {
       "id": "3777cbbb164ef1aa20759b86",
@@ -1645,7 +2404,17 @@
       "summary_kind": "ai_summary",
       "authors": [
         "Rodney S. Ruoff"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-35479dd1c4aa"
+      ],
+      "topic_ids": [
+        "zt-17636072f9f0",
+        "zt-35479dd1c4aa",
+        "zt-8c9acb4742ac"
+      ],
+      "topic_version": "496743b1d38c3ce9542fe495628d6a71e2a0b0bb4fa409064ad8cd95498166b6",
+      "topic_method": "local_similarity"
     },
     {
       "id": "16d1003fb34eec9cce9b9f3a",
@@ -1677,7 +2446,11 @@
         "Michael Rabbat",
         "Yann LeCun",
         "Randall Balestriero"
-      ]
+      ],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "28e69fdf00a06632406f55fca5d2417680f451923fa8c0bc98536f665032b416",
+      "topic_method": "local_similarity"
     },
     {
       "id": "d2b5b29b4c815525619915dc",
@@ -1702,7 +2475,11 @@
       "excerpt": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": []
+      "authors": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "24649538b42978637e00aedfeb2a5a6df259e4ec54553fdb30ed6d20deceda2f",
+      "topic_method": "local_similarity"
     },
     {
       "id": "26003ff834f48be538b4a45d",
@@ -1740,7 +2517,22 @@
         "Takahiro Kondo",
         "Hao Li",
         "S. Orimo"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-35479dd1c4aa",
+        "zt-de848a92dfe3",
+        "zt-210f4a8b9325"
+      ],
+      "topic_ids": [
+        "zt-17636072f9f0",
+        "zt-210f4a8b9325",
+        "zt-35479dd1c4aa",
+        "zt-8c9acb4742ac",
+        "zt-de76d2e22c7b",
+        "zt-de848a92dfe3"
+      ],
+      "topic_version": "aeab9294b9af2da6ee1134d3d0ee699c06b5d2224d9c57aff763fcc2139b6ad8",
+      "topic_method": "local_similarity"
     },
     {
       "id": "cc3a8155f9b744f29d5b928e",
@@ -1770,7 +2562,62 @@
         "Alexander V. Shapeev",
         "Maxim V. Rakhuba",
         "Ivan S. Novikov"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-35479dd1c4aa"
+      ],
+      "topic_ids": [
+        "zt-17636072f9f0",
+        "zt-35479dd1c4aa",
+        "zt-8c9acb4742ac"
+      ],
+      "topic_version": "1b9c28d358dc5aed104a51c5ac487cfec7e37b7c33e336ace9e5e048f365a53d",
+      "topic_method": "local_similarity"
+    },
+    {
+      "id": "feba87a1a8f0f8e9c6819ea4",
+      "url": "https://arxiv.org/abs/2610.06801",
+      "title": "MC-Sparse: Deconstructing and Closing the Dense-Sparse Attention Gap in Diffusion Transformers",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-05T00:00:00+00:00",
+      "first_seen": "2026-10-09T05:19:32.042444+00:00",
+      "excerpt": "Sparse attention is a primary approach to reducing the latency of diffusion transformers in long-sequence generation tasks, such as video and high-resolution 3D asset generation. However, existing methods can degrade generation quality and fidelity at high sparsity levels. Through controlled oracle comparisons, we trace this degradation to three sources: constraints imposed by token grouping, inaccurate interaction selection, and the attention contributions lost when tokens are discarded. Guided by this analysis, we propose Meta-Cached Sparse Attention (MC-Sparse), a training-free framework that selects individual key-value (KV) tokens while organizing similar queries into tile-aligned groups for efficient GPU execution. MC-Sparse caches metadata comprising query groups, KV indices selected using exact attention probabilities, and residuals between dense and sparse attention outputs, and reuses them across subsequent denoising steps. Across video and 3D generation models, MC-Sparse achieves higher fidelity to dense-attention outputs and larger denoising speedups than existing sparse-attention baselines, without visible quality degradation. Relative to dense attention, it delivers a 1.80times denoising speedup on Minimax-H3-Base and a 2.32times speedup on 3D asset generation, both with negligible quality loss.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2610.06801",
+      "authors": [
+        "Jiarui Chen",
+        "Zeqiang Lai",
+        "Jiangshan Wang",
+        "Ziheng Ouyang",
+        "Ye Huang",
+        "Xiangyu Yue",
+        "Cewu Lu",
+        "Chunchao Guo"
+      ],
+      "topic_leaf_ids": [
+        "zt-f54f41c628af"
+      ],
+      "topic_ids": [
+        "zt-8c9acb4742ac",
+        "zt-e2e1da84abeb",
+        "zt-f54f41c628af"
+      ],
+      "topic_version": "1ca96a5849c294b4125ab01ebaf004cd68d75444906a827bec16b473c4f091c9",
+      "topic_method": "local_similarity"
     },
     {
       "id": "b2a0d39235a3f48803a04432",
@@ -1808,7 +2655,22 @@
         "Sung Ju Hwang",
         "G. Scalia",
         "Ehsan Hajiramezanali"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-138521710b28",
+        "zt-3e247e081c4e",
+        "zt-bf3231297921"
+      ],
+      "topic_ids": [
+        "zt-138521710b28",
+        "zt-3e247e081c4e",
+        "zt-9513e85a0edc",
+        "zt-bf3231297921",
+        "zt-d2cd412eba69",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "1791f69864d070c96f1dfd3e6670b02943b732add20e21c163a7c7c72e3442bb",
+      "topic_method": "local_similarity"
     },
     {
       "id": "971bb979b7446c8c74cd3902",
@@ -1842,7 +2704,11 @@
         "Hsin-Ling Hsu",
         "Yi-Cheng Lai",
         "Tengfei Ma"
-      ]
+      ],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "f602e71ffb94442181d50e1619e9cf7a54a9b1c606629449f0bfe2d7c36afb7a",
+      "topic_method": "local_similarity"
     },
     {
       "id": "bfc4355d370530a85bd88314",
@@ -1868,7 +2734,11 @@
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap The first-of-its-kind Academy trains Frontier Deployed Engineers using the same standard of skills as Anthropic’s own engineers, starting with cohorts from Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley, Novo Nordisk and others. Today we are launching Claude Frontier Academy to solve one of the most pressing issues in AI implementation: talent. Backed by a $100 million commitment, Anthropic aims to train 10,000 Frontier Deployed Engineers (FDEs) by the end of 2027. Engineers from Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley and Novo Nordisk are in the first cohorts. Every enterprise is racing to bring AI into its organization, but the people with the skills to make it work inside a real business have become the hardest talent to find. Inside the companies we work with, a small group of deeply skilled people drives an outsized share of what AI delivers. The Academy is the first of its kind from an AI company, built from our own work deploying Claude inside the world’s largest enterprises and the professional services organizations that serve them. “A small team of high-agency people with the right skills, access to Claude, and a deep understanding of how their business runs can transform an entire company. The hard part is building that depth of talent, engineers with the highest level of AI fluency who can take Claude from an idea to a system in production and turn it into faster processes and new products and services. No AI company has invested in developing that talent inside its customers and partners at this depth. Claude Frontier Academy trains people the way our own engineers learn, and we want those who graduate to set the standard for how AI gets built inside a business.” – Steve Corfield, Global Head of Business Development and Partnerships at Anthropic The first program trains 10,000 Frontier Deployed Engineers The Academy’s first program, the Frontier Deployed Engineer Residency, follows the medical model for building expertise. Doctors learn from practicing ",
       "summary": "",
-      "summary_kind": "source_excerpt"
+      "summary_kind": "source_excerpt",
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "b87776cd3d5fbcd0248806ec3bd3e7e3c78f9acfbe8f26c315a17c80abf1025c",
+      "topic_method": "local_similarity"
     },
     {
       "id": "1ee818c0a97e91518baae3cf",
@@ -1901,7 +2771,22 @@
         "Zicheng Duan",
         "Gengze Zhou",
         "Qi Wu"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-138521710b28",
+        "zt-5c69e2a09f67",
+        "zt-bf3231297921"
+      ],
+      "topic_ids": [
+        "zt-138521710b28",
+        "zt-5c69e2a09f67",
+        "zt-9513e85a0edc",
+        "zt-bf3231297921",
+        "zt-d2cd412eba69",
+        "zt-f4a0d0a976e3"
+      ],
+      "topic_version": "cd53f6dd79a237521f3d974b9e60d12d8566e5150153a6bc314b61e2a4064d6b",
+      "topic_method": "local_similarity"
     },
     {
       "id": "74ea6f05c61d9b4cf20cfdc0",
@@ -1932,7 +2817,17 @@
         "Nisarg Joshi",
         "Rahul Verma",
         "Jim Pfaendtner"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-35479dd1c4aa"
+      ],
+      "topic_ids": [
+        "zt-17636072f9f0",
+        "zt-35479dd1c4aa",
+        "zt-8c9acb4742ac"
+      ],
+      "topic_version": "94a72452df998658304245dae5b2e71a918873f43d071488fba7ebe75ee6886a",
+      "topic_method": "local_similarity"
     },
     {
       "id": "dab95f157b8439bf04d74449",
@@ -1970,7 +2865,21 @@
         "P. Sushko",
         "Di Xiao",
         "Ting Cao"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-35479dd1c4aa",
+        "zt-43c2ee69eadf",
+        "zt-210f4a8b9325"
+      ],
+      "topic_ids": [
+        "zt-17636072f9f0",
+        "zt-210f4a8b9325",
+        "zt-35479dd1c4aa",
+        "zt-43c2ee69eadf",
+        "zt-8c9acb4742ac"
+      ],
+      "topic_version": "33fa4ef6bc002d5cf3f96152dadebb62613beb9cc565ec94eda0aaec88894999",
+      "topic_method": "local_similarity"
     },
     {
       "id": "c4ac744414a8aa10db832cb2",
@@ -2003,7 +2912,19 @@
         "Wei-Lin Chiang",
         "Ion Stoica",
         "Cho-Jui Hsieh"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-a127fa025ccf",
+        "zt-ab3c5b4dac12"
+      ],
+      "topic_ids": [
+        "zt-8c9acb4742ac",
+        "zt-a127fa025ccf",
+        "zt-ab3c5b4dac12",
+        "zt-c2d5921a8391"
+      ],
+      "topic_version": "f92152507bdfb55c0aaf758d6e730411529b4d603ba335c1c1a9db44580aa6fa",
+      "topic_method": "local_similarity"
     },
     {
       "id": "c08402b8f22a4b159df3858c",
@@ -2028,7 +2949,21 @@
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Barclays scales Claude to upgrade operations and improve client experience Barclays, the British universal bank, is expanding its strategic collaboration with Anthropic to integrate secure, enterprise-grade AI systems across its global operations. Barclays is extending Claude across the bank to accelerate software development, modernize legacy systems, and improve operational efficiency. As part of this rollout, Barclays expects Claude Code adoption to reach 50% of its developer population by the end of 2026, rising to a majority of software engineers in 2027. Barclays builds with Claude to better serve customers Integrating AI across a large, complex, and highly regulated organization requires both capable technology and disciplined governance. Expanding its collaboration with Anthropic reflects a shared commitment to deploying AI responsibly, reliably, and in ways that deliver real outcomes, such as providing faster support for customers. “The true measure of any technology is the impact it has on customers, clients, and colleagues, and the outcomes it enables,” said Anne Marie Darling, Group Co-Chief Operating Officer at Barclays. “Expanding the use of Claude across Barclays is about more than adopting AI. It is about transforming how work gets done: reimagining processes, enhancing customer and client experiences, and building a simpler, more efficient organization within a secure and well-governed environment. By reducing time spent on routine activities and streamlining decision-making, we can enable colleagues to focus their expertise where it matters most, solving more complex problems, accelerating innovation, and delivering better outcomes for our customers, clients, and business.” “Software engineering and cyber security are both being reshaped by increasingly capable AI systems,” said Craig Bright, Group Co-Chief Operating Officer at Barclays. “We're moving towards AI as an increasingly agentic capability embedded within how we build, test, secure, and operate technology. At Barclays, we're using Claude to help modernize legacy platforms, improve software quality, and allow our technical experts to focus on the most complex challenges. The combinatio",
       "summary": "",
-      "summary_kind": "source_excerpt"
+      "summary_kind": "source_excerpt",
+      "topic_leaf_ids": [
+        "zt-c56da7bb87be",
+        "zt-cd2ec49509af",
+        "zt-ebc110d5a04c"
+      ],
+      "topic_ids": [
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-c56da7bb87be",
+        "zt-cd2ec49509af",
+        "zt-ebc110d5a04c"
+      ],
+      "topic_version": "994af32cffd69d5351ff3ceecbc69ee874cbecde9042da820997542550dc44c6",
+      "topic_method": "local_similarity"
     },
     {
       "id": "dbb4aebc68a9494123f1b12b",
@@ -2061,7 +2996,22 @@
         "Hervé Panetto",
         "A. Scotti",
         "J. V. C. Vargas"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-ebc110d5a04c",
+        "zt-cd2ec49509af",
+        "zt-d80d53acd516"
+      ],
+      "topic_ids": [
+        "zt-17636072f9f0",
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-cd2ec49509af",
+        "zt-d80d53acd516",
+        "zt-ebc110d5a04c"
+      ],
+      "topic_version": "2a92df79e54a1c93fbc43bebd8bb4614c6a5d9a7c9f433824fe5318bddcf8485",
+      "topic_method": "local_similarity"
     },
     {
       "id": "0cc9342b3c5b2916f2ff2b01",
@@ -2090,7 +3040,19 @@
       "summary_kind": "ai_summary",
       "authors": [
         "Christoph Trattner"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-ebc110d5a04c",
+        "zt-cd2ec49509af"
+      ],
+      "topic_ids": [
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-cd2ec49509af",
+        "zt-ebc110d5a04c"
+      ],
+      "topic_version": "0daf5841108128dd0ce47082906d4a52d4fbaf6e6feff934e3531cd0a2e97523",
+      "topic_method": "local_similarity"
     },
     {
       "id": "e5b83430cc88567b6e4210cf",
@@ -2121,7 +3083,11 @@
         "Dong Luan",
         "Chen-Yu Yang",
         "Jian-Ping Xiao"
-      ]
+      ],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "ca2d7a812108660d406a9df161db9e0f34118c22e153e0dfb2a69ef4936b9f8c",
+      "topic_method": "local_similarity"
     },
     {
       "id": "b49099cde7e97e60f531fdab",
@@ -2146,7 +3112,11 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": []
+      "authors": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "c7e7e16b301f97d904322fab654c3f2f95022df73daed3b18dc1e70196e1af7f",
+      "topic_method": "local_similarity"
     },
     {
       "id": "08aa8115cb5d9c8920990d12",
@@ -2171,7 +3141,11 @@
       "excerpt": "Proof of concept for watermarking AI-generated proteins while preserving biological function.",
       "summary": "本文提出SynthID Bio的概念验证，用于在AI生成的蛋白质中嵌入水印并保持其生物功能。该方法可帮助科研人员追溯AI生成的蛋白质来源，但目前仅为概念验证，实际适用性和性能尚未经验证。",
       "summary_kind": "ai_summary",
-      "authors": []
+      "authors": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "b5d5a1d9f4bb42c0b8e6437e6253c85243c7139399291d8e95a0937de7c905ad",
+      "topic_method": "local_similarity"
     },
     {
       "id": "280b717b244339df46bc5708",
@@ -2203,7 +3177,22 @@
         "Quansheng Gu",
         "Qiang Huang",
         "Jun Yu"
-      ]
+      ],
+      "topic_leaf_ids": [
+        "zt-c56da7bb87be",
+        "zt-a127fa025ccf",
+        "zt-6940b15789e1"
+      ],
+      "topic_ids": [
+        "zt-6940b15789e1",
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-a127fa025ccf",
+        "zt-c2d5921a8391",
+        "zt-c56da7bb87be"
+      ],
+      "topic_version": "2b03e224d18881a966e3ccea333906955dcfa633263342f1b13abbe759dd3c67",
+      "topic_method": "local_similarity"
     },
     {
       "id": "fc615e071bcda5270221bed4",
@@ -2230,7 +3219,62 @@
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Solving all disease is one of the most monumentally complex challenges in science. Today, for the first time, AI provides the foundation to make it achievable. Tackling the frontier of human health is our mission, and it means identifying exactly where modern AI can make the greatest difference. We see drug discovery as the critical wedge in solving all disease, and therefore our initial focal point where AI can have a transformative impact on human health. Developing a drug that successfully and effectively treats disease fundamentally involves understanding biological mechanisms and designing exquisitely engineered molecules that can modulate them safely. So we are taking a straight shot at making that a reality. We are generating the data, training the AI models, developing the software, and laying down the physical infrastructure to make new medicines; taking these potential therapeutics all the way to patients in the clinic. We are building this new architecture in a way that will scale across multiple disease areas, and different types of medicines, from small molecules to antibodies, peptides, and beyond. In 2021, when we started Isomorphic Labs, AI drug discovery was just a hypothesis. Conventional approaches were bottlenecked by slow, resource-intensive iterative design-make-test cycles, viewing AI as an experimental tool for narrow tasks. At the same time the AI revolution was well underway across multiple industries. A seismic shift was happening with the emergence of foundation models, moving away from single-task algorithms toward highly versatile systems capable of world-understanding, zero-shot reasoning and generating complex text and images. Up to this point, I had spent my education and career in core AI, building intelligent systems by scaling up neural networks and deep reinforcement learning to solve the hardest problems at a superhuman level. But having grown up in a medical family, I recognised the potential to apply this superhuman new technology to humanity’s most meaningful challenge: human health. Working with Sir Demis Hassabis, we created the founding team at Isomorphic Labs to pivot breakthroughs in AI toward solving the drug discov",
       "summary": "Isomorphic Labs 介绍其正在构建面向药物发现的AI基础模型、数据、软件与基础设施，目标是覆盖从小分子到抗体、肽等多种药物类型并将候选疗法推进至临床。该材料属于公司愿景与进展说明，未提供可验证的性能数字，其将AI用于药物发现以实现疾病治疗的设想仍需科研实践检验。",
-      "summary_kind": "ai_summary"
+      "summary_kind": "ai_summary",
+      "topic_leaf_ids": [
+        "zt-ebc110d5a04c",
+        "zt-c56da7bb87be",
+        "zt-a127fa025ccf"
+      ],
+      "topic_ids": [
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-a127fa025ccf",
+        "zt-c2d5921a8391",
+        "zt-c56da7bb87be",
+        "zt-ebc110d5a04c"
+      ],
+      "topic_version": "828e06ee104d4dc133f6e69e334a2e93e4c6a75fff380e896d1415213c9cdba4",
+      "topic_method": "local_similarity"
+    },
+    {
+      "id": "34d22904306b17fe2a202985",
+      "url": "https://arxiv.org/abs/2609.35433",
+      "title": "ReSPO: Reshaped Sequence Policy Optimization for Gradient Starvation in Off-Policy Learning",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-09-28T00:00:00+00:00",
+      "first_seen": "2026-10-09T05:19:32.042444+00:00",
+      "excerpt": "Reinforcement learning from verifiable rewards (RLVR) frequently reuses rollouts across multiple policy updates, increasing the mismatch between the current policy and the data-generating policy. We identify a sign-dependent gradient starvation problem in clipped policy optimization: clipping suppresses under-generated positive responses at the low-importance-weight tail while permitting severely over-generated negative responses to dominate the high-weight tail. To address this, we propose ReSPO (Reshaped Sequence Policy Optimization), which replaces clipping with a smooth, two-branch sequence-level kernel derived from an α-divergence variational objective and an exponential variance-control tilt. The positive branch preserves a nonzero gradient weight for under-generated positive responses, while the negative branch suppresses heavily over-generated negative responses. We demonstrate that ReSPO effectively learns from long positive reasoning trajectories during early training, even when accumulated policy drift relegates them to the low-importance-weight tail. On dense and MoE Qwen3 models, ReSPO accelerates early optimization, improves final training scores, and achieves higher held-out benchmark performance under a rollout reuse, validating our approach on importance-weight tail control in off-policy learning.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2609.35433",
+      "authors": [
+        "Yihang Chen",
+        "Yuanhao Ban",
+        "Cho-Jui Hsieh"
+      ],
+      "topic_leaf_ids": [
+        "zt-a127fa025ccf"
+      ],
+      "topic_ids": [
+        "zt-8c9acb4742ac",
+        "zt-a127fa025ccf",
+        "zt-c2d5921a8391"
+      ],
+      "topic_version": "a28efb2f5a538d21dc94b71956d04b75d2a5765ef8a5ef1c3c589472a06602eb",
+      "topic_method": "local_similarity"
     },
     {
       "id": "6add3dd62456569f19427e45",
@@ -2255,7 +3299,11 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": []
+      "authors": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "3b102a5ade1e1000cf1d3714cc6e64b34bc23fd7acabf65559cfdfc5428ed990",
+      "topic_method": "local_similarity"
     },
     {
       "id": "1043d9fe80283e6f409b90e0",
@@ -2278,9 +3326,13 @@
       "published_at": "2026-09-23T16:00:57+00:00",
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Introducing private, server-side memory to Private AI Compute for personal AI.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": []
+      "summary": "本文为Private AI Compute引入私有服务器端内存以支持个人AI。该更新可用于需要在服务器端处理个人AI数据时增强隐私保护的场景，其实际效果与适用范围未在摘录中说明。",
+      "summary_kind": "ai_summary",
+      "authors": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "4923c51bbd23429daf12fd6609b66f45d979bfafbfbf0a12c21917b95286f71b",
+      "topic_method": "local_similarity"
     },
     {
       "id": "721de6922a1a6b9fd6bd57fa",
@@ -2305,7 +3357,11 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": []
+      "authors": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "7022995405f0cc3187b8f3876c2ecfc02a734baa9430d6706a2cab91a75a88b1",
+      "topic_method": "local_similarity"
     },
     {
       "id": "ef1b3a4772eab8370f467eb4",
@@ -2332,7 +3388,17 @@
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Subscribe to Anthropic Science Features on AI-assisted discoveries, practical workflows, and field notes across the sciences. We’re introducing a new life sciences research group and laboratory at Anthropic. Our focus is on fundamental biology research using Claude: exploring datasets of DNA to identify uncharacterized protein families, generating hypotheses at scale, and testing them through experiments in the lab. This post introduces the team behind this work and shares early results in which Claude discovered a novel enzyme system with properties reminiscent of CRISPR, with only high-level direction from our scientists. Many discoveries that have revolutionized biology and medicine started with a scientist noticing something odd in the staggering diversity of molecular machines found in nature. Restriction enzymes, proteins that cut DNA at specific short sequences, were found in bacterial immune systems, where they destroy the DNA of invading viruses. Researchers realized they could use these enzymes to cut DNA at chosen places and splice genes from one organism into another, which launched the biotechnology industry. Taq polymerase, an enzyme that copies DNA at high temperatures, was identified in a bacterium in a Yellowstone hot spring. It became the basis for PCR, the DNA-copying method used in much of modern diagnostics. CRISPR was first noticed as an unusual repeat sequence in the DNA of certain bacteria, and is now the foundation of gene editing-based medicines. In the spring of 2026, we formed a research group to see whether general AI models can systematize and accelerate such discoveries. We believe that this acceleration will come from establishing a new way of doing biology research, in which agents collaborate with humans in every step of the process. Developing this new way of working required that we build our own lab and a single team working on everything from training Claude in biology to running experiments in the lab. Today, we’re sharing early results from one of our first research programs, in which Claude autonomously discovered a novel enzyme system that is associated with an array of DNA repeats, a pattern reminiscent of CRISPR. Altho",
       "summary": "",
-      "summary_kind": "source_excerpt"
+      "summary_kind": "source_excerpt",
+      "topic_leaf_ids": [
+        "zt-ebc110d5a04c"
+      ],
+      "topic_ids": [
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-ebc110d5a04c"
+      ],
+      "topic_version": "7de1eac965be0083d76da64159ac5035e9344d2320d87525e1ac46c9d1c9f2a3",
+      "topic_method": "local_similarity"
     },
     {
       "id": "413e4ee860ab5e965ff1844e",
@@ -2356,7 +3422,11 @@
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "🤖 ModelScope | 🤗 HuggingFace | 📑 Blog | 🖥️ Demo | 🫨 Discord ## Introduction We are excited to open-source **Qwen-Image-2.1**, a unified text-to-image generation and image editing model in the Qwen family. With just **7B parameters in its visual generation component** (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: - **Compact and Efficient** — A lightweight architecture with mixed-granularity attention and prefix KV cache reuse delivers strong image quality at low computational cost. - **Native Transparency, Unified Creation and Editing** — Generate regular or transparent (RGBA) images from text, edit transparent layers, and extract subjects from photographs—all in one model. - **Versatile Editing** — Support up to **10 reference images**, specify local edits via circles, painted annotations, or separate masks, and preserve identity for people and products. - **Realistic Textures and Refined Aesthetics** — Improved typography, portrait lighting, and fine details for more visually compelling results. # Qwen-Image-2.1-PE-I2I Image editing **prompt rewriting model** for [Qwen-Image-2.1](https://huggingface.co/Qwen/Qwen-Image-2.1). A fine-tuned Qwen3.5-VL 9B that takes a vague editing instruction plus input image(s) and produces a precise, actionable prompt suitable for downstream image editing. For more details, see the [GitHub repo](https://github.com/QwenLM/Qwen-Image-2.1) and [Blog](https://qwen.ai/blog?id=qwen-image-2.1). ## Quick Start ### Installation ```bash pip install transformers>=5.4.0 torch>=2.4.0 accelerate pillow ``` ### Usage with Transformers ```python import json import torch from PIL import Image from transformers import AutoModelForImageTextToText, AutoProcessor model_id = \"Qwen/Qwen-Image-2.1-PE-I2I\" processor = AutoProcessor.from_pretrained(model_id) model = AutoModelForImageTextToText.from_pretrained( model_id, dtype=torch.bfloat16, device_map=\"auto\" ).eval() # Load the system prompt shipped with the model import huggingface_hub sys_prompt_path = huggingface_hub.hf_hub_download(model_id, \"system_prompt.txt\") system_prompt = open(sys_pro",
       "summary": "",
-      "summary_kind": "source_excerpt"
+      "summary_kind": "source_excerpt",
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "24f3c0d860192b5dd7c4fcc833cc81142f5e7680b37792271273e76c03bc027a",
+      "topic_method": "local_similarity"
     },
     {
       "id": "5eedd09eb4922e0c4f487d2d",
@@ -2380,7 +3450,11 @@
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "🤖 ModelScope | 🤗 HuggingFace | 📑 Blog | 🖥️ Demo | 🫨 Discord ## Introduction We are excited to open-source **Qwen-Image-2.1**, a unified text-to-image generation and image editing model in the Qwen family. With just **7B parameters in its visual generation component** (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: - **Compact and Efficient** — A lightweight architecture with mixed-granularity attention and prefix KV cache reuse delivers strong image quality at low computational cost. - **Native Transparency, Unified Creation and Editing** — Generate regular or transparent (RGBA) images from text, edit transparent layers, and extract subjects from photographs—all in one model. - **Versatile Editing** — Support up to **10 reference images**, specify local edits via circles, painted annotations, or separate masks, and preserve identity for people and products. - **Realistic Textures and Refined Aesthetics** — Improved typography, portrait lighting, and fine details for more visually compelling results. # Qwen-Image-2.1-PE-T2I Text-to-image **prompt rewriting model** for [Qwen-Image-2.1](https://huggingface.co/Qwen/Qwen-Image-2.1). A fine-tuned Qwen3.5-VL 9B that turns a brief image request in any language into a detailed English prompt plus a recommended aspect ratio. For more details, see the [GitHub repo](https://github.com/QwenLM/Qwen-Image-2.1) and [Blog](https://qwen.ai/blog?id=qwen-image-2.1). ## Quick Start ### Installation ```bash pip install transformers>=5.4.0 torch>=2.4.0 accelerate pillow ``` ### Usage with Transformers ```python import json import torch from transformers import AutoModelForCausalLM, AutoTokenizer model_id = \"Qwen/Qwen-Image-2.1-PE-T2I\" tokenizer = AutoTokenizer.from_pretrained(model_id) model = AutoModelForCausalLM.from_pretrained( model_id, dtype=torch.bfloat16, device_map=\"auto\" ).eval() # Load the system prompt shipped with the model import huggingface_hub sys_prompt_path = huggingface_hub.hf_hub_download(model_id, \"system_prompt.txt\") system_prompt = open(sys_prompt_path).read().strip() user_prompt = \"一只在雨中弹吉他的柯基\" text = tok",
       "summary": "",
-      "summary_kind": "source_excerpt"
+      "summary_kind": "source_excerpt",
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "8fc35709da6e3bf41640a4f1df31045121f481ab01a5a744df103c6ef20417bb",
+      "topic_method": "local_similarity"
     },
     {
       "id": "5ec4e61a2a5169ebbf2e4ee0",
@@ -2404,7 +3478,11 @@
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Partnering with Accenture on embedded evaluation We're partnering with Accenture on independent evaluation of frontier AI. This is an important step toward the commitment, made in our CEO’s essay “We Must Pace the Frontier,” to embed evaluators within Anthropic. The partnership will be led by Faculty, Accenture’s specialist AI business, and will include evaluating and red-teaming models, conducting alignment assessments, and testing model safeguards. Accenture helps businesses and governments deploy AI across many industries. Their understanding of how enterprises use AI in practice informs their safety approach, and they will bring that perspective to evaluating our models. Anthropic and Accenture each expect to invest at least $1 billion in building capacity in this area over the next five years. Embedded evaluation is new, and many of the details about how it will operate are still being worked out. Unlike today’s external evaluators, embedded evaluators will work inside AI companies, with access comparable to an employee's. That access allows them to watch models take shape in training, follow the decisions that govern how those models are built and deployed, and speak directly to employees. From this vantage point, embedded evaluators can assess how a company operates, verify that it is keeping its safety commitments, and identify blind spots. They can also report incidents and give the public a more informed account of benefits and risks. To be clear, independent embedded evaluators do not reduce our accountability, but help to make it more verifiable. The safety of our models remains our responsibility. There are, as yet, no standards for what information embedded evaluators should have access to, or how they should report what they find. There is also no settled system for funding independent evaluation. Long-term, we think funding should come from pooled or government sources, as we called for in our Advanced AI Framework in June. As neither exists today, we plan to work with different evaluators under different funding arrangements. Given the importance and urgency of this work, Anthropic will fund Accenture's work directly. We are also in dialogue wit",
       "summary": "",
-      "summary_kind": "source_excerpt"
+      "summary_kind": "source_excerpt",
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "b72b79570cb3b72be9d8cd94471fef314a2ce94a3993ecf80bbfff05e25530cb",
+      "topic_method": "local_similarity"
     },
     {
       "id": "a3c8e138d995ff558ec9129c",
@@ -2430,7 +3508,17 @@
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "Introducing the Life Sciences Verification Program Today, we are introducing the Life Sciences Verification Program (LSVP), which gives life science professionals access to our Mythos, Opus, and Sonnet models with a refined set of safeguards more permissive for biology-related work. We have already onboarded dozens of organizations through an early-access program, and are now opening applications to the broader life science community (join waitlist here). The program is launching in beta, initially for teams and institutions. We will continue to improve the program and expand access to individual Pro and Max plans over time. The LSVP is designed to enable life science professionals to use our models across a wide range of tasks that are currently blocked in our generally available Fable models, like drug discovery, research biology, clinical development, and manufacturing. It’s built for teams of all kinds—from academic labs to startups, pharma companies, and more. Verification and access types To qualify for these grants, each applicant goes through a verification process that includes a review of their research credentials, security standards, and ethical research oversight. Once verified, teams may apply for two types of LSVP grants, “Standard Use” or “High-risk Use,” depending on their access needs. These grants can be used through all our product surfaces, including Claude Science, Claude.ai, Claude Code and the API. Standard Use grants are suitable for most life science work, including the majority of biology research and development workflows. These grants can be extended to entire teams for diverse, daily workloads, and are renewed once a year. They give those teams access to our Mythos, Opus, and Sonnet models, with refined classifiers that are more permissive for science tasks than our generally available models. Standard Use grants apply to Mythos 5.1, Opus 5, and Sonnet 5 today, and to future models as they launch. They’re specifically designed to enable the full breadth of life science activities in areas spanning basic science, R&D, supply chain and manufacturing, clinical development, quality assurance, regulatory affairs, investing and diligence,",
       "summary": "",
-      "summary_kind": "source_excerpt"
+      "summary_kind": "source_excerpt",
+      "topic_leaf_ids": [
+        "zt-ebc110d5a04c"
+      ],
+      "topic_ids": [
+        "zt-8c9acb4742ac",
+        "zt-8d7903042806",
+        "zt-ebc110d5a04c"
+      ],
+      "topic_version": "b36cc337c1f4fd4c5b572329291432ebe7a77218592247192e60575df15e5fa3",
+      "topic_method": "local_similarity"
     },
     {
       "id": "6aae488b1bb65e59bc913efd",
@@ -2455,7 +3543,11 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": []
+      "authors": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "7e8e58bd73801119f297807e3dd6b4dad26e79c0d56ea0da60fd2037151d98c1",
+      "topic_method": "local_similarity"
     },
     {
       "id": "3cc50d0356230bcbb9959d92",
@@ -2479,7 +3571,11 @@
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "🤖 ModelScope | 🤗 HuggingFace | 📑 Blog | 🖥️ Demo | 🫨 Discord | 💬 WeChat ## Introduction We are excited to open-source **Qwen-Image-2.1**, a unified text-to-image generation and image editing model in the Qwen family. With just **7B parameters in its visual generation component** (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: - **Compact and Efficient** — A lightweight architecture with mixed-granularity attention and prefix KV cache reuse delivers strong image quality at low computational cost. - **Native Transparency, Unified Creation and Editing** — Generate regular or transparent (RGBA) images from text, edit transparent layers, and extract subjects from photographs—all in one model. - **Versatile Editing** — Support up to **10 reference images**, specify local edits via circles, painted annotations, or separate masks, and preserve identity for people and products. - **Realistic Textures and Refined Aesthetics** — Improved typography, portrait lighting, and fine details for more visually compelling results. For more details, see the [GitHub repo](https://github.com/QwenLM/Qwen-Image-2.1) and [Blog](https://qwen.ai/blog?id=qwen-image-2.1). ## Quick Start ### Installation ```bash pip install torch>=2.4.0 pip install transformers>=5.17 pip install git+https://github.com/huggingface/diffusers pip install accelerate pillow ``` ### Text-to-Image ```python import torch from diffusers import QwenImage21Pipeline pipe = QwenImage21Pipeline.from_pretrained( \"Qwen/Qwen-Image-2.1\", torch_dtype=torch.bfloat16 ).to(\"cuda\") image = pipe( prompt=\"A neon shop sign that reads \\\"QWEN IMAGE 2.1\\\", rainy night, reflections on wet pavement\", width=2048, height=2048, num_inference_steps=40, generator=torch.Generator(\"cuda\").manual_seed(42), ).images[0] image.save(\"t2i_example.png\") ``` ### Image Editing ```python import torch from PIL import Image from diffusers import QwenImage21Pipeline pipe = QwenImage21Pipeline.from_pretrained( \"Qwen/Qwen-Image-2.1\", torch_dtype=torch.bfloat16 ).to(\"cuda\") input_image = Image.open(\"input.png\") image = pipe( prompt=\"Change the background t",
       "summary": "",
-      "summary_kind": "source_excerpt"
+      "summary_kind": "source_excerpt",
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "86fbf419df5964b12e4d0132a50cb7f99bc769f9a187a8ba9cb4b0a6ab85d439",
+      "topic_method": "local_similarity"
     },
     {
       "id": "5c348986a15182f2f224ee2c",
@@ -2504,16 +3600,352 @@
       "first_seen": "2026-10-09T03:55:11.171802+00:00",
       "excerpt": "# DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression Technical Report 👁️ ## Introduction We introduce **DeepSeek-V4.1-Flash**, a multimodal Mixture-of-Experts (MoE) model with 552B backbone parameters and support for contexts of up to one million tokens. The model natively processes images and text, and generates text autoregressively. **Architecture.** DeepSeek-V4.1-Flash adopts a **Causal Encoder-Decoder (CED)** architecture: a 40-layer Transformer organized as a 20-layer causal encoder followed by a 20-layer decoder. With CED, the decoder's global KV cache is projected from the final encoder hidden states rather than derived from each decoder layer's own hidden states. This allows the model to activate only **8B parameters per token during prefill** and **16B during decode**, substantially improving cost efficiency for input-heavy agentic workloads. **SWA Bounded Replay** reconstructs missing SWA KV states by replaying only the most recent *n*_win tokens, avoiding the need to persist SWA KV to SSD and reducing the persistent KV cache footprint to roughly **1/8** of that of DeepSeek-V4-Flash. **Compressed Sparse Attention 2 (CSA2).** DeepSeek-V4.1-Flash uses CSA2, which assigns each attention layer one of three static modes — **Full**, **Reindex**, or **Reuse** — to share main KV and indexer K across layers and reuse Top-K sparse-attention indices. In the decoder, a **Hierarchical Sparse Indexer** further restricts later indexing layers to a candidate pool constructed by the first Full Mode layer, bounding deeper indexer cost independently of context length. Combined with **FP4 main KV caching** (E2M1 format, one E4M3 scale per 16 channels), these designs reduce the global KV cache footprint to **890 bytes per token** — roughly **1/4** of DeepSeek-V4-Flash. **Additional architectural components** include Single-Pass mHC (revised residual-stream mixing with an efficient Mega-mHC kernel), Engram conditional memory (196B parameters, sparsely accessed via token-based lookup), and DSpark speculative decoding (semi-autoregressive draft generation with confidence-scheduled verification). The model uses 1 shared expert and 384 routed experts per MoE layer",
       "summary": "",
-      "summary_kind": "source_excerpt"
+      "summary_kind": "source_excerpt",
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_version": "81a9cc4c25f075ce8e2773369f32e2a9857a69ea1413f6fd008eb7f372b70e5e",
+      "topic_method": "local_similarity"
     }
   ],
+  "taxonomy": {
+    "status": "ok",
+    "topics": [
+      {
+        "id": "zt-de76d2e22c7b",
+        "name": "01 材料研究",
+        "path": "01 材料研究",
+        "parent_id": null
+      },
+      {
+        "id": "zt-949573a2f54f",
+        "name": "二维材料",
+        "path": "01 材料研究 / 二维材料",
+        "parent_id": "zt-de76d2e22c7b"
+      },
+      {
+        "id": "zt-2ef48f65254d",
+        "name": "复合与人工结构材料",
+        "path": "01 材料研究 / 复合与人工结构材料",
+        "parent_id": "zt-de76d2e22c7b"
+      },
+      {
+        "id": "zt-b8ceb0671a75",
+        "name": "多孔框架材料",
+        "path": "01 材料研究 / 多孔框架材料",
+        "parent_id": "zt-de76d2e22c7b"
+      },
+      {
+        "id": "zt-de848a92dfe3",
+        "name": "无机非金属材料",
+        "path": "01 材料研究 / 无机非金属材料",
+        "parent_id": "zt-de76d2e22c7b"
+      },
+      {
+        "id": "zt-6ceb536b4295",
+        "name": "有机与高分子材料",
+        "path": "01 材料研究 / 有机与高分子材料",
+        "parent_id": "zt-de76d2e22c7b"
+      },
+      {
+        "id": "zt-49f434d2b6c2",
+        "name": "跨体系材料研究",
+        "path": "01 材料研究 / 跨体系材料研究",
+        "parent_id": "zt-de76d2e22c7b"
+      },
+      {
+        "id": "zt-a553b2a37d73",
+        "name": "金属与合金",
+        "path": "01 材料研究 / 金属与合金",
+        "parent_id": "zt-de76d2e22c7b"
+      },
+      {
+        "id": "zt-8c9acb4742ac",
+        "name": "02 AI方法",
+        "path": "02 AI方法",
+        "parent_id": null
+      },
+      {
+        "id": "zt-c2d5921a8391",
+        "name": "学习、训练与优化",
+        "path": "02 AI方法 / 学习、训练与优化",
+        "parent_id": "zt-8c9acb4742ac"
+      },
+      {
+        "id": "zt-51f8f0b68c72",
+        "name": "主动学习与贝叶斯优化",
+        "path": "02 AI方法 / 学习、训练与优化 / 主动学习与贝叶斯优化",
+        "parent_id": "zt-c2d5921a8391"
+      },
+      {
+        "id": "zt-a127fa025ccf",
+        "name": "强化学习与Agent RL",
+        "path": "02 AI方法 / 学习、训练与优化 / 强化学习与Agent RL",
+        "parent_id": "zt-c2d5921a8391"
+      },
+      {
+        "id": "zt-6940b15789e1",
+        "name": "自演化与技能学习",
+        "path": "02 AI方法 / 学习、训练与优化 / 自演化与技能学习",
+        "parent_id": "zt-c2d5921a8391"
+      },
+      {
+        "id": "zt-23e1ea023b11",
+        "name": "训练目标与多任务优化",
+        "path": "02 AI方法 / 学习、训练与优化 / 训练目标与多任务优化",
+        "parent_id": "zt-c2d5921a8391"
+      },
+      {
+        "id": "zt-e9281882c6bf",
+        "name": "迁移与元学习",
+        "path": "02 AI方法 / 学习、训练与优化 / 迁移与元学习",
+        "parent_id": "zt-c2d5921a8391"
+      },
+      {
+        "id": "zt-ab3c5b4dac12",
+        "name": "预训练与后训练",
+        "path": "02 AI方法 / 学习、训练与优化 / 预训练与后训练",
+        "parent_id": "zt-c2d5921a8391"
+      },
+      {
+        "id": "zt-e2e1da84abeb",
+        "name": "生成模型",
+        "path": "02 AI方法 / 生成模型",
+        "parent_id": "zt-8c9acb4742ac"
+      },
+      {
+        "id": "zt-1dcbfa5918a2",
+        "name": "VAE与GAN",
+        "path": "02 AI方法 / 生成模型 / VAE与GAN",
+        "parent_id": "zt-e2e1da84abeb"
+      },
+      {
+        "id": "zt-f54f41c628af",
+        "name": "扩散与流模型",
+        "path": "02 AI方法 / 生成模型 / 扩散与流模型",
+        "parent_id": "zt-e2e1da84abeb"
+      },
+      {
+        "id": "zt-b9bdd33ce71d",
+        "name": "自回归及其他生成方法",
+        "path": "02 AI方法 / 生成模型 / 自回归及其他生成方法",
+        "parent_id": "zt-e2e1da84abeb"
+      },
+      {
+        "id": "zt-17636072f9f0",
+        "name": "表征、预测与分析",
+        "path": "02 AI方法 / 表征、预测与分析",
+        "parent_id": "zt-8c9acb4742ac"
+      },
+      {
+        "id": "zt-d80d53acd516",
+        "name": "可解释性与不确定性",
+        "path": "02 AI方法 / 表征、预测与分析 / 可解释性与不确定性",
+        "parent_id": "zt-17636072f9f0"
+      },
+      {
+        "id": "zt-43c2ee69eadf",
+        "name": "图学习与结构表征",
+        "path": "02 AI方法 / 表征、预测与分析 / 图学习与结构表征",
+        "parent_id": "zt-17636072f9f0"
+      },
+      {
+        "id": "zt-210f4a8b9325",
+        "name": "性质预测与代理模型",
+        "path": "02 AI方法 / 表征、预测与分析 / 性质预测与代理模型",
+        "parent_id": "zt-17636072f9f0"
+      },
+      {
+        "id": "zt-35479dd1c4aa",
+        "name": "机器学习势函数",
+        "path": "02 AI方法 / 表征、预测与分析 / 机器学习势函数",
+        "parent_id": "zt-17636072f9f0"
+      },
+      {
+        "id": "zt-1d09b16dd491",
+        "name": "符号学习与科学发现",
+        "path": "02 AI方法 / 表征、预测与分析 / 符号学习与科学发现",
+        "parent_id": "zt-17636072f9f0"
+      },
+      {
+        "id": "zt-f4671448103e",
+        "name": "视觉与多模态表征",
+        "path": "02 AI方法 / 表征、预测与分析 / 视觉与多模态表征",
+        "parent_id": "zt-17636072f9f0"
+      },
+      {
+        "id": "zt-8d7903042806",
+        "name": "语言模型与 Agent",
+        "path": "02 AI方法 / 语言模型与 Agent",
+        "parent_id": "zt-8c9acb4742ac"
+      },
+      {
+        "id": "zt-eeab1bfeeec9",
+        "name": "基础模型与多模态",
+        "path": "02 AI方法 / 语言模型与 Agent / 基础模型与多模态",
+        "parent_id": "zt-8d7903042806"
+      },
+      {
+        "id": "zt-cd2ec49509af",
+        "name": "多Agent协作",
+        "path": "02 AI方法 / 语言模型与 Agent / 多Agent协作",
+        "parent_id": "zt-8d7903042806"
+      },
+      {
+        "id": "zt-c56da7bb87be",
+        "name": "工具使用与代码",
+        "path": "02 AI方法 / 语言模型与 Agent / 工具使用与代码",
+        "parent_id": "zt-8d7903042806"
+      },
+      {
+        "id": "zt-ee3b08afc0ed",
+        "name": "推理与规划",
+        "path": "02 AI方法 / 语言模型与 Agent / 推理与规划",
+        "parent_id": "zt-8d7903042806"
+      },
+      {
+        "id": "zt-ebc110d5a04c",
+        "name": "自主科研系统",
+        "path": "02 AI方法 / 语言模型与 Agent / 自主科研系统",
+        "parent_id": "zt-8d7903042806"
+      },
+      {
+        "id": "zt-5bd5fa65894f",
+        "name": "记忆、RAG与知识处理",
+        "path": "02 AI方法 / 语言模型与 Agent / 记忆、RAG与知识处理",
+        "parent_id": "zt-8d7903042806"
+      },
+      {
+        "id": "zt-f4a0d0a976e3",
+        "name": "03 数据集与评测",
+        "path": "03 数据集与评测",
+        "parent_id": null
+      },
+      {
+        "id": "zt-2757093684e8",
+        "name": "数据资源",
+        "path": "03 数据集与评测 / 数据资源",
+        "parent_id": "zt-f4a0d0a976e3"
+      },
+      {
+        "id": "zt-9a76bce93770",
+        "name": "实验、表征与工艺",
+        "path": "03 数据集与评测 / 数据资源 / 实验、表征与工艺",
+        "parent_id": "zt-2757093684e8"
+      },
+      {
+        "id": "zt-fe34282c36c8",
+        "name": "材料结构、性质与计算",
+        "path": "03 数据集与评测 / 数据资源 / 材料结构、性质与计算",
+        "parent_id": "zt-2757093684e8"
+      },
+      {
+        "id": "zt-492dbeb532b4",
+        "name": "科学文献与知识",
+        "path": "03 数据集与评测 / 数据资源 / 科学文献与知识",
+        "parent_id": "zt-2757093684e8"
+      },
+      {
+        "id": "zt-716b73b44c24",
+        "name": "训练指令、工具与轨迹",
+        "path": "03 数据集与评测 / 数据资源 / 训练指令、工具与轨迹",
+        "parent_id": "zt-2757093684e8"
+      },
+      {
+        "id": "zt-7c24e8fa2f58",
+        "name": "通用AI与多模态",
+        "path": "03 数据集与评测 / 数据资源 / 通用AI与多模态",
+        "parent_id": "zt-2757093684e8"
+      },
+      {
+        "id": "zt-d2cd412eba69",
+        "name": "构建方法与评测可信度",
+        "path": "03 数据集与评测 / 构建方法与评测可信度",
+        "parent_id": "zt-f4a0d0a976e3"
+      },
+      {
+        "id": "zt-138521710b28",
+        "name": "任务与基准构建",
+        "path": "03 数据集与评测 / 构建方法与评测可信度 / 任务与基准构建",
+        "parent_id": "zt-d2cd412eba69"
+      },
+      {
+        "id": "zt-bf3231297921",
+        "name": "指标、评分器与验证",
+        "path": "03 数据集与评测 / 构建方法与评测可信度 / 指标、评分器与验证",
+        "parent_id": "zt-d2cd412eba69"
+      },
+      {
+        "id": "zt-195a3f6f6d10",
+        "name": "数据采集、生成与整理",
+        "path": "03 数据集与评测 / 构建方法与评测可信度 / 数据采集、生成与整理",
+        "parent_id": "zt-d2cd412eba69"
+      },
+      {
+        "id": "zt-c176d3fb8629",
+        "name": "污染、泄漏、稳健性与复现",
+        "path": "03 数据集与评测 / 构建方法与评测可信度 / 污染、泄漏、稳健性与复现",
+        "parent_id": "zt-d2cd412eba69"
+      },
+      {
+        "id": "zt-9513e85a0edc",
+        "name": "评测基准",
+        "path": "03 数据集与评测 / 评测基准",
+        "parent_id": "zt-f4a0d0a976e3"
+      },
+      {
+        "id": "zt-e4e3fa2de1a2",
+        "name": "材料建模与发现",
+        "path": "03 数据集与评测 / 评测基准 / 材料建模与发现",
+        "parent_id": "zt-9513e85a0edc"
+      },
+      {
+        "id": "zt-3e247e081c4e",
+        "name": "科学任务执行与科研Agent",
+        "path": "03 数据集与评测 / 评测基准 / 科学任务执行与科研Agent",
+        "parent_id": "zt-9513e85a0edc"
+      },
+      {
+        "id": "zt-34c2e5f6923a",
+        "name": "科学知识与推理",
+        "path": "03 数据集与评测 / 评测基准 / 科学知识与推理",
+        "parent_id": "zt-9513e85a0edc"
+      },
+      {
+        "id": "zt-875c656b1330",
+        "name": "通用Agent、工具与代码",
+        "path": "03 数据集与评测 / 评测基准 / 通用Agent、工具与代码",
+        "parent_id": "zt-9513e85a0edc"
+      },
+      {
+        "id": "zt-5c69e2a09f67",
+        "name": "通用语言、推理与多模态",
+        "path": "03 数据集与评测 / 评测基准 / 通用语言、推理与多模态",
+        "parent_id": "zt-9513e85a0edc"
+      },
+      {
+        "id": "zt-83ac3b2e6c86",
+        "name": "04 科研软件与计算工作流",
+        "path": "04 科研软件与计算工作流",
+        "parent_id": null
+      }
+    ],
+    "version": "f8ca96dad73cb232b56978384a63d81026ef1008b3efd1a04b13649d8e251653",
+    "last_success": "2026-10-09T05:19:32.042444+00:00",
+    "method": "Local TF-IDF similarity to Zotero collection examples; inferred labels",
+    "classification": {
+      "status": "ok",
+      "classified": 88,
+      "method": "local_tfidf",
+      "unclassified": 32
+    }
+  },
   "sources": [
     {
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
-      "last_success": "2026-10-09T04:18:20.400099+00:00",
+      "last_attempt": "2026-10-09T05:19:32.042444+00:00",
+      "last_success": "2026-10-09T05:19:32.042444+00:00",
       "status": "ok",
       "count": 11
     },
@@ -2521,8 +3953,8 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
-      "last_success": "2026-10-09T04:18:20.400099+00:00",
+      "last_attempt": "2026-10-09T05:19:32.042444+00:00",
+      "last_success": "2026-10-09T05:19:32.042444+00:00",
       "status": "ok",
       "count": 0
     },
@@ -2530,8 +3962,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
-      "last_success": "2026-10-09T04:18:20.400099+00:00",
+      "last_attempt": "2026-10-09T05:19:32.042444+00:00",
+      "last_success": "2026-10-09T05:19:32.042444+00:00",
       "status": "ok",
       "count": 9
     },
@@ -2539,8 +3971,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
-      "last_success": "2026-10-09T04:18:20.400099+00:00",
+      "last_attempt": "2026-10-09T05:19:32.042444+00:00",
+      "last_success": "2026-10-09T05:19:32.042444+00:00",
       "status": "ok",
       "count": 12
     },
@@ -2548,8 +3980,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
-      "last_success": "2026-10-09T04:18:20.400099+00:00",
+      "last_attempt": "2026-10-09T05:19:32.042444+00:00",
+      "last_success": "2026-10-09T05:19:32.042444+00:00",
       "status": "ok",
       "count": 7
     },
@@ -2557,8 +3989,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
-      "last_success": "2026-10-09T04:18:20.400099+00:00",
+      "last_attempt": "2026-10-09T05:19:32.042444+00:00",
+      "last_success": "2026-10-09T05:19:32.042444+00:00",
       "status": "ok",
       "count": 1
     },
@@ -2566,8 +3998,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
-      "last_success": "2026-10-09T04:18:20.400099+00:00",
+      "last_attempt": "2026-10-09T05:19:32.042444+00:00",
+      "last_success": "2026-10-09T05:19:32.042444+00:00",
       "status": "ok",
       "count": 12
     },
@@ -2575,8 +4007,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
-      "last_success": "2026-10-09T04:18:20.400099+00:00",
+      "last_attempt": "2026-10-09T05:19:32.042444+00:00",
+      "last_success": "2026-10-09T05:19:32.042444+00:00",
       "status": "ok",
       "count": 2
     },
@@ -2584,8 +4016,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
-      "last_success": "2026-10-09T04:18:20.400099+00:00",
+      "last_attempt": "2026-10-09T05:19:32.042444+00:00",
+      "last_success": "2026-10-09T05:19:32.042444+00:00",
       "status": "ok",
       "count": 0
     },
@@ -2593,8 +4025,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
-      "last_success": "2026-10-09T04:18:20.400099+00:00",
+      "last_attempt": "2026-10-09T05:19:32.042444+00:00",
+      "last_success": "2026-10-09T05:19:32.042444+00:00",
       "status": "ok",
       "count": 12
     },
@@ -2602,8 +4034,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
-      "last_success": "2026-10-09T04:18:20.400099+00:00",
+      "last_attempt": "2026-10-09T05:19:32.042444+00:00",
+      "last_success": "2026-10-09T05:19:32.042444+00:00",
       "status": "ok",
       "count": 3
     },
@@ -2611,8 +4043,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
-      "last_success": "2026-10-09T04:18:20.400099+00:00",
+      "last_attempt": "2026-10-09T05:19:32.042444+00:00",
+      "last_success": "2026-10-09T05:19:32.042444+00:00",
       "status": "ok",
       "count": 0
     },
@@ -2620,8 +4052,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-10-09T04:18:20.400099+00:00",
-      "last_success": "2026-10-09T04:18:20.400099+00:00",
+      "last_attempt": "2026-10-09T05:19:32.042444+00:00",
+      "last_success": "2026-10-09T05:19:32.042444+00:00",
       "status": "ok",
       "count": 12
     },
@@ -2630,7 +4062,7 @@
       "name": "Zotero 为你推荐",
       "status": "pending",
       "message": "等待论文任务导出；已归档论文仍可阅读",
-      "last_attempt": "2026-10-09T04:18:20.400099+00:00"
+      "last_attempt": "2026-10-09T05:19:32.042444+00:00"
     }
   ],
   "summaries": {
