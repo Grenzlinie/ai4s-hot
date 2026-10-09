@@ -22,7 +22,7 @@ import trafilatura
 
 UTC = timezone.utc
 NOW = datetime.now(UTC)
-HEADERS = {"User-Agent": "AI4S-Hot/1.0 (https://github.com/Grenzlinie/zotero-arxiv-daily)", "Accept": "application/json,text/html,application/xml;q=0.9,*/*;q=0.8"}
+HEADERS = {"User-Agent": "AI4S-Hot/1.0 (https://github.com/Grenzlinie/ai4s-hot)", "Accept": "application/json,text/html,application/xml;q=0.9,*/*;q=0.8"}
 SCIENCE = {
     "materials": ("material", "crystal", "solid-state", "interatomic", "machine learning potential", "材料", "催化", "electrolyte"),
     "chemistry": ("molecul", "chemistry", "chemical", "cataly", "化学", "分子"),
@@ -393,7 +393,7 @@ def run(args):
         payload, papers = paper_export(args.paper_export)
         merge(items, papers)
         fresh = datetime.fromisoformat(payload["generated_at"]) >= NOW - timedelta(hours=36)
-        statuses.append({"id": "zotero", "name": "Zotero 为你推荐", "status": "ok" if fresh else "pending", "count": len(papers), "last_attempt": NOW.isoformat(), "last_success": payload["generated_at"], "run_id": payload.get("run_id"), "url": "https://github.com/Grenzlinie/zotero-arxiv-daily/actions/workflows/main.yml"})
+        statuses.append({"id": "zotero", "name": "Zotero 为你推荐", "status": "ok" if fresh else "pending", "count": len(papers), "last_attempt": NOW.isoformat(), "last_success": payload["generated_at"], "run_id": payload.get("run_id"), "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"})
     else:
         old = old_status.get("zotero", {})
         statuses.append({**old, "id": "zotero", "name": "Zotero 为你推荐", "status": "pending", "message": "等待论文任务导出；已归档论文仍可阅读", "last_attempt": NOW.isoformat()})
