@@ -18,19 +18,25 @@
   <nav aria-label="主要导航"><button id="home" class="nav-button active">发现</button><button id="saved" class="nav-button">收藏 <span id="saved-count">0</span></button><a href="https://github.com/Grenzlinie/ai4s-hot" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
 </header>
 <div class="layout">
-  <aside class="rail" aria-label="内容筛选">
+  <button id="topic-toggle" class="topic-toggle" aria-expanded="false" aria-controls="topic-drawer">主题与来源筛选</button>
+  <div id="drawer-backdrop" class="drawer-backdrop" hidden></div>
+  <aside id="topic-drawer" class="rail" aria-label="内容筛选">
+    <button id="drawer-close" class="drawer-close" aria-label="关闭主题筛选">关闭 ×</button>
     <div class="rail-title" id="topic-heading">阅读方向</div>
-    <div id="topics" class="topics"></div>
+    <label class="sr-only" for="topic-search">搜索主题目录</label><input id="topic-search" class="topic-search" type="search" placeholder="搜索主题目录…">
+    <div class="tree-tools"><button id="expand-all">展开全部</button><button id="collapse-all">折叠全部</button></div>
+    <p class="count-note">数量：当前 / 全部归档</p><div id="topics" class="topics"></div>
     <div class="rail-title source-title">按来源阅读</div>
     <label class="sr-only" for="source">选择来源</label><select id="source"><option value="">所有来源</option></select>
     <div class="rail-note">论文、技术报告与代码更新持续归档。<br>收藏与已读保存在当前浏览器。</div>
-    <button id="export-saved" class="text-button">导出收藏</button>
+    <button id="export-saved" class="text-button">导出收藏</button><br><button id="export-corrections" class="text-button">导出本机分类修正</button><br><label class="text-button">导入本机修正 <input id="import-corrections" type="file" accept="application/json" class="sr-only"></label>
   </aside>
   <main id="stream">
     <section class="intro">
       <div class="issue"><span class="dot"></span><span id="updated">正在读取归档</span></div>
       <h1>把错过的进展，接着读。</h1>
       <p>从科学发现到模型与工具，留住值得回看的研究进展。</p>
+      <p id="classification-version" class="count-note"></p>
       <div class="intro-bottom"><span id="coverage">正在加载来源</span><button id="health-toggle" class="text-button" aria-expanded="false" aria-controls="health">查看来源状态</button></div>
     </section>
     <section id="health" class="health" hidden aria-label="来源采集状态"></section>
@@ -44,11 +50,13 @@
       <div class="channel-row"><div id="channels" class="channels" aria-label="内容频道"></div><label class="unread"><input id="unread" type="checkbox">只看未读</label></div>
     </section>
     <div class="results-header"><h2 id="results-title">进展时间线</h2><span id="result-count" role="status" aria-live="polite"></span><button id="clear" class="text-button">重置筛选</button></div>
+    <div id="active-filters" class="active-filters" aria-label="生效的筛选条件"></div>
     <div id="entries"><div class="loading" role="status">正在加载研究归档…</div></div>
     <button id="load-more" class="load-more" hidden>继续阅读</button>
     <footer><span>摘要用于快速筛选，结论与细节请查看原文。<br>“收录日期”指本站首次发现时间；“发表日期”来自原始来源。</span><a href="https://github.com/Grenzlinie/ai4s-hot/tree/main/site" id="source-code" target="_blank" rel="noopener noreferrer">开源代码与采集规则</a></footer>
   </main>
 </div>
+<dialog id="correction-dialog" aria-labelledby="correction-heading"><form method="dialog"><h2 id="correction-heading">修正研究主题</h2><p>修正立即保存在当前浏览器。导出后由维护者审核、提交和发布，才会应用到全站；不会修改 Zotero。</p><div id="correction-options"></div><label>公开理由 <input id="correction-reason" maxlength="300" placeholder="请填写公开的分类依据" required></label><div class="dialog-actions"><button value="cancel">取消</button><button id="correction-save" type="button">保存到本机</button></div></form></dialog>
 <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 </body>
 </html>

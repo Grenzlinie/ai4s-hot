@@ -14,7 +14,7 @@
 - 先读 `openspec/config.yaml`、`openspec/README.md` 和相关已实现 spec。
 - 新的功能或行为变化进入 `openspec/changes/<change>/`，包含 proposal、design、delta specs、tasks。
 - 设计轮只维护方案；实施轮依据 change 的任务推进，用户的实施请求决定授权范围。
-- 本次活跃方案：`improve-zotero-topic-classification`。当前 v2 为影子实施，人工质量验收待完成；默认生产分类仍为 v1。任务状态以 tasks.md 与 evidence.md 为准，不能把结构校验或逻辑测试写成分类质量达标。
+- 本次活跃方案：`improve-zotero-topic-classification`。用户于2026-10-09明确要求直接采用v2，取消人工大样本标注作为上线门槛；质量标为unmeasured，保留后续量化任务。生产目标为默认v2，实际部署状态以manifest与运行收据为准。任务状态以 tasks.md 与 evidence.md 为准，不能把结构校验或逻辑测试写成分类质量达标。
 - 验收证据区分：OpenSpec 结构校验、离线逻辑测试、冻结标注集质量、真实浏览器、GitHub Actions 和线上读回。
 - 实施完成且证据齐全后再 archive，更新 `openspec/specs`；不得提前合并未来需求为已实现行为。
 - 代码变更执行相称的独立测试；只有变更、失败或未解决疑点时重复扩大检查。

@@ -123,6 +123,8 @@ class V2CoreAcceptance(unittest.TestCase):
             result,_=self.run_classifier(self.root(tmp,'fusion'),items,corpus)
         self.assertEqual(result['status'],'degraded')
         self.assertEqual(items[0]['topic_backend'],'degraded_lexical')
+        self.assertEqual(items[0]['topic_method'],'local_lexical_v2')
+        self.assertTrue(all(label['method']=='local_lexical_v2' for label in items[0]['topic_labels']))
 
     def test_t12_public_receipt_never_contains_private_reference(self):
         items=[paper('MOF research','A research study examines gas adsorption in a metal-organic framework with molecular simulations.')]

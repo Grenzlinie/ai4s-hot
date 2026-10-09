@@ -1,3 +1,5 @@
+> 2026-10-09 用户最新 annotation 选择：直接采用新版分类作为默认版本，不设置 opt-in/selector；取消大批人工 gold 的上线前置门槛。质量状态为 unmeasured，不宣称90%或其他准确率。人工标注、dev校准及holdout准确率保留为后续独立量化工作，不假称完成；技术、隐私、真实浏览器、runtime、原生Pages与回滚/HTTP验收仍须通过。
+
 ## MODIFIED Requirements
 
 ### Requirement: Collection projection
@@ -34,3 +36,10 @@ The system SHALL 为旧公共ID提供明确别名和迁移结果，保留删除�
 #### Scenario: Old URL and retired topic
 - **WHEN** 用户访问旧主题ID或一个已删除的主题
 - **THEN** 唯一旧ID映射到新ID；删除主题显示已归档状态及历史内容，不猜测另一个同名主题
+
+### Requirement: Daily default taxonomy retention
+The system SHALL 在默认v2每日更新中保留有效目录与分类快照，记录最近成功时间，并保持上一有效版本可恢复；新版直接采用不放宽私有身份边界。
+
+#### Scenario: Daily sync failure after adoption
+- **WHEN** 默认v2上线后的每日目录读取或迁移失败
+- **THEN** 不把有效目录覆盖为空，最近有效快照继续可读且失败状态可辨识，collection key和身份盐仍不公开

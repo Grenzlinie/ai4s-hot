@@ -1,0 +1,30 @@
+{
+  "tested_at": "2026-10-09T06:04:55.357Z",
+  "browser": "154.0.8037.99",
+  "origin": "http://127.0.0.1:8765",
+  "mode": "same-origin route fulfillment swaps static version locally, public archive unchanged; production untouched",
+  "rollback_commit": "f085ba682202a8e4ce0a0cdc24d1392b53064845",
+  "checks": [
+    "current UI state prepared",
+    "rollback served f085ba6 UI",
+    "same-origin local state unchanged through rollback",
+    "rollback favorites and read remain visible",
+    "new filter URL string retained during rollback",
+    "current UI restored",
+    "new URL filters restored after forward deployment",
+    "favorites and read retained after restore",
+    "local correction restored after forward deployment"
+  ],
+  "limitations": [
+    "f085ba6 UI does not parse the new q/topics URL parameters; while rolled back filters require manual reselection. The URL string and browser local state remain retained."
+  ],
+  "sha256": {
+    "old_app": "873a0470338824f64f0551e09c585955e01bbb9093052e74c382b4cf63f9733a",
+    "restored_app": "35a27dac9ad40f3eca3af34333e8117d994a9f67f1e2faa4c3e530b9c1783f85"
+  },
+  "preserved_local_storage_keys": [
+    "ai4s-read",
+    "ai4s-saved",
+    "ai4s-topic-corrections"
+  ]
+}

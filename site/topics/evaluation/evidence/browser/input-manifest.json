@@ -1,0 +1,12 @@
+{
+  "tested_source_sha256": {
+    "site/static/app.js": "35a27dac9ad40f3eca3af34333e8117d994a9f67f1e2faa4c3e530b9c1783f85",
+    "site/static/index.html": "d2beacb320c434e8da02d31d67218af9b01393ec3cc918cf398f1c47285c9fae",
+    "site/static/style.css": "ba464cdfd10604db0335151b4f0ca0902508b827303ae3119a0c9eaedf317263",
+    "/tmp/ai4s-preview/data/index.json": "e863f6bad2cda36d6702b6efb2c07ca2898af42d860cab6c8dce95d305aca422"
+  },
+  "archive_items": 106,
+  "mode": "real headless installed Google Chrome, playwright-core, local HTTP public archive",
+  "note": "Browser UI acceptance only; does not establish classifier quality or production deployment. Native CUA failed; headless Chrome succeeded.",
+  "classification_evidence_regression": "Legacy v1 record without labels/status displays pending, not classified; 3 new assertions passed."
+}

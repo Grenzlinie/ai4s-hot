@@ -19,6 +19,8 @@ def atomic_write(path,payload):
 
 def run(args):
     payload=json.loads(Path(args.input).read_text())
+    if payload.get('schema_version')==1 and args.item:
+        raise ValueError('Complete the v1-to-v2 migration before selecting individual items')
     os.environ['TOPICS_MODE']='v2'
     taxonomy,corpus=read_taxonomy(payload.get('taxonomy',{}),payload['generated_at'])
     if taxonomy.get('status')!='ok': raise ValueError('Cannot backfill without a fresh valid taxonomy')
@@ -27,6 +29,9 @@ def run(args):
     for p in payload['items']:
         p['topic_leaf_ids']=[aliases.get(t,t) for t in p.get('topic_leaf_ids',[])]
         p['topic_ids']=[aliases.get(t,t) for t in p.get('topic_ids',[])]
+        for label in p.get('topic_labels',[]):
+            label['id']=aliases.get(label['id'],label['id'])
+            label['facet']=aliases.get(label['facet'],label['facet'])
     selected=[p for p in payload['items'] if not args.item or p['id'] in args.item]
     overrides_path=Path(__file__).parent/'topics'/'overrides.json'
     overrides=json.loads(overrides_path.read_text()) if overrides_path.exists() else {'schema_version':1,'overrides':[]}

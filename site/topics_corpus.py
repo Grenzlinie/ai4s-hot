@@ -4,11 +4,22 @@ from collections import defaultdict
 from topics_v1 import title_key
 
 
+def arxiv_identifiers(row):
+    """Require an explicit field or arXiv prefix; DOI numeric suffixes are not IDs."""
+    result=set()
+    bare=re.fullmatch(r'\s*(\d{4}\.\d{4,5})(?:v\d+)?\s*',str(row.get('arxiv_id','')),re.I)
+    if bare:result.add(bare.group(1))
+    text=' '.join(str(row.get(k,'')) for k in ('arxiv_id','url','pdf_url','extra'))
+    patterns=(r'(?<![\w/])(?:https?://)?(?:www\.)?arxiv\.org/(?:abs|pdf)/(\d{4}\.\d{4,5})(?:v\d+)?(?:\.pdf)?(?![\w.])',
+              r'(?<![\w/])arxiv(?:\s+ID)?\s*:\s*(\d{4}\.\d{4,5})(?:v\d+)?(?![\w.])')
+    for pattern in patterns:result.update(re.findall(pattern,text,re.I))
+    return result
+
 def identities(row):
     text = ' '.join(str(row.get(k, '')) for k in ('doi', 'DOI', 'arxiv_id', 'url', 'extra'))
     doi = re.search(r'10\.\d{4,9}/[^\s<>"\]]+', text, re.I)
-    arxiv = re.search(r'(?:arxiv(?:\.org/(?:abs|pdf)/|:)?\s*)?(\d{4}\.\d{4,5})(?:v\d+)?', text, re.I)
-    return {k:v for k,v in [('doi',doi.group().rstrip('.,').lower() if doi else None),('arxiv',arxiv.group(1) if arxiv else None)] if v}
+    arxiv = sorted(arxiv_identifiers(row))
+    return {k:v for k,v in [('doi',doi.group().rstrip('.,').lower() if doi else None),('arxiv',arxiv[0] if arxiv else None)] if v}
 
 
 def prepare(corpus):

@@ -1,4 +1,4 @@
-"""Compatibility boundary for v1 and opt-in shadow/v2 topic classification."""
+"""Compatibility boundary for legacy v1 and production v2 topic classification."""
 import os
 from pyzotero import zotero
 from topics_v1 import collection_tree,topic_ancestors,tokens,title_key,normalize

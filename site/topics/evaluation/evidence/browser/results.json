@@ -1,0 +1,37 @@
+{
+  "browser": "154.0.8037.99",
+  "tested_at": "2026-10-09T06:04:53.107Z",
+  "url": "http://127.0.0.1:8765/",
+  "viewports": [
+    1440,
+    390
+  ],
+  "checks": [
+    "desktop 1440 no horizontal overflow",
+    "desktop sidebar visible",
+    "four research roots rendered",
+    "topic selection in URL",
+    "query serialized",
+    "browser back restores selection",
+    "browser forward restores query",
+    "tree keyboard expansion",
+    "tree keyboard navigation retains tree focus",
+    "topic search narrows visible names",
+    "favorite retained on reload",
+    "unread filter excludes marked item",
+    "correction dialog opened",
+    "local correction shown",
+    "correction persists reload",
+    "correction export public schema",
+    "mobile 390 no horizontal overflow",
+    "mobile drawer initially hidden",
+    "mobile drawer visible",
+    "drawer focus enters close control",
+    "drawer reverse focus trap",
+    "drawer forward focus wrap",
+    "Escape closes drawer",
+    "drawer focus returns trigger",
+    "no runtime page errors"
+  ],
+  "page_errors": []
+}

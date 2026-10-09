@@ -53,3 +53,7 @@ benchmark 将 200 条公开输入的同源参考也排除、去重后取 500 条
 `fine_applicable=false` 只允许 `scope=research,status=broad_only`，且每个可接受集合必须包含明确父类；非研究、证据不足和目录缺口不能借此退出细类 FP/FN 分母。`insufficient_evidence`、`taxonomy_gap` 的研究标签必须为空。`reviewed_at` 必须是带时区的 ISO timestamp；领域白名单与 catalog 一致，仅 `web:materials/web:chemistry/web:life_sciences/web:general_ai`，不允许任意 `web:*` 或重复项。
 
 `private_exclusion_verified` 收据必须同时绑定 `dataset_sha256` **和** `predictions_sha256`，并含 `reviewer,pass=true`。预测 hash 取 `digest([adapt_prediction(p) for p in predictions])`，即规范字段和内容性质名字空间转换后的完整预测数组；`predict_evaluation.py` 的聚合收据已包含该 hash。`independent_review_verified` 绑定冻结 dataset，因人工 gold 复核不依赖具体预测。缺失、另一组预测或 hash 不符都会 failclosed。采用稳定 ID 对齐后的 dataset/预测时，独立收据也须重新绑定对齐后版本。
+
+### v1 与 v2 的共同输入边界
+
+评估入口的两个 backend 均通过 v2 reader 取得稳定公开目录及包含 DOI/arXiv/URL 的完整私有参考，再按相同 holdout 身份/标题 aliases 在内存中排除同源参考。随后分别直接调用 `topics_v1.classify` 与 `classify_v2`。因此 v1 baseline 表示“旧分类算法在共同稳定 ID、共同可发布目录范围及排除后的参考资料上重跑”，而非未经范围校正的生产旧归档，也不改变生产 v1 读取逻辑。这样即使私有参考与留出条目标题不同、但 DOI/arXiv 相同，也会在任一算法执行前排除。收据注明 `taxonomy_reader=v2_shared_identity` 与比较范围；不导出私有标识或文本。

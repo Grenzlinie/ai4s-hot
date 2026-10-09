@@ -6,3 +6,12 @@ margin: 0.035
 max_per_facet: 2
 min_coverage: 0.12
 calibration_status: pending_human_gold
+facet_thresholds:
+  01 材料研究:
+    min_score: 0.24
+  02 AI方法:
+    min_score: 0.24
+  03 数据集与评测:
+    min_score: 0.24
+  04 科研软件与计算工作流:
+    min_score: 0.24

@@ -24,6 +24,14 @@
 
 生产新增 `topics_catalog.validate_catalog/load_catalog` 后，独立新增 `test_catalog.py`，6/6 通过：实际53项 catalog 合法；私有未知字段、重复路径、空定义、非法/重复 terms、状态/rules 枚举及 website facet ID 边界均拒绝，错误消息不含注入的私有值。classifier 的简化 fixture 已补齐合法 schema，没有绕过 validator；受影响核心测试21/21 通过。该证据证明结构验证，不证明定义内容的分类准确率。
 
+新增按轴阈值和语义后端合成回归 `test_thresholds.py`，7/7 通过：各轴 min_score/relative_score/margin/quota 独立生效、其他轴不占配额、非法数值/枚举/未知轴/私有字段拒绝、阈值变更使缓存失效、非法配置在候选执行前停止；省略 backend 的 lexical 默认经回归发现并修复。semantic/fusion 在低词语 coverage 下仍能依据语义候选决策、method 记录实际后端，语义分数限制在[0,1]；依赖失败的 degraded 结果记录 lexical method。受影响核心测试21/21再次通过。语义模型全程 mock，未下载或调用模型；没有校准阈值或证明质量提升。
+
+回滚准备独立验证：`test_deployment_contract.py` 6/6 通过，随后全量 Python 离线测试141/141通过。覆盖新UI支持v1/v2、legacy UI仅支持v1且在生成目录前拒绝v2、40hex immutable revision、精确asset/index SHA256、无LLM请求标记、标签facet根/score有限范围/closure/枚举校验。发现并修复 manifest 的v1 classification私有字段旁路；build与manifest均验证公开archive，两个schema的私有注入拒绝。静态审查 `pages-restore.yml` 确认默认仅build review artifact，只有显式publish才上传Pages并deploy；build只读contents且未引用Secrets或执行采集/LLM。此证据仍不是原生Actions回滚执行收据。
+
+最终迁移契约回归：`test_shadow_safety.py` 10/10通过。v2显式标签必须一对一公开receipt，v1允许缺省；首次v1→v2按item局部迁移在读取私有源之前拒绝且不产出文件。合法v2 selective backfill仅分类选中item，完整迁移所有已有receipt的id/facet，未选item公开reason/score/method等原样保留。
+
+用户授权直接采用v2后，独立新增实际模块集成 `test_v2_publication_integration.py`：2/2通过。仅mock Zotero与新闻输入，真实执行 collector→v2 identity/classifier→公开schema验证→build→manifest，确认schema2、exact标签receipt、quality_status=unmeasured、calibration_status=pending_human_gold与私有sentinel不公开。workflow静态验证TOPICS_MODE=v2/私密配置Secret已传入、build成功后才commit site-data、manifest成功后才上传Pages，无always绕过。最后全套Python148/148通过、前端行为29断言与explorer37断言通过。失败不覆盖远端快照仅由workflow步骤顺序和默认success guard证明，未执行远端故障注入；未部署、提交或读取真实凭据，浏览器/Pages/原生Actions仍由主Agent验收。
+
 ## 待补证据
 
 - 人工确认gold（目前0）、四轴阳性支持/非研究支持、独立复核、同源排除、v1同输入基线、dev选择依据、冻结holdout指标。

@@ -1,3 +1,5 @@
+> 2026-10-09 用户最新 annotation 选择：直接采用新版分类作为默认版本，不设置 opt-in/selector；取消大批人工 gold 的上线前置门槛。质量状态为 unmeasured，不宣称90%或其他准确率。人工标注、dev校准及holdout准确率保留为后续独立量化工作，不假称完成；技术、隐私、真实浏览器、runtime、原生Pages与回滚/HTTP验收仍须通过。
+
 ## MODIFIED Requirements
 
 ### Requirement: Hierarchical topic navigation
@@ -45,3 +47,10 @@ The system SHALL 区分网站领域标签与Zotero目录，展示推断状态、
 #### Scenario: Low confidence
 - **WHEN** 条目被拒绝细分类或只有父主题
 - **THEN** 显示具体原因及可用操作，而非统一显示无解释的待分类
+
+### Requirement: Direct default version visibility
+The system SHALL 在技术门禁通过后直接向访客展示v2分类并明确“准确率尚未量化”，不新增试用selector；旧URL、刷新和历史导航 SHALL 保持稳定ID迁移及本机收藏/已读状态。
+
+#### Scenario: Direct visit and refresh
+- **WHEN** 访客直接访问、刷新或打开旧主题URL
+- **THEN** 默认使用v2，无需主动切换，未量化说明可见且已有阅读状态不丢失

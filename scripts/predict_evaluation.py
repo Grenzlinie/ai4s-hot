@@ -19,9 +19,17 @@ def atomic_public(path,payload):
         if temporary.exists():temporary.unlink()
 
 def predict(dataset, split, backend, overrides=None):
-    start=time.monotonic();os.environ['TOPICS_MODE']='v2' if backend=='v2' else 'v1'
+    start=time.monotonic()
     from site_topics import read_taxonomy
-    taxonomy,private_references=read_taxonomy(dataset['taxonomy'],datetime.now(timezone.utc).isoformat())
+    # Both algorithms receive the same complete identity-bearing private evidence.
+    # Production v1 reading remains untouched; only this evaluation reader uses v2.
+    previous_mode=os.environ.get('TOPICS_MODE')
+    os.environ['TOPICS_MODE']='v2'
+    try:
+        taxonomy,private_references=read_taxonomy(dataset['taxonomy'],datetime.now(timezone.utc).isoformat())
+    finally:
+        if previous_mode is None:os.environ.pop('TOPICS_MODE',None)
+        else:os.environ['TOPICS_MODE']=previous_mode
     network_seconds=time.monotonic()-start
     if taxonomy.get('status')!='ok':raise ValueError('Fresh valid taxonomy is required')
     safe_references,exclusion=exclude_holdout_references(dataset['records'],private_references)
@@ -44,7 +52,7 @@ def predict(dataset, split, backend, overrides=None):
         from topics_v1 import classify
         result=classify(items,taxonomy,safe_references)
     predictions=[adapt_prediction(item) for item in items]
-    receipt={'schema_version':1,'dataset_sha256':digest(dataset),'predictions_sha256':digest(predictions),'split':split,'backend':backend,'public_item_n':len(items),'reference_exclusion':exclusion,'holdout_override_excluded_n':sum(r['item_id'] in held for r in original['overrides']),'private_reference_overlap_after':0,'override_overlap_after':0,'taxonomy_version':taxonomy.get('version'),'algorithm':result.get('algorithm',backend),'network_seconds':round(network_seconds,4),'classification_seconds':round(time.monotonic()-classify_start,4),'total_seconds':round(time.monotonic()-start,4),'gold_consumed':False}
+    receipt={'schema_version':1,'dataset_sha256':digest(dataset),'predictions_sha256':digest(predictions),'split':split,'backend':backend,'taxonomy_reader':'v2_shared_identity','comparison_scope':'algorithm_on_common_stable_taxonomy_and_excluded_references','training_reference_n':len(safe_references),'public_item_n':len(items),'reference_exclusion':exclusion,'holdout_override_excluded_n':sum(r['item_id'] in held for r in original['overrides']),'private_reference_overlap_after':0,'override_overlap_after':0,'taxonomy_version':taxonomy.get('version'),'algorithm':result.get('algorithm',backend),'network_seconds':round(network_seconds,4),'classification_seconds':round(time.monotonic()-classify_start,4),'total_seconds':round(time.monotonic()-start,4),'gold_consumed':False}
     return predictions,receipt,taxonomy
 
 def main():

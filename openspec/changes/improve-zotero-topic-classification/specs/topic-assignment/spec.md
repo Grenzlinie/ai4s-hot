@@ -1,3 +1,5 @@
+> 2026-10-09 用户最新 annotation 选择：直接采用新版分类作为默认版本，不设置 opt-in/selector；取消大批人工 gold 的上线前置门槛。质量状态为 unmeasured，不宣称90%或其他准确率。人工标注、dev校准及holdout准确率保留为后续独立量化工作，不假称完成；技术、隐私、真实浏览器、runtime、原生Pages与回滚/HTTP验收仍须通过。
+
 ## MODIFIED Requirements
 
 ### Requirement: Local topic assignment
@@ -17,7 +19,7 @@ The system SHALL 分别评估材料对象、AI方法、数据评测及科研软�
 
 #### Scenario: Similarity prediction
 - **WHEN** 公开条目有有效类别定义及参考证据
-- **THEN** 分研究维度生成候选、按校准标准接受或拒绝细类，并生成有效祖先，不沿用旧版全局top-3阈值作为质量保证
+- **THEN** 分研究维度生成候选、按明确版本化provisional规则接受或拒绝细类，标记质量unmeasured，后续校准不伪装为已完成，并生成有效祖先，不沿用旧版全局top-3阈值作为质量保证
 
 ### Requirement: Private reference boundary
 The system SHALL 仅在受控采集进程内使用私有库文献和参考特征；不得将其写入公开归档、Actions artifacts、共享cache、日志或外部模型请求。公开解释 SHALL 仅来自公开输入和公开类别定义。
@@ -60,3 +62,10 @@ The system SHALL 在迁移或批量重分类失败时保留有效上一版，并
 #### Scenario: Invalid batch output
 - **WHEN** 新归档含未知topic ID或迁移未完成
 - **THEN** 不覆盖正式归档，可回滚到兼容的上一版manifest
+
+### Requirement: Unmeasured default adoption
+The system SHALL 按2026-10-09用户最新annotation在技术门禁通过后默认采用新版分类，明确准确率尚未量化；不将分类分数或逻辑回归转述为真实分类精度，后续开发集校准保留独立未完成状态。
+
+#### Scenario: New default record
+- **WHEN** 用户直接访问已上线新版页面
+- **THEN** 无需opt-in即可读取v2结果，分类状态及未量化说明可见，有效上一版保留供维护者回滚

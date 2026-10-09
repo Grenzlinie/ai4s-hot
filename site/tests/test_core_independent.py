@@ -5,7 +5,7 @@ sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]))
 from topics_corpus import prepare,exact_match
 from topics_decision import decide,DEFAULTS
 from topics_schema import validate_archive
-T=[{'id':'r','parent_id':None,'name':'Root'},{'id':'a','parent_id':'r','name':'Leaf'}]
+T=[{'id':'r','parent_id':None,'name':'Root','path':'Root'},{'id':'a','parent_id':'r','name':'Leaf','path':'Root / Leaf'}]
 class CoreIndependentTests(unittest.TestCase):
     def test_standard_conflict_and_title_ambiguity(self):
         corpus=prepare([{'title':'Same title','text':'Private fixture A','doi':'10.1234/a','topics':['a']},{'title':'Same title','text':'Private fixture B','doi':'10.1234/b','topics':['a']}])
@@ -14,7 +14,7 @@ class CoreIndependentTests(unittest.TestCase):
     def test_multiaxis_not_global_top_three(self):
         topics=[];scores={}
         for i in range(4):
-            topics.extend([{'id':f'r{i}','parent_id':None,'name':'Axis'},{'id':f'l{i}','parent_id':f'r{i}','name':'Leaf'}])
+            topics.extend([{'id':f'r{i}','parent_id':None,'name':'Axis','path':f'Axis {i}'},{'id':f'l{i}','parent_id':f'r{i}','name':'Leaf','path':f'Axis {i} / Leaf'}])
             scores[f'r{i}']={'score':0,'definition_hit':False,'rules':[]};scores[f'l{i}']={'score':.8,'definition_hit':True,'cold_start':False,'rules':[],'public_terms':['scientific']}
         item={'title':'Synthetic scientific experiment','excerpt':'This scientific experiment supplies enough public evidence for each independent axis in the synthetic fixture.','type':'paper'}
         result=decide(item,topics,scores,1,[],DEFAULTS)

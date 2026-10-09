@@ -124,3 +124,44 @@ class GoldBoundaryTests(unittest.TestCase):
         self.assertTrue(verify_external_receipts(evidence,dataset,predictions)['private_exclusion_verified'])
         other=[pred(labels=['b'])];self.assertFalse(verify_external_receipts(evidence,dataset,other)['private_exclusion_verified'])
         evidence['private_exclusion_verified'].pop('predictions_sha256');self.assertFalse(verify_external_receipts(evidence,dataset,predictions)['private_exclusion_verified'])
+
+class SharedIdentityBaselineTests(unittest.TestCase):
+    def test_v1_filters_different_title_same_doi_before_classification(self):
+        import importlib.util,os
+        from unittest.mock import patch
+        script=pathlib.Path(__file__).resolve().parents[2]/'scripts/predict_evaluation.py'
+        spec=importlib.util.spec_from_file_location('shared_identity_baseline',script);module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+        record=row();record['item']['doi']='10.1234/shared'
+        dataset={'taxonomy':T,'records':[record]}
+        refs=[{'title':'Different private published title','doi':'10.1234/shared','text':'PRIVATE_SENTINEL','topics':['a']},{'title':'Unrelated private reference','doi':'10.1234/other','text':'UNRELATED_PRIVATE','topics':['a']}]
+        def reader(*args):
+            self.assertEqual(os.environ['TOPICS_MODE'],'v2')
+            return {**T,'status':'ok','version':'stable-fixture'},refs
+        def baseline(items,taxonomy,corpus):
+            self.assertEqual(taxonomy['version'],'stable-fixture');self.assertEqual(len(corpus),1);self.assertEqual(corpus[0]['doi'],'10.1234/other')
+            self.assertNotIn('gold',items[0]);items[0].update(topic_leaf_ids=[]);return {'status':'ok'}
+        with patch.dict(os.environ,{'TOPICS_MODE':'v1'}),patch('site_topics.read_taxonomy',side_effect=reader),patch('topics_v1.classify',side_effect=baseline):
+            predictions,receipt,_=module.predict(dataset,'holdout','v1')
+            self.assertEqual(os.environ['TOPICS_MODE'],'v1')
+        self.assertEqual(receipt['reference_exclusion']['excluded_holdout_reference_n'],1);self.assertEqual(receipt['training_reference_n'],1);self.assertEqual(receipt['taxonomy_reader'],'v2_shared_identity');self.assertNotIn('PRIVATE',str(receipt)+str(predictions))
+
+class StrictArxivIdentityTests(unittest.TestCase):
+    def test_doi_numeric_suffix_is_not_arxiv_and_does_not_merge(self):
+        from topics_corpus import identities,prepare
+        from topics_evaluate import identity_aliases
+        items=[{'id':str(i),'url':f'https://doi.org/10.{i}/2026.12345','doi':f'10.{i}/2026.12345','title':f'Different title {i}','text':'Synthetic private fixture','topics':['a']} for i in (1234,5678)]
+        for item in items:
+            self.assertNotIn('arxiv',identities(item));self.assertTrue(canonical_id(item).startswith('doi:'));self.assertFalse(any(alias.startswith('arxiv:') for alias in identity_aliases(item)))
+        self.assertEqual(len(prepare(items)),2);self.assertEqual(len(split_records([items[0]],[items[1]])),2)
+    def test_explicit_arxiv_fields_urls_and_extra_are_accepted(self):
+        from topics_corpus import identities
+        from topics_evaluate import identity_aliases
+        examples=[{'arxiv_id':'2601.12345'},{'arxiv_id':'2601.12345v2'},{'url':'https://arxiv.org/abs/2601.12345v3'},{'url':'http://arxiv.org/pdf/2601.12345v2.pdf'},{'extra':'arXiv: 2601.12345v5'},{'extra':'arXiv ID: 2601.12345v6'}]
+        for fields in examples:
+            item={'url':'https://example.org/paper','title':'Synthetic public fixture',**fields}
+            with self.subTest(fields=fields):
+                self.assertEqual(identities(item).get('arxiv'),'2601.12345');self.assertEqual(canonical_id(item),'arxiv:2601.12345');self.assertIn('arxiv:2601.12345',identity_aliases(item))
+    def test_unmarked_numbers_and_lookalike_domains_are_not_arxiv(self):
+        from topics_corpus import identities
+        for fields in ({'url':'https://example.org/2601.12345'},{'extra':'Dataset 2601.12345 version 2'},{'url':'https://notarxiv.org/abs/2601.12345'},{'url':'https://example.org/arxiv.org/abs/2601.12345'}):
+            self.assertNotIn('arxiv',identities(fields))

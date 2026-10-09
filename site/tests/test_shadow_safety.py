@@ -59,7 +59,11 @@ class ShadowSafetyTests(unittest.TestCase):
 class ReclassifySafetyTests(unittest.TestCase):
     def test_selective_backfill_narrows_overrides_and_keeps_alias_migration(self):
         import argparse, topics_reclassify as module
-        p=archive();p['items']=[{'id':i,'title':'Public '+i,'topic_ids':['old'],'topic_leaf_ids':['old']} for i in ('a','b')]
+        p=archive();p['schema_version']=2
+        p['taxonomy']={'topics':[{'id':'old','name':'Public','parent_id':None}]}
+        label={'id':'old','facet':'old','method':'local_lexical_v2','score':.5,'confidence':'low','status':'classified','public_reason':'Retained synthetic public receipt'}
+        p['items']=[{'id':i,'title':'Public '+i,'topic_ids':['old'],'topic_leaf_ids':['old'],'topic_labels':[copy.deepcopy(label)]} for i in ('a','b')]
+        validate_archive(p)
         taxonomy={'topics':[{'id':'r','name':'Public','parent_id':None}],'aliases':{'old':'r'},'status':'ok'}
         records=[{'item_id':i,'topic_ids':['old'],'reason':'Synthetic correction','created_at':'2026-10-09T00:00:00Z','author':'Test','version':1} for i in ('a','b')]
         overrides={'schema_version':1,'overrides':records}
@@ -68,6 +72,8 @@ class ReclassifySafetyTests(unittest.TestCase):
             seen.extend(i['id'] for i in items)
             self.assertEqual([r['item_id'] for r in kwargs['overrides_payload']['overrides']],['a'])
             self.assertEqual(items[0]['topic_ids'],['r'])
+            self.assertEqual(items[0]['topic_labels'][0]['id'],'r')
+            self.assertEqual(items[0]['topic_labels'][0]['facet'],'r')
             return {'status':'ok','classified':1,'unclassified':0}
         original=pathlib.Path.read_text
         original_exists=pathlib.Path.exists
@@ -76,7 +82,21 @@ class ReclassifySafetyTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp,patch.dict(os.environ),patch.object(module,'read_taxonomy',return_value=(taxonomy,[])),patch.object(module,'classify_v2',side_effect=core),patch.object(pathlib.Path,'read_text',reader),patch.object(pathlib.Path,'exists',lambda p: True if p.name=='overrides.json' else original_exists(p)),contextlib.redirect_stdout(io.StringIO()):
             src=pathlib.Path(tmp)/'input.json';src.write_text(json.dumps(p));out=pathlib.Path(tmp)/'output.json'
             module.run(argparse.Namespace(input=src,output=out,item=['a'],force=True))
-            self.assertEqual(seen,['a']);self.assertEqual(json.loads(out.read_text())['items'][1]['topic_leaf_ids'],['r'])
+            self.assertEqual(seen,['a']);saved=json.loads(out.read_text());self.assertEqual(saved['items'][1]['topic_leaf_ids'],['r'])
+            self.assertEqual(saved['items'][1]['topic_labels'],[{**label,'id':'r','facet':'r'}])
+    def test_initial_v1_partial_migration_rejected_before_private_read_or_output(self):
+        import argparse,topics_reclassify as module
+        with tempfile.TemporaryDirectory() as tmp,patch.dict(os.environ),patch.object(module,'read_taxonomy') as reader,patch.object(module,'classify_v2') as core:
+            src=pathlib.Path(tmp)/'input.json';src.write_text(json.dumps(archive()));out=pathlib.Path(tmp)/'output.json'
+            with self.assertRaises(ValueError):module.run(argparse.Namespace(input=src,output=out,item=['public1'],force=True))
+            reader.assert_not_called();core.assert_not_called();self.assertFalse(out.exists())
+    def test_v2_explicit_labels_require_receipts_but_v1_can_omit(self):
+        p=archive();p['items'][0].update(topic_ids=['r'],topic_leaf_ids=['r'])
+        validate_archive(p)
+        p['schema_version']=2
+        with self.assertRaises(ValueError):validate_archive(p)
+        p['items'][0]['topic_labels']=[]
+        with self.assertRaises(ValueError):validate_archive(p)
     def test_atomic_schema_rejection_preserves_previous_file(self):
         from topics_reclassify import atomic_write
         p=archive();p['items'][0]['private_reference']='PRIVATE_SENTINEL'

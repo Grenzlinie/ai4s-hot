@@ -425,7 +425,7 @@ def run(args):
     taxonomy, topic_corpus = site_topics.read_taxonomy(previous.get("taxonomy", {}), NOW.isoformat())
     taxonomy["classification"] = site_topics.classify(all_items, taxonomy, topic_corpus)
     print(f"Topics: {taxonomy['status']}; classification: {taxonomy['classification']['status']}", flush=True)
-    payload = {"schema_version": 1, "generated_at": NOW.isoformat(), "timezone": "Asia/Shanghai", "items": all_items,
+    payload = {"schema_version": 2 if taxonomy.get("identity_version") == "hmac-v1" else 1, "generated_at": NOW.isoformat(), "timezone": "Asia/Shanghai", "items": all_items,
                "taxonomy": taxonomy,
                "sources": sorted(statuses, key=lambda s: s["id"]), "summaries": summary_status,
                "policy": {"lookback_days": config["lookback_days"], "max_items_per_source": config["max_items_per_source"], "alpha_window": "30 days"}}

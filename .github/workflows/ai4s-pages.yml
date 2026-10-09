@@ -70,6 +70,8 @@ jobs:
           CUSTOM_CONFIG: ${{ vars.CUSTOM_CONFIG }}
           ZOTERO_ID: ${{ secrets.ZOTERO_ID }}
           ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
+          ZOTERO_TOPIC_CONFIG: ${{ secrets.ZOTERO_TOPIC_CONFIG }}
+          TOPICS_MODE: v2
         run: python site/collect.py --data-dir "$RUNNER_TEMP/ai4s-state/data" --paper-export "$RUNNER_TEMP/ai4s-papers/papers.json"
       - name: Build static site
         run: python site/build.py --data-dir "$RUNNER_TEMP/ai4s-state/data" --output _site
@@ -81,6 +83,8 @@ jobs:
             git -C "$RUNNER_TEMP/ai4s-state" -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Archive AI4S source metadata'
             git -C "$RUNNER_TEMP/ai4s-state" push origin HEAD:site-data
           fi
+      - name: Record exact deployed archive and assets
+        run: python site/deployment_manifest.py --output _site --code-revision "$GITHUB_SHA" --archive-revision "$(git -C "$RUNNER_TEMP/ai4s-state" rev-parse HEAD)"
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site

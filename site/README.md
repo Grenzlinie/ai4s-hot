@@ -66,3 +66,11 @@ python scripts/configure.py --env .env --config config.local.yaml --run
 ```
 
 凭据和 YAML 也可保存在项目以外的私密目录，通过参数指定路径。同步工具使用标准输入设置 Actions Secrets，YAML 则同步为 `CUSTOM_CONFIG` 变量，同时启用 Zotero 任务。`--run` 会立即触发采集；去掉它仅更新配置。`llm.summary_kwargs` 控制网页两句摘要的输出预算与 reasoning 参数，独立于上游长摘要的 `llm.generation_kwargs`。OpenRouter 的推理 token 也占输出预算，不能用过小的预算导致正文为空。修改本地文件不会自动影响 GitHub，运行同步命令后下一次采集才生效。公开来源及站点采集上限在本地 `site/sources.json` 配置，按普通代码提交更新。无需额外 GitHub token，使用 `gh auth login` 已有身份及 Actions 的内置 token。
+
+## 默认新版分类与回滚
+
+2026-10-09 起生产工作流明确使用 `TOPICS_MODE=v2`，按 Zotero 已发布的四维目录做本地分类。私密参考文献仅在 runner 内处理；公开页面显示分类依据、状态和网站标签，可在本机修正并导出。词语后端为当前默认；语义后端已提供但不据未测质量自动切换。页面标明“准确率尚未量化”，人工标注是后续质量评估工作，不是本次启用条件。
+
+新版支持历史 schema 1 与新版 schema 2 归档。每次部署的 `deployment-manifest.json` 记录精确的代码、公开归档 commit 与资源 hash。每日采集或构建失败时不会提交新归档或发布，仍保留最后一次成功页面；目录读取失败时显示上次目录和最近成功时间。
+
+维护者通过 `Restore public Pages snapshot` 手动工作流恢复快照：填入 manifest 中的完整 `code_revision` 和 `archive_revision`。`publish=false` 先生成审查 artifact，`publish=true` 发布；流程只读取公开快照，不采集、不调用摘要模型、不需要服务密钥。历史前端仅支持 schema 1 时禁止与 schema 2 混搭；可使用当前前端搭配历史归档。浏览器收藏、已读和本机修正按条目 ID 保留；退役主题修正需要复核。

@@ -4,6 +4,7 @@ import hashlib, json, random, re
 from datetime import datetime
 from collections import Counter
 from urllib.parse import urlsplit, urlunsplit
+from topics_corpus import arxiv_identifiers
 
 SEED = 20261009
 SCOPES = {'research', 'non_research', 'unknown'}
@@ -12,10 +13,10 @@ DOMAIN_FACETS = {'web:materials','web:chemistry','web:life_sciences','web:genera
 STATUSES = {'classified', 'broad_only', 'low_confidence', 'insufficient_evidence', 'taxonomy_gap', 'pending', 'error'}
 
 def canonical_id(item):
-    doi = str(item.get('doi', '')).lower().strip()
-    text = ' '.join(str(item.get(k, '')) for k in ('url', 'arxiv_id', 'doi'))
-    match = re.search(r'(?:arxiv\.org/(?:abs|pdf)/)?(\d{4}\.\d{4,5})(?:v\d+)?', text)
-    if match: return 'arxiv:' + match.group(1)
+    doi = str(item.get('doi', item.get('DOI',''))).lower().strip()
+    text = ' '.join(str(item.get(k, '')) for k in ('url', 'arxiv_id', 'doi', 'DOI', 'extra'))
+    arxiv=sorted(arxiv_identifiers(item))
+    if arxiv:return 'arxiv:' + arxiv[0]
     match = re.search(r'10\.\d{4,9}/[^\s?#]+', doi or text, re.I)
     if match: return 'doi:' + match.group(0).rstrip('/').lower()
     url = urlsplit(str(item.get('url', '')))
@@ -74,8 +75,8 @@ def validate_gold(gold, taxonomy):
 
 def identity_aliases(item):
     aliases = {canonical_id(item)}
-    text = ' '.join(str(item.get(k, '')) for k in ('url', 'arxiv_id', 'doi', 'pdf_url'))
-    for ident in re.findall(r'(?:arxiv\.org/(?:abs|pdf)/)?(\d{4}\.\d{4,5})(?:v\d+)?', text): aliases.add('arxiv:' + ident)
+    text = ' '.join(str(item.get(k, '')) for k in ('url', 'arxiv_id', 'doi', 'DOI', 'pdf_url', 'extra'))
+    for ident in arxiv_identifiers(item): aliases.add('arxiv:' + ident)
     for ident in re.findall(r'10\.\d{4,9}/[^\s?#]+', text, re.I): aliases.add('doi:' + ident.rstrip('/').lower())
     title = title_alias(item)
     if title: aliases.add('title:' + title)

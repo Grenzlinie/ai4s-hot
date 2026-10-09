@@ -1,0 +1,74 @@
+name: Restore public Pages snapshot
+on:
+  workflow_dispatch:
+    inputs:
+      frontend_sha:
+        description: 'Full immutable commit containing the desired frontend assets'
+        type: string
+        required: true
+      archive_sha:
+        description: 'Full immutable site-data commit containing the desired public archive'
+        type: string
+        required: true
+      publish:
+        description: 'Publish the restored snapshot (false builds a review artifact only)'
+        type: boolean
+        default: false
+concurrency:
+  group: ai4s-pages
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - name: Validate immutable public revisions
+        env:
+          FRONTEND_SHA: ${{ inputs.frontend_sha }}
+          ARCHIVE_SHA: ${{ inputs.archive_sha }}
+        run: |
+          [[ "$FRONTEND_SHA" =~ ^[0-9a-f]{40}$ ]] && [[ "$ARCHIVE_SHA" =~ ^[0-9a-f]{40}$ ]]
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ inputs.frontend_sha }}
+          path: restore-ui
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install -r site/requirements.txt
+      - name: Restore public archive without collecting or summarizing
+        env:
+          ARCHIVE_SHA: ${{ inputs.archive_sha }}
+        run: |
+          git fetch origin "$ARCHIVE_SHA"
+          git worktree add --detach "$RUNNER_TEMP/restore-state" FETCH_HEAD
+          python site/build.py --data-dir "$RUNNER_TEMP/restore-state/data" --static-dir restore-ui/site/static --output _site
+      - name: Record rollback assets
+        env:
+          FRONTEND_SHA: ${{ inputs.frontend_sha }}
+          ARCHIVE_SHA: ${{ inputs.archive_sha }}
+        run: python site/deployment_manifest.py --output _site --code-revision "$FRONTEND_SHA" --archive-revision "$ARCHIVE_SHA" --builder-revision "$GITHUB_SHA" --mode rollback
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-restore-preview
+          path: _site
+          retention-days: 14
+      - uses: actions/upload-pages-artifact@v4
+        if: inputs.publish
+        with:
+          path: _site
+  deploy:
+    if: inputs.publish
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
