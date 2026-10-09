@@ -46,3 +46,15 @@ node --check site/static/app.js
 ## 复用与许可证
 
 论文逻辑复用 [TideDra/zotero-arxiv-daily](https://github.com/TideDra/zotero-arxiv-daily)，本仓库继续使用 AGPL-3.0。RSS 和网页解析使用 `feedparser`、`trafilatura`。聚合与归档设计参考 [Horizon](https://github.com/Thysrael/Horizon) 和 [osmosfeed](https://github.com/osmoscraft/osmosfeed)，未复制它们的实现。当前版本选择独立的小型采集器，以便直接复用本仓库 Secrets 和上游论文流程，避免额外维护整套新闻推送服务。
+
+## 本地管理模型与凭据
+
+密钥写入本地 `.env` 文件，填入 `OPENAI_API_KEY`、`OPENAI_API_BASE`、`ZOTERO_ID`、`ZOTERO_KEY`，以及可选 alphaXiv / Semantic Scholar key。本地 YAML 保存原上游采集参数，模型位于 `llm.generation_kwargs.model`；当前使用 `deepseek/deepseek-v4.1-flash`。可复制根目录 `config.example.yaml` 为 `config.local.yaml`。`.env` 和 `config.local.yaml` 已加入 Git 忽略。
+
+```bash
+python -m pip install -r site/requirements.txt
+chmod 600 .env config.local.yaml
+python scripts/configure.py --env .env --config config.local.yaml --run
+```
+
+凭据和 YAML 也可保存在项目以外的私密目录，通过参数指定路径。同步工具使用标准输入设置 Actions Secrets，YAML 则同步为 `CUSTOM_CONFIG` 变量，同时启用 Zotero 任务。`--run` 会立即触发采集；去掉它仅更新配置。修改本地文件不会自动影响 GitHub，运行同步命令后下一次采集才生效。公开来源及站点采集上限在本地 `site/sources.json` 配置，按普通代码提交更新。无需额外 GitHub token，使用 `gh auth login` 已有身份及 Actions 的内置 token。

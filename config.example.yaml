@@ -1,0 +1,18 @@
+# Copy to config.local.yaml (ignored by Git) or use your private YAML file.
+# The existing upstream configuration can be retained here in full.
+llm:
+  api:
+    base_url: ${oc.env:OPENAI_API_BASE}
+    key: ${oc.env:OPENAI_API_KEY}
+  language: Chinese
+  generation_kwargs:
+    model: deepseek/deepseek-v4.1-flash
+zotero:
+  user_id: ${oc.env:ZOTERO_ID}
+  api_key: ${oc.env:ZOTERO_KEY}
+source:
+  arxiv:
+    category: [cs.AI, cs.CV, cs.LG, cs.CL, cs.DB, cond-mat.mtrl-sci, physics.comp-ph]
+executor:
+  source: [arxiv]
+  max_paper_num: 100
