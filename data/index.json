@@ -1,8 +1,78 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-10T02:43:33.591615+00:00",
+  "generated_at": "2026-10-11T00:35:52.004734+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
+    {
+      "id": "7236b35a80aaef1f1bd58539",
+      "url": "https://www.semanticscholar.org/paper/300b90dea86b495c4a2f3c60b986c0c5e816e0ab",
+      "title": "Do LLMs Read for Free? Auditing the Open Access Bias in AI-Mediated Science",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-10-10T00:00:00+00:00",
+      "first_seen": "2026-10-11T00:35:52.004734+00:00",
+      "excerpt": "How large language models affect various social activities has been widely discussed; however, how large language models themselves influence the mechanisms of scientific knowledge production remains unclear. To investigate this question, this paper designs a quasi-experimental study based on a large-scale bibliometric dataset. Using a Difference-in-Differences model and analyzing citation records from 64,841 articles across 120 communication journals, we find that the emergence of large language models is associated with a widening of the visibility gap between Open Access (OA) and non-OA articles. Specifically, OA articles experienced a significant post-ChatGPT citation acceleration of approximately 0.84% per month, accumulating to roughly 10% over 12 months. Importantly, this estimate represents a conservative lower bound, as gradual LLM adoption and journal review lags attenuate the measured treatment intensity. The findings are consistent with the view that, while LLMs may promote knowledge dissemination, they also risk exacerbating inequality in academic knowledge production—though the precise mechanism behind this pattern remains an important direction for future research.",
+      "summary": "本文利用120种传播学期刊中64,841篇文章的引文记录并采用双重差分模型，发现大型语言模型出现后开放获取与非开放获取文章之间的可见度差距有所扩大，其中开放获取文章在ChatGPT发布后每月引文增速约提高0.84%，12个月累计约10%，作者称该估计为保守下界。该结果可用于提示科研界和期刊政策制定者关注大型语言模型可能加剧学术知识生产不平等，但原文仅报告关联而非因果机制，且明确机制仍有待未来研究。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Wen-Chang Wang",
+        "Yue Song"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:88f5ef7f6c79483dccdde4317c7916c9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：dataset。"
+        },
+        {
+          "id": "zotero:d4a56870e35078a55f7511a07aac9f6e",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：LLM。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:88f5ef7f6c79483dccdde4317c7916c9",
+        "zotero:d4a56870e35078a55f7511a07aac9f6e"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:88f5ef7f6c79483dccdde4317c7916c9",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d4a56870e35078a55f7511a07aac9f6e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8496,
+      "topic_cache_token": "64f042bb8679aa9d6b825a6c430a0a478f8349e41c8d78ac1258cfc8e686fb89",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
     {
       "id": "570fe3204556675e8dd927e7",
       "url": "https://openai.com/index/sophos",
@@ -1383,6 +1453,138 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "05104d235a1385f77669db06",
+      "url": "https://arxiv.org/abs/2610.12465",
+      "title": "A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-10-08T17:59:50+00:00",
+      "first_seen": "2026-10-11T00:35:52.004734+00:00",
+      "excerpt": "General-purpose robots must perform a wide range of tasks from agile locomotion to dexterous manipulation. While sim-to-real reinforcement learning (RL) has proven to be a useful tool for this goal, current RL pipelines depend on engineering-heavy, per-task structural priors such as shaped rewards and demonstrations. Recent work has shown that diverse simulator resets, combined with massively parallel simulation, can alleviate much of this engineering burden on several manipulation problems. However, we find that naively scaling this paradigm to more precise or dynamic problems remains non-trivial. While simulator resets can help with exploration, uniformly sampling over this distribution wastes a growing fraction of learning experience on task configurations the policy has already mastered or cannot yet attempt. This makes it challenging to see the expected benefits of scaling parallel environments for RL, since much of the learning signal in a batch is wasted during learning. To mitigate this, we introduce Success Guided Sampling (SGS), a simple adaptive sampler that concentrates RL training on task configurations around the frontier of the policy's capabilities. Doing so allows large-scale simulated RL to make the most out of the experience in a batch, enabling much more effective scaling to large-scale parallel simulation. Across experiments using up to $2^{20}$ (over one million) parallel environments, SGS enables RL to solve challenging multi-terrain quadruped locomotion and contact-rich assembly tasks that prior methods fail to solve. Finally, we distill the learned manipulation policies into RGB-based policies and demonstrate zero-shot transfer to several challenging assembly tasks on real hardware. Project website: https://sgs-rl.github.io/.",
+      "summary": "本文提出一种“成功引导采样”（SGS）自适应采样器，用于在大规模并行仿真强化学习中，将训练集中在策略能力前沿附近的任务配置上，以缓解均匀采样造成的经验浪费和探索瓶颈。该方法在四足多地形运动与接触丰富的装配任务中使强化学习能够求解此前方法难以解决的任务，并可将学到的操作策略蒸馏为基于RGB的策略后零样本迁移到真实硬件上的若干装配任务；但摘要未给出具体性能数字，真实硬件迁移效果仍需以原文与项目页面为准。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 8,
+      "authors": [
+        "Octi Zhang",
+        "Mateo Guaman Castro",
+        "Patrick Yin",
+        "Ignacio Dagnino",
+        "Abhishek Gupta",
+        "Rosario Scalise",
+        "Byron Boots"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8352,
+      "topic_cache_token": "f1de023d06684448a260af599e7e8e6cc4cf0661fd056d3194137e448b7e821c",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "1f80a235a3457f87993279d7",
+      "url": "https://arxiv.org/abs/2610.12424",
+      "title": "RoboRSI: Stable, efficient, and reusable robot self-evolution in complex real-world environments",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-08T17:55:12+00:00",
+      "first_seen": "2026-10-11T00:35:52.004734+00:00",
+      "excerpt": "A generalist robot should not only perform diverse tasks but also improve through experience, turning what it learns during execution into capabilities that later tasks can reuse. Robot agents that act through code can already repair programs from execution feedback, yet it remains a central challenge to organize this experience around the task structure that gives it meaning, so that each repair is attributed to the responsible capability, supported by execution evidence, and validated before it is reused. We introduce RoboRSI, a robot self-improvement system built on Top-Down Skill Refinement (TSR). TSR decomposes tasks into compound, atomic, and base skills with scoped responsibilities and explicit input--output contracts, attributes each execution outcome to the responsible branch, and confines revision to that branch. Building upon this structure, a Manager, Planner, Engineer, and Reviewer coordinate planning, execution, diagnosis, and the validated release of new skills, while people steer the process through objectives and corrections; stable skill sequences are further consolidated into reusable compound skills. On a mobile manipulator, RoboRSI develops multi-object household cleanup over 104 rounds. In simulation, it achieves the highest success rate on LIBERO, LIBERO-PRO, LIBERO-Plus, and RoboTwin, exceeding the strongest baseline by 2.7 to 11.0 percentage points.",
+      "summary": "本文提出了RoboRSI，一个基于自顶向下技能细化（TSR）的机器人自我改进系统，通过将任务分解为具有明确输入输出契约的复合、原子和基础技能，把执行结果归因到负责的技能分支并仅在该分支内进行修订，由Manager、Planner、Engineer和Reviewer协同完成规划、执行、诊断和经校验的技能发布，同时将稳定的技能序列整合为可复用的复合技能，并在移动操作平台上经过104轮开发了多物体家庭清理任务，在LIBERO、LIBERO-PRO、LIBERO-Plus和RoboTwin仿真基准上取得了最高成功率。该系统为科研人员提供了一种将执行反馈结构化归因并验证后再复用技能的方法，使机器人能从经验中积累可迁移能力；但摘要中报告的性能提升幅度（2.7至11.0个百分点）来自仿真基准结果，其在真实环境中的泛化效果及所述自我进化机制的实际有效性仍需进一步独立验证。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 7,
+      "authors": [
+        "Zimo Wen",
+        "Yijin Chen",
+        "Yuxuan Cao",
+        "Wendi Chen",
+        "Yanwen Zou",
+        "Wenye Yu",
+        "Fuhang Kuang",
+        "Han Xue",
+        "Jun Lv",
+        "Chuan Wen",
+        "Cewu Lu"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:a8ae06724434b39ec85ba030f9bbc6e2",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：self-evolution、self-improvement。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:a8ae06724434b39ec85ba030f9bbc6e2"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:a8ae06724434b39ec85ba030f9bbc6e2"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8264,
+      "topic_cache_token": "5c63c76a6949a3e69f54c1aaa85ce57eadb7dad6293c17bd7f10508510f01dd7",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "8d8b4c5e3c94409259c3a000",
       "url": "https://arxiv.org/abs/2610.12374",
       "title": "AgentGarten: Code Worlds for Evolving Agents",
@@ -1406,7 +1608,7 @@
       "excerpt": "Interactive virtual worlds allow agents to learn through exploration and interaction. What agents can learn is bounded by the environments they practice in, which must be faithful, with consistent state, rules, and dynamics, and realistic, with observations that follow the real-world visual distributions. Achieving both across diverse worlds remains a bottleneck. We introduce AgentGarten, a framework that couples simulators and game engines with a shared neural renderer to build real-time interactive environments. Its simulation backends maintain persistent world state and execute program-defined interaction rules, while the renderer generates visual observations from structured conditions exported through a common interface. To build the neural renderer, we adapt a pretrained video model to geometry conditions, distill it with our proposed Adversarial Forcing, and optimize inference for real-time interaction. Adversarial Forcing makes history prefilling differentiable through exact replay, so that losses on later predictions update how the renderer encodes prior observations, and adds real-data adversarial supervision to improve its visual quality. In AgentGarten, agents perceive the world through visual observations, interact with it in real time, and improve by distilling each round of experience into playbooks that subsequent agents inherit and refine. Our empirical study demonstrates a substantial gain in learning efficiency, with agents learning from just 4 rounds compared with millions for a conventional reinforcement learning counterpart. As new worlds can be written as code and rendered through the same interface, environments can scale in both number and difficulty alongside their agents, a step toward agents that keep evolving through interactive experience.",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "alpha_rank": 3,
+      "alpha_rank": 5,
       "authors": [
         "Jiawei Chi",
         "Shangchen Miao",
@@ -1516,7 +1718,7 @@
       "topic_coverage": 0.9286,
       "topic_cache_token": "97cda284aa636828564c2223352f8e00b3df2de41393e34669400b54df88c627",
       "topic_backend": "lexical",
-      "alpha_rank": 7
+      "alpha_rank": 11
     },
     {
       "id": "db7b9e6fe248e3146f87743a",
@@ -1623,7 +1825,7 @@
       "topic_coverage": 0.8912,
       "topic_cache_token": "3c66ec4dad699f1896b241d546aa9287d22a1289b4a7c11a0ab8c4d917ee9078",
       "topic_backend": "lexical",
-      "alpha_rank": 11
+      "alpha_rank": 4
     },
     {
       "id": "f442ba82aed224bc2243f993",
@@ -1649,7 +1851,7 @@
       "excerpt": "General-purpose service robots need navigation systems that can handle diverse human requests in unfamiliar environments, combining task generality with scene generality. Some existing methods fine-tune multimodal large language models (MLLMs) to predict navigation actions, making their behavior dependent on the coverage of navigation training data and potentially limiting generalization to new requests and environments. Our key insight is to let the MLLM focus on interpreting requests, understanding scenes, and making decisions while preserving its general-purpose capabilities and delegating motion execution to navigation tools. To realize this idea, we introduce SuperNav, which equips a pretrained MLLM with a specialized agent harness without navigation-specific fine-tuning of the MLLM. Our harness supports these decisions with Navigation Skills, agent-oriented Tools for physical interaction, and task-progress and context management. A unified visual-point interface connects decision-making to motion by allowing the model to specify destinations directly in images and revise its decisions from execution feedback. Together, these components support sustained navigation across different task requirements and environments. SuperNav outperforms four evaluated baselines on instance-level, multi-object, and demand-driven tasks. Category-level evaluation on HM3D and deployment on a real quadruped robot further demonstrate its applicability across environments. Project Page: https://zju3dv.github.io/SuperNav/",
       "summary": "本文提出SuperNav，一种面向通用服务机器人的导航系统，通过为预训练多模态大语言模型配备专用智能体框架，使其无需导航特定微调即可解读请求、理解场景并做出决策，同时将运动执行交由导航工具完成。该系统在实例级、多目标和需求驱动任务上优于四个对比基线，并在HM3D类别级评估及真实四足机器人部署中展示了跨环境适用性。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 4,
+      "alpha_rank": 9,
       "authors": [
         "Jinkai Zhang",
         "Jingyi Xu",
@@ -1778,6 +1980,67 @@
       ],
       "topic_coverage": 0.6154,
       "topic_cache_token": "67b72411c5768ebb0065af3b1b8e5a5d47a76174998209c19b028d2cb1cbf72b",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "fa10a44200c2fea46542cb20",
+      "url": "https://arxiv.org/abs/2610.11692",
+      "title": "Can Jev be Your Q or Policy in Reinforcement Learning?",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-08T11:02:14+00:00",
+      "first_seen": "2026-10-11T00:35:52.004734+00:00",
+      "excerpt": "Foundation models supply reinforcement learning (RL) with priors that mitigate its longstanding weaknesses in sample efficiency and transfer, but their token-by-token generation makes queries sequential and costly. Jev, a recently released decision model, generates nothing and returns calibrated, typed answers in a single forward pass. Existing work studies foundation models in RL either as models to be trained or as generators to be prompted, and Jev belongs to neither category, having so far served only as a black box in single domains. How well such a model decides on its own in RL environments, and how it can improve RL as a component of training, therefore remain unaddressed. To this end, in this paper we first examine the requirements that the objects of an RL system place on the answers they consume, and establish that Jev can fulfill all of them except the cardinal use of a value function. The remaining objects form positions that admit several roles each. We then construct algorithms that employ Jev at three of these positions, as a reference policy, an exploration judge, and a replay rater, to improve sample efficiency, exploration, and learning performance. Across nine MiniGrid tasks and three Atari games, training with Jev outperforms a standard RL learner, including where the learner makes no progress alone, while the model itself remains untrained. To our knowledge, we present the first use of Jev within the RL learning process and establish a frozen decision model as a usable component of RL training, inviting further exploration of how Jev and other advanced decision models can improve RL.",
+      "summary": "本文检验了决策模型Jev在强化学习系统中的适用性，并构建算法将Jev作为参考策略、探索评判者和回放评分者用于改进样本效率、探索和学习性能。据原文，该工作首次将Jev用于强化学习训练过程，并在九个MiniGrid任务和三个Atari游戏中显示训练效果优于标准强化学习器，其中模型本身保持未训练；原文未将其性能数字与公司声明混同，相关结论限于所报告任务范围。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 6,
+      "authors": [
+        "Yi Ma",
+        "Tianpei Yang",
+        "Yaodong Yang",
+        "Weixun Wang",
+        "Hongyao Tang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8599,
+      "topic_cache_token": "8830d6df57a523d069a926e5af07479159000b3c81a8f916e8912ac8edc8f935",
+      "topic_version": "faceted-local-v2.4",
       "topic_backend": "lexical"
     },
     {
@@ -1980,11 +2243,11 @@
       "summary": "本文评估了M3GNet、CHGNet、PET-MAD、PET-OAM等通用机器学习势对晶体学开放数据库（COD）晶体结构物理合理性的验证能力，发现MLIP弛豫可作为有用的筛选工具但存在模型依赖性，组合多个模型优于依赖单一模型。",
       "summary_kind": "upstream_tldr",
       "authors": [
-        "Justinas \\v{S}lepavi\\v{c}ius",
+        "Justinas Šlepavičius",
         "Antanas Vaitkus",
         "Andrius Merkys",
-        "Saulius Gra\\v{z}ulis",
-        "Linas Vil\\v{c}iauskas"
+        "Saulius Gražulis",
+        "Linas Vilčiauskas"
       ],
       "topic_leaf_ids": [
         "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
@@ -2072,7 +2335,8 @@
       "summary_kind": "upstream_tldr",
       "zotero_score": 3.571727108825331,
       "authors": [
-        "Core Team",
+        "Xiaomi LLM-Core Team",
+        ":",
         "Zongming Qiao",
         "Ziyue Hua",
         "Zirui Ou",
@@ -2209,7 +2473,7 @@
         "Jiaxuan Liu",
         "Hongxu An",
         "Hao Peng",
-        "Hanglong L\\\"u",
+        "Hanglong Lü",
         "Guonan Wang",
         "Feiyu Yang",
         "Fanyu Cao",
@@ -2266,7 +2530,7 @@
       "topic_coverage": 0.8623,
       "topic_cache_token": "cc440c43e53a1eb71939fcfc35286d6ce35d6f564240b0b2d502be2130edbf97",
       "topic_backend": "lexical",
-      "alpha_rank": 6
+      "alpha_rank": 2
     },
     {
       "id": "d9e485b409fe8517ac6e3a5b",
@@ -3951,8 +4215,8 @@
       "published_at": "2026-10-08T00:00:00+00:00",
       "first_seen": "2026-10-10T02:31:57.020216+00:00",
       "excerpt": "Learned simulators for deformable linear objects (DLOs) such as cables have to predict the motion of cables they were not trained on and stay stable over long rollouts. Most of their error occurs where the cable touches itself or the floor. Attention over all pairs of cable segments can represent contact between parts of the cable that are far apart along its length, but attention has no notion of geometry. A cable has two pairwise distances, which agree only while it is straight: the arc-length distance along the cable, which governs elastic forces, and the Euclidean distance in space, which governs contact. We add a physical attention bias, an additive term on the attention logits with a learned rate, and ask which distance it should use. We compare no bias, each distance alone, and both distances on disjoint sets of heads, keeping the rest of the model and the training protocol fixed. A physical bias improves prediction on unseen cables. The gain is largest when attention is the only mechanism that connects distant segments: there, the arc-length bias reduces prediction error by 15% and more than halves the drift in segment length. The Euclidean bias alone stays close to unbiased attention, while assigning both distances across heads is best or near-best on every metric we report. Code and per-run records: https://github.com/avihaig/dlogps.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文在可变形线性物体的学习模拟器中，将带可学习速率的加性物理注意力偏置加入注意力 logits，并在保持模型其余部分和训练协议不变的情况下，比较无偏置、分别使用弧长距离或欧氏距离、以及在不同注意力头上同时使用两种距离对预测的影响。该工作为设计电缆等可变形线性物体模拟器提供了用弧长距离约束弹性、用欧氏距离约束接触的归纳偏置，原文报告物理偏置可改善对未见电缆的预测，且弧长偏置在注意力是连接远距离段唯一机制时降低预测误差并减少段长漂移，但这些结论限于摘要所述比较设置。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.11975",
       "authors": [
         "Avihai Giuili",
@@ -4002,6 +4266,133 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "4d26d67248b406e48d0c98c3",
+      "url": "https://www.semanticscholar.org/paper/b777dbdf6c703030c4a2c077c1d885c7723a04e9",
+      "title": "The Shear-Bond Descriptor and Universal Machine-Learning Potential Enable Large-Scale Discovery of Negative Thermal Expansion Materials",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "chemistry",
+        "agents"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-11T00:35:52.004734+00:00",
+      "excerpt": "Negative thermal expansion (NTE) materials are crucial for mitigating thermal stresses and designing dimensionally stable components in advanced technologies, yet compounds exhibiting this anomalous behavior remain intrinsically rare. The discovery of novel NTE crystals has traditionally relied on serendipitous empirical observation and physical intuition, severely hindered by the absence of universal design principles. Here, by integrating more than a century of accumulated thermal-expansion data with state-of-the-art machine learning, we identify explainable, macroscopic mechanical descriptors for thermal expansion, namely, the shear modulus (G) and the bonding modulus (Ẽ). These descriptors enable the construction of a universal thermal-expansion landscape based on the shear-bond ratio (G/Ẽ), supporting robust classification between positive thermal expansion (PTE) and NTE materials across diverse structural and chemical spaces. Guided by these universal descriptors and powered by high-throughput, finite-temperature simulations using universal machine-learning interatomic potentials, we theoretically predict 3665 NTE crystals exhibiting wide operating temperature windows. Validating this theory-driven paradigm, the experimental synthesis and characterization of 11 previously unreported compounds directly confirm the robust predictive power and transferability of our framework. These results bridge macroscopic mechanics with microscopic lattice dynamics, transforming the discovery of NTE materials into a systematic, scalable, and data-driven science.",
+      "summary": "本文整合一个多世纪的热膨胀数据与先进机器学习，识别出可解释的宏观力学描述符剪切模量（G）和键合模量（Ẽ），并据此构建基于剪切-键合比（G/Ẽ）的通用热膨胀图谱，用于在不同结构与化学空间中区分正热膨胀与负热膨胀材料，同时结合通用机器学习原子间势的高通量有限温度模拟，理论预测了3665种具有较宽工作温区的负热膨胀晶体，并通过对11种此前未报道化合物的实验合成与表征加以验证。该工作为科研人员提供了从宏观力学联系微观晶格动力学的通用描述符与高通量筛选框架，可将负热膨胀材料的发现推向系统化、可扩展的数据驱动研究；但文中预测数量及验证结果均限于所采用的数据、模型和实验条件，其普适性仍需在更广泛材料体系中检验。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Guang-Ming Chen",
+        "Shun Tian",
+        "Kai Feng",
+        "Yi-Lun Liu",
+        "Wan-Jian Yin",
+        "Qi-Long Gao",
+        "Ke Zhou"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9041,
+      "topic_cache_token": "f887eee11277d9a44eafb684acaeb172b24883fd90d27f592d9c50dca18899cf",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "97cdc5c9814e8adf81c60dbc",
+      "url": "https://www.semanticscholar.org/paper/27f2a1fed0a44202eaa5edbe59fc013a0b89c856",
+      "title": "Using structure to evaluate the accuracy and transferability of machine learning potentials of biomolecules",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "chemistry",
+        "biology",
+        "tools"
+      ],
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "first_seen": "2026-10-11T00:35:52.004734+00:00",
+      "excerpt": "Molecular simulation is a powerful tool to describe chemical and physical processes across length scales. Fundamental tradeoffs between the accuracy of quantum mechanics and speed of classical models makes simulating biosystems very difficult. Machine learning potentials (MLPs) offer a potential solution which combines the accuracy of electronic structure theory with the computational scaling of classical approaches. Applying MLPs to biosystems could unlock new developments in drug discovery, biological mechanisms and interactions. Despite this promise, rigorous benchmarks are needed to determine whether MLPs reliably reproduce first-principles counterparts. It is commonplace to use energies and forces as the primary performance metrics for MLPs. While essential, we show that models with among the lowest energy errors can simultaneously produce the largest structural errors. Through simulations of two isomeric biomolecules, this work shows that structural information must be added as a metric to assess both the overall accuracy and transferability of an MLP. Here, we show that when structural quantities are included alongside traditional metrics, MLPs can achieve high fidelity to first-principles reference data and remain transferable across related chemical motifs examined. These findings underscore the importance of structure-based validation and support the continued use of MLPs for biomolecular simulations.",
+      "summary": "本文通过两种异构生物分子的模拟表明，仅以能量和力为指标可能使能量误差最低的机器学习势同时产生最大的结构误差，因此提出在评估机器学习势的准确性和可迁移性时加入结构信息作为指标。研究显示，将结构量与传统指标结合后，机器学习势可在所考察的相关化学基序间保持可迁移性，这支持将基于结构的验证用于生物分子模拟。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Lejla S. Biberic",
+        "Nisarg Joshi",
+        "Jim Pfaendtner"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry",
+        "web:life_sciences"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9259,
+      "topic_cache_token": "0a73b30b3339a3f0fef519774705d14e177fddf1dce86301fccd42aff21c0be5",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "5e966e949660b7a825a7e334",
       "url": "https://arxiv.org/abs/2610.10846",
       "title": "Cross-Embodiment Robot Foundation World Models with Latent Actions",
@@ -4024,7 +4415,7 @@
       "excerpt": "The diversity of robot embodiments and action spaces makes it challenging to build robot world models that generalize across different embodiments. We introduce the Latent Action-Conditioned Robot World Model (LAC-WM), which operates within a learned unified latent action space shared across diverse embodiments. This unified action space improves the world model's performance when adapted to previously unseen robot embodiments. We compare LAC-WM with an Explicit Action-Conditioned World Model (EAC-WM), which conditions on explicit motion labels. Our results show that explicit action conditioning leads to disjoint action representations across embodiments, limiting downstream performance when adapting to new robots. We evaluate both models on dexterous manipulation tasks and a modified LIBERO benchmark. LAC-WM improves downstream performance over EAC-WM by up to 46.7% on dexterous manipulation and 11.7% on LIBERO. Crucially, the unified latent action space allows LAC-WM's downstream performance to scale positively with the number of embodiments used during pretraining. In contrast, the disjoint action space in EAC-WM leads to decreased performance as the number of pretraining embodiments increases. These results highlight the importance of a unified action space for efficient cross-embodiment learning, addressing a key challenge in robotics. Project website: https://lacwm.github.io/",
       "summary": "本文提出LAC-WM，一种在跨多种机器人形态共享的学习型统一潜在动作空间中运行的机器人世界模型，并与基于显式运动标签的EAC-WM进行对比，在灵巧操作任务和修改后的LIBERO基准上评估两者在下游任务中的表现。该工作表明统一潜在动作空间有助于世界模型适应未见过的机器人形态，并使其下游性能随预训练所用形态数量增加而正向扩展，而显式动作条件化会导致跨形态动作表示不连通、随预训练形态数量增加而性能下降，从而为跨形态机器人学习提供了关于统一动作空间重要性的依据。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 10,
+      "alpha_rank": 12,
       "authors": [
         "Huang Huang",
         "Sriram Yenamandra",
@@ -4105,7 +4496,7 @@
       "excerpt": "Real-time robot control demands enough visual history to infer motion and task progress, but processing that history can delay action. We present Long-WAM, a model-system framework for scaling the context of causal world-action models under real-time control constraints. Our central finding is that access to history is not the same as using it: longer histories pay off far more when the video foundation is pretrained autoregressively (AR). We first learn causal prediction from robot and egocentric videos without action labels, then preserve this history-to-future structure during world-action adaptation. On RoboCasa GR-1, increasing context from 0.0 to 19.2 seconds raises success from 63.3% to 78.7%, whereas a bidirectionally pretrained initialization shows no net gain; robot-domain AR pretraining further raises peak success on GR-1 and LIBERO-Long. Long-WAM also achieves the best results among compared methods on LIBERO-Long, RoboTwin 2.0, and DOMINO. Streaming observation encoding, asynchronous execution, and hardware-specific acceleration enable deployment on RTX 5090, DGX Spark, and Jetson AGX Thor without dropping future prediction; on RTX 5090, each action chunk, including future-video latent prediction, takes 107.4 ms. Real-time deployment on Unitree G1 and YAM supports dynamic and long-horizon manipulation, including 95% success on dynamic cup stacking, where Pi0.5 and Fast-WAM succeed in none of 20 trials. As a memory-informed executor, Long-WAM also complements higher-level planning in composite tasks.",
       "summary": "本文提出Long-WAM，一个在实时控制约束下扩展因果世界-动作模型上下文的模型-系统框架，其关键发现是自回归视频预训练能使更长历史真正带来收益，并实现了流式观测编码、异步执行和硬件特定加速。该框架在RTX 5090、DGX Spark和Jetson AGX Thor上部署时不丢失未来预测，在GR-1、LIBERO-Long、RoboTwin 2.0和DOMINO上取得所比较方法中的最佳结果，并可作为记忆知情执行器配合高层规划完成复合任务；但摘要中未报告各任务的成功率上限、延迟与成功率之间的权衡关系，也未说明这些结果在未测试机器人或任务上的泛化边界。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 2,
+      "alpha_rank": 3,
       "authors": [
         "Wei Huang",
         "Bohan Zhang",
@@ -4202,7 +4593,7 @@
       "excerpt": "Latent world models have shown a remarkable ability to predict future states and to plan in the real world. In practice, however, we lack a principled way to estimate how their capabilities scale with model size, data, and compute, an open problem that slows progress in the field. In this work we present RoboJEPA, a world model based on the Joint Embedding Predictive Architecture (JEPA) and trained on a large-scale dataset spanning 12 robotic embodiments. We show that RoboJEPA's imagination error, the error of its latent rollouts, follows a second-order power law in compute, allowing us to predict model quality well beyond the scale at which the law is fit. We further show that downstream robotic planning performance improves predictably with compute, and that imagination error is strongly correlated with it, making it a reliable proxy for real-robot evaluation. Finally, we demonstrate that latent world models can be deployed zero-shot as robotic agents, planning toward a single goal image to solve tasks requiring long-horizon planning on real hardware. We release all model checkpoints together with our training and robot deployment code. To our knowledge, this is the first work to establish scaling laws for multi-embodiment robotic world models trained on real robot data, and RoboJEPA, at 8B parameters, is the largest JEPA predictor model trained to date.",
       "summary": "本文提出RoboJEPA，一种基于联合嵌入预测架构（JEPA）的潜在世界模型，在涵盖12种机器人本体的数据集上训练，并报告其想象误差随计算量呈二阶幂律、下游规划性能随计算量可预测提升，以及该模型可零样本部署于真实硬件完成长时程规划任务。该工作为多本体机器人世界模型提供了基于真实机器人数据的缩放规律分析，可用于估计模型质量并作为真实机器人评估的代理指标；但相关缩放规律与相关性均基于作者所述实验条件，其泛化性及实际性能需独立验证。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 5,
+      "alpha_rank": 10,
       "authors": [
         "Artem Zholus",
         "Nicolas Beltran-Velez",
@@ -9498,12 +9889,12 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-10-10T02:43:33.591615+00:00",
+    "last_success": "2026-10-11T00:35:52.004734+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 0,
+      "classified": 6,
       "unclassified": 37,
       "algorithm": "faceted-local-v2.4",
       "calibration_status": "pending_human_gold",
@@ -9520,8 +9911,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-10-10T02:43:33.591615+00:00",
-      "last_success": "2026-10-10T02:43:33.591615+00:00",
+      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
+      "last_success": "2026-10-11T00:35:52.004734+00:00",
       "status": "ok",
       "count": 12
     },
@@ -9529,8 +9920,8 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-10-10T02:43:33.591615+00:00",
-      "last_success": "2026-10-10T02:43:33.591615+00:00",
+      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
+      "last_success": "2026-10-11T00:35:52.004734+00:00",
       "status": "ok",
       "count": 0
     },
@@ -9538,8 +9929,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-10-10T02:43:33.591615+00:00",
-      "last_success": "2026-10-10T02:43:33.591615+00:00",
+      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
+      "last_success": "2026-10-11T00:35:52.004734+00:00",
       "status": "ok",
       "count": 9
     },
@@ -9547,8 +9938,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-10-10T02:43:33.591615+00:00",
-      "last_success": "2026-10-10T02:43:33.591615+00:00",
+      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
+      "last_success": "2026-10-11T00:35:52.004734+00:00",
       "status": "ok",
       "count": 12
     },
@@ -9556,8 +9947,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-10-10T02:43:33.591615+00:00",
-      "last_success": "2026-10-10T02:43:33.591615+00:00",
+      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
+      "last_success": "2026-10-11T00:35:52.004734+00:00",
       "status": "ok",
       "count": 7
     },
@@ -9565,8 +9956,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-10-10T02:43:33.591615+00:00",
-      "last_success": "2026-10-10T02:43:33.591615+00:00",
+      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
+      "last_success": "2026-10-11T00:35:52.004734+00:00",
       "status": "ok",
       "count": 0
     },
@@ -9574,8 +9965,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-10-10T02:43:33.591615+00:00",
-      "last_success": "2026-10-10T02:43:33.591615+00:00",
+      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
+      "last_success": "2026-10-11T00:35:52.004734+00:00",
       "status": "ok",
       "count": 12
     },
@@ -9583,8 +9974,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-10-10T02:43:33.591615+00:00",
-      "last_success": "2026-10-10T02:43:33.591615+00:00",
+      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
+      "last_success": "2026-10-11T00:35:52.004734+00:00",
       "status": "ok",
       "count": 2
     },
@@ -9592,8 +9983,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-10-10T02:43:33.591615+00:00",
-      "last_success": "2026-10-10T02:43:33.591615+00:00",
+      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
+      "last_success": "2026-10-11T00:35:52.004734+00:00",
       "status": "ok",
       "count": 0
     },
@@ -9601,8 +9992,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-10-10T02:43:33.591615+00:00",
-      "last_success": "2026-10-10T02:43:33.591615+00:00",
+      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
+      "last_success": "2026-10-11T00:35:52.004734+00:00",
       "status": "ok",
       "count": 12
     },
@@ -9610,8 +10001,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-10-10T02:43:33.591615+00:00",
-      "last_success": "2026-10-10T02:43:33.591615+00:00",
+      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
+      "last_success": "2026-10-11T00:35:52.004734+00:00",
       "status": "ok",
       "count": 4
     },
@@ -9619,8 +10010,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-10-10T02:43:33.591615+00:00",
-      "last_success": "2026-10-10T02:43:33.591615+00:00",
+      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
+      "last_success": "2026-10-11T00:35:52.004734+00:00",
       "status": "ok",
       "count": 0
     },
@@ -9628,28 +10019,26 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-10-10T02:43:33.591615+00:00",
-      "last_success": "2026-10-10T02:31:57.020216+00:00",
-      "status": "error",
-      "count": 0,
-      "message": "采集失败，保留上次结果",
-      "error_type": "HTTPError"
+      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
+      "last_success": "2026-10-11T00:35:52.004734+00:00",
+      "status": "ok",
+      "count": 12
     },
     {
       "id": "zotero",
       "name": "Zotero 为你推荐",
       "status": "ok",
-      "count": 20,
-      "last_attempt": "2026-10-10T02:43:33.591615+00:00",
-      "last_success": "2026-10-10T02:31:30.004698+00:00",
-      "run_id": "38013019145",
+      "count": 0,
+      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
+      "last_success": "2026-10-11T00:35:29.537773+00:00",
+      "run_id": "38098900918",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
     }
   ],
   "summaries": {
     "status": "partial",
-    "generated": 0,
-    "failed": 2,
+    "generated": 7,
+    "failed": 1,
     "model": "deepseek/deepseek-v4.1-flash"
   },
   "policy": {
