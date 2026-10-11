@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-11T00:35:52.004734+00:00",
+  "generated_at": "2026-10-11T02:10:03.234988+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -1475,7 +1475,7 @@
       "excerpt": "General-purpose robots must perform a wide range of tasks from agile locomotion to dexterous manipulation. While sim-to-real reinforcement learning (RL) has proven to be a useful tool for this goal, current RL pipelines depend on engineering-heavy, per-task structural priors such as shaped rewards and demonstrations. Recent work has shown that diverse simulator resets, combined with massively parallel simulation, can alleviate much of this engineering burden on several manipulation problems. However, we find that naively scaling this paradigm to more precise or dynamic problems remains non-trivial. While simulator resets can help with exploration, uniformly sampling over this distribution wastes a growing fraction of learning experience on task configurations the policy has already mastered or cannot yet attempt. This makes it challenging to see the expected benefits of scaling parallel environments for RL, since much of the learning signal in a batch is wasted during learning. To mitigate this, we introduce Success Guided Sampling (SGS), a simple adaptive sampler that concentrates RL training on task configurations around the frontier of the policy's capabilities. Doing so allows large-scale simulated RL to make the most out of the experience in a batch, enabling much more effective scaling to large-scale parallel simulation. Across experiments using up to $2^{20}$ (over one million) parallel environments, SGS enables RL to solve challenging multi-terrain quadruped locomotion and contact-rich assembly tasks that prior methods fail to solve. Finally, we distill the learned manipulation policies into RGB-based policies and demonstrate zero-shot transfer to several challenging assembly tasks on real hardware. Project website: https://sgs-rl.github.io/.",
       "summary": "本文提出一种“成功引导采样”（SGS）自适应采样器，用于在大规模并行仿真强化学习中，将训练集中在策略能力前沿附近的任务配置上，以缓解均匀采样造成的经验浪费和探索瓶颈。该方法在四足多地形运动与接触丰富的装配任务中使强化学习能够求解此前方法难以解决的任务，并可将学到的操作策略蒸馏为基于RGB的策略后零样本迁移到真实硬件上的若干装配任务；但摘要未给出具体性能数字，真实硬件迁移效果仍需以原文与项目页面为准。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 8,
+      "alpha_rank": 10,
       "authors": [
         "Octi Zhang",
         "Mateo Guaman Castro",
@@ -1606,8 +1606,8 @@
       "published_at": "2026-10-08T17:32:00+00:00",
       "first_seen": "2026-10-10T02:31:57.020216+00:00",
       "excerpt": "Interactive virtual worlds allow agents to learn through exploration and interaction. What agents can learn is bounded by the environments they practice in, which must be faithful, with consistent state, rules, and dynamics, and realistic, with observations that follow the real-world visual distributions. Achieving both across diverse worlds remains a bottleneck. We introduce AgentGarten, a framework that couples simulators and game engines with a shared neural renderer to build real-time interactive environments. Its simulation backends maintain persistent world state and execute program-defined interaction rules, while the renderer generates visual observations from structured conditions exported through a common interface. To build the neural renderer, we adapt a pretrained video model to geometry conditions, distill it with our proposed Adversarial Forcing, and optimize inference for real-time interaction. Adversarial Forcing makes history prefilling differentiable through exact replay, so that losses on later predictions update how the renderer encodes prior observations, and adds real-data adversarial supervision to improve its visual quality. In AgentGarten, agents perceive the world through visual observations, interact with it in real time, and improve by distilling each round of experience into playbooks that subsequent agents inherit and refine. Our empirical study demonstrates a substantial gain in learning efficiency, with agents learning from just 4 rounds compared with millions for a conventional reinforcement learning counterpart. As new worlds can be written as code and rendered through the same interface, environments can scale in both number and difficulty alongside their agents, a step toward agents that keep evolving through interactive experience.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出AgentGarten框架，通过将模拟器与游戏引擎同共享神经渲染器耦合，构建具有持久世界状态、程序化交互规则和实时视觉观测的交互式虚拟环境，并采用Adversarial Forcing蒸馏预训练视频模型以实现实时渲染。该框架可供智能体通过视觉感知和实时交互将每轮经验提炼为可继承和迭代的playbook，从而提升学习效率，且新世界可通过代码编写并经同一接口渲染以扩展环境数量和难度；但其中关于仅需4轮学习等效率提升的表述为作者实证研究结论，具体适用条件与限制需依据原文进一步确认。",
+      "summary_kind": "ai_summary",
       "alpha_rank": 5,
       "authors": [
         "Jiawei Chi",
@@ -1718,7 +1718,7 @@
       "topic_coverage": 0.9286,
       "topic_cache_token": "97cda284aa636828564c2223352f8e00b3df2de41393e34669400b54df88c627",
       "topic_backend": "lexical",
-      "alpha_rank": 11
+      "alpha_rank": 8
     },
     {
       "id": "db7b9e6fe248e3146f87743a",
@@ -1825,7 +1825,7 @@
       "topic_coverage": 0.8912,
       "topic_cache_token": "3c66ec4dad699f1896b241d546aa9287d22a1289b4a7c11a0ab8c4d917ee9078",
       "topic_backend": "lexical",
-      "alpha_rank": 4
+      "alpha_rank": 3
     },
     {
       "id": "f442ba82aed224bc2243f993",
@@ -1851,7 +1851,7 @@
       "excerpt": "General-purpose service robots need navigation systems that can handle diverse human requests in unfamiliar environments, combining task generality with scene generality. Some existing methods fine-tune multimodal large language models (MLLMs) to predict navigation actions, making their behavior dependent on the coverage of navigation training data and potentially limiting generalization to new requests and environments. Our key insight is to let the MLLM focus on interpreting requests, understanding scenes, and making decisions while preserving its general-purpose capabilities and delegating motion execution to navigation tools. To realize this idea, we introduce SuperNav, which equips a pretrained MLLM with a specialized agent harness without navigation-specific fine-tuning of the MLLM. Our harness supports these decisions with Navigation Skills, agent-oriented Tools for physical interaction, and task-progress and context management. A unified visual-point interface connects decision-making to motion by allowing the model to specify destinations directly in images and revise its decisions from execution feedback. Together, these components support sustained navigation across different task requirements and environments. SuperNav outperforms four evaluated baselines on instance-level, multi-object, and demand-driven tasks. Category-level evaluation on HM3D and deployment on a real quadruped robot further demonstrate its applicability across environments. Project Page: https://zju3dv.github.io/SuperNav/",
       "summary": "本文提出SuperNav，一种面向通用服务机器人的导航系统，通过为预训练多模态大语言模型配备专用智能体框架，使其无需导航特定微调即可解读请求、理解场景并做出决策，同时将运动执行交由导航工具完成。该系统在实例级、多目标和需求驱动任务上优于四个对比基线，并在HM3D类别级评估及真实四足机器人部署中展示了跨环境适用性。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 9,
+      "alpha_rank": 11,
       "authors": [
         "Jinkai Zhang",
         "Jingyi Xu",
@@ -3462,10 +3462,12 @@
       "url": "https://arxiv.org/abs/2610.12452",
       "title": "BrickBench: Evaluating Agentic Brick Design",
       "source_ids": [
-        "hf-daily"
+        "hf-daily",
+        "alphaxiv"
       ],
       "source_names": [
-        "Hugging Face Daily Papers"
+        "Hugging Face Daily Papers",
+        "alphaXiv Hot"
       ],
       "group": "papers",
       "groups": [
@@ -3529,7 +3531,8 @@
       ],
       "topic_coverage": 0.8816,
       "topic_cache_token": "2adc8a5469422b52626050de190c93f29ac0349f1edbdd4d3bf766e677bfaaea",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "alpha_rank": 9
     },
     {
       "id": "558de7ce6b120bccb6da3e25",
@@ -4496,7 +4499,7 @@
       "excerpt": "Real-time robot control demands enough visual history to infer motion and task progress, but processing that history can delay action. We present Long-WAM, a model-system framework for scaling the context of causal world-action models under real-time control constraints. Our central finding is that access to history is not the same as using it: longer histories pay off far more when the video foundation is pretrained autoregressively (AR). We first learn causal prediction from robot and egocentric videos without action labels, then preserve this history-to-future structure during world-action adaptation. On RoboCasa GR-1, increasing context from 0.0 to 19.2 seconds raises success from 63.3% to 78.7%, whereas a bidirectionally pretrained initialization shows no net gain; robot-domain AR pretraining further raises peak success on GR-1 and LIBERO-Long. Long-WAM also achieves the best results among compared methods on LIBERO-Long, RoboTwin 2.0, and DOMINO. Streaming observation encoding, asynchronous execution, and hardware-specific acceleration enable deployment on RTX 5090, DGX Spark, and Jetson AGX Thor without dropping future prediction; on RTX 5090, each action chunk, including future-video latent prediction, takes 107.4 ms. Real-time deployment on Unitree G1 and YAM supports dynamic and long-horizon manipulation, including 95% success on dynamic cup stacking, where Pi0.5 and Fast-WAM succeed in none of 20 trials. As a memory-informed executor, Long-WAM also complements higher-level planning in composite tasks.",
       "summary": "本文提出Long-WAM，一个在实时控制约束下扩展因果世界-动作模型上下文的模型-系统框架，其关键发现是自回归视频预训练能使更长历史真正带来收益，并实现了流式观测编码、异步执行和硬件特定加速。该框架在RTX 5090、DGX Spark和Jetson AGX Thor上部署时不丢失未来预测，在GR-1、LIBERO-Long、RoboTwin 2.0和DOMINO上取得所比较方法中的最佳结果，并可作为记忆知情执行器配合高层规划完成复合任务；但摘要中未报告各任务的成功率上限、延迟与成功率之间的权衡关系，也未说明这些结果在未测试机器人或任务上的泛化边界。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 3,
+      "alpha_rank": 4,
       "authors": [
         "Wei Huang",
         "Bohan Zhang",
@@ -4593,7 +4596,7 @@
       "excerpt": "Latent world models have shown a remarkable ability to predict future states and to plan in the real world. In practice, however, we lack a principled way to estimate how their capabilities scale with model size, data, and compute, an open problem that slows progress in the field. In this work we present RoboJEPA, a world model based on the Joint Embedding Predictive Architecture (JEPA) and trained on a large-scale dataset spanning 12 robotic embodiments. We show that RoboJEPA's imagination error, the error of its latent rollouts, follows a second-order power law in compute, allowing us to predict model quality well beyond the scale at which the law is fit. We further show that downstream robotic planning performance improves predictably with compute, and that imagination error is strongly correlated with it, making it a reliable proxy for real-robot evaluation. Finally, we demonstrate that latent world models can be deployed zero-shot as robotic agents, planning toward a single goal image to solve tasks requiring long-horizon planning on real hardware. We release all model checkpoints together with our training and robot deployment code. To our knowledge, this is the first work to establish scaling laws for multi-embodiment robotic world models trained on real robot data, and RoboJEPA, at 8B parameters, is the largest JEPA predictor model trained to date.",
       "summary": "本文提出RoboJEPA，一种基于联合嵌入预测架构（JEPA）的潜在世界模型，在涵盖12种机器人本体的数据集上训练，并报告其想象误差随计算量呈二阶幂律、下游规划性能随计算量可预测提升，以及该模型可零样本部署于真实硬件完成长时程规划任务。该工作为多本体机器人世界模型提供了基于真实机器人数据的缩放规律分析，可用于估计模型质量并作为真实机器人评估的代理指标；但相关缩放规律与相关性均基于作者所述实验条件，其泛化性及实际性能需独立验证。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 10,
+      "alpha_rank": 12,
       "authors": [
         "Artem Zholus",
         "Nicolas Beltran-Velez",
@@ -9889,12 +9892,12 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-10-11T00:35:52.004734+00:00",
+    "last_success": "2026-10-11T02:10:03.234988+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 6,
+      "classified": 0,
       "unclassified": 37,
       "algorithm": "faceted-local-v2.4",
       "calibration_status": "pending_human_gold",
@@ -9911,8 +9914,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
-      "last_success": "2026-10-11T00:35:52.004734+00:00",
+      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
+      "last_success": "2026-10-11T02:10:03.234988+00:00",
       "status": "ok",
       "count": 12
     },
@@ -9920,8 +9923,8 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
-      "last_success": "2026-10-11T00:35:52.004734+00:00",
+      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
+      "last_success": "2026-10-11T02:10:03.234988+00:00",
       "status": "ok",
       "count": 0
     },
@@ -9929,8 +9932,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
-      "last_success": "2026-10-11T00:35:52.004734+00:00",
+      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
+      "last_success": "2026-10-11T02:10:03.234988+00:00",
       "status": "ok",
       "count": 9
     },
@@ -9938,8 +9941,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
-      "last_success": "2026-10-11T00:35:52.004734+00:00",
+      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
+      "last_success": "2026-10-11T02:10:03.234988+00:00",
       "status": "ok",
       "count": 12
     },
@@ -9947,8 +9950,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
-      "last_success": "2026-10-11T00:35:52.004734+00:00",
+      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
+      "last_success": "2026-10-11T02:10:03.234988+00:00",
       "status": "ok",
       "count": 7
     },
@@ -9956,8 +9959,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
-      "last_success": "2026-10-11T00:35:52.004734+00:00",
+      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
+      "last_success": "2026-10-11T02:10:03.234988+00:00",
       "status": "ok",
       "count": 0
     },
@@ -9965,8 +9968,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
-      "last_success": "2026-10-11T00:35:52.004734+00:00",
+      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
+      "last_success": "2026-10-11T02:10:03.234988+00:00",
       "status": "ok",
       "count": 12
     },
@@ -9974,8 +9977,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
-      "last_success": "2026-10-11T00:35:52.004734+00:00",
+      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
+      "last_success": "2026-10-11T02:10:03.234988+00:00",
       "status": "ok",
       "count": 2
     },
@@ -9983,8 +9986,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
-      "last_success": "2026-10-11T00:35:52.004734+00:00",
+      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
+      "last_success": "2026-10-11T02:10:03.234988+00:00",
       "status": "ok",
       "count": 0
     },
@@ -9992,8 +9995,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
-      "last_success": "2026-10-11T00:35:52.004734+00:00",
+      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
+      "last_success": "2026-10-11T02:10:03.234988+00:00",
       "status": "ok",
       "count": 12
     },
@@ -10001,8 +10004,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
-      "last_success": "2026-10-11T00:35:52.004734+00:00",
+      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
+      "last_success": "2026-10-11T02:10:03.234988+00:00",
       "status": "ok",
       "count": 4
     },
@@ -10010,8 +10013,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
-      "last_success": "2026-10-11T00:35:52.004734+00:00",
+      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
+      "last_success": "2026-10-11T02:10:03.234988+00:00",
       "status": "ok",
       "count": 0
     },
@@ -10019,8 +10022,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
-      "last_success": "2026-10-11T00:35:52.004734+00:00",
+      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
+      "last_success": "2026-10-11T02:10:03.234988+00:00",
       "status": "ok",
       "count": 12
     },
@@ -10029,16 +10032,16 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 0,
-      "last_attempt": "2026-10-11T00:35:52.004734+00:00",
+      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
       "last_success": "2026-10-11T00:35:29.537773+00:00",
       "run_id": "38098900918",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
     }
   ],
   "summaries": {
-    "status": "partial",
-    "generated": 7,
-    "failed": 1,
+    "status": "ok",
+    "generated": 1,
+    "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash"
   },
   "policy": {
