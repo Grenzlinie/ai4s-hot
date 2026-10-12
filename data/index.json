@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-11T02:10:03.234988+00:00",
+  "generated_at": "2026-10-12T00:50:44.681573+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -1385,6 +1385,269 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "0459ad84d08e0820a7c28882",
+      "url": "https://www.semanticscholar.org/paper/c21f820deb74306349d158ccff7a44ee4e6e2add",
+      "title": "Conformational heterogeneity and vibrational signatures of dAMP in aqueous solution revealed by high-accuracy machine-learning potentials",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "chemistry"
+      ],
+      "published_at": "2026-10-09T00:00:00+00:00",
+      "first_seen": "2026-10-12T00:50:44.681573+00:00",
+      "excerpt": "Nucleotides are the fundamental building blocks of life, yet many aspects of their behavior and interactions in water remain poorly understood. Here, we investigate the structural and vibrational properties of $${2}^{{\\prime} }$$ 2 ′ -deoxyadenosine $${5}^{{\\prime} }$$ 5 ′ -monophosphate (dAMP) in aqueous solution using a machine-learning approach supported by IR spectroscopy experiments. We develop highly accurate neural network potentials through an active-learning protocol that systematically samples the free-energy landscape at the GGA level and efficiently transfers this information to higher levels of theory. This potential accurately describes dAMP in water over nanosecond timescales. By explicitly learning dipole moments, the simulations capture key spectral signatures while providing molecular-level insight into their origin. Analysis of the free-energy landscape and vibrational spectra indicates that dAMP in aqueous solution populates a mixture of conformations. These findings highlight the importance of conformational heterogeneity in nucleotides and establish a general framework for high-accuracy simulations of flexible biomolecules in solution.",
+      "summary": "本文通过主动学习协议构建高精度神经网络势，在纳秒尺度上模拟水溶液中dAMP的结构与振动性质，并结合红外光谱实验揭示了其构象异质性。该工作为溶液中柔性生物分子的高精度模拟提供了通用框架，但其结论基于所开发的势函数和GGA层级采样，向更高理论层级的迁移及对其他核苷酸的适用性需进一步验证。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Laurie Stevens",
+        "Riccardo Martina",
+        "Indrani Bhattacharya",
+        "Asesh Bera",
+        "R. K. Mitra",
+        "A. Ferrarini",
+        "Marialore Sulpizi"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.789,
+      "topic_cache_token": "d9822245720d70b2f477b535a779cc0471b67548398924020b557ed414b6e7b4",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "39f2c05db615803ceae0c857",
+      "url": "https://www.semanticscholar.org/paper/726dc47d701f045c6656263209995d151ca7db0b",
+      "title": "Determining the Partial Molar Volume of the Hydrated Electron from First-Principles Simulated Solution Volumes",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-09T00:00:00+00:00",
+      "first_seen": "2026-10-12T00:50:44.681573+00:00",
+      "excerpt": "The microscopic solvation structure of the hydrated electron remains difficult to characterize directly despite extensive experimental and theoretical efforts. The partial molar volume,V¯e−, provides an indirect thermodynamic probe, but quantitative agreement with experiment is challenging due to the strong dependence on the theoretical model. Here, we present a first-principles approach, accelerated by machine learning potentials, for determining V¯e− from volume differences among charge-neutral H2O, HCl, NaCl, and Na–eaq– reference systems. Rather than relying on direct NPT sampling, we determine the equilibrium volumes from pressure–density relations obtained through NVT simulations. Their system size dependence is described using a physically motivated density–volume relation, from which V¯e− is extracted by extrapolation to infinite dilution. The resulting V¯e− is 26 ± 7 cm3 mol–1 on the absolute single ion scale, statistically consistent with the experimental estimate of 26 ± 6 cm3 mol–1. This agreement demonstrates that the present framework can connect microscopic solvation structure with experimentally accessible thermodynamic properties and offers a transferable approach for other aqueous systems.",
+      "summary": "本文提出了一种基于第一性原理、由机器学习势加速的方法，通过电荷中性H₂O、HCl、NaCl和Na–eₐq–参考体系之间的体积差，结合NVT模拟得到的压力—密度关系和密度—体积外推，确定水合电子的偏摩尔体积。该方法得到的偏摩尔体积与实验估计在统计上一致，表明该框架可将微观溶剂化结构与实验可及的热力学性质联系起来，并为其他水溶液体系提供可迁移的研究途径。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Meng-Xu Li",
+        "Ruo-Ting Zhao",
+        "Chen-Yu Zhang",
+        "Tian-Hang Zhou",
+        "Yan Su",
+        "Ji-Jun Zhao",
+        "Jing-Gang Lan"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8534,
+      "topic_cache_token": "6aa0c00c747a0fcc776f2823bac7c39db07f545cde0558ef2dffdd197b894c1e",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "df2e59514da201ca4653787c",
+      "url": "https://www.semanticscholar.org/paper/4ea8566a95927fea1a8c907d14674bfe9fe152b1",
+      "title": "Diffusion-Limited Solid-State Synthesis Selectivity in the Presence of Oxidation/Reduction Processes",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-09T00:00:00+00:00",
+      "first_seen": "2026-10-12T00:50:44.681573+00:00",
+      "excerpt": "Solid-state synthesis outcomes arise from an interplay between thermodynamics and kinetics, with their relative importance governed by external control parameters such as temperature profiles and precursor selection. A recently introduced framework, combining first-principles thermodynamics with machine-learning-enabled simulations of correlated ion transport, successfully captured this interplay in the Ba–Ti–O system by linking phase selectivity to ion mobility within “liquid-like”, amorphous interphases. Notably, in systems where valence states can change during synthesis, ion dynamics are strongly coupled to oxidation state. Here, we extend the framework to such mixed-valence systems and demonstrate its predictive power for the synthesis of ternary metal ferrites in the Ba–Fe–O and Y–Fe–O systems, benchmarked against in situ XRD experiments. Similar to the Ba–Ti–O system, we hypothesize that the rate-limiting transport of ionic species governing polymorph growth occurs through a “liquid-like,” noncrystalline interphase. To capture this behavior, we employ a charge-informed machine-learning potential (CHGNet) that enables modeling of correlated, redox-dependent transport. We find that the framework accurately predicts the sequence of phase formation and the time evolution of phase distributions in powder synthesis reactions, in agreement with experimental reports. These results show that diffusion-limited phase selectivity can be treated on a unified footing across mixed-valence oxides, further clearing a pathway toward rational, in silico synthesis design that simultaneously accounts for thermodynamic and kinetic factors.",
+      "summary": "本文将此前结合第一性原理热力学与机器学习离子输运模拟的框架扩展到价态可变的混合价氧化物体系，并用电荷信息机器学习势对Ba–Fe–O和Y–Fe–O三元铁氧体合成进行了建模，结果与原位XRD实验报道的相形成顺序和相分布随时间演变一致。该工作表明扩散限制的相选择性可在混合价氧化物中统一处理，为同时考虑热力学与动力学因素的理性计算合成设计提供了途径；其适用性目前限于所研究的体系和合成条件。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Vir Karan",
+        "Kristin A. Persson"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        },
+        {
+          "id": "zotero:84051b1f05b8368766ddc3a2195c2324",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：metal。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:84051b1f05b8368766ddc3a2195c2324"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:84051b1f05b8368766ddc3a2195c2324",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8446,
+      "topic_cache_token": "ec2236fc09c85a9cf08b86393c29ef6d83b9037200a1020c67e53198669f5dde",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "cb181ea745974064735d0334",
+      "url": "https://www.semanticscholar.org/paper/4e57a5c6e9624a9aa6ae0ba2c90280f6659874f7",
+      "title": "Pressure-temperature phase diagram from global structure prediction and self-consistent phonon calculations based on polynomial machine learning potentials: Application to elemental silicon.",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-09T00:00:00+00:00",
+      "first_seen": "2026-10-12T00:50:44.681573+00:00",
+      "excerpt": "Polynomial machine learning potentials (MLPs) based on polynomial rotational invariants have been systematically developed for various systems and applied to efficiently predict crystal structures. In this study, we propose a methodology founded on polynomial MLPs to enumerate crystal structures under high-pressure conditions and evaluate their phase stability at finite temperatures. The proposed approach involves constructing polynomial MLPs with high predictive accuracy across a broad range of pressures, conducting reliable global structure searches for structures containing up to the specified number of atoms, and performing exhaustive self-consistent phonon calculations with reduced errors. We demonstrate the effectiveness of this approach by examining elemental silicon at pressures up to 100 GPa and temperatures up to 1000 K, revealing stable phases across these conditions. The framework established in this study offers a powerful strategy for predicting crystal structures and phase stability under high-pressure and finite-temperature conditions.",
+      "summary": "本文提出了一套基于多项式机器学习势的方法，用于在高压条件下枚举晶体结构并评估其在有限温度下的相稳定性，并以硅元素在最高100 GPa压力和最高1000 K温度范围内进行了演示。该框架可为预测高压有限温度条件下的晶体结构和相稳定性提供策略，但其适用性目前仅依据文中的硅体系演示，未给出对其他体系或更广条件的普适验证。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Hayato Wakai",
+        "A. Seko",
+        "Isao Tanaka"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        },
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：crystal。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9417,
+      "topic_cache_token": "a37c294889747c515b0d8d33b2e662b78fef0031f4284909d7d8dc97f8e5d922",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "9c07da6d60cb0dc0c3f0cff5",
       "url": "https://arxiv.org/abs/2610.12470",
       "title": "Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration",
@@ -1608,7 +1871,7 @@
       "excerpt": "Interactive virtual worlds allow agents to learn through exploration and interaction. What agents can learn is bounded by the environments they practice in, which must be faithful, with consistent state, rules, and dynamics, and realistic, with observations that follow the real-world visual distributions. Achieving both across diverse worlds remains a bottleneck. We introduce AgentGarten, a framework that couples simulators and game engines with a shared neural renderer to build real-time interactive environments. Its simulation backends maintain persistent world state and execute program-defined interaction rules, while the renderer generates visual observations from structured conditions exported through a common interface. To build the neural renderer, we adapt a pretrained video model to geometry conditions, distill it with our proposed Adversarial Forcing, and optimize inference for real-time interaction. Adversarial Forcing makes history prefilling differentiable through exact replay, so that losses on later predictions update how the renderer encodes prior observations, and adds real-data adversarial supervision to improve its visual quality. In AgentGarten, agents perceive the world through visual observations, interact with it in real time, and improve by distilling each round of experience into playbooks that subsequent agents inherit and refine. Our empirical study demonstrates a substantial gain in learning efficiency, with agents learning from just 4 rounds compared with millions for a conventional reinforcement learning counterpart. As new worlds can be written as code and rendered through the same interface, environments can scale in both number and difficulty alongside their agents, a step toward agents that keep evolving through interactive experience.",
       "summary": "本文提出AgentGarten框架，通过将模拟器与游戏引擎同共享神经渲染器耦合，构建具有持久世界状态、程序化交互规则和实时视觉观测的交互式虚拟环境，并采用Adversarial Forcing蒸馏预训练视频模型以实现实时渲染。该框架可供智能体通过视觉感知和实时交互将每轮经验提炼为可继承和迭代的playbook，从而提升学习效率，且新世界可通过代码编写并经同一接口渲染以扩展环境数量和难度；但其中关于仅需4轮学习等效率提升的表述为作者实证研究结论，具体适用条件与限制需依据原文进一步确认。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 5,
+      "alpha_rank": 8,
       "authors": [
         "Jiawei Chi",
         "Shangchen Miao",
@@ -1718,7 +1981,7 @@
       "topic_coverage": 0.9286,
       "topic_cache_token": "97cda284aa636828564c2223352f8e00b3df2de41393e34669400b54df88c627",
       "topic_backend": "lexical",
-      "alpha_rank": 8
+      "alpha_rank": 7
     },
     {
       "id": "db7b9e6fe248e3146f87743a",
@@ -2005,7 +2268,7 @@
       "excerpt": "Foundation models supply reinforcement learning (RL) with priors that mitigate its longstanding weaknesses in sample efficiency and transfer, but their token-by-token generation makes queries sequential and costly. Jev, a recently released decision model, generates nothing and returns calibrated, typed answers in a single forward pass. Existing work studies foundation models in RL either as models to be trained or as generators to be prompted, and Jev belongs to neither category, having so far served only as a black box in single domains. How well such a model decides on its own in RL environments, and how it can improve RL as a component of training, therefore remain unaddressed. To this end, in this paper we first examine the requirements that the objects of an RL system place on the answers they consume, and establish that Jev can fulfill all of them except the cardinal use of a value function. The remaining objects form positions that admit several roles each. We then construct algorithms that employ Jev at three of these positions, as a reference policy, an exploration judge, and a replay rater, to improve sample efficiency, exploration, and learning performance. Across nine MiniGrid tasks and three Atari games, training with Jev outperforms a standard RL learner, including where the learner makes no progress alone, while the model itself remains untrained. To our knowledge, we present the first use of Jev within the RL learning process and establish a frozen decision model as a usable component of RL training, inviting further exploration of how Jev and other advanced decision models can improve RL.",
       "summary": "本文检验了决策模型Jev在强化学习系统中的适用性，并构建算法将Jev作为参考策略、探索评判者和回放评分者用于改进样本效率、探索和学习性能。据原文，该工作首次将Jev用于强化学习训练过程，并在九个MiniGrid任务和三个Atari游戏中显示训练效果优于标准强化学习器，其中模型本身保持未训练；原文未将其性能数字与公司声明混同，相关结论限于所报告任务范围。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 6,
+      "alpha_rank": 9,
       "authors": [
         "Yi Ma",
         "Tianpei Yang",
@@ -3532,7 +3795,7 @@
       "topic_coverage": 0.8816,
       "topic_cache_token": "2adc8a5469422b52626050de190c93f29ac0349f1edbdd4d3bf766e677bfaaea",
       "topic_backend": "lexical",
-      "alpha_rank": 9
+      "alpha_rank": 4
     },
     {
       "id": "558de7ce6b120bccb6da3e25",
@@ -4499,7 +4762,7 @@
       "excerpt": "Real-time robot control demands enough visual history to infer motion and task progress, but processing that history can delay action. We present Long-WAM, a model-system framework for scaling the context of causal world-action models under real-time control constraints. Our central finding is that access to history is not the same as using it: longer histories pay off far more when the video foundation is pretrained autoregressively (AR). We first learn causal prediction from robot and egocentric videos without action labels, then preserve this history-to-future structure during world-action adaptation. On RoboCasa GR-1, increasing context from 0.0 to 19.2 seconds raises success from 63.3% to 78.7%, whereas a bidirectionally pretrained initialization shows no net gain; robot-domain AR pretraining further raises peak success on GR-1 and LIBERO-Long. Long-WAM also achieves the best results among compared methods on LIBERO-Long, RoboTwin 2.0, and DOMINO. Streaming observation encoding, asynchronous execution, and hardware-specific acceleration enable deployment on RTX 5090, DGX Spark, and Jetson AGX Thor without dropping future prediction; on RTX 5090, each action chunk, including future-video latent prediction, takes 107.4 ms. Real-time deployment on Unitree G1 and YAM supports dynamic and long-horizon manipulation, including 95% success on dynamic cup stacking, where Pi0.5 and Fast-WAM succeed in none of 20 trials. As a memory-informed executor, Long-WAM also complements higher-level planning in composite tasks.",
       "summary": "本文提出Long-WAM，一个在实时控制约束下扩展因果世界-动作模型上下文的模型-系统框架，其关键发现是自回归视频预训练能使更长历史真正带来收益，并实现了流式观测编码、异步执行和硬件特定加速。该框架在RTX 5090、DGX Spark和Jetson AGX Thor上部署时不丢失未来预测，在GR-1、LIBERO-Long、RoboTwin 2.0和DOMINO上取得所比较方法中的最佳结果，并可作为记忆知情执行器配合高层规划完成复合任务；但摘要中未报告各任务的成功率上限、延迟与成功率之间的权衡关系，也未说明这些结果在未测试机器人或任务上的泛化边界。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 4,
+      "alpha_rank": 5,
       "authors": [
         "Wei Huang",
         "Bohan Zhang",
@@ -7165,7 +7428,7 @@
       "excerpt": "Long-horizon planning with latent world models requires reasoning across timescales and levels of abstraction. Existing task-agnostic JEPA world models predict and plan at a single timescale or with multiple horizons in one shared latent space. We introduce H-JEPA, an end-to-end recipe for training a hierarchy of action-conditioned JEPAs in which each level predicts farther ahead in its own learned latent space. Planning proceeds top-down: the top level optimizes progress toward the goal, and each level's predictions become subgoals for the planner below it. When factors in the data evolve at separated timescales, higher levels discard fast, unpredictable detail and retain slower task-relevant state. Across four simulated navigation and manipulation environments, hierarchical planning improves over a flat JEPA; on Visual AntMaze, a three-level hierarchy raises success from 18% to 73% using less planner compute. Ablations attribute these gains to both temporal decomposition and higher-level goal representations. With inverse-dynamics supervision, the approach extends to diverse real-robot videos from DROID, where hierarchy improves offline planning fidelity at lower planner compute.",
       "summary": "本文提出H-JEPA，一种端到端训练方法，用于构建由动作条件JEPA组成的层级世界模型，每一层在各自学习的潜空间中预测更远的未来，规划时自顶向下进行，顶层优化向目标的进展，各层的预测成为下一层规划器的子目标。在四个模拟导航与操作环境中，该层级规划优于扁平JEPA，在Visual AntMaze上三层结构将成功率从18%提升至73%且规划器计算量更少，消融实验将收益归因于时间分解和更高层目标表示；在DROID真实机器人视频中，结合逆动力学监督可提升离线规划保真度并降低规划器计算量，但这些结论基于模拟环境和离线评估，其真实机器人闭环任务中的有效性尚未验证。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 2,
+      "alpha_rank": 6,
       "authors": [
         "Wancong Zhang",
         "Basile Terver",
@@ -9892,12 +10155,12 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-10-11T02:10:03.234988+00:00",
+    "last_success": "2026-10-12T00:50:44.681573+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 0,
+      "classified": 4,
       "unclassified": 37,
       "algorithm": "faceted-local-v2.4",
       "calibration_status": "pending_human_gold",
@@ -9914,17 +10177,17 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
-      "last_success": "2026-10-11T02:10:03.234988+00:00",
+      "last_attempt": "2026-10-12T00:50:44.681573+00:00",
+      "last_success": "2026-10-12T00:50:44.681573+00:00",
       "status": "ok",
-      "count": 12
+      "count": 10
     },
     {
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
-      "last_success": "2026-10-11T02:10:03.234988+00:00",
+      "last_attempt": "2026-10-12T00:50:44.681573+00:00",
+      "last_success": "2026-10-12T00:50:44.681573+00:00",
       "status": "ok",
       "count": 0
     },
@@ -9932,8 +10195,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
-      "last_success": "2026-10-11T02:10:03.234988+00:00",
+      "last_attempt": "2026-10-12T00:50:44.681573+00:00",
+      "last_success": "2026-10-12T00:50:44.681573+00:00",
       "status": "ok",
       "count": 9
     },
@@ -9941,8 +10204,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
-      "last_success": "2026-10-11T02:10:03.234988+00:00",
+      "last_attempt": "2026-10-12T00:50:44.681573+00:00",
+      "last_success": "2026-10-12T00:50:44.681573+00:00",
       "status": "ok",
       "count": 12
     },
@@ -9950,8 +10213,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
-      "last_success": "2026-10-11T02:10:03.234988+00:00",
+      "last_attempt": "2026-10-12T00:50:44.681573+00:00",
+      "last_success": "2026-10-12T00:50:44.681573+00:00",
       "status": "ok",
       "count": 7
     },
@@ -9959,8 +10222,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
-      "last_success": "2026-10-11T02:10:03.234988+00:00",
+      "last_attempt": "2026-10-12T00:50:44.681573+00:00",
+      "last_success": "2026-10-12T00:50:44.681573+00:00",
       "status": "ok",
       "count": 0
     },
@@ -9968,8 +10231,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
-      "last_success": "2026-10-11T02:10:03.234988+00:00",
+      "last_attempt": "2026-10-12T00:50:44.681573+00:00",
+      "last_success": "2026-10-12T00:50:44.681573+00:00",
       "status": "ok",
       "count": 12
     },
@@ -9977,8 +10240,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
-      "last_success": "2026-10-11T02:10:03.234988+00:00",
+      "last_attempt": "2026-10-12T00:50:44.681573+00:00",
+      "last_success": "2026-10-12T00:50:44.681573+00:00",
       "status": "ok",
       "count": 2
     },
@@ -9986,8 +10249,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
-      "last_success": "2026-10-11T02:10:03.234988+00:00",
+      "last_attempt": "2026-10-12T00:50:44.681573+00:00",
+      "last_success": "2026-10-12T00:50:44.681573+00:00",
       "status": "ok",
       "count": 0
     },
@@ -9995,8 +10258,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
-      "last_success": "2026-10-11T02:10:03.234988+00:00",
+      "last_attempt": "2026-10-12T00:50:44.681573+00:00",
+      "last_success": "2026-10-12T00:50:44.681573+00:00",
       "status": "ok",
       "count": 12
     },
@@ -10004,8 +10267,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
-      "last_success": "2026-10-11T02:10:03.234988+00:00",
+      "last_attempt": "2026-10-12T00:50:44.681573+00:00",
+      "last_success": "2026-10-12T00:50:44.681573+00:00",
       "status": "ok",
       "count": 4
     },
@@ -10013,8 +10276,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
-      "last_success": "2026-10-11T02:10:03.234988+00:00",
+      "last_attempt": "2026-10-12T00:50:44.681573+00:00",
+      "last_success": "2026-10-12T00:50:44.681573+00:00",
       "status": "ok",
       "count": 0
     },
@@ -10022,8 +10285,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
-      "last_success": "2026-10-11T02:10:03.234988+00:00",
+      "last_attempt": "2026-10-12T00:50:44.681573+00:00",
+      "last_success": "2026-10-12T00:50:44.681573+00:00",
       "status": "ok",
       "count": 12
     },
@@ -10032,15 +10295,15 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 0,
-      "last_attempt": "2026-10-11T02:10:03.234988+00:00",
-      "last_success": "2026-10-11T00:35:29.537773+00:00",
-      "run_id": "38098900918",
+      "last_attempt": "2026-10-12T00:50:44.681573+00:00",
+      "last_success": "2026-10-12T00:50:19.728776+00:00",
+      "run_id": "38189488511",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
     }
   ],
   "summaries": {
     "status": "ok",
-    "generated": 1,
+    "generated": 4,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash"
   },
