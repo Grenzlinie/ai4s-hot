@@ -1,0 +1,31 @@
+{
+  "code_revision": "76af0f9e4ea838c76939d1e2a5ddb4007810ce8e",
+  "archive_revision": "8d14ff2a802857ebef060718b8fdc791cbd37436",
+  "generated_at": "2026-10-13T02:45:15.724291+00:00",
+  "item_count": 176,
+  "summary_status": {
+    "status": "ok",
+    "generated": 20,
+    "failed": 0,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "enrichment": {
+      "status": "partial",
+      "attempted": 8,
+      "public_html": 6,
+      "bohr_graph": 0,
+      "fallback": 2,
+      "bohr_calls": 0
+    }
+  },
+  "basis_counts": {
+    "public_html": 6
+  },
+  "attempt": {
+    "status": "ok",
+    "stage": "classification",
+    "last_attempt": "2026-10-13T02:46:27.878987+00:00",
+    "retryable": false,
+    "last_success": "2026-10-13T02:45:15.724291+00:00",
+    "run_url": "https://github.com/Grenzlinie/ai4s-hot/actions/runs/38338323116"
+  }
+}
