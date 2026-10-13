@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-13T03:46:18.372403+00:00",
+  "generated_at": "2026-10-13T03:51:08.757106+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -2112,11 +2112,11 @@
       "summary": "本文结合先进的机器学习势、加速解离过程采样以及核量子修正的高效估计，提出了一个可从第一性原理可靠计算水中不同物种解离常数的工作流程，并成功将其应用于水的自电离和磷酸在水中的全部逐级解离。该工作表明解离常数的定义、序参量选择、采样伪影、有限尺寸效应和量子核效应都会对计算结果产生重要影响，因此在实际科研中简化处理可能引入偏差，只有在偶然误差抵消时才可能被补偿。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Qianjun Xu",
-        "Simin Liu",
+        "Qian-Jun Xu",
+        "Si-Min Liu",
         "Cesare Malosso",
         "Philip Loche",
-        "Michele Ceriotti"
+        "M. Ceriotti"
       ],
       "topic_labels": [
         {
@@ -4560,7 +4560,7 @@
       "authors": [
         "Alex Guerra",
         "Joshua Aduol",
-        "Yaqian Tang",
+        "Ya-Qian Tang",
         "Daniel Williams",
         "Ryan P. Adams",
         "Peter Orbanz"
@@ -5442,17 +5442,16 @@
       "summary": "SAIL 是一个总参数 350 亿、激活参数 30 亿的开放模型，通过“科学感知改进循环”让前沿模型智能体分析失败并生成针对性训练任务，再结合监督微调、专家训练、多教师同策略蒸馏和智能体强化学习，在文献研究、科学编程与多步科研工作流中以更少参数取得有竞争力的表现。",
       "summary_kind": "upstream_tldr",
       "authors": [
-        "SAIL Model Team",
-        "Boyuan Sun",
+        "Sai-Shuai Sun",
         "Bryan Dai",
         "Che Liu",
-        "Chi Liu",
+        "C. Liu",
         "Derek Li",
-        "Hongming Piao",
-        "Mengzhuo Chen",
-        "Xidong Wang",
+        "Hong-Ming Piao",
+        "Meng-Zhuo Chen",
+        "Xi-Dong Wang",
         "Yan Shu",
-        "Yinda Chen",
+        "Yin-Da Chen",
         "Ziyang Zeng"
       ],
       "topic_leaf_ids": [
@@ -5613,10 +5612,10 @@
       "summary_kind": "upstream_tldr",
       "authors": [
         "Justinas Šlepavičius",
-        "Antanas Vaitkus",
+        "A. Vaitkus",
         "Andrius Merkys",
-        "Saulius Gražulis",
-        "Linas Vilčiauskas"
+        "S. Gražulis",
+        "L. Vilčiauskas"
       ],
       "topic_leaf_ids": [
         "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
@@ -12813,6 +12812,91 @@
       }
     },
     {
+      "id": "785b6a69ee293da39c620103",
+      "url": "https://arxiv.org/abs/2609.39600",
+      "title": "GroundAnything: Reconciling Parallel Decoding with Precise Visual Grounding at Flash Speed",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-09-30T00:00:00+00:00",
+      "first_seen": "2026-10-13T03:51:08.757106+00:00",
+      "excerpt": "Autoregressive (AR) grounding models serialize spatial predictions, introducing sequential latency and imposing a causal order on output tokens. We view grounding as visual evidence extraction: objects, locations, and spatial relations are jointly constrained by the image and query, yet their dependencies do not imply an intrinsic left-to-right generation order. This distinction makes bidirectional diffusion a natural fit, allowing spatial hypotheses to emerge in parallel and be jointly refined through iterative denoising. We introduce GroundAnything, a 4B-parameter grounding foundation model that reconciles fast parallel decoding with precise localization through blockwise denoising. Training combines grounding pretraining from public datasets and dedicated data engines, direct AR-to-diffusion conversion with joint AR and diffusion objectives, supervised fine-tuning, and GRPO-based reinforcement post-training. Across 30 grounding benchmarks, our autoregressive variant, GroundAnything-VLM, establishes a new overall state of the art among similarly sized models at 72.42%, remaining competitive with GPT-6 Astra (71.35%). With entropy-guided decoding, GroundAnything also surpasses the prior state of the art at this scale, averaging 61.75% versus 53.32% for the fast MTP-based LocateAnything model. We further explore decoding strategies, showing that an optional self-speculative mode achieves a 4.51times speedup over the AR counterpart with a 0.74 percentage-point drop in COCO F1mIoU. Infrastructure experiments show that progressive inference optimizations translate parallel decoding into practical speedups. These support efficient visual grounding in latency-sensitive real-world systems.",
+      "summary": "GroundAnything 是一个 4B 参数的扩散式视觉定位基础模型，采用块级去噪实现并行解码，并通过公开数据与专用数据引擎的定位预训练、自回归到扩散的转换（联合 AR 与扩散目标）、监督微调及基于 GRPO 的强化后训练构建，同时提供了自回归变体 GroundAnything-VLM 及熵引导解码、可选自推测解码等策略。原文报告在 30 个定位基准上 GroundAnything-VLM 取得 72.42% 的总体结果、GroundAnything 在熵引导解码下平均 61.75%，自推测模式相对 AR 对应模型实现 4.51 倍加速且 COCO F1mIoU 下降 0.74 个百分点，但这些数字来自论文自述、未在所提供的材料中独立验证；材料的限制说明为有界摘录、非完整全文核验，因此上述用途与性能需以原文及代码/模型发布为准。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2609.39600",
+      "authors": [
+        "Qize Yu",
+        "Lianrui Fan",
+        "Bowen Ping",
+        "Xini Ding",
+        "Zetian Song",
+        "Junbo Niu",
+        "Kaixuan Wang",
+        "Tianxing Chen",
+        "Yue Chen",
+        "Minghua He",
+        "Yuran Wang",
+        "Jie Huang",
+        "Haojun Zhang",
+        "Min Chen",
+        "Hao Li",
+        "Wenxuan Song",
+        "Ruihai Wu",
+        "Xianming Liu",
+        "Shilong Liu",
+        "Shuchang Zhou",
+        "Ping Luo",
+        "Shiyu Huang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.78,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：pretraining、post-training、fine-tuning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8701,
+      "topic_cache_token": "ff945f376a28f00d46702629bf2b599f56b167773b96943826973108e29f3001",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2609.39600",
+        "sha256": "2064772e8b93e31cc9a135b7b60f60f9909b7e4853bd06149e9f91302d648959",
+        "chars": 12000
+      }
+    },
+    {
       "id": "fc615e071bcda5270221bed4",
       "url": "https://www.isomorphiclabs.com/articles/building-a-new-path-to-make-medicines-with-ai",
       "title": "Building a new path to make medicines with AI - Isomorphic Labs",
@@ -14533,12 +14617,12 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-10-13T03:46:18.372403+00:00",
+    "last_success": "2026-10-13T03:51:08.757106+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 21,
+      "classified": 1,
       "unclassified": 40,
       "algorithm": "faceted-local-v2.4",
       "calibration_status": "pending_human_gold",
@@ -14555,8 +14639,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-10-13T03:46:18.372403+00:00",
-      "last_success": "2026-10-13T03:46:18.372403+00:00",
+      "last_attempt": "2026-10-13T03:51:08.757106+00:00",
+      "last_success": "2026-10-13T03:51:08.757106+00:00",
       "status": "ok",
       "count": 11
     },
@@ -14564,8 +14648,8 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-10-13T03:46:18.372403+00:00",
-      "last_success": "2026-10-13T03:46:18.372403+00:00",
+      "last_attempt": "2026-10-13T03:51:08.757106+00:00",
+      "last_success": "2026-10-13T03:51:08.757106+00:00",
       "status": "ok",
       "count": 0
     },
@@ -14573,8 +14657,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-10-13T03:46:18.372403+00:00",
-      "last_success": "2026-10-13T03:46:18.372403+00:00",
+      "last_attempt": "2026-10-13T03:51:08.757106+00:00",
+      "last_success": "2026-10-13T03:51:08.757106+00:00",
       "status": "ok",
       "count": 9
     },
@@ -14582,8 +14666,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-10-13T03:46:18.372403+00:00",
-      "last_success": "2026-10-13T03:46:18.372403+00:00",
+      "last_attempt": "2026-10-13T03:51:08.757106+00:00",
+      "last_success": "2026-10-13T03:51:08.757106+00:00",
       "status": "ok",
       "count": 12
     },
@@ -14591,8 +14675,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-10-13T03:46:18.372403+00:00",
-      "last_success": "2026-10-13T03:46:18.372403+00:00",
+      "last_attempt": "2026-10-13T03:51:08.757106+00:00",
+      "last_success": "2026-10-13T03:51:08.757106+00:00",
       "status": "ok",
       "count": 7
     },
@@ -14600,8 +14684,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-10-13T03:46:18.372403+00:00",
-      "last_success": "2026-10-13T03:46:18.372403+00:00",
+      "last_attempt": "2026-10-13T03:51:08.757106+00:00",
+      "last_success": "2026-10-13T03:51:08.757106+00:00",
       "status": "ok",
       "count": 0
     },
@@ -14609,8 +14693,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-10-13T03:46:18.372403+00:00",
-      "last_success": "2026-10-13T03:46:18.372403+00:00",
+      "last_attempt": "2026-10-13T03:51:08.757106+00:00",
+      "last_success": "2026-10-13T03:51:08.757106+00:00",
       "status": "ok",
       "count": 12
     },
@@ -14618,8 +14702,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-10-13T03:46:18.372403+00:00",
-      "last_success": "2026-10-13T03:46:18.372403+00:00",
+      "last_attempt": "2026-10-13T03:51:08.757106+00:00",
+      "last_success": "2026-10-13T03:51:08.757106+00:00",
       "status": "ok",
       "count": 2
     },
@@ -14627,8 +14711,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-10-13T03:46:18.372403+00:00",
-      "last_success": "2026-10-13T03:46:18.372403+00:00",
+      "last_attempt": "2026-10-13T03:51:08.757106+00:00",
+      "last_success": "2026-10-13T03:51:08.757106+00:00",
       "status": "ok",
       "count": 0
     },
@@ -14636,8 +14720,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-10-13T03:46:18.372403+00:00",
-      "last_success": "2026-10-13T03:46:18.372403+00:00",
+      "last_attempt": "2026-10-13T03:51:08.757106+00:00",
+      "last_success": "2026-10-13T03:51:08.757106+00:00",
       "status": "ok",
       "count": 12
     },
@@ -14645,8 +14729,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-10-13T03:46:18.372403+00:00",
-      "last_success": "2026-10-13T03:46:18.372403+00:00",
+      "last_attempt": "2026-10-13T03:51:08.757106+00:00",
+      "last_success": "2026-10-13T03:51:08.757106+00:00",
       "status": "ok",
       "count": 4
     },
@@ -14654,8 +14738,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-10-13T03:46:18.372403+00:00",
-      "last_success": "2026-10-13T03:46:18.372403+00:00",
+      "last_attempt": "2026-10-13T03:51:08.757106+00:00",
+      "last_success": "2026-10-13T03:51:08.757106+00:00",
       "status": "ok",
       "count": 0
     },
@@ -14663,8 +14747,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-10-13T03:46:18.372403+00:00",
-      "last_success": "2026-10-13T03:46:18.372403+00:00",
+      "last_attempt": "2026-10-13T03:51:08.757106+00:00",
+      "last_success": "2026-10-13T03:51:08.757106+00:00",
       "status": "ok",
       "count": 12
     },
@@ -14673,7 +14757,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 20,
-      "last_attempt": "2026-10-13T03:46:18.372403+00:00",
+      "last_attempt": "2026-10-13T03:51:08.757106+00:00",
       "last_success": "2026-10-13T03:45:49.799001+00:00",
       "run_id": "38338483464",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -14681,13 +14765,13 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 2,
+    "generated": 1,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
       "status": "partial",
-      "attempted": 3,
-      "public_html": 2,
+      "attempted": 2,
+      "public_html": 1,
       "bohr_graph": 0,
       "fallback": 1,
       "bohr_calls": 0
