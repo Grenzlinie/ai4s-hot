@@ -102,6 +102,22 @@ class EnrichmentTests(unittest.TestCase):
  def test_workflow_reservation_push_precedes_allowance_and_collect(self):
   text=(SITE.parent/'.github/workflows/ai4s-pages.yml').read_text();start=text.index('- name: Reserve daily Bohrium');end=text.index('- uses: actions/setup-node',start);step=text[start:end]
   self.assertLess(step.index('push origin HEAD:site-data'),step.index('echo "allowance='));self.assertNotIn('--force',step);self.assertNotIn('continue-on-error',step);self.assertIn('cancel-in-progress: false',text);self.assertIn("steps.bohr_cli.outcome == 'success' && steps.bohr_budget.outputs.allowance || '0'",text)
+ def test_merge_summary_basis_tracks_only_current_summary(self):
+  old_basis={'kind':'public_html','url':'https://example.org/old','sha256':'a'*64,'chars':900}
+  new_basis={'kind':'bohr_knowledge_graph','url':'https://doi.org/10.1038/new','sha256':'b'*64,'chars':1000}
+  for scenario,new_summary,basis in [('no summary',None,None),('new summary without basis','New upstream TLDR',None),('new summary with basis','New grounded summary',new_basis)]:
+   with self.subTest(scenario=scenario):
+    old=item(summary='Original grounded summary',summary_kind='ai_summary',summary_basis=copy.deepcopy(old_basis),source_ids=['original'],source_names=['Original'],tags=[])
+    incoming=item(source_ids=['upstream'],source_names=['Upstream'],tags=[])
+    if new_summary:incoming.update(summary=new_summary,summary_kind='upstream_tldr')
+    if basis:incoming['summary_basis']=copy.deepcopy(basis)
+    state={'a':old};collect.merge(state,[incoming]);current=state['a']
+    if new_summary is None:
+     self.assertEqual(current['summary'],'Original grounded summary');self.assertEqual(current['summary_basis'],old_basis);self.assertEqual(current['summary_kind'],'ai_summary')
+    elif basis is None:
+     self.assertEqual(current['summary'],new_summary);self.assertNotIn('summary_basis',current)
+    else:
+     self.assertEqual(current['summary'],new_summary);self.assertEqual(current['summary_basis'],new_basis)
  def test_cloud_cli_failure_has_zero_allowance_and_version_pinned(self):
   workflow=yaml.safe_load((SITE.parent/'.github/workflows/ai4s-pages.yml').read_text());steps=workflow['jobs']['build']['steps'];byid={step['id']:step for step in steps if 'id' in step}
   node,cli,collector=byid['bohr_node'],byid['bohr_cli'],byid['collect']

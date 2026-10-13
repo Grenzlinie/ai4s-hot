@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-13T02:40:50.772275+00:00",
+  "checked_at": "2026-10-13T02:46:51.675597+00:00",
   "scope": "Independent offline integration tests and code/workflow audit. No network, paid API, secrets read, commit, push, or deployment.",
   "focused_tests": {
-    "passed": 21,
+    "passed": 24,
     "failed": 0,
     "checks": [
       "test_public_priority_has_no_cli_and_existing_summary_skipped",
@@ -25,12 +25,15 @@
       "test_existing_summary_not_regenerated",
       "test_basis_schema_rejects_raw_evidence_fields",
       "test_site_configuration_removed_before_upstream",
-      "test_workflow_reservation_push_precedes_allowance_and_collect"
+      "test_workflow_reservation_push_precedes_allowance_and_collect",
+      "test_merge_summary_basis_tracks_only_current_summary",
+      "test_cloud_cli_failure_has_zero_allowance_and_version_pinned",
+      "test_cloud_auth_verification_is_strict_and_output_anonymous"
     ]
   },
   "full_python": {
     "command": "../site-venv/bin/python -m unittest discover -s site/tests -p 'test_*.py'",
-    "passed": 181,
+    "passed": 184,
     "failed": 0,
     "log": "bohr-enrichment-python-tests.log"
   },
@@ -54,7 +57,9 @@
     "privacy": "Summary request uses whitelisted title/type/excerpt/evidence; synthetic private item and CLI account envelope sentinels absent from resulting evidence/receipts; archive basis only kind/url/sha256/chars and raw text rejected.",
     "budget": "Daily whole-run allowance reserved durably; same-day rerun exhausted, next-day reset; malformed/future ledger and missing key grant zero. Failed calls consume allowance. Git push precedes GITHUB_OUTPUT; push failure blocks paid stage. Shared concurrency group cancel-in-progress:false serializes this workflow. Crash after push wastes reservation rather than reclaiming it.",
     "bounds": "Max items24/configured tested3, max_chars24000/configured12000, timeout30/configured12; HTML stream rejects >2MB; CLI stdout spooled to auto-cleaned temp file, response >2MB rejected before JSON parse, CLI timeout60.",
-    "upstream": "Site-only enrichment and SMTP config removed from upstream YAML."
+    "upstream": "Site-only enrichment and SMTP config removed from upstream YAML.",
+    "cloud_auth": "setup-node and pinned CLI install use continue-on-error. CLI install/auth only runs after setup-node success. Verification captures stdout/stderr and strictly requires returncode0, ok is True and data.verified is True; mocked string/number false positives rejected. Only boolean verification status printed, synthetic account/key sentinels absent. Collect allowance expression requires bohr_cli.outcome success, otherwise0. Reservation push ordering unchanged.",
+    "merge_provenance": "Actual collect.merge regression covers three cases: incoming without summary preserves old summary/basis; incoming new summary without basis removes old basis; incoming new summary with basis replaces old basis. This prevents upstream TLDR inheriting unrelated evidence provenance."
   },
   "fixed_findings": [
     {
@@ -70,14 +75,16 @@
   "limits": [
     "Offline mock evidence verifies contract; it does not prove live Bohrium credentials, current CLI service response or extraction coverage.",
     "Daily cap applies to the serialized repository workflow and its tracked ledger; unrelated external calls or manual ledger deletion are outside this accounting.",
-    "CLI spool limits parsing/RAM and execution time; the temporary file can grow until process termination (60 seconds)."
+    "CLI spool limits parsing/RAM and execution time; the temporary file can grow until process termination (60 seconds).",
+    "User-authorized configured daily limit20 and Secret synchronization were handled by main agent; this independent audit did not inspect real repository variables or credentials."
   ],
   "files_sha256": {
     "site/enrichment.py": "6d7638c57d413250fb39cbeec3cc9a3c9ed5ac707b7cc9a1b6b4cf818de520b8",
-    "site/collect.py": "ad08080109338baa293754a1791303b5ac4106b18ed9c5c7431cf0e5ed7202e0",
+    "site/collect.py": "4d2204e06087b7f6bc62fcf8704ccec220f368b4fc7b858c9676ad60e08d0f45",
     "site/topics_schema.py": "bed063833213fff675886ea0b1a4ef42c05aff5e97161983626b30fb4d36059a",
     "site/prepare_config.py": "787193716dace75cc1cf5ae7f898a008848b3e2d05203e640875408567a85c2a",
-    ".github/workflows/ai4s-pages.yml": "4c99bd33e64cd9db5191721d5e1a56602e9b9804962c9156237838df8554022f",
-    "site/tests/test_enrichment.py": "603dded83807e84b047e2817152957d1330845d7bd92bb987eec98c73abe02d1"
-  }
+    ".github/workflows/ai4s-pages.yml": "2ec269bc9a977b8203d01911261ad7c2832f660c3aba797665f6601040fe1236",
+    "site/tests/test_enrichment.py": "18bfa90769f1c2de1a0928c9bd276314cb3ea6525400250eb90caadade70e8ac"
+  },
+  "frontend_note": "Frontend files unchanged in this follow-up; prior 29+67+132 assertion results retained, not rerun."
 }

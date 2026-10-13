@@ -305,6 +305,11 @@ def merge(existing, incoming):
         if new.get("summary"):
             old["summary"] = new["summary"]
             old["summary_kind"] = new.get("summary_kind", "upstream_tldr")
+            # The basis belongs to this summary, never to a replaced version.
+            if new.get("summary_basis"):
+                old["summary_basis"] = new["summary_basis"]
+            else:
+                old.pop("summary_basis", None)
         if not old.get("published_at") and new.get("published_at"):
             old["published_at"] = new["published_at"]
 
