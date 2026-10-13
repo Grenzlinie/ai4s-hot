@@ -1,0 +1,233 @@
+{
+  "run": "https://github.com/Grenzlinie/ai4s-hot/actions/runs/38394814679",
+  "conclusion": "success",
+  "code_revision": "783b6c24c01e0c52810d766dbc971c8720478d3b",
+  "archive_revision": "9d7ace27ceafa5793e7a108c25034cc8fe883b48",
+  "archive_sha256": "f121e6b8dfc53a4d6c163ee95563043a6e1010b4f4b91ee296d29aeb5dee0bb1",
+  "item_count": 1124,
+  "journals": 10,
+  "journal_articles": 921,
+  "related": 39,
+  "pending": 882,
+  "related_with_topics": 32,
+  "sources": [
+    {
+      "id": "journal-acta-materialia",
+      "name": "Acta Materialia",
+      "url": "https://rss.sciencedirect.com/publication/science/13596454",
+      "kind": "journal",
+      "group": "science",
+      "type": "paper",
+      "status": "ok",
+      "last_attempt": "2026-10-13T12:06:10.113449+00:00",
+      "last_success": "2026-10-13T12:06:10.113449+00:00",
+      "count": 100,
+      "counters": {
+        "relevant": 3,
+        "pending": 97,
+        "excluded": 0,
+        "fetched": 246
+      },
+      "errors": []
+    },
+    {
+      "id": "journal-advanced-energy-materials",
+      "name": "Advanced Energy Materials",
+      "url": "https://advanced.onlinelibrary.wiley.com/feed/16146840/most-recent",
+      "kind": "journal",
+      "group": "science",
+      "type": "paper",
+      "status": "ok",
+      "last_attempt": "2026-10-13T12:06:10.113449+00:00",
+      "last_success": "2026-10-13T12:06:10.113449+00:00",
+      "count": 25,
+      "counters": {
+        "relevant": 1,
+        "pending": 24,
+        "excluded": 86,
+        "fetched": 185
+      },
+      "errors": []
+    },
+    {
+      "id": "journal-advanced-functional-materials",
+      "name": "Advanced Functional Materials",
+      "url": "https://advanced.onlinelibrary.wiley.com/feed/16163028/most-recent",
+      "kind": "journal",
+      "group": "science",
+      "type": "paper",
+      "status": "ok",
+      "last_attempt": "2026-10-13T12:06:10.113449+00:00",
+      "last_success": "2026-10-13T12:06:10.113449+00:00",
+      "count": 52,
+      "counters": {
+        "relevant": 13,
+        "pending": 39,
+        "excluded": 592,
+        "fetched": 857
+      },
+      "errors": []
+    },
+    {
+      "id": "journal-advanced-materials",
+      "name": "Advanced Materials",
+      "url": "https://advanced.onlinelibrary.wiley.com/feed/15214095/most-recent",
+      "kind": "journal",
+      "group": "science",
+      "type": "paper",
+      "status": "partial",
+      "last_attempt": "2026-10-13T12:06:10.113449+00:00",
+      "last_success": null,
+      "count": 36,
+      "counters": {
+        "relevant": 14,
+        "pending": 22,
+        "excluded": 365,
+        "fetched": 627
+      },
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
+    },
+    {
+      "id": "journal-matter",
+      "name": "Matter",
+      "url": "https://rss.sciencedirect.com/publication/science/25902385",
+      "kind": "journal",
+      "group": "science",
+      "type": "paper",
+      "status": "ok",
+      "last_attempt": "2026-10-13T12:06:10.113449+00:00",
+      "last_success": "2026-10-13T12:06:10.113449+00:00",
+      "count": 74,
+      "counters": {
+        "relevant": 1,
+        "pending": 73,
+        "excluded": 2,
+        "fetched": 138
+      },
+      "errors": []
+    },
+    {
+      "id": "journal-nature",
+      "name": "Nature",
+      "url": "https://www.nature.com/nature.rss",
+      "kind": "journal",
+      "group": "science",
+      "type": "paper",
+      "status": "partial",
+      "last_attempt": "2026-10-13T12:06:10.113449+00:00",
+      "last_success": null,
+      "count": 48,
+      "counters": {
+        "relevant": 0,
+        "pending": 48,
+        "excluded": 156,
+        "fetched": 275
+      },
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
+    },
+    {
+      "id": "journal-nature-communications",
+      "name": "Nature Communications",
+      "url": "https://www.nature.com/ncomms.rss",
+      "kind": "journal",
+      "group": "science",
+      "type": "paper",
+      "status": "ok",
+      "last_attempt": "2026-10-13T12:06:10.113449+00:00",
+      "last_success": "2026-10-13T12:06:10.113449+00:00",
+      "count": 515,
+      "counters": {
+        "relevant": 7,
+        "pending": 508,
+        "excluded": 397,
+        "fetched": 920
+      },
+      "errors": []
+    },
+    {
+      "id": "journal-nature-materials",
+      "name": "Nature Materials",
+      "url": "https://www.nature.com/nmat.rss",
+      "kind": "journal",
+      "group": "science",
+      "type": "paper",
+      "status": "ok",
+      "last_attempt": "2026-10-13T12:06:10.113449+00:00",
+      "last_success": "2026-10-13T12:06:10.113449+00:00",
+      "count": 26,
+      "counters": {
+        "relevant": 0,
+        "pending": 26,
+        "excluded": 12,
+        "fetched": 46
+      },
+      "errors": []
+    },
+    {
+      "id": "journal-science",
+      "name": "Science",
+      "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science",
+      "kind": "journal",
+      "group": "science",
+      "type": "paper",
+      "status": "partial",
+      "last_attempt": "2026-10-13T12:06:10.113449+00:00",
+      "last_success": null,
+      "count": 35,
+      "counters": {
+        "relevant": 0,
+        "pending": 35,
+        "excluded": 1,
+        "fetched": 36
+      },
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
+    },
+    {
+      "id": "journal-science-advances",
+      "name": "Science Advances",
+      "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv",
+      "kind": "journal",
+      "group": "science",
+      "type": "paper",
+      "status": "ok",
+      "last_attempt": "2026-10-13T12:06:10.113449+00:00",
+      "last_success": "2026-10-13T12:06:10.113449+00:00",
+      "count": 10,
+      "counters": {
+        "relevant": 0,
+        "pending": 10,
+        "excluded": 258,
+        "fetched": 359
+      },
+      "errors": []
+    }
+  ],
+  "summaries": {
+    "status": "ok",
+    "generated": 24,
+    "failed": 0,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "enrichment": {
+      "status": "partial",
+      "attempted": 8,
+      "public_html": 0,
+      "bohr_graph": 0,
+      "fallback": 8,
+      "bohr_calls": 0
+    }
+  },
+  "update_status": {
+    "status": "ok",
+    "stage": "classification",
+    "last_attempt": "2026-10-13T12:08:40.414152+00:00",
+    "retryable": false,
+    "last_success": "2026-10-13T12:06:10.113449+00:00",
+    "run_url": "https://github.com/Grenzlinie/ai4s-hot/actions/runs/38394814679"
+  }
+}

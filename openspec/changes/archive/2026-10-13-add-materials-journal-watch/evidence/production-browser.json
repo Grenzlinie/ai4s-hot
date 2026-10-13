@@ -1,0 +1,131 @@
+{
+  "base": "https://grenzlinie.github.io/ai4s-hot/",
+  "captured_at": "2026-10-13T12:10:11.711Z",
+  "fixture": false,
+  "checks": [
+    {
+      "name": "manifest binds actual archive bytes, count and timestamp",
+      "passed": true
+    },
+    {
+      "name": "manifest binds served frontend asset bytes",
+      "passed": true
+    },
+    {
+      "name": "all ten real journal titles registered",
+      "passed": true
+    },
+    {
+      "name": "real related journal articles classified in shared topic catalog",
+      "passed": true
+    },
+    {
+      "name": "default unified stream hides only pending journal candidates",
+      "passed": true
+    },
+    {
+      "name": "all ten journals selectable even with zero results",
+      "passed": true
+    },
+    {
+      "name": "multiple journal selections use OR on actual archive",
+      "passed": true
+    },
+    {
+      "name": "copied journal URL restores exact scope",
+      "passed": true
+    },
+    {
+      "name": "latest preserves actual journal scope",
+      "passed": true
+    },
+    {
+      "name": "journal and existing research topic intersect on actual archive",
+      "passed": true
+    },
+    {
+      "name": "pending view contains exactly actual pending journal articles",
+      "passed": true
+    },
+    {
+      "name": "pending explanation is visible and readable",
+      "passed": true
+    },
+    {
+      "name": "actual journal source health counters are visible",
+      "passed": true
+    },
+    {
+      "name": "1440 layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "1440 dialog focuses search",
+      "passed": true
+    },
+    {
+      "name": "390 layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390 dialog focuses search",
+      "passed": true
+    },
+    {
+      "name": "manifest unchanged throughout browser acceptance",
+      "passed": true
+    },
+    {
+      "name": "no browser JavaScript errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "manifest": {
+    "schema_version": 1,
+    "created_at": "2026-10-13T12:08:40.127121+00:00",
+    "mode": "publish",
+    "code_revision": "783b6c24c01e0c52810d766dbc971c8720478d3b",
+    "archive_revision": "9d7ace27ceafa5793e7a108c25034cc8fe883b48",
+    "builder_revision": "783b6c24c01e0c52810d766dbc971c8720478d3b",
+    "archive_schema": 2,
+    "archive_generated_at": "2026-10-13T12:06:10.113449+00:00",
+    "archive_sha256": "f121e6b8dfc53a4d6c163ee95563043a6e1010b4f4b91ee296d29aeb5dee0bb1",
+    "assets": {
+      "index.html": "6325176d8cb545864400c090d43a64004e95d2c0cbf0c28ea2ea4b9639bb17a9",
+      "app.js": "93eba509d748402cdc7d0ca4593669b3543fcd3488ad43b14b4c903eae741f61",
+      "style.css": "13d85276d38e77d85c2c75de2ef9d1cd4238858f05973a2f9c66ac47994043d3",
+      "favicon.svg": "82ef768aeb8152ca4b219024fe0ec8a01d33f9ed646e3639f561c6f0b6697494",
+      "schema-support.json": "185f680de2d4d7ff11896b68c90ab2e1851adbc1e45a56a7adfef0485a694f87"
+    },
+    "item_count": 1124,
+    "taxonomy_version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
+    "classification": {
+      "status": "ok",
+      "classified": 926,
+      "unclassified": 894,
+      "algorithm": "faceted-local-v2.4",
+      "calibration_status": "pending_human_gold",
+      "quality_status": "unmeasured",
+      "curation": {
+        "status": "ok",
+        "applied": 0,
+        "needs_review": 0
+      }
+    },
+    "source_kind": "public_archive",
+    "llm_requests": 0
+  },
+  "index_sha256": "f121e6b8dfc53a4d6c163ee95563043a6e1010b4f4b91ee296d29aeb5dee0bb1",
+  "item_count": 1124,
+  "journal_count": 10,
+  "journal_items": 921,
+  "relevant": 39,
+  "pending": 882,
+  "selected_journals": [
+    "acta-materialia",
+    "advanced-materials"
+  ],
+  "completed_at": "2026-10-13T12:10:34.342Z",
+  "passed": true
+}

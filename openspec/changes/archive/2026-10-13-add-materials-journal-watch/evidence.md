@@ -21,4 +21,12 @@
 
 ## 线上验收
 
-待实际GitHub Actions与Pages读回后填写；绿色retention不能代替本次采集成功。
+- 正式提交：`783b6c24c01e0c52810d766dbc971c8720478d3b`。
+- [CI 38394814354](https://github.com/Grenzlinie/ai4s-hot/actions/runs/38394814354)成功；[Pages 38394814679](https://github.com/Grenzlinie/ai4s-hot/actions/runs/38394814679)采集、构建、发布均成功。
+- mode=`publish`，update-status=`ok`，非retention。归档commit `9d7ace27ceafa5793e7a108c25034cc8fe883b48`；SHA256 `f121e6b8dfc53a4d6c163ee95563043a6e1010b4f4b91ee296d29aeb5dee0bb1`。HTTP和独立Chrome核验归档/前端hash一致，浏览器验收前后manifest稳定。
+- 共1124条归档；921篇期刊候选=39相关+882待确认。39相关均经过现有分类，其中32有主题标签；其余保留证据不足状态，不强行分配。缺摘要是待确认的重要原因，不能把技术检查写成筛选准确率。
+- 10刊来源：7ok、3partial。Advanced Materials、Nature、Science的Crossref请求部分失败，RSS结果仍可读；Nature本机RSS失败不代表云端失败。细项见 evidence/production-http.json。
+- 中文摘要24篇成功、0失败；正文补充8次均fallback，本次Bohrium调用0。仍使用原有每日总预算，没有为了新期刊额外领取付费额度。
+- 独立线上真实Chrome19/19，1440/390截图已目检：期刊OR、主题AND、默认/pending隔离、10刊含零结果可选、URL恢复、来源计数、共同分类、无JS错误/横向溢出。首次网络body超时的重试恢复，不改变代码/归档。
+- 证据文件在同目录 evidence/，浏览器自动检查脚本在 site/tests/test_journal_live_browser.cjs。采集按原计划北京时间07:43每日补跑，并在论文工作流完成后触发，GitHub定时任务可能延迟。
+- 验收后停止本地预览并移除一次性集成脚本；保留公开运行收据与截图。

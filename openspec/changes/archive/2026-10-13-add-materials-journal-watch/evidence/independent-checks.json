@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-10-13T12:05:03.935369+00:00",
+  "scope": "Independent offline journal integration verification; only test_journal_integration.py authored by this agent; no network, secrets, paid calls, commit or deployment.",
+  "focused": {
+    "passed": 12,
+    "failed": 0,
+    "tests": [
+      "test_doi_exact_normalized_cross_provider_preserves_id_and_first_seen",
+      "test_first_journal_merge_onto_nonjournal_preserves_explicit_null_dates",
+      "test_doi_url_encoded_identity_without_explicit_field",
+      "test_registry_and_public_journal_fields_fail_closed",
+      "test_pending_browsable_but_no_summary_or_enrichment",
+      "test_partial_journal_coverage_with_usable_rows_can_publish",
+      "test_late_doi_after_pii_leaves_rss_keeps_original_identity",
+      "test_same_doi_screening_update_is_one_article_not_two_states",
+      "test_taxonomy_failure_preserves_journal_state_and_index",
+      "test_validation_failure_preserves_journal_state_and_index",
+      "test_excluded_removes_old_pending_but_preserves_other_provider_identity",
+      "test_build_never_copies_candidate_cache_even_reused_output"
+    ]
+  },
+  "full_python": {
+    "passed": 223,
+    "failed": 0,
+    "command": "../site-venv/bin/python -m unittest discover -s site/tests -p 'test_*.py'",
+    "log": "journal-integration-python.log"
+  },
+  "existing_frontend": {
+    "test_frontend.cjs": 29,
+    "test_topic_explorer.cjs": 67,
+    "test_discovery_feed.cjs": 132,
+    "kind": "Offline behavioral assertions, not browser/deployment evidence.",
+    "followup_note": "Prior existing3 regression scripts passed29+67+132; final follow-up only backend dates/lateDOI changed, so frontend was not rerun."
+  },
+  "findings_fixed": [
+    {
+      "issue": "Backend journal relevance version integer1 conflicted with public schema string requirement.",
+      "fix": "Backend now emits string1; fixture reads actual relevance() version so independent schema/integration checks verify agreement."
+    },
+    {
+      "issue": "Only-journal partial coverage returned usable rows but collect required at least one ok provider.",
+      "fix": "Root adjusted usable partial gate; actual run with only partial journal and relevant/pending rows succeeds."
+    },
+    {
+      "issue": "Cached no-DOI PII article duplicated when first DOI metadata arrived after article left fresh RSS feed.",
+      "fix": "Backend now upgrades previous cached records using unique exact-title DOI association before fresh rows; independent cross-day regression passes. Ambiguous same-title DOI case remains unjoined (module-specific regression)."
+    }
+  ],
+  "coverage": [
+    "DOI normalized across RSS/API and encoded DOI URL; original ID/first_seen remain stable; distinct suffix DOI remains distinct.",
+    "Same DOI relevance update remains one article with stable identity.",
+    "Registry duplicate/unknown/private fields, wrong journal identity/ISSN/title, incomplete metadata and invalid/naive dates rejected.",
+    "Pending article remains archived and is excluded from actual summarize/enrich argument lists.",
+    "Taxonomy/validation injected failures preserve original index/journal-state and skip summary/enrichment.",
+    "Excluded former pending journal-only article removed; multi-provider article retains stable identity and non-journal membership.",
+    "Build omits journal-state candidate cache and removes stale previous root output copy.",
+    "First journal metadata merge onto non-journal DOI article retains stable identity and explicit null print/index dates; real merged payload passes validate_archive.",
+    "Independent cross-day case: no-DOI PII article is first archived, then absent from fresh RSS when Crossref DOI arrives; only one article retains original ID and first_seen."
+  ],
+  "remaining_blockers": [],
+  "limits": [
+    "Synthetic module interface tests do not prove real provider availability, discovery completeness or relevance quality.",
+    "New browser/journal frontend-specific acceptance is owned by the frontend agent; existing3 pure regression scripts passed here."
+  ],
+  "hashes": {
+    "site/collect.py": "7ef85ca85453dfb73a7838b03baa4b2739aa6e7dbb092c171d43fdf5a2b9639a",
+    "site/journals.py": "18fbdab82a2fc622c78294f1b43f5e36cdba8a119dccf2eaea14d9a45b4f92be",
+    "site/topics_schema.py": "1c49b31f67563a141702a84ea7cd51fcff380fc11647d642c78f7ea4bd7581a9",
+    "site/build.py": "d75d14e42670858f68018faa7ea43e1dac378ae7b675c2355b9267e2b78e8aff",
+    "site/tests/test_journal_integration.py": "2bef8e067b5a6402b926247a0312b0cd116a4a4eead59b8bd07c7c6503e87c46"
+  }
+}

@@ -4,12 +4,12 @@
 
 ## 当前状态
 
-- `specs/`：6个已实现能力，30项要求；涵盖目录身份、分类、浏览、纠错及运行评估契约。
-- `changes/archive/2026-10-09-improve-zotero-topic-classification/`：27项技术任务完成，实施和验收已归档；原5项延期量化保持未勾，不被当作完成。
-- `changes/archive/2026-10-09-unify-discovery-navigation/`：9项阅读界面任务完成；独立站文案、多来源与统一推荐/最新浏览已上线，本地54/线上49项真实浏览器检查通过；外部主题服务503导致保留110条归档，实际状态见发布收据，不宣称已恢复。
-- `changes/measure-topic-classification-quality/`：当前唯一活跃变更，逐项承接人工gold、冻结分组、共同输入基线、dev校准和独立holdout评分；gold=0，5项任务均未完成，等用户稍后标注。
-- 生产默认v2.4，质量为`unmeasured`，不要求访客选择试用；160项Python测试、96项前端断言、76次最终原生浏览器检查通过。
-- 真实runner的500参考/200公开输入、两后端冷暖预算、目录/分类故障保留、实际回滚恢复和最终健康Pages/HTTP均有证据。入口为归档变更的`evidence.md`，对应公开收据在`site/topics/evaluation/evidence/`。
+- `specs/` 记录8个已实现能力、37项要求，包括新期刊发现与期刊浏览。
+- `changes/archive/2026-10-13-add-materials-journal-watch/`：10刊采集、独立多选、待确认隔离和统一分类已上线；223项Python、254项前端断言、真实本地与线上各19项浏览器检查通过。每次发布精确版本、来源partial和候选计数以该change的evidence及运行收据为准。
+- `changes/add-public-content-enrichment/`：6项实施任务已完成，Bohrium预算与隐私检查见对应evidence；尚未归档，不与期刊变更混合。
+- `changes/measure-topic-classification-quality/`：5项任务仍未完成，等待人工gold与独立质量测量；用户已明确取消它作为新版启用门槛。
+- 2026-10-09的目录、分类和统一阅读界面历史验收保留在各自archive中；历史retention状态不代表今天的线上状态。
+- 生产采用v2.4，主题及期刊相关性质量均未做独立人工准确率量化。技术回归、浏览器成功和真实采集数量不能替代质量指标。
 
 ## 文件职责
 

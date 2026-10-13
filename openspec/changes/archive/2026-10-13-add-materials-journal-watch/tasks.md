@@ -7,5 +7,5 @@
 ## 2. Independent validation and release
 - [x] 2.1 Independent agent tests collector boundaries, schema, failure retention and frontend regressions; fix findings and record results.
 - [x] 2.2 Run all 10 real journal sources and native browser checks with actual candidate data; report coverage/limits without accuracy claims.
-- [ ] 2.3 Deploy through GitHub Actions and verify current code/archive manifests, topic labels, journal filters and Pages readback.
-- [ ] 2.4 Record final evidence, sync implemented specs/archive change, and clean temporary artifacts.
+- [x] 2.3 Deploy through GitHub Actions and verify current code/archive manifests, topic labels, journal filters and Pages readback.
+- [x] 2.4 Record final evidence, sync implemented specs/archive change, and clean temporary artifacts.

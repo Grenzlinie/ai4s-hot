@@ -21,3 +21,8 @@ arXiv/Zotero排序run37883000672及Pages导入已成功，排序和主题精度�
 ## 统一阅读界面
 
 2026-10-09已完成独立站文案、统一推荐/最新/收藏、领域/类型/多来源、主题目录整合及旧链接兼容。9项任务归档于`changes/archive/2026-10-09-unify-discovery-navigation/`。证据含160Python、228前端断言、本地54与线上49次真实浏览器检查；实际外部主题503与retention状态单独记录，不将UI完成当作采集恢复或分类准确率验证。
+
+
+## 材料 AI 期刊追踪
+
+2026-10-13完成10刊官方RSS+ISSN限定Crossref增量、DOI跨天身份合并、相关/待确认边界及独立期刊多选。已在GitHub Actions/Pages验证正式publish；223项Python、254项前端断言和线上19项浏览器验收通过。首次云端7刊ok、3刊partial如实呈现；39相关、882待确认并非人工准确率结果。完整设计、失败修复、精确提交和验收收据见[期刊变更证据](changes/archive/2026-10-13-add-materials-journal-watch/evidence.md)。

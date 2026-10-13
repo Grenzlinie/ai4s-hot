@@ -1,0 +1,201 @@
+[
+  {
+    "id": "journal-nature-materials",
+    "name": "Nature Materials",
+    "url": "https://www.nature.com/nmat.rss",
+    "kind": "journal",
+    "group": "science",
+    "type": "paper",
+    "status": "partial",
+    "last_attempt": "2026-10-13T10:00:00+00:00",
+    "last_success": null,
+    "count": 31,
+    "counters": {
+      "relevant": 0,
+      "pending": 31,
+      "excluded": 5,
+      "fetched": 36
+    },
+    "errors": [
+      "rss_request_or_parse_failed"
+    ]
+  },
+  {
+    "id": "journal-nature",
+    "name": "Nature",
+    "url": "https://www.nature.com/nature.rss",
+    "kind": "journal",
+    "group": "science",
+    "type": "paper",
+    "status": "partial",
+    "last_attempt": "2026-10-13T10:00:00+00:00",
+    "last_success": null,
+    "count": 56,
+    "counters": {
+      "relevant": 0,
+      "pending": 56,
+      "excluded": 139,
+      "fetched": 200
+    },
+    "errors": [
+      "rss_request_or_parse_failed",
+      "crossref_request_or_parse_failed"
+    ]
+  },
+  {
+    "id": "journal-science",
+    "name": "Science",
+    "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science",
+    "kind": "journal",
+    "group": "science",
+    "type": "paper",
+    "status": "ok",
+    "last_attempt": "2026-10-13T10:00:00+00:00",
+    "last_success": "2026-10-13T10:00:00+00:00",
+    "count": 38,
+    "counters": {
+      "relevant": 0,
+      "pending": 38,
+      "excluded": 109,
+      "fetched": 181
+    },
+    "errors": []
+  },
+  {
+    "id": "journal-nature-communications",
+    "name": "Nature Communications",
+    "url": "https://www.nature.com/ncomms.rss",
+    "kind": "journal",
+    "group": "science",
+    "type": "paper",
+    "status": "partial",
+    "last_attempt": "2026-10-13T10:00:00+00:00",
+    "last_success": null,
+    "count": 111,
+    "counters": {
+      "relevant": 1,
+      "pending": 110,
+      "excluded": 84,
+      "fetched": 196
+    },
+    "errors": [
+      "rss_request_or_parse_failed"
+    ]
+  },
+  {
+    "id": "journal-science-advances",
+    "name": "Science Advances",
+    "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv",
+    "kind": "journal",
+    "group": "science",
+    "type": "paper",
+    "status": "ok",
+    "last_attempt": "2026-10-13T10:00:00+00:00",
+    "last_success": "2026-10-13T10:00:00+00:00",
+    "count": 14,
+    "counters": {
+      "relevant": 0,
+      "pending": 14,
+      "excluded": 246,
+      "fetched": 347
+    },
+    "errors": []
+  },
+  {
+    "id": "journal-advanced-materials",
+    "name": "Advanced Materials",
+    "url": "https://advanced.onlinelibrary.wiley.com/feed/15214095/most-recent",
+    "kind": "journal",
+    "group": "science",
+    "type": "paper",
+    "status": "ok",
+    "last_attempt": "2026-10-13T10:00:00+00:00",
+    "last_success": "2026-10-13T10:00:00+00:00",
+    "count": 42,
+    "counters": {
+      "relevant": 14,
+      "pending": 28,
+      "excluded": 375,
+      "fetched": 635
+    },
+    "errors": []
+  },
+  {
+    "id": "journal-advanced-energy-materials",
+    "name": "Advanced Energy Materials",
+    "url": "https://advanced.onlinelibrary.wiley.com/feed/16146840/most-recent",
+    "kind": "journal",
+    "group": "science",
+    "type": "paper",
+    "status": "ok",
+    "last_attempt": "2026-10-13T10:00:00+00:00",
+    "last_success": "2026-10-13T10:00:00+00:00",
+    "count": 29,
+    "counters": {
+      "relevant": 1,
+      "pending": 28,
+      "excluded": 81,
+      "fetched": 180
+    },
+    "errors": []
+  },
+  {
+    "id": "journal-advanced-functional-materials",
+    "name": "Advanced Functional Materials",
+    "url": "https://advanced.onlinelibrary.wiley.com/feed/16163028/most-recent",
+    "kind": "journal",
+    "group": "science",
+    "type": "paper",
+    "status": "ok",
+    "last_attempt": "2026-10-13T10:00:00+00:00",
+    "last_success": "2026-10-13T10:00:00+00:00",
+    "count": 54,
+    "counters": {
+      "relevant": 13,
+      "pending": 41,
+      "excluded": 577,
+      "fetched": 842
+    },
+    "errors": []
+  },
+  {
+    "id": "journal-acta-materialia",
+    "name": "Acta Materialia",
+    "url": "https://rss.sciencedirect.com/publication/science/13596454",
+    "kind": "journal",
+    "group": "science",
+    "type": "paper",
+    "status": "ok",
+    "last_attempt": "2026-10-13T10:00:00+00:00",
+    "last_success": "2026-10-13T10:00:00+00:00",
+    "count": 100,
+    "counters": {
+      "relevant": 3,
+      "pending": 97,
+      "excluded": 0,
+      "fetched": 241
+    },
+    "errors": []
+  },
+  {
+    "id": "journal-matter",
+    "name": "Matter",
+    "url": "https://rss.sciencedirect.com/publication/science/25902385",
+    "kind": "journal",
+    "group": "science",
+    "type": "paper",
+    "status": "partial",
+    "last_attempt": "2026-10-13T10:00:00+00:00",
+    "last_success": null,
+    "count": 74,
+    "counters": {
+      "relevant": 1,
+      "pending": 73,
+      "excluded": 2,
+      "fetched": 76
+    },
+    "errors": [
+      "crossref_request_or_parse_failed"
+    ]
+  }
+]

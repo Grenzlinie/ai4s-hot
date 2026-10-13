@@ -20,3 +20,10 @@
 - 验收证据区分：OpenSpec 结构校验、离线逻辑测试、冻结标注集质量、真实浏览器、GitHub Actions 和线上读回。
 - 实施完成且证据齐全后再 archive，更新 `openspec/specs`；不得提前合并未来需求为已实现行为。
 - 代码变更执行相称的独立测试；只有变更、失败或未解决疑点时重复扩大检查。
+
+## 期刊发现
+
+- `site/journals.json` 为10刊公开配置；`site/journals.py` 独立官方RSS+Crossref增量，候选缓存是site-data的 `data/journal-state.json`，不复制到Pages。
+- 期刊是独立筛选维度，文章仍走现有主题分类。默认不展示相关性pending，不让pending消耗摘要/正文预算；筛选质量仍未人工量化。
+- DOI补充必须保留首次收录ID/first_seen，即使第二天RSS已移出。相同标题存在多个DOI时不猜关联。单刊partial不等于整站更新失败，来源完整性必须如实展示。
+- 实现契约与精确生产证据：`openspec/changes/archive/2026-10-13-add-materials-journal-watch/evidence.md`；当前实时状态需读manifest/来源状态，不能复用历史计数作为当前事实。
