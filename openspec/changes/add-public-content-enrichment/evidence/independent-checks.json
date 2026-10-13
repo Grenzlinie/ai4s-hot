@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-10-13T02:40:50.772275+00:00",
+  "scope": "Independent offline integration tests and code/workflow audit. No network, paid API, secrets read, commit, push, or deployment.",
+  "focused_tests": {
+    "passed": 21,
+    "failed": 0,
+    "checks": [
+      "test_public_priority_has_no_cli_and_existing_summary_skipped",
+      "test_arxiv_conversion_and_bounded_text",
+      "test_unsafe_urls_and_ports_rejected",
+      "test_redirect_private_target_never_requested",
+      "test_html_document_size_guard",
+      "test_challenge_is_not_evidence",
+      "test_doi_derived_or_normalized_and_empty_rejected",
+      "test_exact_graph_identity_and_kind_no_account",
+      "test_graph_oversize_rejected_before_json_parse",
+      "test_failure_is_anonymous_and_allowance_limits_failed_calls",
+      "test_allowance_zero_and_no_key_have_zero_cli_calls",
+      "test_budget_limits_cap_attempts_and_no_summary_mutation",
+      "test_reservation_same_day_exhaustion_next_day_refresh",
+      "test_invalid_ledger_fails_closed",
+      "test_reservation_disabled_or_no_key_does_not_touch_ledger",
+      "test_settings_reject_unbounded_or_unknown_config",
+      "test_summary_public_inputs_only_and_basis_has_no_text",
+      "test_existing_summary_not_regenerated",
+      "test_basis_schema_rejects_raw_evidence_fields",
+      "test_site_configuration_removed_before_upstream",
+      "test_workflow_reservation_push_precedes_allowance_and_collect"
+    ]
+  },
+  "full_python": {
+    "command": "../site-venv/bin/python -m unittest discover -s site/tests -p 'test_*.py'",
+    "passed": 181,
+    "failed": 0,
+    "log": "bohr-enrichment-python-tests.log"
+  },
+  "frontend": [
+    {
+      "script": "site/tests/test_frontend.cjs",
+      "assertions_passed": 29
+    },
+    {
+      "script": "site/tests/test_topic_explorer.cjs",
+      "assertions_passed": 67
+    },
+    {
+      "script": "site/tests/test_discovery_feed.cjs",
+      "assertions_passed": 132
+    }
+  ],
+  "audit": {
+    "public_priority": "Public HTML succeeds without CLI; existing summaries are skipped and preserved.",
+    "identity": "Exact normalized requested DOI required; mismatched graph refused; node kind labels retained.",
+    "privacy": "Summary request uses whitelisted title/type/excerpt/evidence; synthetic private item and CLI account envelope sentinels absent from resulting evidence/receipts; archive basis only kind/url/sha256/chars and raw text rejected.",
+    "budget": "Daily whole-run allowance reserved durably; same-day rerun exhausted, next-day reset; malformed/future ledger and missing key grant zero. Failed calls consume allowance. Git push precedes GITHUB_OUTPUT; push failure blocks paid stage. Shared concurrency group cancel-in-progress:false serializes this workflow. Crash after push wastes reservation rather than reclaiming it.",
+    "bounds": "Max items24/configured tested3, max_chars24000/configured12000, timeout30/configured12; HTML stream rejects >2MB; CLI stdout spooled to auto-cleaned temp file, response >2MB rejected before JSON parse, CLI timeout60.",
+    "upstream": "Site-only enrichment and SMTP config removed from upstream YAML."
+  },
+  "fixed_findings": [
+    {
+      "issue": "Malformed date ledger could reset allowance",
+      "resolution": "Strict ISO date validation added by main agent; independent malformed-ledger regression passed."
+    },
+    {
+      "issue": "CLI capture_output could load unbounded envelope into RAM",
+      "resolution": "Main agent changed to TemporaryFile spool and 2MB parse guard; oversize regression passed."
+    }
+  ],
+  "remaining_blockers": [],
+  "limits": [
+    "Offline mock evidence verifies contract; it does not prove live Bohrium credentials, current CLI service response or extraction coverage.",
+    "Daily cap applies to the serialized repository workflow and its tracked ledger; unrelated external calls or manual ledger deletion are outside this accounting.",
+    "CLI spool limits parsing/RAM and execution time; the temporary file can grow until process termination (60 seconds)."
+  ],
+  "files_sha256": {
+    "site/enrichment.py": "6d7638c57d413250fb39cbeec3cc9a3c9ed5ac707b7cc9a1b6b4cf818de520b8",
+    "site/collect.py": "ad08080109338baa293754a1791303b5ac4106b18ed9c5c7431cf0e5ed7202e0",
+    "site/topics_schema.py": "bed063833213fff675886ea0b1a4ef42c05aff5e97161983626b30fb4d36059a",
+    "site/prepare_config.py": "787193716dace75cc1cf5ae7f898a008848b3e2d05203e640875408567a85c2a",
+    ".github/workflows/ai4s-pages.yml": "4c99bd33e64cd9db5191721d5e1a56602e9b9804962c9156237838df8554022f",
+    "site/tests/test_enrichment.py": "603dded83807e84b047e2817152957d1330845d7bd92bb987eec98c73abe02d1"
+  }
+}

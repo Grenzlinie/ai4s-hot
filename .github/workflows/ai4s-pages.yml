@@ -15,7 +15,7 @@ on:
     types: [completed]
   push:
     branches: [main]
-    paths: ['site/static/**', 'site/collect.py', 'site/site_topics.py', 'site/topics*.py', 'site/topics/**', 'site/build.py', 'site/update_status.py', 'site/deployment_manifest.py', 'scripts/probe_update_failure.py', 'site/sources.json', 'site/requirements.txt', '.github/workflows/ai4s-pages.yml']
+    paths: ['site/static/**', 'site/collect.py', 'site/enrichment.py', 'site/site_topics.py', 'site/topics*.py', 'site/topics/**', 'site/build.py', 'site/update_status.py', 'site/deployment_manifest.py', 'scripts/probe_update_failure.py', 'site/sources.json', 'site/requirements.txt', '.github/workflows/ai4s-pages.yml']
 
 concurrency:
   group: ai4s-pages
@@ -54,6 +54,45 @@ jobs:
             git -C "$RUNNER_TEMP/ai4s-state" rm -rf .
           fi
           echo "archive_revision=$(git -C "$RUNNER_TEMP/ai4s-state" rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Reserve daily Bohrium allowance before any billable request
+        id: bohr_budget
+        env:
+          CUSTOM_CONFIG: ${{ vars.CUSTOM_CONFIG }}
+          BOHR_ACCESS_KEY: ${{ secrets.BOHR_ACCESS_KEY }}
+        shell: bash
+        run: |
+          allowance=$(python site/enrichment.py --reserve "$RUNNER_TEMP/ai4s-state/.bohr-budget.json")
+          if [ "$allowance" -gt 0 ]; then
+            git -C "$RUNNER_TEMP/ai4s-state" add .bohr-budget.json
+            git -C "$RUNNER_TEMP/ai4s-state" -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Reserve bounded daily content enrichment calls'
+            git -C "$RUNNER_TEMP/ai4s-state" push origin HEAD:site-data
+          fi
+          echo "allowance=$allowance" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-node@v4
+        id: bohr_node
+        continue-on-error: true
+        if: steps.bohr_budget.outputs.allowance != '0'
+        with:
+          node-version: '22'
+      - name: Install pinned Bohrium CLI
+        id: bohr_cli
+        continue-on-error: true
+        if: steps.bohr_budget.outputs.allowance != '0' && steps.bohr_node.outcome == 'success'
+        env:
+          BOHR_ACCESS_KEY: ${{ secrets.BOHR_ACCESS_KEY }}
+        run: |
+          npm install --global @dptech-corp/bohr-cli@2.7.11 --registry https://registry.npmjs.org
+          bohr version
+          python - <<'PY'
+          import json, subprocess
+          result = subprocess.run(['bohr','auth','status','--verify','-o','json'],capture_output=True,text=True,timeout=30)
+          try:
+              payload = json.loads(result.stdout)
+              valid = result.returncode == 0 and payload.get('ok') is True and payload.get('data',{}).get('verified') is True
+          except ValueError: valid = False
+          print('Bohrium authentication verified:', valid)
+          if not valid: raise SystemExit(1)
+          PY
       - name: Download latest ranked papers
         env:
           GH_TOKEN: ${{ github.token }}
@@ -78,6 +117,8 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
           CUSTOM_CONFIG: ${{ vars.CUSTOM_CONFIG }}
+          BOHR_ACCESS_KEY: ${{ secrets.BOHR_ACCESS_KEY }}
+          BOHR_CALL_ALLOWANCE: ${{ steps.bohr_cli.outcome == 'success' && steps.bohr_budget.outputs.allowance || '0' }}
           ZOTERO_ID: ${{ secrets.ZOTERO_ID }}
           ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
           ZOTERO_TOPIC_CONFIG: ${{ secrets.ZOTERO_TOPIC_CONFIG }}

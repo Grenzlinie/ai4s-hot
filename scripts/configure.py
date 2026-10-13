@@ -11,7 +11,7 @@ import sys
 import yaml
 
 REQUIRED = ('OPENAI_API_KEY', 'OPENAI_API_BASE', 'ZOTERO_ID', 'ZOTERO_KEY')
-OPTIONAL = ('ALPHAXIV_API_KEY', 'SEMANTIC_SCHOLAR_API_KEY')
+OPTIONAL = ('ALPHAXIV_API_KEY', 'SEMANTIC_SCHOLAR_API_KEY', 'BOHR_ACCESS_KEY')
 
 
 def _topic_identity():
@@ -100,7 +100,7 @@ def read_config(path):
             for key, child in value.items():
                 if key in ('id_salt', 'publish_root_keys', 'legacy_aliases', 'retire_legacy_ids', 'ZOTERO_TOPIC_CONFIG'):
                     raise ValueError('Private topic settings must use --topics-private, never CUSTOM_CONFIG')
-                if key in ('key', 'api_key', 'password', 'sender_password') and child is not None:
+                if key in ('key', 'api_key', 'access_key', 'BOHR_ACCESS_KEY', 'token', 'password', 'sender_password') and child is not None:
                     if not isinstance(child, str) or (child and not re.fullmatch(r'\$\{oc\.env:[A-Z][A-Z0-9_]*\}', child)):
                         raise ValueError('API credentials in YAML must use environment references')
                 check_keys(child)

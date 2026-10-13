@@ -78,3 +78,18 @@ python scripts/configure.py --env .env --config config.local.yaml --run
 实际回滚演练限制：历史schema1归档没有新版稳定主题ID的反向映射，切回该归档期间，新版主题筛选会被清除；收藏、已读保持。恢复schema2后，旧主题链接及本机修正恢复正常。2026-10-09已实际验证公开快照回滚和恢复，当前线上为新版。
 
 维护验收：Update AI4S Hot手动工作流的failure_probe可选taxonomy/classification，默认none。探针只在现有公开输入上注入故障，不读取私有参考或调用采集/摘要API；保留部署成功不表示本次分类成功，请检查update-status及日志。完成演练后选none正常更新清除失败状态。退役主题保留归档浏览和历史标签，不能继续作为有效新纠错目标。
+# 公开正文与 Bohrium 补充
+
+在本地 YAML 的 `enrichment` 中设置公开提取开关、`max_items`、`max_chars` 和超时。
+新摘要先尝试公开 HTML；只有提取失败、有 DOI、启用 Bohrium、有凭据且存在已预留额度时，才调用 LKM 图谱。
+原始正文和图谱在内存中作为摘要输入，公开归档仅增加 `summary_basis`（kind/url/sha256/chars），不会发布全文或 CLI 账户信息。
+有界正文不是完整全文审阅；图谱节点保留 conclusion、weak_point、subproblem 等区别。
+
+`BOHR_ACCESS_KEY` 可放入已有的本地 0600 `.env`，通过 `scripts/configure.py` 的 stdin 同步至 GitHub Secret。
+`enrichment` 是站点专用配置，传给上游论文任务前会剥离，模型仍使用本地 `llm` 配置。
+
+`bohr_daily_calls` 是北京时间当天的调用次数上限。Actions 先在 site-data 根目录的 `.bohr-budget.json` 预留额度并 push 成功，再启动 CLI 调用。
+同一天后续运行不会重新领取已预留次数；失败也消耗次数，未使用预留次数当天不退回，损坏/未来日期的账本禁止调用。
+这是单一 Actions 并发组的持久限制，不是多主机分布式计费系统。手动在本机设置 allowance 不受远端账本保护。
+CLI 固定为 2.7.11；缺凭据、预算或服务失败均继续使用原摘录。`bohr_payment_source` 可为 default（光子优先、不足时余额）、photon 或 balance。
+默认例子关闭 Bohrium 并使用0额度；日常付费必须先有用户授权。关闭补充使用 `enabled: false`，保留预算账本，不通过删除账本刷新额度。

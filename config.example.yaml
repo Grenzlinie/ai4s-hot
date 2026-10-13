@@ -21,3 +21,11 @@ executor:
   source: [arxiv]
   max_paper_num: 20
   fetch_full_text: false
+enrichment:
+  enabled: true
+  max_items: 8
+  max_chars: 12000
+  timeout: 12
+  bohr_enabled: false
+  bohr_daily_calls: 0
+  bohr_payment_source: default

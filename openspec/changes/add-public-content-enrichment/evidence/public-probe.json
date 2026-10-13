@@ -1,0 +1,29 @@
+{
+  "billable_calls": 0,
+  "checks": [
+    {
+      "input": "https://arxiv.org/abs/2303.08774",
+      "status": "ok",
+      "basis": "public_html",
+      "chars": 12000,
+      "sha256": "b8537727f34ccbb9e936d0955c5477e7867492837a92e3f17504f4c51c996e03",
+      "public_url": "https://arxiv.org/html/2303.08774"
+    },
+    {
+      "input": "https://www.anthropic.com/news/claude-3-5-sonnet",
+      "status": "ok",
+      "basis": "public_html",
+      "chars": 6330,
+      "sha256": "520cf5cb8adf2830d0731b330a2e04ec64fea771bbddfe737445b1f108c2208f",
+      "public_url": "https://www.anthropic.com/news/claude-3-5-sonnet"
+    },
+    {
+      "input": "https://www.nature.com/articles/s41586-024-07487-w",
+      "status": "ok",
+      "basis": "public_html",
+      "chars": 12000,
+      "sha256": "4f9af44cfdb2413ad4de61fafa33d391101a010b441e3dfe4cac49c50013a78b",
+      "public_url": "https://www.nature.com/articles/s41586-024-07487-w"
+    }
+  ]
+}

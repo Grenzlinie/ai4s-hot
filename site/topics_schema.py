@@ -20,7 +20,16 @@ def validate_archive(payload):
     ids=set()
     for item in payload['items']:
         allowed_item={'affiliations','alpha_rank','authors','excerpt','first_seen','group','groups','hf_url','id','pdf_url','published_at','source_ids','source_names','summary','summary_kind','tags','title','topic_ids','topic_leaf_ids','topic_method','topic_version','type','kind','url','zotero_score','doi','arxiv_id','topic_labels','topic_status','topic_scope','content_kind','domain_facets','topic_coverage','topic_cache_token','topic_backend','topic_override','topic_history'}
+        allowed_item.add('summary_basis')
         if set(item)-allowed_item: raise ValueError('Unexpected public item fields')
+        if 'summary_basis' in item:
+            basis=item['summary_basis']
+            if not isinstance(basis,dict) or set(basis)!={'kind','url','sha256','chars'}: raise ValueError('Invalid summary basis')
+            if basis['kind'] not in {'public_html','bohr_knowledge_graph'}: raise ValueError('Invalid evidence kind')
+            if not isinstance(basis['url'],str) or not basis['url'].startswith('https://'): raise ValueError('Invalid evidence URL')
+            import re
+            if not isinstance(basis['sha256'],str) or not re.fullmatch('[a-f0-9]{64}',basis['sha256']): raise ValueError('Invalid evidence hash')
+            if type(basis['chars']) is not int or not 1<=basis['chars']<=24000: raise ValueError('Invalid evidence size')
         if item['id'] in ids: raise ValueError('Duplicate public item identity')
         ids.add(item['id'])
         if not set(item.get('topic_ids',[]))<=known or not set(item.get('topic_leaf_ids',[]))<=known: raise ValueError('Unknown topic reference')

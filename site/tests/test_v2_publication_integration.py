@@ -27,7 +27,7 @@ class PublicationIntegration(unittest.TestCase):
     def test_workflow_validates_build_before_remote_archive_commit_and_upload(self):
         text=(ROOT/'.github/workflows/ai4s-pages.yml').read_text()
         self.assertIn('TOPICS_MODE: v2',text);self.assertIn('ZOTERO_TOPIC_CONFIG: ${{ secrets.ZOTERO_TOPIC_CONFIG }}',text)
-        self.assertLess(text.index('python site/build.py'),text.index('push origin HEAD:site-data'))
+        self.assertLess(text.index('python site/build.py'),text.index('push origin HEAD:site-data', text.index('- name: Commit public archive')))
         self.assertLess(text.index('python site/deployment_manifest.py'),text.index('actions/upload-pages-artifact'))
         # GitHub sequential steps use the default success() guard; no always()
         # mutation/deploy bypass exists after a failed build.
