@@ -20,7 +20,7 @@
 
 ## 来源
 
-见 `sources.json`。初始回看 30 天；每个来源每次最多 12 条，站内来源状态会明确展示上限，因此这是一份精选聚合，不能作为全部发表论文的完整索引。模型公司通过 Hugging Face Daily Papers 和 Qwen / moonshotai / deepseek-ai 官方模型仓库补充。Daily Papers 是社区精选，不能保证覆盖所有发布。alphaXiv 是近 30 天热门榜，按原始名次单独展示。
+见 `sources.json`。普通来源初始回看 30 天；每个普通来源每次最多 12 条，站内来源状态会明确展示上限，因此这是一份精选聚合，不能作为全部发表论文的完整索引。模型公司通过 Hugging Face Daily Papers 和 Qwen / moonshotai / deepseek-ai 官方模型仓库补充。Daily Papers 是社区精选，不能保证覆盖所有发布。alphaXiv 是近 30 天热门榜，按原始名次单独展示。
 
 Hugging Face Daily API 与官网 HTML 提取需要随来源结构变化维护。Semantic Scholar 查询只覆盖配置中的科学主题，日期上界为本次采集日。来源内容保留原文链接，摘要与网页摘录均标明来源类型。
 
@@ -93,3 +93,23 @@ python scripts/configure.py --env .env --config config.local.yaml --run
 这是单一 Actions 并发组的持久限制，不是多主机分布式计费系统。手动在本机设置 allowance 不受远端账本保护。
 CLI 固定为 2.7.11；缺凭据、预算或服务失败均继续使用原摘录。`bohr_payment_source` 可为 default（光子优先、不足时余额）、photon 或 balance。
 默认例子关闭 Bohrium 并使用0额度；日常付费必须先有用户授权。关闭补充使用 `enabled: false`，保留预算账本，不通过删除账本刷新额度。
+
+
+## 材料 AI 期刊追踪
+
+`site/journals.json` 配置 Nature Materials、Nature、Science、Nature Communications、Science Advances、Advanced Materials、Advanced Energy Materials、Advanced Functional Materials、Acta Materialia、Matter。沿用网站的每日 Actions 和 Pages 发布，不需要额外 API key。
+
+每本期刊读取官方 RSS 全部条目，再用 ISSN 限定的 Crossref 元数据补充。Crossref 首次回看最近14天索引更新，后续从上次Crossref完整成功时间重叠3天；发表窗口90天，每页200条、最多10页。达到页上限或单路失败标为“部分采集”，不声称覆盖完整；失败的Crossref游标不前进，后续可补采（RSS单路失败不阻止成功的Crossref推进）。RSS不同于普通来源的12条展示输入限制。在线发表、纸刊日期、索引更新时间和首次发现分别保留；重新索引不会改写旧论文的发表时间。
+
+规范化 DOI 合并重复内容并保留既有ID、首次收录与收藏身份；没有显式关联时，不按相似标题合并期刊论文与 arXiv 预印本。筛选区分“AI用于材料研究”和“材料用于AI硬件”，以公开标题/摘要作本地规则判断；缺摘要或关系不明确的内容放在“待确认”，不会消耗摘要或Bohrium请求。规则尚未做人工准确率量化，来源和判断理由可在卡片中查看。
+
+页面“期刊”可搜索多选，与主题、来源、领域、类型共同筛选；同一期刊维度为OR，不同维度为AND。期刊文章进入已有主题分类和推荐/最新/收藏流。“查看待确认文章”只切换相关性待确认候选，避免混入默认阅读流。复制地址可保留筛选。
+
+`site-data/data/journal-state.json` 保存公开候选元数据、筛选结果与游标，构建页面时排除该缓存。公开阅读归档是 `data/index.json`。分类或校验失败不提交新状态；单刊失败保留上次可读结果。调试仅采集期刊：
+
+```bash
+TOPICS_MODE=v2 python site/collect.py --data-dir work/data --source journals --no-summary
+node site/tests/test_journal_frontend.cjs
+```
+
+主题配置/凭据仍按已有方式放在进程环境中。期刊源配置是本地可编辑、正常提交的公开文件；期刊筛选不新增LLM请求，相关条目的中文摘要沿用现有总预算。原始实现借鉴RSS+ISSN元数据的组合思路，不引入额外服务或复制外部项目代码。

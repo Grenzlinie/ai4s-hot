@@ -10,3 +10,8 @@ dialog{width:650px;max-width:calc(100vw - 32px);max-height:85dvh;overflow-y:auto
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 
 .update-alert{padding:10px 14px;margin:14px 0;border-left:3px solid var(--orange);background:#fff4e9;font-size:12px;line-height:1.7}.update-alert p{margin:0}
+
+.journalbar{margin-bottom:6px}.journal-chips #open-journals{border-style:dashed;color:var(--blue)}.journal-review-row{margin-left:45px;font-size:11px;line-height:1.8;color:var(--muted)}.journal-review-row button{padding:4px 8px;border:1px solid var(--line);border-radius:4px}.journal-review-row button[aria-pressed=true]{color:#81561c;background:#fff4e9;border-color:#dbc49e}.journal-review-row p{margin:7px 0}.journal-meta{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:10px;font-size:11px}.journal-link{padding:4px 8px;border-radius:4px;background:var(--pale);color:var(--blue);text-align:left}.journal-link[aria-pressed=true]{outline:1px solid #a7c2b3}.journal-pending{font-size:10px;color:#81561c}.all-sources button{overflow-wrap:anywhere}.journal-chips button{max-width:100%}
+@media(max-width:760px){.journal-review-row{margin-left:35px}.journal-chips{flex-wrap:wrap;overflow:visible}.journal-chips button{white-space:normal;text-align:left}}
+
+.status-partial{color:#9c6117}.health .journal-health-counts{margin:5px 0;font-size:10px}

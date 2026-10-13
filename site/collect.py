@@ -285,9 +285,28 @@ def alphaxiv(source, limit, cutoff):
 COLLECTORS = {"rss": rss, "arxiv": rss, "html": website, "github": github, "huggingface": huggingface, "hf_daily": hf_daily, "semantic": semantic, "alphaxiv": alphaxiv}
 
 
+def normalized_doi(row):
+    """Only explicit DOI identifiers; never infer identity from title similarity."""
+    from urllib.parse import unquote
+    value = str(row.get("doi") or "").strip()
+    if not value and re.match(r"https?://(?:dx\.)?doi\.org/", row.get("url", ""), re.I):
+        value = row["url"]
+    value = re.sub(r"^(?:https?://(?:dx\.)?doi\.org/|doi:\s*)", "", value, flags=re.I)
+    value = unquote(value).lower().strip()
+    return value if re.fullmatch(r"10\.\d{4,9}/\S+", value) else None
+
+
 def merge(existing, incoming):
     """Canonical identity survives duplicate sources and repeat daily ingestion."""
+    doi_ids = {normalized_doi(row): key for key, row in existing.items() if normalized_doi(row)}
     for new in incoming:
+        doi = normalized_doi(new)
+        if doi:
+            new["doi"] = doi
+            if doi in doi_ids:
+                new["id"] = doi_ids[doi]
+            else:
+                doi_ids[doi] = new["id"]
         old = existing.get(new["id"])
         if not old:
             existing[new["id"]] = new
@@ -297,10 +316,15 @@ def merge(existing, incoming):
         old["groups"] = sorted(set(old.get("groups", [old["group"]]) + new.get("groups", [new["group"]])))
         old["group"] = next(g for g in ("science", "tools", "frontier", "papers") if g in old["groups"])
         # Zotero scores and alphaXiv ranks are separate signals, never added together.
-        for key in ("zotero_score", "alpha_rank", "authors", "affiliations", "pdf_url"):
+        for key in ("zotero_score", "alpha_rank", "authors", "affiliations", "pdf_url", "doi", "journal_id", "journal_title", "journal_issns", "publisher", "published_online_at", "published_print_at", "indexed_at", "journal_relevance"):
             if new.get(key) is not None:
                 old[key] = new[key]
-        if not old.get("excerpt") and new.get("excerpt"):
+        if new.get("journal_id"):
+            # Missing dates are explicit public metadata, including first merge
+            # onto an existing non-journal article with the same DOI.
+            for key in ("published_online_at", "published_print_at", "indexed_at"):
+                old.setdefault(key, None)
+        if (not old.get("excerpt") or (new.get("journal_id") and len(new.get("excerpt", "")) > len(old.get("excerpt", "")))) and new.get("excerpt"):
             old["excerpt"] = new["excerpt"]
         if new.get("summary"):
             old["summary"] = new["summary"]
@@ -310,8 +334,33 @@ def merge(existing, incoming):
                 old["summary_basis"] = new["summary_basis"]
             else:
                 old.pop("summary_basis", None)
-        if not old.get("published_at") and new.get("published_at"):
+        if (not old.get("published_at") or new.get("journal_id")) and new.get("published_at"):
             old["published_at"] = new["published_at"]
+
+
+def reconcile_journal_decisions(items, state):
+    """Remove rejected journal membership while preserving other public sources."""
+    rejected = set()
+    for journal_id, journal in state.get("journals", {}).items():
+        for record in journal.get("records", {}).values():
+            if record.get("journal_relevance", {}).get("status") == "excluded":
+                rejected.add((journal_id, normalized_doi(record) or record.get("url")))
+    fields = {"journal_id", "journal_title", "journal_issns", "publisher", "published_online_at",
+              "published_print_at", "indexed_at", "journal_relevance"}
+    for identity, row in list(items.items()):
+        journal_id = row.get("journal_id")
+        if (journal_id, normalized_doi(row) or row.get("url")) not in rejected:
+            continue
+        source = "journal-" + journal_id
+        others = [s for s in row.get("source_ids", []) if s != source]
+        if not others:
+            del items[identity]
+            continue
+        title = row.get("journal_title")
+        row["source_ids"] = others
+        row["source_names"] = [name for name in row.get("source_names", []) if name != title]
+        for key in fields:
+            row.pop(key, None)
 
 
 def paper_export(path):
@@ -425,6 +474,18 @@ def run(args):
             merge(items, incoming)
             statuses.append(status)
             print(f"{status['id']}: {status['status']} ({status['count']})", flush=True)
+    journal_state = None
+    journal_registry = previous.get("journals", [])
+    journal_path = config.get("journals_config")
+    if journal_path and (not args.source or "journals" in args.source):
+        import journals
+        incoming, journal_status, journal_registry, journal_state = journals.collect(
+            Path(args.config).parent / journal_path, state_dir / "journal-state.json", NOW)
+        merge(items, incoming)
+        reconcile_journal_decisions(items, journal_state)
+        statuses.extend(journal_status)
+        for status in journal_status:
+            print(f"{status['id']}: {status['status']} ({status['count']})", flush=True)
     if args.paper_export and Path(args.paper_export).exists():
         payload, papers = paper_export(args.paper_export)
         merge(items, papers)
@@ -436,10 +497,11 @@ def run(args):
     if args.source:
         seen = {s["id"] for s in statuses}
         statuses.extend(s for s in previous.get("sources", []) if s["id"] not in seen)
-    if not any(s["status"] == "ok" for s in statuses):
+    if not any(s["status"] == "ok" or (s["status"] == "partial" and s.get("count", 0) > 0) for s in statuses):
         raise RuntimeError("All collectors failed; no new archive or deployment was produced")
     all_items = list(items.values())
-    recent = [p for p in all_items if datetime.fromisoformat(p["first_seen"]) >= NOW - timedelta(days=3)]
+    recent = [p for p in all_items if datetime.fromisoformat(p["first_seen"]) >= NOW - timedelta(days=3)
+              and p.get("journal_relevance", {}).get("status") != "pending"]
     all_items.sort(key=lambda p: p.get("published_at") or p["first_seen"], reverse=True)
     taxonomy, topic_corpus = site_topics.read_taxonomy(previous.get("taxonomy", {}), NOW.isoformat())
     if os.environ.get('TOPICS_MODE')=='v2' and taxonomy.get('status')!='ok':
@@ -453,7 +515,7 @@ def run(args):
     summary_status = {'status':'disabled','generated':0}
     print(f"Topics: {taxonomy['status']}; classification: {taxonomy['classification']['status']}", flush=True)
     payload = {"schema_version": 2 if taxonomy.get("identity_version") == "hmac-v1" else 1, "generated_at": NOW.isoformat(), "timezone": "Asia/Shanghai", "items": all_items,
-               "taxonomy": taxonomy,
+               "taxonomy": taxonomy, "journals": journal_registry,
                "sources": sorted(statuses, key=lambda s: s["id"]), "summaries": summary_status,
                "policy": {"lookback_days": config["lookback_days"], "max_items_per_source": config["max_items_per_source"], "alpha_window": "30 days"}}
     from topics_schema import validate_archive
@@ -473,6 +535,8 @@ def run(args):
     payload["summaries"]=summary_status
     try: validate_archive(payload)
     except Exception: raise UpdateFailure('validation') from None
+    if journal_state is not None:
+        write_json(state_dir / "journal-state.json", journal_state)
     write_json(index_path, payload)
     day = NOW.astimezone(ZoneInfo("Asia/Shanghai")).date().isoformat()
     write_json(state_dir / "daily" / (day + ".json"), {"generated_at": NOW.isoformat(), "item_ids": [p["id"] for p in all_items if datetime.fromisoformat(p["first_seen"]).astimezone(ZoneInfo("Asia/Shanghai")).date().isoformat() == day], "sources": payload["sources"]})

@@ -7,8 +7,8 @@
   <meta name="theme-color" content="#17695b">
   <title>AI4S Hot · 科研进展阅读站</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css?v=discovery-20261009">
-  <script src="./app.js?v=discovery-20261009" defer></script>
+  <link rel="stylesheet" href="./style.css?v=journals-20261013">
+  <script src="./app.js?v=journals-20261013" defer></script>
 </head>
 <body>
 <a class="skip" href="#stream">跳到内容</a>
@@ -43,6 +43,7 @@
       <div class="facet-row"><span class="facet-label" id="domain-label">领域</span><div id="domains" class="chips" role="group" aria-labelledby="domain-label"></div></div>
       <div class="facet-row"><span class="facet-label" id="kind-label">类型</span><div id="kinds" class="chips" role="group" aria-labelledby="kind-label"></div></div>
       <div class="facet-row sourcebar"><span class="facet-label" id="sources-label">来源</span><div id="sources" class="chips source-chips" role="group" aria-labelledby="sources-label"></div></div>
+      <div id="journal-facet" hidden><div class="facet-row journalbar"><span class="facet-label" id="journals-label">期刊</span><div id="journals" class="chips source-chips journal-chips" role="group" aria-labelledby="journals-label"></div></div><div class="journal-review-row"><button id="journal-review" type="button" aria-pressed="false">查看待确认文章</button><p id="journal-review-note" hidden>材料 AI 相关性证据不足的候选文章，待补充信息后确认；这不是文章质量评价。</p></div></div>
       <div class="filter-row">
         <div class="periods" id="periods" aria-label="时间范围"><button data-days="7">近 7 天</button><button data-days="30" class="active">近 30 天</button><button data-days="0">全部归档</button></div>
         <label class="date-label">收录日期 <input id="archive-date" type="date"></label>
@@ -61,6 +62,7 @@
   </main>
 </div>
 <dialog id="source-dialog" aria-labelledby="source-dialog-heading"><div class="dialog-heading"><h2 id="source-dialog-heading">选择来源</h2><button id="source-close" type="button" class="dialog-close" aria-label="关闭来源选择">关闭 ×</button></div><p class="dialog-description">可同时选择多个来源，重合的进展只显示一次。数量为当前其他筛选条件下的结果。</p><label class="sr-only" for="source-search">搜索全部来源</label><input id="source-search" type="search" class="source-search" placeholder="搜索来源名称…" autocomplete="off"><div id="all-sources" class="all-sources" role="group" aria-label="全部来源"></div><button id="source-clear" type="button" class="text-button">清除来源选择</button></dialog>
+<dialog id="journal-dialog" aria-labelledby="journal-dialog-heading"><div class="dialog-heading"><h2 id="journal-dialog-heading">选择期刊</h2><button id="journal-close" type="button" class="dialog-close" aria-label="关闭期刊选择">关闭 ×</button></div><p class="dialog-description">可多选期刊，并与来源、研究主题一起筛选。数量为当前其他条件下的结果；零条期刊也可选择。</p><label class="sr-only" for="journal-search">搜索期刊名称、出版方或 ISSN</label><input id="journal-search" type="search" class="source-search" placeholder="搜索期刊名称、出版方或 ISSN…" autocomplete="off"><div id="all-journals" class="all-sources" role="group" aria-label="全部期刊"></div><button id="journal-clear" type="button" class="text-button">清除期刊选择</button></dialog>
 <dialog id="correction-dialog" aria-labelledby="correction-heading"><form method="dialog"><h2 id="correction-heading">修正研究主题</h2><p>修正立即保存在当前浏览器。导出后由维护者审核、提交和发布，才会应用到全站。</p><div id="correction-options"></div><label>公开理由 <input id="correction-reason" maxlength="300" placeholder="请填写公开的分类依据" required></label><div class="dialog-actions"><button value="cancel">取消</button><button id="correction-save" type="button">保存到本机</button></div></form></dialog>
 <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 </body>

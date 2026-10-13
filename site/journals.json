@@ -1,0 +1,107 @@
+{
+  "enabled": true,
+  "overlap_days": 3,
+  "initial_days": 14,
+  "crossref_rows": 200,
+  "crossref_max_pages": 10,
+  "retention_days": 90,
+  "workers": 4,
+  "journals": [
+    {
+      "id": "nature-materials",
+      "title": "Nature Materials",
+      "issns": [
+        "1476-1122",
+        "1476-4660"
+      ],
+      "publisher": "Springer Nature",
+      "rss": "https://www.nature.com/nmat.rss"
+    },
+    {
+      "id": "nature",
+      "title": "Nature",
+      "issns": [
+        "0028-0836",
+        "1476-4687"
+      ],
+      "publisher": "Springer Nature",
+      "rss": "https://www.nature.com/nature.rss"
+    },
+    {
+      "id": "science",
+      "title": "Science",
+      "issns": [
+        "0036-8075",
+        "1095-9203"
+      ],
+      "publisher": "AAAS",
+      "rss": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science"
+    },
+    {
+      "id": "nature-communications",
+      "title": "Nature Communications",
+      "issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "rss": "https://www.nature.com/ncomms.rss"
+    },
+    {
+      "id": "science-advances",
+      "title": "Science Advances",
+      "issns": [
+        "2375-2548"
+      ],
+      "publisher": "AAAS",
+      "rss": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv"
+    },
+    {
+      "id": "advanced-materials",
+      "title": "Advanced Materials",
+      "issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "rss": "https://advanced.onlinelibrary.wiley.com/feed/15214095/most-recent"
+    },
+    {
+      "id": "advanced-energy-materials",
+      "title": "Advanced Energy Materials",
+      "issns": [
+        "1614-6832",
+        "1614-6840"
+      ],
+      "publisher": "Wiley",
+      "rss": "https://advanced.onlinelibrary.wiley.com/feed/16146840/most-recent"
+    },
+    {
+      "id": "advanced-functional-materials",
+      "title": "Advanced Functional Materials",
+      "issns": [
+        "1616-301X",
+        "1616-3028"
+      ],
+      "publisher": "Wiley",
+      "rss": "https://advanced.onlinelibrary.wiley.com/feed/16163028/most-recent"
+    },
+    {
+      "id": "acta-materialia",
+      "title": "Acta Materialia",
+      "issns": [
+        "1359-6454"
+      ],
+      "publisher": "Elsevier",
+      "rss": "https://rss.sciencedirect.com/publication/science/13596454"
+    },
+    {
+      "id": "matter",
+      "title": "Matter",
+      "issns": [
+        "2590-2385"
+      ],
+      "publisher": "Cell Press",
+      "rss": "https://rss.sciencedirect.com/publication/science/25902385"
+    }
+  ]
+}

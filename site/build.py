@@ -21,7 +21,10 @@ def build(data_dir, output, static_dir=None):
     for path in static.iterdir():
         if path.is_file():
             shutil.copy2(path, output / path.name)
-    shutil.copytree(data_dir, output / "data", dirs_exist_ok=True)
+    # The candidate cache contains excluded discovery metadata, not reading content.
+    shutil.copytree(data_dir, output / "data", dirs_exist_ok=True,
+                    ignore=shutil.ignore_patterns("journal-state.json"))
+    (output / "data" / "journal-state.json").unlink(missing_ok=True)
     (output / ".nojekyll").touch()
     print(f"Built {len(payload['items'])} items to {output}")
 

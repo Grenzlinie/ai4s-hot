@@ -4,7 +4,7 @@ import math
 
 def validate_archive(payload):
     if payload.get('schema_version') not in (1,2): raise ValueError('Unsupported archive schema')
-    allowed_root={'schema_version','generated_at','timezone','items','taxonomy','sources','summaries','policy'}
+    allowed_root={'schema_version','generated_at','timezone','items','taxonomy','sources','summaries','policy','journals'}
     if set(payload)-allowed_root: raise ValueError('Unexpected archive fields')
     allowed_taxonomy={'topics','aliases','identity_version','identity_key_id','version','status','last_success','method','definition_version','classification','error_type'}
     if set(payload.get('taxonomy',{}))-allowed_taxonomy: raise ValueError('Unexpected taxonomy fields')
@@ -17,10 +17,35 @@ def validate_archive(payload):
     for t in topics:
         if set(t)-{'id','name','path','parent_id','facet','active','retired','aliases','catalog_path'}: raise ValueError('Private taxonomy field')
         topic_ancestors([t['id']],topics)
+    journals=payload.get('journals',[])
+    if not isinstance(journals,list): raise ValueError('Invalid journal registry')
+    journal_map={}
+    import re
+    for journal in journals:
+        if not isinstance(journal,dict) or set(journal)!={'id','title','issns','publisher'}: raise ValueError('Unexpected journal registry fields')
+        if not isinstance(journal['id'],str) or not re.fullmatch('[a-z0-9]+(?:-[a-z0-9]+)*',journal['id']) or journal['id'] in journal_map: raise ValueError('Invalid journal identity')
+        if not all(isinstance(journal[k],str) and journal[k].strip() for k in ('title','publisher')): raise ValueError('Invalid journal text')
+        if not isinstance(journal['issns'],list) or not journal['issns'] or any(not isinstance(i,str) or not re.fullmatch(r'\d{4}-\d{3}[\dX]',i) for i in journal['issns']): raise ValueError('Invalid journal ISSNs')
+        journal_map[journal['id']]=journal
     ids=set()
     for item in payload['items']:
         allowed_item={'affiliations','alpha_rank','authors','excerpt','first_seen','group','groups','hf_url','id','pdf_url','published_at','source_ids','source_names','summary','summary_kind','tags','title','topic_ids','topic_leaf_ids','topic_method','topic_version','type','kind','url','zotero_score','doi','arxiv_id','topic_labels','topic_status','topic_scope','content_kind','domain_facets','topic_coverage','topic_cache_token','topic_backend','topic_override','topic_history'}
-        allowed_item.add('summary_basis')
+        allowed_item.update({'summary_basis','journal_id','journal_title','journal_issns','publisher','published_online_at','published_print_at','indexed_at','journal_relevance'})
+        journal_fields={'journal_id','journal_title','journal_issns','publisher','published_online_at','published_print_at','indexed_at','journal_relevance'}
+        if journal_fields.intersection(item):
+            if not journal_fields <= set(item): raise ValueError('Incomplete journal metadata')
+            journal=journal_map.get(item['journal_id'])
+            if not journal or item['journal_title']!=journal['title'] or item['publisher']!=journal['publisher'] or item['journal_issns']!=journal['issns']: raise ValueError('Journal identity mismatch')
+            receipt=item['journal_relevance']
+            if not isinstance(receipt,dict) or set(receipt)!={'status','method','reason','version'}: raise ValueError('Unexpected journal relevance fields')
+            if receipt['status'] not in {'relevant','pending'} or receipt['method']!='rule-v1' or not isinstance(receipt['reason'],str) or not receipt['reason'].strip() or not isinstance(receipt['version'],str): raise ValueError('Invalid journal relevance')
+            from datetime import datetime
+            for key in ('published_online_at','published_print_at','indexed_at'):
+                if item[key] is not None:
+                    if not isinstance(item[key],str): raise ValueError('Invalid journal date')
+                    try: date=datetime.fromisoformat(item[key].replace('Z','+00:00'))
+                    except ValueError: raise ValueError('Invalid journal date') from None
+                    if date.tzinfo is None: raise ValueError('Journal date requires timezone')
         if set(item)-allowed_item: raise ValueError('Unexpected public item fields')
         if 'summary_basis' in item:
             basis=item['summary_basis']
