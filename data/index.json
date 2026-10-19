@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-18T23:49:40.440486+00:00",
+  "generated_at": "2026-10-19T01:39:06.553886+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -3234,6 +3234,94 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "bcc410d25847c15eac6259b9",
+      "url": "https://arxiv.org/abs/2610.23291",
+      "title": "Electrochemical Molecular Dynamics within the Finite-Field Framework",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "chemistry",
+        "tools"
+      ],
+      "published_at": "2026-10-16T10:58:34+00:00",
+      "first_seen": "2026-10-19T01:39:06.553886+00:00",
+      "excerpt": "Electrochemical processes at charged interfaces lie at the heart of modern technologies and their continued improvement depends on insights into the relevant atomistic processes. However, the necessary tools to impose constant-voltage conditions in molecular dynamics (MD) simulations typically directly target the electrode charge, making their extension to methods that go beyond an empirical description of metals more cumbersome. In this work, we propose an MD protocol to realize a thermodynamic ensemble in which voltage control is attained, but which is formulated purely within the framework of finite-field simulations in 3D periodic boundary conditions. We show a derivation and implementation of such a control device, which we coin an electrostat, in the ELECTRODE package within LAMMPS. Our simulations systematically benchmark the derived theory against other established approaches, for example, showing its equivalence to a potentiostat, and quantify the importance of properly accounting for ensemble fluctuations. We find that for systems of several thousands of atoms, one obtains the same equilibrium properties with the electrostat as with a simpler constant-field simulation. The difference between the two methods only manifests itself at smaller length scales, thereby establishing practical limits for the inclusion of voltage fluctuations in atomistic simulations of electrochemical systems. The strength of this framework also lies in its simplicity of extension to first-principles ab initio and reactive machine-learning potentials.",
+      "summary": "本文提出并在LAMMPS的Electrode包中实现了“电统计器”这一恒电势控制方案，它将电势控制表述为有限场框架下三维周期性边界条件中的分子动力学协议，并与恒电场模拟进行了系统基准对比。对科研人员而言，该方案可用于在避免直接针对电极电荷的前提下施加电压控制，且作者指出其偏差仅在较小长度尺度上显现，从而为原子尺度电化学模拟中纳入电压涨落给出了实际限制。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Krystof Brezina",
+        "Ludwig Ahrens-Iwers",
+        "Mariana Rossi"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        },
+        {
+          "id": "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+          "facet": "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：LAMMPS。"
+        },
+        {
+          "id": "zotero:e09a09615a9a79995ffd756fcf67aa3f",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8731,
+      "topic_cache_token": "bb9298f265313a48d4f368a863d63f0b88788fd25d67cf379065843d3b73a940",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.23291",
+        "sha256": "20cc8c84694e0c9a4d5e012ab7a1940d23f81e77fc7328c8d359b09a82883b23",
+        "chars": 12000
+      }
+    },
+    {
       "id": "fe9b713c504a4ba8ad8b9306",
       "url": "https://doi.org/10.1126/sciadv.aem6816",
       "title": "Erratum for the Research Article “FOXA1 O-GlcNAcylation-mediated transcriptional switch governs metastasis capacity in breast cancer”",
@@ -3342,6 +3430,82 @@
       "topic_cache_token": "39fc1f9cd1dc33be328fb3e088aa7b63e34b69d7539efb91836b000af6dd05fe",
       "topic_version": "faceted-local-v2.4",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "be65e818efe095a356b356e9",
+      "url": "https://arxiv.org/abs/2610.22948",
+      "title": "Designing Human-AI Collaborative Science: The 9A Framework",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-10-16T05:16:03+00:00",
+      "first_seen": "2026-10-19T01:39:06.553886+00:00",
+      "excerpt": "Artificial intelligence (AI) for Science is often described as a progression from human-directed assistance toward increasingly autonomous AI scientists. Human-AI collaboration offers a further mode in which human and AI contributions substantively shape scientific reasoning, judgments, and the course of inquiry. Existing research addresses work allocation, human-AI coordination, and system evaluation, but how these aspects interact to shape collaborative scientific systems remains insufficiently articulated. We develop the 9A Framework for Human-AI Collaborative Science (HACS) to connect these considerations across three layers. The organization layer specifies what scientific activities are required (Activity), who performs them (Actor), and who holds authority over consequential decisions (Authority). The coordination layer addresses how participants access relevant research information (Awareness), how scientific work advances through iterative proposal, execution, examination, revision, and resolution (Accountability), and when collaborative arrangements should be adjusted (Adaptability). The evaluation layer establishes what constitutes effective system performance (Achievement), how comparisons can be designed to identify the effects of organizational and coordination choices (Attribution), and what evidence supports the resulting conclusions (Assurance). Together, these layers frame HACS as a system-design problem, providing a basis for designing collaborative scientific workflows and for empirically comparing their effectiveness.",
+      "summary": "本文提出9A框架，从组织、协调与评估三个层面整合活动、执行者、决策权、信息获取、问责、适应性、成效、归因与保证九个方面，用于刻画人与AI协作科学中工作分配、协调与系统评价之间的关联。该框架为设计协作式科研流程并将组织与协调选择的效果纳入实证比较提供了概念基础，但原文未报告具体性能数据，框架各层面的相互作用仍有待进一步研究。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Zihan Zheng",
+        "Linyue Pan",
+        "Xin Lan"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：evaluation。"
+        },
+        {
+          "id": "zotero:d680e95392def25285a997e886e86a05",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reasoning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8966,
+      "topic_cache_token": "a7a9aa18cba5c5e2cff212e9556ad1ddf5241cc55512e18ee98de3ba831dab47",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.22948",
+        "sha256": "f12127b7c00761a5c5c303f0ce088693266cc49dd4af776ba8a587ff0bf3562e",
+        "chars": 12000
+      }
     },
     {
       "id": "c7ecfdd7b7b5afe5f99b7c3b",
@@ -7270,14 +7434,14 @@
       "summary": "本文构建了仅基于4630个构型训练的TATB振动忠实机器学习势，并提出定向脉冲分子动力学协议，通过沿选定振动模式反复注入等量动能来追踪非平衡能量重新分布。该方法可用于解析初始激发模式如何影响键断裂路径，但相关结论限于TATB体系及所采用的模拟设定，尚不能外推为已验证的普适性能。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Guanchen Dong",
-        "Xiaona Huang",
+        "Guan-Chen Dong",
+        "Xiao-Na Huang",
         "Yuxuan Chen",
-        "Linghua Tan",
-        "Guangcheng Yang",
+        "Ling-Hua Tan",
+        "Guang-Cheng Yang",
         "Rui Su",
         "Lin Wang",
-        "Pengfei Guan"
+        "Peng-Fei Guan"
       ],
       "topic_labels": [
         {
@@ -7337,13 +7501,13 @@
       "summary": "本文提出SPRA（面向智能体的结构化论文表示），用持久化的研究单元和带类型的关系组织论文中的问题、贡献、组件、实验设置、度量与发现，并在逾百万篇AI论文上构建了包含19.95百万研究单元和24.07百万内部关系的资源，通过Schema-RAG进行评测。依据原文，其报告在七个子领域上相对段落检索提升了源条件科学问答表现，同时在全配对任务中减少了输入输出token用量，但Top-5综合质量效果不一、创意生成整体得分略低于Full Compact，且这些结果来自公开摘要所述评测，尚非独立验证的结论。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Yutong Leng",
-        "Haojiong Chen",
-        "Fukai Shang",
-        "Xiaoyang Wang",
-        "Mindong Liu",
-        "Runyuan Ma",
-        "Jiantao Qiu"
+        "Yu-Tong Leng",
+        "Hao-Jiong Chen",
+        "Fu-Kai Shang",
+        "Xiao-Yang Wang",
+        "Min-Dong Liu",
+        "Run-Yuan Ma",
+        "Jian-Tao Qiu"
       ],
       "topic_labels": [
         {
@@ -12934,19 +13098,19 @@
       "summary": "本文提出了LabCompiler框架，用于将不完整的自然语言实验方案先经方案防火墙诊断和修复缺陷，再编译为设备无关的两级图表示，并支持基于能力的设备分配与人机协同执行；实验报告显示其在方案纠错上优于前沿大语言模型，并能在异构、部分自动化的实验室环境中实现人机协同执行。该框架的用途是减少方案错误向下游执行的传播并支持跨异构硬件的复用，但原文指出其仅覆盖有限扰动类型与iGEM来源的自然错误，对无法由现有证据判定的科学歧义保留给人工澄清，且方案修复循环最多进行12次迭代，超出后视为未解决。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Jingyuan Li",
-        "Dongzhan Zhou",
-        "Minting Pan",
-        "Yujie Liu",
+        "Jing-Yuan Li",
+        "Dong-Zhan Zhou",
+        "Min-Ting Pan",
+        "Yu-Jie Liu",
         "Yuan Gao",
-        "Yankai Jiang",
-        "Xinyu Gu",
+        "Yan-Kai Jiang",
+        "Xin-Yu Gu",
         "Zhe Liu",
         "Yang Li",
         "Bo Zhang",
         "Lei Bai",
         "Tong Si",
-        "Weinan Zhang"
+        "Wei-Nan Zhang"
       ],
       "topic_labels": [
         {
@@ -14302,12 +14466,12 @@
       "summary": "该论文提出“身份盲化推理诊断”框架，通过隐藏目标实体身份、仅用源实体和结构编辑操作定义目标来评估LLM，发现其在化学预测基准上的高分未必代表真正具备可迁移的结构—性质推理能力，而可能依赖目标身份线索或记忆检索。",
       "summary_kind": "upstream_tldr",
       "authors": [
-        "Yanyi Su",
+        "Yan-Yi Su",
         "Yu Zeng",
-        "Hongshuai Wang",
-        "Chenyan Wang",
-        "Zhifeng Gao",
-        "Xiaohui Yang"
+        "Hong-Shuai Wang",
+        "Chen-Yan Wang",
+        "Zhi-Feng Gao",
+        "Xiao-Hui Yang"
       ],
       "zotero_score": 3.6366458854656125,
       "affiliations": [],
@@ -14390,10 +14554,10 @@
         "Isak Wernroth",
         "Isak Häggqvist",
         "Isac Ljungwald",
-        "Hans-Ove Åkesson",
+        "H. Åkesson",
         "Henricus R. A. ten Eikelder",
-        "Rickard Armiento",
-        "Joel Davidsson"
+        "R. Armiento",
+        "J. Davidsson"
       ],
       "zotero_score": 3.5491343147410337,
       "affiliations": [],
@@ -14492,17 +14656,17 @@
       "summary": "SwarmRSI是一个通过演化科学智能体集群来实现递归自我改进的框架，它利用反馈引导的集群变异来修正假设或其实现，并通过互补集群重组复用保留的假设和程序组件以支持新研究。原文报告该框架在OpenProblems和NatureBench上取得SOTA结果，在MLE-Bench Lite上于81.8%的任务中获得奖牌，但这些比较和性能声明来自论文自身的评测，尚未经独立验证；摘要仅基于公开材料，未阅读完整全文。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Qianru Meng",
+        "Qian-Ru Meng",
         "Xi Zhang",
         "Konstantinos Papakostas",
         "Congfeng Cao",
-        "Wenxiang Hu",
-        "Tianyi Lu",
+        "Wen-Xiang Hu",
+        "Tian Lu",
         "Xiao Zhang",
-        "Lun Zhou",
-        "Zaiqiao Meng",
-        "Zhaochun Ren",
-        "Xiaohui Yan",
+        "Lu Zhou",
+        "Zai-Qiao Meng",
+        "Zhao-Chun Ren",
+        "Xiao-Hu Yan",
         "Yougang Lyu"
       ],
       "topic_labels": [
@@ -15924,6 +16088,71 @@
       "topic_cache_token": "057a280f76deebf019419251ad2d4470be549a06cdb5651653ff8f411196f148",
       "topic_version": "faceted-local-v2.4",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "75c83db184bc903603738773",
+      "url": "https://arxiv.org/abs/2610.18784",
+      "title": "Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-10-13T17:35:27+00:00",
+      "first_seen": "2026-10-19T01:39:06.553886+00:00",
+      "excerpt": "Long-horizon agents accumulate progress in persistent task state, yet repeatedly process interaction histories describing how that progress was achieved. This raises a natural question: can long-horizon context instead be organized around reusable progress rather than the history that produced it? In this paper, we introduce CarryOn, an object-oriented context runtime that organizes continuation around reusable task objects. Rather than treating compressed histories or reconstructed accounts of progress as the primary basis for continuation, CarryOn builds a context view from continuation carriers, complementary execution context, and a live tail of recent interactions. A core challenge is keeping this reusable basis valid after its surrounding history is retired: how can CarryOn update the basis without reconstructing the full representation at every fold? CarryOn maintains carrier records across folds, revising affected records against bound evidence and applicable environment checks while carrying forward unaffected records and jointly updating execution context. Experiments on OSWorld 2.0 and BrowseComp-Plus show improved gains of 5.8% and 7.0% while reducing total token usage by 51.9% and 22.9%, respectively. Project page: https://ethannju.github.io/carryon",
+      "summary": "本文提出CarryOn，一种面向对象的上下文运行时，用“延续载体”绑定可复用内容或对象引用及其使用条件，并联合执行上下文与近期交互尾部，在折叠时只修订受影响的载体记录、沿用未受影响记录。该工作可用于长时程智能体的上下文组织与任务延续研究，但所报告的OSWorld 2.0与BrowseComp-Plus性能提升及token、成本下降均为原文实验声明，尚未经独立验证，且摘要材料未给出跨任务、跨模型或超出所测基准的适用性证据。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.18784",
+      "authors": [
+        "Yuchen Lu",
+        "Julian McAuley",
+        "Lei Zhang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:cbe25e69baacf9dbe849320b1f3aa4a1",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：representation。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_ids": [
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8788,
+      "topic_cache_token": "f168e0a075b2c089a8cab7b7f2f7a26f60eef045b73ce9d3d55fc70b9a41e426",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.18784",
+        "sha256": "e8f17629822b4eaf0539f5d6b9e6a9111c5e220d5e1a65c07474b51a7d261802",
+        "chars": 12000
+      }
     },
     {
       "id": "a30326f2ae9db7c646ef8f5d",
@@ -22658,9 +22887,9 @@
         "Yi-Fan Hou",
         "Yuxinxin Chen",
         "Hassan Nawaz",
-        "Mateusz Witkowski",
-        "Szymon Śmiga",
-        "Ireneusz Grabowski"
+        "M. Witkowski",
+        "Szymon Ṡmiga",
+        "I. Grabowski"
       ],
       "topic_labels": [
         {
@@ -66773,6 +67002,73 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "9f810e2e7868773bb7d353ff",
+      "url": "https://arxiv.org/abs/2610.20628",
+      "title": "PRISM: PRIvileged Sibling-guided Multi-Agent Topology Design",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-09-29T00:00:00+00:00",
+      "first_seen": "2026-10-19T01:39:06.553886+00:00",
+      "excerpt": "Multi-agent systems (MAS) based on large language models (LLMs) have become a powerful way to address complex problems, and their effectiveness depends critically on the collaboration topology that decides which agents participate and how they communicate. Recent work learns to generate this topology from the task query, fitting the generator to corpora of execution-verified graphs. The post-training method for such generators remains a limitation: a corpus lists the graphs that solved a query but never ranks them, leaving continued supervised fine-tuning (SFT) with no per-query preference to exploit. Without such a preference, the generator drifts toward the topologies the corpus contains most often rather than those that suit each query, so a gain on one task can come at a cost on another. We propose PRISM, which recovers per-query signal from the same corpus by learning with privileged information: a teacher reads, through a zero-initialized low-rank branch, a sibling graph that also solved the query and is unavailable at deployment, and the student matches its per-decision targets on trajectories the student samples itself. Across six diverse benchmarks PRISM improves over every topology-design baseline evaluated, and matched-teacher controls support the contribution of privileged query information. Code is available in this link.",
+      "summary": "PRISM利用训练时可见但部署时不可用的同查询已验证“兄弟”拓扑图作为特权信息，通过零初始化低秩分支构造教师模型，并让学生在自身采样得到的轨迹上匹配教师逐决策目标，从而在不改变部署架构的情况下对自回归拓扑生成器进行在策略蒸馏。该工作面向已通过执行验证图语料训练的多智能体协作拓扑生成器，旨在缓解继续监督微调缺乏逐查询偏好以及在策略与训练轨迹不匹配的问题；原文报告在六个基准上优于所评估的拓扑设计基线，并称匹配教师对照支持查询匹配图信息的额外作用，但这些比较与结论来自原文，完整全文和独立验证尚未核实。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.20628",
+      "authors": [
+        "Phuong Tuan Dat",
+        "Qi Li",
+        "Xinchao Wang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：post-training、fine-tuning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8788,
+      "topic_cache_token": "910add02b37946d363de58ae579ae02dbc2eb030568835fb690c96d63c7e5dbe",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.20628",
+        "sha256": "b5f16f6ddc7b0737aa5eb2767b6496b9d986f260815bf14f412b1fa0c608e37a",
+        "chars": 12000
+      }
+    },
+    {
       "id": "791c517c60fcfb3789d9b5d8",
       "url": "https://doi.org/10.1002/aenm.71655",
       "title": "Synergetic Regulation of Enthalpy-Entropy via Dipole Interactions Enabling Textured and Low-Temperature Aqueous Zinc-Ion Batteries",
@@ -71063,7 +71359,7 @@
       "doi": "10.1038/s41467-026-76416-4",
       "published_online_at": "2026-09-17T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-18T23:39:51+00:00",
+      "indexed_at": "2026-10-19T00:40:45+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -71186,7 +71482,7 @@
       "doi": "10.1038/s41467-026-77826-0",
       "published_online_at": "2026-09-17T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-18T23:39:26+00:00",
+      "indexed_at": "2026-10-19T00:40:43+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -72434,7 +72730,7 @@
       "doi": "10.1038/s41467-026-76235-7",
       "published_online_at": "2026-09-16T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-18T22:41:21+00:00",
+      "indexed_at": "2026-10-19T00:40:45+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -72493,7 +72789,7 @@
       "doi": "10.1038/s41467-026-75727-w",
       "published_online_at": "2026-09-16T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-18T23:39:30+00:00",
+      "indexed_at": "2026-10-19T00:40:41+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -72833,7 +73129,7 @@
       "doi": "10.1038/s41467-026-77850-0",
       "published_online_at": "2026-09-16T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-18T23:39:36+00:00",
+      "indexed_at": "2026-10-19T00:40:42+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -73084,7 +73380,7 @@
       "doi": "10.1038/s41467-026-77563-4",
       "published_online_at": "2026-09-16T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-18T22:41:25+00:00",
+      "indexed_at": "2026-10-19T00:40:46+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -116154,12 +116450,12 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-10-18T23:49:40.440486+00:00",
+    "last_success": "2026-10-19T01:39:06.553886+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 38,
+      "classified": 4,
       "unclassified": 1237,
       "algorithm": "faceted-local-v2.4",
       "calibration_status": "pending_human_gold",
@@ -116264,8 +116560,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "status": "ok",
       "count": 10
     },
@@ -116273,8 +116569,8 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "status": "ok",
       "count": 1
     },
@@ -116282,8 +116578,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "status": "ok",
       "count": 10
     },
@@ -116291,8 +116587,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "status": "ok",
       "count": 12
     },
@@ -116300,8 +116596,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "status": "ok",
       "count": 11
     },
@@ -116309,8 +116605,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "status": "ok",
       "count": 1
     },
@@ -116318,8 +116614,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "status": "ok",
       "count": 12
     },
@@ -116327,8 +116623,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "status": "ok",
       "count": 2
     },
@@ -116340,8 +116636,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "count": 123,
       "counters": {
         "relevant": 3,
@@ -116359,13 +116655,13 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "count": 35,
       "counters": {
         "relevant": 5,
         "pending": 30,
-        "excluded": 144,
+        "excluded": 143,
         "fetched": 157
       },
       "errors": []
@@ -116378,14 +116674,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "count": 67,
       "counters": {
         "relevant": 16,
         "pending": 51,
-        "excluded": 768,
-        "fetched": 507
+        "excluded": 764,
+        "fetched": 506
       },
       "errors": []
     },
@@ -116397,13 +116693,13 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
-      "count": 50,
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
+      "count": 48,
       "counters": {
-        "relevant": 20,
-        "pending": 30,
-        "excluded": 566,
+        "relevant": 19,
+        "pending": 29,
+        "excluded": 562,
         "fetched": 543
       },
       "errors": []
@@ -116416,8 +116712,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "count": 80,
       "counters": {
         "relevant": 1,
@@ -116435,13 +116731,13 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "count": 96,
       "counters": {
         "relevant": 1,
         "pending": 95,
-        "excluded": 333,
+        "excluded": 332,
         "fetched": 212
       },
       "errors": []
@@ -116454,14 +116750,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
-      "count": 709,
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
+      "count": 703,
       "counters": {
         "relevant": 8,
-        "pending": 701,
-        "excluded": 567,
-        "fetched": 339
+        "pending": 695,
+        "excluded": 562,
+        "fetched": 337
       },
       "errors": []
     },
@@ -116473,8 +116769,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "count": 28,
       "counters": {
         "relevant": 0,
@@ -116492,8 +116788,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "count": 56,
       "counters": {
         "relevant": 0,
@@ -116511,8 +116807,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "count": 14,
       "counters": {
         "relevant": 1,
@@ -116526,8 +116822,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "status": "ok",
       "count": 0
     },
@@ -116535,8 +116831,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "status": "ok",
       "count": 12
     },
@@ -116544,8 +116840,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "status": "ok",
       "count": 3
     },
@@ -116553,8 +116849,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "status": "ok",
       "count": 0
     },
@@ -116562,8 +116858,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
-      "last_success": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
+      "last_success": "2026-10-19T01:39:06.553886+00:00",
       "status": "ok",
       "count": 12
     },
@@ -116572,7 +116868,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 0,
-      "last_attempt": "2026-10-18T23:49:40.440486+00:00",
+      "last_attempt": "2026-10-19T01:39:06.553886+00:00",
       "last_success": "2026-10-18T23:48:47.173085+00:00",
       "run_id": "39178006324",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -116580,16 +116876,16 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 2,
+    "generated": 4,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
-      "status": "partial",
-      "attempted": 3,
-      "public_html": 1,
+      "status": "ok",
+      "attempted": 4,
+      "public_html": 4,
       "bohr_graph": 0,
-      "fallback": 2,
-      "bohr_calls": 1
+      "fallback": 0,
+      "bohr_calls": 0
     }
   },
   "policy": {
