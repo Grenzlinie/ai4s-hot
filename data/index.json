@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-20T00:56:06.469140+00:00",
+  "generated_at": "2026-10-20T02:03:53.178022+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -1401,6 +1401,98 @@
         "url": "https://openai.com/index/low-resource-programming-languages/",
         "sha256": "00419379cdb08313aeee8ca339bb43247f390f5c6e1b9004c507374073418be6",
         "chars": 6718
+      }
+    },
+    {
+      "id": "7ef7ad0f0ee1e82d72e89f6b",
+      "url": "https://arxiv.org/abs/2610.25747",
+      "title": "Bayesian Model Discovery with Language Models: Closing the Loop between Hypotheses and Experiments",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-10-19T03:58:21+00:00",
+      "first_seen": "2026-10-20T02:03:53.178022+00:00",
+      "excerpt": "Scientific model discovery requires proposing candidate models of an unknown system and designing experiments that discriminate among them. However, LLM-based approaches typically rely on in-context learning to predict outcomes and select experiments, lacking explicit model evaluation to systematically guide hypothesis search, while Bayesian approaches enable principled model comparison but are confined to a predefined candidate set which results in limited search spaces. To this end, we introduce BMD, which closes the loop between LLM-driven hypothesis generation and Bayesian experimental design. Specifically, an LLM proposes model families, while a numerical engine fits their parameters, weighs them by model evidence, and averages their predictions. Then, BMD chooses the next experimental conditions by maximizing the joint expected information gain over families and their parameters, while feeding the updated beliefs and residual diagnostics back to the LLM to guide its next proposals. Across four scientific discovery benchmarks, BMD achieves lowest final prediction error than in-context learning and LLM-based scientific agents while recovering exact functional forms more often, with ablations supporting numerical feedback and the joint objective.",
+      "summary": "本文提出贝叶斯模型发现（BMD），将大语言模型驱动的模型族假设生成与贝叶斯实验设计闭环结合，由数值引擎拟合参数、以模型证据加权并平均预测，同时通过最大化模型族与参数的联合期望信息增益选择后续实验条件，并将更新后的信念和残差诊断反馈给LLM。据原文摘要，BMD在四个科学发现基准上报告了比上下文学习和基于LLM的科学智能体更低的最终预测误差，并更常恢复精确函数形式，但该结果来自作者报告，未在提供材料中独立验证；模型比较限定于当前有限候选池，真实模型族未必在池内，且所给材料为有界摘录而非完整全文。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "JooKyung Yuh",
+        "Byungmin Park",
+        "Eunseo Choi",
+        "Jinheon Baek",
+        "Junmo Cho",
+        "Kyu Hyun Choi",
+        "Sung Ju Hwang",
+        "Kyong Hwan Jin",
+        "Hae Beom Lee"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：evaluation。"
+        },
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        },
+        {
+          "id": "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：generation。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.916,
+      "topic_cache_token": "0df1e4274468b45f9099d141bc7fb87ae136dd2185ba37b70343fe11b139ae20",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.25747",
+        "sha256": "5fa78b6a351b2c0e20c5528efc4db9f1fa694fd1bb2e66999b95fd5d86b05492",
+        "chars": 12000
       }
     },
     {
@@ -2829,13 +2921,7 @@
       "summary": "本文综述了机器学习方法如何针对液态电解质设计中离子传输、电化学窗口和界面稳定性等相互耦合的核心挑战，并梳理了数据集构建、特征表示及多目标优化的策略。该综述可帮助研究人员了解数据驱动电解质设计的现状与设计原则，但其指出的数据质量、模型泛化性和可解释性等限制仍需在后续研究中解决。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Qianqian Liu",
-        "Chaojie Wang",
-        "Zeyi Zhang",
-        "Ming Xiao",
-        "Xiaokai Hao",
-        "Kunzhe Wang",
-        "Liguang Wang"
+        "Qianqian Liu, Chaojie Wang, Zeyi Zhang, Ming Xiao, Xiaokai Hao, Kunzhe Wang, Liguang Wang"
       ],
       "journal_id": "advanced-energy-materials",
       "journal_title": "Advanced Energy Materials",
@@ -3152,6 +3238,83 @@
       "topic_cache_token": "82e37a7cfb1eb7b07847466839113c1d4fc0a711412e5bb990757a2b7b9cd95b",
       "topic_version": "faceted-local-v2.4",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "1c2a47102a0d9908569a771d",
+      "url": "https://arxiv.org/abs/2610.24835",
+      "title": "Pattern-Driven Evaluation of LLM Code Optimization: Isolating Compiler-Transcendent Semantic Reasoning",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-10-17T19:33:01+00:00",
+      "first_seen": "2026-10-20T02:03:53.178022+00:00",
+      "excerpt": "Existing evaluations of LLM-based code optimization primarily measure end-to-end speedup, obscuring whether a model actually performs the intended optimization. For compiled languages, this is especially problematic: observed gains may reflect transformations already recoverable by modern optimizing compilers rather than optimization behavior attributable to the model itself. We present PatternBench, a benchmark for studying compiler-transcendent optimization, i.e., performance improvements that remain after aggressive compiler optimization. PatternBench targets residual optimization opportunities across seven classes of transformations and pairs runtime evaluation with an AST-based optimization faithfulness analysis that verifies whether the intended optimization is realized in the generated program. Experiments with frontier, open-weight, and fine-tuned models show that runtime speedup alone provides an incomplete account of optimization capability. Optimization faithfulness is strongly associated with realized speedup, and fine-tuning improves both faithfulness and optimization effectiveness. These results suggest that evaluation of LLM-based code optimization should measure not only performance outcomes, but also whether the target transformation was successfully executed.",
+      "summary": "本文提出PatternBench基准，用于评估在激进编译器优化后仍残留的编译器超越型优化机会，覆盖七类变换，并结合基于AST的优化忠实性分析来检验生成的程序是否真正实现了目标优化。该基准可用于区分模型自身带来的优化行为与编译器本可恢复的变换，但相关实验基于公开摘要所述设置，性能提升是否可推广到其他编译器配置或语言尚不明确。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Wesley Lu",
+        "Runzhou Liu",
+        "Hongru Du",
+        "Xinyao Yi"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark、evaluation。"
+        },
+        {
+          "id": "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：fine-tuning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9231,
+      "topic_cache_token": "fb5ea9a4e5f7d4393dcdaedd5eb729680c162e6b20bca493d8e3b3d5322efb42",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.24835",
+        "sha256": "5cc429f5457fd53cd8d31b0524f869a78afecc5ac7c9b040d5b0aedf68f4e04b",
+        "chars": 12000
+      }
     },
     {
       "id": "d2eb7383042eccdb0445de80",
@@ -6242,7 +6405,7 @@
       "excerpt": "Pretrained VLMs bring rich world knowledge and semantic priors to object-goal navigation, and fine-tuning a VLM into a navigation policy has become a common recipe. Despite this progress, success rates remain low, and it is unclear which capability these fine-tuned policies lack. Our diagnosis identifies goal grounding as the dominant failure. These policies explore well, yet often fail to notice that the goal is already in view or to estimate how far away it is. To address this failure, we ground the goal explicitly. Explicit grounding substantially improves success and reaches state-of-the-art results on six benchmarks across three scene collections. We also correct annotation defects in these benchmarks, so that future methods are evaluated more faithfully. Our analysis on the clean benchmarks shows that, with ground-truth grounding, our policy nearly matches the expert that generated its demonstrations, leaving the headroom in perception rather than policy learning. Our work points to goal grounding as a missing piece of object-goal navigation and offers a simple and effective solution to the task.",
       "summary": "本文针对物体目标导航中微调视觉语言模型策略“能接近但常不停止”的问题，将目标定位显式化，提出由感知模型预测视野内物体与目标距离、再由策略模型据此选择动作的两模型流水线，并修正了部分基准的标注缺陷。基于公开摘要，其用途在于把该任务的成功率瓶颈定位到目标定位这一感知环节，且作者报告在六个基准上取得当前最优并指出剩余提升空间在感知而非策略学习；不过这些性能结论来自原文自述，尚未经独立验证。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 9,
+      "alpha_rank": 8,
       "authors": [
         "Xinhao Liu",
         "Yunsheng Tian",
@@ -10837,7 +11000,7 @@
       "topic_cache_token": "c15455ecd411f6a1f36914e2016f6ed95e4c335f2dc219595622d3dc7c876e95",
       "topic_version": "faceted-local-v2.4",
       "topic_backend": "lexical",
-      "alpha_rank": 8
+      "alpha_rank": 9
     },
     {
       "id": "032ea216940aec50fb724d24",
@@ -15389,11 +15552,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Wenzhen Dou",
-        "Tianchao Niu",
-        "Liang Ma",
-        "Feng Ding",
-        "Jinlan Wang"
+        "Wenzhen Dou, Tianchao Niu, Liang Ma, Feng Ding, Jinlan Wang"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -16068,6 +16227,81 @@
       "topic_cache_token": "0f01e5c5b36c9210b3e2e82c0f9452e4032f833756c25309f1acca70aa404a9e",
       "topic_version": "faceted-local-v2.4",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "bc96cee780e278b5f9900642",
+      "url": "https://arxiv.org/abs/2610.22732",
+      "title": "TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-15T00:00:00+00:00",
+      "first_seen": "2026-10-20T02:03:53.178022+00:00",
+      "excerpt": "Advances in frontier coding agents have sharply increased the token costs of AI-assisted software engineering. Their token efficiency is typically evaluated on isolated tasks, whereas real-world developers use them to continuously build, update, and maintain large-scale projects. This mismatch motivates us to evaluate agents over sequences of realistic coding tasks, where we find that agents exhibit recurring environment-dependent token costs that existing methods struggle to reduce. To minimize these costs, we introduce TokenEconomizer, an external controller that cuts environment-specific token costs over a sequence of tasks. These cuts come from determining (i) which operational micro-skills to inject, (ii) which persistently irrelevant tools to prune, and (iii) when to intervene in unproductive failure loops. Across Claude Code, Codex, and GitHub Copilot CLI paired with frontier models, TokenEconomizer reduces the average token cost by 18.4-30.9% with comparable task success. Savings hold in every repository under every tested agent-model setting and generalize to diverse domains such as sequential web development and security auditing, where costs fall by 6.4-21.2% depending on task structure. Our work establishes adaptive black-box cost control as a promising direction for reducing token costs of coding agents in realistic settings.",
+      "summary": "TokenEconomizer被提出为一种外部黑盒控制器，在真实编码任务序列中根据已完成执行轨迹自适应决定注入哪些操作微技能、剪除哪些持续无关工具以及何时干预无效失败循环，从而降低编码智能体的令牌成本。原文报告其在多类智能体与基准上取得成本下降且任务成功率相当，但这些节省幅度来自作者评估，仍需独立验证，且方法依赖可用的提示与工具设置及已完成轨迹，适用性受此限制。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.22732",
+      "authors": [
+        "Aaron J. Li",
+        "Weijia Xu",
+        "Chandan Singh",
+        "Zixiao Chen",
+        "Jeevana Priya Inala",
+        "Charlotte Siska",
+        "Acar Tamersoy",
+        "Bin Yu",
+        "Ion Stoica",
+        "Michel Galley",
+        "Jianfeng Gao"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:c143f684d9fa5b5af6a7ff1ee4101832",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：software engineering。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:c143f684d9fa5b5af6a7ff1ee4101832"
+      ],
+      "topic_ids": [
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:c143f684d9fa5b5af6a7ff1ee4101832"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8963,
+      "topic_cache_token": "c51c5921510619c838f3733ab577b8ea9f9b360702d7d80fe66161a0e4af0e89",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.22732",
+        "sha256": "de341cade1d7293262f918a538f85d5873eac9d1dfb016e055e43f93d6b2913a",
+        "chars": 12000
+      }
     },
     {
       "id": "9b7dd9b0b72ceb3e5ae80142",
@@ -17206,19 +17440,19 @@
       "summary": "本文提出了LabCompiler框架，用于将不完整的自然语言实验方案先经方案防火墙诊断和修复缺陷，再编译为设备无关的两级图表示，并支持基于能力的设备分配与人机协同执行；实验报告显示其在方案纠错上优于前沿大语言模型，并能在异构、部分自动化的实验室环境中实现人机协同执行。该框架的用途是减少方案错误向下游执行的传播并支持跨异构硬件的复用，但原文指出其仅覆盖有限扰动类型与iGEM来源的自然错误，对无法由现有证据判定的科学歧义保留给人工澄清，且方案修复循环最多进行12次迭代，超出后视为未解决。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Jingyuan Li",
-        "Dongzhan Zhou",
-        "Minting Pan",
-        "Yujie Liu",
+        "Jing-Yuan Li",
+        "Dong-Zhan Zhou",
+        "Min-Ting Pan",
+        "Yu-Jie Liu",
         "Yuan Gao",
-        "Yankai Jiang",
-        "Xinyu Gu",
+        "Yan-Kai Jiang",
+        "Xin-Yu Gu",
         "Zhe Liu",
         "Yang Li",
         "Bo Zhang",
         "Lei Bai",
         "Tong Si",
-        "Weinan Zhang"
+        "Wei-Nan Zhang"
       ],
       "topic_labels": [
         {
@@ -20686,6 +20920,64 @@
       "topic_method": "scope_rule",
       "topic_coverage": 0.6875,
       "topic_cache_token": "ba73ae97eaf535de9413f4a6c7dd95f3a5211407fe5c4614e802f6efd94f8366",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "49226787004e86382fda44ef",
+      "url": "https://doi.org/10.1002/adma.74249",
+      "title": "Dynamic Polymers Based on Coordination Bonds",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-13T15:50:29+00:00",
+      "first_seen": "2026-10-20T02:03:53.178022+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Zi-Han Zhao, Yiqi He, Wen-Tong Gao, Cheng-Hui Li"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74249",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 1.0,
+      "topic_cache_token": "7739eae14cb778349dee46408564000e97a42e08e2bd1d239ffc6cf7f8545e6b",
       "topic_version": "faceted-local-v2.4",
       "topic_backend": "lexical"
     },
@@ -64519,6 +64811,64 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "8c7c65da0659cf5aeba0d4e1",
+      "url": "https://doi.org/10.1002/adma.73923",
+      "title": "A Geometrically Transient Platform for Bioelectronic Implants",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-20T02:03:53.178022+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Selin Olenik, John D. Goodwin, Atharv Naik, Philip Coatsworth, Ioi Chit Cheung, Farbod Amirghasemi, Anies Sohi, Ehsan Abedi, Tayeb Tadlaoui, Maral P. S. Mousavi, Andriy S. Kozlov, Victoria Salem, Andrew S. Cowburn, Firat Guder"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.73923",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6,
+      "topic_cache_token": "cd2c12eea5575815e03924c4f2745e2ef25f1b9f19c0a519f9ea95d7bdae70ea",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "d1f46554bd4c9bb146a51a40",
       "url": "https://doi.org/10.1002/adfm.202523909",
       "title": "Programmable 3D-Orthotropic Piezoceramic Sensors Enabled by Solid-Loading-Maximized Additive Manufacturing",
@@ -64573,6 +64923,64 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.5,
       "topic_cache_token": "73c444eddef08a4d80deb92f793f32cbffbf71f537e86be68ec4e9c6243955cb",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "bad38dc82b942fad12551438",
+      "url": "https://doi.org/10.1002/adfm.77306",
+      "title": "Polyvinylpyrrolidone-Based Chemo-Mechanical Synergy Strategy Achieves Atomic-Scale Synchronous Removal of Co/Ti Interconnection Heterostructures",
+      "source_ids": [
+        "journal-advanced-functional-materials"
+      ],
+      "source_names": [
+        "Advanced Functional Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T10:18:10+00:00",
+      "first_seen": "2026-10-20T02:03:53.178022+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Lifei Zhang, Zixin Gao, Xinchun Lu"
+      ],
+      "journal_id": "advanced-functional-materials",
+      "journal_title": "Advanced Functional Materials",
+      "journal_issns": [
+        "1616-301X",
+        "1616-3028"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adfm.77306",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5,
+      "topic_cache_token": "81dd6eed82881ee9755ea6c8ec38b7e52a2bd88818f45aea6b6700e0c76c9194",
       "topic_version": "faceted-local-v2.4",
       "topic_backend": "lexical"
     },
@@ -95349,7 +95757,7 @@
       "doi": "10.1038/s41467-026-76780-1",
       "published_online_at": "2026-09-03T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-13T18:52:47+00:00",
+      "indexed_at": "2026-10-20T01:30:39+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -105961,15 +106369,7 @@
       "summary": "本文设计了一种级联神经网络架构，在成分-工艺-结构-性能-表现范式下同步映射37维工艺参数，并集成了SHAP分析，结合九种候选材料的实验验证（预测误差小于10%），建立了从建模到筛选再到实验验证的加速发现框架。该工作为高维合成空间中高性能LNMCO正极材料的筛选和加速研发提供了数据驱动工具，但其摘要未说明该框架在更广泛成分、工艺或材料体系上的适用性，相关性能指标和验证结论仍需以完整原文及独立复现为准。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Chenfeng Wang",
-        "Quanjiang Li",
-        "Lihong Zhang",
-        "Fei Liu",
-        "Ning Yang",
-        "Zundong Xiao",
-        "Aoxuan Wang",
-        "Xingjiang Liu",
-        "Rijie Wang"
+        "Chenfeng Wang, Quanjiang Li, Lihong Zhang, Fei Liu, Ning Yang, Zundong Xiao, Aoxuan Wang, Xingjiang Liu, Rijie Wang"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -107193,17 +107593,7 @@
       "summary": "本文采用贝叶斯优化指导的电解液设计，以海藻酸作为双功能添加剂调控界面与体相电解液化学，构建可逆的海藻酸盐-Zn²⁺胶体储库并促进锌均匀沉积/剥离，在20 mA cm⁻²下实现2400小时稳定循环。该策略对锌空气电池高电流密度下的浓度极化、枝晶生长及析氢腐蚀等问题提供了电解液优化思路，但其性能数据仅为原文报道结果，尚未经独立验证，且未涉及全文其他潜在限制。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Lichao Fu",
-        "Mingming Song",
-        "Mingyuan Gu",
-        "Dapeng Liu",
-        "Kaihua Zhang",
-        "Xintao Zuo",
-        "Qiyao Zhang",
-        "Xilan Feng",
-        "Zhicheng Ye",
-        "Ying Jiang",
-        "Yu Zhang"
+        "Lichao Fu, Mingming Song, Mingyuan Gu, Dapeng Liu, Kaihua Zhang, Xintao Zuo, Qiyao Zhang, Xilan Feng, Zhicheng Ye, Ying Jiang, Yu Zhang"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -107534,16 +107924,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Yingtong Lv",
-        "Hao Zhang",
-        "Zijian Li",
-        "Rong He",
-        "Wenkun Zhu",
-        "Yan Liu",
-        "Maobing Shuai",
-        "Zhiwei Hu",
-        "Jian-Qiang Wang",
-        "Linjuan Zhang"
+        "Yingtong Lv, Hao Zhang, Zijian Li, Rong He, Wenkun Zhu, Yan Liu, Maobing Shuai, Zhiwei Hu, Jian-Qiang Wang, Linjuan Zhang"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -110750,16 +111131,7 @@
       "summary": "本文从4407篇开放获取的固态合成论文中提取目标化合物、前驱体和工艺参数，构建结构化配方数据集，并采用检索增强生成方法检索相似配方以生成候选合成方案，且在经第一性原理筛选获得的未报道固态电解质候选材料上通过模型与实验的迭代反馈合成了多种氧硒化合物。该框架可为固态合成条件预测与优化提供数据驱动、反馈优化的辅助途径，但其结论基于摘要所述基准评测和特定候选材料实验，需结合原文与独立验证评估适用性；公开材料未给出可外推的性能数字。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Dong Won Jeon",
-        "Dong Hwi Kim",
-        "Taeyang Jeon",
-        "Joo Yeong Na",
-        "Heegyu Kim",
-        "Hyunsouk Cho",
-        "Dae Soo Jung",
-        "Ju Li",
-        "Jin-Sung Park",
-        "Sung Beom Cho"
+        "Dong Won Jeon, Dong Hwi Kim, Taeyang Jeon, Joo Yeong Na, Heegyu Kim, Hyunsouk Cho, Dae Soo Jung, Ju Li, Jin-Sung Park, Sung Beom Cho"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -122429,13 +122801,13 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-10-20T00:56:06.469140+00:00",
+    "last_success": "2026-10-20T02:03:53.178022+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 82,
-      "unclassified": 1280,
+      "classified": 6,
+      "unclassified": 1283,
       "algorithm": "faceted-local-v2.4",
       "calibration_status": "pending_human_gold",
       "quality_status": "unmeasured",
@@ -122539,8 +122911,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "ok",
       "count": 10
     },
@@ -122548,8 +122920,8 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "ok",
       "count": 1
     },
@@ -122557,8 +122929,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "ok",
       "count": 10
     },
@@ -122566,8 +122938,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "ok",
       "count": 12
     },
@@ -122575,8 +122947,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "ok",
       "count": 11
     },
@@ -122584,8 +122956,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "ok",
       "count": 1
     },
@@ -122593,8 +122965,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "ok",
       "count": 12
     },
@@ -122602,8 +122974,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "ok",
       "count": 2
     },
@@ -122615,14 +122987,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
       "count": 124,
       "counters": {
         "relevant": 3,
         "pending": 121,
         "excluded": 0,
-        "fetched": 208
+        "fetched": 203
       },
       "errors": []
     },
@@ -122633,17 +123005,19 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
+      "status": "partial",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
       "last_success": "2026-10-20T00:56:06.469140+00:00",
       "count": 35,
       "counters": {
         "relevant": 5,
         "pending": 30,
         "excluded": 143,
-        "fetched": 150
+        "fetched": 133
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-advanced-functional-materials",
@@ -122653,14 +123027,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
-      "count": 66,
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
+      "count": 67,
       "counters": {
         "relevant": 16,
-        "pending": 50,
+        "pending": 51,
         "excluded": 788,
-        "fetched": 502
+        "fetched": 462
       },
       "errors": []
     },
@@ -122672,14 +123046,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
-      "count": 51,
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
+      "count": 53,
       "counters": {
         "relevant": 20,
-        "pending": 31,
-        "excluded": 568,
-        "fetched": 532
+        "pending": 33,
+        "excluded": 569,
+        "fetched": 432
       },
       "errors": []
     },
@@ -122690,17 +123064,19 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
+      "status": "partial",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
       "last_success": "2026-10-20T00:56:06.469140+00:00",
       "count": 80,
       "counters": {
         "relevant": 1,
         "pending": 79,
         "excluded": 2,
-        "fetched": 83
+        "fetched": 76
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-nature",
@@ -122710,14 +123086,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
       "count": 92,
       "counters": {
         "relevant": 1,
         "pending": 91,
         "excluded": 342,
-        "fetched": 149
+        "fetched": 133
       },
       "errors": []
     },
@@ -122729,14 +123105,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
       "count": 735,
       "counters": {
         "relevant": 8,
         "pending": 727,
         "excluded": 603,
-        "fetched": 285
+        "fetched": 200
       },
       "errors": []
     },
@@ -122748,8 +123124,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
       "count": 28,
       "counters": {
         "relevant": 0,
@@ -122767,14 +123143,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
       "count": 56,
       "counters": {
         "relevant": 0,
         "pending": 56,
         "excluded": 146,
-        "fetched": 64
+        "fetched": 53
       },
       "errors": []
     },
@@ -122785,24 +123161,26 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
+      "status": "partial",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
       "last_success": "2026-10-20T00:56:06.469140+00:00",
       "count": 14,
       "counters": {
         "relevant": 1,
         "pending": 13,
         "excluded": 368,
-        "fetched": 152
+        "fetched": 89
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "ok",
       "count": 0
     },
@@ -122810,8 +123188,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "ok",
       "count": 12
     },
@@ -122819,8 +123197,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "ok",
       "count": 3
     },
@@ -122828,8 +123206,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "ok",
       "count": 0
     },
@@ -122837,8 +123215,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
-      "last_success": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
+      "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "ok",
       "count": 12
     },
@@ -122847,7 +123225,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 20,
-      "last_attempt": "2026-10-20T00:56:06.469140+00:00",
+      "last_attempt": "2026-10-20T02:03:53.178022+00:00",
       "last_success": "2026-10-20T00:55:16.013517+00:00",
       "run_id": "39349875194",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -122855,16 +123233,16 @@
   ],
   "summaries": {
     "status": "partial",
-    "generated": 18,
+    "generated": 3,
     "failed": 1,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
-      "status": "partial",
-      "attempted": 8,
-      "public_html": 7,
+      "status": "ok",
+      "attempted": 4,
+      "public_html": 4,
       "bohr_graph": 0,
-      "fallback": 1,
-      "bohr_calls": 1
+      "fallback": 0,
+      "bohr_calls": 0
     }
   },
   "policy": {
