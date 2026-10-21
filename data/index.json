@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-21T01:52:29.830864+00:00",
+  "generated_at": "2026-10-21T02:00:04.446621+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -3546,6 +3546,90 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "111faa95bd5ec09ca926008e",
+      "url": "https://arxiv.org/abs/2610.28630",
+      "title": "SolarRenderer: Few-Step Generative Reference Rendering",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-20T00:00:00+00:00",
+      "first_seen": "2026-10-21T02:00:04.446621+00:00",
+      "excerpt": "Game engines and coding agents can specify the layout, motion, and camera of a scene, yet turning such coarse structure into realistic video requires a renderer that follows the structure and completes the appearance it leaves open. Existing renderers are tied to the representation of one engine, need tens of denoising steps or a costly distillation of their own, and learn from conditions that are not aligned with their target videos. We present SolarRenderer, a structure-conditioned video renderer that adapts a frozen MiniMax-H3 33B backbone with two lightweight LoRAs. Structural videos enter the native reference pathway of the backbone at the positions of the frames they describe, without a type identifier and described only in plain text, so that a single control LoRA follows arbitrary structural representations. Starting from a pretrained four-step LoRA, structure-guided distribution matching renders in four steps, 12.3 times faster than 50-step sampling, while preserving the learned control. A block-causal variant extends the same design to streaming and renders 768p video in real time. To train the model, we build a frame-aligned corpus of 136K clips from game engines, simulators, and YouTube videos. Experiments on an in-distribution test set and a generalization benchmark of 16 structural representations show that SolarRenderer achieves state-of-the-art results across both, and generalizes to 11 unseen representations, including pose skeletons, drawings, and point clouds.",
+      "summary": "本文提出SolarRenderer，一种结构条件视频渲染器：它在冻结的MiniMax-H3 33B主干上接入两个轻量LoRA，将无类型标识的结构视频按各帧原生参考路径的位置送入，并用结构引导的分布匹配微调预训练的四步LoRA，从而在四步采样下保留结构控制。据原文，该设计在分布内测试集和16种结构表示的泛化基准上都取得了当前最优结果，并泛化到11种训练中未见的结构表示（如姿态骨架、绘画和点云）；原文还称四步采样比50步采样快12.3倍，块因果变体可实时渲染768p视频。这些均为作者陈述，尚未经独立验证；此外，摘要未给出与现有方法逐项对比的误差或画质指标，上述加速比和实时性也缺少第三方复现，具体适用范围仍需参考原文。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.28630",
+      "authors": [
+        "Guian Fang",
+        "Shengju Qian",
+        "Dongyue Lu",
+        "Junchao Huang",
+        "Lutao Jiang",
+        "Xin Wang",
+        "Yiren Song",
+        "Li Jiang",
+        "Mike Zheng Shou"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:cbe25e69baacf9dbe849320b1f3aa4a1",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：representation。"
+        },
+        {
+          "id": "zotero:e09a09615a9a79995ffd756fcf67aa3f",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8462,
+      "topic_cache_token": "bf9228981d6bb8fc30b661593d9704e63322b69a28a16ca2cc2848c83291197c",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.28630",
+        "sha256": "cbcc7d6325c5c85a573eec6de18a018955ae5ec1e958f492c8c8d7d0d0d1abd8",
+        "chars": 12000
+      }
+    },
+    {
       "id": "4307681734380e042782f6ce",
       "url": "https://arxiv.org/abs/2610.27355",
       "title": "Reaction-induced Localized Annealing for On-chip Materials Discovery",
@@ -6344,6 +6428,90 @@
       "topic_cache_token": "6f8b7860e67736169985cf16b4981d56af411801eaa76d643d811ff1001f72b6",
       "topic_version": "faceted-local-v2.4",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "fb886f33eecf9e73b61982fb",
+      "url": "https://arxiv.org/abs/2610.26203",
+      "title": "Focused Omni-Modal GUI Agents",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-19T00:00:00+00:00",
+      "first_seen": "2026-10-21T02:00:04.446621+00:00",
+      "excerpt": "Graphical User Interface (GUI) agents increasingly act over streaming omni-modal observations spanning screenshots, audio, video, interaction history, and device states. However, exposing this complete context uniformly at every step ignores that relevance is transient and sparse: the signal determining one action can become clutter at the next. Because executed actions feed back into the context, these errors compound into Sequential Distraction, driving the agent into irreversible trajectory drift. We formulate the underlying requirement as Focused Perception: a representation that is step-adaptive, action-sufficient, and non-intrusive. We realize this in FocusGUI, a lightweight adapter that dynamically prioritizes multimodal channels against a step-specific decision reference. Instead of uniformly processing all inputs, it compresses the most relevant evidence into a compact latent and subtly injects it into the frozen decoder's embeddings, guiding the model's attention without altering its native parameter space. FocusGUI trains from action supervision alone, requiring neither modality-relevance labels nor backbone fine-tuning. Across four omni-modal backbones, it raises overall Type Match by +33.2 and Exact Match by 3.0 times over the frozen backbone on average, and Type Match by +30.1 over the strongest existing enhancement method.",
+      "summary": "本文提出FocusGUI轻量适配器，通过零初始化残差在冻结的omni-modal骨干解码器动作边界注入基于当前步骤优先级的压缩焦点表示，仅使用动作监督训练，不修改骨干参数或输入观测。据摘要与引言，该方法在四个骨干上平均提升了Type Match与Exact Match，但具体增益数字在公开材料中未完整显示或需以原文验证，且未提供跨更多模型或真实环境的独立验证。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.26203",
+      "authors": [
+        "Fuyao Zhang",
+        "Wenwen He",
+        "Jiaming Zhang",
+        "Yurong Hao",
+        "Xuan Wang",
+        "Guowei Guan",
+        "Che Wang",
+        "Longtao Huang",
+        "Wei Yang Bryan Lim"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：fine-tuning。"
+        },
+        {
+          "id": "zotero:8f22e62349472c4815f4275fbcf89c76",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：agent。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8462,
+      "topic_cache_token": "552f5d1c87d469e013454b6021db5e721e966ec99420a76eacffd13985f9e9c7",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.26203",
+        "sha256": "13910a5d59c18a03611e746261f516cde1dd5647b512025e4fa6e6e8eda7bc18",
+        "chars": 12000
+      }
     },
     {
       "id": "a0595c813318ccae8c08950d",
@@ -14530,8 +14698,8 @@
       "published_at": "2026-10-16T00:00:00+00:00",
       "first_seen": "2026-10-21T01:52:29.830864+00:00",
       "excerpt": "Recent advances in large language models (LLMs) have brought impressive performance across diverse tasks; however, shortcomings remain in logical reasoning, including inconsistencies under linguistic variation. To improve the reasoning capacity of LLMs, we must be able to accurately measure their reasoning capacity. Current benchmarks primarily report single accuracy numbers on selected reasoning tasks. Such a performance-based evaluation methodology says little about a model's generalization capacity in reasoning. To address this limitation, we argue for a different evaluation paradigm, called competence-based evaluation (CBE), which tests whether models reliably apply the same competence across a family of problems. A parameterized generator scales complexity while keeping the required competence fixed, and matched answer-preserving presentations test correctness beyond one formulation. We instantiate CBE on elementary ordering tasks, scaling input size while varying presentations of the same ordering rule. Across six GPT and Qwen models, performance is reasonably good over bounded complexity ranges, but even strong models fail the competence condition across the tested family. Chain-of-thought and GRPO extend strong performance without resolving all tested failures; supervised LoRA shows little held-out transfer. CBE provides diagnostic profiles and an evaluation protocol that can grow with future models.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出基于能力的评估框架（CBE），用参数化生成器固定所需推理能力、变化问题规模与保持答案等价的多种表述，并在初等排序任务上实例化，检验模型能否在同一问题族上稳定且表述不变地答对。该框架可生成诊断性能力剖面而非单一准确率，为评估大模型逻辑推理的泛化与稳健性提供可扩展协议；但有限实验只能暴露违反能力条件的情况，成功仅支持已评估范围，且无法定位内部推理失败原因，也尚未证明能穷尽或认证完整能力。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.22894",
       "authors": [
         "Jize Jiang",
@@ -14578,7 +14746,13 @@
       "topic_coverage": 0.9103,
       "topic_cache_token": "a9c3e3a582e1fa082fdb5976faa19f34c355a766af9e43e011702a21333c3e30",
       "topic_version": "faceted-local-v2.4",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.22894",
+        "sha256": "f79b841cec76bb7e4428c168f25ec0e5c85c9dffbce38687cea7a16cd317b56b",
+        "chars": 12000
+      }
     },
     {
       "id": "3866e48347f2191a39c8cb8e",
@@ -20677,8 +20851,8 @@
       "published_at": "2026-10-15T00:00:00+00:00",
       "first_seen": "2026-10-21T01:52:29.830864+00:00",
       "excerpt": "Harness evolution automatically optimizes the prompts, skills, tools, and orchestration code around a fixed-weight model, offering a way to improve agentic systems without updating model weights. The agent harness is iteratively optimized to achieve higher performance on the search set. But how much of this gain reflects benchmark-specific overfitting or additional inference-time compute, and how much may generalize beyond the search set? In this work, we introduce Harness-Delta Attribution (HDA), an evaluation protocol that dissects an evolution gain into artifact-driven overfitting, gains explained by test-time scaling, and the remainder, which gives an upper bound on residual generalizable improvement. We apply HDA to 11 executor models and three harness-evolution frameworks across math, coding, creativity, and agentic tasks. In 21 of these settings that show statistically significant search-set gains, we find that a large share of the improvement is explained by overfitting or test-time scaling. Specifically, among these 21 settings, overfitting and test-time scaling account for 54% and 14% of the gain on average; their combined share exceeds 50% in 14 settings. The residual and held-out transfer vary substantially across tasks, models, and frameworks. Importantly, search-set gains often fail to transfer to held-out tasks, and provide limited evidence that they will persist under practical distribution shifts. Moreover, validation-based signals are insufficient to prevent overfitting. These results motivate attribution-aware evaluation in future harness evolution research.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出了Harness-Delta Attribution (HDA) 评估协议，用于将智能体进化带来的性能提升解构为基于工件的过拟合、由测试时缩放解释的增益以及残余可泛化改进。该方法在多种任务、模型和框架上进行应用，表明搜索集增益很大一部分被过拟合或测试时缩放所解释，且搜索集上的增益通常难以迁移到未见过的任务。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.22466",
       "authors": [
         "Wenxuan Ding",
@@ -20729,7 +20903,13 @@
       "topic_coverage": 0.8867,
       "topic_cache_token": "ce4b999d895e46ea401ec549010665940873c94f2de546bacd98cb982d6d540f",
       "topic_version": "faceted-local-v2.4",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.22466",
+        "sha256": "26fed3c788d98ae7a27e5f821c537a319f016b9460d9b6dc96d38e02225d6498",
+        "chars": 12000
+      }
     },
     {
       "id": "44e5cf64b54640ce0656c669",
@@ -20752,8 +20932,8 @@
       "published_at": "2026-10-15T00:00:00+00:00",
       "first_seen": "2026-10-21T01:52:29.830864+00:00",
       "excerpt": "Augmenting softmax attention with forget gates typically relies on summing decay contributions along the key--query path. Because such accumulation is monotonic, these mechanisms cannot selectively erase intermediate context while preserving older, structurally relevant tokens. We propose First Passage Attention (FPA), which shifts from path summation to path extrema by lowering a key's logit proportionally to the deepest dip of a learned scalar field below that key's level over the intervening span. FPA encompasses the Forgetting Transformer (FoX) as a special case, and when the field and levels follow a shared learned walk, the alive keys with unpenalised logits naturally form a stack. We show that a constant-dimension FPA head realises any subset of keys left alive by subsequent dips, whereas softmax heads with positional biases or token-level forget gates require a head dimension linear in the number of keys. In synthetic experiments, one-layer FPA heads converge to these target sets while comparable softmax and FoX baselines fail on every seed. Scaling to a 110M-parameter language model, FPA matches FoX in perplexity and uniquely achieves perfect passkey retrieval at 8times the training length, even with its key--value cache compressed to about 25%.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出First Passage Attention（FPA），将沿键—查询路径的求和式累积改为路径极值：按学习到的标量场在中间跨度内低于某个键水平的最深下探幅度，成比例降低该键的logit，并说明FoX是其特例，还给出合成实验与110M参数语言模型上的对比结果。对科研工作的用途或限制：原文称在合成实验中单层FPA头会收敛到目标集合，而可比的softmax和FoX基线在每个随机种子上均失败；在110M参数语言模型上，FPA在困惑度上与FoX相当，并据称在训练长度下唯一实现完美的passkey检索，即使键—值缓存被压缩到约25%。上述110M模型结果属原文声明，未在此独立验证；本文也未阅读完整全文。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.22714",
       "authors": [
         "Yuxuan Liu"
@@ -20797,7 +20977,13 @@
       "topic_coverage": 0.6934,
       "topic_cache_token": "6d60e5a12db1a5f042d15cd567bd158541ff7f6623ccc235691d21a0ef22e62b",
       "topic_version": "faceted-local-v2.4",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.22714",
+        "sha256": "9d26661a3352fbaf2f312e410706643b7f93a6427d20a2a7d8ce8beb9aae84a8",
+        "chars": 12000
+      }
     },
     {
       "id": "1cf7caf1e3962092517ff587",
@@ -20820,8 +21006,8 @@
       "published_at": "2026-10-15T00:00:00+00:00",
       "first_seen": "2026-10-21T01:52:29.830864+00:00",
       "excerpt": "On-policy self-distillation (OPSD) enables large language models (LLMs) to learn from privileged information (PI) without a separate teacher model. However, prior work largely treats PI as a fixed design choice, leaving the effects of its content and construction poorly understood. This challenge is particularly important in multi-turn agentic settings, where trajectories contain actions, observations, and reasoning that can be transformed into PI in many ways. We systematically evaluate 16 PI configurations across three multi-turn agentic benchmarks and three student models that vary in scale and reasoning mode. We find that PI effectiveness depends on its content, generation source, and the student model. Information-dense trajectories and PI produced by more capable generators generally yield larger gains, whereas thinking models benefit less consistently. To assess PI before training, we compare PI utility with two KL-based metrics: sampled-token reverse KL (D) and error-step KL contrast (Δd^{-}_{err}). The KL-based metrics track post-training performance more consistently than PI utility, which can be distorted by information leakage. Empirically, selecting each task's PI by Δd^{-}_{err} also improves post-training performance over random selection, most when the PI candidates differ widely. Finally, effective PI remains beneficial when combined with GRPO, allowing the combined objective to outperform a strong GRPO baseline. Overall, our results provide practical guidance for constructing and evaluating PI in OPSD training.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文系统评测了16种特权信息配置在三个多轮智能体基准和三个学生模型上的同策略自蒸馏效果，并比较了基于KL的离线指标与PI效用指标。该工作为PI的构建与训练前评估提供参考，但离线指标的选择与跨设置稳定性仍有明确限制，且结论基于提取材料而非完整全文验证。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.22512",
       "authors": [
         "Kaijian Zou",
@@ -20862,7 +21048,13 @@
       "topic_coverage": 0.9007,
       "topic_cache_token": "d67aae3ca52b8d494639d63a83c8511277def29abed0b70ea0bad331167ed750",
       "topic_version": "faceted-local-v2.4",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.22512",
+        "sha256": "a23f423ab1cdf69436c6d65ae43222575f301cafeb1928ed7b058285f8435a58",
+        "chars": 12000
+      }
     },
     {
       "id": "47324c7aa82a31984b9411ff",
@@ -20885,8 +21077,8 @@
       "published_at": "2026-10-15T00:00:00+00:00",
       "first_seen": "2026-10-21T01:52:29.830864+00:00",
       "excerpt": "Policy Title Description Date - May 7, 2026 Focus areas for The Anthropic Institute At The Anthropic Institute (TAI), we’ll be using the information we can access from within a frontier lab to investigate AI’s impact on the world, and sharing our learnings with the public. Here, we’re sharing the questions that drive our research agenda. - Aug 27, 2025 Introducing the Anthropic National Security and Public Sector Advisory Council We are announcing the formation of the Anthropic National Security and Public Sector Advisory Council, a group of leading bipartisan national security and public policy practitioners who will help Anthropic support the U.S. government and closely allied democracies in building and maintaining enduring technological advantages in an era of strategic competition.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文公开材料为Anthropic的政策/报告页面，包含The Anthropic Institute研究议程侧重领域及国家安全与公共部门咨询委员会成立两项内容，未提供具体研究方法或已验证结果。对科研工作的用途或限制：所给材料不足以支撑方法、数据或性能方面的结论，相关用途或限制需以完整原文为准。",
+      "summary_kind": "ai_summary",
       "topic_labels": [],
       "topic_leaf_ids": [],
       "topic_ids": [],
@@ -24925,8 +25117,8 @@
       "published_at": "2026-10-14T00:00:00+00:00",
       "first_seen": "2026-10-21T01:52:29.830864+00:00",
       "excerpt": "Safeguards - Aug 31, 2026 Improving our alignment and security efforts On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. We are conducting an in-depth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month. - Aug 7, 2026 Improving Fable 5's biology safeguards We’re making updates to Claude Fable 5’s biology safeguards in a way that substantially reduces false positives. Fable 5 users will now experience many fewer “fallbacks”—where the system switches to a less capable model after they make a biology-related query. - Sep 12, 2025 Strengthening our safeguards through collaboration with US CAISI and UK AISI Over the past year, we've collaborated with the US Center for AI Standards and Innovation (CAISI) and UK AI Security Institute (AISI), government bodies established to measure and improve the security of AI systems. - Jun 12, 2024 Challenges in red teaming AI systems In this post we detail insights from a sample of red teaming approaches that we’ve used to test our AI systems. Through this practice, we’ve begun to gather empirical data about the appropriate tool to reach for in a given situation, and the associated benefits and challenges with each approach. We hope this post is helpful for other companies trying to red team their AI systems, policymakers curious about how red teaming works in practice, and organizations that want to red team AI technology.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文汇总了Anthropic就Claude模型未经授权访问真实系统事件所作的分析与独立审查计划，以及近期在Fable 5生物安全防护、与美国CAISI和英国AISI合作、红队测试方法方面的更新。这些材料可供科研人员了解其安全防护与红队测试实践，但相关改进效果与性能未经验证，具体限制需以原文为准。",
+      "summary_kind": "ai_summary",
       "topic_labels": [
         {
           "id": "zotero:cbe25e69baacf9dbe849320b1f3aa4a1",
@@ -25643,6 +25835,64 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 1.0,
       "topic_cache_token": "7739eae14cb778349dee46408564000e97a42e08e2bd1d239ffc6cf7f8545e6b",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "7c16b428f2d30d41925ae7ee",
+      "url": "https://doi.org/10.1002/adma.202522858",
+      "title": "A Hierarchical Plug-and-Supply Flap (PASF) for Instant Perfusion and Oxygen Delivery in Large Soft Tissue Repair",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-13T15:50:29+00:00",
+      "first_seen": "2026-10-21T02:00:04.446621+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Zhencheng Liao, Yin Yin, Daping Xie, Chonghao Chen, Yu Liu, Guoxing Sun, Lei Dong, Chunming Wang"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.202522858",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5,
+      "topic_cache_token": "9ff33836a58ed40ba423a5fda878e0ed47d45749f5ec33defb8a613a740e5469",
       "topic_version": "faceted-local-v2.4",
       "topic_backend": "lexical"
     },
@@ -39344,8 +39594,8 @@
       "published_at": "2026-10-12T00:00:00+00:00",
       "first_seen": "2026-10-21T01:52:29.830864+00:00",
       "excerpt": "In recent months, we’ve made substantial progress on reducing the effectiveness of distillation attacks on Claude using new methods, as we outline in this blog. Early evidence suggests that these methods have reduced the amount of data harvested by distillers by around 90 to 99%. Distillation attacks are covert, industrial-scale campaigns to extract the capabilities of one model and replicate them in another, without the authorization of the original model’s developers. They are often conducted using networks of fraudulent accounts. These attacks allow companies to mimic frontier capabilities for a fraction of the development time and cost. As we wrote in September, this method has been used extensively to help overseas AI laboratories keep pace with US companies. We’re concerned about illicit distillation for two reasons. First, distillation enables companies to build models that approach the capability frontier, but which have, in practice, been released without proportionally robust safeguards. This means that distilled models could be used to cause significant harm in areas like biology and cybersecurity. Zhipu, for example, distilled the cyber capabilities of leading US models during the development of GLM-5.3. The company tried to distill Claude Fable 5—although, after finding that our cyber safeguards degraded its attacks, it switched to an older Claude model and another lab’s model. The US Center for Advancing Innovation and Standards for Super Intelligence (CAISSI) has since assessed GLM-5.3 to be the most cyber-capable open-weights model released to date. Our own research has found that GLM-5.3’s safeguards can easily be bypassed, and that the model is willing to develop security exploits from end-to-end. Second, illicitly distilled models present a national security risk. The companies that distill US models are integrating the capabilities they gain from distillation into foreign military, intelligence, and surveillance systems. For example, we recently reported on a case in which requests to Moonshot’s Kimi models were secretly forwarded to Claude as part of its distillation efforts. One request came from a user (who we believe was affiliated with C",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "Anthropic报告称其采用新方法削弱了针对Claude的蒸馏攻击，早期证据显示蒸馏者获取的数据量减少约90%至99%。该材料将蒸馏攻击描述为未经授权、以欺诈账户网络大规模提取模型能力的行为，并明确其担忧在于被蒸馏模型可能缺乏相应安全保障及带来国家安全风险，但上述效果与判断均属公司声明，尚待独立验证。",
+      "summary_kind": "ai_summary",
       "topic_labels": [],
       "topic_leaf_ids": [],
       "topic_ids": [],
@@ -41303,6 +41553,64 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.8182,
       "topic_cache_token": "983f2d4ccc4cf55eb337e22b293fe8231f96935bfba3834a4c1428103dba74e0",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "1a84125c537a214f2339c4df",
+      "url": "https://doi.org/10.1002/adfm.76290",
+      "title": "Defect-Mediated Polarization Stabilization Mechanism in Metal-Ferroelectric Interfaces",
+      "source_ids": [
+        "journal-advanced-functional-materials"
+      ],
+      "source_names": [
+        "Advanced Functional Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-10T08:22:41+00:00",
+      "first_seen": "2026-10-21T02:00:04.446621+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Chaojie Du, Francisco Guzman, Zhe Wang, Toshihiro Aoki, Ruqian Wu, Darrell G. Schlom, Xiaoqing Pan"
+      ],
+      "journal_id": "advanced-functional-materials",
+      "journal_title": "Advanced Functional Materials",
+      "journal_issns": [
+        "1616-301X",
+        "1616-3028"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adfm.76290",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6667,
+      "topic_cache_token": "4368e25260741e9795217247fc3ca361dea0c527f410620de8944a45e8b4ac36",
       "topic_version": "faceted-local-v2.4",
       "topic_backend": "lexical"
     },
@@ -54958,8 +55266,8 @@
       "published_at": "2026-10-08T00:00:00+00:00",
       "first_seen": "2026-10-21T01:52:29.830864+00:00",
       "excerpt": "Partnerships - Sep 18, 2026 Partnering with Accenture on embedded evaluation We’re partnering with Accenture on independent evaluation of frontier AI—part of our recent commitment to embed evaluators at Anthropic. Both we and Accenture expect to invest at least $1 billion to build capacity in this area over the next five years. - Jun 12, 2026 TCS and Anthropic partner to bring Claude to regulated industries We’re announcing a partnership with Tata Consultancy Services (TCS). TCS will provide Claude to 50,000 of its own employees across 56 countries; build Claude-powered products for clients in financial services, healthcare, the public sector, and other regulated industries; and join the Claude Partner Network. - May 14, 2026 Anthropic forms $200 million partnership with the Gates Foundation We’re partnering with the Gates Foundation to commit $200 million in grant funding, Claude usage credits, and technical support for programs in global health, life sciences, education, and economic mobility over the next four years. - May 14, 2026 PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding toward a global workforce of hundreds of thousands of professionals, establish a joint Center of Excellence, and train and certify 30,000 PwC professionals on Claude.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "该材料汇总了Anthropic在2026年公布的多项合作，包括与埃森哲就前沿AI独立评估开展合作、与TCS合作为受监管行业提供Claude、与盖茨基金会设立资助项目，以及与PwC合作部署Claude Code和Cowork并对专业人员进行培训认证。这些信息可供科研人员了解企业合作、资金投入、应用行业和人员培训等公开动向，但材料仅为公司公告摘要，未提供阅读完整全文、独立验证或性能数据，且不构成已验证结论。",
+      "summary_kind": "ai_summary",
       "topic_labels": [],
       "topic_leaf_ids": [],
       "topic_ids": [],
@@ -54996,8 +55304,8 @@
       "published_at": "2026-10-08T00:00:00+00:00",
       "first_seen": "2026-10-21T01:52:29.830864+00:00",
       "excerpt": "Security Title Description Date - Sep 10, 2026 Detecting and countering misuse of AI: September 2026 Over the past eight months, our Threat Intelligence team identified and disrupted operations in which threat actors tried to use Claude for malicious activity. In this report, we share case studies from those operations and describe how malicious use of Claude has evolved since our previous threat reports in 2025.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文分享了Anthropic威胁情报团队在八个月内识别并阻断威胁行为者试图利用Claude进行恶意活动的案例研究，并描述了自2025年威胁报告以来这类滥用方式的演变。该报告可为科研人员了解AI模型被恶意使用的实际模式及威胁情报团队的应对方式提供案例参考，但内容基于公司自身声明，未提供独立验证的性能数据，也未涉及模型安全性或防护效果的量化评估。",
+      "summary_kind": "ai_summary",
       "topic_labels": [],
       "topic_leaf_ids": [],
       "topic_ids": [],
@@ -95701,15 +96009,7 @@
       "summary": "本文提出了一个从数据到界面的框架，将文献、计算、加工、电解质和全电池数据与描述符、模型、机理假设及现实约束下的验证联系起来，并对代表性研究进行结构化评估。该框架提出了一套钠离子电池专用的最低报告规范，可用于支持不确定性感知、描述符驱动且经界面验证的决策；但所选证据集中没有研究覆盖全部七个元数据层，全电池匹配和界面报告是最常见的缺口。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Gang Chen",
-        "Hongyang Zhao",
-        "Junfeng Li",
-        "Wenjie Mai",
-        "Xingtao Xu",
-        "Yuquan Li",
-        "Hongxin Qi",
-        "Jinliang Li",
-        "Likun Pan"
+        "Gang Chen, Hongyang Zhao, Junfeng Li, Wenjie Mai, Xingtao Xu, Yuquan Li, Hongxin Qi, Jinliang Li, Likun Pan"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -96611,11 +96911,7 @@
       "summary": "本文综述了钒基氧化物电催化剂用于电解水的研究进展，系统梳理了晶格工程、杂原子掺杂、异质结与界面工程、碳基杂化、形貌工程以及表面重构与预催化剂设计六类改性策略，并指出钒溶解与表面重构可作为设计特征而非单纯降解过程，同时讨论了机器学习在加速同类氧化物体系原子尺度建模方面的作用。该文可为钒基氧化物电催化剂的结构-性能关系与活性位点研究提供机制层面的参考，并提示机器学习有望补充传统第一性原理计算在大规模模拟方面的不足；但相关论述基于综述分析，具体性能与结论仍需结合原始实验证据进一步核实。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Youness El Issmaeli",
-        "Amina Lahrichi",
-        "Hoje Chun",
-        "Rafael Gómez-Bombarelli",
-        "Bruno G. Pollet"
+        "Youness El Issmaeli, Amina Lahrichi, Hoje Chun, Rafael Gómez-Bombarelli, Bruno G. Pollet"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -97153,10 +97449,7 @@
       "summary": "本文综述了增材制造电磁干扰屏蔽领域在回收、生物基及环保材料、结构优化以及模拟和机器学习辅助性能预测与设计加速方面的近期进展，并讨论了生命周期评估挑战与可持续制造路径。该综述可为相关科研人员梳理材料发现、结构设计与机器学习结合的研究现状和未来方向提供参考，但作为综述性总结，其内容基于已有研究归纳，具体性能与可持续性结论仍需结合原始文献验证。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Roxana Moaref",
-        "Christopher M. Spezzano",
-        "Grace X. Gu",
-        "Uttandaraman Sundararaj"
+        "Roxana Moaref, Christopher M. Spezzano, Grace X. Gu, Uttandaraman Sundararaj"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -97252,21 +97545,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Xiaofei Fu",
-        "Yi Zhao",
-        "Shiyu Zhong",
-        "Kangkang Zhou",
-        "Yadong Xu",
-        "Xiangnan Wang",
-        "Chunlong Sun",
-        "Long Ye",
-        "Yu Chen",
-        "Yajie Zhang",
-        "Wei Zhai",
-        "Shuangquan Zang",
-        "Kun Dai",
-        "Chuntai Liu",
-        "Changyu Shen"
+        "Xiaofei Fu, Yi Zhao, Shiyu Zhong, Kangkang Zhou, Yadong Xu, Xiangnan Wang, Chunlong Sun, Long Ye, Yu Chen, Yajie Zhang, Wei Zhai, Shuangquan Zang, Kun Dai, Chuntai Liu, Changyu Shen"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -97339,17 +97618,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Qiaolin Gu",
-        "Daozhi Shen",
-        "Linglan Guo",
-        "Ran Tang",
-        "Yufan Mao",
-        "Feifan Wang",
-        "Dingyun Zhang",
-        "Gangli Zhao",
-        "Xinquan Zhang",
-        "Mingjun Ren",
-        "Limin Zhu"
+        "Qiaolin Gu, Daozhi Shen, Linglan Guo, Ran Tang, Yufan Mao, Feifan Wang, Dingyun Zhang, Gangli Zhao, Xinquan Zhang, Mingjun Ren, Limin Zhu"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -129781,13 +130050,13 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-10-21T01:52:29.830864+00:00",
+    "last_success": "2026-10-21T02:00:04.446621+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 90,
-      "unclassified": 1329,
+      "classified": 4,
+      "unclassified": 1331,
       "algorithm": "faceted-local-v2.4",
       "calibration_status": "pending_human_gold",
       "quality_status": "unmeasured",
@@ -129891,8 +130160,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "status": "ok",
       "count": 10
     },
@@ -129900,7 +130169,7 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -129911,8 +130180,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "status": "ok",
       "count": 12
     },
@@ -129920,8 +130189,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "status": "ok",
       "count": 12
     },
@@ -129929,8 +130198,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "status": "ok",
       "count": 11
     },
@@ -129938,8 +130207,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "status": "ok",
       "count": 1
     },
@@ -129947,8 +130216,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "status": "ok",
       "count": 12
     },
@@ -129956,8 +130225,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "status": "ok",
       "count": 2
     },
@@ -129969,14 +130238,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "count": 125,
       "counters": {
         "relevant": 3,
         "pending": 122,
         "excluded": 1,
-        "fetched": 209
+        "fetched": 197
       },
       "errors": []
     },
@@ -129988,14 +130257,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "count": 35,
       "counters": {
         "relevant": 5,
         "pending": 30,
         "excluded": 140,
-        "fetched": 148
+        "fetched": 147
       },
       "errors": []
     },
@@ -130007,14 +130276,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
-      "count": 67,
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
+      "count": 68,
       "counters": {
         "relevant": 16,
-        "pending": 51,
+        "pending": 52,
         "excluded": 788,
-        "fetched": 465
+        "fetched": 398
       },
       "errors": []
     },
@@ -130026,14 +130295,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
-      "count": 53,
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
+      "count": 54,
       "counters": {
         "relevant": 20,
-        "pending": 33,
+        "pending": 34,
         "excluded": 566,
-        "fetched": 441
+        "fetched": 437
       },
       "errors": []
     },
@@ -130045,14 +130314,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "count": 81,
       "counters": {
         "relevant": 1,
         "pending": 80,
         "excluded": 2,
-        "fetched": 81
+        "fetched": 79
       },
       "errors": []
     },
@@ -130064,14 +130333,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "count": 94,
       "counters": {
         "relevant": 1,
         "pending": 93,
         "excluded": 357,
-        "fetched": 179
+        "fetched": 167
       },
       "errors": []
     },
@@ -130083,14 +130352,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "count": 759,
       "counters": {
         "relevant": 8,
         "pending": 751,
         "excluded": 627,
-        "fetched": 269
+        "fetched": 209
       },
       "errors": []
     },
@@ -130102,8 +130371,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "count": 28,
       "counters": {
         "relevant": 0,
@@ -130121,14 +130390,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "count": 53,
       "counters": {
         "relevant": 0,
         "pending": 53,
         "excluded": 140,
-        "fetched": 56
+        "fetched": 52
       },
       "errors": []
     },
@@ -130140,14 +130409,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "count": 14,
       "counters": {
         "relevant": 1,
         "pending": 13,
         "excluded": 373,
-        "fetched": 109
+        "fetched": 104
       },
       "errors": []
     },
@@ -130155,8 +130424,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "status": "ok",
       "count": 0
     },
@@ -130164,8 +130433,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "status": "ok",
       "count": 12
     },
@@ -130173,8 +130442,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "status": "ok",
       "count": 1
     },
@@ -130182,8 +130451,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "status": "ok",
       "count": 0
     },
@@ -130191,8 +130460,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
-      "last_success": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
+      "last_success": "2026-10-21T02:00:04.446621+00:00",
       "status": "ok",
       "count": 12
     },
@@ -130201,23 +130470,23 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 20,
-      "last_attempt": "2026-10-21T01:52:29.830864+00:00",
+      "last_attempt": "2026-10-21T02:00:04.446621+00:00",
       "last_success": "2026-10-21T01:51:32.943252+00:00",
       "run_id": "39520050790",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
     }
   ],
   "summaries": {
-    "status": "ok",
-    "generated": 24,
-    "failed": 0,
+    "status": "partial",
+    "generated": 11,
+    "failed": 1,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
       "status": "partial",
       "attempted": 8,
-      "public_html": 5,
+      "public_html": 6,
       "bohr_graph": 0,
-      "fallback": 3,
+      "fallback": 2,
       "bohr_calls": 0
     }
   },
