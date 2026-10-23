@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T00:20:55.216743+00:00",
+  "updated_at": "2026-10-23T01:55:51.499996+00:00",
   "journals": {
     "nature-materials": {
-      "last_success_at": "2026-10-23T00:20:55.216743+00:00",
-      "last_crossref_at": "2026-10-23T00:20:55.216743+00:00",
+      "last_success_at": "2026-10-23T01:55:51.499996+00:00",
+      "last_crossref_at": "2026-10-23T01:55:51.499996+00:00",
       "records": {
         "10.1038/s41563-026-02770-9": {
           "doi": "10.1038/s41563-026-02770-9",
@@ -1322,7 +1322,7 @@
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T09:41:37+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -1348,7 +1348,7 @@
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T09:41:30+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -23926,8 +23926,8 @@
       }
     },
     "science": {
-      "last_success_at": "2026-10-23T00:20:55.216743+00:00",
-      "last_crossref_at": "2026-10-23T00:20:55.216743+00:00",
+      "last_success_at": "2026-10-23T01:55:51.499996+00:00",
+      "last_crossref_at": "2026-10-23T01:55:51.499996+00:00",
       "records": {
         "10.1126/science.ael8752": {
           "doi": "10.1126/science.ael8752",
@@ -84798,7 +84798,7 @@
           "published_online_at": "2026-10-22T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-22T17:44:49+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -84830,7 +84830,7 @@
           "published_online_at": "2026-10-22T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-22T10:38:07+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -84866,7 +84866,7 @@
           "published_online_at": "2026-10-22T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-22T11:44:27+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -84902,7 +84902,7 @@
           "published_online_at": "2026-10-22T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-22T14:41:56+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -84936,7 +84936,7 @@
           "published_online_at": "2026-10-22T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-22T06:41:46+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -85122,14 +85122,15 @@
           "doi": "10.1038/s41467-026-78853-7",
           "title": "Illusory disagreement over socialism and capitalism in the United States and Brazil",
           "url": "https://doi.org/10.1038/s41467-026-78853-7",
-          "abstract": "",
-          "rss_published_at": null,
+          "abstract": "Nature Communications, Published online: 23 October 2026; doi:10.1038/s41467-026-78853-7 There appears to be an intractable disagreement over capitalism versus socialism. Here, the authors show that this is largely illusory, as most people favor a hybrid system but label it as either “capitalist” or “socialist”, depending on their political identity.",
+          "rss_published_at": "2026-10-23T00:00:00+00:00",
           "published_online_at": "2026-10-23T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-22T23:40:28+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
-            "crossref"
+            "crossref",
+            "rss"
           ],
           "authors": [
             "Lucas Woodley",
@@ -85138,9 +85139,9 @@
           "first_seen": "2026-10-23T00:20:55.216743+00:00",
           "item_id": "b52cc37a8a30c7d064ab6875",
           "journal_relevance": {
-            "status": "pending",
+            "status": "excluded",
             "method": "rule-v1",
-            "reason": "abstract_missing_or_insufficient",
+            "reason": "no_ai_method_evidence",
             "version": "1"
           }
         },
@@ -87263,17 +87264,99 @@
             "reason": "no_ai_method_evidence",
             "version": "1"
           }
+        },
+        "10.1038/s41467-026-77770-z": {
+          "doi": "10.1038/s41467-026-77770-z",
+          "title": "Fine-tuning of polygenic score to local data improves risk prediction and clinical implementation",
+          "url": "https://doi.org/10.1038/s41467-026-77770-z",
+          "abstract": "Nature Communications, Published online: 23 October 2026; doi:10.1038/s41467-026-77770-z A locally optimized framework that integrates multiple published polygenic risk scores substantially improves disease risk prediction over individual scores, providing a practical strategy for enhancing genetic risk assessment across diverse diseases.",
+          "rss_published_at": "2026-10-23T00:00:00+00:00",
+          "published_online_at": null,
+          "published_print_at": null,
+          "indexed_at": null,
+          "article_type": "  ",
+          "providers": [
+            "rss"
+          ],
+          "authors": [
+            "Min Seo Kim",
+            "Yang Sui",
+            "Aniruddh P. Patel",
+            "So Mi Jemma Cho",
+            "Satoshi Koyama",
+            "Kaavya Paruchuri",
+            "Buu Truong",
+            "Injeong Shim",
+            "Minxian Wang",
+            "Fadi F. Bitar",
+            "Qiuli Chen",
+            "Patrick T. Ellinor",
+            "Pradeep Natarajan",
+            "Akl C. Fahed"
+          ],
+          "first_seen": "2026-10-23T01:55:51.499996+00:00",
+          "item_id": "e9fa18a29618279af274ad9d",
+          "journal_relevance": {
+            "status": "excluded",
+            "method": "rule-v1",
+            "reason": "no_ai_method_evidence",
+            "version": "1"
+          }
+        },
+        "10.1038/s41467-026-78855-5": {
+          "doi": "10.1038/s41467-026-78855-5",
+          "title": "A global livestock virome catalog links viruses with resistome assembly",
+          "url": "https://doi.org/10.1038/s41467-026-78855-5",
+          "abstract": "Nature Communications, Published online: 23 October 2026; doi:10.1038/s41467-026-78855-5 Jiang et al. compile the Livestock Manure Virus Database (LMVD), featuring over 1.3 million vOTUs from around the world. They find that viruses rarely carry antibiotic resistance genes but are widely associated with antibiotic-resistant bacteria.",
+          "rss_published_at": "2026-10-23T00:00:00+00:00",
+          "published_online_at": null,
+          "published_print_at": null,
+          "indexed_at": null,
+          "article_type": "  ",
+          "providers": [
+            "rss"
+          ],
+          "authors": [
+            "Lan Jiang",
+            "Bintao Li",
+            "Liusheng Lei",
+            "Zishu Liu",
+            "Wei Sun",
+            "Liping Ma",
+            "Chang-Jun Cha",
+            "Timothy Johnson",
+            "Jing Yu",
+            "Zeyou Chen",
+            "Yiran Zhang",
+            "Guangdong Wang",
+            "Chengcheng Yao",
+            "Xiaoyu Fan",
+            "Fengjia Liu",
+            "Wenshan Yang",
+            "Wenyan Wang",
+            "Haihan Zhang",
+            "James Tiedje",
+            "Xun Qian"
+          ],
+          "first_seen": "2026-10-23T01:55:51.499996+00:00",
+          "item_id": "9fd2a4253375484cc41735a5",
+          "journal_relevance": {
+            "status": "excluded",
+            "method": "rule-v1",
+            "reason": "no_ai_method_evidence",
+            "version": "1"
+          }
         }
       },
       "counters": {
         "relevant": 9,
-        "pending": 826,
-        "excluded": 685
+        "pending": 825,
+        "excluded": 688
       }
     },
     "science-advances": {
-      "last_success_at": "2026-10-22T01:49:47.677420+00:00",
-      "last_crossref_at": "2026-10-22T01:49:47.677420+00:00",
+      "last_success_at": "2026-10-23T01:55:51.499996+00:00",
+      "last_crossref_at": "2026-10-23T01:55:51.499996+00:00",
       "records": {
         "10.1126/sciadv.aed2180": {
           "doi": "10.1126/sciadv.aed2180",
@@ -89977,7 +90060,7 @@
           "rss_published_at": null,
           "published_online_at": null,
           "published_print_at": "2026-09-04T00:00:00+00:00",
-          "indexed_at": "2026-10-10T11:19:03+00:00",
+          "indexed_at": "2026-10-22T22:34:57+00:00",
           "article_type": "journal-article",
           "providers": [
             "crossref"
@@ -98972,13 +99055,19 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:54+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Aharon G. Fleury, Casey C. O’Hara, Jason D. Everett, Benjamin S. Halpern, Carissa J. Klein, Anthony J. Richardson, Daniel C. Dunn"
+            "Aharon G. Fleury",
+            "Casey C. O’Hara",
+            "Jason D. Everett",
+            "Benjamin S. Halpern",
+            "Carissa J. Klein",
+            "Anthony J. Richardson",
+            "Daniel C. Dunn"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "50680d68d20c1ac5a322edc2",
@@ -98998,13 +99087,18 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:15+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Joanna K. Konopka, Danny Poinapen, Shivam S. Chitnis, Carmen M. Morrow, Gwyneth M. Card, Christopher J. Potter"
+            "Joanna K. Konopka",
+            "Danny Poinapen",
+            "Shivam S. Chitnis",
+            "Carmen M. Morrow",
+            "Gwyneth M. Card",
+            "Christopher J. Potter"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "2691d92e581e337ba5c2df86",
@@ -99024,13 +99118,22 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:41:30+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jihua Hao, Can Liu, Feixiang Liu, Chengtao Zhang, Javed Akhter Mondal, Christopher R. Glein, Herve Cardon, Gilles Montagnac, Xiaobin Cao, Isabelle Daniel"
+            "Jihua Hao",
+            "Can Liu",
+            "Feixiang Liu",
+            "Chengtao Zhang",
+            "Javed Akhter Mondal",
+            "Christopher R. Glein",
+            "Herve Cardon",
+            "Gilles Montagnac",
+            "Xiaobin Cao",
+            "Isabelle Daniel"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "2d25a3d6884cdfaf3629c793",
@@ -99050,13 +99153,15 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:54+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Kaito Nishimiya, Rambabu Rajpoot, Eiji J. Takahashi"
+            "Kaito Nishimiya",
+            "Rambabu Rajpoot",
+            "Eiji J. Takahashi"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "2027795cbcadf94b6064d88a",
@@ -99076,13 +99181,17 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:54+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Sushrut Thorat, Adrien Doerig, Alexander Kroner, Carmen Amme, Tim C. Kietzmann"
+            "Sushrut Thorat",
+            "Adrien Doerig",
+            "Alexander Kroner",
+            "Carmen Amme",
+            "Tim C. Kietzmann"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "3532fd5ecfeafe518e5cf57f",
@@ -99102,13 +99211,24 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:15+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Chunyu Yang, Qi Wang, Chen Wang, Antonia Akoto-Yeboah, Shaoru Cheng, Billings Amoah, Yizhen Jia, Shulin Chen, Akhil Canumalla, Kai Zhao, Christopher Simons, Jinghua Li"
+            "Chunyu Yang",
+            "Qi Wang",
+            "Chen Wang",
+            "Antonia Akoto-Yeboah",
+            "Shaoru Cheng",
+            "Billings Amoah",
+            "Yizhen Jia",
+            "Shulin Chen",
+            "Akhil Canumalla",
+            "Kai Zhao",
+            "Christopher Simons",
+            "Jinghua Li"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "3a151029fda4be2e243c1a39",
@@ -99128,13 +99248,18 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:39+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Oscar Demeulenaere, Nikita Ustimenko, Athanasios G. Athanassiadis, Lovish Gulati, Carsten Rockstuhl, Peer Fischer"
+            "Oscar Demeulenaere",
+            "Nikita Ustimenko",
+            "Athanasios G. Athanassiadis",
+            "Lovish Gulati",
+            "Carsten Rockstuhl",
+            "Peer Fischer"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "2445c5e7d1ba99440abdc092",
@@ -99154,13 +99279,20 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:56+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yuji Sakai, Mariko Ariyoshi, Yasuhiro Hirano, Yutaka Mahana, Aussie Suzuki, Toru Hirota, Masashi Tachikawa, Tatsuo Fukagawa"
+            "Yuji Sakai",
+            "Mariko Ariyoshi",
+            "Yasuhiro Hirano",
+            "Yutaka Mahana",
+            "Aussie Suzuki",
+            "Toru Hirota",
+            "Masashi Tachikawa",
+            "Tatsuo Fukagawa"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "18c65b64809acce07570f8cc",
@@ -99180,13 +99312,16 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:36+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Timothy J. Enroth, Eunjeong Lee, Elan Z. Eisenmesser, Alexander R. Horswill"
+            "Timothy J. Enroth",
+            "Eunjeong Lee",
+            "Elan Z. Eisenmesser",
+            "Alexander R. Horswill"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "452b517d899938d13335f578",
@@ -99199,20 +99334,45 @@
         },
         "10.1126/sciadv.aef7786": {
           "doi": "10.1126/sciadv.aef7786",
-          "title": "p75NTR orchestrates chondrogenesis and mechanoadaptation to preserve temporomandibular joint development and homeostasis",
+          "title": "p75 NTR orchestrates chondrogenesis and mechanoadaptation to preserve temporomandibular joint development and homeostasis",
           "url": "https://doi.org/10.1126/sciadv.aef7786",
           "abstract": "The temporomandibular joint (TMJ) is essential for oral functions such as chewing, speaking, and swallowing. Temporomandibular disorders that impair these functions notably reduce patients’ quality of life, and few therapeutic strategies are available to ameliorate these conditions. Here, we identify the neurotrophin receptor (p75 NTR ) as a central regulator of mandibular condylar cartilage development, mechanoadaptation, and homeostasis. p75 NTR loss causes condylar and disc hypoplasia, reduced chondrocyte number, impaired load-induced anabolism, and accelerated degeneration. Conditional deletion experiments demonstrate chondrocyte-autonomous requirements for the brain-derived neurotrophic factor (BDNF)-p75 NTR axis, which activates phosphoinositide 3-kinase AKT serine/threonine kinase and p38 mitogen-activated protein kinase signaling to promote proliferation and chondrogenic differentiation while restraining apoptosis. Degenerative human condyles exhibit reduced p75 NTR expression levels. Together, these data establish p75 NTR as a molecular hub integrating neurotrophic and mechanical cues to preserve postnatal TMJ architecture and highlight the BDNF-p75 NTR axis as a potential therapeutic target.",
           "rss_published_at": "2026-10-21T07:00:00+00:00",
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:41:53+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Chiho Kadota-Watanabe, Jinsook Suh, Eric Yin, Byron Zhao, Jey Kim, Yan Zhang, In-Won Chang, Sowmya Ramesh, Yuna Lee, Joshua Chen, Maulik Ahuja, Sara Jahangiri, Isabelle Lao-Ngo, Ursula Eisinger, Kate Lindsey, Haihui Zhang, Fatemeh Momen-Heravi, Juan Du, James M. Gardner, Rebeka Silva, Sumit Yadav, Chelsea S. Bahney, Aaron W. James, Reuben H. Kim, Ophir D. Klein, Christine Hong"
+            "Chiho Kadota-Watanabe",
+            "Jinsook Suh",
+            "Eric Yin",
+            "Byron Zhao",
+            "Jey Kim",
+            "Yan Zhang",
+            "In-Won Chang",
+            "Sowmya Ramesh",
+            "Yuna Lee",
+            "Joshua Chen",
+            "Maulik Ahuja",
+            "Sara Jahangiri",
+            "Isabelle Lao-Ngo",
+            "Ursula Eisinger",
+            "Kate Lindsey",
+            "Haihui Zhang",
+            "Fatemeh Momen-Heravi",
+            "Juan Du",
+            "James M. Gardner",
+            "Rebeka Silva",
+            "Sumit Yadav",
+            "Chelsea S. Bahney",
+            "Aaron W. James",
+            "Reuben H. Kim",
+            "Ophir D. Klein",
+            "Christine Hong"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "e64c7ace0826555579f77d4a",
@@ -99232,13 +99392,22 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:56+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Xiao-Jie Zhang, Cheng-Jie Zhou, Chun-Ru Song, Meng-Lei Feng, Fang-Rui Xue, Dui Sun, Qi Yang, Kang Ding, Zhao-Yu Jiang, Cheng-Guang Liang"
+            "Xiao-Jie Zhang",
+            "Cheng-Jie Zhou",
+            "Chun-Ru Song",
+            "Meng-Lei Feng",
+            "Fang-Rui Xue",
+            "Dui Sun",
+            "Qi Yang",
+            "Kang Ding",
+            "Zhao-Yu Jiang",
+            "Cheng-Guang Liang"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "5ef10144d6d9bac0046084d7",
@@ -99258,13 +99427,17 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:54+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jacopo Marchi, Chadiga Khalek, Abir George, Joshua S. Weitz, Remy Chait"
+            "Jacopo Marchi",
+            "Chadiga Khalek",
+            "Abir George",
+            "Joshua S. Weitz",
+            "Remy Chait"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "6239c7f48b39e78f487a64d0",
@@ -99284,13 +99457,18 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:37+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yang Yue, Junhong Zhao, Xuejun Wang, Yanan Tang, Yunqi Liu, Dacheng Wei"
+            "Yang Yue",
+            "Junhong Zhao",
+            "Xuejun Wang",
+            "Yanan Tang",
+            "Yunqi Liu",
+            "Dacheng Wei"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "8e1ef6f9a0a1394a2d1597bf",
@@ -99310,13 +99488,18 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:36+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Huanchen Zhai, Chenghan Li, Xing Zhang, Zhendong Li, Seunghoon Lee, Garnet Kin-Lic Chan"
+            "Huanchen Zhai",
+            "Chenghan Li",
+            "Xing Zhang",
+            "Zhendong Li",
+            "Seunghoon Lee",
+            "Garnet Kin-Lic Chan"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "0681cb008eedd6a8cbdb715a",
@@ -99336,13 +99519,26 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:37+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Zaicong Wang, Xiang Wang, Haijin Xu, Junbo Zhang, Frances Elaine Jenner, Stephen Foley, Liang Ma, Kang Chen, Jiyao Sun, Keqing Zong, Yongsheng Liu, Jianwei Li, Junfeng Zhang, Zhaochu Hu"
+            "Zaicong Wang",
+            "Xiang Wang",
+            "Haijin Xu",
+            "Junbo Zhang",
+            "Frances Elaine Jenner",
+            "Stephen Foley",
+            "Liang Ma",
+            "Kang Chen",
+            "Jiyao Sun",
+            "Keqing Zong",
+            "Yongsheng Liu",
+            "Jianwei Li",
+            "Junfeng Zhang",
+            "Zhaochu Hu"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "3181438166e8cfafac147a8d",
@@ -99355,20 +99551,30 @@
         },
         "10.1126/sciadv.aeh0887": {
           "doi": "10.1126/sciadv.aeh0887",
-          "title": "Anomalous phonon selection rules and Raman optical activity in RuO2",
+          "title": "Anomalous phonon selection rules and Raman optical activity in RuO 2",
           "url": "https://doi.org/10.1126/sciadv.aeh0887",
           "abstract": "Breakdown of selection rules and emergence of optical activity in Raman spectroscopy typically signal symmetry-breaking events essential for understanding novel phases of solids. Here, we apply our recently developed rotational anisotropy Raman spectroscopy technique to single-crystal ruthenium dioxide-a compound of recent interest as a candidate workhorse material for altermagnetism yet whose magnetic ground state remains under intense debate. Our data reveal a salient breakdown of selection rules for zone-center phonons, accompanied by clear splitting in the angle-dependent polarimetry plots for the two opposite helicity-nonconserving circularly polarized scattering channels. These observations provide definitive evidence of a previously overlooked symmetry-breaking event, involving either spatial or time-reversal symmetry. In either scenario, the underlying mechanism is likely a bulk hidden order parameter, potentially involving multipole moments of Ruthenium(IV) set by the local crystal field environment. Our work demonstrates how subtle symmetry-breaking events can manifest through lattice dynamics and calls for renewed experimental and theoretical efforts to map the phase diagram of ruthenium dioxide as a system poised near quantum phase transition boundaries.",
           "rss_published_at": "2026-10-21T07:00:00+00:00",
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:41:53+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Di Cheng, Ao Wu, Hui Pan, Yu-Peng Zhu, Shizhuo Luo, King Yau Yip, Wei Zhang, Ariando Ariando, Chang Liu, Jian-Sheng Wang, Xinwei Li"
+            "Di Cheng",
+            "Ao Wu",
+            "Hui Pan",
+            "Yu-Peng Zhu",
+            "Shizhuo Luo",
+            "King Yau Yip",
+            "Wei Zhang",
+            "Ariando Ariando",
+            "Chang Liu",
+            "Jian-Sheng Wang",
+            "Xinwei Li"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "05bf2477f7c3f9dff5cfe8db",
@@ -99388,13 +99594,24 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:52+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Emilie Dujardin, Francis Poulat, Ivan Barberá Aura, Aurélie Dewaele, Marjolaine André, Jennifer McKey, Stéphanie Le Gras, Anne Frambourg, Luc Jouneau, Darío G. Lupiáñez, Béatrice Mandon-Pépin, Eric Pailhoux"
+            "Emilie Dujardin",
+            "Francis Poulat",
+            "Ivan Barberá Aura",
+            "Aurélie Dewaele",
+            "Marjolaine André",
+            "Jennifer McKey",
+            "Stéphanie Le Gras",
+            "Anne Frambourg",
+            "Luc Jouneau",
+            "Darío G. Lupiáñez",
+            "Béatrice Mandon-Pépin",
+            "Eric Pailhoux"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "e20141fea5b1d5423fc3ba1a",
@@ -99407,20 +99624,29 @@
         },
         "10.1126/sciadv.aeh1582": {
           "doi": "10.1126/sciadv.aeh1582",
-          "title": "Vortex-mediated spin current injection into two-dimensional superconductor NbSe2",
+          "title": "Vortex-mediated spin current injection into two-dimensional superconductor NbSe 2",
           "url": "https://doi.org/10.1126/sciadv.aeh1582",
           "abstract": "Injection of pure spin current into superconductors remains a major challenge in superconducting spintronics. Previous studies have primarily focused on spin-polarized quasiparticles and spin-triplet supercurrents, while vortices-ubiquitous topological defects in type-II superconductors-have been theoretically proposed as alternative carriers of spin angular momentum, yet direct experimental evidence is still lacking. Here, we report the vortex-mediated spin current injection in NbSe 2 /LiAl 2 Fe 3 O 8 (LAFO) bilayer, an Ising superconductor/ferrimagnetic insulator heterostructure. Under an out-of-plane temperature gradient and an in-plane magnetic field, the NbSe 2 /LAFO bilayer shows a pronounced thermoelectric peak near the upper critical magnetic field, which has the opposite sign to the conventional vortex Nernst signal observed in a single-layer NbSe 2 . The sign reversal suggests that the vortex flow induced by spin current injection is opposite to the flow driven by the temperature gradient, which is consistent with theoretical mechanisms including spin-vorticity transmutation and the inverse vortex spin Hall effect. By mapping the field-temperature phase diagram, we reveal that the spin current injection occurs exclusively in the vortex liquid phase of NbSe 2 . Absence of the thermoelectric signal above the superconducting transition temperature further rules out the quasiparticle contribution. Our results establish vortices as efficient carriers of spin information in superconductors, opening a new route towards vortex-mediated superconducting spintronic devices.",
           "rss_published_at": "2026-10-21T07:00:00+00:00",
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:37+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Meng Yang, Xiaolong Yin, Jingjing Liu, Yifeng Chen, Qinwu Gao, Hongxing Zhu, Danni Huang, Lang Chen, Shuo-Ying Yang, Junxue Li"
+            "Meng Yang",
+            "Xiaolong Yin",
+            "Jingjing Liu",
+            "Yifeng Chen",
+            "Qinwu Gao",
+            "Hongxing Zhu",
+            "Danni Huang",
+            "Lang Chen",
+            "Shuo-Ying Yang",
+            "Junxue Li"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "d2cd0cf8904317203399bd0c",
@@ -99440,13 +99666,34 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:42:05+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Kai Wang, Snezana T. Dimova, John N. Hanson, Abhishek Thakur, Youwei Xu, Yini Liu, Amy E. Moritz, Alexander Goldberg, Bing Xie, Jayachandra Rayadurgam, Feijun Wang, Ashley N. Nilson, Kathryn D. Luderman, R. Benjamin Free, Wen Hu, Jian Zhang, H. Eric Xu, Kevin J. Frankowski, Yue Wang, Lei Shi, David R. Sibley, Youwen Zhuang"
+            "Kai Wang",
+            "Snezana T. Dimova",
+            "John N. Hanson",
+            "Abhishek Thakur",
+            "Youwei Xu",
+            "Yini Liu",
+            "Amy E. Moritz",
+            "Alexander Goldberg",
+            "Bing Xie",
+            "Jayachandra Rayadurgam",
+            "Feijun Wang",
+            "Ashley N. Nilson",
+            "Kathryn D. Luderman",
+            "R. Benjamin Free",
+            "Wen Hu",
+            "Jian Zhang",
+            "H. Eric Xu",
+            "Kevin J. Frankowski",
+            "Yue Wang",
+            "Lei Shi",
+            "David R. Sibley",
+            "Youwen Zhuang"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "11f316324ad652cc856fc8bd",
@@ -99466,13 +99713,17 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:56+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yang Zhang, Chenggang Chen, Xindong Song, Yueqi Guo, Xiaoqin Wang"
+            "Yang Zhang",
+            "Chenggang Chen",
+            "Xindong Song",
+            "Yueqi Guo",
+            "Xiaoqin Wang"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "0a3ffb85cbc278189f2615d5",
@@ -99485,20 +99736,36 @@
         },
         "10.1126/sciadv.aeh4436": {
           "doi": "10.1126/sciadv.aeh4436",
-          "title": "The mRNA-based RSV vaccine mRNA-1345 induces robust and durable CD4+ T cell responses against RSV in younger and older adults",
+          "title": "The mRNA-based RSV vaccine mRNA-1345 induces robust and durable CD4 + T cell responses against RSV in younger and older adults",
           "url": "https://doi.org/10.1126/sciadv.aeh4436",
           "abstract": "Respiratory syncytial virus (RSV) remains a health threat, particularly for infants, older adults, and immunocompromised individuals. Although neutralizing antibodies can help limit infection and viral replication, T cells are essential for reducing disease severity. Assessment of age-related declines in T cell function are important for vaccine evaluation. We used intracellular cytokine staining, activation-induced marker, and Meso Scale Discovery assays and single-cell multiomic profiling to evaluate RSV vaccine mRNA-1345 responses in younger and older adults. mRNA-1345 induced comparable CD4 + and CD8 + T cell responses in both cohorts, with CD4 + responses persisting for 24 months. The CD4 + response was strongly T helper 1 (T H 1)-polarized, with increased interferon-γ, interleukin-2, and tumor necrosis factor-α and minimal T H 2 cytokines. Both CD4 + and CD8 + T cells showed increased polyfunctionality that remained elevated at 2 years. Single-cell and T cell receptor repertoire analyses showed similar Pre-F-specific phenotypes, transcriptional profiles, and clonal overlap across age groups, supporting robust, durable cellular immunity after mRNA-1345 vaccination. These findings indicate shared vaccine-elicited T cell immunity in adults.",
           "rss_published_at": "2026-10-21T07:00:00+00:00",
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:42:05+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Anthony DiPiazza, Emily Marcisak, Wen-Han Yu, Daniel Makrinos, Hsiao-Hsuan Kuo, Jenna Landy, Shannon McGrath, Xiaolin Chang, Maria Cavallaro, Christopher Wu, Adam Essene, Haining Lin, Laura Walker, Andrea Carfi, Jaap Oostendorp, Robert Paris, Yanbo Sun"
+            "Anthony DiPiazza",
+            "Emily Marcisak",
+            "Wen-Han Yu",
+            "Daniel Makrinos",
+            "Hsiao-Hsuan Kuo",
+            "Jenna Landy",
+            "Shannon McGrath",
+            "Xiaolin Chang",
+            "Maria Cavallaro",
+            "Christopher Wu",
+            "Adam Essene",
+            "Haining Lin",
+            "Laura Walker",
+            "Andrea Carfi",
+            "Jaap Oostendorp",
+            "Robert Paris",
+            "Yanbo Sun"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "73f987a0718028e2d2d8c137",
@@ -99518,13 +99785,17 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:39+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Kristina M. Herman, Sahithya Sridharan Iyer, Yihang Wang, Thomas D. Pollard, Gregory A. Voth"
+            "Kristina M. Herman",
+            "Sahithya Sridharan Iyer",
+            "Yihang Wang",
+            "Thomas D. Pollard",
+            "Gregory A. Voth"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "dc6e3cf73c4dd905ee763f0b",
@@ -99544,13 +99815,16 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:37+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Albert Zehan Li, Sean W. Stewart, Conrad H. T. Belzberg, Amani A. Hariri"
+            "Albert Zehan Li",
+            "Sean W. Stewart",
+            "Conrad H. T. Belzberg",
+            "Amani A. Hariri"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "cb9259829a4ae7462d7e454c",
@@ -99570,13 +99844,22 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:52+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Sehyun Kim, Minji Kim, Haechan Park, Kihyun Sim, Jihyeon Jang, Yerin Kim, Jinyeong Park, Donghyung Shin, Myeonghyeon Na, Kyoseung Sim"
+            "Sehyun Kim",
+            "Minji Kim",
+            "Haechan Park",
+            "Kihyun Sim",
+            "Jihyeon Jang",
+            "Yerin Kim",
+            "Jinyeong Park",
+            "Donghyung Shin",
+            "Myeonghyeon Na",
+            "Kyoseung Sim"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "a962229c9640084b894a2e0f",
@@ -99589,20 +99872,33 @@
         },
         "10.1126/sciadv.aei3465": {
           "doi": "10.1126/sciadv.aei3465",
-          "title": "Observations show increased nitrate in coastal cloud droplet residuals from large-particle activation and N2O5 hydrolysis",
+          "title": "Observations show increased nitrate in coastal cloud droplet residuals from large-particle activation and N 2 O 5 hydrolysis",
           "url": "https://doi.org/10.1126/sciadv.aei3465",
           "abstract": "Clouds change the chemical composition of aerosols, yet observations characterizing these processes are quite limited. Ground-based in-cloud measurements in coastal Southern California show that the highest nitrate to sulfate ratio (2.5 ± 1.7) in droplet residuals is near cloud base where cloud liquid water content and droplet number concentration are below the observed 20th percentile. The number size distribution of nitrate-rich particles peaks at a larger diameter than sulfate-rich particles, supporting growth to droplets of nitrate-rich particles at lower supersaturations than for sulfate-rich particles. Nitrate mass concentrations are up to three times higher in-cloud compared to pre-cloud and correlated with statistically significant reductions in ozone concentrations, consistent with contributions from in-cloud nitrate formation by N 2 O 5 hydrolysis. This study provides quantitative relationships of cloud properties to nitrate production in droplet residuals and associated ozone reduction, illustrating the impacts of aqueous reactions in clouds.",
           "rss_published_at": "2026-10-21T07:00:00+00:00",
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:51+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Abigail S. Williams, Lynn M. Russell, Sanghee Han, Veronica Z. Berta, Jeramy L. Dedrick, Teresa Campos, Lauren T. Robinson, Rachel Y.-W. Chang, Ryan N. Farley, Allison C. Aiken, Cynthia H. Twohy, Michael J. Wheeler, Jeremy J. B. Wentzell, John Liggio"
+            "Abigail S. Williams",
+            "Lynn M. Russell",
+            "Sanghee Han",
+            "Veronica Z. Berta",
+            "Jeramy L. Dedrick",
+            "Teresa Campos",
+            "Lauren T. Robinson",
+            "Rachel Y.-W. Chang",
+            "Ryan N. Farley",
+            "Allison C. Aiken",
+            "Cynthia H. Twohy",
+            "Michael J. Wheeler",
+            "Jeremy J. B. Wentzell",
+            "John Liggio"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "59d4a31326f0635c8f1ad817",
@@ -99622,13 +99918,17 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:41:53+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jihai Dong, Wenjin Sun, Baylor Fox-Kemper, Zhiyou Jing, Changming Dong"
+            "Jihai Dong",
+            "Wenjin Sun",
+            "Baylor Fox-Kemper",
+            "Zhiyou Jing",
+            "Changming Dong"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "f9ebf4418d1ae1a22e56d820",
@@ -99648,13 +99948,21 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:41:53+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Amberlyn Simmons, Sierra F. Wilferd, Sofia Campagnuolo, Veronica Pena, Heather Bimonte-Nelson, Jason Newbern, Rachael W. Sirianni, Christopher L. Plaisier, Sarah E. Stabenfeldt"
+            "Amberlyn Simmons",
+            "Sierra F. Wilferd",
+            "Sofia Campagnuolo",
+            "Veronica Pena",
+            "Heather Bimonte-Nelson",
+            "Jason Newbern",
+            "Rachael W. Sirianni",
+            "Christopher L. Plaisier",
+            "Sarah E. Stabenfeldt"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "be58e7e0c2755ca1fe8c13e6",
@@ -99674,13 +99982,21 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:55+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Haris Antypas, Ronni Anderson Gonçalves da Silva, Geneve Kang Xin Wong, Cui Liang, Logeshwari Muthualagu Natarajan, Rachel Jing Wen Tan, Cheryl Jia Yi Neo, Siu Ling Wong, Kimberly A. Kline"
+            "Haris Antypas",
+            "Ronni Anderson Gonçalves da Silva",
+            "Geneve Kang Xin Wong",
+            "Cui Liang",
+            "Logeshwari Muthualagu Natarajan",
+            "Rachel Jing Wen Tan",
+            "Cheryl Jia Yi Neo",
+            "Siu Ling Wong",
+            "Kimberly A. Kline"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "271c03c1143c916c97ab8ba6",
@@ -99700,13 +100016,27 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:39+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Somnath Shee, Meixiang Huang, Meghraj Singh Baghel, Yuxin Zheng, Shichun Lun, Santosh K. Yadav, Nirbhay N. Yadav, Carlos E. Ruiz-Gonzalez, Sandeep Tyagi, Eric Nuermberger, Sanjay K. Jain, Zaver M. Bhujwalla, Barbara S. Slusher, Philip C. Wong, William Bishai"
+            "Somnath Shee",
+            "Meixiang Huang",
+            "Meghraj Singh Baghel",
+            "Yuxin Zheng",
+            "Shichun Lun",
+            "Santosh K. Yadav",
+            "Nirbhay N. Yadav",
+            "Carlos E. Ruiz-Gonzalez",
+            "Sandeep Tyagi",
+            "Eric Nuermberger",
+            "Sanjay K. Jain",
+            "Zaver M. Bhujwalla",
+            "Barbara S. Slusher",
+            "Philip C. Wong",
+            "William Bishai"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "cfb5587481711121d0383625",
@@ -99726,13 +100056,17 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:39+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yingqiao Ma, Xinglong Ren, Juncheng Fan, Sebastiaan Hoek, Henning Sirringhaus"
+            "Yingqiao Ma",
+            "Xinglong Ren",
+            "Juncheng Fan",
+            "Sebastiaan Hoek",
+            "Henning Sirringhaus"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "460fd4c6fc8c8592f1d075c2",
@@ -99752,13 +100086,28 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:41:54+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Suguru Hosoi, Sejun Park, Michihiro Hirata, Minseong Lee, Adam P. Dioguardi, Joe D. Thompson, Filip Ronning, Allen O. Scheie, Kumpei Imamura, Kenichiro Hashimoto, Takasada Shibauchi, Bishnu P. Belbase, Arjun Unnikrishnan, Johannes Knolle, Arnab Banerjee, Yuji Matsuda"
+            "Suguru Hosoi",
+            "Sejun Park",
+            "Michihiro Hirata",
+            "Minseong Lee",
+            "Adam P. Dioguardi",
+            "Joe D. Thompson",
+            "Filip Ronning",
+            "Allen O. Scheie",
+            "Kumpei Imamura",
+            "Kenichiro Hashimoto",
+            "Takasada Shibauchi",
+            "Bishnu P. Belbase",
+            "Arjun Unnikrishnan",
+            "Johannes Knolle",
+            "Arnab Banerjee",
+            "Yuji Matsuda"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "e4e6386313f2b0adf6eb5921",
@@ -99778,13 +100127,17 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:41:53+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Zihang He, Zhibo Wang, Caiqiu Gao, Xiaoyu Ji, Yucheng Wang"
+            "Zihang He",
+            "Zhibo Wang",
+            "Caiqiu Gao",
+            "Xiaoyu Ji",
+            "Yucheng Wang"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "edb62a1fb1f303ac76161098",
@@ -99804,13 +100157,16 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:41:53+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Sandy Grégorio, Jonathan M. Lauderdale, Louis-Philippe Nadeau, Raffaele Ferrari"
+            "Sandy Grégorio",
+            "Jonathan M. Lauderdale",
+            "Louis-Philippe Nadeau",
+            "Raffaele Ferrari"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "5f9161b120c531b661a570f5",
@@ -99830,13 +100186,27 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:37+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jeremy Salvador, Lucas Guselli, Romminea Yeat, Sokchea Lay, Titsophantharoth Thol, Nisa Ya, Lionel Brice Feufack-Donfack, Sievleang Heng, Candice Bohaud, Agnes Orban, Léa Baldor, Baura Tat, Chetan E. Chitnis, Tineke Cantaert, Jean Popovici"
+            "Jeremy Salvador",
+            "Lucas Guselli",
+            "Romminea Yeat",
+            "Sokchea Lay",
+            "Titsophantharoth Thol",
+            "Nisa Ya",
+            "Lionel Brice Feufack-Donfack",
+            "Sievleang Heng",
+            "Candice Bohaud",
+            "Agnes Orban",
+            "Léa Baldor",
+            "Baura Tat",
+            "Chetan E. Chitnis",
+            "Tineke Cantaert",
+            "Jean Popovici"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "e8a0d85e7fbe4d2c7dbed911",
@@ -99856,13 +100226,35 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:39+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Matias M. Vazquez, Sonia R. Salvatore, Pascal Rowart, Sumit Kumar Anand, Nicole Colussi, Marco Fazzari, Aidan R. Cole, Cristina Espinosa-Diez, Soma Jobbagy, Jia-Jun Liu, Jianhua Luo, Delphine Gomez, Silvia Liu, Carsten Skarke, Fiona M. Bello, Michael J. Jurczak, Kacey J. Prentice, Michael B. Wheeler, Mohamed Trebak, Nicholas K.H. Khoo, Oren Rom, Fei Chang, Francisco J. Schopfer"
+            "Matias M. Vazquez",
+            "Sonia R. Salvatore",
+            "Pascal Rowart",
+            "Sumit Kumar Anand",
+            "Nicole Colussi",
+            "Marco Fazzari",
+            "Aidan R. Cole",
+            "Cristina Espinosa-Diez",
+            "Soma Jobbagy",
+            "Jia-Jun Liu",
+            "Jianhua Luo",
+            "Delphine Gomez",
+            "Silvia Liu",
+            "Carsten Skarke",
+            "Fiona M. Bello",
+            "Michael J. Jurczak",
+            "Kacey J. Prentice",
+            "Michael B. Wheeler",
+            "Mohamed Trebak",
+            "Nicholas K.H. Khoo",
+            "Oren Rom",
+            "Fei Chang",
+            "Francisco J. Schopfer"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "6f6e3e29d7a3011df02b990f",
@@ -99882,13 +100274,21 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:32+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Qing Gao, Kehong Wei, Deshen Pan, Chaoliang Xu, Yufei Xi, Yan Zhang, Arnaud Augert, David MacPherson, Deshui Jia"
+            "Qing Gao",
+            "Kehong Wei",
+            "Deshen Pan",
+            "Chaoliang Xu",
+            "Yufei Xi",
+            "Yan Zhang",
+            "Arnaud Augert",
+            "David MacPherson",
+            "Deshui Jia"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "55bdda863dc161a4b2068316",
@@ -99908,13 +100308,14 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:39+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yuning Zhang and K. W. Wang"
+            "Yuning Zhang",
+            "K. W. Wang"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "35b262335ef1f044f1478a46",
@@ -99934,13 +100335,17 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:54+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yuki Tokunaga, Ryo Matsunaga, Hiroko Kozuka-Hata, Masaaki Oyama, Kouhei Tsumoto"
+            "Yuki Tokunaga",
+            "Ryo Matsunaga",
+            "Hiroko Kozuka-Hata",
+            "Masaaki Oyama",
+            "Kouhei Tsumoto"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "13830ca368fa848456ea7eb0",
@@ -99960,13 +100365,21 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:54+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Wen Chen, Zhengdong Gao, Hongjuan Weng, Hongbo Yuan, Roy van Alst, Rong Wang, Jyoti Kumari, Lorenzo Moroni, Paul H. J. Kouwer"
+            "Wen Chen",
+            "Zhengdong Gao",
+            "Hongjuan Weng",
+            "Hongbo Yuan",
+            "Roy van Alst",
+            "Rong Wang",
+            "Jyoti Kumari",
+            "Lorenzo Moroni",
+            "Paul H. J. Kouwer"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "3d8ce6696558845882bb2669",
@@ -99985,14 +100398,44 @@
           "rss_published_at": "2026-10-21T07:00:00+00:00",
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
-          "indexed_at": "2026-10-21T18:40:54+00:00",
-          "article_type": " Research Article ",
+          "indexed_at": "2026-10-22T06:55:45+00:00",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jakob Einhaus, Peter Neidlinger, Olivier Fondeur, Masaki Sato, Sasha Anronikov, Kotaro Miyazaki, Antoine Maechler, Jonas N. Amar, Kazuo Ando, Valentin Badea, Dyani K. Gaudilliere, Maximilian Sabayev, Dorien Feyaerts, Maïgane Diop, Amy S. Tsai, Amelie Cambriel, Edward A. Ganio, Romain Lagarde, Emmeline O’Kelly, Ina A. Stelzer, Julien Hedou, Ronald J. Wong, Yair J. Blumenfeld, Deirdre J. Lyell, Gary M. Shaw, Tomiko T. Oskotsky, Marina Sirota, Linda C. Giudice, David K. Stevenson, Nima Aghaeepour, Brice Gaudilliere"
+            "Jakob Einhaus",
+            "Peter Neidlinger",
+            "Olivier Fondeur",
+            "Masaki Sato",
+            "Sasha Anronikov",
+            "Kotaro Miyazaki",
+            "Antoine Maechler",
+            "Jonas N. Amar",
+            "Kazuo Ando",
+            "Valentin Badea",
+            "Dyani K. Gaudilliere",
+            "Maximilian Sabayev",
+            "Dorien Feyaerts",
+            "Maïgane Diop",
+            "Amy S. Tsai",
+            "Amelie Cambriel",
+            "Edward A. Ganio",
+            "Romain Lagarde",
+            "Emmeline O’Kelly",
+            "Ina A. Stelzer",
+            "Julien Hedou",
+            "Ronald J. Wong",
+            "Yair J. Blumenfeld",
+            "Deirdre J. Lyell",
+            "Gary M. Shaw",
+            "Tomiko T. Oskotsky",
+            "Marina Sirota",
+            "Linda C. Giudice",
+            "David K. Stevenson",
+            "Nima Aghaeepour",
+            "Brice Gaudilliere"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "b3eea313f43b32fb899af8cf",
@@ -100012,13 +100455,22 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:32+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Hsi T. Wei, Dominic Boutet, Rukun Dou, Jessica Ahrens, Nadia Zeramdini, Alban Voppel, Fernando Gonzales-Aste, Fatme Abboud, Sylvain Baillet, Lena Palaniyappan"
+            "Hsi T. Wei",
+            "Dominic Boutet",
+            "Rukun Dou",
+            "Jessica Ahrens",
+            "Nadia Zeramdini",
+            "Alban Voppel",
+            "Fernando Gonzales-Aste",
+            "Fatme Abboud",
+            "Sylvain Baillet",
+            "Lena Palaniyappan"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "b7d2bdca662b1a74823fffc2",
@@ -100038,13 +100490,18 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:43+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Alfio Alessandro Chiarenza, Alexandra F. C. Howard, Grace L. Varnham, Alex Farnsworth, Paul J. Valdes, Philip D. Mannion"
+            "Alfio Alessandro Chiarenza",
+            "Alexandra F. C. Howard",
+            "Grace L. Varnham",
+            "Alex Farnsworth",
+            "Paul J. Valdes",
+            "Philip D. Mannion"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "d00820ac89e9e7aaa0620934",
@@ -100064,13 +100521,19 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:39+00:00",
-          "article_type": " Research Article ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Junyi Ye, Zheyi Li, Alexey Y. Nikitin, Franco Nori, Wenzhe Liu, Konstantin Y. Bliokh, Lei Shi"
+            "Junyi Ye",
+            "Zheyi Li",
+            "Alexey Y. Nikitin",
+            "Franco Nori",
+            "Wenzhe Liu",
+            "Konstantin Y. Bliokh",
+            "Lei Shi"
           ],
           "first_seen": "2026-10-22T01:01:17.383466+00:00",
           "item_id": "6de97995e2b08c943b5ca779",
@@ -100090,7 +100553,7 @@
           "published_online_at": null,
           "published_print_at": "2026-10-23T00:00:00+00:00",
           "indexed_at": "2026-10-21T18:40:39+00:00",
-          "article_type": " Focus ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
@@ -100371,17 +100834,213 @@
             "reason": "no_ai_method_evidence",
             "version": "1"
           }
+        },
+        "10.1126/sciadv.aej0610": {
+          "doi": "10.1126/sciadv.aej0610",
+          "title": "A pro-natural product design strategy affords ester-based green fungicide candidates",
+          "url": "https://doi.org/10.1126/sciadv.aej0610",
+          "abstract": "Natural products (NPs) serve as both inspirations and resources for the discovery of bioactive compounds. However, their application in green agrochemical discovery faces limitations such as low activity, short duration of efficacy, potential toxicity and residue issues from structural modifications, and constraints in exploring chemical and biological space. Here, we propose the concept and design principles of pro-natural products (PrNPs), which effectively address these limitations and open a broad avenue for bioactive compound discovery. PrNPs are functional compounds designed to degrade into NPs under application conditions. Using this strategy, we designed and synthesized a structurally diverse ester-based PrNP collection with 170 members by combining natural acids and alcohols and found a promising green fungicide candidate, PrNP 6E , with excellent control efficacy against major plant diseases such as rapeseed Sclerotinia stem rot, rice sheath blight, and apple Valsa canker. Cheminformatic analysis, antifungal activity, degradation behavior, and safety assessment reveal that 6E combines the advantageous properties of both NPs and agrochemicals and exhibits suitable duration of efficacy, controllable degradation into NPs after fulfilling its function, broad safety, and environmental compatibility. The PrNP strategy shows great potential in enhancing the efficiency of finding green agrochemicals with novel chemotypes and mechanisms of action and in promoting sustainable development of agriculture.",
+          "rss_published_at": null,
+          "published_online_at": null,
+          "published_print_at": "2026-08-28T00:00:00+00:00",
+          "indexed_at": "2026-10-22T22:01:12+00:00",
+          "article_type": "journal-article",
+          "providers": [
+            "crossref"
+          ],
+          "authors": [
+            "Peng Lei",
+            "Hanxiao Yuan",
+            "Xingxing Lu",
+            "Tiantian Sun",
+            "Yanyan Qu",
+            "Le Wang",
+            "Tan Dai",
+            "Jianqiang Miao",
+            "Yanqing Gao",
+            "Xili Liu"
+          ],
+          "first_seen": "2026-10-23T01:55:51.499996+00:00",
+          "item_id": "3bd6147e47d180c796aa63f5",
+          "journal_relevance": {
+            "status": "excluded",
+            "method": "rule-v1",
+            "reason": "no_ai_method_evidence",
+            "version": "1"
+          }
+        },
+        "10.1126/sciadv.aeb2089": {
+          "doi": "10.1126/sciadv.aeb2089",
+          "title": "Selective autophagy receptor VISP1 enhances cytokinin signaling by modulating the Type-A/B ARR feedback loop during root development",
+          "url": "https://doi.org/10.1126/sciadv.aeb2089",
+          "abstract": "Selective autophagy maintains intracellular homeostasis by selectively targeting cytoplasmic components through autophagy receptors. While virus-induced small peptide 1 (VISP1) has been identified as an autophagy receptor regulating plant-virus interactions, its function in phytohormone responses remains poorly understood. Here, we demonstrate that VISP1 positively regulates cytokinin responses during root development by modulating the feedback loop between type-A and -B Arabidopsis Response Regulators (ARRs). VISP1 overexpression transgenic lines displayed shorter primary roots, fewer lateral roots, and elongated root hairs, accompanied with an induced cytokinin response compared to wild-type plants. Conversely, the visp1 mutant exhibited attenuated cytokinin sensitivity. Mechanistically, cytokinin induces VISP1 transcription, with the type-B ARR1 transcription factor directly binding to the VISP1 promoter to activate its expression. VISP1 physically interacts with multiple type-A ARRs and promotes their autophagic degradation, thereby alleviating their repression on type-B ARRs. Collectively, our findings reveal a regulatory mechanism in which VISP1 amplifies cytokinin signaling by disrupting the negative feedback loop of type-A and type-B ARRs.",
+          "rss_published_at": null,
+          "published_online_at": null,
+          "published_print_at": "2026-07-31T00:00:00+00:00",
+          "indexed_at": "2026-10-22T21:43:30+00:00",
+          "article_type": "journal-article",
+          "providers": [
+            "crossref"
+          ],
+          "authors": [
+            "Xin Tong",
+            "Ya-Lan Feng",
+            "Zhi-Hong Guo",
+            "Xian-Bing Wang",
+            "Ying Wang"
+          ],
+          "first_seen": "2026-10-23T01:55:51.499996+00:00",
+          "item_id": "3d363ddefd827485c15b47b8",
+          "journal_relevance": {
+            "status": "excluded",
+            "method": "rule-v1",
+            "reason": "no_ai_method_evidence",
+            "version": "1"
+          }
+        },
+        "10.1126/sciadv.aec8647": {
+          "doi": "10.1126/sciadv.aec8647",
+          "title": "Dams trigger long-term river-floodplain decoupling in dynamic Andean foreland rivers",
+          "url": "https://doi.org/10.1126/sciadv.aec8647",
+          "abstract": "Ongoing and planned hydroelectric dam construction in the Andes will alter water and sediment delivery to downstream rivers, with likely substantial impacts on river and floodplain morphology, hydrology, and habitats. These disturbances will be greatest along laterally dynamic rivers with strong current channel-floodplain coupling, such as Andean foreland rivers. Using a hydro-morphodynamic river model, we show that these floodplains are rapidly transformed through widespread vertical and lateral erosion with persisting long-term effects: Erosion creates secondary floodplains entrenched several meters below pre-dam levels within a century. This degradation of the channel-floodplain complex changes floodplain inundation patterns and frequency and disconnects riparian water bodies from the active river. Such decoupling will be most severe in rivers characterized by high sediment loads and lateral migration rates before dam construction. Our simulations reveal that predictive approaches that neglect geomorphic changes, including lateral river mobility, may be of limited utility in assessing dam impacts on the construction and functioning of wetland habitats.",
+          "rss_published_at": null,
+          "published_online_at": null,
+          "published_print_at": "2026-08-28T00:00:00+00:00",
+          "indexed_at": "2026-10-22T20:40:13+00:00",
+          "article_type": "journal-article",
+          "providers": [
+            "crossref"
+          ],
+          "authors": [
+            "Muriel Z. M. Brückner",
+            "Andrew P. Nicholas",
+            "Rolf Aalto",
+            "Philip J. Ashworth",
+            "Jim Best",
+            "Thomas Dunne",
+            "Renato Paes de Almeida"
+          ],
+          "first_seen": "2026-10-23T01:55:51.499996+00:00",
+          "item_id": "13d1a20416ad42eb0449a4cd",
+          "journal_relevance": {
+            "status": "excluded",
+            "method": "rule-v1",
+            "reason": "no_ai_method_evidence",
+            "version": "1"
+          }
+        },
+        "10.1126/sciadv.aeg5086": {
+          "doi": "10.1126/sciadv.aeg5086",
+          "title": "Nucleic acid probe-functionalized self-powered sensor for detection of biomarkers in clinical urine samples",
+          "url": "https://doi.org/10.1126/sciadv.aeg5086",
+          "abstract": "Triboelectric nanogenerator (TENG)-based self-powered biosensors can reduce ecological risks from energy storage device disposal and complex electronics manufacturing, offering cost-effective and eco-friendly diagnostic methods. However, in the intricate charge environment of urine, existing devices are difficult to specifically capture targets and produce recognizable changes in surface charge and the resulting electrical signals, leading to insufficient detection specificity and sensitivity. Herein, for the first time, the problem is addressed by a TENG-based self-powered sensor for clinical urine detection. Self-charged nucleic acid probe modification and targeted conformational change induce specific surface charge variation; regulating system ionic strength matches Debye length with probe conformational scale to maximize this variation. A double-electrode device efficiently converts surface charge changes into distinct output signals, boosting sensing performance in intricate charged environments. This sensor achieves sensitive detection of ATP (269 pM) and miR-21 (328 pM) in artificial urine, effectively monitors urinary ATP elevation in cystitis patients, showing potential for low-cost, easy-to-operate home health monitoring, promoting health equity.",
+          "rss_published_at": null,
+          "published_online_at": null,
+          "published_print_at": "2026-08-07T00:00:00+00:00",
+          "indexed_at": "2026-10-22T15:48:24+00:00",
+          "article_type": "journal-article",
+          "providers": [
+            "crossref"
+          ],
+          "authors": [
+            "Qitao Zhou",
+            "Along Gao",
+            "Xiali Yang",
+            "Huageng Liang",
+            "Jing Pan",
+            "Shaoguang Li",
+            "Hui Li",
+            "Caofeng Pan",
+            "Fan Xia"
+          ],
+          "first_seen": "2026-10-23T01:55:51.499996+00:00",
+          "item_id": "31a3d975d03cef0b7f2a04b2",
+          "journal_relevance": {
+            "status": "excluded",
+            "method": "rule-v1",
+            "reason": "no_ai_method_evidence",
+            "version": "1"
+          }
+        },
+        "10.1126/sciadv.aeh0436": {
+          "doi": "10.1126/sciadv.aeh0436",
+          "title": "Unifying energy and information harvesting for high-rate self-powered sensing",
+          "url": "https://doi.org/10.1126/sciadv.aeh0436",
+          "abstract": "High-fidelity sensing remains highly challenging in self-powered systems, as the limited power of energy harvesters constrains data acquisition and transmission. In this work, we present a wireless, intelligent, self-powered environmental node (WISE-Node) that simultaneously harvests energy and collects sensing information from ambient vibrations. Its multi-contact triboelectric vibration energy harvester (MC-TVEH) achieves an ultra-wide bandwidth of 10-300 Hz, delivering peak and RMS power densities of 13.42 kW/m 3 and 1.73 kW/m 3 , respectively. The WISE-Node also functions as a broadband sensor, accurately tracking excitation frequencies via FFT analysis ( R 2 = 0.9997 across 3-10,000 Hz). Using a Random Forest classifier on the acquired data, the WISE-Node identifies flange conditions with 99.38% accuracy. Field tests on marine engines and generators validate its robust performance, achieving a cold start in just 28.8 s and maintaining fully self-powered 1000 Hz sampling and stable wireless transmission. These results highlight the proposed WISE-Node’s strong potential for self-sustained high-fidelity sensing, thereby advancing next-generation battery-free industrial IoT and digital twin technologies.",
+          "rss_published_at": null,
+          "published_online_at": null,
+          "published_print_at": "2026-08-21T00:00:00+00:00",
+          "indexed_at": "2026-10-22T15:25:37+00:00",
+          "article_type": "journal-article",
+          "providers": [
+            "crossref"
+          ],
+          "authors": [
+            "Hongyong Yu",
+            "Yawei Wang",
+            "Hengxu Du",
+            "Ziyue Xi",
+            "Yizhou Li",
+            "Yaozi Zheng",
+            "Jixiang Chen",
+            "Quanke Su",
+            "Guobiao Hu",
+            "Taili Du",
+            "Minyi Xu"
+          ],
+          "first_seen": "2026-10-23T01:55:51.499996+00:00",
+          "item_id": "107033f7fffdddcb99103160",
+          "journal_relevance": {
+            "status": "excluded",
+            "method": "rule-v1",
+            "reason": "no_ai_method_evidence",
+            "version": "1"
+          }
+        },
+        "10.1126/sciadv.aef1579": {
+          "doi": "10.1126/sciadv.aef1579",
+          "title": "The CENP-A chaperone complex spatially organizes centromeres",
+          "url": "https://doi.org/10.1126/sciadv.aef1579",
+          "abstract": "Centromeres, defined by CENP-A-containing nucleosomes, direct kinetochore assembly for spindle attachment. In mitosis, CENP-A and the constitutive centromere-associated network (CCAN) of the inner kinetochore are arranged into bipartite subdomains within clearings of chromatin. However, less is known about their architecture during interphase. We report here an unrecognized structural role for the CENP-A chaperone machinery in establishing interphase centromere architecture. In interphase, CENP-A and the CCAN assemble conserved shell-like structures that enclose a chromatin-poor central cavity. This cavity is occupied by the interphase-specific CENP-A chaperone complex, which promotes CENP-A assembly once per cell cycle. The presence of the chaperone complex, but not its CENP-A-incorporating activity, is required to generate both the shell architecture and chromatin clearing. The CCAN scaffold CENP-C exhibits radial organization throughout the structure and is essential for its formation, primarily by recruiting the HJURP chaperone. Our findings broaden the role of the CENP-A chaperone machinery to include the structural organization of interphase vertebrate centromeres, independent of CENP-A deposition.",
+          "rss_published_at": null,
+          "published_online_at": null,
+          "published_print_at": "2026-09-11T00:00:00+00:00",
+          "indexed_at": "2026-10-22T06:56:30+00:00",
+          "article_type": "journal-article",
+          "providers": [
+            "crossref"
+          ],
+          "authors": [
+            "Hindol Gupta",
+            "Julian Haase",
+            "Yicong Wu",
+            "Jiji Chen",
+            "Warif El Yakoubi",
+            "George Karadimov",
+            "Ana Losada",
+            "Takashi Akera",
+            "Hari Shroff",
+            "Alexander E. Kelly"
+          ],
+          "first_seen": "2026-10-23T01:55:51.499996+00:00",
+          "item_id": "f91aba15ddb6fa78cc2febd4",
+          "journal_relevance": {
+            "status": "excluded",
+            "method": "rule-v1",
+            "reason": "no_ai_method_evidence",
+            "version": "1"
+          }
         }
       },
       "counters": {
         "relevant": 1,
         "pending": 13,
-        "excluded": 413
+        "excluded": 419
       }
     },
     "advanced-materials": {
-      "last_success_at": "2026-10-23T00:20:55.216743+00:00",
-      "last_crossref_at": "2026-10-23T00:20:55.216743+00:00",
+      "last_success_at": "2026-10-23T01:55:51.499996+00:00",
+      "last_crossref_at": "2026-10-23T01:55:51.499996+00:00",
       "records": {
         "10.1002/adma.75347": {
           "doi": "10.1002/adma.75347",
@@ -111747,27 +112406,13 @@
           "published_online_at": "2026-08-12T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T23:26:16+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Sheng Qiang",
-            "Ming-Xin Zhang",
-            "Jintao Wang",
-            "Bing-Xuan Zhu",
-            "Lin-Qing Yue",
-            "Xu Pan",
-            "Zhao Lei",
-            "Ruo-Yao Sun",
-            "Pei-Yu Huang",
-            "Qian Zhang",
-            "Wen-Bo Duan",
-            "Mingyu Li",
-            "Liang Zhen",
-            "Jing-Kai Qin",
-            "Cheng-Yan Xu"
+            "Sheng Qiang, Ming-Xin Zhang, Jintao Wang, Bing-Xuan Zhu, Lin-Qing Yue, Xu Pan, Zhao Lei, Ruo-Yao Sun, Pei-Yu Huang, Qian Zhang, Wen-Bo Duan, Mingyu Li, Liang Zhen, Jing-Kai Qin, Cheng-Yan Xu"
           ],
           "first_seen": "2026-10-14T00:46:13.374731+00:00",
           "item_id": "d0af1bc0d41f306a4a89344c",
@@ -114735,26 +115380,13 @@
           "published_online_at": "2026-08-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T15:14:24+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Hang Xu",
-            "Pengxiang Min",
-            "Yanbin Fu",
-            "Ge Sun",
-            "Hui Wu",
-            "Mengqiao Pan",
-            "Chaoxian Zhao",
-            "Jiatong Li",
-            "Ying Wu",
-            "Ying Xu",
-            "Bin Gu",
-            "Jiahua Pan",
-            "Lin Zhang",
-            "Peifeng Liu"
+            "Hang Xu, Pengxiang Min, Yanbin Fu, Ge Sun, Hui Wu, Mengqiao Pan, Chaoxian Zhao, Jiatong Li, Ying Wu, Ying Xu, Bin Gu, Jiahua Pan, Lin Zhang, Peifeng Liu"
           ],
           "first_seen": "2026-10-17T00:45:26.405218+00:00",
           "item_id": "faa1c718ecadbd2463bf29db",
@@ -116759,20 +117391,13 @@
           "published_online_at": "2026-10-18T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-18T10:42:03+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Xia Zheng",
-            "Lingqi Wang",
-            "Huimei Cao",
-            "Youhua Lu",
-            "Kun Tao",
-            "Xiaoran Chen",
-            "Zhang Liu",
-            "Jianjun Wang"
+            "Xia Zheng, Lingqi Wang, Huimei Cao, Youhua Lu, Kun Tao, Xiaoran Chen, Zhang Liu, Jianjun Wang"
           ],
           "first_seen": "2026-10-18T23:49:40.440486+00:00",
           "item_id": "83f91e759711edb0dd85bb30",
@@ -116792,26 +117417,13 @@
           "published_online_at": "2026-10-18T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T04:39:36+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Feifei Wang",
-            "Lengwan Li",
-            "Long Bai",
-            "Zhiyi Liu",
-            "Laijun Li",
-            "Zhi Li",
-            "Jiahao Ni",
-            "Kai Xu",
-            "Bin Zhao",
-            "Gang Pei",
-            "Qiaoqiang Gan",
-            "Alexei P. Sokolov",
-            "Ming Tian",
-            "Peng-Fei Cao"
+            "Feifei Wang, Lengwan Li, Long Bai, Zhiyi Liu, Laijun Li, Zhi Li, Jiahao Ni, Kai Xu, Bin Zhao, Gang Pei, Qiaoqiang Gan, Alexei P. Sokolov, Ming Tian, Peng-Fei Cao"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "22a3d5418857ac8c1161efcc",
@@ -116831,23 +117443,13 @@
           "published_online_at": "2026-10-18T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T04:39:14+00:00",
-          "article_type": "journal-article",
+          "article_type": "REVIEW   REVIEW",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Sikandar Iqbal",
-            "Usman Ghani",
-            "Xuebing Zhu",
-            "Yun Bai",
-            "Jinlong Jiang",
-            "Ying Zhang",
-            "Huiqin Huang",
-            "Fakhr uz Zaman",
-            "Hua Kun Liu",
-            "Shi-Xue Dou",
-            "Chao Wu"
+            "Sikandar Iqbal, Usman Ghani, Xuebing Zhu, Yun Bai, Jinlong Jiang, Ying Zhang, Huiqin Huang, Fakhr uz Zaman, Hua Kun Liu, Shi-Xue Dou, Chao Wu"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "a26b0a49da397a7fdd5c2c63",
@@ -116867,22 +117469,13 @@
           "published_online_at": "2026-10-18T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T03:42:27+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yanhua Wan",
-            "Ziqing Yin",
-            "Mohamed Ait Tamerd",
-            "Minghao Liu",
-            "Yan Hong",
-            "Yefei Li",
-            "Menghao Yang",
-            "Fei Wang",
-            "Dongyuan Zhao",
-            "Wei Li"
+            "Yanhua Wan, Ziqing Yin, Mohamed Ait Tamerd, Minghao Liu, Yan Hong, Yefei Li, Menghao Yang, Fei Wang, Dongyuan Zhao, Wei Li"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "f1c6496956db193cccdd194b",
@@ -116902,25 +117495,13 @@
           "published_online_at": "2026-10-18T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T03:42:21+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Fangman Chen",
-            "Madi Sun",
-            "Ziping Wu",
-            "Peiyu Chen",
-            "Xiaochun Xie",
-            "Quanxin Ning",
-            "Xin Zhao",
-            "Shaowen Wang",
-            "Dan Shao",
-            "Yunlu Dai",
-            "Hanyao Huang",
-            "Kam W. Leong",
-            "Chao Yang"
+            "Fangman Chen, Madi Sun, Ziping Wu, Peiyu Chen, Xiaochun Xie, Quanxin Ning, Xin Zhao, Shaowen Wang, Dan Shao, Yunlu Dai, Hanyao Huang, Kam W. Leong, Chao Yang"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "190d77d39e693eeed9c9f6f9",
@@ -116940,19 +117521,13 @@
           "published_online_at": "2026-10-18T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T03:42:20+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Amin Talebian-Kiakalaieh",
-            "Shiying Ren",
-            "Wenzhong Ji",
-            "Yun Liu",
-            "Bingquan Xia",
-            "Jingrun Ran",
-            "Shi-Zhang Qiao"
+            "Amin Talebian-Kiakalaieh, Shiying Ren, Wenzhong Ji, Yun Liu, Bingquan Xia, Jingrun Ran, Shi-Zhang Qiao"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "eade02f2dd6c59c09e1c1b0c",
@@ -116972,21 +117547,13 @@
           "published_online_at": "2026-10-18T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T03:42:11+00:00",
-          "article_type": "journal-article",
+          "article_type": "REVIEW   REVIEW",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jiaxin Li",
-            "Jianping Liu",
-            "Nan Wang",
-            "Keyi Zhang",
-            "Wen Zhang",
-            "Mengze Gao",
-            "Zhiguo Lu",
-            "Xiaoyuan Chen",
-            "Yan Li"
+            "Jiaxin Li, Jianping Liu, Nan Wang, Keyi Zhang, Wen Zhang, Mengze Gao, Zhiguo Lu, Xiaoyuan Chen, Yan Li"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "3413e84aebe7400119f8bbf5",
@@ -117006,29 +117573,13 @@
           "published_online_at": "2026-10-18T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T03:41:53+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Thomas B. Gill",
-            "Ahmet Yagmur",
-            "Matthew Rogers",
-            "Luke Benson",
-            "Nathan Fox",
-            "Ben Muggleton",
-            "Zabeada Aslam",
-            "Conor McCluskey",
-            "Phoenix Robinson",
-            "Oscar Cespedes",
-            "Bryan Hickey",
-            "Timothy Moorsom",
-            "Marty Gregg",
-            "Edmund H. Linfield",
-            "Sukhdeep Dhillon",
-            "Satoshi Sasaki",
-            "Joshua R. Freeman"
+            "Thomas B. Gill, Ahmet Yagmur, Matthew Rogers, Luke Benson, Nathan Fox, Ben Muggleton, Zabeada Aslam, Conor McCluskey, Phoenix Robinson, Oscar Cespedes, Bryan Hickey, Timothy Moorsom, Marty Gregg, Edmund H. Linfield, Sukhdeep Dhillon, Satoshi Sasaki, Joshua R. Freeman"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "9ef6bde0332c78250e5d1bc7",
@@ -117048,17 +117599,13 @@
           "published_online_at": "2026-10-18T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T03:41:55+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Ramanuja Srinivasan Saravanan",
-            "Charles E. Schwarz",
-            "Felix Adams",
-            "Kiyan Amirian",
-            "Yifei Mo"
+            "Ramanuja Srinivasan Saravanan, Charles E. Schwarz, Felix Adams, Kiyan Amirian, Yifei Mo"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "77aa18af07bebe87b2338063",
@@ -117078,23 +117625,13 @@
           "published_online_at": "2026-10-18T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T03:41:45+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jia-Lin Li",
-            "Jian-Xin Tian",
-            "Xue-Qiang Zhang",
-            "Yan-Bin Gao",
-            "Dong-Hao Zhan",
-            "Qian-Kui Zhang",
-            "Zhao Zheng",
-            "Ya-Nan Wang",
-            "Wen-Jun Feng",
-            "Rui Wen",
-            "Jia-Qi Huang"
+            "Jia-Lin Li, Jian-Xin Tian, Xue-Qiang Zhang, Yan-Bin Gao, Dong-Hao Zhan, Qian-Kui Zhang, Zhao Zheng, Ya-Nan Wang, Wen-Jun Feng, Rui Wen, Jia-Qi Huang"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "8f155d39dd3438f3acf2d6bb",
@@ -117114,16 +117651,13 @@
           "published_online_at": "2026-10-18T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T03:41:36+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Daniel Kroh",
-            "Xinyue Xu",
-            "Trevor A. Smith",
-            "Anna Köhler"
+            "Daniel Kroh, Xinyue Xu, Trevor A. Smith, Anna Köhler"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "1384895a03057ecf2d7385cd",
@@ -117216,17 +117750,13 @@
           "published_online_at": "2026-10-18T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T03:41:10+00:00",
-          "article_type": "journal-article",
+          "article_type": "REVIEW   REVIEW",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Xuezhou Ma",
-            "Xiyu Tan",
-            "Dehuan Meng",
-            "Lian-Mao Peng",
-            "Chenguang Qiu"
+            "Xuezhou Ma, Xiyu Tan, Dehuan Meng, Lian-Mao Peng, Chenguang Qiu"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "416427510ec88028cd3d5faf",
@@ -117246,22 +117776,13 @@
           "published_online_at": "2026-10-18T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T03:40:54+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yuxiao Guo",
-            "Yiren Gao",
-            "Daqing Zhang",
-            "Xu Li",
-            "Chong Zhang",
-            "Esmaeil Sheibani",
-            "Jinhai Huang",
-            "Tingwei He",
-            "Lars Kloo",
-            "Bo Xu"
+            "Yuxiao Guo, Yiren Gao, Daqing Zhang, Xu Li, Chong Zhang, Esmaeil Sheibani, Jinhai Huang, Tingwei He, Lars Kloo, Bo Xu"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "d41a538bc2489f7ddc13f063",
@@ -117306,18 +117827,13 @@
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T12:44:39+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Bin Wang",
-            "Amelia Hasenauer",
-            "Kristian Ivkovic",
-            "Ann-Sophie Frind",
-            "David Fercher",
-            "Marcy Zenobi-Wong"
+            "Bin Wang, Amelia Hasenauer, Kristian Ivkovic, Ann-Sophie Frind, David Fercher, Marcy Zenobi-Wong"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "f24f57e53a85319b8c1661f8",
@@ -117330,28 +117846,20 @@
         },
         "10.1002/adma.75442": {
           "doi": "10.1002/adma.75442",
-          "title": "Decoupled Biomass Electrooxidation Over E-Waste-Derived Au Enables Low-Voltage H 2 and Scalable FDCA Production",
+          "title": "Decoupled Biomass Electrooxidation Over E-Waste-Derived Au Enables Low-Voltage H2 and Scalable FDCA Production",
           "url": "https://doi.org/10.1002/adma.75442",
           "abstract": "ABSTRACT The oxygen evolution reaction (OER) constitutes a major energetic bottleneck in electrochemical hydrogen production. Replacing OER with low-potential organic oxidation provides an effective route to reduce cell voltage while enabling value-added chemical synthesis. Here, a nanostructured Au electrocatalyst is developed from recycled electronic waste via a corrosion-template-assisted electrodeposition strategy. Co(OH) 2 nanoarrays grown on nickel foam act as a sacrificial template to regulate galvanic displacement between chloride-coordinated Au(III) species and metallic Ni, inducing polycrystalline Au nucleation with tailored surface structures. Subsequent electrodeposition precisely controls Au size and dispersion, resulting in a substantially enlarged electrochemically active surface area. In alkaline media, the Au electrode selectively drives aldehyde oxidation of 5-hydroxymethylfurfural to 5-hydroxymethyl-2-furoic acid at potentials well below those required for OER, while enabling concurrent anodic hydrogen evolution and stable low-voltage bipolar hydrogen production. In a flow-electrolysis configuration, current densities of ∼0.6 A cm −2 are sustained at a low cell voltage of ∼1.2 V for over 200 h. By decoupling low-potential aldehyde oxidation from high-potential deep oxidation in a tandem electrolyzer, stepwise electrochemical upgrading from HMF to FDCA is achieved with reduced overall energy input. This work establishes a scalable electrochemical platform that integrates low-voltage hydrogen production with high-value biomass conversion.",
           "rss_published_at": "2026-10-19T12:06:32+00:00",
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T12:44:12+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Chengcheng Cai",
-            "Wanting Wang",
-            "Kaiyue Jiang",
-            "Sen Yang",
-            "Guangyong Bo",
-            "Huijing Ma",
-            "Yixin Zhao",
-            "Xufang Qian",
-            "Tianfu Wang"
+            "Chengcheng Cai, Wanting Wang, Kaiyue Jiang, Sen Yang, Guangyong Bo, Huijing Ma, Yixin Zhao, Xufang Qian, Tianfu Wang"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "e31d898914ff402525bdc37d",
@@ -117371,21 +117879,13 @@
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T11:44:29+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Zhichao Hou",
-            "Wenqiang Lu",
-            "Hongbao Zheng",
-            "Guowei Zeng",
-            "Shibo Zhao",
-            "Nan Chen",
-            "Heng Jiang",
-            "Dong Zhang",
-            "Fei Du"
+            "Zhichao Hou, Wenqiang Lu, Hongbao Zheng, Guowei Zeng, Shibo Zhao, Nan Chen, Heng Jiang, Dong Zhang, Fei Du"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "06289f4398ea26a64454a94d",
@@ -117405,24 +117905,13 @@
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T11:39:24+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Ziheng Li",
-            "Fengjun Ji",
-            "Guanglu Wei",
-            "Xueyi Nie",
-            "Rongshan Lan",
-            "Yalong Jia",
-            "Wei Zhai",
-            "Jingyu Lu",
-            "Qiyuan He",
-            "Jianzhong Jiang",
-            "Lijie Ci",
-            "Deping Li"
+            "Ziheng Li, Fengjun Ji, Guanglu Wei, Xueyi Nie, Rongshan Lan, Yalong Jia, Wei Zhai, Jingyu Lu, Qiyuan He, Jianzhong Jiang, Lijie Ci, Deping Li"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "f85dd3c15536955887eba986",
@@ -122080,17 +122569,167 @@
             "reason": "no_ai_method_evidence",
             "version": "1"
           }
+        },
+        "10.1002/adma.74157": {
+          "doi": "10.1002/adma.74157",
+          "title": "High-Entropy Ceramic-Enhanced Deformable Triboelectric Nanogenerator for Noncontact Biomechanical and Raindrop Energy Harvesting",
+          "url": "https://doi.org/10.1002/adma.74157",
+          "abstract": "",
+          "rss_published_at": "2026-10-16T15:27:14+00:00",
+          "published_online_at": null,
+          "published_print_at": null,
+          "indexed_at": null,
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
+          "providers": [
+            "rss"
+          ],
+          "authors": [
+            "Shengyou Li, Wei-Chen Peng, Syun-Hong Chou, Zhi-Xian Yan, Jiann-Yeu Chen, Dun-Jie Jhan, Wei-Chun Yang, Shi-Hong Chen, Yi-Lin Huang, Cheng-Hung Tsai, Ming-Yen Lu, Heng-Jui Liu, Cheolmin Park, Ying-Chih Lai"
+          ],
+          "first_seen": "2026-10-23T01:55:51.499996+00:00",
+          "item_id": "63ae90c9478ff704127e9e7f",
+          "journal_relevance": {
+            "status": "pending",
+            "method": "rule-v1",
+            "reason": "abstract_missing_or_insufficient",
+            "version": "1"
+          }
+        },
+        "10.1002/adma.74331": {
+          "doi": "10.1002/adma.74331",
+          "title": "Strain-Driven In Situ Ni Exsolution on (Sr,Ca)(Ti,Ni)O3 (100) Facets Boosts Hydrogen Spillover and Selective CO2-to-C2+ Photoreduction",
+          "url": "https://doi.org/10.1002/adma.74331",
+          "abstract": "",
+          "rss_published_at": "2026-10-13T15:50:29+00:00",
+          "published_online_at": null,
+          "published_print_at": null,
+          "indexed_at": null,
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
+          "providers": [
+            "rss"
+          ],
+          "authors": [
+            "Qianqian Shen, Wenjie Wang, Shilong Feng, Hengrui Jian, Yu Han, Yongjian Zhao, Siling Luo, Xianhu Sun, Gang Feng, Jinbo Xue, Xuanhua Li"
+          ],
+          "first_seen": "2026-10-23T01:55:51.499996+00:00",
+          "item_id": "c14dd663a8ccfedd7d1d9d3b",
+          "journal_relevance": {
+            "status": "pending",
+            "method": "rule-v1",
+            "reason": "abstract_missing_or_insufficient",
+            "version": "1"
+          }
+        },
+        "10.1002/adma.202518224": {
+          "doi": "10.1002/adma.202518224",
+          "title": "Sub-Nanometer Curvature Unlocks Quantum Orbital Flexoelectricity in Graphene",
+          "url": "https://doi.org/10.1002/adma.202518224",
+          "abstract": "",
+          "rss_published_at": "2026-10-13T15:50:29+00:00",
+          "published_online_at": null,
+          "published_print_at": null,
+          "indexed_at": null,
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
+          "providers": [
+            "rss"
+          ],
+          "authors": [
+            "Sathvik Ajay Iyengar, James G. McHugh, Jonathan P. Salvage, Robert Vajtai, Venkataramana Gadhamshetty, Alan B. Dalton, Manoj Tripathi, Pulickel M. Ajayan, Vincent Meunier"
+          ],
+          "first_seen": "2026-10-23T01:55:51.499996+00:00",
+          "item_id": "dabe5af14f229f031960faa1",
+          "journal_relevance": {
+            "status": "pending",
+            "method": "rule-v1",
+            "reason": "abstract_missing_or_insufficient",
+            "version": "1"
+          }
+        },
+        "10.1002/adma.74172": {
+          "doi": "10.1002/adma.74172",
+          "title": "CVD Grown Hybrid MoSe2-WSe2 Lateral/Vertical Heterostructures With Strong Interlayer Exciton Emission",
+          "url": "https://doi.org/10.1002/adma.74172",
+          "abstract": "",
+          "rss_published_at": "2026-10-13T15:50:29+00:00",
+          "published_online_at": null,
+          "published_print_at": null,
+          "indexed_at": null,
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
+          "providers": [
+            "rss"
+          ],
+          "authors": [
+            "Md Tarik Hossain, Sai Shradha, Axel Printschler, Julian Picker, Luc F. Oswald, Julian Führer, Nicole Engel, Honey Jayeshkumar Shah, Christof Neumann, Daria I. Markina, Moritz Quincke, Johannes Biskupek, Kenji Watanabe, Takashi Taniguchi, Ute Kaiser, Bernhard Urbaszek, Andrey Turchanin"
+          ],
+          "first_seen": "2026-10-23T01:55:51.499996+00:00",
+          "item_id": "db240b5e55a9d4e9f3ec23bb",
+          "journal_relevance": {
+            "status": "pending",
+            "method": "rule-v1",
+            "reason": "abstract_missing_or_insufficient",
+            "version": "1"
+          }
+        },
+        "10.1002/adma.74318": {
+          "doi": "10.1002/adma.74318",
+          "title": "Wide-Temperature Full-Color Electrophoretic Colloidal Crystal Displays With High Color Saturation",
+          "url": "https://doi.org/10.1002/adma.74318",
+          "abstract": "",
+          "rss_published_at": "2026-10-08T15:11:31+00:00",
+          "published_online_at": null,
+          "published_print_at": null,
+          "indexed_at": null,
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
+          "providers": [
+            "rss"
+          ],
+          "authors": [
+            "Kaiyue Zhang, Qunfeng Cheng, Mingzhu Li"
+          ],
+          "first_seen": "2026-10-23T01:55:51.499996+00:00",
+          "item_id": "15fc253d5f08976cdcb6cb9c",
+          "journal_relevance": {
+            "status": "pending",
+            "method": "rule-v1",
+            "reason": "abstract_missing_or_insufficient",
+            "version": "1"
+          }
+        },
+        "10.1002/adma.74248": {
+          "doi": "10.1002/adma.74248",
+          "title": "Healable and Post-Programmable Metal-Organic Framework-Vitrimer Composites",
+          "url": "https://doi.org/10.1002/adma.74248",
+          "abstract": "",
+          "rss_published_at": "2026-10-01T12:28:58+00:00",
+          "published_online_at": null,
+          "published_print_at": null,
+          "indexed_at": null,
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
+          "providers": [
+            "rss"
+          ],
+          "authors": [
+            "Rachel K. T. Lau, Ai Wei Gan, Sirin Kamarulzaman, Tristan T. Y. Tan, Georgina E. K. K. Seah, Sheila Y. X. Sim, Yusuke Nishiyama, Ken-ichi Otake, Angeline Y. X. Tan, Jerry X. Z. Heng, Susumu Kitagawa, Jason Y. C. Lim, Shermin S. Goh"
+          ],
+          "first_seen": "2026-10-23T01:55:51.499996+00:00",
+          "item_id": "b19a1cf636f81d89503f745f",
+          "journal_relevance": {
+            "status": "pending",
+            "method": "rule-v1",
+            "reason": "abstract_missing_or_insufficient",
+            "version": "1"
+          }
         }
       },
       "counters": {
         "relevant": 23,
-        "pending": 40,
+        "pending": 46,
         "excluded": 674
       }
     },
     "advanced-energy-materials": {
-      "last_success_at": "2026-10-23T00:20:55.216743+00:00",
-      "last_crossref_at": "2026-10-23T00:20:55.216743+00:00",
+      "last_success_at": "2026-10-23T01:55:51.499996+00:00",
+      "last_crossref_at": "2026-10-23T01:55:51.499996+00:00",
       "records": {
         "10.1002/aenm.71681": {
           "doi": "10.1002/aenm.71681",
@@ -123390,28 +124029,20 @@
         },
         "10.1002/aenm.71506": {
           "doi": "10.1002/aenm.71506",
-          "title": "High-Spin 3d Orbital Configuration Driven by Lattice Strain-Induced Electronic Modulation in Co 4 N/Co 2 P Composites Enables Metal-Sulfur Hybridization for Efficient Polysulfide Conversion",
+          "title": "High-Spin 3d Orbital Configuration Driven by Lattice Strain-Induced Electronic Modulation in Co4N/Co2P Composites Enables Metal-Sulfur Hybridization for Efficient Polysulfide Conversion",
           "url": "https://doi.org/10.1002/aenm.71506",
           "abstract": "ABSTRACT Regulating the spin state of transition metal compounds is crucial for lithium polysulfide conversion in Li-S batteries, yet challenging. Herein, a sea-urchin-like Co 4 N/Co 2 P composite is constructed via the in situ introduction of a second phase, where the induced interfacial strain and electronic modulation lead to the formation of high-spin Co sites, and the composite is further applied as a modified separator. Due to the differences in crystal structure and electronic properties between Co 4 N and Co 2 P, their interfacial contact induces charge redistribution and lattice mismatch, which subsequently generate localized tensile and compressive strains, along with an asymmetric N─Co─P coordination environment, thereby modulating the local electronic structure of Co active sites. Theoretical calculation and in situ characterization confirmed that the synergistic effect of interfacial strain and electronic effects induces d-orbital spin splitting and energy level rearrangement, increasing unpaired electrons and elevating the spin state of Co. The enhanced spin state strengthens d-p orbital hybridization with sulfur intermediates, accelerating charge transfer and optimizing adsorption behavior. Accordingly, the Co 4 N/Co 2 P-modified separator battery delivers 1389.4 mAh g −1 at 0.2 C and retains 905.9 mAh g −1 after 100 cycles (0.35% decay per cycle). This work highlights lattice-strain-induced spin-state modulation as an effective strategy for designing high-performance electrocatalysts.",
           "rss_published_at": "2026-10-07T04:23:22+00:00",
           "published_online_at": "2026-08-22T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T09:54:29+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Henan Jia",
-            "Taotao Guo",
-            "Jiayi Luo",
-            "Wenjun Zhang",
-            "Tianyu Huo",
-            "Hui Li",
-            "Zheng Liang",
-            "Fuling Tang",
-            "Junlei Qi"
+            "Henan Jia, Taotao Guo, Jiayi Luo, Wenjun Zhang, Tianyu Huo, Hui Li, Zheng Liang, Fuling Tang, Junlei Qi"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "460544c8dc80fdc4c93cc9ca",
@@ -128532,8 +129163,8 @@
       }
     },
     "advanced-functional-materials": {
-      "last_success_at": "2026-10-23T00:20:55.216743+00:00",
-      "last_crossref_at": "2026-10-23T00:20:55.216743+00:00",
+      "last_success_at": "2026-10-23T01:55:51.499996+00:00",
+      "last_crossref_at": "2026-10-23T01:55:51.499996+00:00",
       "records": {
         "10.1002/adfm.78905": {
           "doi": "10.1002/adfm.78905",
@@ -133483,30 +134114,20 @@
         },
         "10.1002/adfm.78030": {
           "doi": "10.1002/adfm.78030",
-          "title": "Upcycling Spent LiMn 2 O 4 into High-Performance LiMn x Fe 1- x PO 4 Cathodes Via Synergistic Leaching Followed by Direct Regeneration",
+          "title": "Upcycling Spent LiMn2O4 into High-Performance LiMnxFe1-xPO4 Cathodes Via Synergistic Leaching Followed by Direct Regeneration",
           "url": "https://doi.org/10.1002/adfm.78030",
           "abstract": "ABSTRACT Improper disposal of spent lithium-ion batteries causes environmental pollution and resource waste. Conventional recycling of low-cost LiMn 2 O 4 (LMO) involves complex, multi-step processes including leaching, extraction, separation, precipitation and resynthesis, leading to poor environmental and economic viability. Herein, a novel upcycling strategy is proposed, where spent LMO is directly converted into high-performance LiMn x Fe 1- x PO 4 (LMFP) cathodes through a H 3 PO 4 -ascorbic acid synergistic leaching followed by direct regeneration. Concretely, H 3 PO 4 serves as both a leaching agent and phosphorus source, while ascorbic acid acts as an auxiliary leaching agent with reducing and complexing capabilities. Their synergistic action ensures efficient Li/Mn leaching, and the resulted leached solution is subjected to solvothermal synthesis followed by calcination to upcycle olivine-structured LMFP. By introducing Macrogol 400 as a surfactant, the uniformity of the Fe-Mn precursor is improved, and a 3D conductive carbon network is constructed to accelerate the transportation of lithium-ion and electron. Consequently, the regenerated LMFP exhibits outstanding electrochemical performance, achieving a specific discharge capacity of 140.72 mAh g −1 at 1 C and 87.31% capacity retention after 1000 cycles. Economic assessment reveals a profit of 4.850$ kg −1 of spent LMO. This study provides a new approach for the green and short upcycling of spent cathode materials.",
           "rss_published_at": "2026-10-01T10:18:10+00:00",
           "published_online_at": "2026-08-26T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T22:09:03+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jinping Shuai",
-            "Xinxi Duan",
-            "Bo Xu",
-            "Fagen Zhou",
-            "Kehong Li",
-            "Shuoying Lv",
-            "Dong Wang",
-            "Guangsheng Huang",
-            "Minyu He",
-            "Weizao Liu",
-            "Xuewei Lv"
+            "Jinping Shuai, Xinxi Duan, Bo Xu, Fagen Zhou, Kehong Li, Shuoying Lv, Dong Wang, Guangsheng Huang, Minyu He, Weizao Liu, Xuewei Lv"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "8827bc2fdee17fe9f06d3a36",
@@ -134858,21 +135479,13 @@
           "published_online_at": "2026-09-02T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T23:34:52+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Qingjiang Liu",
-            "Min Niu",
-            "Xingyu Chen",
-            "Yi-Bing Wang",
-            "Xian-Xin Feng",
-            "Bo Song",
-            "Chunhui Yang",
-            "Changsong Dai",
-            "Jia-Yan Liang"
+            "Qingjiang Liu, Min Niu, Xingyu Chen, Yi-Bing Wang, Xian-Xin Feng, Bo Song, Chunhui Yang, Changsong Dai, Jia-Yan Liang"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "408b8b14beabd4c5518bd163",
@@ -153745,20 +154358,13 @@
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T13:39:37+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Cuiling Zhang",
-            "Kaixian Li",
-            "Chuncai Shan",
-            "Siqi Gong",
-            "Shuyan Xu",
-            "Huiyuan Wu",
-            "Xue Wang",
-            "Chenguo Hu"
+            "Cuiling Zhang, Kaixian Li, Chuncai Shan, Siqi Gong, Shuyan Xu, Huiyuan Wu, Xue Wang, Chenguo Hu"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "9f70031bce69099f52afb935",
@@ -153778,18 +154384,13 @@
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T12:49:15+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Zihui Liu",
-            "Qiuyan Li",
-            "Huijuan Ma",
-            "Chao Peng",
-            "Xue-Feng Yu",
-            "Jiahong Wang"
+            "Zihui Liu, Qiuyan Li, Huijuan Ma, Chao Peng, Xue-Feng Yu, Jiahong Wang"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "8d8e81cc755d5d7981a50c87",
@@ -153879,20 +154480,13 @@
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T12:46:51+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Chenyang Xu",
-            "Jingkai Liu",
-            "Shuaipeng Wang",
-            "Kerong Yang",
-            "Ziyu Liu",
-            "Xin Wang",
-            "Jinyue Dai",
-            "Xiaoqing Liu"
+            "Chenyang Xu, Jingkai Liu, Shuaipeng Wang, Kerong Yang, Ziyu Liu, Xin Wang, Jinyue Dai, Xiaoqing Liu"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "3a965eff32e14bf3a85b4985",
@@ -153912,15 +154506,13 @@
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T12:46:32+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yongqin Wang",
-            "Lixuan Zhang",
-            "Yu Fu"
+            "Yongqin Wang, Lixuan Zhang, Yu Fu"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "5c4c619af88ded3ebc53869d",
@@ -153933,27 +154525,20 @@
         },
         "10.1002/adfm.79149": {
           "doi": "10.1002/adfm.79149",
-          "title": "Jahn-Teller Distortion Triggers Unconventional Molecular O 2 Formation in P2-Type Na 0.67 MnO 2 Cathodes",
+          "title": "Jahn-Teller Distortion Triggers Unconventional Molecular O2 Formation in P2-Type Na0.67MnO2 Cathodes",
           "url": "https://doi.org/10.1002/adfm.79149",
           "abstract": "ABSTRACT Oxygen redox chemistry offers a pathway to high energy density in sodium-ion batteries but is often accompanied by irreversible molecular O 2 formation, leading to voltage hysteresis and poor cycling stability. The origin of molecular O 2 formation is commonly attributed to high-voltage charging yet remains debatable. Here, we uncover an overlooked mechanism in P2-type Na 0.67 MnO 2 , where molecular O 2 formation is decoupled from the conventional high-voltage paradigm and instead originates from Jahn-Teller distortion during discharge. Combined experimental and computational results reveal that Jahn-Teller-induced lattice distortion shortens O-O distances and enhances the O-O dimerization tendency, leading to irreversible oxygen redox and structural degradation. This finding establishes a previously unrecognized distortion-mediated pathway governing oxygen redox. To address this issue, an Al/Si co-doping strategy is developed to regulate the electronic structure and reinforce the lattice framework. The co-doping suppresses Jahn-Teller distortion, stabilizes O 2p states, and weakens the tendency toward O-O dimerization, thereby inhibiting molecular O 2 formation. Consequently, the optimized Na 0.67 Al 0.01 Si 0.01 Mn 0.99 O 2 exhibits superior cycling performance, retaining 95% capacity after 100 cycles within 4.4-2.0 V and 90% after 500 cycles within 4.0-2.0 V. These findings provide a mechanistic framework for oxygen redox chemistry and offer a practical design strategy for stabilizing high-voltage manganese-based sodium-ion batteries.",
           "rss_published_at": "2026-10-19T12:16:48+00:00",
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T12:45:57+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yang Yu",
-            "Huibo Wang",
-            "Qingyuan Li",
-            "Deniz Wong",
-            "Ruoyu Wang",
-            "Tianran Zhang",
-            "Lirong Zheng",
-            "Xiangfeng Liu"
+            "Yang Yu, Huibo Wang, Qingyuan Li, Deniz Wong, Ruoyu Wang, Tianran Zhang, Lirong Zheng, Xiangfeng Liu"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "7f502161bc10a8812fe707ee",
@@ -153973,25 +154558,13 @@
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T12:45:28+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yusong Zhou",
-            "Wan Li",
-            "Li He",
-            "Hongzhen Su",
-            "Lin Li",
-            "Huanpei Huang",
-            "Yuhui Guo",
-            "Yanting Shao",
-            "Delong Wu",
-            "Hong Liu",
-            "Zhewei Zhang",
-            "Enbing Bi",
-            "Wenzhong Shen"
+            "Yusong Zhou, Wan Li, Li He, Hongzhen Su, Lin Li, Huanpei Huang, Yuhui Guo, Yanting Shao, Delong Wu, Hong Liu, Zhewei Zhang, Enbing Bi, Wenzhong Shen"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "e60ba5778db9bee344c150d7",
@@ -154011,27 +154584,13 @@
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T12:44:59+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Xing Zhao",
-            "Yuanxi Zhang",
-            "Huilin Yan",
-            "Yujie Qiu",
-            "Min Wang",
-            "Junjie Zhou",
-            "Lin Luo",
-            "Pengjun Zhao",
-            "Ludong Li",
-            "Xiaohang Hao",
-            "Bingbing Fan",
-            "Liang Li",
-            "Shengqiang Ren",
-            "Peng Cui",
-            "Meicheng Li"
+            "Xing Zhao, Yuanxi Zhang, Huilin Yan, Yujie Qiu, Min Wang, Junjie Zhou, Lin Luo, Pengjun Zhao, Ludong Li, Xiaohang Hao, Bingbing Fan, Liang Li, Shengqiang Ren, Peng Cui, Meicheng Li"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "152be2d06444afe3e3abca68",
@@ -154044,28 +154603,20 @@
         },
         "10.1002/adfm.79141": {
           "doi": "10.1002/adfm.79141",
-          "title": "Unlocking Near-Unity Photoluminescence Quantum Yield for Cs 3 TbCl 6 Perovskite Nanocrystals Via Fluoroquinolone Surface Engineering",
+          "title": "Unlocking Near-Unity Photoluminescence Quantum Yield for Cs3TbCl6 Perovskite Nanocrystals Via Fluoroquinolone Surface Engineering",
           "url": "https://doi.org/10.1002/adfm.79141",
           "abstract": "ABSTRACT Rare-earth-based lead-free halide perovskite nanocrystals (NCs) are promising for optoelectronics due to their narrow-band emission and physicochemical stability. However, the intrinsic 4f-4f forbidden transitions of rare-earth ions result in limited absorption cross-sections. Furthermore, inevitable surface defects at the nanoscale trigger non-radiative recombination, limiting luminescence efficiency. Herein, a surface engineering strategy utilizing fluoroquinolone (FQ) molecules is proposed to construct a hybrid system. Specifically, by introducing norfloxacin (NFLX) as a surface ligand, NFLX-modified Cs 3 TbCl 6 nanocrystals (NCs) have been developed that achieve a near-unity photoluminescence quantum yield (PLQY) of 99.67%. Experiments and theoretical analyses reveal that the organic ligands effectively passivate surface defects, thereby suppressing non-radiative transitions. Simultaneously, the ligand acts as an efficient antenna that amplifies excitation light capture and establishes energy transfer pathways to NCs. Notably, it is demonstrated that beyond energy level matching, the electronic effects, steric configurations, and absorption capacities of ligand are crucial factors for efficient antenna effect. Finally, the effectiveness of this strategy is validated through applications in extreme-environment-resilient fluorescent anti-counterfeiting fibers and high-quality white light-emitting diodes (WLEDs). This work overcomes the bottleneck limiting the luminescence efficiency of rare-earth halide NCs, paving a new technical pathway for the design of high-efficiency surface-coordinated hybrid rare-earth luminescent NCs.",
           "rss_published_at": "2026-10-19T12:08:19+00:00",
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T12:44:34+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Hui Zeng",
-            "Sai Xu",
-            "Yuye Gu",
-            "You Li",
-            "Yuefeng Gao",
-            "Yichao Wang",
-            "Danyang Wu",
-            "Hongquan Yu",
-            "Baojiu Chen"
+            "Hui Zeng, Sai Xu, Yuye Gu, You Li, Yuefeng Gao, Yichao Wang, Danyang Wu, Hongquan Yu, Baojiu Chen"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "0593d939622eaa8d9ddfc5ba",
@@ -154085,22 +154636,13 @@
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T12:44:07+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yun Shen",
-            "Shideng Yuan",
-            "Fuping Han",
-            "Peijun Zheng",
-            "Xiang Ma",
-            "Xin Liu",
-            "Manshu Zhao",
-            "Yiming Li",
-            "Yue Chen",
-            "Zhining Wang"
+            "Yun Shen, Shideng Yuan, Fuping Han, Peijun Zheng, Xiang Ma, Xin Liu, Manshu Zhao, Yiming Li, Yue Chen, Zhining Wang"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "d77c344e5567737bcd4b5457",
@@ -154120,23 +154662,13 @@
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T12:43:39+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Wenhua Zheng",
-            "Sheng Zhao",
-            "Fanxiang Meng",
-            "Yudi Zhao",
-            "Shixia Bian",
-            "Zezheng Ye",
-            "Hongyu Lin",
-            "Wengang Liu",
-            "Ning Sui",
-            "Jun Deng",
-            "Zhiling Zhu"
+            "Wenhua Zheng, Sheng Zhao, Fanxiang Meng, Yudi Zhao, Shixia Bian, Zezheng Ye, Hongyu Lin, Wengang Liu, Ning Sui, Jun Deng, Zhiling Zhu"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "a106a88dfa150c8c1c9ae906",
@@ -154149,23 +154681,20 @@
         },
         "10.1002/adfm.79027": {
           "doi": "10.1002/adfm.79027",
-          "title": "Switching Superconductivity with Uniaxial Strain in a high-Tc Cuprate Superconductor",
+          "title": "Switching Superconductivity with Uniaxial Strain in a high-Tc${\\rm T}_{c}$ Cuprate Superconductor",
           "url": "https://doi.org/10.1002/adfm.79027",
           "abstract": "ABSTRACT A hallmark of quantum materials is their strong response to external stimuli, which makes them attractive for technological applications. In particular, when modest perturbations can drive a system between two electronic states, this can be used in memory and switching device applications. Here, we show that the superconducting transition temperature, , in a copper oxide superconductor can be dramatically altered by applying compressive uniaxial strain. This sensitivity suggests a practical route to switching superconductivity on and off. Such control could be realized by integrating superconductors with piezoelectric substrates, providing a platform to engineer superconducting devices whose state is tuned simply by strain.",
           "rss_published_at": "2026-10-19T12:01:38+00:00",
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T12:43:25+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Baizhi Gao",
-            "Qianli Ma",
-            "Bruce D. Gaulin",
-            "Young-June Kim"
+            "Baizhi Gao, Qianli Ma, Bruce D. Gaulin, Young-June Kim"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "bccb9538a4ea42dda0b0bc4b",
@@ -154185,20 +154714,13 @@
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T11:50:30+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Diandian Zhang",
-            "Yixin Fan",
-            "Linting Wei",
-            "Fangting Zheng",
-            "Ruitong Ge",
-            "Yanzhen He",
-            "Wen Zhou",
-            "Shaohai Fu"
+            "Diandian Zhang, Yixin Fan, Linting Wei, Fangting Zheng, Ruitong Ge, Yanzhen He, Wen Zhou, Shaohai Fu"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "78a2b333128d5b4e731a7e57",
@@ -154218,22 +154740,13 @@
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T11:50:03+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Chao-Yang Chai",
-            "Qiang-Qiang Bi",
-            "Cheng-Dong Liu",
-            "Zhao-Rui Hua",
-            "Shu-Yin Jia",
-            "Jia-Hang Wu",
-            "Fei-Yang Li",
-            "Shuo Tan",
-            "Zhong-Xia Wang",
-            "Wen Zhang"
+            "Chao-Yang Chai, Qiang-Qiang Bi, Cheng-Dong Liu, Zhao-Rui Hua, Shu-Yin Jia, Jia-Hang Wu, Fei-Yang Li, Shuo Tan, Zhong-Xia Wang, Wen Zhang"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "c96685b9868f86ef35b19613",
@@ -154253,19 +154766,13 @@
           "published_online_at": "2026-10-19T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-19T11:49:52+00:00",
-          "article_type": "journal-article",
+          "article_type": "REVIEW   REVIEW",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jaehong Park",
-            "Youngmin Han",
-            "Jaechan Song",
-            "Youngchan Cho",
-            "Zhongyunshen Zhu",
-            "Hocheon Yoo",
-            "Wonjun Shin"
+            "Jaehong Park, Youngmin Han, Jaechan Song, Youngchan Cho, Zhongyunshen Zhu, Hocheon Yoo, Wonjun Shin"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "035a60d7b5980b989aa6c3bd",
@@ -158965,8 +159472,8 @@
       }
     },
     "acta-materialia": {
-      "last_success_at": "2026-10-23T00:20:55.216743+00:00",
-      "last_crossref_at": "2026-10-23T00:20:55.216743+00:00",
+      "last_success_at": "2026-10-23T01:55:51.499996+00:00",
+      "last_crossref_at": "2026-10-23T01:55:51.499996+00:00",
       "records": {
         "10.1016/j.actamat.2026.122828": {
           "doi": "10.1016/j.actamat.2026.122828",
@@ -158977,7 +159484,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:41:57+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159003,14 +159510,14 @@
         },
         "10.1016/j.actamat.2026.122768": {
           "doi": "10.1016/j.actamat.2026.122768",
-          "title": "Atomic-flux tunable exchange-spring magnetism in SmFe12/Fe nanocomposites",
+          "title": "Atomic-flux tunable exchange-spring magnetism in SmFe 12 /Fe nanocomposites",
           "url": "https://doi.org/10.1016/j.actamat.2026.122768",
           "abstract": "",
           "rss_published_at": "2026-12-01T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:08+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159046,7 +159553,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:48+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159077,7 +159584,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:52+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159109,14 +159616,14 @@
         },
         "10.1016/j.actamat.2026.122830": {
           "doi": "10.1016/j.actamat.2026.122830",
-          "title": "Thermodynamic stability of Al/MgZn2 interfaces including vibrational entropy and thermal expansion contributions",
+          "title": "Thermodynamic stability of Al/MgZn 2 interfaces including vibrational entropy and thermal expansion contributions",
           "url": "https://doi.org/10.1016/j.actamat.2026.122830",
           "abstract": "",
           "rss_published_at": "2026-12-01T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:27+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159145,7 +159652,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:46+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159175,7 +159682,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:27+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159210,7 +159717,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:49+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159244,7 +159751,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:41:46+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159271,7 +159778,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:55+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159302,7 +159809,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:19+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159336,7 +159843,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:46+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159361,14 +159868,14 @@
         },
         "10.1016/j.actamat.2026.122789": {
           "doi": "10.1016/j.actamat.2026.122789",
-          "title": "Volume, grain- and interphase-boundary diffusion of Ag in eutectic AlCoCrFeNi2.1 compositionally complex alloy",
+          "title": "Volume, grain- and interphase-boundary diffusion of Ag in eutectic AlCoCrFeNi 2.1 compositionally complex alloy",
           "url": "https://doi.org/10.1016/j.actamat.2026.122789",
           "abstract": "",
           "rss_published_at": "2026-12-01T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:41:53+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159394,14 +159901,14 @@
         },
         "10.1016/j.actamat.2026.122817": {
           "doi": "10.1016/j.actamat.2026.122817",
-          "title": "Phase stability and synthesis of Na4Ti5O12 in the Na2O-TiO2 system: CALPHAD modeling and experiment",
+          "title": "Phase stability and synthesis of Na 4 Ti 5 O 12 in the Na 2 O-TiO 2 system: CALPHAD modeling and experiment",
           "url": "https://doi.org/10.1016/j.actamat.2026.122817",
           "abstract": "",
           "rss_published_at": "2026-12-01T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:40+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159433,7 +159940,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:38+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159466,14 +159973,14 @@
         },
         "10.1016/j.actamat.2026.122826": {
           "doi": "10.1016/j.actamat.2026.122826",
-          "title": "Enhancement of damping constant in Nd-doped L10-FePt at elevated temperatures for HAMR",
+          "title": "Enhancement of damping constant in Nd-doped L1 0 -FePt at elevated temperatures for HAMR",
           "url": "https://doi.org/10.1016/j.actamat.2026.122826",
           "abstract": "",
           "rss_published_at": "2026-12-01T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:01+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159504,7 +160011,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:28+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159537,7 +160044,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:27+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159559,14 +160066,14 @@
         },
         "10.1016/j.actamat.2026.122802": {
           "doi": "10.1016/j.actamat.2026.122802",
-          "title": "Rare-earth-free Fe2P-based compounds: Tuning and modeling of hard magnetic properties",
+          "title": "Rare-earth-free Fe 2 P-based compounds: Tuning and modeling of hard magnetic properties",
           "url": "https://doi.org/10.1016/j.actamat.2026.122802",
           "abstract": "",
           "rss_published_at": "2026-12-01T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:18+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159607,7 +160114,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:40+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159635,7 +160142,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:26+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159670,7 +160177,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:42+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159700,7 +160207,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:26+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159736,7 +160243,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:45+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159762,7 +160269,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:42+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159797,7 +160304,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:39+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159817,14 +160324,14 @@
         },
         "10.1016/j.actamat.2026.122816": {
           "doi": "10.1016/j.actamat.2026.122816",
-          "title": "M-site 3d-orbital hybridization in Cr2AlB2 for synergistically enhanced microwave absorption and oxidation resistance",
+          "title": "M-site 3d-orbital hybridization in Cr 2 AlB 2 for synergistically enhanced microwave absorption and oxidation resistance",
           "url": "https://doi.org/10.1016/j.actamat.2026.122816",
           "abstract": "",
           "rss_published_at": "2026-12-01T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:49+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159859,7 +160366,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:52+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159890,7 +160397,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:39+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159918,7 +160425,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:49+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159950,7 +160457,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:36+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -159982,7 +160489,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:46+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160014,7 +160521,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:42+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160060,7 +160567,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:40+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160083,14 +160590,14 @@
         },
         "10.1016/j.actamat.2026.122815": {
           "doi": "10.1016/j.actamat.2026.122815",
-          "title": "Dislocation-mediated continuous precipitation in Mo-bearing martensitic steel: from solute co-segregation and coherent precursors to α-M2C carbides",
+          "title": "Dislocation-mediated continuous precipitation in Mo-bearing martensitic steel: from solute co-segregation and coherent precursors to α-M 2 C carbides",
           "url": "https://doi.org/10.1016/j.actamat.2026.122815",
           "abstract": "",
           "rss_published_at": "2026-12-01T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:08+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160115,14 +160622,14 @@
         },
         "10.1016/j.actamat.2026.122814": {
           "doi": "10.1016/j.actamat.2026.122814",
-          "title": "Superior cryogenic strength-ductility synergy in a crack-free additively manufactured multicomponent L12-strengthened medium-entropy alloy",
+          "title": "Superior cryogenic strength-ductility synergy in a crack-free additively manufactured multicomponent L1 2 -strengthened medium-entropy alloy",
           "url": "https://doi.org/10.1016/j.actamat.2026.122814",
           "abstract": "",
           "rss_published_at": "2026-12-01T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:41+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160160,7 +160667,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:42+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160193,7 +160700,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:46+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160218,14 +160725,14 @@
         },
         "10.1016/j.actamat.2026.122805": {
           "doi": "10.1016/j.actamat.2026.122805",
-          "title": "Cr substitution in NASICON cathodes unlocks V4+/V5+ redox and intermediate-phase evolution for high-energy and stable sodium storage",
+          "title": "Cr substitution in NASICON cathodes unlocks V 4+ /V 5+ redox and intermediate-phase evolution for high-energy and stable sodium storage",
           "url": "https://doi.org/10.1016/j.actamat.2026.122805",
           "abstract": "",
           "rss_published_at": "2026-12-01T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:43:12+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160258,7 +160765,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T17:39:47+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160293,7 +160800,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:40+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160329,7 +160836,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:46+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160364,7 +160871,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:52+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160403,7 +160910,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:41+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160433,7 +160940,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:43:28+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160454,14 +160961,14 @@
         },
         "10.1016/j.actamat.2026.122775": {
           "doi": "10.1016/j.actamat.2026.122775",
-          "title": "Hydrogen sorption-induced tuning of magnetocaloric properties of heavy rare-earth-based Laves-phase DyCo2 for hydrogen liquefaction",
+          "title": "Hydrogen sorption-induced tuning of magnetocaloric properties of heavy rare-earth-based Laves-phase DyCo 2 for hydrogen liquefaction",
           "url": "https://doi.org/10.1016/j.actamat.2026.122775",
           "abstract": "",
           "rss_published_at": "2026-12-01T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:52+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160497,7 +161004,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:45+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160534,7 +161041,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:26+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160567,7 +161074,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:39+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160598,7 +161105,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:41:56+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160627,7 +161134,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:51+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160655,7 +161162,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:31+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160682,7 +161189,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:52+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160712,7 +161219,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:41:57+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160774,7 +161281,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:41:57+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160807,7 +161314,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:21+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160839,7 +161346,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:14+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160870,14 +161377,14 @@
         },
         "10.1016/j.actamat.2026.122770": {
           "doi": "10.1016/j.actamat.2026.122770",
-          "title": "Simultaneous enhancement of coercivity and electric resistivity of Nd-Fe-B magnets by Tb2O3 stepwise reduction-grain boundary diffusion process",
+          "title": "Simultaneous enhancement of coercivity and electric resistivity of Nd-Fe-B magnets by Tb 2 O 3 stepwise reduction-grain boundary diffusion process",
           "url": "https://doi.org/10.1016/j.actamat.2026.122770",
           "abstract": "",
           "rss_published_at": "2026-12-01T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:42+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160912,7 +161419,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:24+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160948,7 +161455,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:41:46+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -160976,7 +161483,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:43:28+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -161014,7 +161521,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:59+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -161042,14 +161549,14 @@
         },
         "10.1016/j.actamat.2026.122769": {
           "doi": "10.1016/j.actamat.2026.122769",
-          "title": "Influence of magnetic phase transition and magnetic structure on cryogenic magnetocaloric effect in metamagnetic Ho3Si2C2 compound",
+          "title": "Influence of magnetic phase transition and magnetic structure on cryogenic magnetocaloric effect in metamagnetic Ho 3 Si 2 C 2 compound",
           "url": "https://doi.org/10.1016/j.actamat.2026.122769",
           "abstract": "",
           "rss_published_at": "2026-12-01T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:31+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -161083,7 +161590,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:52+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -161113,7 +161620,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:24+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -161143,7 +161650,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:28+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -161172,7 +161679,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:43:27+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -161207,7 +161714,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:28+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -161271,7 +161778,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:41:56+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -161300,7 +161807,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:41+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -161334,7 +161841,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:52+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -161366,7 +161873,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:33+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -161410,7 +161917,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:59+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -162008,7 +162515,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:51+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -162037,7 +162544,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:52+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -162077,7 +162584,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:42:39+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -162175,7 +162682,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T21:41:25+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -162239,7 +162746,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T10:41:05+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -162538,7 +163045,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T16:39:09+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -162624,7 +163131,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T21:41:05+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -162680,7 +163187,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-19T17:39:29+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -163001,8 +163508,8 @@
       }
     },
     "matter": {
-      "last_success_at": "2026-10-23T00:20:55.216743+00:00",
-      "last_crossref_at": "2026-10-23T00:20:55.216743+00:00",
+      "last_success_at": "2026-10-23T01:55:51.499996+00:00",
+      "last_crossref_at": "2026-10-23T01:55:51.499996+00:00",
       "records": {
         "10.1016/j.matt.2026.103052": {
           "doi": "10.1016/j.matt.2026.103052",

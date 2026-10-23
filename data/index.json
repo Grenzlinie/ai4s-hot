@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-23T00:20:55.216743+00:00",
+  "generated_at": "2026-10-23T01:55:51.499996+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -1253,64 +1253,6 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.8774,
       "topic_cache_token": "6af16ebb5c007c4ed695f6d88f76e6500c9802e0a08385d0258d0c7cc08aae71",
-      "topic_version": "faceted-local-v2.4",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "b52cc37a8a30c7d064ab6875",
-      "url": "https://doi.org/10.1038/s41467-026-78853-7",
-      "title": "Illusory disagreement over socialism and capitalism in the United States and Brazil",
-      "source_ids": [
-        "journal-nature-communications"
-      ],
-      "source_names": [
-        "Nature Communications"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-10-23T00:00:00+00:00",
-      "first_seen": "2026-10-23T00:20:55.216743+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Lucas Woodley",
-        "Joshua D. Greene"
-      ],
-      "journal_id": "nature-communications",
-      "journal_title": "Nature Communications",
-      "journal_issns": [
-        "2041-1723"
-      ],
-      "publisher": "Springer Nature",
-      "doi": "10.1038/s41467-026-78853-7",
-      "published_online_at": "2026-10-23T00:00:00+00:00",
-      "published_print_at": null,
-      "indexed_at": "2026-10-22T23:40:28+00:00",
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.2857,
-      "topic_cache_token": "46999595fd067cb656738da1de2335963d5094a767aa50e3951b743fa37dfc28",
       "topic_version": "faceted-local-v2.4",
       "topic_backend": "lexical"
     },
@@ -16858,8 +16800,8 @@
       "published_at": "2026-10-19T13:40:50+00:00",
       "first_seen": "2026-10-23T00:20:55.216743+00:00",
       "excerpt": "On-policy distillation can transfer the reasoning capabilities of a strong teacher to a smaller student. However, distillation from a stronger teacher model faces two mismatches: its solutions may be difficult for a smaller student to imitate, and its token-level probabilities may be incompatible with, or even unavailable to, the student. Existing methods handle these settings through different forms of supervision. To this end, we propose Bridged Self-Distillation (BSD), a unified framework for distilling from any teacher that provides reasoning traces. The model to be distilled from, termed the external teacher, first provides a reasoning trace as privileged context, which can be generated in an offline fashion. The student generates rollouts without this context, while a copy of the student conditioned on it, serving as the self-teacher, scores the same rollouts in the student's own token space. BSD uses the resulting token-level guidance to adjust updates on unsuccessful rollouts, with a verifier providing the outcome signal. As the external teacher is queried only to produce text, the same training procedure applies to all teacher scenarios: shared-tokenizer, cross-tokenizer, and closed API teachers. Across these scenarios, BSD improves over the base model and outperforms baselines tailored to each scenario, offering a novel and unified pathway for distillation. Code is available: https://github.com/TUMLegalTech/Bridged-Self-Distillation",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出 Bridged Self-Distillation（BSD），一个统一框架：外部教师只提供推理轨迹作为特权上下文，学生自身在不含该上下文的情况下生成 rollout，而一个以该上下文为条件的冻结学生副本作为自教师，在学生自身词表空间中对同一 rollout 打分，用得到的 token 级差异调整未成功 rollout 的更新，并由验证器提供结果信号。据原文，该方法适用于共享分词器、跨分词器和闭源 API 教师三种场景，原文报告其在十二个教师—学生对和三个数学推理基准上相对基线有所提升，并称其训练稳定、受益于更完整的推理轨迹、将指导集中于不确定 token；原文未在摘要中给出具体性能数字，且上述效果为论文自身报告而非独立验证。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.26397",
       "authors": [
         "Runsheng Chen",
@@ -16910,7 +16852,13 @@
       "topic_coverage": 0.8824,
       "topic_cache_token": "16b229a96e959d24acae2ac3d9ef9db1b90ecca762b96d05d1b642bb04ea540c",
       "topic_version": "faceted-local-v2.4",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.26397",
+        "sha256": "56f7524c8cfe6cddc320c13b98da1cd6545450f5aa55acb3e4d7deda747fa89c",
+        "chars": 12000
+      }
     },
     {
       "id": "1dbe22633003a2af4fddcdba",
@@ -17144,18 +17092,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Ziheng Li",
-        "Fengjun Ji",
-        "Guanglu Wei",
-        "Xueyi Nie",
-        "Rongshan Lan",
-        "Yalong Jia",
-        "Wei Zhai",
-        "Jingyu Lu",
-        "Qiyuan He",
-        "Jianzhong Jiang",
-        "Lijie Ci",
-        "Deping Li"
+        "Ziheng Li, Fengjun Ji, Guanglu Wei, Xueyi Nie, Rongshan Lan, Yalong Jia, Wei Zhai, Jingyu Lu, Qiyuan He, Jianzhong Jiang, Lijie Ci, Deping Li"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -19031,8 +18968,8 @@
       "published_at": "2026-10-19T00:00:00+00:00",
       "first_seen": "2026-10-23T00:20:55.216743+00:00",
       "excerpt": "LLM agents that compute the right answer can still answer wrongly. Agent harnesses increasingly keep long tool outputs out of the context window, saving them to files that the agent searches or reads on demand. We ask where this costs accuracy with a real scientific tool: PHREEQC, a widely used geochemistry simulator from the USGS, whose reports reach 846.8k characters and whose determinism lets every printed value be traced. Agents use it to answer 158 execution-verified multiple-choice items. When agents read the simulator's report through a section index rather than in context, GPT-5.1 and GPT-5.2 lose 11.3 and 7.9 points of accuracy, while Claude Opus 4.6 and Claude Sonnet 4.6 show no detectable cost. Re-running all 11,007 logged simulator calls shows that both GPT models compute the keyed value about as often as before; what changes is the evidence they answer from. Under retrieval they often skip the report, answer from their own higher-precision output files, and misround to a neighboring option, a failure we call evidence substitution. With the simulation held fixed, retrieval still costs GPT-5.2 9.4 points. For GPT-5.4, more frequent correct simulations mask an evidence-use loss of about ten points, leaving a net change indistinguishable from zero. Naming the authoritative output raises accuracy by 6.3-7.9 points over plain retrieval for the three GPT models; for GPT-5.1 and GPT-5.2, inlining outputs that fit works as well, while asking for correct rounding does not. Context-management choices in agent harnesses should be judged by where accuracy is lost, not only by final accuracy.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文在 PHREEQC 地球化学模拟器上比较了将长工具输出以内联方式或经节索引检索方式提供给 LLM 智能体时的表现，并复跑了全部 11,007 次已记录的模拟器调用以定位准确率损失发生在计算、暴露还是最终作答环节。对科研工作而言，该研究提示智能体框架的上下文管理选择应依据准确率在哪一环节损失来评估，而非只看最终准确率；但公开材料仅为有界摘录、未验证完整，相关性能差异来自特定模型与基准设置，不能视为已验证的普遍结论。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.26836",
       "authors": [
         "Ke Zhang",
@@ -19070,7 +19007,13 @@
       "topic_coverage": 0.8333,
       "topic_cache_token": "a34f35e8b15c090bc9e21d9c9bb549bc85ebea58a29fd99cab2508cbafe936ff",
       "topic_version": "faceted-local-v2.4",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.26836",
+        "sha256": "7ab4f58a6f2482aa65003e5bae8547ddaafc72dd0cadc67ceca9930f7f00373c",
+        "chars": 12000
+      }
     },
     {
       "id": "644098a7aa74502fed65cc4b",
@@ -19094,8 +19037,8 @@
       "published_at": "2026-10-19T00:00:00+00:00",
       "first_seen": "2026-10-23T00:20:55.216743+00:00",
       "excerpt": "Agents need reliable ways to validate their outputs, both when completing tasks and when filtering synthetic training data. We study verifier generation: from the instruction and environment available for solving a task, an agent writes an executable verifier that must accept every valid solution and reject invalid ones. We introduce VerifierBench, a benchmark of 222 tasks from six agent benchmarks spanning tool-call, state-based, and code verification, with 4,993 hidden test cases that include alternative valid solutions and attacks; Verifier4Verifier (V4V), a six-check audit, screens its source verifiers and test suites. Across 19 models in a common agent harness, normalized balanced accuracy ranges from 10.6 to 62.1, with generated verifiers consistently rejecting invalid solutions more reliably than they accept valid ones. This apparent strength can mask overly restrictive verification: most false rejections in the analyzed records come from verifiers that accept no tested solution to a task. Case studies reveal unsupported assumptions about solution formats, tool use, and code changes that exclude valid solutions. These errors survive self-testing because agents test solutions that share the verifier's mistaken assumptions, or submit verifiers without confirming that any correct solution passes. These findings suggest testing both whether a verifier accepts a correct solution and whether it accepts other solutions permitted by the task. The project page and dataset are publicly available.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出了VerifierBench，一个包含222个任务和4,993个隐藏测试用例的基准，用于评估LLM智能体为工具调用、状态和代码验证任务生成可执行验证器，并引入Verifier4Verifier六项审计筛选源验证器与测试套件。基于19个模型的结果显示，生成验证器在拒绝无效解方面比接受有效解更可靠，但该表现可能掩盖过度限制性验证，因此科研人员应将生成验证器同时测试其对正确解和其他任务允许解的接受情况。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.28679",
       "authors": [
         "Jianing Yin",
@@ -19156,7 +19099,13 @@
       "topic_coverage": 0.8535,
       "topic_cache_token": "9d5961af31000270004c79e39a8135884d9d57db9a914f1b60d0b183651f9f6e",
       "topic_version": "faceted-local-v2.4",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.28679",
+        "sha256": "7a88f154426af574c0712153d5aa66074480fd78ded113791e4eacb44bfd2e64",
+        "chars": 12000
+      }
     },
     {
       "id": "5d474bce2aea3072b8210844",
@@ -19228,6 +19177,90 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.7794,
       "topic_cache_token": "fc200bf9e6348f3c2b657f33ff3dd86f45448b30740c8b95853a9a13298ef72d",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "3aa05f104d8042f7e4e15ad7",
+      "url": "https://arxiv.org/abs/2610.27233",
+      "title": "MMedAgent-Plus: Scaling Multimodal Medical Agents across Modalities, Tasks and Workflows",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-19T00:00:00+00:00",
+      "first_seen": "2026-10-23T01:55:51.499996+00:00",
+      "excerpt": "Medical workflows often require multiple interdependent analyses, but existing specialist and generalist AI models are not designed to coordinate them. We introduce MMedAgent-Plus, a multimodal medical tool-use agent that combines a vision-language planner with 18 leading specialist models spanning 12 tasks and 8 modalities. Through a unified tool interface, the planner selects specialists, executes them in sequence, and synthesizes responses grounded in their outputs. The planner is instruction-tuned on 208,928 samples from 32 public medical benchmarks, covering single- and multi-tool interactions across single and multiple rounds. We separately evaluate tool orchestration, response synthesis, and end-to-end execution on held-out samples. MMedAgent-Plus achieves tool-call accuracies of 91.0%, 98.1%, and 80.7% in single-tool multi-round, multi-tool multi-round, and multi-tool single-round settings, respectively. Given correct tool outputs, MMedAgent-Plus achieves scores of 14.4-14.8 out of 15 for faithfulness, completeness, and conciseness across 600 evaluation samples. In end-to-end execution without pre-supplied tool outputs, MMedAgent-Plus correctly invokes the required specialist in 90.6% of 350 evaluation cases spanning seven tasks. Its final-answer accuracy reaches 0.98, matching the dedicated leading specialist and exceeding the strongest baseline (0.28).",
+      "summary": "本文提出MMedAgent-Plus多模态医疗工具调用智能体，将视觉语言规划器与覆盖12项任务、8种模态的18个专科模型通过统一工具接口组合，并基于32个公开医疗基准的208,928个样本进行指令微调，分别评估工具编排、回答综合与端到端执行。据提供的材料，在未预先提供工具输出的350个端到端评估案例（涵盖7项任务）中，该智能体正确调用所需专科模型的比例为90.6%，最终回答准确率为0.98，与领先专科模型持平并高于最强基线0.28；这些数字来自作者报告，尚未经独立验证，且材料未说明该智能体在真实临床工作流中的泛化与安全限制。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.27233",
+      "authors": [
+        "Ruoxin Wang",
+        "Yuanting Pan",
+        "Binxu Li",
+        "Ruiyang Ji",
+        "Yaqian Chen",
+        "Jiayuan Ding",
+        "Qifan Wang",
+        "Lifu Huang",
+        "Mingjie Li",
+        "Yu Zhang",
+        "Ehsan Adeli",
+        "Kilian Pohl",
+        "Zhe Xu",
+        "Zihao Lin",
+        "Haoyu Dong",
+        "Yixin Wang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：evaluation。"
+        },
+        {
+          "id": "zotero:8f22e62349472c4815f4275fbcf89c76",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：agent。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:life_sciences"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8898,
+      "topic_cache_token": "c3c4955e40e8541a66fc4f7371343d8be4db79c68d131ca627a43fe64f64e295",
       "topic_version": "faceted-local-v2.4",
       "topic_backend": "lexical"
     },
@@ -19413,17 +19446,7 @@
       "summary": "本文综述了钠金属电池的主要实际瓶颈，并系统梳理了电解液策略（如溶剂工程、盐化学优化、添加剂、高浓度及弱溶剂化电解液）对调控Na+传输和构建稳健SEI层的作用，同时讨论了原位/操作表征与多尺度计算、机器学习相结合用于解析钠金属界面动态演化。该综述可为科研人员理解SEI形成机制、设计电解液与界面调控策略以及规划先进表征与建模研究提供参考，但相关性能优势和应用前景主要基于综述性总结，具体结论仍需结合原始研究验证。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Sikandar Iqbal",
-        "Usman Ghani",
-        "Xuebing Zhu",
-        "Yun Bai",
-        "Jinlong Jiang",
-        "Ying Zhang",
-        "Huiqin Huang",
-        "Fakhr uz Zaman",
-        "Hua Kun Liu",
-        "Shi-Xue Dou",
-        "Chao Wu"
+        "Sikandar Iqbal, Usman Ghani, Xuebing Zhu, Yun Bai, Jinlong Jiang, Ying Zhang, Huiqin Huang, Fakhr uz Zaman, Hua Kun Liu, Shi-Xue Dou, Chao Wu"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -19575,15 +19598,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Jiaxin Li",
-        "Jianping Liu",
-        "Nan Wang",
-        "Keyi Zhang",
-        "Wen Zhang",
-        "Mengze Gao",
-        "Zhiguo Lu",
-        "Xiaoyuan Chen",
-        "Yan Li"
+        "Jiaxin Li, Jianping Liu, Nan Wang, Keyi Zhang, Wen Zhang, Mengze Gao, Zhiguo Lu, Xiaoyuan Chen, Yan Li"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -24066,6 +24081,64 @@
         "sha256": "224ab88fba6c3934a298689711f005c7e5a70fae3b32523fea17de46f4917f53",
         "chars": 12000
       }
+    },
+    {
+      "id": "63ae90c9478ff704127e9e7f",
+      "url": "https://doi.org/10.1002/adma.74157",
+      "title": "High-Entropy Ceramic-Enhanced Deformable Triboelectric Nanogenerator for Noncontact Biomechanical and Raindrop Energy Harvesting",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-16T15:27:14+00:00",
+      "first_seen": "2026-10-23T01:55:51.499996+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Shengyou Li, Wei-Chen Peng, Syun-Hong Chou, Zhi-Xian Yan, Jiann-Yeu Chen, Dun-Jie Jhan, Wei-Chun Yang, Shi-Hong Chen, Yi-Lin Huang, Cheng-Hung Tsai, Ming-Yen Lu, Heng-Jui Liu, Cheolmin Park, Ying-Chih Lai"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74157",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.2,
+      "topic_cache_token": "cb6d07c1cfc60309bfcf5db9877860016e456545060d8b7420cce88ba5c9026e",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
     },
     {
       "id": "3baa00432e352f4852be6386",
@@ -34236,8 +34309,8 @@
       "published_at": "2026-10-15T00:00:00+00:00",
       "first_seen": "2026-10-23T00:20:55.216743+00:00",
       "excerpt": "Methods for training language models on sensitive data differ in how they balance capability gains against the risk of leaking private information. In this paper, we present a controlled comparison of data-level and training-level interventions for navigating the capability-privacy tradeoff on synthetic medical records with canaries to probe for leakage. Direct finetuning performs best on capability metrics but leads to the most privacy leakage, while DP-SGD reduces leakage at substantial cost to capabilities. Generating synthetic data from these records offers a more favorable balance, particularly when guided by a uniqueness-aware instruction to replace private details. Relative to naive paraphrasing, privacy-aware rewriting improves privacy protection across a variety of different rewriting models. We also find that more capable rewriting models generally reduce the risks of downstream privacy leakage, although held-out fit does not improve monotonically and increased test-time compute yields inconsistent gains. Overall, these results highlight privacy-aware rewriting as a promising direction for achieving a more favorable trade-off between capabilities and empirical privacy compared to other training-level methods, and our evaluation framework supports comparisons of future models and methods.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文在带金丝雀的合成医疗记录上对数据级与训练级干预做了受控比较，并发现隐私感知改写比朴素复述提供更好的隐私保护，能力更强的改写模型通常降低下游隐私泄露风险，但留出拟合并非单调改善且增加测试时计算带来不一致的收益。该评估框架可用于比较未来模型与方法在能力与经验隐私权衡上的表现，但结论基于合成医疗记录与金丝雀探测，直接微调能力最佳却泄露最多，DP-SGD显著牺牲能力以降低泄露，改写模型规模与测试时计算的效果存在非单调和不一致的限制。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.22659",
       "authors": [
         "Zihao Zhao",
@@ -39089,6 +39162,180 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.5,
       "topic_cache_token": "9ff33836a58ed40ba423a5fda878e0ed47d45749f5ec33defb8a613a740e5469",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "db240b5e55a9d4e9f3ec23bb",
+      "url": "https://doi.org/10.1002/adma.74172",
+      "title": "CVD Grown Hybrid MoSe2-WSe2 Lateral/Vertical Heterostructures With Strong Interlayer Exciton Emission",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-13T15:50:29+00:00",
+      "first_seen": "2026-10-23T01:55:51.499996+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Md Tarik Hossain, Sai Shradha, Axel Printschler, Julian Picker, Luc F. Oswald, Julian Führer, Nicole Engel, Honey Jayeshkumar Shah, Christof Neumann, Daria I. Markina, Moritz Quincke, Johannes Biskupek, Kenji Watanabe, Takashi Taniguchi, Ute Kaiser, Bernhard Urbaszek, Andrey Turchanin"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74172",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.3636,
+      "topic_cache_token": "2f27fa4c6268454b02c59a23e7047c6160e3df15ba7ed1448f29113d9885739a",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "dabe5af14f229f031960faa1",
+      "url": "https://doi.org/10.1002/adma.202518224",
+      "title": "Sub-Nanometer Curvature Unlocks Quantum Orbital Flexoelectricity in Graphene",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-13T15:50:29+00:00",
+      "first_seen": "2026-10-23T01:55:51.499996+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Sathvik Ajay Iyengar, James G. McHugh, Jonathan P. Salvage, Robert Vajtai, Venkataramana Gadhamshetty, Alan B. Dalton, Manoj Tripathi, Pulickel M. Ajayan, Vincent Meunier"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.202518224",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5714,
+      "topic_cache_token": "d58ce7b2c73290b8c8be4492456ce1b0fbf1740782a155191b19ddebfed34500",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "c14dd663a8ccfedd7d1d9d3b",
+      "url": "https://doi.org/10.1002/adma.74331",
+      "title": "Strain-Driven In Situ Ni Exsolution on (Sr,Ca)(Ti,Ni)O3 (100) Facets Boosts Hydrogen Spillover and Selective CO2-to-C2+ Photoreduction",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-13T15:50:29+00:00",
+      "first_seen": "2026-10-23T01:55:51.499996+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Qianqian Shen, Wenjie Wang, Shilong Feng, Hengrui Jian, Yu Han, Yongjian Zhao, Siling Luo, Xianhu Sun, Gang Feng, Jinbo Xue, Xuanhua Li"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74331",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.4,
+      "topic_cache_token": "1a93ccf0a7733ee43d93178d20a1fbd2be031b7cbf5de98c9cb98874d1c2c684",
       "topic_version": "faceted-local-v2.4",
       "topic_backend": "lexical"
     },
@@ -63538,6 +63785,64 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "15fc253d5f08976cdcb6cb9c",
+      "url": "https://doi.org/10.1002/adma.74318",
+      "title": "Wide-Temperature Full-Color Electrophoretic Colloidal Crystal Displays With High Color Saturation",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-08T15:11:31+00:00",
+      "first_seen": "2026-10-23T01:55:51.499996+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Kaiyue Zhang, Qunfeng Cheng, Mingzhu Li"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74318",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.3333,
+      "topic_cache_token": "abc07e949d4bb2839063f2c9f4d5c437184f89abc77eec93b84f05e59b0a26a1",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "855092fba1df7e8a668bec1b",
       "url": "https://openai.com/index/pollo-ai",
       "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
@@ -83384,6 +83689,64 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.6,
       "topic_cache_token": "cd2c12eea5575815e03924c4f2745e2ef25f1b9f19c0a519f9ea95d7bdae70ea",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "b19a1cf636f81d89503f745f",
+      "url": "https://doi.org/10.1002/adma.74248",
+      "title": "Healable and Post-Programmable Metal-Organic Framework-Vitrimer Composites",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-23T01:55:51.499996+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Rachel K. T. Lau, Ai Wei Gan, Sirin Kamarulzaman, Tristan T. Y. Tan, Georgina E. K. K. Seah, Sheila Y. X. Sim, Yusuke Nishiyama, Ken-ichi Otake, Angeline Y. X. Tan, Jerry X. Z. Heng, Susumu Kitagawa, Jason Y. C. Lim, Shermin S. Goh"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74248",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.4,
+      "topic_cache_token": "86ddea77843a603ce4f635f6936a65a337aa425bb9704bf4d0a8eb5ce89081dc",
       "topic_version": "faceted-local-v2.4",
       "topic_backend": "lexical"
     },
@@ -148555,13 +148918,13 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-10-23T00:20:55.216743+00:00",
+    "last_success": "2026-10-23T01:55:51.499996+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 117,
-      "unclassified": 1514,
+      "classified": 7,
+      "unclassified": 1519,
       "algorithm": "faceted-local-v2.4",
       "calibration_status": "pending_human_gold",
       "quality_status": "unmeasured",
@@ -148665,8 +149028,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
       "status": "ok",
       "count": 11
     },
@@ -148674,7 +149037,7 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -148685,8 +149048,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
       "status": "ok",
       "count": 12
     },
@@ -148694,17 +149057,19 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
       "last_success": "2026-10-23T00:20:55.216743+00:00",
-      "status": "ok",
-      "count": 12
+      "status": "error",
+      "count": 0,
+      "message": "采集失败，保留上次结果",
+      "error_type": "HTTPError"
     },
     {
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
       "status": "ok",
       "count": 12
     },
@@ -148712,8 +149077,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
       "status": "ok",
       "count": 1
     },
@@ -148721,8 +149086,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
       "status": "ok",
       "count": 12
     },
@@ -148730,8 +149095,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
       "status": "ok",
       "count": 2
     },
@@ -148743,14 +149108,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
       "count": 129,
       "counters": {
         "relevant": 3,
         "pending": 126,
         "excluded": 1,
-        "fetched": 216
+        "fetched": 133
       },
       "errors": []
     },
@@ -148762,14 +149127,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
       "count": 82,
       "counters": {
         "relevant": 9,
         "pending": 73,
         "excluded": 153,
-        "fetched": 215
+        "fetched": 213
       },
       "errors": []
     },
@@ -148781,14 +149146,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
       "count": 75,
       "counters": {
         "relevant": 17,
         "pending": 58,
         "excluded": 901,
-        "fetched": 653
+        "fetched": 617
       },
       "errors": []
     },
@@ -148800,14 +149165,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-23T00:20:55.216743+00:00",
-      "count": 63,
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
+      "count": 69,
       "counters": {
         "relevant": 23,
-        "pending": 40,
+        "pending": 46,
         "excluded": 674,
-        "fetched": 581
+        "fetched": 562
       },
       "errors": []
     },
@@ -148819,8 +149184,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
       "count": 83,
       "counters": {
         "relevant": 1,
@@ -148838,7 +149203,7 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
       "last_success": "2026-10-22T01:49:47.677420+00:00",
       "count": 98,
       "counters": {
@@ -148858,17 +149223,19 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
+      "status": "partial",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
       "last_success": "2026-10-23T00:20:55.216743+00:00",
-      "count": 835,
+      "count": 834,
       "counters": {
         "relevant": 9,
-        "pending": 826,
-        "excluded": 685,
-        "fetched": 346
+        "pending": 825,
+        "excluded": 688,
+        "fetched": 8
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-nature-materials",
@@ -148878,14 +149245,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
       "count": 30,
       "counters": {
         "relevant": 0,
         "pending": 30,
         "excluded": 18,
-        "fetched": 19
+        "fetched": 16
       },
       "errors": []
     },
@@ -148897,14 +149264,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
       "count": 72,
       "counters": {
         "relevant": 0,
         "pending": 72,
         "excluded": 168,
-        "fetched": 110
+        "fetched": 105
       },
       "errors": []
     },
@@ -148915,26 +149282,24 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-22T01:49:47.677420+00:00",
+      "status": "ok",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
       "count": 14,
       "counters": {
         "relevant": 1,
         "pending": 13,
-        "excluded": 413,
-        "fetched": 44
+        "excluded": 419,
+        "fetched": 117
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
       "status": "ok",
       "count": 0
     },
@@ -148942,8 +149307,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
       "status": "ok",
       "count": 12
     },
@@ -148951,8 +149316,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
       "status": "ok",
       "count": 1
     },
@@ -148960,8 +149325,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
       "status": "ok",
       "count": 0
     },
@@ -148969,8 +149334,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
-      "last_success": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
+      "last_success": "2026-10-23T01:55:51.499996+00:00",
       "status": "ok",
       "count": 12
     },
@@ -148979,7 +149344,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 20,
-      "last_attempt": "2026-10-23T00:20:55.216743+00:00",
+      "last_attempt": "2026-10-23T01:55:51.499996+00:00",
       "last_success": "2026-10-23T00:20:02.839856+00:00",
       "run_id": "39876967289",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -148987,16 +149352,16 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 24,
+    "generated": 5,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
       "status": "partial",
       "attempted": 8,
-      "public_html": 2,
+      "public_html": 3,
       "bohr_graph": 0,
-      "fallback": 6,
-      "bohr_calls": 4
+      "fallback": 5,
+      "bohr_calls": 0
     }
   },
   "policy": {
