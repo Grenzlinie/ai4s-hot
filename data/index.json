@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-24T01:06:41.855174+00:00",
+  "generated_at": "2026-10-24T01:57:18.241364+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -15916,6 +15916,89 @@
       "topic_cache_token": "de65df2b55920543c570352173bdbf5669f6757635c029ff86b1452245c2f4b9",
       "topic_version": "faceted-local-v2.4",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "aa18c0346e5ad3a3a11bfcd7",
+      "url": "https://arxiv.org/abs/2610.30043",
+      "title": "TARSphere: A Robot-Oriented Full-Stack Framework for Long-Horizon Embodied Agents in Evolving Physical and Social Environments",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-10-21T00:00:00+00:00",
+      "first_seen": "2026-10-24T01:57:18.241364+00:00",
+      "excerpt": "Robots must act under physical and social constraints while adapting to changes in their environment and human needs. Existing embodied-agent systems often focus on specified goals or abstract execution into symbolic actions, limiting evaluation in an evolving world. We introduce TARSphere, a robot-oriented full-stack framework for physically and socially grounded long-horizon embodied agents. TARSphere-Infra runs robot policies in a physics simulator with embodied NPCs and constrained dialogue. An event-driven finite-state machine (FSM) uses completed actions and delivered information to update task states and evaluate outcomes. TARSphere-Harness, its embodied brain harness, lets a frozen multimodal large language model (MLLM) act through multi-level executable skills, using observations, hierarchical memory, and execution feedback to revise its decisions. On this foundation, agent-in-the-loop curation aligns task semantics, causal dependencies, and scene geometry to construct TARSphere-Bench: 360 episodes across 30 indoor scenes. Five paired conditions assess perceptual robustness, disruption adaptation, task update, human coordination, and intent understanding for navigate-and-report and fetch-and-deliver tasks. Our evaluation of 8 MLLMs shows that general-purpose models can outperform embodied models, while task updates and human interaction remain difficult. Frequent collisions and falls further motivate evaluating execution safety alongside task success, even with a shared action interface and decision budget.",
+      "summary": "本文提出了TARSphere，一个面向机器人的全栈框架，用于在物理与社会约束下、环境与人类需求不断变化的长时间跨度具身任务中运行机器人策略，并构建了包含30个室内场景、360个回合、覆盖五项配对能力条件的TARSphere-Bench基准。该框架及基准可用于在统一动作接口与决策预算下评估多模态大模型在任务更新、人类交互、执行安全（如碰撞与跌落）等方面的表现；但原文所述结论基于模拟环境中的8个MLLM评测，任务更新与人类交互仍具挑战，且公司或系统声明未在此材料中作为已验证结论呈现。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.30043",
+      "authors": [
+        "Yicheng Xu",
+        "Zhikai Xu",
+        "Ziyuan Chen",
+        "Yuhang Dong",
+        "Tao Zhang",
+        "Zhucun Xue",
+        "Yong Liu",
+        "Jiangning Zhang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:29132f3642c19e5c9b71889c7fc63ddf",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：robustness。"
+        },
+        {
+          "id": "zotero:8f22e62349472c4815f4275fbcf89c76",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：language model、agent。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:29132f3642c19e5c9b71889c7fc63ddf",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:29132f3642c19e5c9b71889c7fc63ddf",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:6cb94419e4a077231731f17d61098d95",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8228,
+      "topic_cache_token": "0234647fc352ae4695f79143ba9f09f8c8a4b813695bb19adeaf13956c8dd552",
+      "topic_version": "faceted-local-v2.4",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.30043",
+        "sha256": "8ce59c2603d45ca3e7c2a748da28e576e866e5aa9acbbf560b96c91c199080ae",
+        "chars": 12000
+      }
     },
     {
       "id": "38eb5bd2d859ebbe94afe6e1",
@@ -143346,15 +143429,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Jin Zhou",
-        "Wei Liu",
-        "Mingrui Han",
-        "Jingpeng Lin",
-        "Jiurong Liu",
-        "Fei Pan",
-        "Wenlong Xu",
-        "Na Wu",
-        "Zhihui Zeng"
+        "Jin Zhou, Wei Liu, Mingrui Han, Jingpeng Lin, Jiurong Liu, Fei Pan, Wenlong Xu, Na Wu, Zhihui Zeng"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -147162,17 +147237,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Yue Liu",
-        "Na Wu",
-        "Qilong Zhao",
-        "Sinan Zheng",
-        "Jin Zhou",
-        "Jishang Liu",
-        "Jingpeng Lin",
-        "Mingrui Han",
-        "Fei Pan",
-        "Jiurong Liu",
-        "Zhihui Zeng"
+        "Yue Liu, Na Wu, Qilong Zhao, Sinan Zheng, Jin Zhou, Jishang Liu, Jingpeng Lin, Mingrui Han, Fei Pan, Jiurong Liu, Zhihui Zeng"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -148522,7 +148587,7 @@
       "doi": "10.1038/s41467-026-75746-7",
       "published_online_at": "2026-07-30T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-16T17:51:37+00:00",
+      "indexed_at": "2026-10-24T01:07:50+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -155556,12 +155621,12 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-10-24T01:06:41.855174+00:00",
+    "last_success": "2026-10-24T01:57:18.241364+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 89,
+      "classified": 1,
       "unclassified": 1563,
       "algorithm": "faceted-local-v2.4",
       "calibration_status": "pending_human_gold",
@@ -155666,8 +155731,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "status": "ok",
       "count": 11
     },
@@ -155675,7 +155740,7 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -155686,8 +155751,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "status": "ok",
       "count": 12
     },
@@ -155695,8 +155760,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "status": "ok",
       "count": 12
     },
@@ -155704,8 +155769,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "status": "ok",
       "count": 10
     },
@@ -155713,8 +155778,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "status": "ok",
       "count": 1
     },
@@ -155722,8 +155787,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "status": "ok",
       "count": 12
     },
@@ -155731,8 +155796,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "status": "ok",
       "count": 2
     },
@@ -155744,14 +155809,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "count": 132,
       "counters": {
         "relevant": 3,
         "pending": 129,
         "excluded": 1,
-        "fetched": 142
+        "fetched": 138
       },
       "errors": []
     },
@@ -155763,14 +155828,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "count": 82,
       "counters": {
         "relevant": 9,
         "pending": 73,
         "excluded": 159,
-        "fetched": 219
+        "fetched": 217
       },
       "errors": []
     },
@@ -155782,14 +155847,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "count": 81,
       "counters": {
         "relevant": 18,
         "pending": 63,
-        "excluded": 1002,
-        "fetched": 728
+        "excluded": 1008,
+        "fetched": 730
       },
       "errors": []
     },
@@ -155801,14 +155866,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "count": 71,
       "counters": {
         "relevant": 24,
         "pending": 47,
         "excluded": 681,
-        "fetched": 673
+        "fetched": 663
       },
       "errors": []
     },
@@ -155820,14 +155885,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "count": 84,
       "counters": {
         "relevant": 1,
         "pending": 83,
         "excluded": 2,
-        "fetched": 83
+        "fetched": 81
       },
       "errors": []
     },
@@ -155839,7 +155904,7 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
       "last_success": "2026-10-22T01:49:47.677420+00:00",
       "count": 98,
       "counters": {
@@ -155860,14 +155925,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "count": 868,
       "counters": {
         "relevant": 10,
         "pending": 858,
-        "excluded": 728,
-        "fetched": 410
+        "excluded": 729,
+        "fetched": 332
       },
       "errors": []
     },
@@ -155879,14 +155944,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "count": 30,
       "counters": {
         "relevant": 0,
         "pending": 30,
         "excluded": 19,
-        "fetched": 19
+        "fetched": 17
       },
       "errors": []
     },
@@ -155898,14 +155963,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "count": 72,
       "counters": {
         "relevant": 0,
         "pending": 72,
         "excluded": 179,
-        "fetched": 133
+        "fetched": 130
       },
       "errors": []
     },
@@ -155917,14 +155982,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "count": 16,
       "counters": {
         "relevant": 1,
         "pending": 15,
-        "excluded": 529,
-        "fetched": 383
+        "excluded": 530,
+        "fetched": 375
       },
       "errors": []
     },
@@ -155932,8 +155997,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "status": "ok",
       "count": 0
     },
@@ -155941,8 +156006,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "status": "ok",
       "count": 12
     },
@@ -155950,8 +156015,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "status": "ok",
       "count": 1
     },
@@ -155959,8 +156024,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "status": "ok",
       "count": 0
     },
@@ -155968,8 +156033,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
-      "last_success": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
+      "last_success": "2026-10-24T01:57:18.241364+00:00",
       "status": "ok",
       "count": 12
     },
@@ -155978,7 +156043,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 20,
-      "last_attempt": "2026-10-24T01:06:41.855174+00:00",
+      "last_attempt": "2026-10-24T01:57:18.241364+00:00",
       "last_success": "2026-10-24T01:05:45.325078+00:00",
       "run_id": "40043467733",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -155986,16 +156051,16 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 24,
+    "generated": 1,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
       "status": "partial",
-      "attempted": 8,
-      "public_html": 0,
+      "attempted": 5,
+      "public_html": 1,
       "bohr_graph": 0,
-      "fallback": 8,
-      "bohr_calls": 6
+      "fallback": 4,
+      "bohr_calls": 0
     }
   },
   "policy": {

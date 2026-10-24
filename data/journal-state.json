@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updated_at": "2026-10-24T01:06:41.855174+00:00",
+  "updated_at": "2026-10-24T01:57:18.241364+00:00",
   "journals": {
     "nature-materials": {
-      "last_success_at": "2026-10-24T01:06:41.855174+00:00",
-      "last_crossref_at": "2026-10-24T01:06:41.855174+00:00",
+      "last_success_at": "2026-10-24T01:57:18.241364+00:00",
+      "last_crossref_at": "2026-10-24T01:57:18.241364+00:00",
       "records": {
         "10.1038/s41563-026-02770-9": {
           "doi": "10.1038/s41563-026-02770-9",
@@ -1402,7 +1402,7 @@
           "published_online_at": "2026-10-20T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-20T09:40:50+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -24285,8 +24285,8 @@
       }
     },
     "science": {
-      "last_success_at": "2026-10-24T01:06:41.855174+00:00",
-      "last_crossref_at": "2026-10-24T01:06:41.855174+00:00",
+      "last_success_at": "2026-10-24T01:57:18.241364+00:00",
+      "last_crossref_at": "2026-10-24T01:57:18.241364+00:00",
       "records": {
         "10.1126/science.ael8752": {
           "doi": "10.1126/science.ael8752",
@@ -33434,8 +33434,8 @@
       }
     },
     "nature-communications": {
-      "last_success_at": "2026-10-24T01:06:41.855174+00:00",
-      "last_crossref_at": "2026-10-24T01:06:41.855174+00:00",
+      "last_success_at": "2026-10-24T01:57:18.241364+00:00",
+      "last_crossref_at": "2026-10-24T01:57:18.241364+00:00",
       "records": {
         "10.1038/s41467-026-78271-9": {
           "doi": "10.1038/s41467-026-78271-9",
@@ -68316,7 +68316,7 @@
           "rss_published_at": null,
           "published_online_at": "2026-09-15T00:00:00+00:00",
           "published_print_at": null,
-          "indexed_at": "2026-10-16T04:46:25+00:00",
+          "indexed_at": "2026-10-24T01:45:49+00:00",
           "article_type": "journal-article",
           "providers": [
             "crossref"
@@ -73344,7 +73344,7 @@
           "rss_published_at": null,
           "published_online_at": "2026-07-30T00:00:00+00:00",
           "published_print_at": null,
-          "indexed_at": "2026-10-16T17:51:37+00:00",
+          "indexed_at": "2026-10-24T01:07:50+00:00",
           "article_type": "journal-article",
           "providers": [
             "crossref"
@@ -90963,17 +90963,50 @@
             "reason": "no_ai_method_evidence",
             "version": "1"
           }
+        },
+        "10.1038/s41467-026-76922-5": {
+          "doi": "10.1038/s41467-026-76922-5",
+          "title": "Directed evolution of an enantiocomplementary SNArase reveals divergent catalytic features",
+          "url": "https://doi.org/10.1038/s41467-026-76922-5",
+          "abstract": "Abstract Enzymes that catalyze non-natural C-C bond-forming reactions are powerful tools in asymmetric synthesis, yet reprogramming their active sites to invert stereochemical outcome remains challenging. Building on our recently engineered S N Arase, S N Ar1.3, which performs enantioselective nucleophilic aromatic substitutions with carbon nucleophiles, we now report the evolution of an enantiocomplementary biocatalyst (eS N Ar1.3) that displays enhanced activity and expanded substrate scope. Structural and computational analyses uncover both conserved and divergent features between S N Ar1.3 and eS N Ar1.3. Despite retaining similar electrophile binding poses and a conserved catalytic arginine, the halide-binding pocket of S N Ar1.3 has been abandoned in eS N Ar1.3. Instead, His23 has emerged as a key motif that works with Arg124 to accurately position the nucleophilic substrate. Calculations reveal that Arg124 also plays a crucial role in facilitating halide release during catalysis. Our study demonstrates how evolution can reshape enzyme mechanisms in unforeseen ways, highlighting the importance of exploring diverse trajectories to access new functions.",
+          "rss_published_at": null,
+          "published_online_at": "2026-08-21T00:00:00+00:00",
+          "published_print_at": null,
+          "indexed_at": "2026-10-24T01:37:09+00:00",
+          "article_type": "journal-article",
+          "providers": [
+            "crossref"
+          ],
+          "authors": [
+            "Thomas M. Lister",
+            "George W. Roberts",
+            "Cristina Duran",
+            "Guillem Casadevall",
+            "Fei Zhao",
+            "Alexander A. V. Millman",
+            "Igor Larrosa",
+            "Sílvia Osuna",
+            "Anthony P. Green"
+          ],
+          "first_seen": "2026-10-24T01:57:18.241364+00:00",
+          "item_id": "77ed4068921d4cacc8fc58c5",
+          "journal_relevance": {
+            "status": "excluded",
+            "method": "rule-v1",
+            "reason": "no_ai_method_evidence",
+            "version": "1"
+          }
         }
       },
       "counters": {
         "relevant": 10,
         "pending": 858,
-        "excluded": 728
+        "excluded": 729
       }
     },
     "science-advances": {
-      "last_success_at": "2026-10-24T01:06:41.855174+00:00",
-      "last_crossref_at": "2026-10-24T01:06:41.855174+00:00",
+      "last_success_at": "2026-10-24T01:57:18.241364+00:00",
+      "last_crossref_at": "2026-10-24T01:57:18.241364+00:00",
       "records": {
         "10.1126/sciadv.aed2180": {
           "doi": "10.1126/sciadv.aed2180",
@@ -109361,17 +109394,49 @@
             "reason": "no_ai_method_evidence",
             "version": "1"
           }
+        },
+        "10.1126/sciadv.aeb3240": {
+          "doi": "10.1126/sciadv.aeb3240",
+          "title": "Rapid functionalization of single-walled carbon nanotubes in polar solvents",
+          "url": "https://doi.org/10.1126/sciadv.aeb3240",
+          "abstract": "Fluorescent semiconducting single-walled carbon nanotubes (SWCNTs) hold considerable promise for photonics. Furthermore, their optical characteristics can be improved by functionalization, which generates additional spectral features. However, the importance of the solvent in which the SWCNT modification is conducted remains underexplored. In this work, the complex relationships between solvent, dispersant, and SWCNTs were untangled to unravel the underlying phenomena. Through a systematic investigation of SWCNT reactivity in a broad spectrum of solvents, supported by multiscale modeling enabled by our implementation of a hybrid functional within SIESTA, we found that the solvent medium and the dispersant enabling SWCNT solubilization affect not only the kinetics but also the course of the modification of SWCNTs. Polar solvents induced notable structural reorganization of polymers on the SWCNT surface and enhanced charge redistribution at the polymer-SWCNT interface. Consequently, we achieved control over the optical properties of SWCNTs, and the tailored SWCNTs enabled optical detection of cholesterol, a substantial risk factor for cardiovascular diseases.",
+          "rss_published_at": null,
+          "published_online_at": null,
+          "published_print_at": "2026-09-11T00:00:00+00:00",
+          "indexed_at": "2026-10-24T01:52:16+00:00",
+          "article_type": "journal-article",
+          "providers": [
+            "crossref"
+          ],
+          "authors": [
+            "Dominik Just",
+            "Ryszard Siedlecki",
+            "Maciej Krzywiecki",
+            "Oussama Er-Riyahi",
+            "Yann Pouillon",
+            "Javier Junquera",
+            "Karolina Z. Milowska",
+            "Dawid Janas"
+          ],
+          "first_seen": "2026-10-24T01:57:18.241364+00:00",
+          "item_id": "6939b9f1987da4dc6bc99318",
+          "journal_relevance": {
+            "status": "excluded",
+            "method": "rule-v1",
+            "reason": "no_ai_method_evidence",
+            "version": "1"
+          }
         }
       },
       "counters": {
         "relevant": 1,
         "pending": 15,
-        "excluded": 529
+        "excluded": 530
       }
     },
     "advanced-materials": {
-      "last_success_at": "2026-10-24T01:06:41.855174+00:00",
-      "last_crossref_at": "2026-10-24T01:06:41.855174+00:00",
+      "last_success_at": "2026-10-24T01:57:18.241364+00:00",
+      "last_crossref_at": "2026-10-24T01:57:18.241364+00:00",
       "records": {
         "10.1002/adma.75347": {
           "doi": "10.1002/adma.75347",
@@ -112670,21 +112735,13 @@
           "published_online_at": "2026-08-09T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-20T13:35:45+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jin Zhou",
-            "Wei Liu",
-            "Mingrui Han",
-            "Jingpeng Lin",
-            "Jiurong Liu",
-            "Fei Pan",
-            "Wenlong Xu",
-            "Na Wu",
-            "Zhihui Zeng"
+            "Jin Zhou, Wei Liu, Mingrui Han, Jingpeng Lin, Jiurong Liu, Fei Pan, Wenlong Xu, Na Wu, Zhihui Zeng"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "c68112a5ef9f5dd30624965b",
@@ -114957,21 +115014,13 @@
           "published_online_at": "2026-07-31T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-20T01:42:51+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Kai Zhang",
-            "Hongyang Li",
-            "Zhaoyu Ma",
-            "Yongkang Yu",
-            "Hagar Shendy Bahlol",
-            "Mohamed Frahat Foda",
-            "Huageng Liang",
-            "Heyou Han",
-            "Yanli Zhao"
+            "Kai Zhang, Hongyang Li, Zhaoyu Ma, Yongkang Yu, Hagar Shendy Bahlol, Mohamed Frahat Foda, Huageng Liang, Heyou Han, Yanli Zhao"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "afaec75490f027d1b85f6455",
@@ -115043,23 +115092,13 @@
           "published_online_at": "2026-08-01T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-20T13:35:52+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yue Liu",
-            "Na Wu",
-            "Qilong Zhao",
-            "Sinan Zheng",
-            "Jin Zhou",
-            "Jishang Liu",
-            "Jingpeng Lin",
-            "Mingrui Han",
-            "Fei Pan",
-            "Jiurong Liu",
-            "Zhihui Zeng"
+            "Yue Liu, Na Wu, Qilong Zhao, Sinan Zheng, Jin Zhou, Jishang Liu, Jingpeng Lin, Mingrui Han, Fei Pan, Jiurong Liu, Zhihui Zeng"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "2d821c26e0b57fb11df5cc62",
@@ -115889,20 +115928,13 @@
           "published_online_at": "2026-08-12T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-20T19:18:52+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Benhui Lv",
-            "Shuangyan Qiao",
-            "Jialong Geng",
-            "Honglin Huang",
-            "Hua Kun Liu",
-            "Shi Xue Dou",
-            "Shaokun Chong",
-            "Wei Huang"
+            "Benhui Lv, Shuangyan Qiao, Jialong Geng, Honglin Huang, Hua Kun Liu, Shi Xue Dou, Shaokun Chong, Wei Huang"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "92beee1735adaf9bbca040c1",
@@ -120628,23 +120660,13 @@
           "published_online_at": "2026-10-13T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-20T19:44:14+00:00",
-          "article_type": "journal-article",
+          "article_type": "BACK COVER   BACK COVER",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "He Liu",
-            "Guanxiong Liang",
-            "Manjun Dou",
-            "Xinan Yao",
-            "Yumo She",
-            "Jiaju Qiang",
-            "Xinhang Li",
-            "Fuhui Wang",
-            "Xiangyu Li",
-            "Ye Tian",
-            "Dake Xu"
+            "He Liu, Guanxiong Liang, Manjun Dou, Xinan Yao, Yumo She, Jiaju Qiang, Xinhang Li, Fuhui Wang, Xiangyu Li, Ye Tian, Dake Xu"
           ],
           "first_seen": "2026-10-14T00:46:13.374731+00:00",
           "item_id": "42445fdfcf669a7bf7a591e3",
@@ -121404,23 +121426,13 @@
           "published_online_at": "2026-08-12T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-20T21:22:46+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Peilin Wang",
-            "Tianpeng Li",
-            "Zuoming Jin",
-            "Zhiguo Zhang",
-            "Liwei Xiao",
-            "Tianjiao Chu",
-            "Jing Xie",
-            "Jiacheng Qin",
-            "Chenan Xu",
-            "Xiaozhen Huang",
-            "Jia Liang"
+            "Peilin Wang, Tianpeng Li, Zuoming Jin, Zhiguo Zhang, Liwei Xiao, Tianjiao Chu, Jing Xie, Jiacheng Qin, Chenan Xu, Xiaozhen Huang, Jia Liang"
           ],
           "first_seen": "2026-10-14T00:46:13.374731+00:00",
           "item_id": "fe563fc6a3503c81018281c1",
@@ -123469,28 +123481,20 @@
         },
         "10.1002/adma.74747": {
           "doi": "10.1002/adma.74747",
-          "title": "Side-Chain-Induced Interlayer Slipping in Metalloporphyrin COFs Enables Microenvironment and Spin-State Regulation for Photocatalytic CO 2 Reduction",
+          "title": "Side-Chain-Induced Interlayer Slipping in Metalloporphyrin COFs Enables Microenvironment and Spin-State Regulation for Photocatalytic CO2 Reduction",
           "url": "https://doi.org/10.1002/adma.74747",
           "abstract": "ABSTRACT Photocatalytic CO 2 reduction (CO 2 RR) involves a cascade of intrinsically coupled processes, rendering the independent optimization of catalytic kinetics and thermodynamics challenging. In this study, we introduce a structural regulation strategy via steric-driven interlayer slipping engineering of metalloporphyrin-based covalent organic frameworks (COFs) to decouple and simultaneously optimize the catalytic microenvironment and the spin state of the active metal center. Through regulating the length of alkoxy side-chains, conventional AA stacking is transformed into a moderately serrated slipped configuration (AA*). Kinetically, the resulting slipped nanochannels enhance local hydrophobicity and spatial confinement, thereby greatly enriching in-channel CO 2 concentration and suppressing hydrogen evolution. Thermodynamically and electronically, this interlayer slipping reconstructs the ligand field of catalytic Co sites and maximizes vertical π-d exchange interactions. As a result, this triggers a collective spin transition from isolated low-spin ( S = 1/2) monomers to a high-spin ( S = 3/2) state, which significantly prolongs charge carrier lifetimes and optimizes the adsorption and activation of the *COOH intermediate. Consequently, the optimized CoP-COFs deliver a record CO production rate of 71.4 mmol g −1 h −1 with 90% selectivity among porphyrin-based COF photocatalysts. This work establishes stacking engineering as a versatile strategy for decoupling entangled reaction steps to enable efficient solar fuel production.",
           "rss_published_at": "2026-10-16T15:27:14+00:00",
           "published_online_at": "2026-08-22T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-20T01:21:22+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jie He",
-            "Qingxuan Chen",
-            "Minxian Zhang",
-            "Wenhao Zhao",
-            "Aoni Xu",
-            "Jinqiang Zhang",
-            "Hongqi Sun",
-            "Shaobin Wang",
-            "Xiaoguang Duan"
+            "Jie He, Qingxuan Chen, Minxian Zhang, Wenhao Zhao, Aoni Xu, Jinqiang Zhang, Hongqi Sun, Shaobin Wang, Xiaoguang Duan"
           ],
           "first_seen": "2026-10-17T00:45:26.405218+00:00",
           "item_id": "fe007682fe03139000cd10b7",
@@ -124731,19 +124735,13 @@
           "published_online_at": "2026-08-18T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-20T19:18:51+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Penglei Zhang",
-            "Chaoqun Chang",
-            "Min Song",
-            "Gongchu Shi",
-            "Lihua Gong",
-            "Shizhong Wei",
-            "Feilong Gong"
+            "Penglei Zhang, Chaoqun Chang, Min Song, Gongchu Shi, Lihua Gong, Shizhong Wei, Feilong Gong"
           ],
           "first_seen": "2026-10-17T00:45:26.405218+00:00",
           "item_id": "88e94369a3a1cde29a3d9efe",
@@ -126016,67 +126014,20 @@
         },
         "10.1002/adma.75367": {
           "doi": "10.1002/adma.75367",
-          "title": "Robust Spin Splitting and Fermiology in the Layered Altermagnet CoNb4Se8",
+          "title": "Robust Spin Splitting and Fermiology in the Layered Altermagnet CoNb4${\\rm CoNb}_4$Se8${\\rm Se}_8$",
           "url": "https://doi.org/10.1002/adma.75367",
           "abstract": "ABSTRACT Altermagnetism defies conventional classifications of collinear magnetic phases, combining compensated magnetization with momentum-dependent, nonrelativistic spin splitting. While altermagnetic band splitting has been established in three-dimensional compounds such as MnTe and CrSb, layered altermagnets remain far less explored spectroscopically. Here, combining termination-resolved micro-ARPES, fine photon-energy mapping, spin-ARPES, and density functional theory, we map the three-dimensional fermiology of the layered g -wave altermagnet , obtained by ordered Co intercalation of 2H-. We resolve the spin-split branches of the altermagnetic pairs directly in the raw photoemission spectra and, with spin-ARPES at these experimentally identified momenta, show the reversal of the spin polarization at opposite momenta and between two regions of the sample, consistent with opposite time-reversal domains, and its absence along the symmetry-protected nodal -K direction. We further report a weak low-temperature anomaly near T 0 ≈ 50-60 K, detected by magnetometry, temperature-dependent micro-ARPES, and ultrafast reflectivity, whose microscopic origin remains open. These results provide a momentum-resolved benchmark of the electronic structure of a layered altermagnet.",
           "rss_published_at": "2026-10-19T03:21:33+00:00",
           "published_online_at": "2026-10-18T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-20T07:40:47+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Alessandro De Vita",
-            "Chiara Bigi",
-            "Davide Romanin",
-            "Matthew D. Watson",
-            "Vincent Polewczyk",
-            "Marta Zonno",
-            "François Bertran",
-            "Pietro M. Forcella",
-            "My Bang Petersen",
-            "Federico Motti",
-            "Giovanni Vinai",
-            "Manuel Tuniz",
-            "Federico Cilento",
-            "Mario Cuoco",
-            "Brian M. Andersen",
-            "Andreas Kreisel",
-            "Luciano Jacopo D'Onofrio",
-            "Oliver J. Clark",
-            "Mark T. Edmonds",
-            "Christopher Candelora",
-            "Muxian Xu",
-            "Siyu Cheng",
-            "Alexander LaFleur",
-            "Tommaso Antonelli",
-            "Giorgio Sangiovanni",
-            "Lorenzo Del Re",
-            "Ivana Vobornik",
-            "Jun Fujii",
-            "Fabio Miletto Granozio",
-            "Alessia Sambri",
-            "Emiliano Di Gennaro",
-            "Jeppe B. Jacobsen",
-            "Henrik Jacobsen",
-            "Iulia Cojocariu",
-            "Marcin Szpytma",
-            "Andrea Locatelli",
-            "Tevfik Mentes",
-            "Won Seop Song",
-            "Jun Sung Kim",
-            "Matthieu Jamet",
-            "Jean-François Jacquot",
-            "Pasquale Orgiani",
-            "Ralph Ernstorfer",
-            "Ilija Zeljkovic",
-            "Younghun Hwang",
-            "Matteo Calandra",
-            "Jill A. Miwa",
-            "Federico Mazzola"
+            "Alessandro De Vita, Chiara Bigi, Davide Romanin, Matthew D. Watson, Vincent Polewczyk, Marta Zonno, François Bertran, Pietro M. Forcella, My Bang Petersen, Federico Motti, Giovanni Vinai, Manuel Tuniz, Federico Cilento, Mario Cuoco, Brian M. Andersen, Andreas Kreisel, Luciano Jacopo D'Onofrio, Oliver J. Clark, Mark T. Edmonds, Christopher Candelora, Muxian Xu, Siyu Cheng, Alexander LaFleur, Tommaso Antonelli, Giorgio Sangiovanni, Lorenzo Del Re, Ivana Vobornik, Jun Fujii, Fabio Miletto Granozio, Alessia Sambri, Emiliano Di Gennaro, Jeppe B. Jacobsen, Henrik Jacobsen, Iulia Cojocariu, Marcin Szpytma, Andrea Locatelli, Tevfik Mentes, Won Seop Song, Jun Sung Kim, Matthieu Jamet, Jean-François Jacquot, Pasquale Orgiani, Ralph Ernstorfer, Ilija Zeljkovic, Younghun Hwang, Matteo Calandra, Jill A. Miwa, Federico Mazzola"
           ],
           "first_seen": "2026-10-20T00:56:06.469140+00:00",
           "item_id": "3a8263314d1c54be7b347f4f",
@@ -131496,8 +131447,8 @@
       }
     },
     "advanced-energy-materials": {
-      "last_success_at": "2026-10-24T01:06:41.855174+00:00",
-      "last_crossref_at": "2026-10-24T01:06:41.855174+00:00",
+      "last_success_at": "2026-10-24T01:57:18.241364+00:00",
+      "last_crossref_at": "2026-10-24T01:57:18.241364+00:00",
       "records": {
         "10.1002/aenm.71681": {
           "doi": "10.1002/aenm.71681",
@@ -135592,26 +135543,13 @@
           "published_online_at": "2026-10-15T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-20T22:39:51+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Eunryeol Lee",
-            "Tucker Holstun",
-            "Tara Mishra",
-            "Maciej Moździerz",
-            "Shilong Wang",
-            "Yanbao Fu",
-            "Peter Ercius",
-            "Alexander Pattison",
-            "Satoshi Hiroi",
-            "Koji Ohara",
-            "Vincent Battaglia",
-            "Haegyeom Kim",
-            "Akira Miura",
-            "Gerbrand Ceder"
+            "Eunryeol Lee, Tucker Holstun, Tara Mishra, Maciej Moździerz, Shilong Wang, Yanbao Fu, Peter Ercius, Alexander Pattison, Satoshi Hiroi, Koji Ohara, Vincent Battaglia, Haegyeom Kim, Akira Miura, Gerbrand Ceder"
           ],
           "first_seen": "2026-10-16T01:02:38.139443+00:00",
           "item_id": "5cc470b59d0789c7c6810c05",
@@ -138129,8 +138067,8 @@
       }
     },
     "advanced-functional-materials": {
-      "last_success_at": "2026-10-24T01:06:41.855174+00:00",
-      "last_crossref_at": "2026-10-24T01:06:41.855174+00:00",
+      "last_success_at": "2026-10-24T01:57:18.241364+00:00",
+      "last_crossref_at": "2026-10-24T01:57:18.241364+00:00",
       "records": {
         "10.1002/adfm.78905": {
           "doi": "10.1002/adfm.78905",
@@ -142060,31 +141998,20 @@
         },
         "10.1002/adfm.78095": {
           "doi": "10.1002/adfm.78095",
-          "title": "Ultrafast and Stress-Adaptive Magnesium Conversion in Hollow NiS 2 @N-Doped Carbon Cathodes via Interfacial Ni─N Bonding Modulation",
+          "title": "Ultrafast and Stress-Adaptive Magnesium Conversion in Hollow NiS2@N-Doped Carbon Cathodes via Interfacial Ni─N Bonding Modulation",
           "url": "https://doi.org/10.1002/adfm.78095",
           "abstract": "ABSTRACT Conversion-type nickel sulfide (NiS 2 ) is a compelling cathode for rechargeable magnesium batteries (RMBs) owing to high theoretical capacity, yet suffers from severe volume changes, polysulfide shuttling, metal dissolution, and sluggish kinetics caused by strong Ni─S bonds. To overcome these challenges, the interfacial optimization and bond regulation are of crucial importance. Herein, nitrogen-doped carbon (NC)-armored NiS 2 hollow microspheres (NiS 2 @NC) is designed with interfacial Ni─N bonding modulation. The introduced Ni─N bonds elongate and weaken adjacent Ni─S bonds, significantly lowering the conversion energy barrier and accelerating Mg 2 + storage kinetics. The synergistic effect of chemical anchoring (Ni─N bonds) and physical confinement (NC coating) suppress side reactions and shuttle effects, stabilizing the cathode-electrolyte interface (CEI) and electrode structure. The unique hollow structure further promotes rapid Mg 2+ diffusion and accommodates the volume variation. Experimental and calculation results confirm that NiS 2 @NC material possesses excellent stress-adaptive ability, mitigating volume fluctuations and preserving structural integrity. As a result, the NiS 2 @NC cathode delivers a high specific capacity (392 mAh g −1 at 0.2 A g −1 ), excellent long-term cyclability (capacity retention of 92.8% after 3200 cycles at 5 A g −1 ), and superior rate capability. This interfacial bonding engineering strategy provides a universal pathway for designing high-performance and robust conversion-type electrodes in RMBs.",
           "rss_published_at": "2026-10-06T06:51:41+00:00",
           "published_online_at": "2026-09-01T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-20T07:43:18+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yiyi Wang",
-            "Zhenfeng Guan",
-            "Lingxiao Luo",
-            "Guiyang Gao",
-            "Li Xia",
-            "Hongfei Zheng",
-            "Jiajia Han",
-            "Jie Lin",
-            "Laisen Wang",
-            "Baihua Qu",
-            "Dong-Liang Peng",
-            "Qingshui Xie"
+            "Yiyi Wang, Zhenfeng Guan, Lingxiao Luo, Guiyang Gao, Li Xia, Hongfei Zheng, Jiajia Han, Jie Lin, Laisen Wang, Baihua Qu, Dong-Liang Peng, Qingshui Xie"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "4eb98c15b8a9e0ba0ae79173",
@@ -172081,17 +172008,212 @@
             "reason": "no_ai_method_evidence",
             "version": "1"
           }
+        },
+        "10.1002/adfm.79128": {
+          "doi": "10.1002/adfm.79128",
+          "title": "Elementally Biocompatible Flexible Optoelectronic Platforms With Intrinsic UV Dose Integration and Transient Sensing-Computing Capability",
+          "url": "https://doi.org/10.1002/adfm.79128",
+          "abstract": "ABSTRACT Excessive UV exposure is a major cause of skin damage, yet practical wearable UV monitoring systems require not only mechanical compliance but also long-term biological and environmental compatibility. Here, we report an elementally biocompatible flexible optoelectronic transistor (EBOT) platform in which all functional components are constructed from physiologically relevant elements. Zn-Mg-based oxides serve as the semiconductor and dielectric layers, Mg acts the electrode, and biodegradable poly(3-hydroxybutyrate-co-4-hydroxybutyrate) (P34HB) provides a flexible substrate and encapsulation layer. A low-temperature, all-hard-mask fabrication strategy enables device and circuit patterning without photolithography, preserving the compatibility of the constituent materials. Post-fabrication supercritical-fluid treatment further optimizes the device characteristics, improving the on/off ratio, responsivity and detectivity by 48.1%, 7.5% and 16.8%, respectively. Rather than eliminating persistent photoconductivity, we harness defect-mediated carrier trapping and relaxation as an intrinsic temporal integration mechanism, allowing a single device to simultaneously encode UV dose and exposure history without additional memory components. The EBOT platform exhibits excellent cytocompatibility and mechanical durability over 1,000 bending cycles. Furthermore, vertically integrated sensing-computing architectures are demonstrated by stacking photodetection and logic functionalities, providing a pathway toward highly integrated transient bioelectronic systems. This work establishes an elementally compatible strategy for developing flexible and environmentally transient optoelectronic platforms.",
+          "rss_published_at": null,
+          "published_online_at": "2026-10-23T00:00:00+00:00",
+          "published_print_at": null,
+          "indexed_at": "2026-10-24T01:43:01+00:00",
+          "article_type": "journal-article",
+          "providers": [
+            "crossref"
+          ],
+          "authors": [
+            "Xiaozheng Jia",
+            "Ruixuan Ma",
+            "Yulin Cai",
+            "Lei Li",
+            "Buke Shen",
+            "Zehao Chen",
+            "Ziyan Guo",
+            "Xiaoqing Bao",
+            "Kuan-Chang Chang"
+          ],
+          "first_seen": "2026-10-24T01:57:18.241364+00:00",
+          "item_id": "243ec06f918f300b6f8f6d49",
+          "journal_relevance": {
+            "status": "excluded",
+            "method": "rule-v1",
+            "reason": "no_ai_method_evidence",
+            "version": "1"
+          }
+        },
+        "10.1002/adfm.79161": {
+          "doi": "10.1002/adfm.79161",
+          "title": "LiTFSI-Regulated Free-Standing Conductive Polymer Hydrogels for Flexible Supercapacitors",
+          "url": "https://doi.org/10.1002/adfm.79161",
+          "abstract": "ABSTRACT The advancement of flexible and wearable electronics necessitates energy-storage materials that reconcile high electrochemical performance with robust mechanical deformability and environmental adaptability. Here, we design a free-standing conductive hydrogel electrode by integrating poly(3,4-ethylenedioxythiophene):poly(styrene sulfonate) (PEDOT:PSS) into a polyacrylamide/poly(vinyl alcohol) (PAAm/PVA) double-network scaffold, using lithium bis(trifluoromethanesulfonyl)imide (LiTFSI) as an ionic modulator. The dual-network PAAm/PVA skeleton provides robust deformable support, while LiTFSI incorporation is associated with changes in PEDOT chain conformation, intermolecular packing, and nanoscale organization. These structural changes accompany the improved electrical and electrochemical performance of the PEDOT:PSS-PAAm/PVA-LiTFSI (PPLi) hydrogel. The optimized PPLi hydrogel exhibits high conductivity (28.4 S cm −1 on average, 33.2 S cm −1 at maximum), high specific capacitance (202.5 F g −1 ), excellent stretchability (∼506%), and excellent anti-freezing capacity down to −40°C. The assembled all-hydrogel symmetric supercapacitor delivers superior energy output, outstanding capacitance retention of 98.8% over 10 000 cycles, and stable output under twisting, folding, and 100% tensile strain. The device retains 85% capacitance at −40°C and powers wearable electronics when integrated into flexible wristbands. This work provides a mild and scalable strategy for coupling three-dimensional free-standing architectures with ionic regulation to develop conductive polymer hydrogel electrodes with high mechanical robustness and electrochemical efficiency for wearable energy-storage applications.",
+          "rss_published_at": null,
+          "published_online_at": "2026-10-23T00:00:00+00:00",
+          "published_print_at": null,
+          "indexed_at": "2026-10-24T01:43:01+00:00",
+          "article_type": "journal-article",
+          "providers": [
+            "crossref"
+          ],
+          "authors": [
+            "Lekun Liu",
+            "Qing Chen",
+            "Liang Xu",
+            "Yongguang Wang",
+            "Liang Zhang",
+            "Xiang Lin",
+            "Min Gong",
+            "Fengxian Gao",
+            "Dongrui Wang"
+          ],
+          "first_seen": "2026-10-24T01:57:18.241364+00:00",
+          "item_id": "7fca4d0f366106b9903d8389",
+          "journal_relevance": {
+            "status": "excluded",
+            "method": "rule-v1",
+            "reason": "no_ai_method_evidence",
+            "version": "1"
+          }
+        },
+        "10.1002/adfm.79265": {
+          "doi": "10.1002/adfm.79265",
+          "title": "Medium-Entropy Hydroxides Enable Bridge-Bound NO Stabilization and Hydrogen Spillover for Nitrite-to-Ammonia Electroreduction",
+          "url": "https://doi.org/10.1002/adfm.79265",
+          "abstract": "ABSTRACT Electroreduction of nitrite provides a route to couple aqueous nitrite remediation with ammonia synthesis, but high selectivity requires coordinated nitrite deoxygenation and surface-hydrogen delivery. Here, we report ultrathin NiFeCoCu medium-entropy layered double hydroxide (ME-LDH) nanosheets that promote selective nitrite-to-ammonia conversion by coupling charge-polarized bridge-bound * NO stabilization with hydrogen-spillover-assisted hydrogenation. In neutral K 2 SO 4 electrolyte containing nitrite, the catalyst delivers NH 4 + Faradaic efficiencies above 90% from −0.5 to −0.9 V vs. the reversible hydrogen electrode (RHE), reaches a max i mum Faradaic efficiency of 99%, and achieves an NH 4 + yield rate of 7417 µg·h −1 ·cm −2 . Quasi-in situ x-ray photoelectron spectroscopy (XPS), in situ Fourier-transform infrared (FT-IR) spectroscopy, isotope-resolved spectroscopy, differential electrochemical mass spectrometry (DEMS), kinetic isotope effect (KIE) analysis, and electron paramagnetic resonance (EPR) collectively support dynamic charge redistribution, bridge-bound * NO formation, and rapid generation and consumption of surface active hydrogen, consistent with hydrogen-spillover-assisted hydrogenation. Density functional theory (DFT) calculations further reveal the preferential stabilization of bridge-bound * NO at multimetal sites and the thermodynamically unfavorable accumulation of isolated H on the fully hydroxylated surface, providing theoretical support for the proposed adsorption-hydrogen-transfer pathway. These findings highlight adsorption-spillover coupling as a promising design strategy for entropy-engineered hydroxides in nitrogen-cycle electrocatalysis.",
+          "rss_published_at": null,
+          "published_online_at": "2026-10-23T00:00:00+00:00",
+          "published_print_at": null,
+          "indexed_at": "2026-10-24T01:42:20+00:00",
+          "article_type": "journal-article",
+          "providers": [
+            "crossref"
+          ],
+          "authors": [
+            "Jingyi Huang",
+            "Xing'an Dong",
+            "Qian Liu",
+            "Chen Yang",
+            "Tianyao Ren",
+            "Weidong Dai",
+            "Xian Shi",
+            "Wendong Zhang",
+            "Peng Yu",
+            "Fan Dong"
+          ],
+          "first_seen": "2026-10-24T01:57:18.241364+00:00",
+          "item_id": "838479322af78242adf05661",
+          "journal_relevance": {
+            "status": "excluded",
+            "method": "rule-v1",
+            "reason": "no_ai_method_evidence",
+            "version": "1"
+          }
+        },
+        "10.1002/adfm.79194": {
+          "doi": "10.1002/adfm.79194",
+          "title": "Native Wood Polyphenol-Driven Construction of Self-Grown Photothermal Interfaces for Salt-Resistant Solar Evaporation",
+          "url": "https://doi.org/10.1002/adfm.79194",
+          "abstract": "ABSTRACT Wood-based solar evaporators offer aligned water-transport channels, low thermal conductivity, and renewability. However, most designs rely on externally deposited photothermal components that may compromise interfacial stability and obstruct transport pathways. Here, an endogenous construction strategy is developed by leveraging native polyphenols in eucalyptus wood to create a Janus evaporator with a self-grown Fe-polyphenol (FeP) photothermal interface. Top-protected bottom delignification selectively preserves polyphenolic sites in the top region as Fe coordination anchors while reconstructing the bottom region into a vertically porous, thermally insulating scaffold. Subsequent ascorbic acid (AA)-assisted interfacial evolution enables in situ formation of the FeP interface. The hydrated FeP/AA-delignified eucalyptus wood (FeP/AA-DEW) exhibits an AM1.5G-weighted solar absorptance of 82.05 ± 2.47% and a steady evaporation rate of 2.83 kg m −2 h −1 under standardized 1-sun conditions. Boundary-dependent experiments show that the high evaporation flux arises from absorbed solar energy, reduced equivalent evaporation enthalpy, and environmental heat exchange. The evaporator maintains 2.56 ± 0.04 kg m −2 h −1 in 20 wt.% NaCl, stable operation over 14 d, and 12.10 kg m −2 cumulative water loss during 8 h of outdoor operation. This work provides a native-chemistry-driven route for durable biomass-based solar evaporation.",
+          "rss_published_at": null,
+          "published_online_at": "2026-10-23T00:00:00+00:00",
+          "published_print_at": null,
+          "indexed_at": "2026-10-24T01:42:20+00:00",
+          "article_type": "journal-article",
+          "providers": [
+            "crossref"
+          ],
+          "authors": [
+            "Qi Gao",
+            "Jie Wu",
+            "Dawei Pan",
+            "Wenji Yu",
+            "Yahui Zhang"
+          ],
+          "first_seen": "2026-10-24T01:57:18.241364+00:00",
+          "item_id": "ea6987154e89e51522cadd32",
+          "journal_relevance": {
+            "status": "excluded",
+            "method": "rule-v1",
+            "reason": "no_ai_method_evidence",
+            "version": "1"
+          }
+        },
+        "10.1002/adfm.79248": {
+          "doi": "10.1002/adfm.79248",
+          "title": "Dynamic Solvation Perturbation Enables Fast-Exchange Interfacial Water Regulation for Stable Aqueous Zinc Batteries",
+          "url": "https://doi.org/10.1002/adfm.79248",
+          "abstract": "ABSTRACT Interfacial instability remains the major barrier for practical aqueous zinc batteries. Conventional electrolyte design mainly focuses on reducing water coordination number in the Zn 2+ solvation shell. However, this static criterion often neglects ligand-exchange kinetics and can still leave highly reactive water at the interface. Herein, we propose a dynamic solvation perturbation (DSP) strategy to regulate Zn 2+ solvation through transient solvent coordination. Descriptor-guided screening identifies methyl acetate (MA) as an optimal modulator with balanced Zn 2+ coordination and water regulation. MA forms a fast-exchange mixed solvation sheath, shortens water residence time, and passivates residual water via dynamic solvation-shell rearrangement. Additionally, MA exhibits facet-selective adsorption on Zn anode, which suppresses direct water attack and promotes uniform Zn nucleation. As a result, the DSP-regulated electrolyte enables the Zn anode to achieve long-term cycling life over 8000 h at 1 mA cm −2 and 1 mAh cm −2 . Remarkably, stable cycling is maintained for more than 2000 h at 32% DOD and more than 1000 h at 80% DOD. In addition, the Zn||V 2 O 5 pouch-cell with the MA-containing electrolyte exhibits approximately 80% capacity retention over 300 cycles at 0.1 A g −1 , highlighting its potential for practical applications.",
+          "rss_published_at": null,
+          "published_online_at": "2026-10-23T00:00:00+00:00",
+          "published_print_at": null,
+          "indexed_at": "2026-10-24T01:41:45+00:00",
+          "article_type": "journal-article",
+          "providers": [
+            "crossref"
+          ],
+          "authors": [
+            "Qian Xiang",
+            "Zhibo Liu",
+            "Xiaoling Zhang",
+            "Ying Sun",
+            "Yong Guo",
+            "Yongming Jin",
+            "Jixi Guo",
+            "Dianzeng Jia",
+            "Xingchao Wang"
+          ],
+          "first_seen": "2026-10-24T01:57:18.241364+00:00",
+          "item_id": "1f060ee7b343d0463e2eec9b",
+          "journal_relevance": {
+            "status": "excluded",
+            "method": "rule-v1",
+            "reason": "no_ai_method_evidence",
+            "version": "1"
+          }
+        },
+        "10.1002/adfm.79258": {
+          "doi": "10.1002/adfm.79258",
+          "title": "Dedicated Convection Window Design for Activating Internal Self-Generation Convection to Accumulate Vapor Diffusion",
+          "url": "https://doi.org/10.1002/adfm.79258",
+          "abstract": "ABSTRACT Solar-driven interfacial evaporation technology offers a groundbreaking approach to water treatment. However, the relentless pursuit of high energy efficiency has encountered a bottleneck in vapor generation, necessitating consideration of vapor diffusion. To tackle these limitations, this work establishes a comprehensive liquid-liquid-vapor transport kinetics framework, which couples water transport, vapor generation, vapor diffusion, and thermal management. This system optimizes water transport while minimizing thermal losses by tailoring the pore architecture. More importantly, we design dedicated convection windows for activating internal self-generation convection to accelerate vapor dissipation. This system delivered a superior evaporation rate of 4.93 kg m −2 h −1 , exceeding the conventional designs (2.9 kg m −2 h −1 ) while achieving energy efficiency of 89.6% (considering both environmental heat gain and convective heat gain). This enhancement stems from the efficient vapor generation and release process, driven by the synergistic interplay of water transport, thermal management, and convection control. Outdoor experiments demonstrate that the optimized array system achieves a water production rate of approximately 1.95 kg m −2 h −1 without any detectable contamination. This illustrates that this strategy can be used for maximizing the performance of 3D evaporators.",
+          "rss_published_at": null,
+          "published_online_at": "2026-10-23T00:00:00+00:00",
+          "published_print_at": null,
+          "indexed_at": "2026-10-24T01:40:58+00:00",
+          "article_type": "journal-article",
+          "providers": [
+            "crossref"
+          ],
+          "authors": [
+            "Jun Guo",
+            "Jun Hou",
+            "Ning Xu",
+            "Wenxin Lu",
+            "Wei Ding",
+            "Guoxiang You",
+            "Jun Wu",
+            "Lingzhan Miao",
+            "Yanhui Ao"
+          ],
+          "first_seen": "2026-10-24T01:57:18.241364+00:00",
+          "item_id": "0083184df83b7a2541db9f22",
+          "journal_relevance": {
+            "status": "excluded",
+            "method": "rule-v1",
+            "reason": "no_ai_method_evidence",
+            "version": "1"
+          }
         }
       },
       "counters": {
         "relevant": 18,
         "pending": 63,
-        "excluded": 1002
+        "excluded": 1008
       }
     },
     "acta-materialia": {
-      "last_success_at": "2026-10-24T01:06:41.855174+00:00",
-      "last_crossref_at": "2026-10-24T01:06:41.855174+00:00",
+      "last_success_at": "2026-10-24T01:57:18.241364+00:00",
+      "last_crossref_at": "2026-10-24T01:57:18.241364+00:00",
       "records": {
         "10.1016/j.actamat.2026.122828": {
           "doi": "10.1016/j.actamat.2026.122828",
@@ -175722,7 +175844,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-20T06:39:09+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -176214,8 +176336,8 @@
       }
     },
     "matter": {
-      "last_success_at": "2026-10-24T01:06:41.855174+00:00",
-      "last_crossref_at": "2026-10-24T01:06:41.855174+00:00",
+      "last_success_at": "2026-10-24T01:57:18.241364+00:00",
+      "last_crossref_at": "2026-10-24T01:57:18.241364+00:00",
       "records": {
         "10.1016/j.matt.2026.103052": {
           "doi": "10.1016/j.matt.2026.103052",
@@ -178017,7 +178139,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-20T01:26:09+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -178696,7 +178818,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-10-20T20:38:13+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
