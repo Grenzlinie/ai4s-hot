@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updated_at": "2026-10-24T23:53:18.413440+00:00",
+  "updated_at": "2026-10-25T01:37:06.850962+00:00",
   "journals": {
     "nature-materials": {
-      "last_success_at": "2026-10-24T01:57:18.241364+00:00",
-      "last_crossref_at": "2026-10-24T01:57:18.241364+00:00",
+      "last_success_at": "2026-10-25T01:37:06.850962+00:00",
+      "last_crossref_at": "2026-10-25T01:37:06.850962+00:00",
       "records": {
         "10.1038/s41563-026-02770-9": {
           "doi": "10.1038/s41563-026-02770-9",
@@ -394,43 +394,6 @@
             "status": "pending",
             "method": "rule-v1",
             "reason": "abstract_missing_or_insufficient",
-            "version": "1"
-          }
-        },
-        "10.1038/s41563-026-02680-w": {
-          "doi": "10.1038/s41563-026-02680-w",
-          "title": "Hydrogen-induced damage in Ni-based superalloys at elevated temperatures",
-          "url": "https://doi.org/10.1038/s41563-026-02680-w",
-          "abstract": "Abstract The urgent need to decarbonize the energy and transport sectors motivates the use of hydrogen-containing fuels in gas turbines for power generation and aviation applications, exposing safety-critical components to hydrogen environments at elevated temperatures. Ambient-temperature hydrogen embrittlement has long been interpreted through the physical interactions between hydrogen and microstructural defects like interfaces and dislocations. Here we show that this understanding does not fully capture the behaviour at elevated temperatures, where vacancy-driven chemical reactions between hydrogen and specific microstructural constituents can markedly intensify embrittlement compared with ambient conditions. In a prototypical face-centred cubic Ni-based superalloy, our near-atomic-scale characterization and ab initio calculations reveal strong trapping of hydrogen atoms in carbon vacancies in carbides, driving their partial decomposition while simultaneously triggering localized methane formation at the carbide-matrix interface. As a result, the heterointerfaces are weakened, rendering them vulnerable to deformation-induced damage. Our work provides a physical foundation for mechanistic modelling of elevated-temperature hydrogen embrittlement in Ni-based alloys, an emerging area critical to hydrogen-fuelled turbines and related high-temperature technologies.",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-14T07:31:00+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Shuai Kong",
-            "Xizhen Dong",
-            "Zheng Zhong",
-            "Jie Hou",
-            "Yubo Zhao",
-            "Baptiste Gault",
-            "Shaolou Wei",
-            "Aparna Saksena",
-            "Kai-Shang Li",
-            "Binhan Sun",
-            "Xian-Cheng Zhang",
-            "Dierk Raabe",
-            "Shan-Tung Tu"
-          ],
-          "first_seen": "2026-10-13T12:06:10.113449+00:00",
-          "item_id": "fa131ae4bac6bf025debae95",
-          "journal_relevance": {
-            "status": "excluded",
-            "method": "rule-v1",
-            "reason": "no_ai_method_evidence",
             "version": "1"
           }
         },
@@ -1503,7 +1466,7 @@
           "published_online_at": "2026-10-22T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-22T09:40:30+00:00",
-          "article_type": "  ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
@@ -1529,7 +1492,7 @@
           "published_online_at": "2026-10-22T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-10-22T09:40:42+00:00",
-          "article_type": "  ",
+          "article_type": "journal-article",
           "providers": [
             "crossref",
             "rss"
@@ -1645,7 +1608,7 @@
       "counters": {
         "relevant": 0,
         "pending": 30,
-        "excluded": 19
+        "excluded": 18
       }
     },
     "nature": {
@@ -13291,37 +13254,6 @@
             "version": "1"
           }
         },
-        "10.1038/d41586-026-02316-8": {
-          "doi": "10.1038/d41586-026-02316-8",
-          "title": "Researchers are building computers that run on brain organoids - but have neglected a major ethical issue",
-          "url": "https://doi.org/10.1038/d41586-026-02316-8",
-          "abstract": "",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": "2026-07-30T00:00:00+00:00",
-          "indexed_at": "2026-10-01T16:09:13+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Nada S. Salem",
-            "Jianping Fu",
-            "Feng Guo",
-            "Jonathan Kadmon",
-            "Omer Revah",
-            "Orly Reiner",
-            "Insoo Hyun"
-          ],
-          "first_seen": "2026-10-14T00:46:13.374731+00:00",
-          "item_id": "7047a3f8b87abedf6a4abd96",
-          "journal_relevance": {
-            "status": "excluded",
-            "method": "rule-v1",
-            "reason": "non_research_article",
-            "version": "1"
-          }
-        },
         "10.1038/s41586-026-11149-4": {
           "doi": "10.1038/s41586-026-11149-4",
           "title": "Retraction Note: Ribosomal frameshifting in the CCR5 mRNA is regulated by miRNAs and the NMD pathway",
@@ -24281,12 +24213,12 @@
       "counters": {
         "relevant": 1,
         "pending": 97,
-        "excluded": 422
+        "excluded": 421
       }
     },
     "science": {
-      "last_success_at": "2026-10-24T23:53:18.413440+00:00",
-      "last_crossref_at": "2026-10-24T23:53:18.413440+00:00",
+      "last_success_at": "2026-10-25T01:37:06.850962+00:00",
+      "last_crossref_at": "2026-10-25T01:37:06.850962+00:00",
       "records": {
         "10.1126/science.ael8752": {
           "doi": "10.1126/science.ael8752",
@@ -33497,8 +33429,8 @@
       }
     },
     "nature-communications": {
-      "last_success_at": "2026-10-24T23:53:18.413440+00:00",
-      "last_crossref_at": "2026-10-24T23:53:18.413440+00:00",
+      "last_success_at": "2026-10-25T01:37:06.850962+00:00",
+      "last_crossref_at": "2026-10-25T01:37:06.850962+00:00",
       "records": {
         "10.1038/s41467-026-78271-9": {
           "doi": "10.1038/s41467-026-78271-9",
@@ -39078,61 +39010,6 @@
             "version": "1"
           }
         },
-        "10.1038/s41467-026-75894-w": {
-          "doi": "10.1038/s41467-026-75894-w",
-          "title": "Synthetic ion channel inhibitors enhance plant drought tolerance",
-          "url": "https://doi.org/10.1038/s41467-026-75894-w",
-          "abstract": "Abstract Drought stress significantly threatens global food security. According to the FAO2024, agriculture absorbs up to 80% of drought impacts. Stomata are vital pores for gas exchange and transpiration in plants. Stomatal closure, which is crucial for drought tolerance, is regulated by ion transport systems. Here, we identify two inhibitors of plasma membrane voltage-dependent potassium (K + ) channels, NS5806 and UA49, that induce stomatal closure, reduce guard cell K + levels, and increase drought resistance in Arabidopsis plants. This chemical-induced stomatal closure pathway is distinct from the abscisic acid (ABA). Notably, K + channel inhibition led to increased cytosolic Ca 2+ , which was absent in K + inward channel mutants, highlighting the link between K + channel activity and cytosolic Ca 2+ elevation. These findings suggest that the chemical regulation of K + channels represents a strategy to induce stomatal closure, potentially improving plant drought tolerance through targeted interventions.",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-10T15:39:46+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Kanane Sato",
-            "Kyota Suzuki",
-            "Shunya Saito",
-            "Taishin Kakei",
-            "Megumi Kato",
-            "Masana Yazaki",
-            "Yasutaka Kawai",
-            "Mieko Arisawa",
-            "Nobuhisa Isaka",
-            "Toshio Yamaguchi",
-            "Matteo Grenzi",
-            "Laura Luoni",
-            "Masaru Kono",
-            "Yuki Hayashi",
-            "Toshinori Kinoshita",
-            "Farhan Aziz",
-            "Khurram Bashir",
-            "Motoaki Seki",
-            "Asuka Kamimura",
-            "Takumi Higaki",
-            "Jun Takeuchi",
-            "Yasushi Todoroki",
-            "Huifei Yin",
-            "Francisco Rubio",
-            "Jörg Kudla",
-            "Shintaro Munemasa",
-            "Yoshiyuki Murata",
-            "Masaru Tsujii",
-            "Yasuhiro Ishimaru",
-            "Alex Costa",
-            "Nobuyuki Uozumi"
-          ],
-          "first_seen": "2026-10-13T12:06:10.113449+00:00",
-          "item_id": "c5f7ced81bea6064d1457cb5",
-          "journal_relevance": {
-            "status": "excluded",
-            "method": "rule-v1",
-            "reason": "no_ai_method_evidence",
-            "version": "1"
-          }
-        },
         "10.1038/s41467-026-78376-1": {
           "doi": "10.1038/s41467-026-78376-1",
           "title": "Twisted superconducting quantum diodes for high fidelity anharmonic qubits",
@@ -42750,51 +42627,6 @@
             "version": "1"
           }
         },
-        "10.1038/s41467-026-75605-5": {
-          "doi": "10.1038/s41467-026-75605-5",
-          "title": "Immunological maladaptation preceding spontaneous preterm birth in human pregnancies",
-          "url": "https://doi.org/10.1038/s41467-026-75605-5",
-          "abstract": "Abstract The majority of spontaneous preterm births (sPTB) occurs without identifiable clinical indications or apparent risk factors. A dysregulated maternal immune adaptation at delivery has been associated with sPTB. Yet, a precise understanding of maternal immune dynamics preceding sPTB remains lacking. Here we show, in a nested case-control study within a low-risk, population-based pregnancy cohort, that an abnormal immune adaptation in mothers’ blood precedes sPTB by weeks to months and discriminates sPTB cases from term controls (AUROC: 0.7). Prominent features include enhanced immune cell responses to an adrenergic stimulus during the first and second trimesters, followed by increased production of pro-inflammatory cytokines in the third trimester in sPTB vs. term pregnancies. Transcriptome analysis of second trimester single-cell CD4 + T cells reveals a Th17-skewed, neuroactive-protein responsive phenotype in sPTB pregnancies. Our study provides a multi-omics resource and a conceptual framework for early identification of individuals at increased risk for sPTB with broad translational implications for advancing targeted preventive measures.",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-08T21:43:50+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Ina A. Stelzer",
-            "Joshua Gillard",
-            "Christopher Urbschat",
-            "Kristin Thiele",
-            "Dorien Feyaerts",
-            "Mirja Pagenkemper",
-            "Ann-Christin Tallarek",
-            "Bettina Hollwitz",
-            "Masaki Sato",
-            "Edward Ganio",
-            "Maïgane Diop",
-            "Kazuo Ando",
-            "Jakob Einhaus",
-            "Nima Aghaeepour",
-            "David K. Stevenson",
-            "Nicola Gagliani",
-            "Anna Woestemeier",
-            "Stefan Bonn",
-            "Anke Diemert",
-            "Petra C. Arck",
-            "Brice Gaudillière"
-          ],
-          "first_seen": "2026-10-13T12:06:10.113449+00:00",
-          "item_id": "5f19ac2fb7edf10db79c5a4d",
-          "journal_relevance": {
-            "status": "excluded",
-            "method": "rule-v1",
-            "reason": "no_ai_method_evidence",
-            "version": "1"
-          }
-        },
         "10.1038/s41467-026-76299-5": {
           "doi": "10.1038/s41467-026-76299-5",
           "title": "Supramolecular polymers with water-triggered dense domains enabling mechanical robustness programmability and weather resistance",
@@ -43462,37 +43294,6 @@
             "version": "1"
           }
         },
-        "10.1038/s41467-026-76145-8": {
-          "doi": "10.1038/s41467-026-76145-8",
-          "title": "Harnessing chloride to drive catalyst reconstruction for durable and efficient seawater electrolysis",
-          "url": "https://doi.org/10.1038/s41467-026-76145-8",
-          "abstract": "",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-24T04:15:51+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Huangcong Tang",
-            "Zemin Feng",
-            "Di Feng",
-            "Shunchun Yao",
-            "Kui Shen",
-            "Liyu Chen",
-            "Yingwei Li"
-          ],
-          "first_seen": "2026-10-13T12:06:10.113449+00:00",
-          "item_id": "b2ec61d29fd32bba0d290cb2",
-          "journal_relevance": {
-            "status": "pending",
-            "method": "rule-v1",
-            "reason": "abstract_missing_or_insufficient",
-            "version": "1"
-          }
-        },
         "10.1038/s41467-026-78514-9": {
           "doi": "10.1038/s41467-026-78514-9",
           "title": "A universal twist-slide coupling mechanism governs deformations of DNA, RNA, and RNA-DNA hybrid duplexes",
@@ -43516,40 +43317,6 @@
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "7d9d91493f79d311dd7829be",
-          "journal_relevance": {
-            "status": "pending",
-            "method": "rule-v1",
-            "reason": "abstract_missing_or_insufficient",
-            "version": "1"
-          }
-        },
-        "10.1038/s41467-026-76064-8": {
-          "doi": "10.1038/s41467-026-76064-8",
-          "title": "Direct electrosynthesis of acetamide from CO2 and nitrate via an atomically engineered dual-site catalyst",
-          "url": "https://doi.org/10.1038/s41467-026-76064-8",
-          "abstract": "",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-15T01:37:25+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Shuai Xia",
-            "Hao Tan",
-            "Jianfang Zhang",
-            "Miao Han",
-            "Chang Xu",
-            "Cuiping Yu",
-            "Kui Chen",
-            "Yong Zhang",
-            "Yucheng Wu",
-            "Yan Wang"
-          ],
-          "first_seen": "2026-10-13T12:06:10.113449+00:00",
-          "item_id": "da66fcffcf54b5c1127a6fd0",
           "journal_relevance": {
             "status": "pending",
             "method": "rule-v1",
@@ -47704,7 +47471,7 @@
           "rss_published_at": null,
           "published_online_at": "2026-09-05T00:00:00+00:00",
           "published_print_at": null,
-          "indexed_at": "2026-10-07T00:50:59+00:00",
+          "indexed_at": "2026-10-25T00:03:21+00:00",
           "article_type": "journal-article",
           "providers": [
             "crossref"
@@ -50221,33 +49988,6 @@
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "ae669396515eeeb39438d1cf",
-          "journal_relevance": {
-            "status": "excluded",
-            "method": "rule-v1",
-            "reason": "no_ai_method_evidence",
-            "version": "1"
-          }
-        },
-        "10.1038/s41467-026-75259-3": {
-          "doi": "10.1038/s41467-026-75259-3",
-          "title": "Nematic and chiral superconductivity emerging within the loop-current phase in kagome metals",
-          "url": "https://doi.org/10.1038/s41467-026-75259-3",
-          "abstract": "Abstract The kagome metals A V 3 Sb 5 ( A = Cs, Rb, K) host multiple symmetry-breaking phases, including charge-density-wave and loop-current orders, and exhibit highly exotic superconductivity with pronounced nematicity and chirality. Remarkably, even dilute impurities transform this exotic superconducting state into an isotropic s -wave state. These observations pose a challenge to existing theoretical scenarios. We show that loop-current order induces nematic chiral d -wave superconductivity in kagome metals. The loop-current-induced orbital magnetization (OM) stabilizes one chiral superconducting channels. This OM-chirality coupling mechanism is generic and applies to pairing driven by either attractive or repulsive interactions. Furthermore, coexisting loop-current and bond orders give rise to pronounced nematic chiral superconductivity even for an almost C 6 -symmetric Fermi surface. For attractive pairing, dilute impurities suppress the chiral state and restore a conventional s -wave phase, as observed experimentally. The theory further predicts a robust 2 × 2 pair-density modulation. This study provides key insights into time-reversal-symmetry-breaking exotic superconductivity in kagome metals.",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-06T03:33:58+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Rina Tazai",
-            "Youichi Yamakawa",
-            "Hiroshi Kontani"
-          ],
-          "first_seen": "2026-10-13T12:06:10.113449+00:00",
-          "item_id": "70f8b0b3aa88a40d7e02dde0",
           "journal_relevance": {
             "status": "excluded",
             "method": "rule-v1",
@@ -54084,46 +53824,6 @@
             "version": "1"
           }
         },
-        "10.1038/s41467-026-75960-3": {
-          "doi": "10.1038/s41467-026-75960-3",
-          "title": "Oncogenic Kras targeting with MRTX1133 or Daraxonrasib specifically synergize with anti-CTLA4 to promote anti-tumor immunity in pancreatic cancer",
-          "url": "https://doi.org/10.1038/s41467-026-75960-3",
-          "abstract": "",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-04T17:42:48+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Krishnan K. Mahadevan",
-            "Ana S. Maldonado",
-            "Bingrui Li",
-            "Aaron A. Bickert",
-            "Adrian Kacperczyk-Perdyan",
-            "Shreyasee V. Kumbhar",
-            "Sujan Piya",
-            "Amari M. Sockwell",
-            "Sami J. Morse",
-            "Kent Arian",
-            "Hikaru Sugimoto",
-            "Shabnam Shalapour",
-            "David S. Hong",
-            "Timothy P. Heffernan",
-            "Anirban Maitra",
-            "Raghu Kalluri"
-          ],
-          "first_seen": "2026-10-13T12:06:10.113449+00:00",
-          "item_id": "69a0d99f9ef28d6c4bc44467",
-          "journal_relevance": {
-            "status": "pending",
-            "method": "rule-v1",
-            "reason": "abstract_missing_or_insufficient",
-            "version": "1"
-          }
-        },
         "10.1038/s41467-026-72879-7": {
           "doi": "10.1038/s41467-026-72879-7",
           "title": "Insights into the mechanisms of NH3 inhibition on Cu-CHA SCR catalysts",
@@ -57397,39 +57097,6 @@
             "version": "1"
           }
         },
-        "10.1038/s41467-026-76078-2": {
-          "doi": "10.1038/s41467-026-76078-2",
-          "title": "Balancing energy, water, and ecology through renewable energy transitions in the Yellow River Basin",
-          "url": "https://doi.org/10.1038/s41467-026-76078-2",
-          "abstract": "",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-01T18:09:00+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Chuandong Wu",
-            "Dawen Yang",
-            "Ximing Cai",
-            "Deliang Chen",
-            "Yuting Yang",
-            "Taihua Wang",
-            "Yi Zhang",
-            "Jianshi Zhao",
-            "Bojie Fu"
-          ],
-          "first_seen": "2026-10-13T12:06:10.113449+00:00",
-          "item_id": "b51106b74d0babd8d4654060",
-          "journal_relevance": {
-            "status": "pending",
-            "method": "rule-v1",
-            "reason": "abstract_missing_or_insufficient",
-            "version": "1"
-          }
-        },
         "10.1038/s41467-026-77886-2": {
           "doi": "10.1038/s41467-026-77886-2",
           "title": "Phosphorylation tunes electrostatically driven protein-RNA interactions",
@@ -59906,51 +59573,6 @@
             "status": "pending",
             "method": "rule-v1",
             "reason": "abstract_missing_or_insufficient",
-            "version": "1"
-          }
-        },
-        "10.1038/s41467-026-75835-7": {
-          "doi": "10.1038/s41467-026-75835-7",
-          "title": "Design, structure-based optimization and antiviral evaluation of potent inhibitors for the macrodomain Mac1 of SARS-CoV-2",
-          "url": "https://doi.org/10.1038/s41467-026-75835-7",
-          "abstract": "Abstract Enzymatically active macrodomains of (+)ss-RNA viruses mediate immune evasion by countering ADP-ribosylation and are therefore promising druggable targets. Here we report testing of ADP / ADP-ribose analogues for their ability to inhibit Mac1 of SARS-CoV-2, measurement of the affinity of active compounds and characterization of their binding mode by cocrystallization, uncovering critical molecular determinants of protein-ligand interaction. Key findings of the resulting structure-activity relationship (SAR) include that inhibitory potency is improved by either replacing the distal ribose of ADP-ribose by a small alkyl group or the adenine N7 by carbon. Based on insights from the SAR, we show β-methyl-GS-441524-diphosphate as nanomolar inhibitor that exhibits >1000-fold selectivity over human MacroD1 and MacroD2. Addition of C 11 -acyloxybenzyl (AB)-masking groups yields a membrane permeable, lipophilic prodrug that inhibits SARS-CoV-2 in cell culture (EC 50 0.06 µM) while exhibiting low cytotoxicity (CC 50 > 50 µM). Replacement of the terminal methyl phosphate with an ethyl phosphonate increases stability of the prodrug with little effect on toxicity and antiviral potency (EC 50 = 0.03 µM), making it a membrane-permeable nucleotide-based prodrug against viral macrodomains.",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-09-30T18:12:24+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Maximilian Sandmann",
-            "Sahra Tajdar",
-            "Simon Sander",
-            "David Ruiz Carrillo",
-            "Benedikt Ganter",
-            "Celine Fischer",
-            "Marina Ocenas",
-            "Stefanie Etzold",
-            "Neele Pekarek",
-            "Julia Berger",
-            "Toni Luise Meister",
-            "Barbara Selisko",
-            "Bruno Canard",
-            "Joanna M. Watt",
-            "Ondřej Baszczyňski",
-            "Barry VL Potter",
-            "Maria Garcia Alai",
-            "Henning Tidow",
-            "Susanne Pfefferle",
-            "Chris Meier",
-            "Ralf Fliegert"
-          ],
-          "first_seen": "2026-10-13T12:06:10.113449+00:00",
-          "item_id": "bd554ebcbefff717349eda9c",
-          "journal_relevance": {
-            "status": "excluded",
-            "method": "rule-v1",
-            "reason": "no_ai_method_evidence",
             "version": "1"
           }
         },
@@ -73370,35 +72992,6 @@
             "version": "1"
           }
         },
-        "10.1038/s41467-026-75930-9": {
-          "doi": "10.1038/s41467-026-75930-9",
-          "title": "Tritium separation from gaseous 1,2,3H isotopologue mixtures by selective adsorption on Ag-exchanged zeolite type Y",
-          "url": "https://doi.org/10.1038/s41467-026-75930-9",
-          "abstract": "Abstract Efficient separation of hydrogen isotopologues is crucial for applications such as the recycling of exhaust streams in nuclear fusion reactors. We report on separation of a ternary 1,2,3 H isotope mixture using thermal desorption spectroscopy (TDS), achieving an enrichment of 1:41:175 (H 2 :D 2 :T 2 ) from an initially equimolar (1:1:1) gas mixture, based on selective adsorption using an Ag(I)-exchanged zeolite type Y. Further experiments on binary hydrogen isotope mixtures validated numerical predictions of the separation efficiency for T 2 . Specifically, the high selectivity for tritium over protium of 244 makes the Ag(I)-exchanged zeolite an excellent candidate for energy-efficient isotope separation at liquid-nitrogen temperature.",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-16T18:13:04+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Alexandra Becker",
-            "Holger Lippold",
-            "Jing Liu",
-            "Michael Hirscher",
-            "Cornelius Fischer"
-          ],
-          "first_seen": "2026-10-17T00:45:26.405218+00:00",
-          "item_id": "3f7ef28f5bb542f1587e4d0c",
-          "journal_relevance": {
-            "status": "excluded",
-            "method": "rule-v1",
-            "reason": "no_ai_method_evidence",
-            "version": "1"
-          }
-        },
         "10.1038/s41467-026-75746-7": {
           "doi": "10.1038/s41467-026-75746-7",
           "title": "Rapid and quantitative measurement of bacteriophage infectivity via fully automated droplet digital PCR",
@@ -82024,51 +81617,6 @@
             "version": "1"
           }
         },
-        "10.1038/s41467-026-76079-1": {
-          "doi": "10.1038/s41467-026-76079-1",
-          "title": "Obesity-driven microbial GABA depletion promotes metabolic rewiring and colorectal cancer progression",
-          "url": "https://doi.org/10.1038/s41467-026-76079-1",
-          "abstract": "",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-20T22:39:01+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Wei Guo",
-            "Kaiyue Sun",
-            "Xia Wang",
-            "Mengmeng Li",
-            "Zheng Li",
-            "Xizan Yue",
-            "Yi Yin",
-            "Tengfei Ma",
-            "Yikun Li",
-            "Xiaoning Xu",
-            "Jianbo Liu",
-            "Jiahao Zhang",
-            "Cuiyu Zhang",
-            "Panpan Feng",
-            "Ruijie Ma",
-            "Jiayi Ren",
-            "Jie Liu",
-            "Changan Liu",
-            "Xiang Gao",
-            "Dawei Chen",
-            "Jingxin Li"
-          ],
-          "first_seen": "2026-10-21T01:52:29.830864+00:00",
-          "item_id": "d16499208d5226fec2b9954d",
-          "journal_relevance": {
-            "status": "pending",
-            "method": "rule-v1",
-            "reason": "abstract_missing_or_insufficient",
-            "version": "1"
-          }
-        },
         "10.1038/s41467-026-78796-z": {
           "doi": "10.1038/s41467-026-78796-z",
           "title": "Epithelial NF-κB shapes protective Treg cell responses to restrain intestinal inflammation",
@@ -82591,40 +82139,6 @@
           ],
           "first_seen": "2026-10-21T01:52:29.830864+00:00",
           "item_id": "0f1a41b48a67856ffc60a8fe",
-          "journal_relevance": {
-            "status": "excluded",
-            "method": "rule-v1",
-            "reason": "no_ai_method_evidence",
-            "version": "1"
-          }
-        },
-        "10.1038/s41467-026-75749-4": {
-          "doi": "10.1038/s41467-026-75749-4",
-          "title": "SLC26A11 is an atypical solute carrier with dual transport-channel function mediating lysosomal sulfate transport",
-          "url": "https://doi.org/10.1038/s41467-026-75749-4",
-          "abstract": "Abstract Membrane transporters and channels are generally assumed to be based on distinct structural and functional principles. SLC26A11, a solute carrier with high expression levels in the brain, has been proposed to function as either an anion transporter or a channel. Here, we resolve this apparent discrepancy by demonstrating that SLC26A11 is a dual-function protein capable of operating as both a sulfate transporter and a chloride channel. By resolving its structure and combining biochemical studies and molecular dynamics simulations, we show that SLC26A11 exhibits all the hallmarks of a secondary transporter. The mechanistic basis for its selective ion transport identifies the protein as the elusive lysosomal sulfate exporter. Additionally, we demonstrate that SLC26A11 exhibits an uncoupled, channel-like chloride conductance gated by proton:sulfate symport. Our finding that the chloride-conducting state arises from the transport cycle may contribute to the development of therapeutic strategies for treating brain edema, and the identification of its role in lysosome sulfate efflux may provide new approaches to study and treat lysosomal storage diseases.",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-20T07:22:27+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Benedikt T. Kuhn",
-            "Peter Kovermann",
-            "Bassam G. Haddad",
-            "Tim Rasmussen",
-            "Tamsanqa T. Hove",
-            "Stefanie Bungert-Plümke",
-            "Bettina Böttcher",
-            "Jan-Philipp Machtens",
-            "Christoph Fahlke",
-            "Eric R. Geertsma"
-          ],
-          "first_seen": "2026-10-21T01:52:29.830864+00:00",
-          "item_id": "eb1aeb442abf747c0f9ebe94",
           "journal_relevance": {
             "status": "excluded",
             "method": "rule-v1",
@@ -91382,7 +90896,7 @@
           "rss_published_at": null,
           "published_online_at": "2026-10-24T00:00:00+00:00",
           "published_print_at": null,
-          "indexed_at": "2026-10-24T13:37:29+00:00",
+          "indexed_at": "2026-10-25T00:35:54+00:00",
           "article_type": "journal-article",
           "providers": [
             "crossref"
@@ -92308,13 +91822,13 @@
       },
       "counters": {
         "relevant": 10,
-        "pending": 879,
-        "excluded": 744
+        "pending": 874,
+        "excluded": 738
       }
     },
     "science-advances": {
-      "last_success_at": "2026-10-24T23:53:18.413440+00:00",
-      "last_crossref_at": "2026-10-24T23:53:18.413440+00:00",
+      "last_success_at": "2026-10-25T01:37:06.850962+00:00",
+      "last_crossref_at": "2026-10-25T01:37:06.850962+00:00",
       "records": {
         "10.1126/sciadv.aed2180": {
           "doi": "10.1126/sciadv.aed2180",
@@ -103859,7 +103373,7 @@
           "rss_published_at": "2026-10-16T07:00:00+00:00",
           "published_online_at": null,
           "published_print_at": "2026-10-16T00:00:00+00:00",
-          "indexed_at": "2026-10-23T20:26:27+00:00",
+          "indexed_at": "2026-10-24T23:57:33+00:00",
           "article_type": "journal-article",
           "providers": [
             "crossref",
@@ -110810,8 +110324,8 @@
       }
     },
     "advanced-materials": {
-      "last_success_at": "2026-10-24T23:53:18.413440+00:00",
-      "last_crossref_at": "2026-10-24T23:53:18.413440+00:00",
+      "last_success_at": "2026-10-25T01:37:06.850962+00:00",
+      "last_crossref_at": "2026-10-25T01:37:06.850962+00:00",
       "records": {
         "10.1002/adma.75347": {
           "doi": "10.1002/adma.75347",
@@ -117226,38 +116740,6 @@
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "98b2b2d020a46ec939fbd07c",
-          "journal_relevance": {
-            "status": "excluded",
-            "method": "rule-v1",
-            "reason": "no_ai_method_evidence",
-            "version": "1"
-          }
-        },
-        "10.1002/adma.74271": {
-          "doi": "10.1002/adma.74271",
-          "title": "Biphasic High-Entropy Heterojunctions Enabled by Perovskite Transformation",
-          "url": "https://doi.org/10.1002/adma.74271",
-          "abstract": "ABSTRACT High-entropy materials (HEMs) provide an ideal platform for tailoring functional properties. However, the controlled synthesis of biphasic high-entropy heterostructures with synergistic multifunctionality remains a significant challenge. We propose an in-situ chemical reduction strategy driven by dynamic transformations, enabling the conversion of perovskite precursors into a series of anchored high-entropy heterojunctions. Under reducing conditions, the entropy-stabilized perovskite lattice acts simultaneously as both a structural scaffold and a compositional reservoir. Selectively, B-site transition metal cations exsolve to form uniformly dispersed high-entropy alloy (HEA) nanoparticles, whereas A-site rare-earth cations remain within the parent framework and transform into a high-entropy oxide (HEO) support. This unique biphasic high-entropy heterointerface effectively modulates the interfacial electronic structure and magnetic configuration, which not only enhances polarization loss via abundant heterogeneous interfaces and crystal defects, but also amplifies magnetic loss. The resultant HEA-HEO exhibits an impressive electromagnetic response, with its optimal effective absorption bandwidth showing a 176% and 242% enhancement over low-entropy materials (La 2 O 3 -Co) and single-phase high-entropy materials (La 2 O 3 -HEA), respectively. In flexible composite films, the heterojunction promotes efficient conversion of electromagnetic energy into heat while enhancing thermal conductivity, thereby broadening pathways towards multifunctional high-entropy heterojunction materials.",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-10T00:25:35+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Xinsong Xu",
-            "Xuhui Xiong",
-            "Xinglong Wang",
-            "Longjun Rao",
-            "Wuyang Tan",
-            "Shuping Yu",
-            "Han-Wen Cheng",
-            "Renchao Che"
-          ],
-          "first_seen": "2026-10-13T12:06:10.113449+00:00",
-          "item_id": "4e29a9589e8c8a56b1b02971",
           "journal_relevance": {
             "status": "excluded",
             "method": "rule-v1",
@@ -133476,12 +132958,12 @@
       "counters": {
         "relevant": 26,
         "pending": 49,
-        "excluded": 695
+        "excluded": 694
       }
     },
     "advanced-energy-materials": {
-      "last_success_at": "2026-10-24T23:53:18.413440+00:00",
-      "last_crossref_at": "2026-10-24T23:53:18.413440+00:00",
+      "last_success_at": "2026-10-25T01:37:06.850962+00:00",
+      "last_crossref_at": "2026-10-25T01:37:06.850962+00:00",
       "records": {
         "10.1002/aenm.71681": {
           "doi": "10.1002/aenm.71681",
@@ -136135,72 +135617,6 @@
             "version": "1"
           }
         },
-        "10.1002/aenm.71344": {
-          "doi": "10.1002/aenm.71344",
-          "title": "Guiding Successive Mo 4 d- S 3 p Orbital Hybridization in MoS 2 via Dual-Confinement Engineering for Efficient Pseudocapacitive Storage",
-          "url": "https://doi.org/10.1002/aenm.71344",
-          "abstract": "ABSTRACT The pseudocapacitive performance of MoS 2 is intrinsically hampered by its poor electronic conductivity and inert basal planes, primarily arising from weak Mo 4 d -S 3 p orbital hybridization. Herein, we present a dual-confinement strategy that simultaneously modulates orbital hybridization via lattice-confined Mn doping and interlayer-confined ethylene glycol (EG), yielding a Mn- and EG-co-engineered MoS 2 architecture (denoted as Mn-EG-MoS 2 ). Microscopic characterization and theoretical calculations reveal that Mn substitution reconstructs the local Mo-S coordination, enhancing both Mo 4 d -S 3 p and Mn 3 d -S 3 p hybridization, thereby activating the basal plane sites and reinforcing Mo-S-Mn bonding in Mn-EG-MoS 2 . Simultaneously, EG incorporation expands the interlayer spacing and promotes dynamic orbital coupling across layers, effectively enhancing electron-ion transport kinetics. Consequently, the Mn-EG-MoS 2 electrode delivers a high areal capacitance of 757.5 mF cm −2 at 5 mA cm −2 and good cycling stability. Furthermore, asymmetric supercapacitors assembled with a PVP-MnO 2 cathode achieve a high energy density of 164.00 µWh cm −2 at 9.77 mW cm −2 , superior cycling stability retaining 90.06% of their initial capacitance after 5000 cycles at 30 mA cm −2 , and robust mechanical flexibility. This work establishes an effective design strategy by tuning orbital-level interactions via dual-confinement engineering for developing high-performance layer-structured materials.",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-02T02:29:59+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Jieming Chen",
-            "Haoyu Ma",
-            "Congcong Ni",
-            "Ling Kang",
-            "Jian Zhang",
-            "Zhaoling Li",
-            "Bin Ding",
-            "Yusuke Yamauchi",
-            "Shude Liu"
-          ],
-          "first_seen": "2026-10-13T12:06:10.113449+00:00",
-          "item_id": "0bbf0eb84a66a79443da6d8e",
-          "journal_relevance": {
-            "status": "excluded",
-            "method": "rule-v1",
-            "reason": "no_ai_method_evidence",
-            "version": "1"
-          }
-        },
-        "10.1002/aenm.71369": {
-          "doi": "10.1002/aenm.71369",
-          "title": "Liquid-Phase Spatial Confinement Engineering of sp 2 -Rich Closed-Pore Hard Carbon for Sodium-Ion Batteries",
-          "url": "https://doi.org/10.1002/aenm.71369",
-          "abstract": "ABSTRACT Porous-carbon-based hard carbons have attracted widespread attention as anodes for sodium-ion batteries owing to the high plateau capacity; however, their practical application is constrained by an intrinsic trade-off: constructing abundant closed pores enhances capacity but impedes charge transport and compromises structural stability. Herein, we introduce a solvent-mediated liquid-phase spatial confinement strategy that fundamentally addresses this dilemma. By incorporating an immiscible nonpolar solvent into a hydrothermal system, carbon precursor deposition and nucleation are precisely regulated within a confined, high-tension liquid-phase interface, yielding sp 2 -rich closed-pore hard carbon with simultaneously enhanced capacity, kinetics, and durability. Combined in situ characterizations and theoretical calculations reveal that such sp 2 -rich carbon layer significantly promotes electronic and Na + transport, induces preferential anion decomposition to generate a thin and NaF-rich solid electrolyte interphase, while reinforcing structural integrity. Consequently, the engineered hard carbon delivers high capacity (413.5 mA h g −1 at 20 mA g −1 ) together with excellent rate capability and cycling stability (224.1 mA h g −1 at 2 A g −1 after 4000 cycles). When assembled into Ah-level 32700 cylindrical cells, it achieves high energy density of 124.0 Wh kg −1 and stable operation over 1200 cycles at 1C, demonstrating a new paradigm for the rational design of high-performance porous-carbon-based hard carbon anodes.",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-01T04:29:44+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Weiying Jia",
-            "Ziang Cui",
-            "Shiqi Zhao",
-            "Chuanpei Sun",
-            "Jinwei Tian",
-            "Yue Lin",
-            "Jun Pan",
-            "Yong Qian",
-            "Ning Lin"
-          ],
-          "first_seen": "2026-10-13T12:06:10.113449+00:00",
-          "item_id": "70c5f26de218842fc720d424",
-          "journal_relevance": {
-            "status": "excluded",
-            "method": "rule-v1",
-            "reason": "no_ai_method_evidence",
-            "version": "1"
-          }
-        },
         "10.1002/aenm.71560": {
           "doi": "10.1002/aenm.71560",
           "title": "Surface-Functionalized MXene for Enhanced Photocatalytic CO 2 Reduction",
@@ -136720,32 +136136,6 @@
           ],
           "first_seen": "2026-10-15T00:18:40.225017+00:00",
           "item_id": "219073c199eea8a78d65a0d9",
-          "journal_relevance": {
-            "status": "excluded",
-            "method": "rule-v1",
-            "reason": "no_ai_method_evidence",
-            "version": "1"
-          }
-        },
-        "10.1002/aenm.71312": {
-          "doi": "10.1002/aenm.71312",
-          "title": "Redox-Buffering PEAI-CeOx Passivation Suppresses Thermo-Mechanical Degradation in Perovskite Solar Cells Under Rapid Thermal Cycling",
-          "url": "https://doi.org/10.1002/aenm.71312",
-          "abstract": "ABSTRACT Perovskite solar cells (PSCs) show critical thermo-mechanical and defect mediated degradation at interfaces, limiting their deployment in terrestrial high-temperature and space-like environments. This study presents a dual-function interfacial passivation strategy that combines nanoparticle cerium oxide (CeO x ) with phenylethylammonium iodide (PEAI) to form a hybrid surface treatment (PC) for poly[bis(4-phenyl)(2,4,6-trimethylphenyl)amine (PTAA) based n-i-p PSC architecture, where defect passivation is complemented by redox coupling and enhanced thermal stress stabilization. Optimized PC-treated devices achieved a champion efficiency of 25.3% and exhibited enhanced operational stabilities under continuous 1 SUN light soaking and 85°C/85% RH damp heat respectively. To probe the engineered interface mechanistically, we employed an accelerated thermal shock (TS) cycling to mimic low Earth orbit (LEO) relevant thermal cycling condition. Under realistically simulated TS conditions of cycling temperature between 80°C and −80°C and 16°C/min ramp rate transition, PC-treated devices retained 95% of initial efficiency after 100 cycles of TS, showing superior stability compared to their counterparts without CeO x . Collectively, this work highlights a new insight into dynamic thermal fatigue in PSCs and introduces a practical route toward thermally resilient, high efficiency perovskite photovoltaics.",
-          "rss_published_at": "2026-10-14T14:34:09+00:00",
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-14T14:51:08+00:00",
-          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
-          "providers": [
-            "crossref",
-            "rss"
-          ],
-          "authors": [
-            "George Kwesi Asare, Minwoo Lee, Joshua Sraku Adu, Ram Datt, Wing Chung Tsoi, Trystan Watson, Xiaojing Hao, Juhong Oh, Chang Eun Song, Behrang H. Hamadani, Jae Sung Yun, Helen Hejin Park"
-          ],
-          "first_seen": "2026-10-15T00:18:40.225017+00:00",
-          "item_id": "b61a5cf57c1f30e12769333b",
           "journal_relevance": {
             "status": "excluded",
             "method": "rule-v1",
@@ -140141,12 +139531,12 @@
       "counters": {
         "relevant": 9,
         "pending": 73,
-        "excluded": 160
+        "excluded": 157
       }
     },
     "advanced-functional-materials": {
-      "last_success_at": "2026-10-24T23:53:18.413440+00:00",
-      "last_crossref_at": "2026-10-24T23:53:18.413440+00:00",
+      "last_success_at": "2026-10-25T01:37:06.850962+00:00",
+      "last_crossref_at": "2026-10-25T01:37:06.850962+00:00",
       "records": {
         "10.1002/adfm.78905": {
           "doi": "10.1002/adfm.78905",
@@ -147506,32 +146896,6 @@
             "version": "1"
           }
         },
-        "10.1002/adfm.77318": {
-          "doi": "10.1002/adfm.77318",
-          "title": "Two-Photon Grayscale Lithography (2GL) of High Mechanical and Optical Quality 3D Silica Glass Microstructures",
-          "url": "https://doi.org/10.1002/adfm.77318",
-          "abstract": "ABSTRACT Two-photon grayscale lithography (2GL) is the latest evolution in two-photon polymerization laser 3D printing, combining unmatched surface quality and throughput by continuous laser power modulation that dynamically controls the print feature size (voxel) to smoothly blend contours despite coarse slicing. To reconstruct shapes, 2GL solves an inverse problem requiring parametrization of the voxel size and their underlying print parameters, which is specific to a given feedstock resist and so far, only available for a few commercial polymers. This paper establishes a 2GL 3D-printing route for the rapid manufacturing of complex silica glass micro- and nanostructures of unprecedented quality and accuracy, substantially advancing glass micro-fabrication. This is enabled by a pre-glass polyhedral oligomeric silsesquioxane (POSS) resist, engineered for high polymerization sensitivity and dynamic range. Together with a routine to identify optimal grayscale parameters for such custom resists, we realize the use of the 2GL process at maximal print speed while maintaining high loading of the silicon-oxygen POSS-cluster source. Mechanical resonators with quality factors > 1 000, optical components with < 3 nm roughness and nanoscale diffractive patterns are demonstrated, opening new pathways in photonics, precision mechanics, and metamaterials. The introduced grayscale parameter identification routine provides a framework for extending 2GL-printing to a broader material range.",
-          "rss_published_at": "2026-10-13T08:43:21+00:00",
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-13T09:44:28+00:00",
-          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
-          "providers": [
-            "crossref",
-            "rss"
-          ],
-          "authors": [
-            "Jonathan L. G. Schneider, Jiajie Liang, Paul Somers, Martin Wegener, Jens Bauer"
-          ],
-          "first_seen": "2026-10-13T12:06:10.113449+00:00",
-          "item_id": "7534161b94b4b7c8df4f0cbc",
-          "journal_relevance": {
-            "status": "excluded",
-            "method": "rule-v1",
-            "reason": "no_ai_method_evidence",
-            "version": "1"
-          }
-        },
         "10.1002/adfm.78094": {
           "doi": "10.1002/adfm.78094",
           "title": "A Flexible Light-Activated Pyro-Phototronic Cascade Platform for Antibacterial Immunomodulation and Infected Wound Healing",
@@ -148255,38 +147619,6 @@
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "a08021c1561b31eb646f599b",
-          "journal_relevance": {
-            "status": "excluded",
-            "method": "rule-v1",
-            "reason": "no_ai_method_evidence",
-            "version": "1"
-          }
-        },
-        "10.1002/adfm.77386": {
-          "doi": "10.1002/adfm.77386",
-          "title": "Skin-Inspired Janus Architecture Self-Decoupled Dual-Module Sensing System for Smart Home Health Management",
-          "url": "https://doi.org/10.1002/adfm.77386",
-          "abstract": "ABSTRACT Asymmetric chemistry deconstructs the intrinsic law of selective reactions from the molecular scale, but how to extend it to heterogeneous integration of sensing modules via asymmetric structural chemistry at the mesoscopic scale remains a major challenge. Moreover, traditional 2D or 3D multi-module film-based sensors are integrated in the same plane or in a vertical direction via complex processing, and mutual electromagnetic field disturbance between sensing modules causes serious signal interference and crosstalk. Herein, asymmetric structural chemistry for novel decoupling of ionic and electronic pathways within a Janus dual-module sensor is first proposed. The system integrates a conductive LP(LA-g-CNF/polyaniline (PANI)) resistive gas sensor and non-conductive LC (LA-g-CNF/CNTs/ISM) voltage ion sensor by synergistic non-covalent interactions. Due to active sulfhydryl groups and stable disulfide bonds, the Janus LPLC (LCNF/PANI-LCNF/CNTs) film-based sensor has high sensitivity and sodophilicity, ultra-low detection limits (62, 116 ppb of LP, 4.26 × 10 −8 M of the modified LC, far below any sensors), great cycle life and interfacial stability. Finally, Janus decoupling of ionic and electronic pathways provides dual-module sensing and a self-decoupling effect, enabling smart capturing of formaldehyde and ammonia gases during practical human signal monitoring. This work shows great promising application of self-decoupled electronics for smart home health management.",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-10T06:20:59+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Yanjuan Dong",
-            "Shiting Ruan",
-            "Shenghong Li",
-            "Shuobin Zhu",
-            "Yizhou Ke",
-            "Mengting Jiang",
-            "Kam Chiu Tam",
-            "Houyong Yu"
-          ],
-          "first_seen": "2026-10-13T12:06:10.113449+00:00",
-          "item_id": "40aad800b5042392ed56a1a3",
           "journal_relevance": {
             "status": "excluded",
             "method": "rule-v1",
@@ -153749,41 +153081,6 @@
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "813ba48737aea6cfba43d88c",
-          "journal_relevance": {
-            "status": "excluded",
-            "method": "rule-v1",
-            "reason": "no_ai_method_evidence",
-            "version": "1"
-          }
-        },
-        "10.1002/adfm.77384": {
-          "doi": "10.1002/adfm.77384",
-          "title": "Interfacial Dual-Coordination Inducing Selective Zn (002) Growth for Dendrite-Free Aqueous Zinc-Ion Batteries",
-          "url": "https://doi.org/10.1002/adfm.77384",
-          "abstract": "ABSTRACT Aqueous zinc-ion batteries (AZIBs) hold great promise for stationary energy storage, yet their practical deployment is critically impeded by the uncontrolled dendritic growth and parasitic side reactions. Here, we report an interfacial dual-coordination strategy to induce Zn deposition along the Zn(002) facet and suppress the parasitic side reactions. By employing lactic acid (Lac) to pretreat commercial Zn foil, we construct a chemisorbed interface that serves a synergistic “inhibition-guidance” function: the carboxyl group (-COO − ) forms strong bidentate coordination to passivate high-energy Zn (100)/(101) facets, while the hydroxyl group (-OH) establishes a low-energy diffusion pathway on the Zn (002) facet to guide Zn 2+ migration. This intrinsic regulation induces a highly selective Zn (002)-preferred growth, resulting in a dendrite-free lac@Zn anode. Consequently, the lac@Zn symmetric cell achieves a long lifespan of 4900 h (1 mA cm −2 , 1 mAh cm −2 ) and 500 h (5 mA cm −2 , 5 mAh cm −2 , DOD = 37%). Besides, the lac@Zn//MnO 2 full cell delivers exceptional reversibility with 76% capacity retention after 3000 cycles, and a pouch cell presents a high discharge capacity of 0.2 Ah. This work offers a new perspective for developing ultradurable and scalable Zn anodes through precise interfacial engineering.",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-06T19:05:01+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Dengke Wang",
-            "Xin Song",
-            "Siyuan Ye",
-            "Yu Chen",
-            "Haochen Liao",
-            "Zihan Wang",
-            "Ruizhi Lin",
-            "Sehan Cheng",
-            "Chaowei Li",
-            "Kai Zhang",
-            "Yagang Yao"
-          ],
-          "first_seen": "2026-10-13T12:06:10.113449+00:00",
-          "item_id": "d677d2c3cddff02d47d3763c",
           "journal_relevance": {
             "status": "excluded",
             "method": "rule-v1",
@@ -162330,35 +161627,6 @@
             "version": "1"
           }
         },
-        "10.1002/adfm.77293": {
-          "doi": "10.1002/adfm.77293",
-          "title": "Bimetallic Site Regulation for CO 2 Photoreduction to C 2+ Products",
-          "url": "https://doi.org/10.1002/adfm.77293",
-          "abstract": "ABSTRACT Photocatalytic CO 2 reduction, driven by solar energy, can convert CO 2 into high-value carbon-based products. However, the production of C 2+ products faces key challenges such as the stability of CO 2 molecules, high energy barriers for C-C coupling, and low product selectivity. Inspired by natural bimetallic enzymes, bimetallic sites, with their synergistic electron transfer, site specialization, and spatial regulation effects, can effectively reduce the energy barriers for C─C coupling, promote charge separation, and stabilize key intermediates, becoming a core strategy to enhance the selectivity and yield of C 2+ products. This article systematically reviews the mechanism of bimetallic sites in the photoreduction of CO 2 to C 2+ products. It summarizes the design principles of catalysts from five aspects: support selection, component matching, coordination environment, spatial configuration, and multidimensional synergy. It elucidates the regulation mechanisms of bimetallic sites on light absorption, charge transfer, and product selectivity. Additionally, several typical bimetallic photocatalysts are introduced, such as oxide-based, sulfide-based, and MOF/COF-based. Finally, it points out the current challenges in precise construction, mechanistic characterization, performance enhancement, and industrial application.",
-          "rss_published_at": null,
-          "published_online_at": "2026-07-27T00:00:00+00:00",
-          "published_print_at": null,
-          "indexed_at": "2026-10-19T21:32:26+00:00",
-          "article_type": "journal-article",
-          "providers": [
-            "crossref"
-          ],
-          "authors": [
-            "Jiali Zhu",
-            "Jun Xiong",
-            "Xiaojiao Du",
-            "Wei Jiang",
-            "Jun Di"
-          ],
-          "first_seen": "2026-10-17T00:45:26.405218+00:00",
-          "item_id": "aef0f85c4c789d9afe1f6125",
-          "journal_relevance": {
-            "status": "excluded",
-            "method": "rule-v1",
-            "reason": "no_ai_method_evidence",
-            "version": "1"
-          }
-        },
         "10.1002/adfm.77600": {
           "doi": "10.1002/adfm.77600",
           "title": "Dynamic Self-Optimization in an Ordered L1 0 -PtCo Core-Shell Catalyst Decouples Activity and Stability for Acidic Hydrogen Evolution",
@@ -166189,7 +165457,7 @@
           "rss_published_at": null,
           "published_online_at": "2026-09-16T00:00:00+00:00",
           "published_print_at": null,
-          "indexed_at": "2026-10-20T15:18:51+00:00",
+          "indexed_at": "2026-10-25T01:01:57+00:00",
           "article_type": "journal-article",
           "providers": [
             "crossref"
@@ -174995,12 +174263,12 @@
       "counters": {
         "relevant": 19,
         "pending": 64,
-        "excluded": 1026
+        "excluded": 1022
       }
     },
     "acta-materialia": {
-      "last_success_at": "2026-10-24T23:53:18.413440+00:00",
-      "last_crossref_at": "2026-10-24T23:53:18.413440+00:00",
+      "last_success_at": "2026-10-25T01:37:06.850962+00:00",
+      "last_crossref_at": "2026-10-25T01:37:06.850962+00:00",
       "records": {
         "10.1016/j.actamat.2026.122828": {
           "doi": "10.1016/j.actamat.2026.122828",
@@ -179155,8 +178423,8 @@
       }
     },
     "matter": {
-      "last_success_at": "2026-10-24T23:53:18.413440+00:00",
-      "last_crossref_at": "2026-10-24T23:53:18.413440+00:00",
+      "last_success_at": "2026-10-25T01:37:06.850962+00:00",
+      "last_crossref_at": "2026-10-25T01:37:06.850962+00:00",
       "records": {
         "10.1016/j.matt.2026.103052": {
           "doi": "10.1016/j.matt.2026.103052",
