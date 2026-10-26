@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "snapshot": "../../outputs/classification-repair-20261026/data/index.json",
+  "live": false,
+  "index_sha256": "0cac6248eb81e4fead5b7b0d619cd1b672cbf8f6fa5c8575b1b1351bba007643",
+  "items": 2268,
+  "expectedPending": 1564,
+  "expectedMissing": 62,
+  "path_mode": "routed actual snapshot with working-tree app; not online",
+  "checks": [
+    "1440 pending denominator",
+    "1440 research denominator",
+    "1440 pending exact list",
+    "1440 switch to research exits pending",
+    "1440 latest URL reload",
+    "1440 legacy migration",
+    "1440 pending clears research filter",
+    "1440 meaningful empty state",
+    "1440 no overflow",
+    "390 pending denominator",
+    "390 research denominator",
+    "390 pending exact list",
+    "390 switch to research exits pending",
+    "390 latest URL reload",
+    "390 legacy migration",
+    "390 pending clears research filter",
+    "390 meaningful empty state",
+    "390 no overflow"
+  ],
+  "errors": []
+}

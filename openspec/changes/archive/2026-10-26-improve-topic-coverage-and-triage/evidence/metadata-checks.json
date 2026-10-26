@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-10-26T06:31:51.288948+00:00",
+  "scope": "Independent offline metadata integration tests using synthetic public records, mock publisher/Crossref and no real network, credentials or paid calls. Only new test_metadata_integration.py authored by this agent.",
+  "focused_tests": {
+    "passed": 5,
+    "failed": 0,
+    "tests": [
+      "test_previous_daily_budget_survives_collect_and_prevents_next_run_requests",
+      "test_corrupt_previous_budget_date_cannot_grant_a_fresh_daily_allowance",
+      "test_recovered_abstract_rescreens_public_rows_health_and_stable_identity",
+      "test_disabled_and_omitted_metadata_add_no_recovery_http",
+      "test_later_taxonomy_or_validation_failure_does_not_commit_recovered_state"
+    ]
+  },
+  "full_python": {
+    "passed": 256,
+    "failed": 0,
+    "command": "../site-venv/bin/python -m unittest discover -s site/tests -p 'test_*.py'",
+    "log": "metadata-integration-python-tests.log"
+  },
+  "verified": [
+    "Previous metadata_budget is propagated into actual journals.collect/enrich_candidates; requests19→20, persisted next-run state prevents a new candidate triggering requests.",
+    "Recovered abstract is rescreened: relevant/pending public rows rebuilt, excluded row omitted, per-journal health counts and abstracts_recovered refreshed.",
+    "item_id and first_seen remain stable; journals.collect returns unwritten state, does not directly mutate state file.",
+    "Missing metadata config or enabled:false never invokes enrichment or extra HTTP.",
+    "Taxonomy and validation failure after recovery keep original index and journal-state bytes; no daily write or summary call.",
+    "Malformed previous budget date cannot reset allowance: no Crossref call, returned recovery status budget_invalid, corrupt ledger unchanged, reading website remains usable."
+  ],
+  "findings_fixed": [
+    {
+      "issue": "Malformed cached budget date was treated as old and reset request count.",
+      "fix": "Module worker added strict canonical date/ledger validation and budget_invalid zero-request soft failure; independent actual-collect regression passed."
+    }
+  ],
+  "remaining_blockers": [],
+  "limits": [
+    "Offline tests do not establish live provider availability or relevance precision.",
+    "The free metadata request cap applies per invocation and across successfully persisted collection states. If later publication fails, journal-state remains untouched; repeated whole-update failures can repeat free requests. This is not a hard global daily reservation or financial-cost budget.",
+    "Real private corpus replay, network recovery and browser queue verification are main-agent/other-agent evidence, not claimed by this receipt."
+  ],
+  "files_sha256": {
+    "site/journals.py": "d9b57d02fc7c2d423cd2d9dc6159b84a7b1c237db81ded7152ef7ee453f2456d",
+    "site/journal_metadata.py": "4f02145605f8ed439f31e656c213b656e7e790ab09f7bd00c16533c8582bccfe",
+    "site/collect.py": "7ef85ca85453dfb73a7838b03baa4b2739aa6e7dbb092c171d43fdf5a2b9639a",
+    "site/tests/test_metadata_integration.py": "3dafc5395583bae50e0e44f58cd525fbd0a41351dd079b67dd92629019fb3bd2"
+  }
+}

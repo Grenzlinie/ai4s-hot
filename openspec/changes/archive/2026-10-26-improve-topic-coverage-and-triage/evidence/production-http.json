@@ -1,0 +1,65 @@
+{
+  "code_revision": "289b4336a87a35a4084d11ba281ff1a149453491",
+  "archive_revision": "4ad464be9da7ea92ed913f6cb88b03049075d2f6",
+  "archive_sha256": "c41b35a11e6b658afb2f3669b653d4d20b81cec8c20100f8456419f7455b816f",
+  "generated_at": "2026-10-26T06:45:22.318652+00:00",
+  "mode": "publish",
+  "update_status": "ok",
+  "items": 2284,
+  "without_topic_ids": 1309,
+  "relevance_pending": 1566,
+  "research_topic_queue": 62,
+  "related": 71,
+  "related_classified": 71,
+  "content_type_coverage": 2284,
+  "classification": {
+    "status": "ok",
+    "classified": 2284,
+    "unclassified": 1309,
+    "algorithm": "faceted-local-v2.5.1",
+    "calibration_status": "pending_human_gold",
+    "quality_status": "unmeasured",
+    "curation": {
+      "status": "ok",
+      "applied": 0,
+      "needs_review": 0
+    }
+  },
+  "summary": {
+    "status": "ok",
+    "generated": 1,
+    "failed": 0,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "enrichment": {
+      "status": "partial",
+      "attempted": 3,
+      "public_html": 1,
+      "bohr_graph": 0,
+      "fallback": 2,
+      "bohr_calls": 0
+    }
+  },
+  "recovered_this_run": 3,
+  "checked_samples": [
+    {
+      "id": "353439be5b930c2609104e5f",
+      "title": "Superior energy-storage performance in BaTiO3-based MLCCs via high-entropy driven multiscale optimization",
+      "topics": [],
+      "scope": "research"
+    },
+    {
+      "id": "d11a050cec710fa7e4ebb8ad",
+      "title": "Harnessing protein conformational dynamics for next-generation supramolecular materials",
+      "topics": [
+        "01 材料研究"
+      ],
+      "scope": "research"
+    },
+    {
+      "id": "bceafe23a2f31bf560b6de78",
+      "title": "InGaP/GaAs/InGaAs Multijunction Flexible Photovoltaics With Chemical Robustness and Radiation Hardness for Unassisted Electrocatalysis and Space Applications",
+      "topics": [],
+      "scope": "research"
+    }
+  ]
+}

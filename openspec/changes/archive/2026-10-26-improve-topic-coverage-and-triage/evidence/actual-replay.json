@@ -1,0 +1,116 @@
+{
+  "captured_at": "2026-10-26T06:28:06.388225+00:00",
+  "baseline_archive": "869d4c19694e628cb8b81df865596bba990735bf",
+  "taxonomy_status": "ok",
+  "private_corpus_in_memory_only": true,
+  "before": {
+    "items": 2282,
+    "without_topic_ids": 1621,
+    "relevance_pending": 1577,
+    "research_topic_queue": 77,
+    "related": 72,
+    "related_without_topics": 10,
+    "content_type_coverage": 2282
+  },
+  "after_rules": {
+    "items": 2282,
+    "without_topic_ids": 1255,
+    "relevance_pending": 1577,
+    "research_topic_queue": 62,
+    "related": 72,
+    "related_without_topics": 0,
+    "content_type_coverage": 2282
+  },
+  "after_metadata": {
+    "items": 2282,
+    "without_topic_ids": 1255,
+    "relevance_pending": 1577,
+    "research_topic_queue": 62,
+    "related": 72,
+    "related_without_topics": 0,
+    "content_type_coverage": 2282
+  },
+  "metadata": {
+    "attempted": 10,
+    "improved": 6,
+    "failed": 4,
+    "skipped": 5337,
+    "requests": 11,
+    "providers": {
+      "crossref": 4,
+      "openalex": 2,
+      "publisher": 0
+    },
+    "skip_reasons": {
+      "excluded": 3769,
+      "no_materials_ai_title_hint": 1373,
+      "has_abstract": 128,
+      "no_verified_doi": 58,
+      "candidate_limit": 9
+    },
+    "status": "partial",
+    "remaining_daily_requests": 9
+  },
+  "recovered": [
+    {
+      "id": "22665d21992a8e6baffa6e2e",
+      "title": "Resolving carrier kinetics in perovskite through deep-learning-assisted photoluminescence analysis",
+      "doi": "10.1038/s41467-026-77052-8",
+      "provider": "openalex"
+    },
+    {
+      "id": "dd28943fbdcf17daf3fc0dfe",
+      "title": "Physics-Informed Machine Learning for Solid Oxide Cell Materials and Microstructures Under Operando Constraints",
+      "doi": "10.1002/aenm.71608",
+      "provider": "crossref"
+    },
+    {
+      "id": "b099ba7e4a0c87114f02f005",
+      "title": "Machine Learning Interatomic Potentials for Energy Materials: Architectures, Training Strategies, and Applications (Adv. Energy Mater. 39/2026)",
+      "doi": "10.1002/aenm.71625",
+      "provider": "openalex"
+    },
+    {
+      "id": "ca88cf84fae0b5c0ab5fef6c",
+      "title": "Smart Exploration of Perovskite Photovoltaics: From AI Driven Discovery to Autonomous Laboratories",
+      "doi": "10.1002/aenm.202506803",
+      "provider": "crossref"
+    },
+    {
+      "id": "760de91ca725cb9e753c2544",
+      "title": "Machine Learning Interatomic Potentials for Energy Materials: Architectures, Training Strategies, and Applications",
+      "doi": "10.1002/aenm.71046",
+      "provider": "crossref"
+    },
+    {
+      "id": "8246c8c199758aee94c811ad",
+      "title": "Learning From Atoms: Machine Learning Enabled Design of Durable PtCo Fuel Cell Catalysts",
+      "doi": "10.1002/adfm.75914",
+      "provider": "crossref"
+    }
+  ],
+  "changed_items": 369,
+  "stable_ids_first_seen": true,
+  "summary_calls": 0,
+  "bohr_calls": 0,
+  "post_cover_filter": {
+    "items": 2268,
+    "excluded_issue_cover_ids": [
+      "23cb21f7db2c436de2fca145",
+      "30b61272a1137c3c14748ab1",
+      "3ee7267baf0dd23e2ccdb401",
+      "45067d0363f4c6c2bad781a3",
+      "4db8a8858d92159250568e38",
+      "a308498a58287096dfaf137b",
+      "a3dfbf45e0408771a6291bea",
+      "a8a6de18364736e4f517691c",
+      "b099ba7e4a0c87114f02f005",
+      "bc1bb438c0b79055a5092f48",
+      "be4c839ed91614a24e319a31",
+      "d3be5252ac9e2f0ee4b247f2",
+      "ee9490a18f647b30c2ef1d39",
+      "f851274bd8cb63172e5a1b60"
+    ],
+    "without_topic_ids": 1251
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-26T06:46:59.738078+00:00",
+  "mode": "publish",
+  "code_revision": "289b4336a87a35a4084d11ba281ff1a149453491",
+  "archive_revision": "4ad464be9da7ea92ed913f6cb88b03049075d2f6",
+  "builder_revision": "289b4336a87a35a4084d11ba281ff1a149453491",
+  "archive_schema": 2,
+  "archive_generated_at": "2026-10-26T06:45:22.318652+00:00",
+  "archive_sha256": "c41b35a11e6b658afb2f3669b653d4d20b81cec8c20100f8456419f7455b816f",
+  "assets": {
+    "index.html": "f95d862fb73ca85d2ecb56bf4076654b46f4fba0cfa9108524570b594cae2df7",
+    "app.js": "4a4d3a5c304bc718bb4c2afd0f0d542407c6b4fbd2b0dcc3a2cddba2d3970e1d",
+    "style.css": "1c879faf0b015c2fe77dc214a5e5fdb3950de8172488046385df9edd28a54418",
+    "favicon.svg": "82ef768aeb8152ca4b219024fe0ec8a01d33f9ed646e3639f561c6f0b6697494",
+    "schema-support.json": "185f680de2d4d7ff11896b68c90ab2e1851adbc1e45a56a7adfef0485a694f87"
+  },
+  "item_count": 2284,
+  "taxonomy_version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
+  "classification": {
+    "status": "ok",
+    "classified": 2284,
+    "unclassified": 1309,
+    "algorithm": "faceted-local-v2.5.1",
+    "calibration_status": "pending_human_gold",
+    "quality_status": "unmeasured",
+    "curation": {
+      "status": "ok",
+      "applied": 0,
+      "needs_review": 0
+    }
+  },
+  "source_kind": "public_archive",
+  "llm_requests": 0
+}

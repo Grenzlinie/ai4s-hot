@@ -26,3 +26,8 @@ arXiv/Zotero排序run37883000672及Pages导入已成功，排序和主题精度�
 ## 材料 AI 期刊追踪
 
 2026-10-13完成10刊官方RSS+ISSN限定Crossref增量、DOI跨天身份合并、相关/待确认边界及独立期刊多选。已在GitHub Actions/Pages验证正式publish；223项Python、254项前端断言和线上19项浏览器验收通过。首次云端7刊ok、3刊partial如实呈现；39相关、882待确认并非人工准确率结果。完整设计、失败修复、精确提交和验收收据见[期刊变更证据](changes/archive/2026-10-13-add-materials-journal-watch/evidence.md)。
+
+
+## 分类覆盖与分流恢复
+
+2026-10-26完成acquisition上下文、缺摘要标题有据分类、分开相关性/主题队列与有界免费摘要补全。独立抽样发现首轮generation/optimization/robustness歧义后，用v2.5.1科学语境限制修复并实际重算发布。261项Python、最终线上20项原生Chrome及三负例/14科研scope语义读回通过；298旧记录新增主题，71/71相关期刊有主题，仍保留无证据候选与真实研究待分。详见[最终验收证据](changes/archive/2026-10-26-improve-topic-coverage-and-triage/evidence.md)，不把覆盖提升当准确率。

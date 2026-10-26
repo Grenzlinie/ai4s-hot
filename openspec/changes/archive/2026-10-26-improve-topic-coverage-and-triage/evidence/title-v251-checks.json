@@ -1,0 +1,53 @@
+{
+  "checked_at": "2026-10-26T06:44:04.701321+00:00",
+  "algorithm": "faceted-local-v2.5.1",
+  "focused": {
+    "passed": 13,
+    "failed": 0,
+    "log": "classification-v251-focused-tests.log"
+  },
+  "full_python": {
+    "passed": 261,
+    "failed": 0,
+    "log": "classification-v251-python-tests.log"
+  },
+  "confirmed_cases": [
+    {
+      "id": "353439be5b930c2609104e5f",
+      "title": "Superior energy-storage performance in BaTiO3-based MLCCs via high-entropy driven multiscale optimization",
+      "new_topic_paths": [],
+      "no_AI_or_evaluation": true
+    },
+    {
+      "id": "d11a050cec710fa7e4ebb8ad",
+      "title": "Harnessing protein conformational dynamics for next-generation supramolecular materials",
+      "new_topic_paths": [
+        "01 材料研究"
+      ],
+      "no_AI_or_evaluation": true
+    },
+    {
+      "id": "bceafe23a2f31bf560b6de78",
+      "title": "InGaP/GaAs/InGaAs Multijunction Flexible Photovoltaics With Chemical Robustness and Radiation Hardness for Unassisted Electrocatalysis and Space Applications",
+      "new_topic_paths": [],
+      "no_AI_or_evaluation": true
+    }
+  ],
+  "actual_14_scope_cases_restored": 14,
+  "actual_scope_case_count": 14,
+  "scope": "Title-only direct include evidence with facet-specific context; actual3 public audit cases with empty excerpt and EMPTY synthetic corpus. Not private-corpus replay, quality measurement or deployment evidence.",
+  "gates": [
+    "AI facet needs explicit named AI-method context; generic generation/optimization/learning or traditional interatomic potential alone insufficient.",
+    "Generative-model path requires generative/diffusion/flow/autoencoder/autoregressive; next-generation and AI-driven data generation alone insufficient.",
+    "Evaluation requires dataset/benchmark/assessment context; robustness path requires benchmark/model assessment/data-code reproducibility.",
+    "Workflow requires software/computation/laboratory task context.",
+    "Ecological/clinical silicate title without materials task/object does not get material leaf.",
+    "Strong explicit ML/neural/active learning/Bayesian/generative methods preserved; title-only low confidence and reason unchanged."
+  ],
+  "schema": "No new fields/methods; actual3 merged public rows validate with real journal registry.",
+  "files_sha256": {
+    "site/topics_decision.py": "1d9ac285fc700d9e8512329bd92ba68c900906f124070688e9982848c7f88e9c",
+    "site/topics_classifier.py": "ba9cf1cf45dd5e42352beafa6abf08469b993ee536b3677c7b3ba19738974dde",
+    "site/tests/test_title_evidence.py": "39de55ff977a8f9130fbfc9aee5cbbddede665a2c54a14795cee07f43a48ae09"
+  }
+}

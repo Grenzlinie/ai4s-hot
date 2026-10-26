@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-10-26T06:25:00.121888+00:00",
+  "algorithm": "faceted-local-v2.5",
+  "focused_tests": 9,
+  "python_suite": {
+    "passed": 232,
+    "failed": 0,
+    "log": "classification-v25-python-tests.log"
+  },
+  "comparison": {
+    "scope": "Public2282 snapshot, same public catalog, EMPTY synthetic reference corpus and no exact matches; decision-only v2.4 vs v2.5. NOT a real private Zotero corpus replay or quality estimate.",
+    "snapshot_count": 2282,
+    "baseline_no_topic": 1871,
+    "new_no_topic": 1510,
+    "short_excerpt_baseline_no_topic": 1529,
+    "short_excerpt_new_no_topic": 1175,
+    "short_excerpt_with_topic_new": 354,
+    "14_audited_organization_misclassifications_restored": 14,
+    "audited_count": 14,
+    "public_schema_validation": "passed"
+  },
+  "checks": [
+    "Technical acquisition/function and scientific appointment scheduling do not indicate organization policy.",
+    "Real company acquisitions and role appointments retained.",
+    "Leaf title-only labels require direct phrase matches; low confidence, public title-only reason.",
+    "Weak/empty titles get no guessed leaves; explicit materials title can get root broad fallback; molecular/chemical/chemistry alone cannot force material root.",
+    "Multiple facets handled independently, release stays non-research.",
+    "v2.5 opaque cache invalidates old classification and repeat calls reuse cache; schema and methods unchanged."
+  ],
+  "files_sha256": {
+    "site/topics_decision.py": "bca51a067edaaa4a5dd75549c6600ee7f112f7a728b5d634d629b5a616dd37c2",
+    "site/topics_classifier.py": "3d3249edc7d28bd16c4d0ea9b9a737ba5fd6a15235b893eba6d3f3a0693ebf49",
+    "site/tests/test_title_evidence.py": "c1c53179cb1a8d9b71845d1b2bce87a150ca046cbc9bbf5813a10c262f908c00"
+  }
+}

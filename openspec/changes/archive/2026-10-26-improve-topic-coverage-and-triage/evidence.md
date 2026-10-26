@@ -19,7 +19,16 @@
 
 ## 正式发布
 
-待GitHub Actions与Pages实际验证后补充。不得将local routed snapshot或retention成功称为新版正式采集。
+最终正式版本为289b4336a87a35a4084d11ba281ff1a149453491、faceted-local-v2.5.1。首轮22e9704只作为中间发布记录，语义抽查发现问题后已替换。
+
+- [CI40281635292](https://github.com/Grenzlinie/ai4s-hot/actions/runs/40281635292)成功，261项Python及前端回归/OpenSpec严格检查通过；[Pages40281635247](https://github.com/Grenzlinie/ai4s-hot/actions/runs/40281635247)实际采集、分类、构建、部署成功。
+- mode=publish、update-status=ok，非retention。归档4ad464be9da7ea92ed913f6cb88b03049075d2f6；SHA256 c41b35a11e6b658afb2f3669b653d4d20b81cec8c20100f8456419f7455b816f。
+- 最终2284条全部有content_kind；原1621条无研究主题不等于全是相关论文。当前1309条无topic_ids，包括大量独立相关性待确认候选。UI研究待分类62、相关性待确认1566，按同一定义分别计数。
+- 保留的2265条旧记录中，298条原无topic_ids现在有主题，first_seen全部保持。另有19新发现、17候选退出归档（包括14封面/期次展示记录），不能把删除/新增混作分类质量提升。
+- 71/71相关期刊论文有研究主题；封面排除前72包括一条封面。三条明确错误标签均已消除，14条scope误伤仍为research，独立公开HTTP语义读回见semantic-readback.json。
+- 最终原生Chrome真实线上20/20，无route替换；1440/390截图目检，legacy URL、queue切换、相同分母、空态、布局与页面hash/manifest稳定均通过。
+- 本次最终更新恢复3篇公开摘要；继承原预算与重试状态。常规摘要生成1篇、0失败，Bohrium0调用；免费摘要恢复自身不调用LLM/Bohrium。不能把浏览器/单测成功当作人工准确率。
+- 收据、公开样本与截图存同目录evidence；一次性私密配置加载/回放脚本已清理，没有公开参考语料或凭据。
 
 
 ## 独立标题抽样后的收紧

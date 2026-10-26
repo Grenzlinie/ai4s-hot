@@ -1,4 +1,10 @@
-## ADDED Requirements
+# classification-recovery Specification
+
+## Purpose
+
+恢复因词义歧义和缺摘要门槛而遗漏的有据研究分类，分开相关性确认与研究主题分类队列，并以身份验证、请求预算和持久退避补充公开摘要；提高覆盖时保留不确定性、人工优先及私密参考边界。
+
+## Requirements
 
 ### Requirement: Contextual scope detection
 The system SHALL distinguish scientific acquisition terminology from corporate events.
@@ -21,6 +27,10 @@ The system SHALL use explicit public title evidence for topics when abstracts ar
 #### Scenario: Weak title
 - **WHEN** neither title nor abstract supports a specific topic
 - **THEN** no unsupported leaf label is fabricated and the content remains browsable by content type
+
+#### Scenario: Ambiguous scientific words
+- **WHEN** a materials title uses next-generation, optimization or chemical robustness without explicit AI/model-evaluation context
+- **THEN** these generic words alone do not produce generative-model, AI-training or benchmark-robustness labels
 
 ### Requirement: Separate triage queues
 The interface SHALL distinguish relevance-pending journal candidates, research-topic-unclassified records, and non-research content types in matching counts and filters.
