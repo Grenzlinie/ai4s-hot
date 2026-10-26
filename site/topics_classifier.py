@@ -11,7 +11,7 @@ from topics_identity import load_private_config
 from topics_curate import apply_overrides
 from topics_semantic import MODEL,REVISION
 
-ALGORITHM='faceted-local-v2.4'
+ALGORITHM='faceted-local-v2.5'
 ROOT=Path(__file__).parent/'topics'
 
 class ClassificationUpdateError(RuntimeError):
@@ -75,7 +75,7 @@ def _classify_v2(items,taxonomy,corpus,force=False, overrides_payload=None, back
                     row['score']=value if options['backend']=='semantic' else .6*row['score']+.4*value
             decision_options={**options,'backend':options['backend'] if semantic is not None else 'lexical'}
             result=decide(item,topics,scores,coverage,exact_match(item,corpus),decision_options)
-            if not corpus and not any(r.get('definition_hit') for r in scores.values()) and result['topic_scope']!='non_research':
+            if not corpus and not any(r.get('definition_hit') for r in scores.values()) and result['topic_scope']!='non_research' and not result['topic_labels']:
                 result.update(topic_status='pending',topic_labels=[],topic_leaf_ids=[],topic_ids=[])
             item.update(result,topic_cache_token=token,topic_version=ALGORITHM,topic_backend='degraded_lexical' if degraded else options['backend'])
         except Exception:

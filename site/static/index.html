@@ -7,8 +7,8 @@
   <meta name="theme-color" content="#17695b">
   <title>AI4S Hot · 科研进展阅读站</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css?v=journals-20261013">
-  <script src="./app.js?v=journals-20261013" defer></script>
+  <link rel="stylesheet" href="./style.css?v=classification-20261026">
+  <script src="./app.js?v=classification-20261026" defer></script>
 </head>
 <body>
 <a class="skip" href="#stream">跳到内容</a>
@@ -43,7 +43,7 @@
       <div class="facet-row"><span class="facet-label" id="domain-label">领域</span><div id="domains" class="chips" role="group" aria-labelledby="domain-label"></div></div>
       <div class="facet-row"><span class="facet-label" id="kind-label">类型</span><div id="kinds" class="chips" role="group" aria-labelledby="kind-label"></div></div>
       <div class="facet-row sourcebar"><span class="facet-label" id="sources-label">来源</span><div id="sources" class="chips source-chips" role="group" aria-labelledby="sources-label"></div></div>
-      <div id="journal-facet" hidden><div class="facet-row journalbar"><span class="facet-label" id="journals-label">期刊</span><div id="journals" class="chips source-chips journal-chips" role="group" aria-labelledby="journals-label"></div></div><div class="journal-review-row"><button id="journal-review" type="button" aria-pressed="false">查看待确认文章</button><p id="journal-review-note" hidden>材料 AI 相关性证据不足的候选文章，待补充信息后确认；这不是文章质量评价。</p></div></div>
+      <div id="journal-facet" hidden><div class="facet-row journalbar"><span class="facet-label" id="journals-label">期刊</span><div id="journals" class="chips source-chips journal-chips" role="group" aria-labelledby="journals-label"></div></div><div class="journal-review-row"><button id="journal-review" title="当前数量遵循其他筛选条件，全部数量仅统计相关性待确认文章" type="button" aria-pressed="false">相关性待确认</button><p id="journal-review-note" hidden>材料 AI 相关性证据不足的候选文章；即使已有研究主题，也单独列在这里。待补充信息后确认，不代表文章质量。</p></div></div>
       <div class="filter-row">
         <div class="periods" id="periods" aria-label="时间范围"><button data-days="7">近 7 天</button><button data-days="30" class="active">近 30 天</button><button data-days="0">全部归档</button></div>
         <label class="date-label">收录日期 <input id="archive-date" type="date"></label>

@@ -1,0 +1,6 @@
+- [x] 1. Define contracts and validate OpenSpec structure.
+- [x] 2. Implement contextual scope and title evidence classification with versioned historical replay.
+- [x] 3. Implement bounded free metadata recovery and state-safe collector integration.
+- [x] 4. Separate frontend relevance/topic queues with matching counts and URL compatibility.
+- [x] 5. Independent tests, actual snapshot before/after audit, public recovery probe and native browser acceptance.
+- [ ] 6. Publish through Actions, verify manifest/online queues and record evidence; archive completed change.

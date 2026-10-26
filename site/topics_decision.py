@@ -2,6 +2,7 @@
 import re
 from collections import defaultdict
 from topics_v1 import topic_ancestors
+from topics_candidates import phrase_hit
 
 DEFAULTS={'min_score':.24,'relative_score':.82,'margin':.035,'max_per_facet':2,'min_coverage':.12}
 
@@ -9,7 +10,17 @@ DEFAULTS={'min_score':.24,'relative_score':.82,'margin':.035,'max_per_facet':2,'
 def content_facets(item):
     text=(item.get('title','')+' '+item.get('excerpt','')).lower()
     kind=item.get('type',item.get('kind','unknown'))
-    organization=bool(re.search(r'\b(?:banking|barclays|fundrais\w*|funding round|partnership|appoint\w*|acquisition|enterprise deployment)\b|\bbank\b.{0,60}\b(?:claude|deploy)',text))
+    # Acquisition functions/data collection and appointment scheduling are
+    # scientific activities. Organization evidence requires a business/role context.
+    business=r'company|companies|startup|firm|corporate|merger|shares|deal|openai|anthropic|google|microsoft|nvidia|meta'
+    acquisition=r'acquisition|acquir(?:e|es|ed|ing)'
+    business_text=re.sub(r'\b(?:data|signal|information|knowledge|image|feature)[ -]+acquisition\b|\bacquisition[ -]+functions?\b','',text)
+    organization=bool(re.search(r'\b(?:banking|barclays|fundrais\w*|funding round|partnership|enterprise deployment)\b|\bbank\b.{0,60}\b(?:claude|deploy)',text)
+        or re.search(r'\b(?:'+business+r')\b.{0,80}\b(?:'+acquisition+r')\b',business_text)
+        or re.search(r'\b(?:'+acquisition+r')\b.{0,80}\b(?:company|companies|startup|firm|corporate|merger|shares|deal)\b',business_text)
+        or re.search(r'\bannounc(?:e|es|ed|ing)\s+(?:the\s+)?acquisition\b',text)
+        or re.search(r'\bappoint(?:s|ed|ing|ment)?\b.{0,80}\b(?:ceo|cto|cfo|chief|president|director|chair|professor|head of)\b',text)
+        or re.search(r'\b(?:ceo|cto|cfo|chief|president|director|chair)\b.{0,60}\bappointment\b',text))
     release=kind in ('release','model_release') or bool(re.search(r'\bintroducing\b|\blaunch(?:es|ing)?\b|model release',text))
     paper=kind=='paper' or 'arxiv.org' in item.get('url','')
     scope='non_research' if organization or (release and not paper) else ('research' if paper or re.search(r'experiment|scientific|research|benchmark|dataset|material|molecular|algorithm',text) else 'unknown')
@@ -27,11 +38,33 @@ def decide(item,topics,scores,coverage,exact,config):
     scope,kind,domains=content_facets(item)
     text=item.get('title','')+' '+item.get('excerpt','')
     automatic_method='local_'+config.get('backend','lexical')+'_v2'
+    title_hits={}; title_roots=set()
     if exact:
         chosen=[t for t in exact if t in by_id]; status='classified'; method='zotero_exact'
     elif scope=='non_research': chosen=[];status='classified';method='scope_rule'
     elif len(item.get('excerpt','').strip())<40:
-        chosen=[];status='insufficient_evidence';method=automatic_method
+        # Title-only classification never uses similarity or corpus neighbours.
+        # Every leaf needs an explicit public include phrase present in the title.
+        title=item.get('title','')
+        for t,record in scores.items():
+            if t not in by_id: continue
+            hits=[term for term in record.get('public_terms',[]) if phrase_hit(term,title)]
+            if not hits: continue
+            if 'require_scientific_task' in record.get('rules',[]) and not re.search(r'scien|research|laborator|experiment|科研|实验',title,re.I): continue
+            title_hits[t]=hits
+        grouped=defaultdict(list)
+        for t,hits in title_hits.items(): grouped[roots[t]].append(t)
+        chosen=[]
+        for root,candidates in sorted(grouped.items()):
+            specific=[t for t in candidates if not any(t in topic_ancestors([other],topics) for other in candidates if other!=t)]
+            facet_config={**config,**config.get('facet_thresholds',{}).get(by_id[root].get('catalog_path',by_id[root]['path']),{})}
+            chosen.extend(sorted(specific,key=lambda t:(-len(title_hits[t]),t))[:facet_config['max_per_facet']])
+        if scope=='research' and re.search(r'\b(?:materials?|crystals?|alloys?|polymers?|electrolytes?|electrodes?|catalysts?|solid[ -]state)\b|材料',title,re.I):
+            for root in set(roots.values()):
+                if by_id[root].get('catalog_path',by_id[root]['path']).startswith('01 材料研究') and root not in {roots[t] for t in chosen}:
+                    chosen.append(root);title_roots.add(root)
+        status=('broad_only' if all(t in children for t in chosen) else 'classified') if chosen else 'insufficient_evidence'
+        method=automatic_method
     else:
         grouped=defaultdict(list)
         if coverage<config['min_coverage'] and config.get('backend','lexical')=='lexical':
@@ -66,6 +99,8 @@ def decide(item,topics,scores,coverage,exact,config):
         score=1.0 if exact else round(scores.get(t,{}).get('score',0),4)
         public_terms=scores.get(t,{}).get('public_terms',[])
         reason=(f'公开标题或摘要包含定义关键词：{"、".join(public_terms)}。' if public_terms else f'公开标题或摘要与“{by_id[t]["name"]}”定义存在相似度证据，需复核。')
+        if t in title_hits or t in title_roots:
+            reason=('仅依据公开标题直接命中定义关键词：'+ '、'.join(title_hits[t])+'；未使用摘要，需复核。') if t in title_hits else '仅依据公开标题中的明确材料领域词，保留材料研究根类；未使用摘要，不推断叶类。'
         if not exact and scores.get(t,{}).get('cold_start'): reason='仅定义匹配，暂无参考样本；'+reason
-        labels.append({'id':t,'facet':roots[t],'method':method,'score':score,'confidence':'exact' if exact else ('low' if scores.get(t,{}).get('cold_start') else ('medium' if score>=.42 else 'low')),'status':('broad_only' if t in children and not exact else status),'public_reason':reason if not exact else '标准文献身份或无冲突标题与本地参考一致。'})
+        labels.append({'id':t,'facet':roots[t],'method':method,'score':score,'confidence':'exact' if exact else ('low' if t in title_hits or t in title_roots or scores.get(t,{}).get('cold_start') else ('medium' if score>=.42 else 'low')),'status':('broad_only' if t in children and not exact else status),'public_reason':reason if not exact else '标准文献身份或无冲突标题与本地参考一致。'})
     return {'topic_labels':labels,'topic_leaf_ids':chosen,'topic_ids':topic_ancestors(chosen,topics),'topic_status':status,'topic_scope':scope,'content_kind':kind,'domain_facets':domains,'topic_method':method,'topic_coverage':round(coverage,4)}

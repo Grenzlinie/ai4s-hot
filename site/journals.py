@@ -110,7 +110,7 @@ def relevance(title, abstract="", article_type="", doi=None):
     if re.match(r"^(?:correction|retraction|editorial|publisher correction|author correction)\b", title, re.I):
         return decision("excluded", "non_research_article")
     text = title + " " + abstract
-    if re.search(r"\((?:Adv\.? Funct\.? Mater\.?|Adv\.? Mater\.?) \d+/\d{4}\)$", title, re.I):
+    if re.search(r"\((?:Adv\.? Funct\.? Mater\.?|Adv\.? Energy Mater\.?|Adv\.? Mater\.?) \d+/\d{4}\)$", title, re.I):
         return decision("excluded", "journal_cover_or_issue_item")
     if HARDWARE.search(title) and not RESEARCH_TASK.search(text):
         return decision("excluded", "materials_for_ai_hardware")
@@ -384,6 +384,8 @@ def collect(config_path, state_path, now):
     if not settings["enabled"]:
         return [], [], registry, previous
     state = {"version": 1, "updated_at": now.isoformat(), "journals": {}}
+    if "metadata_budget" in previous:
+        state["metadata_budget"] = copy.deepcopy(previous["metadata_budget"])
     items, statuses = [], []
     def work(j):
         old = previous["journals"].get(j["id"], {})
@@ -405,5 +407,31 @@ def collect(config_path, state_path, now):
             items.extend(rows)
             statuses.append(health)
             state["journals"][journal["id"]] = journal_state
+    # Public metadata recovery is opt-in for deployed configuration. Synthetic
+    # source configs and callers retain the previous no-extra-request behavior.
+    raw_config = json.loads(Path(config_path).read_text())
+    recovery_config = raw_config if isinstance(raw_config, dict) else {}
+    if recovery_config.get("metadata", {}).get("enabled", False):
+        from journal_metadata import enrich_candidates
+        before = {(jid, key): row.get("abstract", "") for jid, block in state["journals"].items()
+                  for key, row in block.get("records", {}).items()}
+        receipt = enrich_candidates(state, recovery_config, now)
+        items = []
+        for journal, health in zip(journals, statuses):
+            records = state["journals"][journal["id"]].get("records", {})
+            recovered = 0
+            for key, row in records.items():
+                if row.get("abstract", "") != before.get((journal["id"], key), ""):
+                    row["journal_relevance"] = relevance(row["title"], row.get("abstract", ""), row.get("article_type", ""), row.get("doi"))
+                    recovered += 1
+                if row.get("journal_relevance", {}).get("status") in ("relevant", "pending"):
+                    items.append(_public_item(row, journal, now))
+            counts = {kind: sum(r.get("journal_relevance", {}).get("status") == kind for r in records.values())
+                      for kind in ("relevant", "pending", "excluded")}
+            state["journals"][journal["id"]]["counters"] = counts
+            health["counters"] = {**health.get("counters", {}), **counts, "abstracts_recovered": recovered}
+            health["count"] = counts["relevant"] + counts["pending"]
+        # Receipt contains public aggregate numbers, never response bodies.
+        state["metadata_recovery"] = receipt
     items.sort(key=lambda row: (row.get("published_at") or "", row["id"]), reverse=True)
     return items, statuses, registry, state
