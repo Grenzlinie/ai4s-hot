@@ -11,7 +11,7 @@ from topics_identity import load_private_config
 from topics_curate import apply_overrides
 from topics_semantic import MODEL,REVISION
 
-ALGORITHM='faceted-local-v2.5'
+ALGORITHM='faceted-local-v2.5.1'
 ROOT=Path(__file__).parent/'topics'
 
 class ClassificationUpdateError(RuntimeError):

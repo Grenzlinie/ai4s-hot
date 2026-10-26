@@ -31,6 +31,17 @@ def content_facets(item):
     return scope,content,domains or ['web:general_ai']
 
 
+def title_facet_context(title, facet_path):
+    """Generic words are insufficient evidence outside their scientific facet."""
+    if facet_path.startswith('02 AI方法'):
+        return bool(re.search(r'\b(?:machine[ -]learning|deep[ -]learning|neural[ -](?:networks?|potentials?)|graph learning|artificial intelligence|ai[ -](?:driven|guided|assisted|based)|model training|large language models?|language models?|llms?|gnns?|mlips?|convolutional neural|reinforcement learning|active learning|bayesian optimi[sz]ation|foundation models?|generative models?|generative adversarial|variational autoencoder|autoencoders?|vaes?|gans?|flow matching|normalizing flow|autoregressive|denoising diffusion|diffusion models?|vision transformers?)\b|机器学习|深度学习|神经网络|人工智能|贝叶斯优化',title,re.I))
+    if facet_path.startswith('03 数据集与评测'):
+        return bool(re.search(r'\b(?:datasets?|databases?|benchmarks?|corpus|data (?:collection|curation|generation|resources?)|evaluation (?:metrics?|methodology|suites?)|model evaluation|model assessment|scoring|grader|verifier)\b|\breproducib\w*\b.{0,50}\b(?:data|code|software|results?)\b|\b(?:data|code|software)\b.{0,50}\breproducib\w*\b|数据集|基准测试|评测指标|代码复现',title,re.I))
+    if facet_path.startswith('04 科研软件与计算工作流'):
+        return bool(re.search(r'\b(?:software|code|computational|computation|computing|simulation|laborator\w*|workflow|numerical|dft|density functional|molecular dynamics|first[ -]principles|ab initio|robotic\w*|calculations?)\b|软件|代码|计算|实验室|工作流|模拟',title,re.I))
+    return True
+
+
 def decide(item,topics,scores,coverage,exact,config):
     by_id={t['id']:t for t in topics if t.get('active',True)}
     children={t.get('parent_id') for t in by_id.values()}
@@ -48,7 +59,15 @@ def decide(item,topics,scores,coverage,exact,config):
         title=item.get('title','')
         for t,record in scores.items():
             if t not in by_id: continue
-            hits=[term for term in record.get('public_terms',[]) if phrase_hit(term,title)]
+            facet_path=by_id[roots[t]].get('catalog_path',by_id[roots[t]]['path'])
+            if not title_facet_context(title,facet_path): continue
+            topic_path=by_id[t].get('catalog_path',by_id[t]['path'])
+            if topic_path.startswith('02 AI方法 / 生成模型') and not re.search(r'\b(?:generative|diffusion model|denoising diffusion|flow matching|normalizing flow|autoencoder|autoregressive|vae|gan)\b',title,re.I): continue
+            if topic_path.endswith('污染、泄漏、稳健性与复现') and not re.search(r'\b(?:data contamination|data leakage|benchmarks?|model (?:assessment|evaluation|robustness)|adversarial)\b|\breproducib\w*\b.{0,50}\b(?:data|code|software)\b|\b(?:data|code|software)\b.{0,50}\breproducib\w*\b',title,re.I): continue
+            if facet_path.startswith('01 材料研究') and re.search(r'\b(?:ocean|acidification|ecosystems?|biodiversity|clinical|patients?|disease|infection)\b',title,re.I) and not re.search(r'\b(?:materials?|crystals?|alloys?|polymers?|electrodes?|electrolytes?|catalysts?|photovoltaics?|semiconductors?|mofs?|cofs?|synthesis|fabrication)\b',title,re.I): continue
+            # 'next-generation materials' is not generative modelling evidence.
+            hit_title=re.sub(r'\bnext[ -]generation\b','',title,flags=re.I) if facet_path.startswith('02 AI方法') else title
+            hits=[term for term in record.get('public_terms',[]) if phrase_hit(term,hit_title)]
             if not hits: continue
             if 'require_scientific_task' in record.get('rules',[]) and not re.search(r'scien|research|laborator|experiment|科研|实验',title,re.I): continue
             title_hits[t]=hits

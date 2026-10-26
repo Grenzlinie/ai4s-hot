@@ -20,3 +20,8 @@
 ## 正式发布
 
 待GitHub Actions与Pages实际验证后补充。不得将local routed snapshot或retention成功称为新版正式采集。
+
+
+## 独立标题抽样后的收紧
+
+首轮v2.5的UI/运行验收完成后，独立语义抽查26项发现3个明确错误标题标签：next-generation被当生成模型、MLCCs材料优化被当AI训练优化、chemical robustness被当评测稳健性。不能把运行回归通过等同语义准确。v2.5.1增加按AI/评测/科研软件维度的标题语境，并对生成模型、稳健性主题加专用证据限制；传统interatomic potential也不能单独代表AI。13项标题专项、完整Python261项通过，重新版本化使v2.5标签全部复算。

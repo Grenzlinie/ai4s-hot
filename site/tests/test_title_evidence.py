@@ -45,6 +45,28 @@ class TitleEvidence(unittest.TestCase):
     _,result=decide_title(title);self.assertNotIn(PATHS['01 材料研究'],result['topic_ids'])
  def test_excerpt_similarity_cannot_supply_missing_title_leaf(self):
   item={'title':'Unspecified study','excerpt':'graph neural network','type':'paper'};scores,coverage=LexicalCandidates([],TOPICS,CATALOG).score(item['title']+' '+item['excerpt']);result=decide(item,TOPICS,scores,coverage,[],DEFAULTS);self.assertFalse(result['topic_leaf_ids'])
+ def test_actual_material_titles_do_not_gain_ai_or_evaluation_from_generic_words(self):
+  titles=['Harnessing protein conformational dynamics for next-generation supramolecular materials','Superior energy-storage performance in BaTiO3-based MLCCs via high-entropy driven multiscale optimization','InGaP/GaAs/InGaAs Multijunction Flexible Photovoltaics With Chemical Robustness and Radiation Hardness for Unassisted Electrocatalysis and Space Applications','Next-generation alloy learning and optimization','Robustness and reproducibility of crystal growth','Evaluation of chemical robustness in polymers','Data generation in next-generation solar materials','Traditional EAM interatomic potentials for alloys']
+  for title in titles:
+   with self.subTest(title=title):
+    _,result=decide_title(title);paths=[next(t['path'] for t in TOPICS if t['id']==label['id']) for label in result['topic_labels']]
+    self.assertFalse(any(path.startswith('02 AI方法') for path in paths));self.assertFalse(any(path.startswith('04 科研软件') for path in paths))
+    if 'Data generation' not in title:self.assertFalse(any(path.startswith('03 数据集与评测') for path in paths))
+ def test_ocean_silicate_and_material_robustness_with_dataset_are_not_topic_evidence(self):
+  for title in ['Ocean acidification and reduced silicate availability','Clinical disease and silicate intake','Dataset of chemical robustness in polymers']:
+   with self.subTest(title=title):
+    _,result=decide_title(title);paths=[next(t['path'] for t in TOPICS if t['id']==label['id']) for label in result['topic_labels']]
+    if title.startswith(('Ocean','Clinical')):self.assertFalse(any(path.startswith('01 材料研究') for path in paths))
+    self.assertFalse(any('污染、泄漏、稳健性与复现' in path for path in paths))
+ def test_strong_ai_phrases_and_materials_titles_still_classify(self):
+  for title in ['Machine learning for alloy materials','Deep learning for metal-organic framework discovery','Neural network predicts crystalline materials','Bayesian optimization of polymer materials','Active learning of interatomic potentials for materials']:
+   with self.subTest(title=title):
+    _,result=decide_title(title);self.assertTrue(result['topic_leaf_ids']);self.assertTrue(any(next(t['path'] for t in TOPICS if t['id']==label['id']).startswith('02 AI方法') for label in result['topic_labels']))
+ def test_next_generation_does_not_label_generative_models_even_with_ml_context(self):
+  for title in ['Machine learning for next-generation supramolecular materials','AI-driven data generation for materials']:
+   with self.subTest(title=title):
+    _,result=decide_title(title);paths=[next(t['path'] for t in TOPICS if t['id']==label['id']) for label in result['topic_labels']];self.assertFalse(any('生成模型' in path for path in paths))
+  _,explicit=decide_title('Variational autoencoder for metal-organic framework generation');self.assertTrue(any('生成模型' in next(t['path'] for t in TOPICS if t['id']==label['id']) for label in explicit['topic_labels']))
  def test_release_title_does_not_get_research_labels(self):
   _,result=decide_title('Introducing Graph neural network model','',kind='release');self.assertEqual(result['topic_scope'],'non_research');self.assertFalse(result['topic_leaf_ids']);self.assertEqual(result['content_kind'],'web:model_release')
  def test_empty_corpus_keeps_direct_title_and_version_invalidates_cache(self):
@@ -53,5 +75,5 @@ class TitleEvidence(unittest.TestCase):
    root=pathlib.Path(tmp);(root/'catalog.yaml').write_text(yaml.safe_dump(CATALOG));(root/'thresholds.yaml').write_text('backend: lexical\ncalibration_status: synthetic\n')
    with patch.object(classifier,'ROOT',root),patch.object(classifier,'load_private_config',return_value={'id_salt':'synthetic-test-salt-not-real'}):
     first=classifier.classify_v2(items,taxonomy,[]);second=classifier.classify_v2(items,taxonomy,[])
-  self.assertEqual(first['classified'],1);self.assertEqual(second['classified'],0);self.assertTrue(items[0]['topic_leaf_ids']);self.assertEqual(items[0]['topic_version'],'faceted-local-v2.5');self.assertNotIn('old-v24-token',items[0]['topic_cache_token']);validate_archive({'schema_version':2,'taxonomy':taxonomy,'items':items})
+  self.assertEqual(first['classified'],1);self.assertEqual(second['classified'],0);self.assertTrue(items[0]['topic_leaf_ids']);self.assertEqual(items[0]['topic_version'],'faceted-local-v2.5.1');self.assertNotIn('old-v24-token',items[0]['topic_cache_token']);validate_archive({'schema_version':2,'taxonomy':taxonomy,'items':items})
 if __name__=='__main__':unittest.main()
