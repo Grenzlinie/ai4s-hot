@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-27T01:55:48.184836+00:00",
+  "generated_at": "2026-10-27T02:24:41.594163+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -243,85 +243,6 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.8902,
       "topic_cache_token": "d99909a9aef25e64e4bdd6a5be036b74e40add6fc126f41e6e77bf83d2d8b6a5",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "d8ca89c0a96c3e80fb505d79",
-      "url": "https://arxiv.org/abs/2610.32195",
-      "title": "Principia: Test-Time Hypotheses to Principle Construction for Scientific Discovery",
-      "source_ids": [
-        "zotero"
-      ],
-      "source_names": [
-        "Zotero 为你推荐"
-      ],
-      "group": "papers",
-      "groups": [
-        "papers"
-      ],
-      "type": "paper",
-      "tags": [
-        "chemistry",
-        "biology",
-        "agents",
-        "tools"
-      ],
-      "published_at": null,
-      "first_seen": "2026-10-27T01:55:48.184836+00:00",
-      "excerpt": "Scientific discovery requires identifying the scientific principles underlying observed phenomena to guide further investigation. As these empirical principles are often unknown in complex discovery processes, they are constructed via a hypotheses-to-principle pipeline to obtain recurring causalities from progressively accumulated observations during test-time discovery. However, constructing this knowledge requires substantial domain expertise, time, and effort, making this translation stage a bottleneck for scientific discovery. To address this limitation, we propose Principia, an LLM-based framework that constructs and continually refines scientific principles at test time. Drawing on how human researchers develop principles, Principia forms comparative causal hypotheses from related inputs and their observed outcomes, then synthesizes recurring relationships across these hypotheses into inductive principles. By applying the constructed hypotheses and inductive principles to the task, it obtains new observations, revises the hypotheses used based on these new observations, and reconstructs principles from the updated hypotheses, allowing scientific knowledge to continuously evolve throughout test-time discovery. Across benchmarks spanning molecular optimization, protein engineering, gene perturbation, and molecular property prediction, Principia outperforms baselines relying on internal knowledge, external sources, or experience summaries, while generating principles that are plausible and consistent with the scientific literature, demonstrating its effectiveness in constructing and refining task-specific hypotheses and principles at test time for scientific discovery. Our code is available at https://github.com/DongkiKim95/Principia.",
-      "summary": "该论文提出基于LLM的Principia框架，在测试时从相关输入与结果中生成比较性因果假设并归纳为科学原则，再利用新观测持续修正假设和重构原则，从而自动、迭代地构建面向科学发现的知识，并在多个基准上优于依赖内部知识、外部来源或经验总结的基线。",
-      "summary_kind": "upstream_tldr",
-      "zotero_score": 3.7965294583179077,
-      "authors": [
-        "Dongki Kim",
-        "Sangwoo Park",
-        "Jinheon Baek",
-        "Soyeong Jeong",
-        "Sung Ju Hwang"
-      ],
-      "affiliations": [],
-      "pdf_url": "https://arxiv.org/pdf/2610.32195v1",
-      "topic_labels": [
-        {
-          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
-          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
-          "method": "local_lexical_v2",
-          "score": 0.54,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：optimization。"
-        },
-        {
-          "id": "zotero:68e7d38bc58fa7101b2c778abec94537",
-          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
-          "method": "local_lexical_v2",
-          "score": 0.54,
-          "confidence": "medium",
-          "status": "classified",
-          "public_reason": "公开标题或摘要包含定义关键词：scientific discovery。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
-        "zotero:68e7d38bc58fa7101b2c778abec94537"
-      ],
-      "topic_ids": [
-        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
-        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
-        "zotero:68e7d38bc58fa7101b2c778abec94537",
-        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
-      ],
-      "topic_status": "classified",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:chemistry",
-        "web:life_sciences"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.9434,
-      "topic_cache_token": "f70a647f4667a99a0b355884ed59eace9e37e8da7fba38b5c388965e2d406966",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -2336,6 +2257,100 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "6d3d863e418377a9a431850c",
+      "url": "https://arxiv.org/abs/2610.34527",
+      "title": "How High Can GPT-6 Astra Climb in Contact-Rich Manipulation? PhysLadder: A Hierarchical, Matched Sim-Real Benchmark for Physical Interaction",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-25T19:41:02+00:00",
+      "first_seen": "2026-10-27T02:24:41.594163+00:00",
+      "excerpt": "We introduce PhysLadder, a hierarchical Sim-Real benchmark for evaluating physical interaction capabilities in contact-rich manipulation. Its 16 household tasks span three cumulative levels: contact selection and geometric alignment (L1), force regulation within sustained contact (L2), and coordinated contact reconfiguration and force regulation (L3). Each task is instantiated in physically and visually matched simulated and real-world environments, with shared task definitions and success criteria. We evaluate GPT-6 Astra zero-shot with three trials per task in each environment. Real-world success rates decline from 80.0% at L1 to 47.6% at L2 and 0.0% at L3, with corresponding simulation rates of 66.7%, 47.6%, and 0.0%. Ten of the 16 tasks have identical success counts across environments; the remaining six differ by one success out of three trials. Across both environments, recurring difficulties in spatial reasoning, contact selection, force regulation, and coordination often prevent local physical progress from accumulating into task completion. These findings characterize Astra's observed capability boundary across increasing interaction demands and, for this model, support matched simulation as a repeatable, scalable testbed for studying the sustained, coordinated physical interactions that limit reliable manipulation.",
+      "summary": "本文提出了PhysLadder，一个分层且仿真-真实匹配的接触密集型操作基准，包含16项家庭任务并覆盖三个累积层级，对GPT-6 Astra进行了零样本评估。该基准可用于比较仿真与真实环境中的任务完成、中间进展和反复出现的交互瓶颈，但原文仅报告该模型在每任务三试下的结果，其结论不构成对其他模型或性能数字的已验证声明。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 2,
+      "authors": [
+        "Haibao Yu",
+        "Jiaqi Meng",
+        "Zijian Zhang",
+        "Bowen Jing",
+        "Lei Yang",
+        "Yue Hu",
+        "Chenchen Ge",
+        "Yiming Hou",
+        "Chenbo Xin",
+        "Dawen Ye",
+        "Haifang Qin",
+        "Jin Li",
+        "Weitao Zhou",
+        "Jianing Qiu",
+        "Jiankai Sun",
+        "Dandan Zhang",
+        "Zaiqing Nie",
+        "Ping Luo",
+        "Ding Zhao"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:d680e95392def25285a997e886e86a05",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reasoning。"
+        },
+        {
+          "id": "zotero:e09a09615a9a79995ffd756fcf67aa3f",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d680e95392def25285a997e886e86a05",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d680e95392def25285a997e886e86a05",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8519,
+      "topic_cache_token": "7db0f48ea539bf776b188a3ab62531b2822427571a265886af0f0993659e3d83",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.34527",
+        "sha256": "ffdb0c8f279719dcfd7069f4dcd934de18dd6383bb978b6801f8efbe05beeab4",
+        "chars": 12000
+      }
+    },
+    {
       "id": "ea313fcd4d7f9febe72f7ac7",
       "url": "https://arxiv.org/abs/2610.34029",
       "title": "TCSP3.0: Template-Based Crystal Structure Prediction with Coefficient-Preserving Element Substitution and Structural Diversity",
@@ -3091,6 +3106,193 @@
       "topic_cache_token": "735cfb1ab5e97ae2d761e736c64a897067546eb4ad2c925c596c4406a7e57411",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "69d6a9490f99edc5865564de",
+      "url": "https://arxiv.org/abs/2610.33966",
+      "title": "InteractiveWorld: A Verifiable Human-Centric Environment for Building Better Interactive MLLM Assistants",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-10-25T00:00:00+00:00",
+      "first_seen": "2026-10-27T02:24:41.594163+00:00",
+      "excerpt": "People have long dreamed of an assistant that is always there to guide them and remind what they forget, from new dishes to lost keys. Powered by multimodal large language models (MLLMs), egocentric AI assistants on wearable devices are bringing this dream within reach: they see what the user sees and give instructions for user's physical work when necessary. However, testing such assistance is challenging and usually requires real people. The expensive and rare real interaction data leaves a key question unanswered: Can today's MLLMs truly help people in physical world? To answer this question, we propose InteractiveWorld, the first verifiable environment for closed-loop interaction between human and AI assistant. Unlike existing robot-centric simulators, InteractiveWorld lets the assistant guide a human agent who observes the scene, understands instructions, and acts independently. It thus realistically simulates how AI assistant collaborates with human: the assistant instructs, the human acts, and the environment executes actions and updates what they see next. Building on it, we introduce InteractiveBench, the first dynamic benchmark for egocentric AI assistants, with 120 multi-turn tasks across six categories. In each task, the assistant guides the human in real time, and every instruction shapes the outcome, which is scored by verifiable, state-based rewards. Experiments with 12 frontier MLLMs show they are still far from reliable assistants. Even the strongest model, Claude Fable 5.1, achieves at most 20% and 25% on long-horizon Guidance and Planning tasks, respectively. Overall, our work offers a verifiable platform and a rigorous evaluation set, laying a solid foundation for research on interactive MLLM assistants that truly help people in the physical world.",
+      "summary": "本文提出InteractiveWorld，一个基于Isaac Sim构建、包含8000余个物体和50余个场景的可验证人类中心闭环交互环境，并基于该环境构建含120项多轮任务的InteractiveBench动态基准，用于评估第一人称视角下多模态大模型助手通过自然语言引导人类完成任务的能力。该环境和基准可供科研人员研究交互式多模态大模型助手在感知、记忆、推理与沟通方面的表现；但论文实验显示，即使最强模型在总体任务及长时程引导、规划任务上的成功率仍较低，表明当前模型尚不可靠，其任务与结论均限于模拟器内基于状态验证的设定，不能直接等同于真实物理世界中的协助能力。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.33966",
+      "authors": [
+        "Qinsi Wang",
+        "Wei Wen",
+        "Chong Zhou",
+        "Saksham Suri",
+        "Zechun Liu",
+        "Lemeng Wu",
+        "Hai Helen Li",
+        "Yiran Chen",
+        "Raghuraman Krishnamoorthi",
+        "Qi Qian"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark、evaluation。"
+        },
+        {
+          "id": "zotero:d680e95392def25285a997e886e86a05",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：planning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8649,
+      "topic_cache_token": "ea7d0a1e9dd0d6c7a38fce5c5228eabc989616b9d40cf2403a98c5dc79decfd6",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.33966",
+        "sha256": "058ee39f71c23e73fe843a2932aec818b943645bada010a6fe9cfb81e7c41ef2",
+        "chars": 12000
+      }
+    },
+    {
+      "id": "6a2162d5e1381827efdc85be",
+      "url": "https://arxiv.org/abs/2610.33956",
+      "title": "Continual Learning Exam: Benchmarking Long-Horizon RSI and Experiential Learning in LLM Agents",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-10-25T00:00:00+00:00",
+      "first_seen": "2026-10-27T02:24:41.594163+00:00",
+      "excerpt": "Continual learning is the ability of LLM agents to improve over time by acquiring, refining, and applying knowledge from experience while retaining useful prior knowledge. It is essential for agents learning over long time horizons, yet current evaluations largely assess individual task performance rather than improvement through accumulated experience. We introduce Continual Learning Exam (CLE), a large-scale benchmark developed by 50+ domain experts to measure experience-driven improvement in realistic professional workflows. CLE comprises 120 human-authored tasks, each organised as a five-level ladder, yielding 600 levels spanning 89 professional roles across 12 occupational domains. Agents must pass each level to unlock the next, with later levels building on experience accumulated during earlier assignments. An evaluation agent assesses each submission against human-authored rubrics. We compare a single-submission setting with one that provides diagnostic feedback after failure and allows one revision. Across 17 harness-model configurations using frontier LLMs, feedback and revision yield a median completion gain of 5.3 percentage points. Yet the best-performing system clears only 47.7% of levels and completes all five levels in just 23.3% of tasks, highlighting the difficulty of sustained learning from experience for existing frontier LLMs. As such, the dataset can also be used to post-train LLMs to strengthen their continual learning capabilities.",
+      "summary": "本文提出 Continual Learning Exam（CLE）基准，包含由50余名领域专家编写的120个五级任务阶梯（共600个层级，覆盖12个职业领域的89个专业角色），并在17种配置下比较了单次提交与失败后提供诊断反馈并允许一次修订两种设置。该基准可用于评估和后续训练LLM智能体的持续学习能力，但原文明确指出即使表现最好的系统也仅通过47.7%的层级、仅在23.3%的任务中完成全部五级，表明从经验中持续学习对现有前沿LLM仍具挑战。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.33956",
+      "authors": [
+        "Haoyu Zhao",
+        "Sitian Tu",
+        "Yuxuan Huang",
+        "Huichi Zhou",
+        "Zhangyue Yin",
+        "Jiahao Huang",
+        "Jingyuan Xu",
+        "Tianmiao Shi",
+        "Jin Shi",
+        "Nianxi Zhang",
+        "Yangmiao Zhang",
+        "Zhuolang Chan",
+        "Huiyan Hu",
+        "Chenchao Sheng",
+        "Yaqing Luo",
+        "Yue Chen",
+        "Huaxiu Yao",
+        "Meng Fang",
+        "Jun Wang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.78,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：dataset、benchmark、evaluation。"
+        },
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        },
+        {
+          "id": "zotero:8f22e62349472c4815f4275fbcf89c76",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：agent。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9079,
+      "topic_cache_token": "16d27cf068532a8a572ab6a791889ac853878449391e6e9062715a2fc72a4fab",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.33956",
+        "sha256": "5a00d044e1c1dd7b7099d298312e106fe808dcbce6d1bac26a9c232768502ac2",
+        "chars": 12000
+      }
     },
     {
       "id": "2f6b8a88ab5ec7947fbdba59",
@@ -5920,6 +6122,90 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "e5af65d8ed72be8dd2a01e1c",
+      "url": "https://arxiv.org/abs/2610.33568",
+      "title": "Trajectory2Gym: Decision-Grounded Compositional Interaction Synthesis for Tool-Use Agents",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-24T00:00:00+00:00",
+      "first_seen": "2026-10-27T02:24:41.594163+00:00",
+      "excerpt": "Successful tool-use trajectories are not necessarily useful supervision. Even successful interactions may underrepresent multi-step dependencies or contain actions that are unjustified by the information visible to the agent at decision time. We identify two coupled requirements for effective trajectory supervision: compositional coverage, so that important observation-action dependencies are represented, and decision grounding, so that each supervised action is supported by the learner-visible interaction history. We introduce Trajectory2Gym, which constructs executable interactions around under-supported compositional structures and derives supervision only from grounded decisions in their realized executions. Structural-support selection allocates the resulting experience, while parent-normalized supervised fine-tuning preserves the semantic interaction as the unit of training weight. This reframes trajectory generation as the deliberate construction of learnable interaction experience, rather than the collection of successful trajectories. Across five Qwen3 scales, Trajectory2Gym improves Tau1, Tau2, and BFCL at every tested scale, increasing the equal-weight three-benchmark mean by 16.9-29.8 percentage points. The gains are strongest in stateful and multi-turn interaction, where later decisions depend on earlier observations and feedback. Our results suggest that scaling tool-use agents depends not only on collecting more successful trajectories, but on constructing interactions whose dependencies are represented and whose decisions are learnable from the agent's visible history.",
+      "summary": "本文提出并实现 Trajectory2Gym，一种围绕支持不足的组合结构构造可执行交互、并仅从已实现执行中有可见依据的决策提取监督的工具使用轨迹合成方法。所提供材料称其在五个 Qwen3 规模上于 Tau1、Tau2 和 BFCL 上均取得提升，但该结果来自论文摘要与引言的自我报告，未在本文中独立验证；材料也指出成功轨迹未必构成有效监督，并明确将多步依赖覆盖不足和决策依据不足列为需要解决的问题。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.33568",
+      "authors": [
+        "Yihao Hu",
+        "Zhihao Wen",
+        "Yitong Lin",
+        "Siyuan Lu",
+        "Pan Wang",
+        "Wei Wu",
+        "Jiang-Ming Yang",
+        "Tao Lin"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：fine-tuning。"
+        },
+        {
+          "id": "zotero:e09a09615a9a79995ffd756fcf67aa3f",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8828,
+      "topic_cache_token": "e3908d2dcc0f392c35840d999cf1d7cc1919fdf561d1cce2fa0e0b725ba652b3",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.33568",
+        "sha256": "af6813709b4a351608aba19a3dc8359681c4daa2da9dfd7c44a9e0a1d07ec129",
+        "chars": 12000
+      }
+    },
+    {
       "id": "3ceea9c4a46bec53d3904210",
       "url": "https://arxiv.org/abs/2610.33310",
       "title": "Exploring Joint-Embedding Predictive Architectures for Self-Supervised Representation Learning of Powder X-ray Diffraction Patterns",
@@ -7923,6 +8209,87 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "d8ca89c0a96c3e80fb505d79",
+      "url": "https://arxiv.org/abs/2610.32195",
+      "title": "Principia: Test-Time Hypotheses to Principle Construction for Scientific Discovery",
+      "source_ids": [
+        "zotero",
+        "hf-daily"
+      ],
+      "source_names": [
+        "Zotero 为你推荐",
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "chemistry",
+        "biology",
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "first_seen": "2026-10-27T01:55:48.184836+00:00",
+      "excerpt": "Scientific discovery requires identifying the scientific principles underlying observed phenomena to guide further investigation. As these empirical principles are often unknown in complex discovery processes, they are constructed via a hypotheses-to-principle pipeline to obtain recurring causalities from progressively accumulated observations during test-time discovery. However, constructing this knowledge requires substantial domain expertise, time, and effort, making this translation stage a bottleneck for scientific discovery. To address this limitation, we propose Principia, an LLM-based framework that constructs and continually refines scientific principles at test time. Drawing on how human researchers develop principles, Principia forms comparative causal hypotheses from related inputs and their observed outcomes, then synthesizes recurring relationships across these hypotheses into inductive principles. By applying the constructed hypotheses and inductive principles to the task, it obtains new observations, revises the hypotheses used based on these new observations, and reconstructs principles from the updated hypotheses, allowing scientific knowledge to continuously evolve throughout test-time discovery. Across benchmarks spanning molecular optimization, protein engineering, gene perturbation, and molecular property prediction, Principia outperforms baselines relying on internal knowledge, external sources, or experience summaries, while generating principles that are plausible and consistent with the scientific literature, demonstrating its effectiveness in constructing and refining task-specific hypotheses and principles at test time for scientific discovery. Our code is available at https://github.com/DongkiKim95/Principia.",
+      "summary": "该论文提出基于LLM的Principia框架，在测试时从相关输入与结果中生成比较性因果假设并归纳为科学原则，再利用新观测持续修正假设和重构原则，从而自动、迭代地构建面向科学发现的知识，并在多个基准上优于依赖内部知识、外部来源或经验总结的基线。",
+      "summary_kind": "upstream_tldr",
+      "zotero_score": 3.7965294583179077,
+      "authors": [
+        "Dongki Kim",
+        "Sangwoo Park",
+        "Jinheon Baek",
+        "Soyeong Jeong",
+        "Sung Ju Hwang"
+      ],
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2610.32195v1",
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：optimization。"
+        },
+        {
+          "id": "zotero:68e7d38bc58fa7101b2c778abec94537",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：scientific discovery。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:68e7d38bc58fa7101b2c778abec94537"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:68e7d38bc58fa7101b2c778abec94537",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry",
+        "web:life_sciences"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9434,
+      "topic_cache_token": "f70a647f4667a99a0b355884ed59eace9e37e8da7fba38b5c388965e2d406966",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "1a543055a02f9816518cc039",
       "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
       "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
@@ -9593,7 +9960,7 @@
         "sha256": "f94b1891a79056baa2dafd8cc5744fca4f846be5349378d6c79ab2582d4a30d0",
         "chars": 12000
       },
-      "alpha_rank": 6
+      "alpha_rank": 7
     },
     {
       "id": "712abb20a14f30f7873ed12f",
@@ -9916,6 +10283,60 @@
       "topic_cache_token": "57e4a1d756a05e7a60313ac4ef803bbb4ae5b7c5bc836a870d9e6e601419ec31",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "f44db6f31949f0777b84ecba",
+      "url": "https://arxiv.org/abs/2610.33169",
+      "title": "World-in-Context: Interactive Video World Modeling with In-Context Conditioning",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "first_seen": "2026-10-27T02:24:41.594163+00:00",
+      "excerpt": "Interactive video world models require coordinated control over viewing perspectives, character actions, and camera motion. Existing methods typically leave view modes implicit in text captions, conflate action with camera motion, and inject controls through fragmented architectural pathways that capture interdependencies only indirectly. In this work, we present World-in-Context, an interactive world modeling framework powered by In-Context Conditioning (ICC). Rather than relying on specialized conditioning pathways, World-in-Context unifies view, action, and camera controls into explicit tokens contextualized directly within a shared self-attention space. Our formulation reveals that (i) explicit view tokens disentangle conflicting dynamics and unlock emergent view switching from single-view data, while (ii) action and camera inputs play complementary roles in governing local responsiveness and global stability. To preserve temporal continuity across execution intervals, we further introduce Interaction-Transport RoPE (IT-RoPE), parameterizing temporal attention with accumulated control transitions. On WBench, World-in-Context-5B achieves navigation performance on par with 22B EchoWM (81.5 vs. 81.6) and attains a 93.8% perspective-switching success rate, substantially outperforming existing 5B baselines (18.8%). Controlled analyses further demonstrate compounding advantages of World-in-Context under richer conditioning mixtures, favorable data efficiency, and natural applicability to causal rollouts.",
+      "summary": "本文提出World-in-Context框架，通过In-Context Conditioning将视角、角色动作和相机控制统一为显式token并置于共享自注意力空间中，同时引入Interaction-Transport RoPE以在时间注意力中建模控制转移。该工作为交互式视频世界建模提供了统一的条件接口，并在WBench上报告了导航性能与22B EchoWM相当及视角切换成功率达93.8%的结果，但论文中的具体数值仍需以正式发表版本为准。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.33169",
+      "authors": [
+        "Harold Haodong Chen",
+        "Rui Peng",
+        "Rongjin Guo",
+        "Lingteng Qiu",
+        "Kejie Qiu",
+        "Chao Xu",
+        "Zilong Dong"
+      ],
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "low_confidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8472,
+      "topic_cache_token": "4bc1b55e57831dbc01954cad3f762d20d954ae4f060b63debb60c8531277b05c",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.33169",
+        "sha256": "8fed8eca1974234fe2ab05e9a1e31d2427e9bb4aa8121f08ed8a216d048084db",
+        "chars": 12000
+      }
     },
     {
       "id": "432fbf08fcbe1cb31f903630",
@@ -10303,7 +10724,7 @@
       "excerpt": "Understanding and controlling how systems evolve is central to science and engineering, where many problems require reasoning about complete trajectories. Existing approaches typically learn local dynamics or generate trajectories, but objectives constructed from individual transitions can miss dependencies across time, while generative models do not necessarily provide a tractable objective for evaluating and optimizing arbitrary paths. We study $\\textit{action learning}$, the problem of recovering a stochastic action from trajectory observations, yielding a common objective for reasoning about dynamical systems. We introduce $\\textbf{LEAP}$ ($\\textbf{L}$earned $\\textbf{E}$nergy on $\\textbf{A}$ction $\\textbf{P}$aths), which anchors the unknown action to a tractable reference process and learns the remaining correction by comparing observed trajectories with reference trajectories. This construction yields a differentiable objective on path space that can capture both local dynamical structure and nonadditive dependencies across time. Once learned, the same action can be flexibly reused for path ranking and inference, mechanism steering, constrained optimization and sampling. Across stochastic physical systems, many-body orbital dynamics and molecular simulations, LEAP recovers underlying dynamics, captures dependencies across time and enables transfer across inference objectives and physical conditions. We show that $\\textit{action learning}$ is a promising framework for turning trajectory observations into reusable objectives for scientific inference and control.",
       "summary": "本文提出轨迹动作学习问题并给出LEAP方法，通过将未知动作锚定于可处理的参考过程、再对比观测轨迹与参考轨迹学习修正项，从而在路径空间上构建可微目标以捕捉局部动力学结构和跨时间的非可加依赖。该工作表明动作学习可为科学推断与控制提供可复用的目标，用于路径排序、推断、机制引导、约束优化和采样，并在随机物理系统、多体轨道动力学和分子模拟中验证；但摘要未给出量化性能，所述能力来自原文声明，尚需独立验证。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 4,
+      "alpha_rank": 6,
       "authors": [
         "Sarah Liaw",
         "Yuanqi Du",
@@ -14792,11 +15213,7 @@
       "summary": "本文综述了AlScN的铁电与压电特性、物理机制、材料生长与器件集成挑战，并总结了其在压电器件、光电器件、铁电存储器和HEMT等新兴应用中的近期进展。其用途是为相关器件研究提供系统梳理与未来方向参考，但摘要指出高Sc含量高质量外延薄膜制备仍受铁电耐久性不足、界面不稳定和漏电流等问题制约。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Zhigang Wang",
-        "Jiale Wan",
-        "Ting Li",
-        "Lele Zhang",
-        "Qilin Hua"
+        "Zhigang Wang, Jiale Wan, Ting Li, Lele Zhang, Qilin Hua"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -15769,7 +16186,7 @@
       "excerpt": "Recent world action models provide visual foresight and future prediction for robot manipulation, but lack explicit mechanisms for compositional skill reuse. Agentic robotics combines code-based planning and reasoning with reusable skills, but often lacks predictive grounding in physical dynamics. We introduce AW-0, an agentic world action model framework that integrates code-based planning with joint video and action prediction. We jointly model code, future video, and robot actions as three coupled generative streams within a unified mixture-of-transformers architecture. Within this architecture a code expert generates parameterized skill routines and control logic while video and action experts generate future visual states and low-level motor commands. Code serves two complementary roles: it structures multi-step prediction and control within the world model and represents skills as reusable programs for subsequent agentic execution. We further introduce an automated curation pipeline that labels robot and human video trajectories with aligned programs and consolidates recurring routines into reusable skill libraries. Evaluations on RoboTwin 2.0 and physical bimanual manipulation tasks show improved task performance over VLA and WAM baselines, alongside gains in language following, semantic reasoning and robustness, demonstrating that agentic code enables connection between planning, prediction and execution within WAMs.",
       "summary": "本文提出 AW-0 智能体世界动作模型框架，在统一的混合Transformer架构中联合建模代码、未来视频与机器人动作，并引入自动标注与整理流程，将机器人和人类视频轨迹标注为对齐程序并归纳为可复用技能库。该工作面向机器人操作中组合式技能复用与预测性物理建模的结合，摘要报告其在 RoboTwin 2.0 和物理双臂操作任务上相对 VLA 与 WAM 基线表现更优，并称在语言跟随、语义推理和鲁棒性方面有所提升；这些结果来自原文摘要，未提供性能数字，也未说明具体限制。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 2,
+      "alpha_rank": 4,
       "authors": [
         "Zhuoyang Liu",
         "Dantong Niu",
@@ -18816,6 +19233,79 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.75,
       "topic_cache_token": "9e927bf9c65b0db797cd29a6093c50533a62c330424ca1b9e745c34237e31f7c",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "deca4b419dc0ce76da06e2db",
+      "url": "https://doi.org/10.1002/aenm.71377",
+      "title": "SOC Mismatch-Driven Inter-Particle Synchronization via Internal Li-Ion Transfer: An Unrecognized Electrode-Emergent Degradation Pathway in Ni-Rich Composite Cathodes",
+      "source_ids": [
+        "journal-advanced-energy-materials"
+      ],
+      "source_names": [
+        "Advanced Energy Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-21T14:45:59+00:00",
+      "first_seen": "2026-10-27T02:24:41.594163+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Seheon Oh, Suyoung Kim, Inho Kim, Kangwoo Ahn, Min Wook Pin, Minkyu Kim"
+      ],
+      "journal_id": "advanced-energy-materials",
+      "journal_title": "Advanced Energy Materials",
+      "journal_issns": [
+        "1614-6832",
+        "1614-6840"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/aenm.71377",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:4256328d0b35466f2b45ab06dd178def",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：composite；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:4256328d0b35466f2b45ab06dd178def"
+      ],
+      "topic_ids": [
+        "zotero:4256328d0b35466f2b45ab06dd178def",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.4286,
+      "topic_cache_token": "89685bb27b72ca807cf3d3d3cfd4f18eb74ea26e3203a5c264c05958481f339d",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -51155,8 +51645,8 @@
       "published_at": "2026-10-14T00:00:00+00:00",
       "first_seen": "2026-10-27T01:55:48.184836+00:00",
       "excerpt": "Reinforcement Learning with Verifiable Rewards (RLVR) improves reasoning in language models, but scalar outcomes provide coarse supervision over response trajectories. Self-distillation offers denser token-level guidance by comparing an unassisted policy with a feedback-informed self-teacher, yet the teacher evolves with the student, creating unstable targets and motivating additional regularization. We introduce Function-Space Policy Optimization (FSPO), a single-policy framework that combines current privileged adaptation with function-space temporal consolidation. FSPO stores sparse historical next-token distributions as fixed temporal targets, providing temporal separation without maintaining a persistent teacher model. It further introduces privileged disagreement correction to explicitly suppress locally overvalued actions, reliability-adaptive grounding that strengthens reference supervision when self-generated evidence repeatedly fails, and quality and coverage-aware temporal memory that retains verified behaviors and improves privileged demonstrations. Across reasoning and tool-use benchmarks, FSPO achieves the highest average accuracy under a 5-hour training budget, improving over the strongest baseline by approximately 4% points on average while reducing peak memory from about 70 GB to 56 GB on Olmo3-7B-Instruct.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出 Function-Space Policy Optimization（FSPO），一种单策略框架，通过将稀疏的历史 next-token 分布保存为固定的时间目标，结合当前特权适应与函数空间时间整合，并引入特权分歧校正、可靠性自适应基础以及质量与覆盖感知的时间记忆来改进自我蒸馏。根据原文摘要，在推理与工具使用基准上，FSPO 在 5 小时训练预算内取得最高平均准确率，较最强基线平均提升约 4 个百分点，并在 Olmo3-7B-Instruct 上将峰值内存从约 70 GB 降至 56 GB。上述性能与内存数字来自原文报告，未在本次材料中独立验证；材料为有界摘录，未阅读完整全文。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.19687",
       "authors": [
         "Aryan Das",
@@ -51191,7 +51681,13 @@
       "topic_coverage": 0.816,
       "topic_cache_token": "7f985e699e44de28307c4f18f06b5a9328ef7a70734a5554f425ef9423d68d8c",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.19687",
+        "sha256": "46e1adfdfda57dca467c1ca317673e328abff4c3427b7c5187083a2eff5eada6",
+        "chars": 12000
+      }
     },
     {
       "id": "1dc99b611b2499a3b88164db",
@@ -98069,6 +98565,79 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "0b8571cd9b980dfe17421b38",
+      "url": "https://doi.org/10.1002/adma.74365",
+      "title": "Establishing Atomic Coherence in Twisted Oxide Membranes Containing Volatile Elements",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-27T02:24:41.594163+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Young-Hoon Kim, Reza Ghanbari, Min-Hyoung Jung, Yang Zhang, Young-Min Kim, Ruijuan Xu, Miaofang Chi"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74365",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:d05fd259021f78cf27fb6def1ecb915e",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：oxide；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7778,
+      "topic_cache_token": "3985b715022ffd918b3ae65386d559fd767b52eb9accd689b42fefda6b01e7ab",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "d1f46554bd4c9bb146a51a40",
       "url": "https://doi.org/10.1002/adfm.202523909",
       "title": "Programmable 3D-Orthotropic Piezoceramic Sensors Enabled by Solid-Loading-Maximized Additive Manufacturing",
@@ -107936,7 +108505,7 @@
       "doi": "10.1038/s41467-026-78063-1",
       "published_online_at": "2026-09-25T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-25T09:29:46+00:00",
+      "indexed_at": "2026-10-27T02:19:30+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -124613,21 +125182,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Jianqiang Huang",
-        "Zhijin Ju",
-        "Tao Yang",
-        "Xufen Ding",
-        "Lirong Chen",
-        "Yuanfeng Wu",
-        "Fei Ru",
-        "Gongxun Lu",
-        "Ouwei Sheng",
-        "Jie Xu",
-        "Yanshuai Li",
-        "Chao Zheng",
-        "Shun Wang",
-        "Chengbin Jin",
-        "Yifei Yuan"
+        "Jianqiang Huang, Zhijin Ju, Tao Yang, Xufen Ding, Lirong Chen, Yuanfeng Wu, Fei Ru, Gongxun Lu, Ouwei Sheng, Jie Xu, Yanshuai Li, Chao Zheng, Shun Wang, Chengbin Jin, Yifei Yuan"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -124711,15 +125266,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Jingjing Lei",
-        "Jingge Ju",
-        "Zongjie Li",
-        "Lu Gao",
-        "Zhongxiang Lei",
-        "Yanfei Chen",
-        "Yongcheng Wang",
-        "Zijia Yan",
-        "Weimin Kang"
+        "Jingjing Lei, Jingge Ju, Zongjie Li, Lu Gao, Zhongxiang Lei, Yanfei Chen, Yongcheng Wang, Zijia Yan, Weimin Kang"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -124803,14 +125350,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Jiachen Dong",
-        "Bo Xu",
-        "Hongyu Mi",
-        "Xin Zhao",
-        "Yuqing Zhai",
-        "Yongqi Zhu",
-        "Zhiyu Wang",
-        "Xinqin Liao"
+        "Jiachen Dong, Bo Xu, Hongyu Mi, Xin Zhao, Yuqing Zhai, Yongqi Zhu, Zhiyu Wang, Xinqin Liao"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -124894,21 +125434,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Ning Zhang",
-        "Siqi Li",
-        "Bingzhe Wang",
-        "Siru Wang",
-        "Minge Wang",
-        "Peng Zhang",
-        "Jiaju Xu",
-        "Chunyuan Xu",
-        "Lihao Ou",
-        "Haiyang Chen",
-        "Hesen Tang",
-        "Guangmei Han",
-        "Yuxuan Jiang",
-        "Ting Wang",
-        "Benli Yu"
+        "Ning Zhang, Siqi Li, Bingzhe Wang, Siru Wang, Minge Wang, Peng Zhang, Jiaju Xu, Chunyuan Xu, Lihao Ou, Haiyang Chen, Hesen Tang, Guangmei Han, Yuxuan Jiang, Ting Wang, Benli Yu"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -126106,12 +126632,7 @@
       "summary": "本文综述了机器学习在固态锂电池电解质与界面设计中的研究进展，涵盖方法基础、体相材料设计、界面工程及闭环研发路径，并指出其正从提升筛选效率演变为整合材料发现、界面分析与实验优化的枢纽。对科研工作而言，该综述可用于梳理机器学习势函数、图神经网络及主动学习等方法在固态电解质高通量筛选和界面动态模拟中的适用场景，但其结论基于综述性归纳，具体性能与验证程度需查阅原始研究。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Jihan Wu",
-        "Huiqun Wang",
-        "Chen Wang",
-        "Hao Chen",
-        "Jiajia Han",
-        "Li Zhang"
+        "Jihan Wu, Huiqun Wang, Chen Wang, Hao Chen, Jiajia Han, Li Zhang"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -170772,13 +171293,13 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-10-27T01:55:48.184836+00:00",
+    "last_success": "2026-10-27T02:24:41.594163+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 74,
-      "unclassified": 1345,
+      "classified": 7,
+      "unclassified": 1346,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
       "quality_status": "unmeasured",
@@ -170882,16 +171403,16 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "status": "ok",
-      "count": 6
+      "count": 7
     },
     {
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -170902,8 +171423,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "status": "ok",
       "count": 12
     },
@@ -170911,8 +171432,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "status": "ok",
       "count": 12
     },
@@ -170920,8 +171441,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "status": "ok",
       "count": 9
     },
@@ -170929,8 +171450,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "status": "ok",
       "count": 1
     },
@@ -170938,8 +171459,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "status": "ok",
       "count": 12
     },
@@ -170947,8 +171468,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "status": "ok",
       "count": 2
     },
@@ -170960,14 +171481,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "count": 133,
       "counters": {
         "relevant": 3,
         "pending": 130,
         "excluded": 2,
-        "fetched": 137,
+        "fetched": 127,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -170980,14 +171501,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
-      "count": 66,
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
+      "count": 67,
       "counters": {
         "relevant": 7,
-        "pending": 59,
+        "pending": 60,
         "excluded": 177,
-        "fetched": 197,
+        "fetched": 190,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -171000,14 +171521,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "count": 87,
       "counters": {
         "relevant": 19,
         "pending": 68,
         "excluded": 1028,
-        "fetched": 650,
+        "fetched": 539,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -171020,14 +171541,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
-      "count": 77,
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
+      "count": 78,
       "counters": {
         "relevant": 25,
-        "pending": 52,
+        "pending": 53,
         "excluded": 694,
-        "fetched": 561,
+        "fetched": 550,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -171040,14 +171561,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "count": 85,
       "counters": {
         "relevant": 1,
         "pending": 84,
         "excluded": 2,
-        "fetched": 85,
+        "fetched": 83,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -171060,7 +171581,7 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
       "last_success": "2026-10-22T01:49:47.677420+00:00",
       "count": 90,
       "counters": {
@@ -171082,14 +171603,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "count": 921,
       "counters": {
         "relevant": 10,
         "pending": 911,
         "excluded": 775,
-        "fetched": 340,
+        "fetched": 185,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -171102,14 +171623,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "count": 30,
       "counters": {
         "relevant": 0,
         "pending": 30,
         "excluded": 18,
-        "fetched": 13,
+        "fetched": 10,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -171121,20 +171642,18 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-26T06:35:57.136025+00:00",
+      "status": "ok",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "count": 72,
       "counters": {
         "relevant": 0,
         "pending": 72,
-        "excluded": 182,
-        "fetched": 41,
+        "excluded": 184,
+        "fetched": 89,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "journal-science-advances",
@@ -171144,14 +171663,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "count": 16,
       "counters": {
         "relevant": 1,
         "pending": 15,
         "excluded": 535,
-        "fetched": 341,
+        "fetched": 106,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -171160,8 +171679,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "status": "ok",
       "count": 0
     },
@@ -171169,8 +171688,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "status": "ok",
       "count": 12
     },
@@ -171178,8 +171697,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "status": "ok",
       "count": 1
     },
@@ -171187,8 +171706,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "status": "ok",
       "count": 0
     },
@@ -171196,8 +171715,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
-      "last_success": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
+      "last_success": "2026-10-27T02:24:41.594163+00:00",
       "status": "ok",
       "count": 12
     },
@@ -171206,7 +171725,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 20,
-      "last_attempt": "2026-10-27T01:55:48.184836+00:00",
+      "last_attempt": "2026-10-27T02:24:41.594163+00:00",
       "last_success": "2026-10-27T01:55:02.584280+00:00",
       "run_id": "40429875796",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -171214,15 +171733,15 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 24,
+    "generated": 6,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
       "status": "partial",
       "attempted": 8,
-      "public_html": 5,
+      "public_html": 6,
       "bohr_graph": 0,
-      "fallback": 3,
+      "fallback": 2,
       "bohr_calls": 0
     }
   },
