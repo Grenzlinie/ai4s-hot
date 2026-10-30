@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-30T01:27:39.542668+00:00",
+  "generated_at": "2026-10-30T02:55:55.177289+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -486,20 +486,7 @@
       "summary": "本文通过机器学习辅助数据库挖掘识别出33种此前已合成但未被识别的多层MXene候选物，并用无需持续外部加热、数分钟内完成的自蔓延高温法合成了7种多层MXene及11种稀土基MXene。该工作为MXene家族扩展和数据驱动的快速可扩展合成提供了候选清单与方法参考，但摘要所述均为报道结果，尚不能视为已验证的普适性能结论。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Ali Saffar Shamshirgar",
-        "Guilherme Ribeiro Portugal",
-        "Soheil Ershadrad",
-        "Roman Ivanov",
-        "Martin Dahlqvist",
-        "Florian Chabanais",
-        "Sanjay Chakraborty",
-        "Rainer Traksmaa",
-        "Topias Jussila",
-        "Maarit Karppinen",
-        "Irina Hussainova",
-        "Fredrik Heintz",
-        "Per O. Å. Persson",
-        "Johanna Rosen"
+        "Ali Saffar Shamshirgar, Guilherme Ribeiro Portugal, Soheil Ershadrad, Roman Ivanov, Martin Dahlqvist, Florian Chabanais, Sanjay Chakraborty, Rainer Traksmaa, Topias Jussila, Maarit Karppinen, Irina Hussainova, Fredrik Heintz, Per O. Å. Persson, Johanna Rosen"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -655,13 +642,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Cheri Sirois",
-        "Sarah H. Ross",
-        "Sacha Vignieri",
-        "Mattia Maroso",
-        "Keith T. Smith",
-        "Marc S. Lavine",
-        "Yury Suleymanov"
+        "Corinne Simonti, and Jesse Smith, Cheri Sirois, Sarah H. Ross, Sacha Vignieri, Mattia Maroso, Keith T. Smith, Marc S. Lavine, and Yury Suleymanov"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -719,9 +700,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Wilmot James",
-        "Jonathan Ewbank",
-        "Pat G. Casey"
+        "Wilmot James, Jonathan Ewbank, and Pat G. Casey"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -1127,8 +1106,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Houjun Pan",
-        "Qing Wang"
+        "Houjun Pan and Qing Wang"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -1592,21 +1570,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Sacha Vignieri",
-        "Bianca Lopez",
-        "Angela Hessler",
-        "Yury Suleymanov",
-        "Di Jiang",
-        "Leslie Ferrarelli",
-        "Bharat Jalan",
-        "Mattia Maroso",
-        "Sarah H. Ross",
-        "Yevgeniya Nusinovich",
-        "Unnati Sonawala",
-        "Marc Lavine",
-        "L. Bryan Ray",
-        "Jelena Stajic",
-        "Claire Olingy"
+        "Michael Funk, and Sacha Vignieri, Bianca Lopez, Angela Hessler, Yury Suleymanov, Di Jiang, Leslie Ferrarelli, Bharat Jalan, Mattia Maroso, Sarah H. Ross, Yevgeniya Nusinovich, Unnati Sonawala, Marc Lavine, L. Bryan Ray, Jelena Stajic, and Claire Olingy"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -4308,6 +4272,79 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "2b9a81762568ea36fbf6cde7",
+      "url": "https://arxiv.org/abs/2610.38477",
+      "title": "Strain-Induced BCC-to-FCC Transformation in Tungsten Uncovered by Molecular Dynamics Simulations with Machine Learning Potentials",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "chemistry"
+      ],
+      "published_at": "2026-10-28T08:51:29+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "Polymorphic transformations occur in a minority of metals. Tungsten is not one of them. This observation does not rule out its intrinsic phase transition possibility, but may be due to inaccessible thermodynamic and mechanical conditions in conventional experiments. Herein, we investigate the body centered cubic (BCC) to face centered cubic (FCC) transformation in tungsten via a rigorously validated machine learning potential (MLP) molecular dynamics (MD) approach. Our simulations demonstrate that strain induced BCC to FCC transformation indeed occurs in tungsten. The FCC phase exceeds 20 at.% at low temperature and in the presence of dislocations. In the perfect crystal moderate temperatures favor phase transformation kinetics. Structural analysis confirms the transformation following the Bain and Nishiyama Wassermann orientation relationship. These results establish the viability of strain induced polymorphic transformation in tungsten and provide a critical guideline for the experimental production of duplex tungsten with enhanced ductility addressing a longstanding challenge in tungsten material engineering for high-temperature structural applications.",
+      "summary": "本文通过经严格验证的机器学习势分子动力学模拟，研究了钨中由应变诱导的BCC到FCC相变，并观察到FCC相在低温及存在位错时占比超过20 at.%，结构分析符合Bain和Nishiyama-Wassermann取向关系。该结果可为实验制备具有更高延展性的双相钨提供参考，但相变行为基于模拟预测，尚需实验验证，且不构成对材料性能的已证实结论。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Qiu-Hong Hu",
+        "YueYue Wang",
+        "Xinyi Leng",
+        "Hezhu Shao",
+        "Luru Dai"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        },
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：material、crystal。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.931,
+      "topic_cache_token": "7d4a6a1df31ca288f90ed44401c2b7bd90302d85f7d3eb115772fb98e3e2cd41",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "a881eec818dbab0472e5fdbd",
       "url": "https://doi.org/10.1126/sciadv.aef6378",
       "title": "Sustainable biobased packaging via integrated robotics/machine learning workflow for improved postharvest preservation",
@@ -4404,6 +4441,165 @@
       "topic_cache_token": "d9bbe583aaae1ce63b550aa989708e5ace2a8b081dfe688b88773f98084a724c",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "5b9c7c6808796707600840dc",
+      "url": "https://arxiv.org/abs/2610.38195",
+      "title": "Crystoria: A Large-Scale Crystal Dataset Linking Thermodynamic and Dynamical Stability for Materials AI",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "chemistry",
+        "biology"
+      ],
+      "published_at": "2026-10-28T02:41:14+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "Large-scale crystal databases have transformed materials discovery by making millions of structures and thermodynamic properties accessible to materials informatics. Yet dynamical stability remains sparsely characterized at a comparable scale because its evaluation is substantially more computationally demanding than conventional structure and energy calculations. This mismatch creates a critical gap between the rapidly expanding crystal-structure space and the physical information available for materials research and machine learning. Here we introduce Crystoria, a large-scale crystal dataset designed to bring dynamical stability to the scale of modern materials data. We construct Crystoria by systematically curating low-energy and metastable inorganic crystals, standardizing their structural identities, and combining machine-learning-accelerated structural relaxation with phonon-based dynamical screening. The resulting dataset contains 2,649,640 crystal structures, spanning 89 elements, 219 of the 230 space groups, and primitive cells containing 1-48 atoms. Among them, 1,793,353 structures (67.68%) are classified as dynamically stable, revealing substantial variation in dynamical stability across chemical and crystallographic space. By bringing dynamical stability to the scale of millions of crystal structures, Crystoria provides a physically grounded foundation for materials artificial intelligence (AI) and enables systematic exploration of the dynamical crystal landscape.",
+      "summary": "本文构建了Crystoria大规模晶体数据集，通过整合多个数据库的低能与亚稳无机晶体、统一结构表示，并结合机器学习加速的结构弛豫与基于声子的动力学稳定性筛选，最终收录2,649,640个晶体结构，其中1,793,353个（67.68%）被归类为动力学稳定。该数据集为材料人工智能提供包含动力学稳定性信息的物理基础，并支持对动力学晶体空间的系统探索；其动力学分类依赖机器学习力模型，原文对其进行了外部密度泛函理论声子计算的评估，但摘要未给出全部性能细节，相关稳定性判定仍受该模型适用范围的限制。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Ke-Xin Pang",
+        "Ze-Feng Gao",
+        "Yan Gao",
+        "Zhong-Yi Lu"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：dataset、evaluation。"
+        },
+        {
+          "id": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：machine learning、artificial intelligence。"
+        },
+        {
+          "id": "zotero:abaed7fc04976b45c1631cceced1f314",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：materials discovery。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:abaed7fc04976b45c1631cceced1f314"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:abaed7fc04976b45c1631cceced1f314"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9562,
+      "topic_cache_token": "4efde01e80a54c8f5327f655fb87df9d919a1f444eed3e570dce33644e09a670",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.38195",
+        "sha256": "711e8c20243994c7efb3f848614886518bdcaf38abf6c9d96ce4caf38d9e3bf3",
+        "chars": 12000
+      }
+    },
+    {
+      "id": "536e2e38740a79fd79639b5f",
+      "url": "https://arxiv.org/abs/2610.38145",
+      "title": "El Agente Quntur: Agentic Active-Space Selection for CASSCF",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "chemistry",
+        "agents"
+      ],
+      "published_at": "2026-10-28T01:28:33+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "Multireference calculations often require substantial human expertise and time to choose and refine an active space for the electronic states or chemical process of interest. This involves selecting which orbitals to include, verifying that the calculation describes the intended excited state, and deciding whether the results have converged. Here, we ask whether scientific agentic systems (harnesses) can make these decisions reliably. We use the El Agente Quntur multi-agent harness, with GPT-5.6 Sol and GPT-5.6 Terra as the underlying LLM components, to explore 32 diverse singlet excitations at fixed molecular geometries. The agents planned and executed calculations, choosing and refining active spaces under prompts that specified equal-weight two-singlet state-averaged CASSCF followed by strongly contracted NEVPT2 with def2-TZVPD. We evaluate excitation energies against published CASPT2 reference values at matching geometries and compare performance with six deterministic Active Space Finder protocols. Within the El Agente Quntur system, agents detect missing active orbitals, compare candidate excited states, and revise state assignments as calculations progress. Agentic execution reduced mean absolute error by 48\\% relative to the state-of-the-art Active Space Finder protocol. We note that computational traces vary substantially across runs in both active space selection strategies and cost, even for the same molecule. Our results underscore the advantage of agentic active space selection over fixed workflows, yet leave room to improve efficiency through runtime-aware decision-making, reduced inter-agent communication overhead and redundancy, more systematic checks of state identity, and clearer stopping criteria.",
+      "summary": "本文使用 El Agente Quntur 多智能体框架（底层LLM为GPT-5.6 Sol与GPT-5.6 Terra），在固定分子几何下对32个单重态激发进行主动空间选择与细化，并按指定条件执行等权双单重态态平均CASSCF及SC-NEVPT2/def2-TZVPD计算，与已发表CASPT2参考值及六种确定性Active Space Finder方案比较。该工作表明智能体主动空间选择在测试集中相对当前最优ASF方案降低了平均绝对误差，但同一分子的计算轨迹在策略与成本上仍存在显著波动，且其效率受运行时决策、智能体间通信开销、状态识别检查与停止准则等限制。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Juan B. Pérez-Sánchez",
+        "Viviana Roman-Ventura",
+        "Olalla Nieto-Faza",
+        "Aiwei Yin",
+        "Alán Aspuru-Guzik",
+        "Varinia Bernales"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:c65fbf3f1dc429e795b4b57f3926a4cc",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：multi-agent。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:c65fbf3f1dc429e795b4b57f3926a4cc"
+      ],
+      "topic_ids": [
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:c65fbf3f1dc429e795b4b57f3926a4cc"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8295,
+      "topic_cache_token": "311b0b9a5c8256b6d29d788c343625be328c34c0b9cca80af88a793721ae01c9",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.38145",
+        "sha256": "46b58c266a04ff986b314ff4054c8764e902f154cadba4340314b88f387959f7",
+        "chars": 12000
+      }
     },
     {
       "id": "b33cac27a654f9435b677e8b",
@@ -7192,6 +7388,135 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "e4c92dc986bcd54f9cb8ce02",
+      "url": "https://arxiv.org/abs/2610.37925",
+      "title": "Planar energetics do not determine twin persistence in nanocrystalline aluminium",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-27T20:10:54+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "Planar energetics are the standard descriptors of twinnability in face-centred cubic metals and the usual validation targets for interatomic potentials. Here we show that they do not determine whether deformation twins persist in nanocrystalline aluminium. Two machine-learned potentials reproducing the same zero-load slip curves and closely spaced layered energy surfaces predict, from a common separated-fault precursor under identical loading, retained twin coverage of 64\\% and 14\\%. The divergence traces to forces within distorted partial cores acting along the trailing translation that would remove an outer fault. Planar energetics do set the margin: an outer fault more than halves the incremental barrier for middle-plane shear, yet twin completion and fault removal remain separated by only 10--21 mJ m\\textsuperscript{-2}. Whether an assembled twin persists is decided instead by the orientation of local traction relative to the full-slip bisector and by the arrival order of partial-slip fronts from the grain-boundary network.",
+      "summary": "本文用两种平面能几乎一致的机器学习势从同一分离层错前驱体在相同加载下继续模拟，发现纳米晶铝中孪晶保持率显著不同，并将差异追溯到位错核心力而非平面能。该结果提示，单凭平面能或零载荷滑移曲线验证势函数不足以判断变形孪晶是否持久，相关结论受限于所提供的摘录片段，且对势函数差异的归因仍需全文和独立验证。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Yue Wu",
+        "Yuan Tian",
+        "Haoyu Wan",
+        "Deng Pan",
+        "Mingwei Chen"
+      ],
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "low_confidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.783,
+      "topic_cache_token": "91ce1a925612c39e55b3c60d0f30df4d19d3d17a384a98a6df2bb0f95c543d4e",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.37925",
+        "sha256": "246a9b4eb140b716f03ff8e60cf1911b36fec0c10d1e54756ae3d6b0216b19a0",
+        "chars": 12000
+      }
+    },
+    {
+      "id": "8ebe7e238889a9fd3f9b0a98",
+      "url": "https://arxiv.org/abs/2610.37851",
+      "title": "Evaluating and improving AI agents for sequencing protocol understanding",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "chemistry",
+        "agents"
+      ],
+      "published_at": "2026-10-27T18:58:58+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "Existing scientific-agent benchmarks rarely evaluate whether agents can reconstruct the exact molecular structures and generation workflows specified by sequencing protocols, a capability critical for analyzing customized sequencing assays. We introduce LibStructBench, a document-grounded benchmark for reconstructing sequencing-library structures and molecular workflows. Our experiments show that frontier agents often produce approximately correct reconstructions but remain unreliable at exact reconstruction, particularly in molecular-state representation and workflow connectivity. Switching the underlying language model produced larger average performance differences than switching agent harnesses, with a statistically significant difference only for molecular-state reconstruction. Additional knowledge improved oligo-family recovery in a small pilot without improving mean molecular-workflow scores. Autonomous accumulation of procedural rules and cross-protocol examples showed non-monotonic validation performance and no mean held-out molecular-workflow improvement in the tested trajectory. These findings highlight the need for more controlled and verifiable approaches to scientific reasoning about molecular processes in complex experimental protocols.",
+      "summary": "本文提出LibStructBench基准，用于评估AI智能体从测序方案文档中重建测序文库结构、寡核苷酸家族及分子生成工作流的能力，并测试了知识增强和累积学习等改进方式。该基准及实验发现可用于诊断智能体在精确重建上的不足，尤其涉及分子状态表示和工作流连接；但材料未验证完整全文，知识增强与累积学习的改进效果仅限所报告的试点或测试轨迹，不能视为普遍适用的性能结论。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Chi-Lam Poon",
+        "Michael Goneos",
+        "Zezheng Song",
+        "Xi Chen"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:8f22e62349472c4815f4275fbcf89c76",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：language model、agent。"
+        },
+        {
+          "id": "zotero:e09a09615a9a79995ffd756fcf67aa3f",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8496,
+      "topic_cache_token": "d210f189ba72335437c20a05f457954005978143d457f5474a70c005266e9466",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.37851",
+        "sha256": "7eabef07204aaaf41d6e61cfac45839378f0ac5ec678af4d415f79dd587f7c66",
+        "chars": 12000
+      }
+    },
+    {
       "id": "f11c120345a76678f849b43c",
       "url": "https://arxiv.org/abs/2610.37666",
       "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
@@ -7278,7 +7603,7 @@
       "excerpt": "Discrete visual tokens represent vision in a discrete form analogous to language, offering a native interface for multimodal modeling under a shared next-token prediction objective. However, quantization error is widely assumed to cause unavoidable semantic loss, fundamentally limiting the semantic fidelity of discrete visual tokens and positioning continuous visual representations as an intrinsic upper bound. Using multimodal understanding as a proxy for semantic fidelity, we revisit this assumption and find quantization error unreliable, as discrete representations with substantially larger errors can achieve better understanding. Instead, the effective bit budget of discrete indices emerges as a key determinant of downstream performance. However, existing quantizers eventually saturate as additional codebooks contribute progressively less semantic information. As one approach to alleviating this saturation, we introduce Factorized Vector Quantization, which quantizes complementary, fixed-dimensional views of the visual feature with symmetric parallel codebooks. It continues to improve at larger bit budgets, ultimately matching continuous visual representations in multimodal understanding. Trained on industrial-scale multimodal data, our model achieves state-of-the-art performance among discrete-representation models, outperforming UniAR and Emu3-Chat by 22.8% and 59.2%, respectively, on a nine-metric average. To our knowledge, it is also the first discrete-representation model competitive with strong continuous-representation models such as Qwen3-VL, including on fine-grained OCR tasks. We further identify the key principles and a practical recipe enabling this competitiveness. These results and insights support the potential of discrete visual representations to underpin large-scale native multimodal foundation models. Code and models are available at https://github.com/hustvl/FVQ",
       "summary": "本文提出因子化向量量化（Factorized Vector Quantization），用对称并行码本对视觉特征的互补固定维度视图进行量化，以缓解现有量化器随码本增加而饱和的问题，并在工业级多模态数据上训练模型。作者以多模态理解为语义保真度的代理指标，报告该模型在离散表示模型中取得领先表现，并称其首次在包括细粒度OCR任务上与强连续表示模型具有竞争力；这些比较基于其自报的九项指标平均值，尚非独立验证结论。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 11,
+      "alpha_rank": 10,
       "authors": [
         "Jialv Zou",
         "Xiaotong Li",
@@ -7343,7 +7668,7 @@
       "excerpt": "Large Language Models (LLMs) are increasingly used in multi-turn agentic workloads that require sustained interaction with complex environments. Existing reflective prompt optimizers such as GEPA learn from failed rollouts, but agentic failures can also come from prompt weaknesses, harness limitations, stochastic execution, or noisy judges. We argue that such failures may not provide useful learning signal, and may even be harmful; and thus it is essential to curate which tasks are provided to the prompt optimizer for better performance. We introduce GEPA-Curator, a framework that augments the prompt optimizer to select which agent experiences should shape prompt optimization. In particular, GEPA-Curator consists of two components: task curation, which filters out tasks that are likely to provide noisy or unreliable learning signals, and prior success retrieval, which selectively retrieves past successful trajectories for a task and provides them as additional context to the prompt optimizer. We evaluate GEPA-Curator on GoBrowse, ALFWorld, AppWorld, and $τ$-bench, using both Gemini 3.1 Pro and Claude Opus 5 as optimizer models. GEPA-Curator matches or exceeds the mean performance of both baselines, with gains of up to 20.7% over GEPA and 21.2% over ACE.",
       "summary": "本文提出GEPA-Curator框架，在反射式提示优化器基础上增加任务筛选（过滤可能提供噪声或不可靠学习信号的任务）与历史成功轨迹检索（为任务选择性检索过往成功轨迹作为额外上下文），并在GoBrowse、ALFWorld、AppWorld和τ-bench上以Gemini 3.1 Pro和Claude Opus 5作为优化器模型进行了评估。据摘要，该框架平均性能匹配或超过两个基线，相对GEPA最高提升20.7%、相对ACE最高提升21.2%；但摘要未说明这些提升的统计显著性或跨任务稳定性，且评估范围限于上述四个基准和两种优化器模型。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 6,
+      "alpha_rank": 4,
       "authors": [
         "Zack Yu",
         "Nicholas Lee",
@@ -7412,7 +7737,7 @@
       "excerpt": "Visual generation requires both high-level semantic knowledge and fine-grained pixel details. We propose a learning paradigm that assigns these roles to autoregressive pretraining for knowledge acquisition and diffusion post-training for high-fidelity rendering. Within this framework, we study the objective, representation, and scaling of knowledge acquisition and rendering. Controlled comparisons identify autoregression as the stronger pretraining objective for downstream rendering, improving both learning efficiency and final generation quality. We further find that AR-only generation quality does not necessarily correlate with final performance; semantic quality matters more. This motivates a purely semantic tokenizer trained with language supervision alone, without an image decoder or reconstruction loss. We establish compute-optimal scaling laws for knowledge acquisition and rendering, and find that autoregressive pretraining lowers the fitted asymptotic rendering loss compared with pixel diffusion models trained from scratch. Guided by the laws, we train a 3B-parameter text-to-image model with only 6,600 H100 GPU-hours, achieving 86 on GenEval and 87 on DPG-Bench and validating the proposed paradigm at scale.",
       "summary": "本文提出一种视觉生成学习范式，将高层语义知识获取交由自回归预训练、将高保真渲染交由扩散后训练，并通过受控比较研究其目标、表示与扩展规律。该工作可用于指导文本到图像等生成任务中语义预训练与渲染后训练的分工，但相关性能结果来自作者报告，尚不等同于独立验证的结论。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 8,
+      "alpha_rank": 9,
       "authors": [
         "Yucheng Mao",
         "Chongjian Ge",
@@ -7474,7 +7799,7 @@
       "excerpt": "We introduce Timestral, a family of four time series foundation models for probabilistic forecasting, with 5M, 28M, 123M, and 209M parameters. Timestral sets a new state of the art on GIFT-Eval, TIME, and fev-bench, where Timestral-209M and Timestral-123M take the top two places on every metric. We achieve this with three ingredients: Decoupled Horizon Forecasting (DHF), which separates prediction tokens from the causally encoded context, so that longer horizons are trained without masking context and each observed value is both a forecast target and context for later forecasts; a covariate framework that natively supports known-future covariates within a causal architecture; and a two-stage pipeline that pretrains exclusively on a diverse, large-scale synthetic corpus before post-training on a mix of real and synthetic data with extended context. This report describes the model design and its benchmark results. Weights for all four models are available on Hugging Face and inference code on GitHub.",
       "summary": "本文提出Timestral系列四个参数规模分别为5M、28M、123M和209M的时间序列基础模型，用于概率预测，并采用解耦预测视野、原生支持已知未来协变量的框架以及先合成语料预训练再混合数据后训练的两阶段流程，报告了其在GIFT-Eval、TIME和fev-bench上的基准结果。该工作提供了可获取的模型权重和推理代码，但摘要仅报告其宣称取得领先结果，未给出可独立核验的具体性能数字，实际科研使用效果仍需依据公开评估与复现结果判断。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 5,
+      "alpha_rank": 6,
       "authors": [
         "Adrien Petralia",
         "Alexandre Gavaudan",
@@ -7938,6 +8263,88 @@
       }
     },
     {
+      "id": "e05f4aabbd0e37982cd2ae08",
+      "url": "https://arxiv.org/abs/2610.37393",
+      "title": "Learning Quality-Controllable Robot Policies with Iterative Hindsight Relabeling",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-10-27T15:15:14+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "Robot policy evaluation often relies on a binary success signal for task completion. In real-world deployment, however, desired execution behaviors are also defined by quality attributes such as execution speed and motion smoothness, which need to be dynamically controlled according to task requirements. To address this, we introduce Quality-Controllable Policy (QCP), a robot policy that enables inference-time control over both individual quality attributes and their combinations. To extend the controllable quality range beyond initial demonstrations, we further propose an iterative hindsight relabeling loop: QCP collects online rollouts under target quality labels, adds successful trajectories to the dataset, relabels the accumulated trajectories in hindsight according to their measured quality, and fine-tunes the policy. Experiments on Robomimic and RoboEval demonstrate that QCP consistently improves both task execution quality and success rates across iterations, producing successful rollouts that exceed the quality of the initial demonstrations. Finally, we validate QCP on real-world manipulation tasks, where controlling speed increases throughput in conveyor operations and controlling transport stability improves success when carrying wine glasses, demonstrating that quality-controllable policies yield practical gains in physical deployment.",
+      "summary": "本文提出质量可控策略（QCP），通过在推理时以量化质量标签为条件控制执行速度、平滑度等质量属性，并结合迭代事后重标注循环扩展可控质量范围。该策略在Robomimic、RoboEval及真实操作任务中报告了任务质量与成功率的迭代提升，但结论基于公开摘要与片段，尚需查阅完整论文以核实具体性能与泛化限制。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 8,
+      "authors": [
+        "Sinjae Kang",
+        "Dong Kyu Shin",
+        "Jaehong Kim",
+        "Kamin Lee",
+        "Hyoeun Kim",
+        "Kaixin Wang",
+        "Li Zhao",
+        "Seonghyeon Ye",
+        "Kimin Lee"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：dataset、evaluation。"
+        },
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.837,
+      "topic_cache_token": "a897ab5f0afd222cf83b1657c827ad3f16272cc6f6007aaa6cbd443ee301c353",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.37393",
+        "sha256": "86d8b826a7e1367effc649d64731599e3d25362f25ade1b7712365048cb6bd4d",
+        "chars": 12000
+      }
+    },
+    {
       "id": "1e3ebf94e41ebe19793bfa16",
       "url": "https://openai.com/index/retell-ai",
       "title": "Retell uses OpenAI models to help power 100M monthly calls",
@@ -8218,7 +8625,7 @@
       "excerpt": "Real-to-Sim-to-Real (Real2Sim2Real) enables structured world representations for planning, interpretability, and safe execution. Most existing approaches rely on passive perception, which creates real2sim gaps due to imperfect observation. Inspired by how humans perceive actively through actions, we propose ActiveAlign, a framework that leverages active perception to align the Real2Sim2Real gap from interactions. ActiveAlign introduces two complementary modules: (i) ActiveAlign-Waving, which performs hand-eye calibration by exploiting active hand motions and differentiable rendering, and (ii) ActiveAlign-Touching, which refines object alignment through tactile feedback to achieve millimeter-level precision. Together, these capabilities enable strong real2sim alignment. We demonstrate that ActiveAlign-Waving can be used to curate simulation environments for open-sourced uncalibrated robot manipulation datasets, and demonstrate on a real Unitree G1 robot that ActiveAlign enables fine manipulation of millimeter-scale objects such as pressing buttons and moving sliders.",
       "summary": "本文提出ActiveAlign框架，通过主动感知（ActiveAlign-Waving用于手眼标定、ActiveAlign-Touching利用触觉反馈精化物体对齐）来缩小Real2Sim2Real中的对齐差距，并在Unitree G1机器人上演示了毫米级细操作。该框架可用于为未标定的开源机器人操作数据集整理仿真环境，但原文未给出定量性能指标，其毫米级精度等表述属作者声明而非独立验证结论。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 12,
+      "alpha_rank": 11,
       "authors": [
         "Ri-Zhao Qiu",
         "Bowen Wen",
@@ -8545,7 +8952,7 @@
       "excerpt": "Humans are dexterous, but traditional data collection paradigms such as teleoperation, kinesthetic teaching, and wearable exoskeletons force humans to act through the robot embodiment, bottlenecking their dexterity. Retargeting can avoid this. However, existing methods purely translate kinematics and ignore the real-world contact dynamics essential for task success. We present CARD: Contact-Anchored Retargeting for Dexterous Manipulation, a simulator and object-free framework that retargets human demonstrations to robot actions by explicitly preserving contact force targets. CARD unifies human data sources including video, motion capture, and tactile gloves via a shared hand--contact representation and generates explicit contact force targets in addition to kinematics. To maintain these contact targets during hardware open-loop replay, CARD also introduces a tactile tracking controller. For video which does not contain an explicit tactile source, we present Vid-HACO, our video-to-contact model that sets a new state of the art. Across our video, glove, motion-capture data and the GRAB dataset, CARD maintains contact on $43$--$78\\%$ of contact frames, while kinematic and object-aware retargeting methods maintain contact on $<10\\%$ and $22.5\\%$ of the frames respectively. Further, integrating our formulation into physics-based retargeting improves strict task success from 12\\% to 32\\% on GRAB dataset. Finally, we show that our tactile tracker is critical to reproduce demonstrated forces during hardware replay. These results establish that contact preservation via CARD is a scalable interface for transferring human dexterity to robots.",
       "summary": "本文提出CARD，一种基于接触锚定的重定向框架，通过共享手-接触表示统一视频、动捕和触觉手套等人类数据源，在生成运动学的同时显式生成接触力目标，并引入触觉跟踪控制器以在硬件开环回放中维持这些接触目标；针对无显式触觉来源的视频，还提出视频到接触模型Vid-HACO。该工作可用于将人类灵巧操作演示重定向至机器人动作，但其报告的性能与成功率均为原文在特定数据集和实验条件下的结果，尚需独立验证，且未声称已解决所有硬件部署中的接触保持问题。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 9,
+      "alpha_rank": 7,
       "authors": [
         "Cunxi Dai",
         "Botao He",
@@ -11085,7 +11492,7 @@
         "Tom Duerig",
         "Mojtaba Seyedhosseini"
       ],
-      "alpha_rank": 10,
+      "alpha_rank": 5,
       "topic_labels": [],
       "topic_leaf_ids": [],
       "topic_ids": [],
@@ -11325,6 +11732,170 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.4,
       "topic_cache_token": "a124bd1706209b75e452230651813fc605921f230c4b0d43432d7b3e6a32e175",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "0b73660e31921f56d41dc746",
+      "url": "https://arxiv.org/abs/2610.37786",
+      "title": "WebAnything: From the Wild Web to Scalable Agent Environments",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-27T00:00:00+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "Web agents require diverse, executable, and resettable website environments for reproducible training and evaluation. Human-assisted mirrors demand per-site engineering, while generative construction can diverge from specified real websites. Capture-and-replay preserves observations, with interaction coverage constrained by captured content and replay capabilities. We present WebAnything, a fully automated framework that reconstructs source-grounded, reusable Web environments from real URLs without per-site manual implementation or repair after initial setup and authorization. An Explorer-Builder collects browser-observable structures, resources, and interaction outcomes; an independent verifier checks frozen candidates and guides local repair or targeted source recapture. We construct 244 website artifacts across 14 application domains and 53 categories, supporting 12,984 executed and accepted tasks. Compared with human-assisted WebHarbor, WebAnything achieves higher aggregate scores on three fidelity metrics, with 12 wins, two ties, and no losses in a blind audit. Fine-tuning Qwen3.5-9B on 5,856 interaction trajectories improves REAL success by 9.9 percentage points, Odysseys-Easy Rubric Avg and Task Avg by 6.25 and 6.32 percentage points, and WebArena-Verified Overall success by 13.33 percentage points under the fixed harness. Code: https://github.com/china-qijizhifeng/Web-Anything",
+      "summary": "WebAnything提出了一个全自动框架，可从真实URL重建有来源依据、可复用且可重置的Web智能体环境，通过Explorer-Builder收集浏览器可观测的结构、资源和交互结果，再由独立验证器检查冻结候选并引导局部修复或针对性重新采集。该工作据此构建了跨14个应用领域、53个类别的244个网站产物并支持12,984个已执行且被接受的任务，其报告称相比人工辅助的WebHarbor在盲审中取得更高保真度聚合分数（12胜2平0负），并在固定测试框架下微调Qwen3.5-9B后在REAL等基准上取得提升；但这些性能与比较结果来自原文报告，尚未经独立验证，且只依据提供的公开材料，未阅读完整全文。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.37786",
+      "authors": [
+        "Tianci Xie",
+        "Zikun Cai",
+        "Chaoyun Zhang",
+        "Pinxue Guo",
+        "Bingxuan Li",
+        "Rui Zheng",
+        "Hang Yan"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：fine-tuning。"
+        },
+        {
+          "id": "zotero:9ade13cdaad8f75e22a31d765794ac2c",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：verifier。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:9ade13cdaad8f75e22a31d765794ac2c"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:6cb94419e4a077231731f17d61098d95",
+        "zotero:9ade13cdaad8f75e22a31d765794ac2c"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8309,
+      "topic_cache_token": "08715f82c42b90209a55e4dbc49616c69f863577a811a3e6e2356f98c287fde0",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.37786",
+        "sha256": "1039f1df156e08447603ec504eeb02c39f16dcef0ccff2f0b572f245af88c587",
+        "chars": 12000
+      }
+    },
+    {
+      "id": "dd0575522a3404790b00beda",
+      "url": "https://arxiv.org/abs/2610.37161",
+      "title": "WorkFactory: Turning Professional Intents into Executable Work for Scalable Agent Training",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-10-27T00:00:00+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "Scaling supervised training for working agents requires diverse professional tasks that yield reliable expert demonstrations. However, missing or inconsistent task information can obstruct teacher execution and weaken the resulting supervision. We propose WorkFactory, a scalable framework for constructing coherent and executable professional tasks. Starting from professional intents, information-level planning builds an information support graph to guide task instantiation, explicitly representing the dependencies and locations of information required for the intended outputs. Probe executions then identify support failures and guide repairs while preserving the intended work. We construct 112,686 tasks spanning 612 occupations and use the collected teacher trajectories to fine-tune Qwen models at 4B, 27B, and 35B-A3B scales, yielding the WorkPilot family. All three models improve over their respective base models across four professional-work benchmarks, with WorkPilot-35B-A3B improving from 879 to 1565 Elo on GDPval-AA v2.1. Scaling analyses reveal model-dependent diminishing returns, with execution length first increasing and then decreasing. Controlled component analyses show that planning and repair reduce probe-diagnosed task environment defects and improve downstream performance. The data and models are available at https://github.com/IQuestLab/WorkFactory.",
+      "summary": "WorkFactory提出了一套可扩展的任务构建框架，该框架从职业意图出发，通过信息级规划构建信息支持图，显式表示所需输出的信息依赖与位置，并借助探针执行识别支持失效，再在保持原工作意图的前提下指导修复，从而生成可执行的专业任务。作者据此构建了覆盖612种职业、112,686个任务的数据集，并用教师轨迹微调Qwen模型得到WorkPilot家族，在四个专业工作基准上相对各自基座模型均有提升；论文同时报告了随模型规模增大收益递减、执行长度先增后减的分析结果，并通过受控组件分析表明规划与修复能减少探针诊断出的任务环境缺陷、改善下游表现。上述性能提升来自本文实验报告，数据与模型已公开，具体效果仍以原始论文及公开材料为准。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.37161",
+      "authors": [
+        "Ziyang Zeng",
+        "Tingyang Chen",
+        "Jia Deng",
+        "Qiyao Wang",
+        "Shuo Tang",
+        "Yike Yang",
+        "Tao Ren",
+        "Wayne Xin Zhao",
+        "Feng Chang",
+        "Jujie He",
+        "Chuan Hao",
+        "Ran Tao",
+        "Bryan Dai"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：training。"
+        },
+        {
+          "id": "zotero:8f22e62349472c4815f4275fbcf89c76",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：agent。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8769,
+      "topic_cache_token": "d830bda261bb8be967bc81cc0e0981ec6150d5ff466eb005f4176d6dcb6ab257",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -19614,6 +20185,65 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.8417,
       "topic_cache_token": "5433f0a15cbd27b3031af59a92eb3a13952b07c7bcf7f18c1c70b0056aedac62",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "236826e9f12c937dcc24c87e",
+      "url": "https://arxiv.org/abs/2610.37695",
+      "title": "After One-Click Video: The Inflow of Service-Type Content, the Failure of the Recommendation Pool Mechanism, and the BoLe System",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-24T00:00:00+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "In September 2026, a new large language model was released. Soon after, a new way of making explainer videos became very popular: people asked the model to write a program, and the program produced the video. \"One-click video\" content then appeared in large amounts on many platforms. On the surface, this is a rise in creative power at the level of the individual. We argue that, at a deeper level, it changes the structure of the content industry. This judgment rests on two observations. First, this wave of content is service-type content. People watch it to meet a need, not to enjoy the content itself. The other kind is work-type content. AI makes both kinds faster to produce. But anyone can come in and make service-type content, while work-type content is limited by the number of people who have something to say. So the ratio between the two slowly becomes unbalanced. Second, free platforms choose content through layers of trial viewing, and this uses up user attention. The total amount of attention is fixed. The unbalanced ratio also dilutes good content. A simplified mathematical model shows that, as long as these conditions hold, the recommendation pool mechanism will fail once new content grows past a certain multiple. Based on this, we discuss one possible way out. Machines and entry rules judge whether service-type content passes the bar. Trusted people judge work-type content. We call this the BoLe system. At the end, we briefly imagine how the two kinds of content may develop from here.",
+      "summary": "本文提出并分析“一键视频”带来的服务型内容大量涌入现象，并在简化数学模型下讨论推荐池机制可能失效的条件，进而提出将服务型内容交由机器与准入规则判断、工作型内容交由可信人员判断的BoLe系统设想。其用途在于为理解生成式视频工具普及后内容产业结构变化及平台筛选机制问题提供分析框架，但相关判断依赖文中的简化条件与假设，模型所涉阈值和BoLe方案均属探讨性结论，未给出可验证的性能数字。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.37695",
+      "authors": [
+        "Bo Zou",
+        "Chao Xu"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:d4a56870e35078a55f7511a07aac9f6e",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：large language model。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d4a56870e35078a55f7511a07aac9f6e"
+      ],
+      "topic_ids": [
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d4a56870e35078a55f7511a07aac9f6e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7988,
+      "topic_cache_token": "919fc5b48ee8646f966f80d2aa5f068193947053334127454ec2c5ed2ba08cc9",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -29894,6 +30524,79 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.8273,
       "topic_cache_token": "2d176685404057ab62243a7ef286ee914c2ec2a80a1b50d0088beb05efafdd43",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "8324cd60ab31faa0a9ad0ccb",
+      "url": "https://arxiv.org/abs/2610.33106",
+      "title": "VibeGame: Prompt-to-Game Development with AI-Native Engine and Self-Evolving Adversarial Agent Team",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-22T00:00:00+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "Large language model agents have enabled software development through natural-language interaction, but extending this paradigm to end-to-end game development remains challenging. Building a playable game requires coordinating code, scenes, assets, animations, physics, and configurations, while allowing developers to validate their integrated behavior through interactive testing. We introduce VibeGame, a framework for creating complete 2D game projects from natural-language prompts and optional reference images. Its AI-native game engine represents project state as schema-validated structured text and provides frame-synchronous runtime control, enabling agents to inspect game states, execute actions, and verify behavior at their own pace. Built upon this interface, we design an Adversarial Agent Team of eight specialized agents to separate implementation from review, so that problems are found and fixed through multi-round loops. For each conducted and accepted project, we further introduce a training-free self-evolution mechanism to distill it into reusable skeletons, modules, and collaboration contracts for future development. We evaluate prompt-assets-to-game (PA2G), where agents are given an asset library, and prompt-to-game (P2G), where agents generate their own art. On a GameCraft-Bench subset, VibeGame in P2G consistently outperforms a range of agent harnesses in either P2G or PA2G with the same underlying model, including GPT-6.1-Sol.",
+      "summary": "本文提出VibeGame框架，通过AI原生游戏引擎将项目状态表示为模式校验的结构化文本并提供帧同步运行时控制，配合由八个专职代理组成的对抗代理团队分离实现与审查，同时引入免训练自演化机制将已接受项目蒸馏为可复用骨架、模块与协作契约，并在GameCraft-Bench子集上以P2G和PA2G两种设定进行了评估。该框架可用于在自然语言提示（及可选参考图像）驱动下生成完整2D游戏项目，但评估仅基于GameCraft-Bench的一个子集，摘要未给出具体性能数值，其自演化机制的复用效果与整体优越性仍需依据原文进一步核实。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.33106",
+      "authors": [
+        "Wenbo Hu",
+        "Ken Li",
+        "Jiazhe Wei",
+        "Yukang Cao",
+        "Weiyi Hong",
+        "Jiayi Dai",
+        "Chenjun Bai",
+        "Jiajun Liang",
+        "Yucheng Liao",
+        "Ruichuan An",
+        "Zeyu Lou",
+        "Haofan Wang",
+        "Yueming Lyu",
+        "Jingkang Yang",
+        "Ziwei Liu",
+        "Chenyang Si"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:8f22e62349472c4815f4275fbcf89c76",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：language model、agent。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_ids": [
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.84,
+      "topic_cache_token": "b7f2a0fed290bc9ce78e0f4878f91b2a0efe4888394099ea66da580be5f03192",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -59499,7 +60202,7 @@
       "doi": "10.1038/s41467-026-78026-6",
       "published_online_at": "2026-10-15T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-15T15:46:49+00:00",
+      "indexed_at": "2026-10-30T02:00:24+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -79119,6 +79822,51 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.9455,
       "topic_cache_token": "2a8e52b5976ea025a23f04235c4db8ce1133124f64083b803ae9639e5f211511",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "3fed2c2123416d978d0b61c7",
+      "url": "https://arxiv.org/abs/2610.16762",
+      "title": "Towards Complementary Keypoint Detection via Mixture of Detectors",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-12T13:23:54+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "Keypoint detection plays a central role in geometric vision pipelines. Existing detectors exhibit complementary strengths across different scene structures and keypoint budgets, and reliance on a single detector often results in suboptimal keypoint distributions. Motivated by this observation, we propose \\textbf{Mixture of Detectors (MoD)} for dense matching pipelines, a unified framework for complementary keypoint detection through the adaptive composition of heterogeneous detectors. MoD first distills heterogeneous detectors into a unified model, allowing diverse detection maps to be predicted efficiently within a single forward pass. Detector selection is subsequently formulated as a patch-wise, budget-conditioned decision process, in which a lightweight router assigns the most suitable detector to each local region. To avoid heuristic supervision, the router is trained with task-driven rewards derived from downstream matching quality, jointly capturing both keypoint quantity and precision. Extensive experiments on MegaDepth, ScanNet, and HPatches demonstrate that MoD consistently outperforms strong baselines across a wide range of keypoint budgets, demonstrating its effectiveness in improving keypoint distribution and downstream geometric performance.",
+      "summary": "本文提出Mixture of Detectors（MoD）框架，通过自适应组合异构关键点检测器，将多个检测器蒸馏为统一模型，并以逐块、受预算约束的路由决策为每个局部区域选择合适检测器，路由训练使用下游匹配质量驱动的任务奖励。该工作面向密集匹配流程，在MegaDepth、ScanNet和HPatches上报告了跨多种关键点预算优于强基线的实验表现，可用于改善关键点分布与下游几何性能；但所提供的仅为摘要级材料，未给出具体性能数字，且摘要报告的优势不能等同于已独立验证的结论，实际适用性仍需结合原文方法与实验细节评估。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 3,
+      "authors": [
+        "Xiaoyong Lu",
+        "Guobao Xiao",
+        "Dong Liang",
+        "Songlin Du"
+      ],
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "low_confidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7823,
+      "topic_cache_token": "c44169db0b7ee4a5637fb1644aaf205192099811fa2f155c57dee5f67827f9e7",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -114090,6 +114838,1220 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "801247e30457ff002762791a",
+      "url": "https://doi.org/10.1002/adma.74369",
+      "title": "Soft Skins With Reversible Thickness Morphing: Materials, Mechanisms, and Applications",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-13T12:06:10.113449+00:00",
+      "excerpt": "ABSTRACT Soft skins with reversible thickness morphing represent a distinct and underexplored class of adaptive material interfaces. Unlike conventional soft actuators that achieve motion through bending, elongation, or twisting, these systems enable out-of-plane deformation, producing localized protrusion, retraction, and programmable contact mechanics without rigid support structures. This review reframes thickness modulation not merely as an actuation outcome, but as a material-architecture strategy that couples energy transduction, geometry, and compliance to enable new modes of haptic interaction, morphological adaptation, and operation in confined or unstructured environments. We present a comprehensive synthesis of thickness-morphing soft skins, covering actuation stimuli, material platforms, structural architectures, fabrication strategies, modeling frameworks, and system-level integration. Particular emphasis is placed on hierarchical elastomer composites, origami- and kirigami-inspired designs, electrohydraulic and multimodal hybrid systems, and emerging data-driven control approaches that expand the functional design space. Despite rapid progress, key challenges remain in durability under cyclic loading, energy efficiency and autonomy, scalable manufacturing, and integration of sensing, actuation, and computation. Addressing these challenges will enable self-powered, fault-tolerant, and computationally intelligent soft skins capable of embodied perception and safe autonomous operation, positioning thickness morphing as a foundational design axis for next-generation haptics and soft robotic systems.",
+      "summary": "本文综述了可逆厚度变形软皮这一自适应材料界面，梳理了驱动刺激、材料平台、结构架构、制造策略、建模框架与系统集成，并重点讨论了分级弹性体复合材料、折纸与剪纸启发设计、电液及多模态混合系统和数据驱动控制方法。该综述可为软体机器人、触觉交互与受限环境操作等方向的研究提供设计参考，但原文指出循环载荷下的耐久性、能效与自主性、可扩展制造以及传感—驱动—计算一体化仍是待解挑战，且这些内容属于综述性总结，不代表已获验证的具体性能结论。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Oliver Ozioko, Chiamaka Akah, Ravinder Dahiya"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74369",
+      "published_online_at": "2026-08-01T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-10-04T00:17:01+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：generation。"
+        },
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：material。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7771,
+      "topic_cache_token": "0afb980d3fdf59c8a6967a056e9ba82b40954d60e3fa87acf2f14325a3a0ce35",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "2d821c26e0b57fb11df5cc62",
+      "url": "https://doi.org/10.1002/adma.74414",
+      "title": "Continuous-Conductivity-Gradient All-Organic Aerogels with Machine-Learning-Assisted Design toward Ultrabroadband, Ultralow-Reflection Electromagnetic Shielding",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-13T12:06:10.113449+00:00",
+      "excerpt": "ABSTRACT Ultralow-reflection electromagnetic interference (EMI) shielding across broad frequency ranges remains elusive as low reflection and low transmission are rarely achieved simultaneously, particularly in lightweight aerogels amenable to scalable manufacturing. Here, a continuous-conductivity-gradient (CCG) aerogel with machine-learning (ML)-assisted optimization is developed via diffusion-controlled in situ oxidative polymerization of pyrrole within an as-prepared, mechanically resilient porous aramid nanofiber scaffold, followed by an energy-efficient, scalable ambient-pressure-drying strategy. The resulting CCG aerogel integrates a continuous through-thickness gradient of polypyrrole (PPy) with a highly porous architecture, enabling a smooth impedance transition and progressive bulk microwave attenuation for ultrabroadband, ultralow-reflection EMI shielding. The optimized CCG aerogel delivers an effective absorption-dominated frequency bandwidth of 29.76 GHz spanning 10.24-40 GHz, with an EMW reflectivity below 0.1, while maintaining an EMI shielding effectiveness above 40 dB across the ultrabroadband frequency range of 8.2-40 GHz, surpassing the shielding performance of existing EMI shielding materials. Mechanistic analyses reveal that the continuous gradient couples efficient front-surface impedance matching with progressive internal dissipation, thereby circumventing the impedance discontinuities inherent to discrete multilayers. Overall, this ML-assisted strategy integrates novel electromagnetic and structural design with robust, scalable all-organic aerogel manufacturing, offering a general platform for ultrabroadband, ultrahigh-absorption, ultralow-reflection EMI shielding across diverse material systems.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Yue Liu, Na Wu, Qilong Zhao, Sinan Zheng, Jin Zhou, Jishang Liu, Jingpeng Lin, Mingrui Han, Fei Pan, Jiurong Liu, Zhihui Zeng"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74414",
+      "published_online_at": "2026-08-01T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-10-20T13:35:52+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "relationship_requires_review",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、optimization。"
+        },
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：material。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5839,
+      "topic_cache_token": "dc2f08c0f5751cbbf4a5be6df45c4c9df4dc0785760ac0783463c8501bf8c89d",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "eee3096c6923782606a4f5b7",
+      "url": "https://doi.org/10.1002/adma.74432",
+      "title": "Defect Engineering of DNA Origami ROS Sensors for Portable Urinalysis",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Shuangye Zhang, Zhe Liu, Yuanhao Wang, Xiaodong Xie, Mingqiang Li, Xiaolei Zuo, Qian Li, Dennis K. P. Ng, Chunhai Fan, Qiang Xia, Fei Ding"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74432",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5,
+      "topic_cache_token": "0222c732dab771f8efaa92ffd9c86b3c9a20a3a532a0a41c36924acfcbb1cc3a",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "e4188bdb031038c24203c58d",
+      "url": "https://doi.org/10.1002/adma.74313",
+      "title": "Surface Reconstruction-Integrated Bulk Defect Engineering Beyond Conventional Chemical Modulation for Na-Layered Oxide Cathodes",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Zhuang-Chun Jian, Minwen Yang, Ruizi Li, Hai-Yan Hu, Diancheng Chen, Xu Zhu, Yanfang Zhu, Xiaobo Zheng, Peng-Fei Wang, Yang Sun, Qingyu Xu, Yao Xiao"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74313",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:d05fd259021f78cf27fb6def1ecb915e",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：oxide；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6667,
+      "topic_cache_token": "b9009b2285b0b36316c2ab866fa09d9f8a7f71555106c872c4b435334e7964ed",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "df2636eadfae5d0b83458b06",
+      "url": "https://doi.org/10.1002/adma.74388",
+      "title": "Crystallization Modulation for Stable Wide-Bandgap Perovskite Solar Cells and Modules",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Leyu Bi, Jiarong Wang, Qiang Fu, Alex K.-Y. Jen"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74388",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:d05fd259021f78cf27fb6def1ecb915e",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：perovskite；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.75,
+      "topic_cache_token": "a88c914206594e48984f144bdce546da564315442e12c5e59dec96b7e0af4136",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "dd70e93243ec8f4c9e168767",
+      "url": "https://doi.org/10.1002/adma.74437",
+      "title": "Mirror-Induced Field Compression Drives Tunable Strong Exciton-Plasmon Polaritons in WS2/h-BN/Au Heterostructures",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Xiu-Qi Shi, Jun-Rong Zheng, Zhao-Dong Meng, Yi-Cheng Xu, Li-Lin Zhu, Yong-Jia Yao, Zhi-Peng Dong, En-Ming You, Jun Yi"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74437",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5455,
+      "topic_cache_token": "d33fd010ed781ed3ec70a1860a6a7d72537de7c4cc5bb609298f76704aa8a75c",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "d1b494ba31b4caf3a0e1e644",
+      "url": "https://doi.org/10.1002/adma.74448",
+      "title": "Physics-Driven 3D Structural Prediction and Transport Kinetics of Porous Carbons via Random Field and Phase-Field Evolution",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Chuang Wang, Xingxing Cheng, Chao Wang, Zhiqiang Wang, Murodbek Safaraliev, Baohua Zhang"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74448",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 1.0,
+      "topic_cache_token": "35eb476d661f9a8982d5a30fe61e9d36efd47966bc1c806a560cb3a3f6a8a5c5",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "b271c517731979a0ae46e439",
+      "url": "https://doi.org/10.1002/adma.74469",
+      "title": "Synergistic Crystallization Regulation by Substituent Electronic Effects of Polyfluoroarenes Toward Large Area Perovskite Solar Module Fabrication",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Tian Zhang, Xin Chen, Qi Wang, Yingying Wang, Ben Fan, Wei Hui, Lin Song, Xiaopeng Xu, Yihui Wu, Qiang Peng"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74469",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:d05fd259021f78cf27fb6def1ecb915e",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：perovskite；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7857,
+      "topic_cache_token": "d44c283263813a82ed3ee4dcd0ea44bb9d6e4216940107195de01bff2b039f6d",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "a8b4448ee726155ad0dd87d1",
+      "url": "https://doi.org/10.1002/adma.74393",
+      "title": "Prolonging the Triplet Excited-State Lifetime via Tandem Through-Space Conjugation in Tetracationic Cyclophanes for Efficient Metal-Free Photoredox Catalysis",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Yawen Li, Qi Sun, Zengrong Wang, Cui Yi, Tianle Cao, Zhijie Zhou, Naiyao Li, Wenxin Wei, Wei Zhang, Haonan Peng, Yu Fang, Gang He"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74393",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:84051b1f05b8368766ddc3a2195c2324",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：metal；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:84051b1f05b8368766ddc3a2195c2324"
+      ],
+      "topic_ids": [
+        "zotero:84051b1f05b8368766ddc3a2195c2324",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.2308,
+      "topic_cache_token": "9c889ea5e23d45d93b2d631ca1bb6a682f190416c822215502a0f64654cb0da6",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "9f7bffc84aa8090a726acfed",
+      "url": "https://doi.org/10.1002/adma.74417",
+      "title": "Zwitterionic Interlayer-Directed Submicrometer Self-Assembly for Efficient Vacuum-Deposited Near-Infrared Perovskite LEDs",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Hong Chen, Che Lin, Chen Xue, Nana Wang, Meijie Lu, Dongmin Qian, Zhanxiang Chen, Jingsheng Miao, Jianpu Wang, Chuluo Yang"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74417",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:d05fd259021f78cf27fb6def1ecb915e",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：perovskite；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.2222,
+      "topic_cache_token": "638fb68c7fb1e71671b3bf071b36bfc77105e82ad0474fa594c1ef4a2834df87",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "8593cd7711c06346731477e9",
+      "url": "https://doi.org/10.1002/adma.74389",
+      "title": "Barrier-Assisted Plasma Doping for Spatially Selective Resistance Engineering in MoS2 Transistors",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Inseong Lee, Joonho Park, Seungsun Yoo, Seunghyun Yu, Mingu Kang, Seohak Park, Min Kyu Lee, Hyeongjin Lim, Dongyoung Kim, Kunwoo Roh, Sejin Kim, Kihyuk Kim, Wonbae Ahn, Kibum Kang, Yong-Hoon Kim, Sung-Yool Choi"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74389",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.4444,
+      "topic_cache_token": "d8081b5e41227016655f3f52f52fca7658de27355e8fb88b47063070c0f51f0a",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "6c516721bd48ce39fde01aef",
+      "url": "https://doi.org/10.1002/adma.74401",
+      "title": "Amphiphilic Diketopyrrolopyrrole Polymers Enable Intrinsic Selective Perchlorate Transduction in Organic Electrochemical Transistors",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Amit Chakraborty, Sahib Gangarh, Sirshendu Pathak, Keerthi Reddy Middollu Ravichandra, Sounak Biswas, Bianca Helm, Nella Marie Vargas-Barbosa, Ram Kumar Canjeevaram Balasubramanyam, Satish Patil"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74401",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题中的明确材料领域词，保留材料研究根类；未使用摘要，不推断叶类。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.4545,
+      "topic_cache_token": "fac02b2844c068a29852cd33ea4b3ce196672d02610137fa832fa0bbd47cf067",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "4adcf4862afcfff40c864437",
+      "url": "https://doi.org/10.1002/adma.74405",
+      "title": "Recent Advances in Interfacial Chemistry for Solid-State Lithium-Sulfur Batteries",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Dongjun Li, Guocheng Li, Xiaolong Cheng, Qi Qi, Caiyue Wen, Jingjing Tang, Fangyang Liu, Yoonseob Kim, Zheng-Long Xu"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74405",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题中的明确材料领域词，保留材料研究根类；未使用摘要，不推断叶类。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8571,
+      "topic_cache_token": "0ae12d29e7c28750d2ca67ff06919dda898a20970d4f84f82249f2e7b781f04b",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "3f106787868d6d41b7e5ffd0",
+      "url": "https://doi.org/10.1002/adma.74424",
+      "title": "Reversibly Cross-Linked Damage-Tolerant Polymers Breaking the Strength-Stretchability Trade-Off",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Jian Li, You-Liang Zhu, Xiaohan Wang, Shilong Wu, Xingyuan Lu, Quan Chen, Xin Liu, Ziwen Ma, Wenke Zhang, Wenjie Zuo, Zhongyuan Lu, Shuaizheng Bing, Junqi Sun"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74424",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题中的明确材料领域词，保留材料研究根类；未使用摘要，不推断叶类。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.4286,
+      "topic_cache_token": "e906a62fe1e356e71ce2386958045d3953793c05388d881b154fd8c1c6b252af",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "259f0bcd0956acd197e8558d",
+      "url": "https://doi.org/10.1002/adma.74406",
+      "title": "Real-Space Mapping of Emergent Correlated Electronic States With Scanning SQUID Microscopy",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Aoshen Yang, Xiangyu Bi, Ganyu Chen, Zeya Li, Junwei Huang, Hongtao Yuan"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74406",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7778,
+      "topic_cache_token": "f4631cd42bbc54c8cfd542b51debb648b7c6465ac63c7a9dd8a237d37d0cb193",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "211b1d71f5c1e3810ce40324",
+      "url": "https://doi.org/10.1002/adma.74381",
+      "title": "Bioinspired Subnanowire-Based Optical Devices With Programmable Polarization Irisations Through Photocuring 3D Printing",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Xin Xu, Xiaoya Wang, Yuemei Li, Qingda Liu, Xun Wang"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74381",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6,
+      "topic_cache_token": "1e7ef4d6d5bd42c07b1f939f168c256b8a7cb9410ebba85d69645ae8eafdd4bf",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "0a5f0d7618cab6856ac2fe33",
+      "url": "https://doi.org/10.1002/adma.74390",
+      "title": "A Targeted, Tandem-Activated Artificial Urinary Biomarker Sensor for Early Detection and Therapeutic Intervention of Thoracic Aortic Aneurysm and Dissection",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Jie Zhan, Zien Lin, Jie Yu, Penghui Cheng, Siman Luo, Jieling Chen, Yuxuan Hu, Xiaowu Wang, Yan Zhang, Yanbin Cai, Lei Zheng, Kanyi Pu"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74390",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.4286,
+      "topic_cache_token": "53c84a1324849da04d68d705e1ad0c08bd173651feb98be13befb9cc21900811",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "01c6c88893b7ee7fda356d37",
+      "url": "https://doi.org/10.1002/adma.74450",
+      "title": "Multifunctional Injectable Hydrogel as a Biomimic Lens: Optical-Mechanical Restoration and Dynamic Postoperative Microenvironment Regulation",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-30T02:55:55.177289+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Renjie Zhang, Yuemei Han, Huiying Huang, Wei Li, Yajia Wang, Ruixiang Chen, Jiaying Yang, Jiang Chen, Wenxin Hong, Quankui Lin"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74450",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.1818,
+      "topic_cache_token": "404c82d51f6518d07b40937a2099c8b85512fa850111b866ee2fe86156f7a6c9",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "d1f46554bd4c9bb146a51a40",
       "url": "https://doi.org/10.1002/adfm.202523909",
       "title": "Programmable 3D-Orthotropic Piezoceramic Sensors Enabled by Solid-Loading-Maximized Additive Manufacturing",
@@ -114842,7 +116804,7 @@
       "doi": "10.1038/s41467-026-78209-1",
       "published_online_at": "2026-10-01T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-30T00:31:57+00:00",
+      "indexed_at": "2026-10-30T01:32:38+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -114915,7 +116877,7 @@
       "doi": "10.1038/s41467-026-77955-6",
       "published_online_at": "2026-10-01T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-30T00:31:07+00:00",
+      "indexed_at": "2026-10-30T01:32:20+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -115069,7 +117031,7 @@
       "doi": "10.1038/s41467-026-77952-9",
       "published_online_at": "2026-10-01T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-30T00:31:55+00:00",
+      "indexed_at": "2026-10-30T01:32:19+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -115135,7 +117097,7 @@
       "doi": "10.1038/s41467-026-78024-8",
       "published_online_at": "2026-10-01T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-30T00:31:28+00:00",
+      "indexed_at": "2026-10-30T01:32:31+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -117156,7 +119118,7 @@
       "doi": "10.1038/s41467-026-78064-0",
       "published_online_at": "2026-09-30T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-30T00:31:23+00:00",
+      "indexed_at": "2026-10-30T01:32:38+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -117235,7 +119197,7 @@
       "doi": "10.1038/s41467-026-78141-4",
       "published_online_at": "2026-09-30T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-30T00:30:59+00:00",
+      "indexed_at": "2026-10-30T01:32:20+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -117495,7 +119457,7 @@
       "doi": "10.1038/s41467-026-78205-5",
       "published_online_at": "2026-09-30T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-30T00:31:13+00:00",
+      "indexed_at": "2026-10-30T01:32:31+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -118371,7 +120333,7 @@
       "doi": "10.1038/s41467-026-78110-x",
       "published_online_at": "2026-09-30T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-29T23:35:55+00:00",
+      "indexed_at": "2026-10-30T01:32:23+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -119239,7 +121201,7 @@
       "doi": "10.1038/s41467-026-78044-4",
       "published_online_at": "2026-09-30T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-30T00:31:25+00:00",
+      "indexed_at": "2026-10-30T01:32:20+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -184087,174 +186049,6 @@
       "topic_backend": "lexical"
     },
     {
-      "id": "801247e30457ff002762791a",
-      "url": "https://doi.org/10.1002/adma.74369",
-      "title": "Soft Skins With Reversible Thickness Morphing: Materials, Mechanisms, and Applications",
-      "source_ids": [
-        "journal-advanced-materials"
-      ],
-      "source_names": [
-        "Advanced Materials"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "first_seen": "2026-10-13T12:06:10.113449+00:00",
-      "excerpt": "ABSTRACT Soft skins with reversible thickness morphing represent a distinct and underexplored class of adaptive material interfaces. Unlike conventional soft actuators that achieve motion through bending, elongation, or twisting, these systems enable out-of-plane deformation, producing localized protrusion, retraction, and programmable contact mechanics without rigid support structures. This review reframes thickness modulation not merely as an actuation outcome, but as a material-architecture strategy that couples energy transduction, geometry, and compliance to enable new modes of haptic interaction, morphological adaptation, and operation in confined or unstructured environments. We present a comprehensive synthesis of thickness-morphing soft skins, covering actuation stimuli, material platforms, structural architectures, fabrication strategies, modeling frameworks, and system-level integration. Particular emphasis is placed on hierarchical elastomer composites, origami- and kirigami-inspired designs, electrohydraulic and multimodal hybrid systems, and emerging data-driven control approaches that expand the functional design space. Despite rapid progress, key challenges remain in durability under cyclic loading, energy efficiency and autonomy, scalable manufacturing, and integration of sensing, actuation, and computation. Addressing these challenges will enable self-powered, fault-tolerant, and computationally intelligent soft skins capable of embodied perception and safe autonomous operation, positioning thickness morphing as a foundational design axis for next-generation haptics and soft robotic systems.",
-      "summary": "本文综述了可逆厚度变形软皮这一自适应材料界面，梳理了驱动刺激、材料平台、结构架构、制造策略、建模框架与系统集成，并重点讨论了分级弹性体复合材料、折纸与剪纸启发设计、电液及多模态混合系统和数据驱动控制方法。该综述可为软体机器人、触觉交互与受限环境操作等方向的研究提供设计参考，但原文指出循环载荷下的耐久性、能效与自主性、可扩展制造以及传感—驱动—计算一体化仍是待解挑战，且这些内容属于综述性总结，不代表已获验证的具体性能结论。",
-      "summary_kind": "ai_summary",
-      "authors": [
-        "Oliver Ozioko, Chiamaka Akah, Ravinder Dahiya"
-      ],
-      "journal_id": "advanced-materials",
-      "journal_title": "Advanced Materials",
-      "journal_issns": [
-        "0935-9648",
-        "1521-4095"
-      ],
-      "publisher": "Wiley",
-      "doi": "10.1002/adma.74369",
-      "published_online_at": "2026-08-01T00:00:00+00:00",
-      "published_print_at": null,
-      "indexed_at": "2026-10-04T00:17:01+00:00",
-      "journal_relevance": {
-        "status": "relevant",
-        "method": "rule-v1",
-        "reason": "ai_method_for_materials_research",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
-          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
-          "method": "local_lexical_v2",
-          "score": 0.54,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：generation。"
-        },
-        {
-          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
-          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
-          "method": "local_lexical_v2",
-          "score": 0.54,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：material。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
-        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
-      ],
-      "topic_ids": [
-        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
-        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
-        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:materials"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.7771,
-      "topic_cache_token": "0afb980d3fdf59c8a6967a056e9ba82b40954d60e3fa87acf2f14325a3a0ce35",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "2d821c26e0b57fb11df5cc62",
-      "url": "https://doi.org/10.1002/adma.74414",
-      "title": "Continuous-Conductivity-Gradient All-Organic Aerogels with Machine-Learning-Assisted Design toward Ultrabroadband, Ultralow-Reflection Electromagnetic Shielding",
-      "source_ids": [
-        "journal-advanced-materials"
-      ],
-      "source_names": [
-        "Advanced Materials"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "first_seen": "2026-10-13T12:06:10.113449+00:00",
-      "excerpt": "ABSTRACT Ultralow-reflection electromagnetic interference (EMI) shielding across broad frequency ranges remains elusive as low reflection and low transmission are rarely achieved simultaneously, particularly in lightweight aerogels amenable to scalable manufacturing. Here, a continuous-conductivity-gradient (CCG) aerogel with machine-learning (ML)-assisted optimization is developed via diffusion-controlled in situ oxidative polymerization of pyrrole within an as-prepared, mechanically resilient porous aramid nanofiber scaffold, followed by an energy-efficient, scalable ambient-pressure-drying strategy. The resulting CCG aerogel integrates a continuous through-thickness gradient of polypyrrole (PPy) with a highly porous architecture, enabling a smooth impedance transition and progressive bulk microwave attenuation for ultrabroadband, ultralow-reflection EMI shielding. The optimized CCG aerogel delivers an effective absorption-dominated frequency bandwidth of 29.76 GHz spanning 10.24-40 GHz, with an EMW reflectivity below 0.1, while maintaining an EMI shielding effectiveness above 40 dB across the ultrabroadband frequency range of 8.2-40 GHz, surpassing the shielding performance of existing EMI shielding materials. Mechanistic analyses reveal that the continuous gradient couples efficient front-surface impedance matching with progressive internal dissipation, thereby circumventing the impedance discontinuities inherent to discrete multilayers. Overall, this ML-assisted strategy integrates novel electromagnetic and structural design with robust, scalable all-organic aerogel manufacturing, offering a general platform for ultrabroadband, ultrahigh-absorption, ultralow-reflection EMI shielding across diverse material systems.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Yue Liu, Na Wu, Qilong Zhao, Sinan Zheng, Jin Zhou, Jishang Liu, Jingpeng Lin, Mingrui Han, Fei Pan, Jiurong Liu, Zhihui Zeng"
-      ],
-      "journal_id": "advanced-materials",
-      "journal_title": "Advanced Materials",
-      "journal_issns": [
-        "0935-9648",
-        "1521-4095"
-      ],
-      "publisher": "Wiley",
-      "doi": "10.1002/adma.74414",
-      "published_online_at": "2026-08-01T00:00:00+00:00",
-      "published_print_at": null,
-      "indexed_at": "2026-10-20T13:35:52+00:00",
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "relationship_requires_review",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
-          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
-          "method": "local_lexical_v2",
-          "score": 0.66,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、optimization。"
-        },
-        {
-          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
-          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
-          "method": "local_lexical_v2",
-          "score": 0.54,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：material。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
-        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
-      ],
-      "topic_ids": [
-        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
-        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
-        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:materials"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.5839,
-      "topic_cache_token": "dc2f08c0f5751cbbf4a5be6df45c4c9df4dc0785760ac0783463c8501bf8c89d",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
       "id": "7ece89055bc1f367fb6ecd99",
       "url": "https://doi.org/10.1038/s41467-026-75760-9",
       "title": "Effective graph resistance as cumulative heat dissipation",
@@ -193263,13 +195057,13 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-10-30T01:27:39.542668+00:00",
+    "last_success": "2026-10-30T02:55:55.177289+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 72,
-      "unclassified": 1472,
+      "classified": 27,
+      "unclassified": 1482,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
       "quality_status": "unmeasured",
@@ -193373,18 +195167,16 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-29T02:50:47.017045+00:00",
-      "status": "error",
-      "count": 0,
-      "message": "采集失败，保留上次结果",
-      "error_type": "HTTPError"
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
+      "status": "ok",
+      "count": 11
     },
     {
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -193395,8 +195187,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
       "status": "ok",
       "count": 12
     },
@@ -193404,19 +195196,17 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-29T02:50:47.017045+00:00",
-      "status": "error",
-      "count": 0,
-      "message": "采集失败，保留上次结果",
-      "error_type": "ReadTimeout"
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
+      "status": "ok",
+      "count": 12
     },
     {
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
       "status": "ok",
       "count": 11
     },
@@ -193424,8 +195214,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
       "status": "ok",
       "count": 1
     },
@@ -193433,8 +195223,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
       "status": "ok",
       "count": 12
     },
@@ -193442,8 +195232,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
       "status": "ok",
       "count": 1
     },
@@ -193455,14 +195245,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
       "count": 138,
       "counters": {
         "relevant": 3,
         "pending": 135,
         "excluded": 2,
-        "fetched": 144,
+        "fetched": 140,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -193475,14 +195265,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
       "count": 70,
       "counters": {
         "relevant": 8,
         "pending": 62,
         "excluded": 220,
-        "fetched": 279,
+        "fetched": 272,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -193495,14 +195285,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
       "count": 111,
       "counters": {
         "relevant": 26,
         "pending": 85,
-        "excluded": 1281,
-        "fetched": 981,
+        "excluded": 1283,
+        "fetched": 964,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -193515,15 +195305,15 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
-      "count": 94,
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
+      "count": 112,
       "counters": {
         "relevant": 26,
-        "pending": 68,
-        "excluded": 784,
-        "fetched": 762,
-        "abstracts_recovered": 0
+        "pending": 86,
+        "excluded": 785,
+        "fetched": 748,
+        "abstracts_recovered": 1
       },
       "errors": []
     },
@@ -193535,14 +195325,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
       "count": 89,
       "counters": {
         "relevant": 1,
         "pending": 88,
         "excluded": 2,
-        "fetched": 90,
+        "fetched": 87,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -193555,14 +195345,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
       "count": 109,
       "counters": {
         "relevant": 1,
         "pending": 108,
-        "excluded": 515,
-        "fetched": 249,
+        "excluded": 516,
+        "fetched": 229,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -193575,14 +195365,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
       "count": 969,
       "counters": {
         "relevant": 10,
         "pending": 959,
-        "excluded": 858,
-        "fetched": 351,
+        "excluded": 861,
+        "fetched": 281,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -193595,14 +195385,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
       "count": 29,
       "counters": {
         "relevant": 0,
         "pending": 29,
         "excluded": 25,
-        "fetched": 19,
+        "fetched": 18,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -193614,18 +195404,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
+      "status": "partial",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
       "last_success": "2026-10-30T01:27:39.542668+00:00",
       "count": 93,
       "counters": {
         "relevant": 1,
         "pending": 92,
         "excluded": 204,
-        "fetched": 107,
+        "fetched": 43,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-science-advances",
@@ -193635,14 +195427,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
       "count": 17,
       "counters": {
         "relevant": 2,
         "pending": 15,
         "excluded": 555,
-        "fetched": 100,
+        "fetched": 95,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -193651,8 +195443,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
       "status": "ok",
       "count": 0
     },
@@ -193660,8 +195452,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
       "status": "ok",
       "count": 12
     },
@@ -193669,8 +195461,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
       "status": "ok",
       "count": 1
     },
@@ -193678,8 +195470,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
       "status": "ok",
       "count": 0
     },
@@ -193687,8 +195479,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
+      "last_success": "2026-10-30T02:55:55.177289+00:00",
       "status": "ok",
       "count": 12
     },
@@ -193697,7 +195489,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 0,
-      "last_attempt": "2026-10-30T01:27:39.542668+00:00",
+      "last_attempt": "2026-10-30T02:55:55.177289+00:00",
       "last_success": "2026-10-30T01:26:51.303492+00:00",
       "run_id": "40985828759",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -193705,16 +195497,16 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 19,
+    "generated": 11,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
       "status": "partial",
       "attempted": 8,
-      "public_html": 0,
+      "public_html": 6,
       "bohr_graph": 0,
-      "fallback": 8,
-      "bohr_calls": 6
+      "fallback": 2,
+      "bohr_calls": 0
     }
   },
   "policy": {
