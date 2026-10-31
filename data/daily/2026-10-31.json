@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T02:35:36.784010+00:00",
+  "generated_at": "2026-10-31T02:42:23.164663+00:00",
   "item_ids": [
     "508d195420d52fb6c42d316f",
     "26ec1cfb927104b14cd6c548",
@@ -19,7 +19,6 @@
     "0d4dbc3f227f24f74219186d",
     "f275a661d44ddb8d1eb9ef82",
     "800f8035e42807167c884c02",
-    "ebb06d08ffc94c6482d1aa56",
     "84abd1857de5dfd951d90dcf",
     "a86d24c59c826150d16deb11",
     "ebcf512e2444cc4b6e961399",
@@ -81,7 +80,9 @@
     "b1769fc78c58568f2101544c",
     "48b9d5086b241c86934b1ebf",
     "ce2019adfc2418702a12b1e4",
+    "7ae7a976ad0c4fee683af9db",
     "0beb9497c7967b6dce040925",
+    "f1aa126e85a58e43a32887e0",
     "d68914af45df2b5ac29ef845",
     "d9bf16c88ac4c86c6e226699",
     "6729c406c578be78eb456d48",
@@ -97,8 +98,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "status": "ok",
       "count": 13
     },
@@ -106,7 +107,7 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -117,8 +118,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "status": "ok",
       "count": 12
     },
@@ -126,8 +127,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "status": "ok",
       "count": 12
     },
@@ -135,8 +136,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "status": "ok",
       "count": 9
     },
@@ -144,8 +145,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "status": "ok",
       "count": 1
     },
@@ -153,8 +154,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "status": "ok",
       "count": 12
     },
@@ -162,8 +163,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "status": "ok",
       "count": 1
     },
@@ -175,15 +176,15 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "count": 140,
       "counters": {
         "relevant": 4,
         "pending": 136,
         "excluded": 2,
-        "fetched": 143,
-        "abstracts_recovered": 1
+        "fetched": 131,
+        "abstracts_recovered": 0
       },
       "errors": []
     },
@@ -195,14 +196,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "count": 71,
       "counters": {
         "relevant": 8,
         "pending": 63,
         "excluded": 225,
-        "fetched": 279,
+        "fetched": 270,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -215,14 +216,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "count": 112,
       "counters": {
         "relevant": 26,
         "pending": 86,
         "excluded": 1300,
-        "fetched": 985,
+        "fetched": 881,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -235,14 +236,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "count": 112,
       "counters": {
         "relevant": 26,
         "pending": 86,
         "excluded": 797,
-        "fetched": 768,
+        "fetched": 661,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -255,14 +256,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "count": 91,
       "counters": {
         "relevant": 1,
         "pending": 90,
         "excluded": 2,
-        "fetched": 87,
+        "fetched": 84,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -275,14 +276,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "count": 111,
       "counters": {
         "relevant": 1,
         "pending": 110,
         "excluded": 524,
-        "fetched": 245,
+        "fetched": 209,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -295,14 +296,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
-      "count": 996,
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
+      "count": 995,
       "counters": {
         "relevant": 10,
-        "pending": 986,
-        "excluded": 887,
-        "fetched": 347,
+        "pending": 985,
+        "excluded": 888,
+        "fetched": 281,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -315,14 +316,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "count": 30,
       "counters": {
         "relevant": 0,
         "pending": 30,
         "excluded": 25,
-        "fetched": 20,
+        "fetched": 17,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -334,20 +335,18 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-30T01:27:39.542668+00:00",
-      "count": 93,
+      "status": "ok",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
+      "count": 94,
       "counters": {
         "relevant": 1,
-        "pending": 92,
-        "excluded": 204,
-        "fetched": 43,
+        "pending": 93,
+        "excluded": 205,
+        "fetched": 112,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "journal-science-advances",
@@ -357,14 +356,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "count": 19,
       "counters": {
         "relevant": 2,
         "pending": 17,
         "excluded": 599,
-        "fetched": 190,
+        "fetched": 183,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -373,8 +372,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "status": "ok",
       "count": 0
     },
@@ -382,8 +381,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "status": "ok",
       "count": 12
     },
@@ -391,8 +390,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "status": "ok",
       "count": 1
     },
@@ -400,8 +399,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "status": "ok",
       "count": 0
     },
@@ -409,8 +408,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
-      "last_success": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
+      "last_success": "2026-10-31T02:42:23.164663+00:00",
       "status": "ok",
       "count": 12
     },
@@ -419,7 +418,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 20,
-      "last_attempt": "2026-10-31T02:35:36.784010+00:00",
+      "last_attempt": "2026-10-31T02:42:23.164663+00:00",
       "last_success": "2026-10-31T02:34:57.044529+00:00",
       "run_id": "41154340719",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
