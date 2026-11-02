@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-02T01:08:59.420524+00:00",
+  "generated_at": "2026-11-02T02:44:32.883961+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -4513,6 +4513,227 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "3ed54ed27a7175ca9e6eed16",
+      "url": "https://arxiv.org/abs/2610.41164",
+      "title": "ORCHID: Connecting Finite-Temperature Thermodynamic Evidence to Computational Materials Discovery",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "agents"
+      ],
+      "published_at": "2026-10-30T02:42:08+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "Finite-temperature phase stability is essential to materials discovery, but the evidence needed to describe it remains scattered across decades of literature. ORCHID organizes this evidence around the thermodynamic states that the observations describe, using tiered agentic extraction guided by thermodynamic rules, expert supervision and explicit validation. The collection contains 73,542 values from 1,321 papers, represented with their thermodynamic states, phase identities, provenance, evidence classes and uncertainty, together with assessed phase assemblages and calculated references. A qualified subset is released in ESPEI-compatible form for CALPHAD assessment, and machine-readable access supports both human and AI-assisted reuse. Blind expert evaluation of 48 diagram fields gives 93.8% agreement, increasing to 97.9% after accounting for notation conventions. On a common formation-enthalpy benchmark, eight MLIPs show residual spreads close to their DFT reference, motivating evaluation of finite-temperature phase stability through PhaseForge. One-shot MLIP-PhaseForge descriptions of Cu-Zr recover 0.35-0.56 of observed phase occurrences at assessed field points. ORCHID-assisted refinement through PhaseForge+ recovers 9 of 13 invariant temperatures within 2 sigma and reduces held-out activity error from 5.1 to 1.7 kJ/mol. By supplying interpreted literature evidence directly to gradient-based refinement through PhaseForge+, ORCHID connects evidence recovery to programmatic CALPHAD assessment. With the initial description and fitting datasets prepared, the final Cu-Zr refinement completes in approximately 27 minutes, providing a foundation for continuously updated thermodynamic models and their use in materials discovery.",
+      "summary": "ORCHID按热力学状态组织有限温度相稳定性证据，采用分层智能体提取并结合热力学规则、专家监督与显式验证，当前收集了来自1321篇论文的73542个数值，并附带相身份、来源、证据类别与不确定性等信息。该资源可为CALPHAD评估提供ESPEI兼容子集和机器可读访问，并在Cu-Zr示例中用于PhaseForge+精修；但摘要报告的是特定盲评与基准结果，仍属公开材料中的描述，且该版本主要面向二元体系，完整性和独立复现尚待验证。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Raymundo Arróyave",
+        "James E. Saal",
+        "Dongwon Shin"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark、evaluation。"
+        },
+        {
+          "id": "zotero:950834fd5487f2d3e9c68088822c96be",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：MLIP。"
+        },
+        {
+          "id": "zotero:abaed7fc04976b45c1631cceced1f314",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：materials discovery。"
+        },
+        {
+          "id": "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+          "facet": "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：DFT。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:950834fd5487f2d3e9c68088822c96be",
+        "zotero:abaed7fc04976b45c1631cceced1f314",
+        "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:950834fd5487f2d3e9c68088822c96be",
+        "zotero:abaed7fc04976b45c1631cceced1f314",
+        "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8642,
+      "topic_cache_token": "d180a24cffb86a539a2160a3cf325de8d0010f0012240f02cd5f61abf3ed50c9",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.41164",
+        "sha256": "4b125279d6789c28580e4d8901d90f2856092752d0de695265992ec73fc8aa3c",
+        "chars": 12000
+      }
+    },
+    {
+      "id": "5aabf5dd567184263b6b7665",
+      "url": "https://arxiv.org/abs/2610.41162",
+      "title": "FrontierMat: Benchmarking Language Models at the Frontier of Materials R&D",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-30T02:37:21+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "To accelerate materials discovery, language models must be able to address problems at the research frontier. Yet textbook- and examination-derived benchmarks primarily assess established knowledge, leaving performance on frontier research problems largely untested. We introduce FrontierMat, a benchmark of 330 problems drawn from frontier academic and industrial research in fields including aerospace, semiconductors, embodied intelligence and nuclear fusion. Every problem is validated by leading experimentalists and industry experts in its field. Each problem presents a real study and asks the model to infer a withheld outcome or draw a conclusion from selected experimental evidence. Problems are annotated by functional domain, material system and the scale of the governing mechanism; 130 require cross-scale reasoning. The strongest general-purpose model scores only 53.7%, and on matched problems, cross-scale problems score 8.7 points below single-scale ones. Half of the problems are solved by at most one model, and models fail chiefly by endorsing what is plausible rather than what was observed. A domain-adaptation study with meta-weighted continued pretraining and scale-modular self-distillation raises an open-weight model from 36.7% to 55.4%, matching the strongest proprietary model, with improvements on public materials benchmarks and no decline in aggregate performance on general benchmarks. FrontierMat provides a testbed for measuring progress toward language models that support frontier materials R&D.",
+      "summary": "本文提出FrontierMat，一个包含330道取自航空航天、半导体、具身智能和核聚变等前沿学术与工业研究问题的基准，每题经领域专家验证并标注功能域、材料体系和主导机制尺度（其中130题需跨尺度推理），要求模型根据真实研究情境推断被隐藏的实验结果或从给定证据得出结论。该基准可用于测量语言模型在前沿材料研发问题上的表现，但摘要仅说明其题目来源与标注方式，最强通用模型得分53.7%等结果来自所给材料中的报告，并非独立验证结论，且该材料为节选，未涵盖完整全文。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Feng Chen",
+        "Jianguo Huang",
+        "Yushan Xiao",
+        "Yue Li",
+        "Bijun Tang",
+        "Xuyu Dong",
+        "Xingguo Wang",
+        "Feiyang Xie",
+        "Jianhui Gu",
+        "Dongfeng Cao",
+        "Hongda Chen",
+        "Yongji Gong",
+        "Ruiqi Li",
+        "Shuxin Li",
+        "Xingji Li",
+        "Ruitao Lv",
+        "Li Song",
+        "Lei Wang",
+        "Ye Zhang",
+        "Xiaoxu Zhao",
+        "Xitao Zheng",
+        "Bo An",
+        "Zheng Liu"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：pretraining。"
+        },
+        {
+          "id": "zotero:abaed7fc04976b45c1631cceced1f314",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：materials discovery。"
+        },
+        {
+          "id": "zotero:d680e95392def25285a997e886e86a05",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reasoning。"
+        },
+        {
+          "id": "zotero:e09a09615a9a79995ffd756fcf67aa3f",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:abaed7fc04976b45c1631cceced1f314",
+        "zotero:d680e95392def25285a997e886e86a05",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:abaed7fc04976b45c1631cceced1f314",
+        "zotero:d680e95392def25285a997e886e86a05",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8806,
+      "topic_cache_token": "9dafc1d15a62f660c9620fb32a393a3235848432384e35873126ee78531a9118",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.41162",
+        "sha256": "39190fee03f3073c4465082a852074ea49f1dc9200941c06e9171f82889d6692",
+        "chars": 12000
+      }
+    },
+    {
       "id": "66363188ebf81f4b870133e1",
       "url": "https://doi.org/10.1016/j.actamat.2026.122889",
       "title": "Interface reconstruction induced exceptional coarsening resistance of in situ formed V-phase nanoprecipitates in Al-Cu-Mg-Ag-Sc alloys",
@@ -6384,6 +6605,91 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "cf02b25fdc7325f51edc1572",
+      "url": "https://arxiv.org/abs/2610.40906",
+      "title": "Does Recursive Knowledge Construction Help Agents Verify Consensus Claims in Science?",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "chemistry",
+        "biology",
+        "agents"
+      ],
+      "published_at": "2026-10-29T19:27:00+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "Recent scientific agents build knowledge recursively by retrieving evidence, constructing an intermediate state, and judging whether that state contains sufficient information. These agents are evaluated end-to-end, usually without ground truth, so the effect of each design choice is unknown. Here, we examined two design axes: (1) what the recursion builds (the state of evidence) and (2) what controls it (the judge that decides when to stop). To measure them, we defined consensus scientific claim verification and measured these effects on this task, where a system must establish a claim's consensus stance from the open literature. We built a new consensus claim dataset, ProClaim-eval, including 718 claims with SUPPORT and REFUTE gold labels from five expert-curated databases spanning molecular biology, nuclear physics, and astronomy. Our instrument, ProClaim, persists an evidence state outside the model's context, so each axis can be studied with the other held fixed. Against verification systems and general-purpose agent harnesses, ProClaim ranks among the top three, with a significant advantage over the harnesses. We found that the evidence state improves performance over in-context accumulation, and it also matters what is stored in it. In addition, a trained judge that reads the evidence state performs better than fixed-round stopping. A judge trained separately and never exposed to ProClaim-eval achieves the highest agreement with the gold labels on three of five subsets, where it matches the off-the-shelf Claude Sonnet~4.6 judge and outperforms Claude Haiku~4.5. Our results support recursively maintaining a structured evidence state outside the model's context as an effective design for verifying claims in scientific agents.",
+      "summary": "本文定义并评测了“共识性科学主张验证”任务，构建了包含718条SUPPORT/REFUTE金标签、来自分子生物学、核物理和天文学五个专家数据库的ProClaim-eval数据集，并搭建可分别固定证据状态与停止判断两个设计轴的ProClaim工具；在对验证系统与通用智能体框架的对比中，ProClaim在部分子集上进入前三，证据状态优于上下文内累积，训练的判断器在五个子集中的三个上取得最高金标签一致率。该工作可为科研人员研究递归知识构建、证据状态组织与停止策略提供任务设定、数据集和可替换组件的实验平台；但原文未给出可推广的性能数字，比较结果限于所测系统和子集，训练判断器仅基于SciFact-Open拟合并在迁移中评估，且未声称已阅读完整全文，使用时应避免将公司声明或单次评测当作已验证结论。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Lun Ai",
+        "Yu-Heng Wu",
+        "Jonathan Schaul",
+        "Leonie Küchenhoff",
+        "Denes Turei",
+        "Francesco Carli",
+        "Fabio Petroni",
+        "Aurelien Dugourd",
+        "Julio Saez-Rodriguez"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:88f5ef7f6c79483dccdde4317c7916c9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：dataset。"
+        },
+        {
+          "id": "zotero:8f22e62349472c4815f4275fbcf89c76",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：agent。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:88f5ef7f6c79483dccdde4317c7916c9",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:88f5ef7f6c79483dccdde4317c7916c9",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry",
+        "web:life_sciences"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9148,
+      "topic_cache_token": "1c9976566ef5630f0eb4062bb096fc5eb7816da3fb1cf5a3c4da3631d6bfba28",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.40906",
+        "sha256": "7b453f6e42dce3ce5ba90bf5d6580a6cb2206a168e8fba96d16d05b5eaff27ee",
+        "chars": 12000
+      }
+    },
+    {
       "id": "fc0d361fa94c5905ef3b3075",
       "url": "https://arxiv.org/abs/2610.40647",
       "title": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers",
@@ -6603,7 +6909,7 @@
       "excerpt": "Interactive world models generate visual content conditioned on user actions, yet maintaining spatial consistency over long-horizon exploration in real time remains challenging. Existing approaches rely on either temporal context or explicit 3D memory, both of which scale poorly because memory grows with the length of the generated stream. Moreover, explicit 3D memories condition latent video generators by re-encoding RGB renderings, which precludes real-time generation. In this paper, we introduce a Latent 3D Gaussian Memory (L3G) that combines the efficiency of feed-forward reconstruction with a compact, rapidly renderable scene representation. Building on this memory, we propose L3G-World, in which a memory updater and a video diffusion transformer (DiT) alternate autoregressively to generate spatially consistent worlds. The memory updater spawns Gaussians in newly observed regions and refines existing ones, so that the memory grows with scene extent rather than stream length. Each Gaussian further stores a VAE latent feature, allowing the memory to be rendered directly into the DiT's latent space without VAE re-encoding. Experiments show that L3G-World achieves state-of-the-art generation quality and long-horizon spatial consistency, with up to $38.6\\times$ fewer 3D primitives, $3.2\\times$ faster memory updates, and $359\\times$ faster memory rendering relative to the most efficient prior 3D-memory baseline for each metric, enabling real-time world generation at 9 FPS.",
       "summary": "本文提出潜在三维高斯记忆L3G，并基于该记忆构建L3G-World，让记忆更新器与视频扩散Transformer自回归交替生成世界，其中每个高斯存储VAE潜在特征，使记忆可直接渲染至DiT潜在空间而无需VAE重编码。该工作面向交互式世界生成中长时程空间一致性与实时性的需求，摘要报告其在生成质量、长时程空间一致性及记忆规模、更新与渲染速度上相对所比较的最有效先前三维记忆基线取得改进，并实现9 FPS实时世界生成；这些性能比较与实时能力均来自原文摘要，未声称已独立验证。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 10,
+      "alpha_rank": 11,
       "authors": [
         "Jinhyeok Choi",
         "JoungBin Lee",
@@ -6749,17 +7055,17 @@
       "summary": "本文分析了Ramanujan Challenge基准中研究级数论问题的提交材料，并构建了一套AI辅助的评估流程，用于对自然语言证明、CAS代码和Lean形式化进行语义与逻辑正确性判定，与常规单次LLM判断相比，该流程将自然语言证明的误判率从23%降至6%，并将对支持代码的判断准确率从46%提升至58%。该流程为大规模评估研究级数学提供了方法，但其所报告的误判率和准确率均为本文在特定基准提交集上的测量结果，尚未经过独立验证，不能等同于已确认的通用性能结论。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Alan Sorani",
+        "A. Sorani",
         "Ashvni Narayanan",
-        "Michael Shalyt",
+        "M. Shalyt",
         "Tali Monderer",
         "Rotem Kalisch",
         "Hila Barkan",
         "Elyasheev Leibtag",
         "Shachar Weinbaum",
         "Carsten Schneider",
-        "John Campbell",
-        "Ido Kaminer"
+        "J. Campbell",
+        "I. Kaminer"
       ],
       "topic_labels": [
         {
@@ -6836,8 +7142,8 @@
       "summary": "本文回顾了EGI在interTwin和iMagine两个Horizon Europe项目中的早期AI实践，并据此提出EGI Federation Strategy 2026–2030中围绕AI就绪基础设施、人员技能与信任三个使能要素的AI战略。原文指出，该战略面向科研组织与研究基础设施的集体AI采用，但作者同时提到跨国家计算连续体仍缺乏明确用例与可持续商业模式等限制。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Gergely Sipos",
-        "Sergio Andreozzi",
+        "G. Sipos",
+        "S. Andreozzi",
         "Marco Rorro",
         "Andrea Manzi",
         "Tiziana Ferrari"
@@ -7194,7 +7500,7 @@
         "M. Smirman",
         "K. Sun",
         "H. Sheng",
-        "I. I. Mazin"
+        "I. Mazin"
       ],
       "topic_labels": [
         {
@@ -7482,7 +7788,7 @@
       "excerpt": "Video generation is shifting from end-to-end synthesis toward agentic generation, where planning, tool use, and feedback enable coherent, controllable multi-shot videos. In parallel, video world models provide action-conditioned observations and predicted futures, serving as interactive environments for agents. We study their intersection through the agent harness: an executable runtime that constructs context, exposes tools, maintains state, routes feedback, and manages budgets around video models. This report examines three directions. First, agentic video generation, where harnesses coordinate scripting, shot planning, asset management, production, and editing, alongside the evaluation challenges of these systems. Second, agentic world modeling, where harnesses mediate observation, control, execution, and state. We discuss hybrid designs in which game engines or agent-written programs maintain world state while video models render observations, and how agents and world models can mutually evaluate and improve one another. Third, recursive self-improvement (RSI) in video model development, distinguishing output revisions, updates to harness state, generator parameters, and evaluators, and changes to the improvement procedure itself. We identify how these improvements feed back into subsequent development. Across these directions, we analyze essential agent capabilities, including audiovisual perception, long-horizon planning, memory, code-based interaction, feedback-guided control, skill reuse, and multi-agent coordination. We conclude with challenges in autonomous video production, lifelong memory, programmable hybrid control, autonomous model development, provenance, cost accounting, and evaluation linking video quality and task performance to sustained improvements in models and harnesses.",
       "summary": "本文通过“agent harness”这一可执行运行时，梳理了智能体视频生成、智能体世界建模与视频模型递归自我改进三个方向，并区分了输出修订、harness状态更新、生成器参数更新、评估器更新以及改进流程本身的变化。该框架可用于组织视频生成与智能体结合的研究议题，但原文为综述性报告，未给出经独立验证的性能数字，且所述递归自我改进属于待探索方向而非已验证结论。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 13,
+      "alpha_rank": 12,
       "authors": [
         "Liaoyuan Fan",
         "Yuhao Zheng",
@@ -7732,21 +8038,21 @@
       "summary": "TLDR：PAPERBENCHX 是一个覆盖12个研究领域、包含93项专家构建实验复现任务的跨学科基准，用于检验 AI 能否在专业科学环境中复现已有科学结论；结果显示最强前沿智能体配置也仅完全复现14%的任务，暴露出 AI“理解论文”与“可靠产出可复现科学证据”之间的巨大差距。",
       "summary_kind": "upstream_tldr",
       "authors": [
-        "Ruoyu Wu",
-        "Zengji Tu",
-        "Aolong Sun",
-        "Tianyi Ma",
-        "Junren Li",
-        "Xinbo Xu",
-        "Li Fu",
-        "Ziyan Zhang",
-        "Pinrui Huang",
-        "Xiaochen Wang",
-        "Chengda Wu",
-        "Yutao Zhou",
-        "Jianjun Wu",
+        "Ruo-Yu Wu",
+        "Zeng-Ji Tu",
+        "Ao-Long Sun",
+        "Tian-Yi Ma",
+        "Jun-Ren Li",
+        "Xin-Bo Xu",
+        "Ling Fu",
+        "Zi-Yan Zhang",
+        "Pin-Rui Huang",
+        "Xiao-Chen Wang",
+        "Cheng-Da Wu",
+        "Yu-Tao Zhou",
+        "Jian-Jun Wu",
         "Lin Chang",
-        "Baobao Chang",
+        "Bao-Bao Chang",
         "Liang Chen",
         "Kuan Li"
       ],
@@ -7860,13 +8166,13 @@
       "summary": "本文是一篇关于空间人工智能驱动科学（AI4S）的批判性综述，梳理了轨道实验室与行星原位科学在生物学、材料、流体与热物理及自适应探索中的实践，并通过工作化轨道设计、行星延伸与匹配评估方案，区分传感、决策策略与物理执行各自贡献。该综述提出的以有效科学回报、任务覆盖、干预成本和完整研究周期中证据完整性来衡量自主性的议程，可供科研人员用于识别观测、可执行动作与有效证据连续性方面的缺口，但其价值仍需在专用机制、冗余和人工支持运行的对比中检验，且本文为受范围限制的摘录而非已验证完整全文。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Zizhe Wang",
-        "Jia Deng",
+        "Zi-Zhe Wang",
+        "Jia-Yong Deng",
         "Xin Lu",
-        "Zehao Jia",
+        "Ze-Hao Jia",
         "Yi Huang",
         "Yao Zhu",
-        "Jianing Li"
+        "Jia-Ning Li"
       ],
       "topic_labels": [
         {
@@ -8213,20 +8519,7 @@
       "summary": "本文通过机器学习辅助数据库挖掘识别出33种此前已合成但未被识别的多层MXene候选物，并用无需持续外部加热、数分钟内完成的自蔓延高温法合成了7种多层MXene及11种稀土基MXene。该工作为MXene家族扩展和数据驱动的快速可扩展合成提供了候选清单与方法参考，但摘要所述均为报道结果，尚不能视为已验证的普适性能结论。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Ali Saffar Shamshirgar",
-        "Guilherme Ribeiro Portugal",
-        "Soheil Ershadrad",
-        "Roman Ivanov",
-        "Martin Dahlqvist",
-        "Florian Chabanais",
-        "Sanjay Chakraborty",
-        "Rainer Traksmaa",
-        "Topias Jussila",
-        "Maarit Karppinen",
-        "Irina Hussainova",
-        "Fredrik Heintz",
-        "Per O. Å. Persson",
-        "Johanna Rosen"
+        "Ali Saffar Shamshirgar, Guilherme Ribeiro Portugal, Soheil Ershadrad, Roman Ivanov, Martin Dahlqvist, Florian Chabanais, Sanjay Chakraborty, Rainer Traksmaa, Topias Jussila, Maarit Karppinen, Irina Hussainova, Fredrik Heintz, Per O. Å. Persson, Johanna Rosen"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -8323,7 +8616,7 @@
       "excerpt": "Multi-arm robot platforms, including bimanual and humanoid robots, have the capability to complete tasks with lower cycle times than single-arm systems, but they are more difficult to safely control due to the presence of multi-arm constraints. The paradigm of training generalist robot policies from massive datasets is a promising approach to address general-purpose multi-arm manipulation, but the acquisition of large multi-arm manipulation datasets remains a bottleneck. Automated demonstration generation can alleviate this burden by synthesizing new demonstrations from a handful of source demonstrations, but existing algorithms ignore multi-arm constraints and as a result often induce unsafe and unsuccessful behaviors. We address this limitation by introducing ScheduleGen, an integrated planning & scheduling algorithm for multi-arm demonstration generation. We evaluate ScheduleGen on 28 simulation task variants, including seven externally authored RoboDojo tasks and settings inaccessible to prior systems; it achieves 79.6% mean data-generation success and trains policies with 65.5% mean success. ScheduleGen policies outperform those trained on a state-of-the-art data generation baseline, and achieve 50-80% success across eight real-world variants through zero-shot sim-to-real and real-to-sim-to-real transfer. Videos and more at: https://schedulegen.github.io/",
       "summary": "本文提出 ScheduleGen，一种用于多臂示教生成、集成规划与调度的算法，通过保留物体相对的接触技能、重新规划无碰撞过渡并在任务与碰撞约束下联合调度各机械臂来合成新示教。该工作面向在多臂模仿学习中用少量源示教扩充数据，但材料仅为公开页面摘录，性能数字（如仿真任务 79.6% 数据生成成功率、65.5% 策略成功率及 50–80% 真机变体成功率）来自作者自述且未经过独立验证，实际适用性需结合完整论文与复现评估。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 11,
+      "alpha_rank": 13,
       "authors": [
         "Neel Jawale",
         "Stephan Pleines",
@@ -8463,13 +8756,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Cheri Sirois",
-        "Sarah H. Ross",
-        "Sacha Vignieri",
-        "Mattia Maroso",
-        "Keith T. Smith",
-        "Marc S. Lavine",
-        "Yury Suleymanov"
+        "Corinne Simonti, and Jesse Smith, Cheri Sirois, Sarah H. Ross, Sacha Vignieri, Mattia Maroso, Keith T. Smith, Marc S. Lavine, and Yury Suleymanov"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -8527,9 +8814,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Wilmot James",
-        "Jonathan Ewbank",
-        "Pat G. Casey"
+        "Wilmot James, Jonathan Ewbank, and Pat G. Casey"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -8935,8 +9220,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Houjun Pan",
-        "Qing Wang"
+        "Houjun Pan and Qing Wang"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -9400,21 +9684,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Sacha Vignieri",
-        "Bianca Lopez",
-        "Angela Hessler",
-        "Yury Suleymanov",
-        "Di Jiang",
-        "Leslie Ferrarelli",
-        "Bharat Jalan",
-        "Mattia Maroso",
-        "Sarah H. Ross",
-        "Yevgeniya Nusinovich",
-        "Unnati Sonawala",
-        "Marc Lavine",
-        "L. Bryan Ray",
-        "Jelena Stajic",
-        "Claire Olingy"
+        "Michael Funk, and Sacha Vignieri, Bianca Lopez, Angela Hessler, Yury Suleymanov, Di Jiang, Leslie Ferrarelli, Bharat Jalan, Mattia Maroso, Sarah H. Ross, Yevgeniya Nusinovich, Unnati Sonawala, Marc Lavine, L. Bryan Ray, Jelena Stajic, and Claire Olingy"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -9585,6 +9855,78 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.6667,
       "topic_cache_token": "1b6cbe0d40db8ea36a6bda3a7224657a172da83fbfd493d2dbe2d09f08501e1f",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "df56778b49ea868b480c7d84",
+      "url": "https://doi.org/10.1002/adfm.77481",
+      "title": "Functionalizing Micro-to-Mesoscopic Electrode Architectures for Regulating Electron Transfer Behaviors in Electrocatalysis",
+      "source_ids": [
+        "journal-advanced-functional-materials"
+      ],
+      "source_names": [
+        "Advanced Functional Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-29T05:04:28+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Manshu Zhao, Jiaojiao Zhang, Shideng Yuan, Xinmeng Yu, Keming Wan, Xiaoguang Duan, Zhining Wang"
+      ],
+      "journal_id": "advanced-functional-materials",
+      "journal_title": "Advanced Functional Materials",
+      "journal_issns": [
+        "1616-301X",
+        "1616-3028"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adfm.77481",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题中的明确材料领域词，保留材料研究根类；未使用摘要，不推断叶类。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5556,
+      "topic_cache_token": "c88baff34f1628acdf2faef008044368893e59a28a0eae48946d2be23346e264",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -11333,17 +11675,7 @@
       "summary": "本文采用激光诱导碳热法自上而下制备了高熵掺杂的富锂层状氧化物纳米颗粒，并以原子级成像、原位X射线衍射、同步辐射分析及机器学习势分子动力学模拟对其高电压下的晶格稳定性与抑氧失稳机制进行了表征，同时组装了全电池和纤维电池进行高电压循环测试。该工作为高电压柔性电池的电极设计提供了策略参考，但摘要所述性能（如83.08 nm粒径、2.5–4.8 V窗口、1 C下877.9 Wh kg⁻¹）均来自作者自报，尚未经独立验证，且其实际用途受限于具体材料体系与器件构型。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Siyu Zhu",
-        "Wei Nong",
-        "Ziying Yu",
-        "Lei Huang",
-        "Chengyi Liu",
-        "Erhai Hu",
-        "Mingzhen Xiu",
-        "Jiuyang Xia",
-        "Bin Zou",
-        "Wei Huang",
-        "Yizhong Huang"
+        "Siyu Zhu, Wei Nong, Ziying Yu, Lei Huang, Chengyi Liu, Erhai Hu, Mingzhen Xiu, Jiuyang Xia, Bin Zou, Wei Huang, Yizhong Huang"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -12673,9 +13005,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Jun Yang",
-        "Hongyu Yang",
-        "Zixiong Sun"
+        "Jun Yang, Hongyu Yang, Zixiong Sun"
       ],
       "journal_id": "advanced-energy-materials",
       "journal_title": "Advanced Energy Materials",
@@ -12735,6 +13065,86 @@
       "topic_cache_token": "ab02a0764dec95367699c624ac5d5cd0c179f07d19970683aa4aaad43cb5e250",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "c49ad3b799930c80ccd87587",
+      "url": "https://arxiv.org/abs/2610.40373",
+      "title": "HiFOR: Hierarchical Foresight with Action-Guided World Grounding for Vision-Language-Action Model",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "Vision-Language-Action (VLA) models have demonstrated promising capabilities in robotic manipulation by integrating visual perception, language understanding, and action generation. Recent advances have further incorporated future prediction to enhance the understanding of environmental dynamics and task progression. However, existing methods often model short-term dynamics and long-term task objectives separately, while directly incorporating predicted futures into action policies without sufficiently considering their relevance to current action requirements. To address these limitations, we propose HiFOR, a hierarchical foresight framework with action-guided world retrieval. Specifically, Hierarchical Foresight Prediction jointly predicts short-term state evolution, semantic milestones, and final goal states through a Hierarchical Dependency Mask (HDM), establishing dependencies across temporal horizons. Building upon these predictions, Structure-Aware Latent World Modeling organizes future latent representations along the horizon, view, and spatial dimensions to facilitate fine-grained retrieval. Furthermore, Action-Guided Factorized World Retrieval adaptively retrieves relevant future information from the structured latent world based on evolving action representations during denoising, providing targeted guidance for action generation. Extensive experiments on two simulation benchmarks and six real-world robotic manipulation tasks demonstrate the effectiveness of our approach.",
+      "summary": "本文提出HiFOR分层预见框架，通过分层依赖掩码联合预测短期状态演化、语义里程碑与最终目标状态，并利用动作引导的因子化世界检索从结构化潜在世界中自适应提取与当前动作相关的未来信息以指导动作生成。据原文摘要，其在两个仿真基准和六个真实机器人操作任务上开展了实验；所提供的公开材料仅覆盖摘要与引言等片段，未给出可核验的性能数字与完整实验细节，相关有效性结论仍待独立验证。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.40373",
+      "authors": [
+        "Rongxing Ding",
+        "Hongyu Qu",
+        "Kehong Wu",
+        "Xudong Wang",
+        "Fan Zhang",
+        "Xinguang Xiang",
+        "Xiangbo Shu"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：generation。"
+        },
+        {
+          "id": "zotero:cbe25e69baacf9dbe849320b1f3aa4a1",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：prediction。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_ids": [
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9301,
+      "topic_cache_token": "e5cda6e137cdf23d23909c23c80b78c79001d4b40bdc38b56251330ca0ba21f8",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.40373",
+        "sha256": "1212faec63ac9dfad71b85eb5d5aed3b719f950e4cbb1a8aa6e3ded2ae3b5732",
+        "chars": 12000
+      }
     },
     {
       "id": "0283c17ff41feb9fac1ab69a",
@@ -12844,8 +13254,8 @@
       "summary": "研制了覆盖C/H/N/O/Si元素的反应性机器学习原子间势，并在多种结构上验证后，模拟了四种取向、洁净及H/OH钝化、0.1–23 GPa法向载荷下金刚石–氮化硅界面的滑动，识别出界面局域滑移和较软材料内部塑性剪切两种状态。该势旨在以接近第一性原理的精度支持超出第一性原理方法时空尺度的反应性模拟，为犁削磨损、化学机械抛光和非晶陶瓷膜性质等后续研究提供工具，但原文摘要未给出已验证的普适性能保证，其适用性仍以所述训练与测试范围为限。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Enrico Pedretti",
-        "Maria Clelia Righi"
+        "E. Pedretti",
+        "M. C. Righi"
       ],
       "topic_labels": [
         {
@@ -12945,6 +13355,78 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 1.0,
       "topic_cache_token": "cbab3a0802b9239bbe8be8443328d2b2019e5304c96d5a1c1ea46c49b88982a5",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "f6cbe135a5bbe010de114aa0",
+      "url": "https://doi.org/10.1002/aenm.71380",
+      "title": "Breaking the Polarity-Coordination Coupling in Electrolyte Design for High-Voltage Lithium Batteries",
+      "source_ids": [
+        "journal-advanced-energy-materials"
+      ],
+      "source_names": [
+        "Advanced Energy Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-28T15:59:56+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Xue Li, Shangquan Zhao, Yifan Wu, Naigen Zhou, Fei Luo, Runze Liu, Chengjin Peng, Junzhi Li, Stefano Passerini, Shan Fang"
+      ],
+      "journal_id": "advanced-energy-materials",
+      "journal_title": "Advanced Energy Materials",
+      "journal_issns": [
+        "1614-6832",
+        "1614-6840"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/aenm.71380",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题中的明确材料领域词，保留材料研究根类；未使用摘要，不推断叶类。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.75,
+      "topic_cache_token": "a63c5bb6c91db7118e1d4c03b9566ed4bcfab57976a2c4b47d03dba505508acf",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -13116,10 +13598,10 @@
       "summary_kind": "ai_summary",
       "authors": [
         "Qiu-Hong Hu",
-        "YueYue Wang",
-        "Xinyi Leng",
-        "Hezhu Shao",
-        "Luru Dai"
+        "Yue-Yue Wang",
+        "Xin-Yi Leng",
+        "He-Zhu Shao",
+        "Lu-Ru Dai"
       ],
       "topic_labels": [
         {
@@ -13245,6 +13727,80 @@
       "topic_cache_token": "d9bbe583aaae1ce63b550aa989708e5ace2a8b081dfe688b88773f98084a724c",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "b41a0b1f3a32f021aafa059c",
+      "url": "https://arxiv.org/abs/2610.38355",
+      "title": "FlatCake: A Flat KVCache Storage Architecture for LLM Serving",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-28T06:54:51+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "KV cache reuse accelerates LLM serving, but existing systems manage host DRAM and NVMe SSD as a tiered hierarchy where DRAM acts as an intermediate cache. Production LLM workloads break both premises of this hierarchy. First, bimodal reuse defeats DRAM temporal filtering, since workloads are dominated either by one-shot blocks with long reuse distances or by multi-gigabyte agentic sessions that exceed DRAM capacity, putting SSD on the critical read path. Second, DRAM staging and eviction-ordered layout bottleneck SSD restoration. Holding host staging buffers for in-flight prefixes causes contention under load that aborts prefetches, while incremental eviction scatters a session's blocks across the SSD and prevents large sequential reads. We present FlatCake, a flat KV storage architecture that exposes host DRAM and NVMe SSD as peer media in a unified 64-bit address space. Exploiting the fact that KV blocks are write-once, immutable, and reused at session scope, FlatCake places each block directly onto its target medium in session-contiguous, layer-major order at creation time and never migrates it. FlatCake streams coalesced SSD reads directly into a bounded GPU window via GPUDirect Storage and decouples DRAM and SSD request queues to prevent head-of-line blocking. On a production Claude Code trace with DeepSeek-V4-Flash, FlatCake sustains a 94% cache hit rate as load increases (versus 64% for Mooncake), eliminates Mooncake's $6.5\\times$--$6.7\\times$ SSD read amplification, and reduces peak-load mean TTFT by $1.6\\times$ while improving total token throughput by $1.6\\times$. Across 8K--128K contexts on Llama-3.1-70B, FlatCake further reduces mean TTFT by up to $2.4\\times$ over Mooncake and $1.8\\times$ over Mooncake-GDS.",
+      "summary": "本文提出 FlatCake，一种面向 LLM 服务的扁平 KV 缓存存储架构，将主机 DRAM 与 NVMe SSD 作为统一 64 位地址空间中的对等介质，在写入时按会话连续、层主序直接放置不可变 KV 块且不再迁移，并通过 GPUDirect Storage 将合并后的 SSD 读取直接流式传入受限 GPU 窗口、解耦 DRAM 与 SSD 请求队列。摘要报告其在生产 Claude Code 轨迹配合 DeepSeek-V4-Flash 时随负载升至 94% 缓存命中率（对比 Mooncake 的 64%）、消除 Mooncake 的 6.5 至 6.7 倍 SSD 读放大、将峰值负载平均 TTFT 降低 1.6 倍并提升总 token 吞吐 1.6 倍，并在 Llama-3.1-70B 的 8K 至 128K 上下文下相对 Mooncake 最高降低平均 TTFT 2.4 倍、相对 Mooncake-GDS 降低 1.8 倍；这些数字来自公开摘要，未经验证完整全文，且材料中部分数字因格式问题缺失。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 10,
+      "authors": [
+        "Xin Huang",
+        "Teng Ma",
+        "Zhuoran Li",
+        "Yibo Zhao",
+        "Zhaoshi Li",
+        "Qianchao Zhu",
+        "Wei Yang",
+        "Chenxi Wang",
+        "Tao Xie",
+        "Youwei Zhuo"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:d4a56870e35078a55f7511a07aac9f6e",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：LLM。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d4a56870e35078a55f7511a07aac9f6e"
+      ],
+      "topic_ids": [
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d4a56870e35078a55f7511a07aac9f6e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6718,
+      "topic_cache_token": "d6a6a1de98cde7e50a153506b1643b3befc5a101e6bc679f644c5fdd7f744c22",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.38355",
+        "sha256": "acd89520a343800e769578d2d895457107d0d9efcf5bd31532b0ba07ffb9eea4",
+        "chars": 12000
+      }
     },
     {
       "id": "172f7e3c54d16084ebb1eb2a",
@@ -13455,8 +14011,8 @@
       "authors": [
         "Juan B. Pérez-Sánchez",
         "Viviana Roman-Ventura",
-        "Olalla Nieto-Faza",
-        "Aiwei Yin",
+        "O. Nieto-Faza",
+        "Ai-Wei Yin",
         "Alán Aspuru-Guzik",
         "Varinia Bernales"
       ],
@@ -16139,15 +16695,7 @@
       "summary": "本文提出一种将Transformer编码器与强化学习智能体结合的多材料超材料逆向设计框架，通过可调结构参数化和混合迭代优化，在少于10³样本的极低数据依赖下实现多种目标热变形行为的自主发现。该框架面向稀疏数据下分布外逆向设计这一瓶颈，可加速按需设计多材料功能结构，但其结论主要基于所报道的特定热变形目标与实验验证，适用范围未在摘要中明确。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Chenxi Lu",
-        "Kewen Pan",
-        "Xingran Li",
-        "Zhaohui Qiu",
-        "Nianyao Chai",
-        "Xuehao Gao",
-        "Muhammad Aziz",
-        "Lin Li",
-        "Chao Wei"
+        "Chenxi Lu, Kewen Pan, Xingran Li, Zhaohui Qiu, Nianyao Chai, Xuehao Gao, Muhammad Aziz, Lin Li, Chao Wei"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -77531,6 +78079,79 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "523f9995318d86296fe647bf",
+      "url": "https://doi.org/10.1002/adma.74472",
+      "title": "Lighting up Metal Nanoclusters as Promising Molecular Emitters",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-13T15:50:29+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Ruixuan Zhang, Zhucheng Yang, Tiankai Chen, Jianping Xie"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74472",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:84051b1f05b8368766ddc3a2195c2324",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：metal；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:84051b1f05b8368766ddc3a2195c2324"
+      ],
+      "topic_ids": [
+        "zotero:84051b1f05b8368766ddc3a2195c2324",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6667,
+      "topic_cache_token": "f72eee0c2818d1d7808571d6a9f0cd6758b326c1fd60196045ac1d04496b9ee8",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "ece8efd78805bfc7602865fb",
       "url": "https://arxiv.org/abs/2610.18545",
       "title": "A Transferable Machine-Learned Potential Enabling Large-Scale Copper-Carbon Simulations from Equilibrium to Extreme Conditions",
@@ -101885,6 +102506,152 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "fcffbe9d77b9b9d991fe7214",
+      "url": "https://doi.org/10.1002/adma.74492",
+      "title": "Bridging In-Plane Order to Macroscopic Isotropic Ultralight MXene-Graphene Aerogels",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-08T15:11:31+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Yu-Chuan Zhang, Jing-Jing Zhan, Fu-Rong Zeng, Xu-Xu Jia, Cun-Jiong Fang, Yin-Long Wang, Hai-Bo Zhao"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74492",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:0ed96d5990b979e052f34cb9060b736d",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：graphene、MXene；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0ed96d5990b979e052f34cb9060b736d"
+      ],
+      "topic_ids": [
+        "zotero:0ed96d5990b979e052f34cb9060b736d",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5,
+      "topic_cache_token": "7ec91d1473bc4e1028c846a8828aecb694cfdb9bcbb2c4c6f593d16736e5ab71",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "46dab9cebb554dc7df7212bc",
+      "url": "https://doi.org/10.1002/adma.74478",
+      "title": "Electrocatalyst/Semiconductor Interfaces in Photoelectrocatalysts: Mechanistic Analysis of the Impact of Nanoparticle Electrocatalyst Coverage on Performance",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-08T15:11:31+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Aarti Mathur, Ahmet Sert, Suljo Linic"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74478",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:d05fd259021f78cf27fb6def1ecb915e",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：semiconductor；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7,
+      "topic_cache_token": "20181fb6236d2c9503f922f7afb68413f462940b6b35b5cb1aad3d45cb7e9c85",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "855092fba1df7e8a668bec1b",
       "url": "https://openai.com/index/pollo-ai",
       "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
@@ -117019,7 +117786,7 @@
       "doi": "10.1038/s41467-026-78135-2",
       "published_online_at": "2026-10-05T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-02T00:26:48+00:00",
+      "indexed_at": "2026-11-02T01:28:09+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -118121,7 +118888,7 @@
       "doi": "10.1038/s41467-026-78100-z",
       "published_online_at": "2026-10-05T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-02T00:26:41+00:00",
+      "indexed_at": "2026-11-02T01:28:09+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -118496,7 +119263,7 @@
       "doi": "10.1038/s41467-026-78250-0",
       "published_online_at": "2026-10-05T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-02T00:26:40+00:00",
+      "indexed_at": "2026-11-02T01:28:04+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -119103,7 +119870,7 @@
       "doi": "10.1038/s41467-026-78226-0",
       "published_online_at": "2026-10-03T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-02T00:26:16+00:00",
+      "indexed_at": "2026-11-02T01:28:03+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -119235,7 +120002,7 @@
       "doi": "10.1038/s41467-026-78257-7",
       "published_online_at": "2026-10-03T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-02T00:26:24+00:00",
+      "indexed_at": "2026-11-02T01:28:13+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -119298,7 +120065,7 @@
       "doi": "10.1038/s41467-026-78165-w",
       "published_online_at": "2026-10-03T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-02T00:26:30+00:00",
+      "indexed_at": "2026-11-02T01:27:56+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -119375,7 +120142,7 @@
       "doi": "10.1038/s41467-026-78054-2",
       "published_online_at": "2026-10-03T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-02T00:26:24+00:00",
+      "indexed_at": "2026-11-02T01:28:09+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -119433,7 +120200,7 @@
       "doi": "10.1038/s41467-026-78261-x",
       "published_online_at": "2026-10-03T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-02T00:26:33+00:00",
+      "indexed_at": "2026-11-02T01:27:57+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -119503,7 +120270,7 @@
       "doi": "10.1038/s41467-026-78200-w",
       "published_online_at": "2026-10-03T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-02T00:26:25+00:00",
+      "indexed_at": "2026-11-02T01:28:13+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -119576,7 +120343,7 @@
       "doi": "10.1038/s41467-026-78299-x",
       "published_online_at": "2026-10-03T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-02T00:26:30+00:00",
+      "indexed_at": "2026-11-02T01:28:01+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -124908,6 +125675,1264 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "303982514c9071d6a1ea8a7a",
+      "url": "https://doi.org/10.1002/adma.74445",
+      "title": "A Universal Quasi-Atom Interaction Model and Application in Designing Single-Atom Catalysts for Alkali-Metal Chalcogenide Batteries",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-10-13T12:06:10.113449+00:00",
+      "excerpt": "ABSTRACT A deep understanding of reactant adsorption behaviors is crucial for unraveling structure-activity relationships and identifying simple descriptors for the kinetics of multi-electron redox reactions, such as the sulfur redox process in Li-S batteries (LSBs). Recently, the “10-electron rule” for evaluating the adsorption strength of single atoms ( E ads ) has been established for free-atom-like single-atom alloys (SAAs). However, our density-functional theory calculations show that this rule is unfeasible for single-atom catalysts (SACs) with metal centers covalently coordinated by nonmetal atoms. Herein, we proposed a new 18-electron rule for covalent SACs by establishing the quasi-atom interaction model ( Q -AIM), which interprets the U-type behavior of E ads (S) dominated by antibonding-orbital filling. Additional calculations demonstrate that E ads (S) can serve as an efficient descriptor of the kinetics of sulfur redox involving multiatom polysulfides. Then, guided by the efficient predictor and Q -AIM, we employed machine learning to screen ∼800,000 candidate SACs. Ultimately, we obtained over 400 and 8000 promising SACs for sulfur evolution and sulfur reduction, respectively. Furthermore, E ads (S) can be extended to predict the catalytic performance of SACs in Li/Na/K-S/Se batteries. This work not only simplifies complex multi-electron processes to single-atom adsorption energy but also establishes a link between occupied electronic states and the catalytic performance of SACs.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Chenhui Wang, Wei Lin, Hui Hu, Yan Li, Feng Pan, Chengxin Wang"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74445",
+      "published_online_at": "2026-08-04T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-10-01T12:59:59+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        },
+        {
+          "id": "zotero:84051b1f05b8368766ddc3a2195c2324",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：metal。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:84051b1f05b8368766ddc3a2195c2324"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:84051b1f05b8368766ddc3a2195c2324",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7883,
+      "topic_cache_token": "32a98b9a304e3cc90d017f81084557a3216f148acbe7fa7f6662c2ae1b7d7105",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "f800bb3abf6391fdd1a29d26",
+      "url": "https://doi.org/10.1002/adma.74463",
+      "title": "A Self-Strengthening Hydrogel Coating for Long-Term Underwater Adhesion in Seawater Over 900 Days",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Guangling He, Yujie Wang, Xinhao Liu, Hao Xu, Weina Jia, Yuye Dou, Lei Dong, Liangmin Yu"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74463",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.375,
+      "topic_cache_token": "92d6d20deeeaac8360787aa7d6e9f39e1b04de170d2f01b23df022380fb1ced0",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "f336b7d2df0a527ebb9eda13",
+      "url": "https://doi.org/10.1002/adma.73896",
+      "title": "Nanoscale Adhesive Architecture Coordinates With Matrix Stiffness to Regulate Stem Cell Aging via Focal Adhesion-Mediated Chromatin Remodeling and FOXO1 Activation",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Jiacheng Lei, Ruihao Xue, Qingqing Liang, Ge Yang, Xiaokai Pan, Tianxiang Ren, Kaikai Zheng, Qiang Wei, Ze Gong, Xiaojing Liu"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.73896",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.4375,
+      "topic_cache_token": "f04d1067591913e77c991d516adfe754c1248fed2afa1b3a41b0f425fa7f8de7",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "ef1112072d9c3abf98a0e933",
+      "url": "https://doi.org/10.1002/adma.74470",
+      "title": "Scalable Synthesis of 3D Hierarchical MoS2 as a Durable, High-Charge-Retention Friction Layer for the Facile Fabrication of High-Power Triboelectric Nanogenerators",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Euna Jung, Jeongin Song, Se Min Hwang, Jaemin Myoung, Taehyeon Kim, Seong Jae Kim, Kyunghyun Kim, Sanha Kim, Min Sup Choi, Sang-Woo Kang, Taesung Kim, Jae-Hyun Lee, Jihun Mun"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74470",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5385,
+      "topic_cache_token": "ef117e38ec898911286d0a4bf2f9ec552785b6cc4cc67b33bb3854911b96cda8",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "ddfeb612949fe03e8f95dc39",
+      "url": "https://doi.org/10.1002/adma.74435",
+      "title": "Halogen-Bonding-Assisted Synthesis of CsPbI3 Perovskite Nanocrystal Emission Materials for Stable and Efficient Pure-Red LEDs",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Xin Zhang, Yiyuan Tang, Lvming Qiu, Kaifeng Liao, Chenghua Sun, Donal D. C. Bradley, Paul N. Stavrinou, Zhen Wu, Jingsong Huang, Guojie Wang"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74435",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:d05fd259021f78cf27fb6def1ecb915e",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：perovskite；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5455,
+      "topic_cache_token": "1bf6e0aa5748d5391b11ddfa72c35720a8cd91b2da4be7783984834f377d5398",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "dc95e981406c9f300a71b0f8",
+      "url": "https://doi.org/10.1002/adma.74446",
+      "title": "Cascade Solvation Refinement for High-Voltage Lithium Metal Batteries",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Shuoqing Zhang, Haotian Zhu, Long Li, Ming Yang, Long Chen, Junyi Hua, Shan Yang, Ruhong Li, Lixin Chen, Jingying Xie, Tao Deng, Xiulin Fan"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74446",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:84051b1f05b8368766ddc3a2195c2324",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：metal；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:84051b1f05b8368766ddc3a2195c2324"
+      ],
+      "topic_ids": [
+        "zotero:84051b1f05b8368766ddc3a2195c2324",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7143,
+      "topic_cache_token": "bbfe0837c61447b3c23142c61a92a208c313212510ddcd763fee7e610bab0e37",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "cc96e74df30913f88e72503b",
+      "url": "https://doi.org/10.1002/adma.74461",
+      "title": "Universal Sacrificial Coordination Strategy for ALD-Resilient SAMs Achieving High-Performance Perovskite/Organic Tandem Solar Cells",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Jixiang Yuan, Denghui Ma, Weijie Chen, Pengpeng Dong, Zhen Fu, Jialei Zheng, Ziyue Wang, Haiyang Chen, Guiying Xu, Shengyu Li, Xiaotao Hao, Yaowen Li"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74461",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:d05fd259021f78cf27fb6def1ecb915e",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：perovskite；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6923,
+      "topic_cache_token": "1a3d7f304b7770e20557be953fa01e146eb98fe9b0bd9a585370668a82ebe012",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "b31271a257bd6f1883a4ab2d",
+      "url": "https://doi.org/10.1002/adma.74434",
+      "title": "Reciprocating Charge Circulation-Driven Superlinear Output Scaling of Triboelectric Nanogenerator Arrays",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Xin Guo, Yang Yu, Jianlong Wang, Siyang He, Hengyu Li, Lu Dong, Yanrui Zhao, Xinxian Wang, Tinghai Cheng, Zhong Lin Wang, Xiaojun Cheng"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74434",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.4444,
+      "topic_cache_token": "efd331b9ecda9261788e44db802bd09a5b7e1fd7a3fb348b5abcc7e57031fd15",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "ad56b16892b8a5dbbcd53dbd",
+      "url": "https://doi.org/10.1002/adma.74452",
+      "title": "Reducing Solvent Selectivity via Solid Additive-Assisted Strategy Enables Organic Solar Cells With Approaching 21% Efficiency",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Jiali Song, Xianqiang Xie, Jingyi Kong, Yuchen Luan, Junjie Zhang, Zhen Fu, Hongxiang Li, Kangning Zhang, Zhen Wang, Qianbo Deng, Mingxu Zhou, Jinfeng Liu, Min Gyu Kang, Linglong Ye, Wei Li, Laju Bu, Jianqi Zhang, Han Young Woo, Guanghao Lu, Xiaotao Hao, Yanming Sun"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74452",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.75,
+      "topic_cache_token": "f1f3e2d886affb3dc2d82af8b6460b3e6fd2692ac245d4c336e7f9ccd9abde1e",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "9e700a81f57c39e411377ebe",
+      "url": "https://doi.org/10.1002/adma.74443",
+      "title": "An Electrode-Less Fiber Battery With 600 Wh/L-Level Volumetric Energy Density Enabled by Dynamic Deposition Chemistry",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Longmei Ma, Kun Zhang, Zhe Yang, Yi Jiang, Siwei Cao, You Pan, Chuang Wang, Qinhao Du, Shuxian Pang, Jiaxin Li, Haixin Yao, Xiaocheng Gong, Jiahe Qu, Tianrui Li, Yanan Zhang, Yiqing Cheng, Yuxuan Zhou, Fengliang Liu, Meng Liao, Chen Zhao, Yonggang Wang, Huisheng Peng, Bingjie Wang"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74443",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题中的明确材料领域词，保留材料研究根类；未使用摘要，不推断叶类。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6364,
+      "topic_cache_token": "39b9e0a7e2708b7ce1cf57c189279a7a25c49b8b882c5de518cf88cd5442728d",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "92ecbc9b3fc5b94e43a0d80f",
+      "url": "https://doi.org/10.1002/adma.74467",
+      "title": "Vitamin B12 Precatalyst Enables Molecular Cobalamin(II) Catalysis for Organodisulfide Anolytes in Aqueous Redox Flow Batteries",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Xinxin Li, Yizhe Shi, Qiliang Chen, Wei Guo, Yongzhu Fu"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74467",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.4615,
+      "topic_cache_token": "9b5188ba4587084b81f39e8ed3451bebf1875356a518c8de5b8647497521394e",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "91598aa7c53252572ee3312e",
+      "url": "https://doi.org/10.1002/adma.74441",
+      "title": "Homogenizing Vertical Strain Distribution Enables High-Performance Tin-Based Perovskite Solar Cells With Thicker Absorber via Two-Step Deposition",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Wenjian Zhu, Hongbo Zhou, Zeyang Deng, JiaJia Luo, Gengling Liu, Licheng Tan, Yiwang Chen"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74441",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:d05fd259021f78cf27fb6def1ecb915e",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：perovskite；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6429,
+      "topic_cache_token": "2155af7589ac978dbd7d8dd94bfa90830c0d9bef57aa3eaac878fe1f1c90e3b9",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "67597aa187047b2077f1a2fa",
+      "url": "https://doi.org/10.1002/adma.74494",
+      "title": "Phosphonate-Pillared High-Entropy MXene Separator Enabling Ion-Sieving, Flame-Retardant, and Energy/Power-Dense Lithium Metal Pouch Cells",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Wenzhuo Tan, Jiawen Tang, Junyu Zhang, Jiefang Zhu, Yunsong Li, Ahu Shao, Tao Zheng, Fu Liu, Zhiqiao Wang, Jiacheng Liu, Chunwei Li, Jian-Gan Wang, Ting Liu, Qiurong Jia, Xin Wang, Yue Ma"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74494",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:0ed96d5990b979e052f34cb9060b736d",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：MXene；未使用摘要，需复核。"
+        },
+        {
+          "id": "zotero:84051b1f05b8368766ddc3a2195c2324",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：metal；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0ed96d5990b979e052f34cb9060b736d",
+        "zotero:84051b1f05b8368766ddc3a2195c2324"
+      ],
+      "topic_ids": [
+        "zotero:0ed96d5990b979e052f34cb9060b736d",
+        "zotero:84051b1f05b8368766ddc3a2195c2324",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5385,
+      "topic_cache_token": "5278fd67e5ef0cad519fd8e3b544a0496e1f704bc6104a9143c94a3f984ac5ac",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "669c2bdfb4d607c7b27f9cd4",
+      "url": "https://doi.org/10.1002/adma.74503",
+      "title": "Interconnected Closed Pores Enable Dense and Facile Sodium Storage in Hard Carbon",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Guobiao Jin, Chang Wang, Feng Jin, Rui Liu, Xinlin Shi, Hongpeng Liu, Junping Jia, Peng Du, Zirui Lou, Feng Pan"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74503",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9,
+      "topic_cache_token": "bccaf73eea60b15a2667caedfba770173b4f03105c9344ff077d8dc002db9588",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "5ab74e1a41b6ed4d228740a3",
+      "url": "https://doi.org/10.1002/adma.74473",
+      "title": "Durable Seawater Electrolysis Enabled by Spherical Electrostatic Repulsion and Catalyst-Support Interaction",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Hanqing Gao, Jinjue Zeng, Yifei Yang, Wei Sun, Peng Rao, Tianyu Qiu, Zhipeng Sun, Dehong Yang, Wenjing Duan, Xiangfen Jiang, Xinlong Tian, Xuebin Wang"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74473",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题中的明确材料领域词，保留材料研究根类；未使用摘要，不推断叶类。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5556,
+      "topic_cache_token": "a471d5bc6a7bfce890c0e59554bc8d025f70457ed136932c4a574c6a1db87742",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "445e32cfae5a707e18ed1066",
+      "url": "https://doi.org/10.1002/adma.74421",
+      "title": "Covalent Interfacial Anchoring of 1D-2D Hybrid Nanofillers to Poly(Vinyl Alcohol) Networks Enables High-Strength, High-Stiffness Hydrogel Fibers",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Dong Yeop Lee, Ji Hwan Moon, Hocheol Gwac, Gyu Hyeon Song, Hyunsoo Kim, Yongwoo Jang, Changsoon Choi, Seon Jeong Kim"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74421",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.4667,
+      "topic_cache_token": "ce589493cc2d78805504ecae463f02846168ddf45ba6089f7dedb5b2d6e05403",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "1a3d1d72bc5967bae5dde4da",
+      "url": "https://doi.org/10.1002/adma.74462",
+      "title": "In-Material Self-Adaptive Dynamic Encoding in FeOx Optomemory Device for Real-Time Analog Signal Processing",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Jie Li, Guangdong Zhou, Haifeng Ling, Xiuxia Wang, Yue Hu, Jianjun Yuan, Xiaofang Hu, Lidan Wang, Xiaozong Huang, Bai Sun, Jia Sun, Ye Zhou, Shisheng Xiong, Shukai Duan"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74462",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题直接命中定义关键词：material；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6364,
+      "topic_cache_token": "108babb510beb5d9712588d41abfaa25750e2325a3266f1aa8b78885b20d9e96",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "09c44b9a450e22f978b00675",
+      "url": "https://doi.org/10.1002/adma.74442",
+      "title": "Full-Active-Unit Molecular Design Strategy Enabling High-Capacity and Stable Quinone Organic Cathodes for Lithium-Ion Batteries",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Haoyu Zhang, Susu Li, Yuansheng Liu, Yanke Fan, Jixing Yang, Yuesheng Li"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74442",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5833,
+      "topic_cache_token": "a3055ac2cc23cba82a25a894cb6db225dacc336dd68fcb3a52a58f5a0a94110a",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "04736d94ec7c84056daa6d70",
+      "url": "https://doi.org/10.1002/adma.74488",
+      "title": "Tissue-Integrated Hydrogel Battery-Enabled Electroceutical for Cardiac Arrhythmia Management",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-01T12:28:58+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Runan Li, Yiran Wang, Meiying Xin, Xuemei Wu, Yan Zhou, Danming Chao, Xiaoteng Jia, Caiyun Wang, Geyu Lu, Gordon Wallace"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74488",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.1429,
+      "topic_cache_token": "780f1c85623338c3c0b14db39bb28e311a3773de063ba7d8a7e7f8e262b884cb",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "d1f46554bd4c9bb146a51a40",
       "url": "https://doi.org/10.1002/adfm.202523909",
       "title": "Programmable 3D-Orthotropic Piezoceramic Sensors Enabled by Solid-Loading-Maximized Additive Manufacturing",
@@ -126135,7 +128160,7 @@
       "doi": "10.1038/s41467-026-77504-1",
       "published_online_at": "2026-10-01T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-01T23:27:00+00:00",
+      "indexed_at": "2026-11-02T01:28:11+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -146366,10 +148391,7 @@
       "summary": "本文综述了低浓度硝酸盐电还原制氨在催化剂设计、电化学工程和运行策略方面的近期进展，重点关注界面底物行为调控、活性物种利用、电荷转移过程及反应器层面优化。该综述可为面向地下水、农业径流等低浓度硝酸盐体系的电还原制氨研究提供参考，但摘要未给出具体性能数据，相关讨论基于现有研究总结而非经实验验证的结论。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Peilong Zou",
-        "Tingting Lian",
-        "Liang-Xin Ding",
-        "Gao-Feng Chen"
+        "Peilong Zou, Tingting Lian, Liang-Xin Ding, Gao-Feng Chen"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -147504,15 +149526,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Nanxin Liu",
-        "Mengjiao Huang",
-        "Can Shen",
-        "Siyu Tao",
-        "Wei Wu",
-        "Wei Du",
-        "Panpan Liang",
-        "Hong Huang",
-        "Tao Chen"
+        "Nanxin Liu, Mengjiao Huang, Can Shen, Siyu Tao, Wei Wu, Wei Du, Panpan Liang, Hong Huang, Tao Chen"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -147597,16 +149611,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Peng Li",
-        "Zhengxiu Ma",
-        "Weiye Nie",
-        "Mingze Sun",
-        "Jingrui Qiu",
-        "Xihua An",
-        "Xiandi Jin",
-        "Qiwei Zhang",
-        "Wenwu Cao",
-        "Baoming Wang"
+        "Peng Li, Zhengxiu Ma, Weiye Nie, Mingze Sun, Jingrui Qiu, Xihua An, Xiandi Jin, Qiwei Zhang, Wenwu Cao, Baoming Wang"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -147679,13 +149684,7 @@
       "summary": "本文通过基于顺序物理气相沉积的组合工作流，对超过500个样品进行自动化结构与光学表征，在四元Cs-Pb-Br-Cl空间中筛选宽带隙铅卤钙钛矿，并公开了完整多模态数据集。该工作可为数据驱动的宽带隙钙钛矿发现提供基准，但所建立的Cs/Pb窗口及高能光学跃迁与高光致发光产率的关系是基于特定组合筛选条件得出的，其普适性未在原文中说明。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Alexander Wieczorek",
-        "Sergey Tsarev",
-        "Nathan Rodkey",
-        "Oleksandr Pshyk",
-        "Stefanie Frick",
-        "Maksym V. Kovalenko",
-        "Sebastian Siol"
+        "Alexander Wieczorek, Sergey Tsarev, Nathan Rodkey, Oleksandr Pshyk, Stefanie Frick, Maksym V. Kovalenko, Sebastian Siol"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -150387,9 +152386,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Ramiro Quirós-Ovies",
-        "Bin Han",
-        "Paolo Samorì"
+        "Ramiro Quirós-Ovies, Bin Han, Paolo Samorì"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -150475,13 +152472,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Yifan Li",
-        "Zhenguo Piao",
-        "Trung Dieu Do",
-        "Minhyuk Park",
-        "Seok Ju Hong",
-        "Yanqing Zhang",
-        "Nae-Eung Lee"
+        "Yifan Li, Zhenguo Piao, Trung Dieu Do, Minhyuk Park, Seok Ju Hong, Yanqing Zhang, Nae-Eung Lee"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -150566,13 +152557,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Kai Li",
-        "Junyang Fang",
-        "Jialiang Liu",
-        "Meng Li",
-        "Zhongxian Wu",
-        "Dazhi Wang",
-        "Yang Lu"
+        "Kai Li, Junyang Fang, Jialiang Liu, Meng Li, Zhongxian Wu, Dazhi Wang, Yang Lu"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -150645,8 +152630,7 @@
       "summary": "本文综述了金属纳米材料（以金纳米颗粒、超小金属纳米簇、金属有机框架和氧化铁纳米颗粒为主）在基因递送中的研究进展，包括共价偶联与静电组装负载遗传货物、刺激响应释放和协同基因治疗效果的设计，以及内吞机制和关键理化性质。该综述指出金属纳米材料目前尚未在基因治疗中获得临床批准，并强调人工智能和模块化设计在克服制造可扩展性与监管障碍方面的作用，可供科研人员了解该领域现状与临床转化挑战。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Kaiyuan Zheng",
-        "Kam W. Leong"
+        "Kaiyuan Zheng, Kam W. Leong"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -150742,16 +152726,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Xianchao Zhao",
-        "Chaofan Liang",
-        "Weimin Chen",
-        "Lanying Chen",
-        "Chenchen Ping",
-        "Dou Mao",
-        "Yuesi Liu",
-        "Qi Sun",
-        "Faquan Yu",
-        "Long Qie"
+        "Xianchao Zhao, Chaofan Liang, Weimin Chen, Lanying Chen, Chenchen Ping, Dou Mao, Yuesi Liu, Qi Sun, Faquan Yu, Long Qie"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -153945,7 +155920,7 @@
       "doi": "10.1038/s41467-026-77722-7",
       "published_online_at": "2026-09-14T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-02T00:26:12+00:00",
+      "indexed_at": "2026-11-02T01:28:08+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -159742,20 +161717,7 @@
       "summary": "本文提出结合微观动力学分析与深度神经网络筛选二元合金的框架，据此构建了GDC包覆Ni-Ga合金纳米复合阳极，并在近干甲烷燃料和硫中毒条件下进行单电池测试。该工作为开发直接利用天然气的镍基纳米复合阳极提供了筛选思路和材料候选，但公开摘要未给出具体性能数值，其抗积碳与抗硫结论仍属作者声明而非经独立验证。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Haipeng Zhang",
-        "Hao Wang",
-        "Chenghui Lin",
-        "Zhiyi Chen",
-        "Jiaqi Qian",
-        "Zixiang Cheng",
-        "Dewu Long",
-        "Chengzhi Guan",
-        "Na Ai",
-        "San Ping Jiang",
-        "Dong Tian",
-        "Zijing Lin",
-        "Kongfa Chen",
-        "Jiujun Zhang"
+        "Haipeng Zhang, Hao Wang, Chenghui Lin, Zhiyi Chen, Jiaqi Qian, Zixiang Cheng, Dewu Long, Chengzhi Guan, Na Ai, San Ping Jiang, Dong Tian, Zijing Lin, Kongfa Chen, Jiujun Zhang"
       ],
       "journal_id": "advanced-energy-materials",
       "journal_title": "Advanced Energy Materials",
@@ -182034,13 +183996,7 @@
       "summary": "本文综述了水系铵离子电池电解液中富氢键环境对铵离子传输与水分解析氢的双重作用，并系统评估了阴离子工程、盐浓度调控、pH调节、有机共溶剂设计、功能添加剂引入及半固态电解质构建等规避策略及其权衡。该文可为下一代水系铵离子电池中平衡离子传输动力学与电解质稳定性的研究提供框架，但其具体性能优势及各项策略的有效性仍需依据原文进一步核实。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Zi-Hang Huang",
-        "Xiaoyu Liu",
-        "Shuai Mao",
-        "Lingfeng Zhu",
-        "Zhijun Wu",
-        "Hongge Pan",
-        "Tianyi Ma"
+        "Zi-Hang Huang, Xiaoyu Liu, Shuai Mao, Lingfeng Zhu, Zhijun Wu, Hongge Pan, Tianyi Ma"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -194974,92 +196930,6 @@
       "topic_backend": "lexical"
     },
     {
-      "id": "303982514c9071d6a1ea8a7a",
-      "url": "https://doi.org/10.1002/adma.74445",
-      "title": "A Universal Quasi-Atom Interaction Model and Application in Designing Single-Atom Catalysts for Alkali-Metal Chalcogenide Batteries",
-      "source_ids": [
-        "journal-advanced-materials"
-      ],
-      "source_names": [
-        "Advanced Materials"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-08-04T00:00:00+00:00",
-      "first_seen": "2026-10-13T12:06:10.113449+00:00",
-      "excerpt": "ABSTRACT A deep understanding of reactant adsorption behaviors is crucial for unraveling structure-activity relationships and identifying simple descriptors for the kinetics of multi-electron redox reactions, such as the sulfur redox process in Li-S batteries (LSBs). Recently, the “10-electron rule” for evaluating the adsorption strength of single atoms ( E ads ) has been established for free-atom-like single-atom alloys (SAAs). However, our density-functional theory calculations show that this rule is unfeasible for single-atom catalysts (SACs) with metal centers covalently coordinated by nonmetal atoms. Herein, we proposed a new 18-electron rule for covalent SACs by establishing the quasi-atom interaction model ( Q -AIM), which interprets the U-type behavior of E ads (S) dominated by antibonding-orbital filling. Additional calculations demonstrate that E ads (S) can serve as an efficient descriptor of the kinetics of sulfur redox involving multiatom polysulfides. Then, guided by the efficient predictor and Q -AIM, we employed machine learning to screen ∼800,000 candidate SACs. Ultimately, we obtained over 400 and 8000 promising SACs for sulfur evolution and sulfur reduction, respectively. Furthermore, E ads (S) can be extended to predict the catalytic performance of SACs in Li/Na/K-S/Se batteries. This work not only simplifies complex multi-electron processes to single-atom adsorption energy but also establishes a link between occupied electronic states and the catalytic performance of SACs.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Chenhui Wang, Wei Lin, Hui Hu, Yan Li, Feng Pan, Chengxin Wang"
-      ],
-      "journal_id": "advanced-materials",
-      "journal_title": "Advanced Materials",
-      "journal_issns": [
-        "0935-9648",
-        "1521-4095"
-      ],
-      "publisher": "Wiley",
-      "doi": "10.1002/adma.74445",
-      "published_online_at": "2026-08-04T00:00:00+00:00",
-      "published_print_at": null,
-      "indexed_at": "2026-10-01T12:59:59+00:00",
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "relationship_requires_review",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
-          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
-          "method": "local_lexical_v2",
-          "score": 0.54,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
-        },
-        {
-          "id": "zotero:84051b1f05b8368766ddc3a2195c2324",
-          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
-          "method": "local_lexical_v2",
-          "score": 0.54,
-          "confidence": "medium",
-          "status": "classified",
-          "public_reason": "公开标题或摘要包含定义关键词：metal。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
-        "zotero:84051b1f05b8368766ddc3a2195c2324"
-      ],
-      "topic_ids": [
-        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
-        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
-        "zotero:84051b1f05b8368766ddc3a2195c2324",
-        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
-      ],
-      "topic_status": "classified",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:materials",
-        "web:chemistry"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.7883,
-      "topic_cache_token": "32a98b9a304e3cc90d017f81084557a3216f148acbe7fa7f6662c2ae1b7d7105",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
       "id": "2453cb57e3c9469abd28c3b9",
       "url": "https://doi.org/10.1038/s41467-026-75947-0",
       "title": "Positional grammar of transcription factor binding partitions developmental and stress-response regulation in plants",
@@ -204128,6 +205998,78 @@
       }
     },
     {
+      "id": "99dd363d70d7ff2b3c388550",
+      "url": "https://arxiv.org/abs/2606.22027",
+      "title": "RARM: Confidence-Gated Progress Reward Modeling for RL in Manipulation",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-06-20T13:03:21+00:00",
+      "first_seen": "2026-11-02T02:44:32.883961+00:00",
+      "excerpt": "Reinforcement learning for robot manipulation is often bottlenecked by reward design, especially in long-horizon tasks: sparse success rewards provide weak supervision, while hand-crafted dense rewards are tedious to design and generalize poorly across tasks. Progress-based reward models offer a promising alternative by estimating how far an observation has advanced toward task completion, but existing approaches often require task-specific demonstrations or progress labels, and can assign high rewards to visually plausible but physically incorrect states. We introduce the Reference-Anchored Reward Model (RARM), a lightweight visual comparator that converts a single successful demonstration into a dense, progress-aware reward. RARM is trained once on general-purpose videos with a contrastive temporal objective, requiring no robot-specific data, task-specific reward labels, or per-task reward engineering. At deployment, RARM matches rollout clips to reference clips and rewards only confident forward progress, suppressing uncertain matches that may otherwise produce false-positive rewards. Across 9 simulated manipulation tasks from LIBERO and MetaWorld and 4 real-world tasks, RARM achieves the best overall success rates in subsequent RL training, with particularly large gains on long-horizon tasks such as cloth folding, where unreliable progress estimates are especially harmful.",
+      "summary": "本文提出参考锚定奖励模型RARM，用单条成功演示作为进度锚，通过在大规模通用视频上以对比时序目标预训练一次，将 rollout 片段与参考片段进行方向性比对，并在部署时仅对高置信度的前向进度给予奖励、抑制不确定匹配。该工作面向长时程机器人操作强化学习中的奖励设计瓶颈，可减少对任务特定奖励标注、逐任务奖励工程和机器人专用数据的依赖，并在LIBERO、MetaWorld仿真任务及真实任务中报告了后续RL训练的整体成功率提升，其中长时程任务收益更明显。需要按原文限制理解：证据为公开页面节选而非完整全文，公司或作者声明未被独立验证；对置信度门控、假阳性抑制和性能优势的描述来自原文自述，不能视为已复现结论。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 5,
+      "authors": [
+        "Pengzhi Yang",
+        "Xinyu Wang",
+        "Pengyu Jing",
+        "Kehan Wen",
+        "Yiduo Qu",
+        "Zhenhao Huang",
+        "Minghao Fu",
+        "Xin Liu",
+        "Yaheng Shen",
+        "Fan Shi"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8741,
+      "topic_cache_token": "97a8dec2055c5db5c1aa0d6929b1a701aeff38db89b367e1d19ed552f0aac740",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2606.22027",
+        "sha256": "aa0ba7d2a3953a9d29592bd56f3a76d2dd9972c61cd735cc11f34ef269f87749",
+        "chars": 12000
+      }
+    },
+    {
       "id": "7ec609f83a3ef47f14a3a085",
       "url": "https://arxiv.org/abs/2606.05035",
       "title": "Anchor3R: Streaming 3D Reconstruction with Transient Anchors for Long-Horizon Visual Mapping",
@@ -205133,13 +207075,13 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-11-02T01:08:59.420524+00:00",
+    "last_success": "2026-11-02T02:44:32.883961+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 12,
-      "unclassified": 1540,
+      "classified": 29,
+      "unclassified": 1550,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
       "quality_status": "unmeasured",
@@ -205243,8 +207185,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
-      "last_success": "2026-11-02T01:08:59.420524+00:00",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
+      "last_success": "2026-11-02T02:44:32.883961+00:00",
       "status": "ok",
       "count": 13
     },
@@ -205252,7 +207194,7 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -205263,8 +207205,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
-      "last_success": "2026-11-02T01:08:59.420524+00:00",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
+      "last_success": "2026-11-02T02:44:32.883961+00:00",
       "status": "ok",
       "count": 12
     },
@@ -205272,8 +207214,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
-      "last_success": "2026-11-02T01:08:59.420524+00:00",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
+      "last_success": "2026-11-02T02:44:32.883961+00:00",
       "status": "ok",
       "count": 12
     },
@@ -205281,8 +207223,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
-      "last_success": "2026-11-02T01:08:59.420524+00:00",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
+      "last_success": "2026-11-02T02:44:32.883961+00:00",
       "status": "ok",
       "count": 9
     },
@@ -205290,8 +207232,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
-      "last_success": "2026-11-02T01:08:59.420524+00:00",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
+      "last_success": "2026-11-02T02:44:32.883961+00:00",
       "status": "ok",
       "count": 1
     },
@@ -205299,8 +207241,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
-      "last_success": "2026-11-02T01:08:59.420524+00:00",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
+      "last_success": "2026-11-02T02:44:32.883961+00:00",
       "status": "ok",
       "count": 12
     },
@@ -205308,8 +207250,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
-      "last_success": "2026-11-02T01:08:59.420524+00:00",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
+      "last_success": "2026-11-02T02:44:32.883961+00:00",
       "status": "ok",
       "count": 1
     },
@@ -205320,18 +207262,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
       "last_success": "2026-11-02T01:08:59.420524+00:00",
       "count": 145,
       "counters": {
         "relevant": 4,
         "pending": 141,
         "excluded": 2,
-        "fetched": 136,
+        "fetched": 100,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-advanced-energy-materials",
@@ -205340,18 +207284,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
       "last_success": "2026-11-02T01:08:59.420524+00:00",
-      "count": 71,
+      "count": 72,
       "counters": {
         "relevant": 8,
-        "pending": 63,
+        "pending": 64,
         "excluded": 227,
-        "fetched": 234,
+        "fetched": 217,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-advanced-functional-materials",
@@ -205361,14 +207307,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
-      "last_success": "2026-11-02T01:08:59.420524+00:00",
-      "count": 111,
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
+      "last_success": "2026-11-02T02:44:32.883961+00:00",
+      "count": 112,
       "counters": {
         "relevant": 26,
-        "pending": 85,
-        "excluded": 1283,
-        "fetched": 803,
+        "pending": 86,
+        "excluded": 1284,
+        "fetched": 689,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -205381,15 +207327,15 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
-      "last_success": "2026-11-02T01:08:59.420524+00:00",
-      "count": 124,
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
+      "last_success": "2026-11-02T02:44:32.883961+00:00",
+      "count": 146,
       "counters": {
         "relevant": 26,
-        "pending": 98,
-        "excluded": 769,
-        "fetched": 658,
-        "abstracts_recovered": 0
+        "pending": 120,
+        "excluded": 770,
+        "fetched": 631,
+        "abstracts_recovered": 1
       },
       "errors": []
     },
@@ -205400,18 +207346,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
       "last_success": "2026-11-02T01:08:59.420524+00:00",
       "count": 92,
       "counters": {
         "relevant": 1,
         "pending": 91,
         "excluded": 2,
-        "fetched": 85,
+        "fetched": 76,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-nature",
@@ -205420,18 +207368,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
       "last_success": "2026-11-02T01:08:59.420524+00:00",
       "count": 111,
       "counters": {
         "relevant": 1,
         "pending": 110,
-        "excluded": 525,
-        "fetched": 144,
+        "excluded": 526,
+        "fetched": 75,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-nature-communications",
@@ -205441,14 +207391,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
-      "last_success": "2026-11-02T01:08:59.420524+00:00",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
+      "last_success": "2026-11-02T02:44:32.883961+00:00",
       "count": 1002,
       "counters": {
         "relevant": 10,
         "pending": 992,
-        "excluded": 905,
-        "fetched": 289,
+        "excluded": 906,
+        "fetched": 200,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -205461,14 +207411,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
-      "last_success": "2026-11-02T01:08:59.420524+00:00",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
+      "last_success": "2026-11-02T02:44:32.883961+00:00",
       "count": 28,
       "counters": {
         "relevant": 0,
         "pending": 28,
         "excluded": 25,
-        "fetched": 13,
+        "fetched": 10,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -205481,14 +207431,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
-      "last_success": "2026-11-02T01:08:59.420524+00:00",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
+      "last_success": "2026-11-02T02:44:32.883961+00:00",
       "count": 94,
       "counters": {
         "relevant": 1,
         "pending": 93,
         "excluded": 207,
-        "fetched": 111,
+        "fetched": 71,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -205500,25 +207450,27 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
       "last_success": "2026-11-02T01:08:59.420524+00:00",
       "count": 19,
       "counters": {
         "relevant": 2,
         "pending": 17,
         "excluded": 605,
-        "fetched": 146,
+        "fetched": 83,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
-      "last_success": "2026-11-02T01:08:59.420524+00:00",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
+      "last_success": "2026-11-02T02:44:32.883961+00:00",
       "status": "ok",
       "count": 0
     },
@@ -205526,8 +207478,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
-      "last_success": "2026-11-02T01:08:59.420524+00:00",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
+      "last_success": "2026-11-02T02:44:32.883961+00:00",
       "status": "ok",
       "count": 12
     },
@@ -205535,8 +207487,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
-      "last_success": "2026-11-02T01:08:59.420524+00:00",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
+      "last_success": "2026-11-02T02:44:32.883961+00:00",
       "status": "ok",
       "count": 1
     },
@@ -205544,8 +207496,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
-      "last_success": "2026-11-02T01:08:59.420524+00:00",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
+      "last_success": "2026-11-02T02:44:32.883961+00:00",
       "status": "ok",
       "count": 0
     },
@@ -205553,8 +207505,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
-      "last_success": "2026-11-02T01:08:59.420524+00:00",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
+      "last_success": "2026-11-02T02:44:32.883961+00:00",
       "status": "ok",
       "count": 12
     },
@@ -205563,7 +207515,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 0,
-      "last_attempt": "2026-11-02T01:08:59.420524+00:00",
+      "last_attempt": "2026-11-02T02:44:32.883961+00:00",
       "last_success": "2026-11-02T01:08:08.766179+00:00",
       "run_id": "41370775494",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -205571,15 +207523,15 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 3,
+    "generated": 6,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
       "status": "partial",
-      "attempted": 4,
-      "public_html": 2,
+      "attempted": 7,
+      "public_html": 6,
       "bohr_graph": 0,
-      "fallback": 2,
+      "fallback": 1,
       "bohr_calls": 0
     }
   },
