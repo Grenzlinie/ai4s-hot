@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-05T02:57:39.488563+00:00",
+  "generated_at": "2026-11-05T03:42:45.761728+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -1489,63 +1489,6 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.8944,
       "topic_cache_token": "dd1927ef64c52ac1d4bb8f9e59cc9abf3fdd1101669fb1292d5ca27297973c14",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "018c134c97b10df8215b0c5e",
-      "url": "https://doi.org/10.1038/s41467-026-79128-x",
-      "title": "Count the climate losses we prevent",
-      "source_ids": [
-        "journal-nature-communications"
-      ],
-      "source_names": [
-        "Nature Communications"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T00:00:00+00:00",
-      "first_seen": "2026-11-05T02:57:39.488563+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Arthur Charpentier"
-      ],
-      "journal_id": "nature-communications",
-      "journal_title": "Nature Communications",
-      "journal_issns": [
-        "2041-1723"
-      ],
-      "publisher": "Springer Nature",
-      "doi": "10.1038/s41467-026-79128-x",
-      "published_online_at": "2026-11-05T00:00:00+00:00",
-      "published_print_at": null,
-      "indexed_at": "2026-11-05T02:29:54+00:00",
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.75,
-      "topic_cache_token": "caa32e08e4e41fffeb500f8464573f01fe2e7b6dc52f465d7b84fc6fc9d40d81",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -4965,6 +4908,84 @@
       "topic_cache_token": "a3c6da0035eb887aa2b2d4f42aa8d50891aaa61d4ad6a304f69028bc8a8bd8b6",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "19848385fe328fa5a9a4fe76",
+      "url": "https://arxiv.org/abs/2611.05320",
+      "title": "PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-03T18:25:14+00:00",
+      "first_seen": "2026-11-05T03:42:45.761728+00:00",
+      "excerpt": "Teleoperation remains the default way to collect robot demonstrations, but every episode costs robot and operator time, and every new task starts from scratch. We ask whether a coding agent can take over the teleoperator's job. In our DataFarm, the agent receives a data request and one calibration episode of the robot in the target scene and rebuilds the task in simulation: it writes the scene, an expert controller, and a success judge. The simulator supplies exact actions, and a video model conditioned on real images renders each rollout as photographic video, generating all camera views together consistently. The output is real-ready data: synchronized camera views labelled with the robot's actions, on which a policy can be trained directly and deployed on the real robot. Independent judges certify the expert and every rendered episode before admission. On five real-robot tasks, policies trained only on farm data match policies trained on as many teleoperated episodes (93 vs. 84 successes in 100 trials), and under an unseen tablecloth and coloured light they keep 87 successes where the teleoperation-trained policies fall to 46. Adapting a task is fully automatic and costs \\21 of API usage on average, paid once per task, plus 5 for a render contract; every further episode costs \\0.80 on average for simulation, rendering, and review, with no robot or operator. One hour of three-view data for a task costs 107 on average, these costs included, slightly below a quote of \\117 for teleoperation in China and below 290 in labour alone in North America.",
+      "summary": "PyRUA-DataFarm提出一种LLM智能体，可根据数据请求和一次校准回合在仿真中重建任务、生成精确动作并由真实图像条件化的视频模型渲染同步多视角数据，再经独立审查后用于策略训练。公开摘要报告其在五项真实机器人任务中仅用该数据训练的策略与等量遥操作数据训练的策略表现相当，并在新外观条件下保持更高成功率，同时给出每任务和每回合成本估算；这些结果和成本数字来自作者公开材料，尚未经独立验证，推广到其他任务或场景时需谨慎评估。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.05320",
+      "authors": [
+        "Kewei Zhang",
+        "Juncheng Ma",
+        "Guodong Lv",
+        "Duomin Wang",
+        "Feixiang Ruan",
+        "Ruiyang Si",
+        "Chuanrui Zhang",
+        "Yuxuan Chen",
+        "Hao Chen",
+        "Yichen Liu",
+        "Yintianrun Zhang",
+        "Yufan Deng",
+        "Enze Xie",
+        "Daquan Zhou"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:c143f684d9fa5b5af6a7ff1ee4101832",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：coding agent。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:c143f684d9fa5b5af6a7ff1ee4101832"
+      ],
+      "topic_ids": [
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:c143f684d9fa5b5af6a7ff1ee4101832"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7485,
+      "topic_cache_token": "5ffc9fdb93ab181c7e61603bc311a80377b292e8e5f6b21bdf2a3696115965a4",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.05320",
+        "sha256": "f96c6ea63f9ac17732e84c279b9501af7607595e397358d09484cf252b2bf236",
+        "chars": 12000
+      }
     },
     {
       "id": "70e99cf4ef04126b3614e7e1",
@@ -10934,6 +10955,73 @@
       "zotero_score": 3.7664624060000467,
       "affiliations": [],
       "pdf_url": "https://arxiv.org/pdf/2611.02906v1"
+    },
+    {
+      "id": "c240ab3711bca186a2f2a526",
+      "url": "https://arxiv.org/abs/2611.02857",
+      "title": "Solv3R: 3D Looped Transformer as a Multi-view Solver",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-11-02T09:59:45+00:00",
+      "first_seen": "2026-11-05T03:42:45.761728+00:00",
+      "excerpt": "Classical structure-from-motion reconstruction proceeds iteratively, refining camera poses and scene geometry from a current estimate. This allows maps to easily expand without recomputing already computed views, or geometry estimates to improve as more observations are provided. Most geometric foundation models, however, predict entire geometry in a single forward pass or update a recurrent state as frames arrive sequentially, making this expansion and refinement non-trivial. We introduce Solv3R, a looped transformer that learns to continue solving multi-view geometry from its current state. Importantly, its update operator is independent of the iteration count, allowing previously refined and newly introduced views to be jointly updated regardless of how ``solved'' they are. We train the operator to preserve accurate reconstructions under continued iteration and correct inaccurate states, enabling refinement of fixed image collections and integration of new observations. Representations of solved views can also be cached once and reused as geometric context across iterations, enabling compact and efficient key-value caching. We analyze the solver dynamics and compare it with the state-of-the-art, demonstrating that a single learned solver supports offline reconstruction, incremental reconstruction, relocalization, and streaming without task-specific training or modules. The code and models will be made publicly available at https://ubc-vision.github.io/solv3r/.",
+      "summary": "本文提出Solv3R，一种回环Transformer，将多视图重建建模为可复用的学习型几何求解器，其更新算子不依赖迭代次数，从而支持从当前状态继续求解并联合更新已细化视图与新引入视图。据公开摘要，该单一求解器可在无需任务特定训练或模块的情况下用于离线重建、增量重建、重定位和流式重建，但材料未提供完整实验验证，相关结论应视为原文声明而非已验证性能。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.02857",
+      "authors": [
+        "Jeong-gi Kwak",
+        "Andrea Tagliasacchi",
+        "Sho Kagami",
+        "Yuki Ono",
+        "Kwang Moo Yi"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：training。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8811,
+      "topic_cache_token": "cfd3b0a31ccd6368781db311bfebde4142060af72a606a633c1fc1dbb7c17b64",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.02857",
+        "sha256": "2533165fc4d617ee5d70b3dc9ef4dcbf2a7ffebebb49e2a5376ddb7e228d21e2",
+        "chars": 12000
+      }
     },
     {
       "id": "8e1c3a19e6adeb021ddab7da",
@@ -23679,19 +23767,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Zachary Laswick",
-        "Ariel Lifer",
-        "Catherine Beaumont",
-        "Liad Hayoun",
-        "Priscila Cavassin",
-        "Zeinab Hamid",
-        "Dilara Meli",
-        "William Dupont",
-        "Lincoln J. Lauhon",
-        "Iain McCulloch",
-        "Gitti L. Frey",
-        "Giovanni Maria Matrone",
-        "Jonathan Rivnay"
+        "Zachary Laswick, Ariel Lifer, Catherine Beaumont, Liad Hayoun, Priscila Cavassin, Zeinab Hamid, Dilara Meli, William Dupont, Lincoln J. Lauhon, Iain McCulloch, Gitti L. Frey, Giovanni Maria Matrone, Jonathan Rivnay"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -24019,8 +24095,8 @@
       "published_at": "2026-10-31T00:00:00+00:00",
       "first_seen": "2026-11-05T02:57:39.488563+00:00",
       "excerpt": "Recent advances in interactive world models have made it possible to generate controllable, dynamic environments from action inputs. Yet current models struggle to maintain coherence beyond roughly one minute of rollout, a limitation rooted not in model capacity but in the scarcity of long-horizon training data. Existing gameplay video datasets typically consist of clips under ten seconds, with captions that describe whole clips in coarse and undifferentiated text, which is insufficient for controllable long-horizon generation. We address this with GameVerse, a minute-scale gameplay video dataset purpose-built for long-horizon interactive world modeling. GameVerse contains 69.7K clips spanning 1,655 hours and 349.6 million frames across diverse first- and third-person gameplay, including 1,358 hours of continuous two-minute sequences, an order of magnitude longer than prior datasets. Clips pass through a unified pipeline of scene-consistent segmentation, quality filtering, camera pose estimation, and event-based caption annotation. Each clip is paired with a temporally stable camera trajectory that remains coherent across minutes, together with captions that separate static scene context from dynamic foreground events and align to event boundaries rather than fixed time windows. Comprehensive analysis shows that GameVerse surpasses existing public datasets in scale, diversity, and annotation quality. Experiments further demonstrate that training on GameVerse substantially extends the temporal horizon of interactive world models.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "GameVerse构建了一个分钟级游戏视频数据集，包含69.7K个片段、1,655小时和3.496亿帧，其中1,358小时为连续两分钟序列，并为每个片段配有时间稳定的相机轨迹和按事件边界对齐的多粒度标注。该数据集旨在为长时程交互式世界模型提供训练数据，原文报告在其上训练可延长模型的时间一致性范围，但其对现有数据集的优越性以及性能提升均来自作者实验，尚未经独立验证。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.37257",
       "authors": [
         "Kang He",
@@ -24085,7 +24161,13 @@
       "topic_coverage": 0.8645,
       "topic_cache_token": "16937dab22d633605a011626813c5e7657e33b0fb1f5c7b43ef3b1e99b31c41c",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.37257",
+        "sha256": "9e33e40deb0be4bad3e3f3a6a7640da868426b88c499d1340c1e04c9447cb1b7",
+        "chars": 12000
+      }
     },
     {
       "id": "f859b116c281767e8772cf9f",
@@ -27966,8 +28048,8 @@
       "published_at": "2026-10-30T00:00:00+00:00",
       "first_seen": "2026-11-05T02:57:39.488563+00:00",
       "excerpt": "With model weights fixed, we measure how much of an entity-replacement response transfers between English factual questions, beyond whether answers change. We add the hidden-state change from two source questions to a target question about the same entity, comparing the predicted log-probability shift between two relations' published answers, given known answer prefixes, with the measured one. Hidden reuse injects the aligned change at 50% depth before the target's remaining layers; direct reuse adds source output-score changes. With other-relation sources, hidden reuse removes 45% and 49% of no-change error on 0.5-1B Qwen and Llama. Gemma-2-2B removes 22% and passes one of three comparisons in plain text without its default beginning-of-sequence (BOS) token. A later protocol restoring it yields 58-68%, passing every comparison on three cohorts. Larger checkpoints, chat format and new entities show replication and format- or cohort-dependent failures. On small plain-format checkpoints, other-relation hidden reuse mainly reproduces the shift both relations' questions share, without reliably lowering relation-selective error. With target-relation sources, hidden reuse's post hoc advantage over direct reuse is 0.2-0.9 nats outside chat format, unconfirmed and not replacement-specific. The same relation-neutral change at both questions' entity tokens lowers relation-selective error more than random or other-replacement changes, indicating receiving-question dependence.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "该研究在固定模型权重下，通过跨提示复用实体替换响应，将两个源问题的隐藏状态变化注入同一实体的目标问题中，并测量其对已发布关系答案的对数概率偏移的复现程度。该工作可用于评估跨问题激活迁移的保真度，但其报告的复用效果仅来自公开摘要所述的小型纯文本检查点及特定协议，且关系选择性部分的复现不可靠，作者也指出更大型检查点、聊天格式和新实体会出现依赖格式或队列的失败。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.00352",
       "authors": [
         "Jinkun Chen",
@@ -27988,7 +28070,13 @@
       "topic_coverage": 0.8026,
       "topic_cache_token": "0f78e6a3b1b3fcd966e319f7f3a78cddb7cc64d88167e1687602ef678be5a5e7",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.00352",
+        "sha256": "10a6311ea847112f0fef01f642d26bae29c8f5f7acf95e833b76fd9b19f0b0b3",
+        "chars": 12000
+      }
     },
     {
       "id": "cf02b25fdc7325f51edc1572",
@@ -47369,8 +47457,8 @@
       "published_at": "2026-10-26T00:00:00+00:00",
       "first_seen": "2026-11-05T02:57:39.488563+00:00",
       "excerpt": "Reinforcement learning (RL) has shown promise for training multimodal agents to reason and use tools. However, it remains unclear when fine-grained credit assignment improves learning and when it fails to improve task performance. Video editing provides a useful testbed for this question, combining multimodal perception, long-horizon planning, and tool use with delayed outcome feedback. We construct four movie-trailer editing task types---Content Selection, Narrative Sequencing, Rough Cut, and Fine Cut---that reflect real-world editing workflows and span different levels of task complexity and interaction horizon. Decaying process rewards provides the largest benefit on Fine Cut, with a 45.4% relative gain over outcome-only GRPO on tasks averaging more than 60 turns under outcome-only GRPO. On the three shorter-horizon task types averaging 30--40 turns under the same baseline, outcome-only GRPO remains competitive, with decaying process rewards yielding at most a 10.4% relative gain. Process rewards from an LLM judge initially improve tool use and encourage visual inspection. As training progresses, however, GRPO+PRM with a fixed process-reward weight increasingly exhibits excessive reasoning and redundant tool calls: process rewards continue to rise while task completion rates and outcome scores decline. Decaying the process-reward weight to zero mitigates this reward-hacking behavior while preserving the early gains. Despite dense token-level supervision, on-policy self-distillation (OPSD) yields little improvement or substantial degradation and is highly sensitive to the choice of privileged information. Our analysis reveals differences in teacher--student disagreement and gradient magnitudes, and suggests possible dilution of informative signals over long trajectories.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文构建了四类电影预告片剪辑任务，并在共享设置下比较轨迹级、回合级与词元级信用分配方案，其中衰减过程奖励在回合数最多的精剪任务上相对仅用结果奖励的GRPO报告了45.4%的相对提升。该工作为长程多模态智能体的信用分配提供了任务测试框架和比较结果，同时明确指出固定过程奖励会随训练出现推理冗余和工具调用冗余并损害任务完成率，策略自蒸馏则对特权信息选择高度敏感且收益有限，这些限制需在后续研究中进一步验证。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.35497",
       "authors": [
         "Lei Zhao",
@@ -47406,7 +47494,13 @@
       "topic_coverage": 0.8947,
       "topic_cache_token": "7b6490a9288537c85008bdddd0b1ed677d53f311fbb82d897a31075e82869baa",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.35497",
+        "sha256": "a36656aaee3ff51bb2201ac9a609157d9bc2a532dbe512e73b889336e6f1e2da",
+        "chars": 12000
+      }
     },
     {
       "id": "dc1690e385bbebfdfb955536",
@@ -231663,8 +231757,8 @@
       "published_at": "2026-07-07T18:19:10+00:00",
       "first_seen": "2026-11-05T02:57:39.488563+00:00",
       "excerpt": "Recovering real-world scenes as interactive simulation environments can enable generalizable robot learning and reproducible policy evaluation. However, constructing scenes that are both physically stable and visually faithful remains slow and expensive. In this work, we present RoboSnap, a real-to-sim framework that turns a single RGB image into a simulation-ready scene. The key idea is a layered design that separates the physics-critical interaction area from the surrounding visual context: collision-aware foreground assets are refined for stable robot interaction, while a 3D Gaussian splatting visual layer preserves faithful background appearance under novel views. Experiments on DROID scenes and real-robot tasks show that RoboSnap achieves reliable trajectory replay in the recovered scenes, supports task-specific synthetic data generation for policy training, and yields meaningful sim-real correlation for policy evaluation. To further support real-to-sim research, we introduce DROID-Sim, a real-to-sim companion dataset constructed from 564 real-world scenes in DROID. Extensive experiments suggest that the value of real-to-sim methods lies not only in high-fidelity visual reconstruction, but in turning real environments into reusable infrastructure for robot learning and evaluation.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "RoboSnap提出一种分层式实景到仿真框架，可将单张RGB图像重建为仿真就绪场景：交互区域由碰撞感知的前景资产构成并经过位姿精化以支持稳定交互，周边视觉背景则用3D高斯泼溅作为独立视觉层保留外观，同时作者构建了基于DROID中564个真实场景的DROID-Sim配套数据集。依据原文，该方法在DROID场景与真机任务上展示了轨迹回放、面向策略训练的任务特定合成数据生成以及用于策略评估的仿真—现实相关性，但这些结果的有效性受限于所提供的实验范围，且该方法对未标定拍摄场景的机器人基座初始化依赖支持平台几何与指定朝向，并未验证覆盖所有场景类型。",
+      "summary_kind": "ai_summary",
       "alpha_rank": 4,
       "authors": [
         "Shujie Zhang",
@@ -231718,7 +231812,13 @@
       "topic_coverage": 0.7538,
       "topic_cache_token": "c66a133afabc0b520196aa3e5dacd641e06796f82bbea729b5eda6713f9837fa",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2607.06699",
+        "sha256": "3b5b983c6c91c45c2879bff984ae48a072f020da4c7c69a75d30707efa38fcda",
+        "chars": 12000
+      }
     },
     {
       "id": "0b7de25d626af2fae5638690",
@@ -231988,6 +232088,91 @@
         "kind": "public_html",
         "url": "https://arxiv.org/html/2606.22027",
         "sha256": "aa0ba7d2a3953a9d29592bd56f3a76d2dd9972c61cd735cc11f34ef269f87749",
+        "chars": 12000
+      }
+    },
+    {
+      "id": "be5a1bc69048cba9b97a369d",
+      "url": "https://arxiv.org/abs/2606.16826",
+      "title": "ATOM-Bench: A Real-World Benchmark for Atomic Skills and Compositional Generalization in Manipulation Policies",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-06-15T15:08:42+00:00",
+      "first_seen": "2026-11-05T03:42:45.761728+00:00",
+      "excerpt": "Generalist manipulation policies are increasingly presented as foundation models for robotic control, but their real-world generalization remains difficult to diagnose. A policy may succeed on demonstrated tasks while still failing to execute fine-grained atomic skills or recombine learned skills in new task structures. We introduce \\textbf{ATOM-Bench}, a real-world benchmark for evaluating both atomic skills and compositional generalization in manipulation policies. ATOM-Bench factorizes tabletop manipulation into motor atoms and instruction atoms, and contains 30 atomic tasks and 24 held-out compositional tasks across paired single-arm and dual-arm robot tracks. We collect 3,000 human demonstrations for atomic fine-tuning and release both the demonstration data and evaluation rollout data to support reproducible real-world evaluation. Policies are fine-tuned on atomic tasks and evaluated on both atomic skill acquisition and held-out compositional tasks. We further introduce Atomic Score (AS) and Compositional Failure Share (CFS) to distinguish failures caused by weak atomic skills from failures caused by limited compositional reuse. Through 2,700 physical rollouts on five representative manipulation policies, we find that current policies can acquire simple instruction-grounding skills, but still struggle with fine-grained motor atoms, counting, and logical filtering. More importantly, strong atomic performance does not reliably transfer to held-out compositional tasks. ATOM-Bench provides a diagnostic testbed for studying whether failures arise from weak motor execution, poor instruction grounding, or limited compositional reuse.",
+      "summary": "本文提出并构建了ATOM-Bench，将桌面操作分解为运动原子与指令原子，包含30个原子任务和24个留出组合任务，在单臂与双臂两个配对真实机器人平台上采集3000条人类演示，并用Atomic Score和Compositional Failure Share区分原子技能不足与组合复用不足导致的失败。该基准可用于诊断操作策略的失败来源，但依据摘要中五类策略共2700次物理 rollout 的结果，当前策略在精细运动原子、计数和逻辑过滤上仍有困难，且较强的原子表现未必可靠迁移到留出组合任务，因此不宜将公司关于通用策略能力的声明视为已被验证。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 4,
+      "authors": [
+        "Zenan Wu",
+        "Bingqing Wei",
+        "Lu Liu",
+        "Zheqi He",
+        "Xi Wang",
+        "Jiakang Liu",
+        "Zehui Li",
+        "Guocai Yao",
+        "Jing-Shu Zheng",
+        "Xi Yang",
+        "Yongtao Wang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark、evaluation。"
+        },
+        {
+          "id": "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：fine-tuning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8929,
+      "topic_cache_token": "d04317c8b093b1b9f97aae18853fa38c9157d3a72809bb4d58dbbd9e242c7c80",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2606.16826",
+        "sha256": "1feb41d64d1a38f88407793d4e8332506f7366687a4915cbd801b143009f98cf",
         "chars": 12000
       }
     },
@@ -233060,13 +233245,13 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-11-05T02:57:39.488563+00:00",
+    "last_success": "2026-11-05T03:42:45.761728+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 121,
-      "unclassified": 1715,
+      "classified": 3,
+      "unclassified": 1714,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
       "quality_status": "unmeasured",
@@ -233170,8 +233355,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "status": "ok",
       "count": 10
     },
@@ -233179,7 +233364,7 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -233190,8 +233375,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "status": "ok",
       "count": 12
     },
@@ -233199,8 +233384,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "status": "ok",
       "count": 12
     },
@@ -233208,8 +233393,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "status": "ok",
       "count": 11
     },
@@ -233217,8 +233402,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "status": "ok",
       "count": 1
     },
@@ -233226,8 +233411,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "status": "ok",
       "count": 12
     },
@@ -233235,8 +233420,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "status": "ok",
       "count": 1
     },
@@ -233248,14 +233433,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "count": 174,
       "counters": {
         "relevant": 4,
         "pending": 170,
         "excluded": 2,
-        "fetched": 144,
+        "fetched": 139,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -233268,14 +233453,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "count": 62,
       "counters": {
         "relevant": 8,
         "pending": 54,
         "excluded": 269,
-        "fetched": 151,
+        "fetched": 150,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -233288,14 +233473,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "count": 184,
       "counters": {
         "relevant": 27,
         "pending": 157,
         "excluded": 1322,
-        "fetched": 235,
+        "fetched": 233,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -233308,14 +233493,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "count": 185,
       "counters": {
         "relevant": 28,
         "pending": 157,
         "excluded": 821,
-        "fetched": 280,
+        "fetched": 275,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -233328,14 +233513,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "count": 94,
       "counters": {
         "relevant": 1,
         "pending": 93,
         "excluded": 2,
-        "fetched": 110,
+        "fetched": 109,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -233348,14 +233533,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "count": 103,
       "counters": {
         "relevant": 1,
         "pending": 102,
         "excluded": 614,
-        "fetched": 238,
+        "fetched": 233,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -233368,14 +233553,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
-      "count": 1051,
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
+      "count": 1050,
       "counters": {
         "relevant": 10,
-        "pending": 1041,
-        "excluded": 972,
-        "fetched": 359,
+        "pending": 1040,
+        "excluded": 973,
+        "fetched": 295,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -233388,8 +233573,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "count": 29,
       "counters": {
         "relevant": 0,
@@ -233408,14 +233593,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "count": 93,
       "counters": {
         "relevant": 1,
         "pending": 92,
         "excluded": 198,
-        "fetched": 74,
+        "fetched": 72,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -233428,14 +233613,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "count": 21,
       "counters": {
         "relevant": 2,
         "pending": 19,
         "excluded": 626,
-        "fetched": 109,
+        "fetched": 105,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -233444,8 +233629,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "status": "ok",
       "count": 1
     },
@@ -233453,8 +233638,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "status": "ok",
       "count": 12
     },
@@ -233462,8 +233647,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "status": "ok",
       "count": 1
     },
@@ -233471,8 +233656,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "status": "ok",
       "count": 0
     },
@@ -233480,8 +233665,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
-      "last_success": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
+      "last_success": "2026-11-05T03:42:45.761728+00:00",
       "status": "ok",
       "count": 12
     },
@@ -233490,7 +233675,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 20,
-      "last_attempt": "2026-11-05T02:57:39.488563+00:00",
+      "last_attempt": "2026-11-05T03:42:45.761728+00:00",
       "last_success": "2026-11-05T02:56:49.380069+00:00",
       "run_id": "41951524494",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -233498,16 +233683,16 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 24,
+    "generated": 7,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
-      "status": "partial",
-      "attempted": 8,
-      "public_html": 0,
+      "status": "ok",
+      "attempted": 7,
+      "public_html": 7,
       "bohr_graph": 0,
-      "fallback": 8,
-      "bohr_calls": 1
+      "fallback": 0,
+      "bohr_calls": 0
     }
   },
   "policy": {
