@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-06T02:01:23.988294+00:00",
+  "generated_at": "2026-11-06T03:39:04.453897+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -1408,6 +1408,60 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "616c68177b707eae60eb2b7e",
+      "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+      "title": "Australian universities are creating AI-native graduates",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "frontier"
+      ],
+      "published_at": "2026-11-05T17:00:00+00:00",
+      "first_seen": "2026-11-06T03:39:04.453897+00:00",
+      "excerpt": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
+      "summary": "本文报告称澳大利亚多所大学正在扩大ChatGPT的使用渠道并将AI引入教学，以培养适应AI赋能职场的学生。该材料的用途在于呈现高校AI教学接入与课程整合的公开动向，但仅为报告性描述，未提供经独立验证的效果数据或能力提升结论。",
+      "summary_kind": "ai_summary",
+      "authors": [],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "unknown",
+      "content_kind": "web:engineering_update",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.4706,
+      "topic_cache_token": "54493727674f9d0ad7d0cb7d0a5f4881b2c1584725f20dabe5e342f51a587575",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "14e90e72d3401ddf817f6448",
       "url": "https://openai.com/index/introducing-gpt-6-cyber",
       "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
@@ -1486,64 +1540,6 @@
       "topic_backend": "lexical"
     },
     {
-      "id": "f07d451a1d1ec608ca6b7bc8",
-      "url": "https://doi.org/10.1126/science.aeh9311",
-      "title": "The first 1000 days: Modeling language learning from individual children’s everyday speech",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T08:00:00+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Hadas Raviv, Arkadii Tsyhanov, Kira Gousios, Aja Altenhof, Haocheng Wang, Berlin Chen, Ofri Raviv, Tal Rosenwein, Casey Lew-Williams, Liat Hasenfratz, Uri Hasson"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.aeh9311",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.7778,
-      "topic_cache_token": "ed4f85bc8bf822e593275f714356f3fc5fd8f7350962c2fcf65c106a18b23db7",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
       "id": "d900729b119e56d7349edc97",
       "url": "https://doi.org/10.1126/science.aem2407",
       "title": "Zero-sum mindsets and economic policy preferences",
@@ -1578,8 +1574,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aem2407",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:28+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -1634,8 +1630,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aen6332",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:24+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -1690,8 +1686,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aen6718",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:28+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -1710,180 +1706,6 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.3636,
       "topic_cache_token": "df8e6b45e8340ed809d081e9736890bf0fd0e5de51b761b8c4de1829fe585005",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "a7ec572b0b0cd492486b012b",
-      "url": "https://doi.org/10.1126/science.aea3046",
-      "title": "Tumor metastasis co-opts liver hematopoiesis to promote immunosuppression",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T08:00:00+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Qiang Pan, Xuege Wang, Yaqi Li, Ni Li, Ying Han, Guoying Zhang, Jiacheng Guo, Le Zhang, Aoyuan Cui, Yongqiang Gu, Yannan Lian, Wei Zhang, Naiheng Lin, Beitao Xu, Zige Jin, Xin Zeng, Lan Wang, Yu Li, Junjie Peng, Xiaoming Wang, Zhengquan Yu, Gui-Hua Wang, Wei Lu, Jun Qin"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.aea3046",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.1429,
-      "topic_cache_token": "5e2bbb9f663d0948dfb69e236eb347955c807f73c4ed7dc4725322d36206d055",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "839dd58a0c38f3292da95cc8",
-      "url": "https://doi.org/10.1126/science.aed8952",
-      "title": "Targeting hormone conversion through dietary fiber improves polyendocrine metabolic ovarian syndrome",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T08:00:00+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Xinyu Qi, Hong Chen, Qixing Nie, Hongyu Niu, Yong Ding, Xi Luo, Manfei Si, Shuqi Wu, Xianglei Xiong, Meng Li, Bangjian Dong, Haohan Ma, Chenghao Guo, Yicun Wang, Xiaoyu Long, Jianhuai Zheng, Kai Wang, Shaoping Nie, Changtao Jiang, Yanli Pang, Jie Qiao"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.aed8952",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.3636,
-      "topic_cache_token": "62e5050bbd153984fbb3c951f2af6249fe3e295686bca3d965f6f88e8cebcac1",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "5fd179f0e53fb12eadeec1fd",
-      "url": "https://doi.org/10.1126/science.adt7185",
-      "title": "Discovering molecular modulators with nanoswitch screening",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T08:00:00+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Clinton H. Hansen, Mark Lipstein, Sarah C. Erlandson, Tobias Schwalbe, Sylvie G. Bernier, Peter Gmeiner, Andrew C. Kruse, Wesley P. Wong"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.adt7185",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:chemistry"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.6,
-      "topic_cache_token": "7f437b0c030ca76a0e885ed0a28360c7d30b4062eabb95ebfaa52519cdb22b36",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -1911,7 +1733,8 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "James A. Evans and E. Glen Weyl"
+        "James A. Evans",
+        "E. Glen Weyl"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -1922,8 +1745,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aem6470",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:21+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -1980,8 +1803,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.ael8929",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:22+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -2000,64 +1823,6 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.4,
       "topic_cache_token": "74fcd62138aa1b2308c68eafc0ddeed27b6f1466fc96cbc82b6e5f3cfee20ad9",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "f22209d52950e979a4e4fa43",
-      "url": "https://doi.org/10.1126/science.adv1247",
-      "title": "Quantum gas microscopy of three-flavor Hubbard systems",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T07:00:13+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Jirayu Mongkolkiattichai, Liyu Liu, Sohail Dasgupta, Kaden R. A. Hazzard, Peter Schauss"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.adv1247",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.8333,
-      "topic_cache_token": "b39b43fece8dd4c6c1621edee26f84d82041ed850568983016f263d7210b387e",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -2085,7 +1850,8 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Blánaid Hicks and Anton Pottegård"
+        "Blánaid Hicks",
+        "Anton Pottegård"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -2096,8 +1862,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aei1490",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:13+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -2154,8 +1920,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.ael2422",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:26+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -2174,180 +1940,6 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.0,
       "topic_cache_token": "f39093a5e1efe601db81cfd0a032d761e0f46e37b948d29a14bf28a262724b4e",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "ac443f81a22b65a9df4d7f85",
-      "url": "https://doi.org/10.1126/science.aen8506",
-      "title": "DNA confirms barbarian tribe’s mythic tale about its origins",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T07:00:13+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Andrew Curry"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.aen8506",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.5,
-      "topic_cache_token": "8c6303f4d84ff224659a2f68d2720c976bf2ef62dc0aa0de91ebb6eecd7f5066",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "a8f2ec9ea296d94554798bf4",
-      "url": "https://doi.org/10.1126/science.aen8508",
-      "title": "Watching the weary brain",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T07:00:13+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Jonathan Moens"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.aen8508",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.0,
-      "topic_cache_token": "30ebd1182c5f98e71c8e0b3bdc45c581250068c156f193cddf075ab1c39cbff8",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "a603c446df92793c50f6a37a",
-      "url": "https://doi.org/10.1126/science.aed4270",
-      "title": "Glacial abrupt transitions in ocean circulation were much slower than ice-core records imply",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T07:00:13+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Xiyu Dong, Xu Zhang, Yuchen Sun, Gayatri Kathayat, Youwei Li, Sune O. Rasmussen, Anders Svensson, Christo Buizert, Ashish Sinha, Stephen Barker, Carlos Pérez-Mejías, Gregor Knorr, Rishui Chen, Kan Zhao, Wenjing Du, Haiwei Zhang, Hanying Li, Andrea Columbu, Liangcheng Tan, Yuao Zhang, Youfeng Ning, Martin Werner, Yongjin Wang, R. Lawrence Edwards, Hai Cheng"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.aed4270",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.5,
-      "topic_cache_token": "7af3aa59ac2abbb43fcdf16af2ac5ad0441301e1c52a9548acef063d2eceac18",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -2375,7 +1967,8 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Kenneth C. Shadlen and Olivier J. Wouters"
+        "Kenneth C. Shadlen",
+        "Olivier J. Wouters"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -2386,8 +1979,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aek2174",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:12+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -2433,7 +2026,11 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Nan Wang, Hai-Dong Li, Hao Shi, Xiao-Mian Zhang, and Li Liu"
+        "Nan Wang",
+        "Hai-Dong Li",
+        "Hao Shi",
+        "Xiao-Mian Zhang",
+        "Li Liu"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -2444,8 +2041,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aem0567",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:28+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -2502,8 +2099,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aen8054",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:26+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -2522,238 +2119,6 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 1.0,
       "topic_cache_token": "000e9f3e827311a4f2133db5dcf15a52fcfdaba8a3221ed6c16c449609b546e7",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "82a3244b7b449fbf1b61d292",
-      "url": "https://doi.org/10.1126/science.adt3444",
-      "title": "Equivalence of pseudogap and pairing energy in a cuprate high-temperature superconductor",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T07:00:13+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Jiasen Niu, Maialen Ortego Larrazabal, Thomas Gozlinski, Yudai Sato, Koen M. Bastiaans, Tjerk Benschop, Jian-Feng Ge, Yaroslav M. Blanter, Genda Gu, Ingmar Swart, Milan P. Allan"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.adt3444",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.4286,
-      "topic_cache_token": "e060d585baf114670af612a4ee0fc85cb1745b8573ed30095cce853addb9cc4d",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "7f2b4a3b3fb27970b55d1c00",
-      "url": "https://doi.org/10.1126/science.aej1120",
-      "title": "Obesity management medications: The way forward",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T07:00:13+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Matthias Blüher"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.aej1120",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.6,
-      "topic_cache_token": "cf2e0627241da4bb2f868968afa63a3984bb23bfa3f0dac642b4288c02f78955",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "75adc4e14a4bac44fbcaad73",
-      "url": "https://doi.org/10.1126/science.aee9044",
-      "title": "When fat adapts: From physiological remodeling to disease",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T07:00:13+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Karima Drareni and Patrick Seale"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.aee9044",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.4,
-      "topic_cache_token": "bffe4220a1e78ac6b8addf6a950cbacc14cdbe070f44c2b83b58b66682405f04",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "729e4c831d8f195e9c49888e",
-      "url": "https://doi.org/10.1126/science.aen8507",
-      "title": "The scramble for your brain data",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T07:00:13+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Jonathan Moens"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.aen8507",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.0,
-      "topic_cache_token": "1be0b7b3f68b7ca3fc84cb89388f00bc204a0f6585bccaa1803f3f9806ca4cf0",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -2781,7 +2146,19 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Michael Funk, and Sacha Vignieri, Phil Szuromi, Jesse Smith, Jelena Stajic, Christiana N. Fogg, Laura Ensign, L. Bryan Ray, Priscilla N. Kelly, Yevgeniya Nusinovich, Angela Hessler, Yury Suleymanov, Annalisa VanHook, and Ji-Xin Cheng"
+        "Sacha Vignieri",
+        "Phil Szuromi",
+        "Jesse Smith",
+        "Jelena Stajic",
+        "Christiana N. Fogg",
+        "Laura Ensign",
+        "L. Bryan Ray",
+        "Priscilla N. Kelly",
+        "Yevgeniya Nusinovich",
+        "Angela Hessler",
+        "Yury Suleymanov",
+        "Annalisa VanHook",
+        "Ji-Xin Cheng"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -2792,8 +2169,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aen8052",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:18+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -2812,64 +2189,6 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 1.0,
       "topic_cache_token": "73a2c776eeab83fbad8a4ed4a1ac8766925677a3121d157988c9215797d88f5c",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "6512dd63ac1cf8a7ec4f1d43",
-      "url": "https://doi.org/10.1126/science.aeg3800",
-      "title": "Direct evidence for psychoactive cannabis use 2800 years ago",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T07:00:13+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Gino Caspari, Timur Sadykov, Daria Fomicheva, Jegor Blochin, Dominic Armbruster, Oliver Happel, Natalia Ryabogina, Kseniia Boxleitner, Robert Spengler"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.aeg3800",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.5,
-      "topic_cache_token": "cb957eddb94a2f271cd1303f8271db9ce1dbb5b11d2c27db7e33d73c17af1018",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -2897,7 +2216,8 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Zara Harmon and Caroline F. Rowland"
+        "Zara Harmon",
+        "Caroline F. Rowland"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -2908,8 +2228,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aem3978",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:28+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -2966,8 +2286,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aen8502",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:14+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -3024,8 +2344,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.ael2415",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:08+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -3071,7 +2391,10 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Yevgeniya Nusinovich, Mattia Maroso, Joana OsÓRio, and Brad Wible"
+        "Yevgeniya Nusinovich",
+        "Mattia Maroso",
+        "Joana OsÓRio",
+        "Brad Wible"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -3082,8 +2405,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aen0869",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:14+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -3140,8 +2463,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aem6802",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:28+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -3160,64 +2483,6 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.6667,
       "topic_cache_token": "7ffa3fedc23984a492945032fd4aaf0af16edf8afc8eb089f3fa8273cad27d1f",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "4639b3237130a81a79906adc",
-      "url": "https://doi.org/10.1126/science.aeg7301",
-      "title": "Seafloor geodesy delineates fast megathrust relocking after the giant 2011 Tohoku earthquake",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T07:00:13+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Fumiaki Tomita, Tianhaozhe Sun, Motoyuki Kido, Takeshi Iinuma, Naoki Uchida, Yusaku Ohta, Ryota Hino, Jiangheng He, Kelin Wang"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.aeg7301",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.3,
-      "topic_cache_token": "158927e1c806163a568c03c32f1c23d05f38453aae57434ff878c15ac850b32a",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -3245,7 +2510,13 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Corinne Simonti, and Jesse Smith, Corinne Simonti, Jack Huang, Bianca Lopez, Phil Szuromi, Melissa McCartney, Joana Osório, and Ian S. Osborne"
+        "Corinne Simonti",
+        "Jack Huang",
+        "Bianca Lopez",
+        "Phil Szuromi",
+        "Melissa McCartney",
+        "Joana Osório",
+        "Ian S. Osborne"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -3256,8 +2527,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aen8053",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:20+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -3276,122 +2547,6 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 1.0,
       "topic_cache_token": "de48e126df33a7c22636c0b047e5154078f934f9275ca2b733f504a50bbade08",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "4030d8017085e8e5506ce8a6",
-      "url": "https://doi.org/10.1126/science.adu9593",
-      "title": "Echoes of the Anthropocene: Noise pollution as a global threat",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T07:00:13+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Hansjoerg P. Kunc and Rouven Schmidt"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.adu9593",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.3333,
-      "topic_cache_token": "131da560d4a3e891c4f3d44b8fff1e6951a2f9bf186b32d1935eae4dcc64a0ad",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "33f39e1c9038697929685354",
-      "url": "https://doi.org/10.1126/science.ael6284",
-      "title": "A cultural history of altered artifacts",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T07:00:13+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Abby Smith Rumsey"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.ael6284",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 1.0,
-      "topic_cache_token": "75706f04c141e707eec0824f09186a9b27e2a428b6763f8a476296f4ca3db13c",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -3430,8 +2585,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aen8505",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:18+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -3450,64 +2605,6 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.7143,
       "topic_cache_token": "62c4031eeca1147b57a07b29841910a59e150244acb07a61c4357db83b6fc55d",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "329ab85540a61387b7535335",
-      "url": "https://doi.org/10.1126/science.aen8503",
-      "title": "Serbia elects the world’s brainiest parliament",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T07:00:13+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Mićo Tatalović and Nenad Jarić Dauenhauer"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.aen8503",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.2,
-      "topic_cache_token": "6e856395b0b7f0c825132ea93cace255eb6002840fb93673bcb9392cf4017f82",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -3546,8 +2643,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aem6813",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:21+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -3604,8 +2701,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aem2340",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:26+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -3662,8 +2759,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aem6487",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:28+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -3682,238 +2779,6 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.5,
       "topic_cache_token": "64b70b87961d605bac7622870e85168a92df60bd8d520f094d853e776932f01e",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "1df8ab78bbc65a34771ee2a4",
-      "url": "https://doi.org/10.1126/science.aej1765",
-      "title": "Denoising the US Census: Succinct block hierarchical regression",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T07:00:13+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Badih Ghazi, Pritish Kamath, Ravi Kumar, Pasin Manurangsi, Adam Sealfon*"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.aej1765",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.6667,
-      "topic_cache_token": "a4c99be21f7d385f03e0f031b8e8a85e067e1134bc071eece95709d2d5ce1fbf",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "1bf2f7528b3f8eb428e42ca1",
-      "url": "https://doi.org/10.1126/science.aek9987",
-      "title": "Obesity pharmacotherapies and cognition",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T07:00:13+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Stina Börchers, Giulia Mazzini, Henrik Zetterberg, Christoffer Clemmensen"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.aek9987",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.3333,
-      "topic_cache_token": "16eea569e8de816cc7a4d14a3e4065553bab2ff75eb8c59e9b313e84aee02dd0",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "1b6de2697427ff6e8071eeae",
-      "url": "https://doi.org/10.1126/science.aeh7074",
-      "title": "Stacked porous NiTi structure with low cost and ultrahigh fatigue life for elastocaloric cooling",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T07:00:13+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Changfeng Su, Yang Li, Zhongzheng Deng, Shiyu Zhong, Jiyuan Hu, Xueshi Li, Qiao Li Qingping Sun"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.aeh7074",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.6364,
-      "topic_cache_token": "62fec361222fa477b1fc27da8f79330f567cb65d4b5043763dca5a72ef4b342a",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "1af854fc083cbb811ad21733",
-      "url": "https://doi.org/10.1126/science.aen8501",
-      "title": "AI cracks a 27-year-old pillar of computer science",
-      "source_ids": [
-        "journal-science"
-      ],
-      "source_names": [
-        "Science"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-05T07:00:13+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Tom Howarth"
-      ],
-      "journal_id": "science",
-      "journal_title": "Science",
-      "journal_issns": [
-        "0036-8075",
-        "1095-9203"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/science.aen8501",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.8,
-      "topic_cache_token": "63adaa34fe8159c6db12d954e9d025ce625344c9299cb8b818eda994e10cd380",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -3941,7 +2806,8 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Nora D. Volkow and Eric M. Wargo"
+        "Nora D. Volkow",
+        "Eric M. Wargo"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -3952,8 +2818,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aej9836",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:19+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -4010,8 +2876,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/science.aen8500",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-05T00:00:00+00:00",
+      "indexed_at": "2026-11-05T19:28:14+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -6614,6 +5480,193 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.2857,
       "topic_cache_token": "0eefee67a895ec49679e01f86ea287c57a39e47f521fc6db1b9acb9623f2d677",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "936a7bd9e72361ed4589fc93",
+      "url": "https://arxiv.org/abs/2611.07854",
+      "title": "Towards Foundation Decision Models: Drex",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-05T00:00:00+00:00",
+      "first_seen": "2026-11-06T03:39:04.453897+00:00",
+      "excerpt": "Autoregressive approaches with large language models, such as long chain-of-thought reasoning, have become the default for new AI applications because they reach higher accuracy on a wide range of tasks. In production, however, they give inconsistent answers, require parsing of outputs, and add cost and latency. Decision models address this: given a question and a set of options supplied by the user, they return a probability distribution over the options without autoregressive decoding. We present Drex, a family of four open decision models with 8B (DLM), 9B (v1.5), 35B with 3B active (v2.0), and 27B (Max) parameters. Each request consists of a state (a document, record, or agent context, optionally with images) and questions about it, each asking for a choice among options, a yes/no judgment, or a score on an ordered scale. Training combines supervised fine-tuning with reinforcement learning from adjusted feedback (RLAF), plus vision tuning for Max. Ablations show that RLAF improves accuracy and that consistency losses improve robustness to option order. On Decision Index 0.4.1, Max sets a new state of the art among the decision models we compare (67.52 on the public suite vs. 60.70 for Jev 1.14.0). On Decision Bench v4, it is statistically tied with d3-turbo and GPT-6 Sol and trails Claude Opus 5.5 by 1.6 points, and it has the highest accuracy among decision models on DecideBench. Max answers a typical request in 183 ms, against about 2.0 s for GPT-6 Sol and 3.5 s for Claude Opus 5.5, and its outputs are stable under option reordering. All four models are open source: https://github.com/nace-ai/drex-decision-models",
+      "summary": "Drex 是一组参数规模为 8B（DLM）、9B（v1.5）、35B 激活 3B（v2.0）和 27B（Max）的开放决策模型，训练上结合了监督微调与基于调整反馈的强化学习（RLAF），Max 还额外进行了视觉微调，并在 Decision Index 0.4.1 公开套件上报告 Max 为 67.52、高于所比较的 Jev 1.14.0 的 60.70，同时报告了校准、选项顺序敏感性和训练阶段贡献等评估结果。对科研工作的用途是，这些模型、权重与推理代码以开源形式提供，可作为决策模型在概率校准、选项顺序鲁棒性、训练配方与延迟等方向进行比较研究的对象或基线；限制在于，所提供的材料只是有界摘录而非完整全文，上述分数、延迟和对比结论均为原文报告，尚未在此独立验证，且原文也指出多数证据为跨模型、训练阶段和推理干预的比较性关联而非因果关系，部分设计增益的归因仍需进一步实验。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.07854",
+      "authors": [
+        "Nischay Dhankhar",
+        "Alisher Amantay",
+        "Zhanibek Datbayev",
+        "Darkhan Akhmetov",
+        "Yash Shah",
+        "Nurmukhamed Ubaidullayev",
+        "Raman Saparkhan",
+        "Dos Baha",
+        "Abulhair Saparov"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        },
+        {
+          "id": "zotero:29132f3642c19e5c9b71889c7fc63ddf",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：robustness。"
+        },
+        {
+          "id": "zotero:d680e95392def25285a997e886e86a05",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reasoning、chain-of-thought。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:29132f3642c19e5c9b71889c7fc63ddf",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:29132f3642c19e5c9b71889c7fc63ddf",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:6cb94419e4a077231731f17d61098d95",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7962,
+      "topic_cache_token": "feff13999b857f1c51c5629d46e2bae714fa1f2fcdebcbd6cdf58232e1fb735d",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.07854",
+        "sha256": "f72ac984e07f1c311734938c86a5e355798222f249308b85da777fdc1f03d1e3",
+        "chars": 12000
+      }
+    },
+    {
+      "id": "a2e4c07d349e9d0987b8a3c6",
+      "url": "https://doi.org/10.1002/adfm.79527",
+      "title": "Breaking the Aperture Limit: Interference-Enhanced Stacking and Constraint-Driven Design of Metallic Meshes",
+      "source_ids": [
+        "journal-advanced-functional-materials"
+      ],
+      "source_names": [
+        "Advanced Functional Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-05T00:00:00+00:00",
+      "first_seen": "2026-11-06T03:39:04.453897+00:00",
+      "excerpt": "ABSTRACT Achieving high optical transmittance and shielding effectiveness (SE) remains challenging for transparent electromagnetic interference (EMI) shielding materials. Herein, a physics-guided, constraint-driven design strategy for metallic meshes is developed through electromagnetic simulations, machine learning, and experiments. Single-layer SE approaches saturation with increasing conductivity at a level set by the mesh geometry, dominated by the period, while the conductivity required for saturation decreases with increasing conductor cross-section. At a fixed cross-sectional area, a narrow-and-high cross-section (w < t) improves both SE and transmittance relative to a square one. Interference-enhanced stacking allows double- and triple-layer SE to reach approximately 2.17 and 3.40 times the single-layer value expressed in dB, respectively, with equal metal allocation maximizing SE under a fixed metal budget. XGBR and response-surface models enable rapid screening of structures that meet prescribed SE requirements while balancing transmittance, total interlayer spacing, and metal cross-sectional area. The selected triple-layer design achieves 88% transmittance, 10.86% haze, and an average experimental SE of 92.17 dB in the X-band, and its assembly tolerance and conductivity sensitivity are further analyzed. This strategy links quantitative electromagnetic analysis with requirement-driven design of transparent metallic meshes.",
+      "summary": "本文通过电磁仿真、机器学习和实验，提出了一种面向金属网的物理引导、约束驱动设计策略，分析了单层屏蔽效能随电导率饱和的几何限制、窄高截面相对方形截面的优势，以及干涉增强叠层使双层和三层屏蔽效能相对单层提升约2.17倍和3.40倍，并利用XGBR和响应面模型筛选满足指定屏蔽效能要求的结构。该工作为透明电磁屏蔽金属网的需求驱动设计提供了定量电磁分析与快速筛选途径，但所提供的摘要未给出完整实验细节、适用频段之外的验证结果或更广泛环境下的可靠性结论，且所选三层设计的88%透光率、10.86%雾度和X波段平均实验屏蔽效能92.17 dB均为原文报告值，尚需结合完整全文独立核验。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Chengzhou Zhang",
+        "Jizhe Zhang",
+        "Zhikun Yang",
+        "Liang He",
+        "Caixia Kan",
+        "Xingzhong Zhu"
+      ],
+      "journal_id": "advanced-functional-materials",
+      "journal_title": "Advanced Functional Materials",
+      "journal_issns": [
+        "1616-301X",
+        "1616-3028"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adfm.79527",
+      "published_online_at": "2026-11-05T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-06T02:28:12+00:00",
+      "journal_relevance": {
+        "status": "relevant",
+        "method": "rule-v1",
+        "reason": "ai_method_for_materials_research",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        },
+        {
+          "id": "zotero:84051b1f05b8368766ddc3a2195c2324",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：metal。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:84051b1f05b8368766ddc3a2195c2324"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:84051b1f05b8368766ddc3a2195c2324",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7023,
+      "topic_cache_token": "6e36d3adb66ac04dec57b815d0136b53d44663496742849b69c39d14d81aeb53",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -13144,7 +12197,7 @@
       "summary": "本文在可控合成调控系统中追踪七个大语言模型的实验轨迹，发现模型往往能恢复健康表型却无法正确诊断隐藏故障，并指出失败源于模型难以预测各竞争性病因下实验的结果，而非探索不足或证据不可获得。该工作对科研工作的用途在于提示仅以干预是否成功评估科学智能体可能掩盖因果推理缺陷，其限制是结论来自合成系统与摘要所述实验设置，公开材料未验证完整全文。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Anna Gogleva",
+        "A. Gogleva",
         "Thomas Charman",
         "Martin Balla",
         "Karl Gemayel"
@@ -13351,14 +12404,14 @@
       "summary": "本文提出“面向科学发现的具身AI”这一统一视角，用操作闭合、认知闭合和证据闭合三个层次组织机器人学习与科学AI交叉领域的文献，并通过记录—诊断—校准—确认的证据循环、委托决策分类和28个工作流证据地图来比较不同物理实验流程。该框架可用于按实验记录所能支撑的论证深度而非单一加速指标来评估自主实验系统，但原文所述结论基于作者自建的叙述性综述与证据地图，并非已验证标准，且部分贡献在提供的摘录中未完整呈现。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Wenhao Xu",
+        "Wen-Hao Xu",
         "Changwei Wang",
-        "Shunpeng Chen",
-        "Yukun Song",
-        "Sifan Zhou",
-        "Kaize Luo",
-        "Shibiao Xu",
-        "Yuehua Zhao",
+        "Shun-Peng Chen",
+        "Yu-Kun Song",
+        "Si-Fan Zhou",
+        "Kai-Ze Luo",
+        "Shi-Biao Xu",
+        "Yue-Hua Zhao",
         "Rongtao Xu"
       ],
       "topic_labels": [
@@ -16905,7 +15958,7 @@
       "doi": "10.1016/j.actamat.2026.122924",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-04T01:26:39+00:00",
+      "indexed_at": "2026-11-05T09:27:27+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -18229,14 +17282,14 @@
         "Eric R. Sokol",
         "Marty Downs",
         "Gina Glenne",
-        "Gregory E. Maurer",
-        "Sydne Record",
+        "G. Maurer",
+        "S. Record",
         "Dustin R. Rubenstein",
-        "Matthew J. Thompson",
+        "Matthew Thompson",
         "Christine Laney",
-        "Hilmar Lapp",
-        "Max Tarjan",
-        "Tanya Berger-Wolf"
+        "H. Lapp",
+        "M. Tarján",
+        "Tanya Y. Berger-Wolf"
       ],
       "topic_labels": [
         {
@@ -26554,8 +25607,8 @@
       "published_at": "2026-11-02T00:00:00+00:00",
       "first_seen": "2026-11-06T02:01:23.988294+00:00",
       "excerpt": "LLM agents for GPU kernel optimization sit at two ends of a structure-freedom tradeoff. Scripted agents fix what the model does at each step, via a learned policy, an optimization menu, or fixed roles, and are sample-efficient where the recipe applies and stall where it does not. Open-ended agents let a self-directed model mutate a population of kernels and pay for the freedom in trials: thousands of evaluations, repeated edits, and wrong candidates. Both respond to hard targets by equipping the agent with more: parsed profiler output, disassembly analysis, retrieval over documentation and libraries, and stores of lessons. We argue that both lack direction, a hypothesis about where the remaining gap is, and that a short question asked at the right moment supplies it without narrowing what the agent may do next. We present KernelSeek, a question-driven agent that makes an existing CUDA kernel faster with no operator-specific knowledge and no faster implementation to imitate: a general-purpose coding agent, a minimal harness that enforces a verifiable goal, and questions at decision points, first from a human, then from a bank the agent applies to itself. On the same task, evaluator, hardware, and week, a tool-rich autonomous agent built in the prevailing style plateaued at 0.50x FlashAttention-3 after 133 model-driven steps; KernelSeek reached 1.13x. It then produced dependency-free FlashAttention forward kernels for Hopper and Blackwell, single CUDA files with no CUTLASS, CuTe, cuBLAS, or cuDNN, correct on all 182 scenarios per architecture and 1.16x FlashAttention-3 and 1.46x FlashAttention-4 (geometric mean). Across 162 human messages and 11.5K agent tool calls, every large gain followed a question that moved the agent to a different layer of the system or rejected a claimed limit, never one that supplied information. We release the kernels, harness, question bank, and all traces.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出了 KernelSeek，一种问题驱动的智能体，通过通用编码智能体、强制可验证目标的最小测试框架，以及在决策点（先来自人类，后来自智能体自行应用的问题库）提问，在没有算子特定知识和可模仿的更快实现的情况下优化已有 CUDA 内核。作者报告在同一任务、评测器、硬件和周内，KernelSeek 达到 1.13x FlashAttention-3，而工具丰富的自主智能体在 133 步后停滞于 0.50x，并生成了无依赖的 FlashAttention 前向内核，在 Hopper 和 Blackwell 各 182 个场景上正确；这些比较结果来自原文报告，尚未经独立验证。该方法面向以现有内核为种子进行加速的科研场景，可复用于内核优化智能体研究，但材料仅提供有界摘录，未提供完整实验协议、基线细节或独立复现，因此其性能结论和跨架构泛化应视为作者声明而非已验证事实。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.03517",
       "authors": [
         "Gabriele Oliaro",
@@ -26604,7 +25657,13 @@
       "topic_coverage": 0.7919,
       "topic_cache_token": "9a843dca7cefe6fbc9d92406dcda05196a5d341901c297cf0cb3b7e483a62fd5",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.03517",
+        "sha256": "2dbf7e66ce480f4e9a05f223357e1c82699769b0031d078d1987e7f93365910e",
+        "chars": 12000
+      }
     },
     {
       "id": "ccd57f953daec1956dc7ed4e",
@@ -26628,8 +25687,8 @@
       "published_at": "2026-11-02T00:00:00+00:00",
       "first_seen": "2026-11-06T02:01:23.988294+00:00",
       "excerpt": "Reasoning substantially improves language models' ability to solve difficult problems, but long reasoning traces make these gains expensive. Efficient reasoning should express useful analysis in fewer tokens by reducing repetition and text that adds little value to solving the problem. Progress in proprietary models motivates this goal, yet their hidden scratchpads limit direct study of how it is achieved. We investigate whether open-weight models can generate less verbose reasoning by changing the form of their own earlier thoughts, without retraining. Our intervention rewrites prior reasoning into compact state records before pending tool results are revealed, then compares continuations from original and compact histories. Across the tested models, accepted compact histories usually shorten future reasoning; a coding case study also shows less repeated verification after a shared candidate solution. In software-agent deployments, compaction can reduce total spending, although task quality and rewrite-inclusive time depend on the target and compressor. These findings identify reasoning history as one way to reduce future reasoning-token use and motivate model-specific compaction policies evaluated for both efficiency and retained capability.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文考察了在推理历史进入后续请求前，用更紧凑的“状态记录”重写模型自身早先推理这一干预是否会在不重训练的情况下改变后续推理生成，并在多阶段任务与软件智能体部署中比较原始历史与压缩历史下的续写表现。就科研用途而言，受测模型中被接受的压缩历史通常缩短后续推理，编码案例中共享候选解后重复验证减少，但任务质量与含重写时间取决于目标模型和压缩器，因此压缩策略应按模型分别评估效率与保留能力；相关结论限于所提供的摘要与片段，且不能据此推断完整全文或其他模型的表现。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.03852",
       "authors": [
         "Anton Hristov"
@@ -26673,7 +25732,13 @@
       "topic_coverage": 0.8696,
       "topic_cache_token": "6b19eff0c539f7de5fcdc32c11cf31fec44f45df2ddaa952bc041dc98df0c4dd",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.03852",
+        "sha256": "9b9d06279403b7bd3530b6506b85ad8198264ab5aac49cb1ce73c2c9fe4beb44",
+        "chars": 12000
+      }
     },
     {
       "id": "b8beba02ddf24dd982afe656",
@@ -26875,10 +25940,10 @@
       "summary": "本文提出并测试了BioAgent-DF，通过在同一科学计算位置恢复或移植成对的参考值与候选值，审计科研智能体在引用证据与最终判定之间的决策来源，并在SciFact批次及hERG心脏安全性测定分配中观察到引用、读取或测试决策的变化。该工作可用于区分数值状态恢复、排序列表恢复与智能体可见历史恢复，并提示科研审计需同时跟踪智能体所用证据和最终答案；但相关重复性变化仅覆盖两个主张，且公司声明或性能数字不应视为已验证结论。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Xingyu Yi",
-        "Xinya Zhang",
-        "Yunshen Zhou",
-        "Haoyu Bao"
+        "Xing-Yu Yi",
+        "Xin-Ya Zhang",
+        "Yun-Shen Zhou",
+        "Hao-Yu Bao"
       ],
       "topic_labels": [
         {
@@ -29240,7 +28305,7 @@
       "doi": "10.1016/j.actamat.2026.122908",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-01T07:27:53+00:00",
+      "indexed_at": "2026-11-05T09:27:32+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -29636,12 +28701,12 @@
       "summary": "本文提出以决策为中心的研究框架（Decision-Centric Research, DCR）及配套基准 RD-Bench，用显式研究状态上的类型化预测来监督和评估科研智能体的单个决策，并训练了共享候选标记读出头的 DCRM 模型，在留出研究领域划分下报告了准确率与校准预测集结果。该工作可用于把科研智能体的个体选择作为独立评估单元并考察其不确定性接口，但相关数值来自公开摘要所述实验设置，尚未经独立验证，且基准为规则生成的 2,000 个案例，覆盖 24 类决策中的 10 类，适用性受此范围限制。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Shaoning Zeng",
-        "Wen Huang",
-        "Xinzhong Zhu",
-        "Yi Duan",
-        "Jianhang Zhou",
-        "Jianping Gou"
+        "Shao-Ning Zeng",
+        "Wen-Shan Huang",
+        "Xin-Zhong Zhu",
+        "Yi-Kang Duan",
+        "Jian-Hang Zhou",
+        "Jian-Ping Gou"
       ],
       "topic_labels": [
         {
@@ -32564,7 +31629,7 @@
       "doi": "10.1016/j.actamat.2026.122885",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-01T00:29:49+00:00",
+      "indexed_at": "2026-11-05T21:25:31+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -32660,6 +31725,80 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.75,
       "topic_cache_token": "7b69ef961815cf9f4885029f529c46ca656e70be14251814bdbe08674e483411",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "1ceaf23a5a7c87a26e65523a",
+      "url": "https://arxiv.org/abs/2611.00883",
+      "title": "Random Is Almost Enough? Stable and Low-Cost Benchmark Compression via BestRand",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-31T00:00:00+00:00",
+      "first_seen": "2026-11-06T03:39:04.453897+00:00",
+      "excerpt": "Benchmark compression reduces the often prohibitive time and cost of model evaluation by evaluating models on a small benchmark subset that closely matches full-benchmark results. To quantify estimation error, we derive an accurate analytical approximation to the error distribution when estimating full-benchmark scores from a subset, showing that most subsets yield small errors, while a few produce much larger errors, resulting in a long-tailed distribution. This means random sampling alone can achieve surprisingly strong performance with high probability, but remains unstable due to rare large errors. We further show that this instability is inherent to modern foundation models and persists even as more models are evaluated. Based on these findings, we introduce BestRand, a stable and low-cost benchmark compression method that preserves the efficiency of random sampling while substantially reducing its high-error tail. We validate BestRand on 70+ text, multimodal, and agent benchmarks, and further extend it to VLA evaluation. Compared with competitive methods, BestRand reduces high-error risk by 50.2% and estimation error by 16.4% on average, while requiring only 51.3% of the construction cost. It further reduces OOD estimation error by 21.8% on average across score-range, model-family, and temporal shifts. Together, our theory provides practical guidance for understanding and predicting the accuracy and reliability of benchmark compression, while BestRand enables stable and accurate compression at low cost. The code and data are publicly available onhttps://github.com/George-Ling3/BestRand.",
+      "summary": "本文提出BestRand基准压缩方法，通过分析估计误差的长尾分布特征，在保留随机采样效率的同时减少高误差尾部，并在70多个文本、多模态和智能体基准上验证，还扩展至VLA评估。该方法据称可降低高误差风险与估计误差及构建成本，并改善分布偏移下的估计误差，但这些效果均来自作者报告而非独立验证，且其适用性受限于所测试的基准与模型范围，原文未声称可泛化至所有评估场景。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.00883",
+      "authors": [
+        "George Ling",
+        "Shanshan Zhong",
+        "Lijin Yang",
+        "Hao Yang",
+        "Nanxiang Li",
+        "Zhongzhan Huang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark、evaluation。"
+        },
+        {
+          "id": "zotero:8f22e62349472c4815f4275fbcf89c76",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：agent。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8831,
+      "topic_cache_token": "6dd6154ef02fa8008e8732f12d2eae4c04986cc20c748fbb8ebc4b141052a141",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -43316,17 +42455,28 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [],
+      "authors": [
+        "Arjen van Veelen",
+        "Shinhyo Bang",
+        "Deana S. Kwong Hong Tsang",
+        "Adrien J. Terricabras",
+        "Scarlett Widgeon-Paisner",
+        "Geronimo Robles",
+        "Joseph C. Schaeperkoetter",
+        "Bruce Ravel",
+        "Xiaofeng Guo",
+        "Joshua T. White"
+      ],
       "journal_id": "acta-materialia",
       "journal_title": "Acta Materialia",
       "journal_issns": [
         "1359-6454"
       ],
       "publisher": "Elsevier",
-      "doi": null,
+      "doi": "10.1016/j.actamat.2026.122901",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": null,
+      "indexed_at": "2026-11-05T12:26:01+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -43344,7 +42494,7 @@
       ],
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.9,
-      "topic_cache_token": "58d76d3bfee93a80e5da6c52df4f173b136d7499b56d3bdd80374bf518aeec01",
+      "topic_cache_token": "c9dac842e6d22377ef71b079fa722f737d94808c37d68c92ac3ab96a449ec86f",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -52357,8 +51507,8 @@
       "published_at": "2026-10-27T00:00:00+00:00",
       "first_seen": "2026-11-06T02:01:23.988294+00:00",
       "excerpt": "Classification accuracy and true-positive and false-positive rates alone do not determine whether restarting an AI agent improves success. Using an exact alarm-to-action identity for an independent clean restart with zero monitoring overhead, we show analytically that a monitor with fixed 90% accuracy can swing from a five-percentage-point loss to a 35-point gain in success rate, depending solely on the replacement attempt's residual-budget success probability. We introduce two techniques for evaluating monitors and progress signals in decision terms. First, a decision-sufficiency criterion, a binary-action specialization of Blackwell's comparison of experiments, identifies which progress representations or context compressions preserve the information needed to choose optimally between the specified actions, independent of trace reconstruction fidelity. Second, a finite-sample, model-free decision audit uses simultaneous binomial intervals over existing agent traces, without additional model calls, to certify a preference for \"restart\" or \"continue\" under stated sampling assumptions, or return \"abstain\" when evidence is insufficient. In a study of 194 externally evaluated model executions on 19 selected SymPy issues from SWE-bench Verified, with a retrospective audit of 130 of these traces, we find a 2.29-point apparent restart gain traced to a single surviving failed attempt, a 42.29-point loss on a second model, no positive replication of the initial gain on prospective task cohorts, and zero of 103 live comparisons meeting the specified certification bar. These results motivate evaluating agent monitors through recovery opportunity, decision value, and statistical support, rather than classification performance alone.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出了一个面向AI智能体重启监控器的决策价值评估框架，给出告警到动作的价值恒等式、面向二动作的决策充分性准则，以及基于现有轨迹、无需额外模型调用的有限样本无模型决策审计方法。该框架可用于在指定动作与采样假设下判断重启或继续的统计支持，但材料表明该审计为回顾性且仅覆盖选定的SWE-bench Verified任务、模型和执行配置，未训练监控器、未与学习型恢复系统直接比较，也未在更广任务与运行配置中确立性能。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2610.36544",
       "authors": [
         "Siddharth Jain",
@@ -52405,7 +51555,13 @@
       "topic_coverage": 0.7716,
       "topic_cache_token": "3f6ad60fce24abeb159ae3c124fd2df8a278c1eea4cbdb68394e3bbc9bf12b3c",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.36544",
+        "sha256": "d2bcd67bb5cdc27f99189c32413286ab30234ab5c4d177da04b8593637519239",
+        "chars": 12000
+      }
     },
     {
       "id": "a9c488820a62ac4adcd9d66c",
@@ -91477,7 +90633,7 @@
       "doi": "10.1016/j.actamat.2026.122863",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-02T17:28:58+00:00",
+      "indexed_at": "2026-11-05T05:28:25+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -110555,7 +109711,7 @@
       "doi": "10.1016/j.actamat.2026.122763",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-19T16:42:55+00:00",
+      "indexed_at": "2026-11-06T03:27:35+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -110688,7 +109844,7 @@
       "doi": "10.1016/j.actamat.2026.122775",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-19T16:42:52+00:00",
+      "indexed_at": "2026-11-06T03:27:38+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -112968,7 +112124,7 @@
       "doi": "10.1016/j.actamat.2026.122754",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-19T16:42:59+00:00",
+      "indexed_at": "2026-11-05T04:47:47+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -113221,7 +112377,7 @@
       "doi": "10.1016/j.actamat.2026.122811",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-19T16:42:46+00:00",
+      "indexed_at": "2026-11-06T03:27:54+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -113793,7 +112949,7 @@
       "doi": "10.1016/j.actamat.2026.122790",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-19T16:42:46+00:00",
+      "indexed_at": "2026-11-05T21:27:49+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -114286,7 +113442,7 @@
       "doi": "10.1016/j.actamat.2026.122745",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-19T16:42:28+00:00",
+      "indexed_at": "2026-11-05T04:47:46+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -161586,7 +160742,7 @@
       "doi": "10.1126/science.aeh7496",
       "published_online_at": null,
       "published_print_at": "2026-10-01T00:00:00+00:00",
-      "indexed_at": "2026-10-01T18:58:41+00:00",
+      "indexed_at": "2026-11-05T14:07:06+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -186043,14 +185199,7 @@
       "summary": "本文通过数据驱动筛选M-MOF-74系列结构，结合结构-电导率关联分析与性能预测，确定Zn-MOF-74为PVDF基固态聚合物电解质的优选填料，并报道该电解质在室温下的离子电导率、Na+迁移数及电化学稳定性等指标。上述结果基于原文摘要，可用于提示MOF填料筛选与聚合物电解质设计的研究方向，但其性能与循环表现均来自作者报道，尚需独立验证，且未涵盖全文实验细节与适用边界。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Si Zhao",
-        "Yiwei Lv",
-        "Lituo Zheng",
-        "Luzhuo Chen",
-        "Bing Lin",
-        "Mingdeng Wei",
-        "Sanjay Mathur",
-        "Zhensheng Hong"
+        "Si Zhao, Yiwei Lv, Lituo Zheng, Luzhuo Chen, Bing Lin, Mingdeng Wei, Sanjay Mathur, Zhensheng Hong"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -212042,12 +211191,7 @@
       "summary": "本文综述了单线态裂分的基本机制、能学要求和分子设计原则，并讨论了超分子组织与外部刺激对动力学的影响，以及其在光伏、光探测、光催化、量子光源等方向的近期应用进展。该综述指出，当前仍缺乏统一机制框架，对聚合物及无序体系中单线态裂分的理解有限，稳定高性能材料库也有待扩展，因此可为相关研究人员梳理现有认识边界与潜在方向。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Lijuan Xue",
-        "Haimei Wang",
-        "Lei Shen",
-        "Xiuling Jiao",
-        "Dairong Chen",
-        "John Wang"
+        "Lijuan Xue, Haimei Wang, Lei Shen, Xiuling Jiao, Dairong Chen, John Wang"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -223214,8 +222358,8 @@
       "published_at": "2026-08-13T19:26:25+00:00",
       "first_seen": "2026-11-06T02:01:23.988294+00:00",
       "excerpt": "Autonomous systems can fail in rare and heterogeneous ways, making real-world failure discovery difficult under limited testing budgets. Although cheaper proxies such as simulators, lower-fidelity systems, or related policies can be sampled extensively to find failures, proxy failures often do not transfer to the real world due to sim-to-real and system-to-system gaps. The key challenge is therefore to effectively leverage proxy system information for accurate prediction of severe target system failures. We propose an adaptive failure discovery method that combines proxy evaluations with limited target system results to guide scenario selection for target system testing. Our method learns a local predictor of target risk by correcting proxy failure signals using control-variate-inspired residual modeling. To find failures that are both likely and diverse, we combine this predictor with a support-aware mutual-information objective that favors realistic, well-supported regions while expanding coverage across failure modes. Across autonomous driving, manipulation, and quadruped velocity-tracking tasks, our method discovers up to 2$\\times$ as many failures as random sampling and active-learning baselines, including severe and diverse failures missed by competing methods.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出一种面向配对系统的覆盖感知主动评估方法，用代理评估结果与有限目标系统结果相结合，通过控制变量式残差建模校正代理失败信号并学习目标风险的局部预测器，再结合支持感知的互信息目标来选取目标系统测试场景。该方法面向在有限测试预算下发现自治系统稀有且多样失效的研究问题，但摘要中的性能提升（如最高达随机采样和主动学习基线的两倍）来自原文报告，尚非独立验证结论。",
+      "summary_kind": "ai_summary",
       "alpha_rank": 4,
       "authors": [
         "Anjali Parashar",
@@ -240160,6 +239304,82 @@
       }
     },
     {
+      "id": "bbbc619da2d4ab90ef278c46",
+      "url": "https://arxiv.org/abs/2605.07496",
+      "title": "PathPainter: Transferring the Generalization Ability of Image Generation Models to Embodied Navigation",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-05-08T09:33:19+00:00",
+      "first_seen": "2026-11-06T03:39:04.453897+00:00",
+      "excerpt": "Bird's-eye-view (BEV) images have been demonstrated to provide valuable prior information for navigation. Given the global information provided by such views, two key challenges remain: how to fully exploit this information and how to reliably use it during execution. In this paper, we propose a navigation system that uses BEV images as global priors and is designed for ground and near-ground robotic platforms. The system employs an image generation model to interpret human intent from natural language, identify the target destination, and generate traversability masks. During execution, we introduce cross-view localization to align the robot's odometry with the BEV map and mitigate long-term drift in conventional odometry. We conduct extensive benchmark experiments to evaluate the proposed method and further validate its effectiveness on both UAV and quadruped robot platforms. Using only a conventional local motion planner, the quadruped robot successfully completes a 285-meter outdoor long-range navigation task. This work demonstrates how the world-understanding capabilities of foundation models can be transferred to embodied navigation, enabling robots to benefit from the strong generalization ability of existing image generation models.",
+      "summary": "本文提出了一种以鸟瞰图图像为全局先验、面向地面与近地面机器人平台的导航系统，利用图像生成模型从自然语言中解析人类意图并生成可通行区域掩膜，并在执行阶段引入跨视角定位以将机器人里程计与鸟瞰图地图对齐、缓解长期漂移。该系统在基准实验中进行了评估，并在无人机和四足机器人平台上得到验证，其中四足机器人仅使用常规局部运动规划器即完成285米户外长距离导航任务，表明基础模型的世界理解能力可迁移至具身导航，使机器人受益于现有图像生成模型的泛化能力；所提供的公开材料未给出其他性能数字或独立复现结论。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 4,
+      "authors": [
+        "Yijin Wang",
+        "Yuru Tian",
+        "Xijie Huang",
+        "Weiqi Gai",
+        "Mo Zhu",
+        "Xin Zhou",
+        "Yuze Wu",
+        "Fei Gao"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：generation。"
+        },
+        {
+          "id": "zotero:e09a09615a9a79995ffd756fcf67aa3f",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8115,
+      "topic_cache_token": "40deb847e8c94edaf9a49e08f65c3bd6da35edc4909e08ee8002e78f0c8c458c",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "8541ad4ce4b57c7f2140576a",
       "url": "https://arxiv.org/abs/2605.03780",
       "title": "Task Vector Geometry Underlies Dual Modes of Task Inference in Transformers",
@@ -241107,13 +240327,13 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-11-06T02:01:23.988294+00:00",
+    "last_success": "2026-11-06T03:39:04.453897+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 117,
-      "unclassified": 1777,
+      "classified": 6,
+      "unclassified": 1756,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
       "quality_status": "unmeasured",
@@ -241217,8 +240437,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
       "status": "ok",
       "count": 11
     },
@@ -241226,7 +240446,7 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -241237,8 +240457,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
       "status": "ok",
       "count": 12
     },
@@ -241246,8 +240466,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
       "status": "ok",
       "count": 12
     },
@@ -241255,8 +240475,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
       "status": "ok",
       "count": 11
     },
@@ -241264,8 +240484,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
       "status": "ok",
       "count": 1
     },
@@ -241273,8 +240493,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
       "status": "ok",
       "count": 12
     },
@@ -241282,8 +240502,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
       "status": "ok",
       "count": 0
     },
@@ -241294,20 +240514,18 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-05T03:42:45.761728+00:00",
+      "status": "ok",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
       "count": 174,
       "counters": {
         "relevant": 4,
         "pending": 170,
         "excluded": 2,
-        "fetched": 71,
+        "fetched": 149,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "journal-advanced-energy-materials",
@@ -241317,14 +240535,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
       "count": 62,
       "counters": {
         "relevant": 8,
         "pending": 54,
         "excluded": 276,
-        "fetched": 161,
+        "fetched": 155,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -241337,14 +240555,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-06T02:01:23.988294+00:00",
-      "count": 190,
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
+      "count": 191,
       "counters": {
-        "relevant": 29,
+        "relevant": 30,
         "pending": 161,
-        "excluded": 1412,
-        "fetched": 342,
+        "excluded": 1419,
+        "fetched": 325,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -241357,14 +240575,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
       "count": 184,
       "counters": {
         "relevant": 27,
         "pending": 157,
         "excluded": 821,
-        "fetched": 287,
+        "fetched": 199,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -241377,7 +240595,7 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
       "last_success": "2026-11-05T03:42:45.761728+00:00",
       "count": 102,
       "counters": {
@@ -241399,14 +240617,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
       "count": 103,
       "counters": {
         "relevant": 1,
         "pending": 102,
         "excluded": 619,
-        "fetched": 251,
+        "fetched": 237,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -241418,18 +240636,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
       "last_success": "2026-11-06T02:01:23.988294+00:00",
       "count": 1058,
       "counters": {
         "relevant": 10,
         "pending": 1048,
         "excluded": 991,
-        "fetched": 369,
+        "fetched": 8,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-nature-materials",
@@ -241439,14 +240659,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
       "count": 29,
       "counters": {
         "relevant": 0,
         "pending": 29,
         "excluded": 31,
-        "fetched": 18,
+        "fetched": 16,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -241458,20 +240678,18 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-05T03:42:45.761728+00:00",
-      "count": 137,
+      "status": "ok",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
+      "count": 116,
       "counters": {
         "relevant": 1,
-        "pending": 136,
-        "excluded": 199,
-        "fetched": 45,
+        "pending": 115,
+        "excluded": 223,
+        "fetched": 129,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "journal-science-advances",
@@ -241480,27 +240698,25 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-05T03:42:45.761728+00:00",
+      "status": "ok",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
       "count": 21,
       "counters": {
         "relevant": 2,
         "pending": 19,
-        "excluded": 626,
-        "fetched": 41,
+        "excluded": 631,
+        "fetched": 112,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
       "status": "ok",
       "count": 1
     },
@@ -241508,8 +240724,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
       "status": "ok",
       "count": 12
     },
@@ -241517,8 +240733,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
       "status": "ok",
       "count": 1
     },
@@ -241526,8 +240742,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
       "status": "ok",
       "count": 0
     },
@@ -241535,8 +240751,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
-      "last_success": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
+      "last_success": "2026-11-06T03:39:04.453897+00:00",
       "status": "ok",
       "count": 12
     },
@@ -241545,7 +240761,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 20,
-      "last_attempt": "2026-11-06T02:01:23.988294+00:00",
+      "last_attempt": "2026-11-06T03:39:04.453897+00:00",
       "last_success": "2026-11-06T02:00:32.532845+00:00",
       "run_id": "42146915462",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -241553,16 +240769,16 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 24,
+    "generated": 9,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
       "status": "partial",
       "attempted": 8,
-      "public_html": 1,
+      "public_html": 4,
       "bohr_graph": 0,
-      "fallback": 7,
-      "bohr_calls": 2
+      "fallback": 4,
+      "bohr_calls": 0
     }
   },
   "policy": {
