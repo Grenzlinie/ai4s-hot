@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-07T01:33:31.038263+00:00",
+  "generated_at": "2026-11-07T03:11:51.191923+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -1266,80 +1266,6 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.9118,
       "topic_cache_token": "32a18043233ed744fea3b5843b5d142fdcd4cc99bbeb64156f0aff4084090984",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "bcb545300280a1f0fe7189e7",
-      "url": "https://doi.org/10.1038/s41467-026-79006-6",
-      "title": "CO2 responsive nanoscopic and macroscopic materials directed by peptides",
-      "source_ids": [
-        "journal-nature-communications"
-      ],
-      "source_names": [
-        "Nature Communications"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-07T00:00:00+00:00",
-      "first_seen": "2026-11-07T01:33:31.038263+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "T. Farrokhi",
-        "S. V. Ceballos",
-        "S. M. Silva",
-        "M. B. Ross"
-      ],
-      "journal_id": "nature-communications",
-      "journal_title": "Nature Communications",
-      "journal_issns": [
-        "2041-1723"
-      ],
-      "publisher": "Springer Nature",
-      "doi": "10.1038/s41467-026-79006-6",
-      "published_online_at": "2026-11-07T00:00:00+00:00",
-      "published_print_at": null,
-      "indexed_at": "2026-11-07T01:25:51+00:00",
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
-          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
-          "method": "local_lexical_v2",
-          "score": 0.0588,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题中的明确材料领域词，保留材料研究根类；未使用摘要，不推断叶类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
-      ],
-      "topic_ids": [
-        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:materials"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.8571,
-      "topic_cache_token": "ba55040a10f3577966eba8813cf10930ef7e5c8fc989a89249437fe247e5716e",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -4141,12 +4067,14 @@
       "source_ids": [
         "arxiv-ai4s",
         "semantic-scholar",
-        "zotero"
+        "zotero",
+        "alphaxiv"
       ],
       "source_names": [
         "arXiv / AI4S",
         "Semantic Scholar",
-        "Zotero 为你推荐"
+        "Zotero 为你推荐",
+        "alphaXiv Hot"
       ],
       "group": "science",
       "groups": [
@@ -4209,7 +4137,8 @@
       "topic_coverage": 0.932,
       "topic_cache_token": "b2769e0e49f524459286ac5db300fc1866ee8aa02c44f850bb0d8580f3009433",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "alpha_rank": 8
     },
     {
       "id": "3cc810d4cea085415783dcd6",
@@ -4234,7 +4163,7 @@
       "excerpt": "Models for physical AI tasks, such as robotics and autonomous driving, need not reason solely in language. They can use visual plans--points, bounding boxes, and trajectories--to represent spatial goals and anticipate motion. However, autoregressive vision-language models generate these plans one coordinate token at a time, making richer predictions increasingly costly. We introduce VFlash, a method for fast, accurate visual planning through Flash Primitive Decoding. VFlash exploits the known structure of visual primitives to predict their coordinates jointly, using a lightweight drafter that generates an entire primitive in one forward pass. The layout adapts to the primitive's type, dimensionality, and length, supporting compact boxes and long, variable-length trajectories. Crucially, spatial accuracy need not require reproducing an autoregressive model's exact token sequence. VFlash therefore trains on annotated primitives and directly accepts structurally valid predictions without target-token agreement. Across the evaluated 2D and 3D robot trajectory tasks, VFlash consistently reduces prediction errors relative to autoregressive decoding. Preliminary single-rollout measurements indicate approximately 25x faster generation for 3D point motion forecasting. A world action model conditioned on VFlash plans achieves 70.2% average success across four MolmoSpaces task suites, compared with 62.6% for the baseline.",
       "summary": "本文提出 VFlash，一种通过 Flash Primitive Decoding 联合预测视觉基元坐标的并行解码方法，并在评估的 2D 和 3D 机器人轨迹任务上降低了预测误差。该方法据原文可用于降低下游机器人操作流水线的推理延迟并为动作模型提供条件；原文同时说明，约 25 倍加速仅为 3D 点运动预测的单次 rollout 初步测量结果，且该加速未经独立验证。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 1,
+      "alpha_rank": 2,
       "authors": [
         "Yu-Cheng Chou",
         "Shihao Wang",
@@ -4316,7 +4245,7 @@
       "excerpt": "Neural networks are likely to be among the most consequential artefacts in human history. As these systems become more capable and autonomous, their potential to cause societal harm also grows, making AI safety one of the defining challenges of our time. Yet we continue to build increasingly powerful systems without fully understanding how they work, how they will behave in unfamiliar situations, or how to reliably control them. Mechanistic interpretability offers a path towards understanding these systems by studying their internal representations and computations, with the aim of evaluating, predicting, and controlling behaviour. We survey mechanistic interpretability for AI safety in order to answer the question: Does understanding how models work actually make them safer? We place mechanistic interpretability in the broader context of interpretability research and compare its mechanistic evidence with behavioural evaluation. We introduce the foundations of mechanistic interpretability, including features, polysemanticity, transformer computation, and circuits, and survey methods for feature extraction and analysis, circuit discovery and causal verification, explaining intermediate representations in natural language, learning dynamics, and training-data attribution. Beyond surveying existing methods, we propose a unified framework for evaluating mechanistic interpretability claims and characterise six research orientations by their goals, assumptions, and trade-offs. Finally, we examine how mechanistic understanding can support AI safety, including knowledge editing, steering, and monitoring, and assess its limitations, failure modes, open problems, and relationship to behavioural safety measures. We also release a repository of code notebooks with worked examples that reproduce key findings from surveyed methods, allowing readers to build intuition through hands-on experimentation.",
       "summary": "本文综述了面向AI安全的机制可解释性研究，梳理了特征、多义性、Transformer计算与电路等基础概念及相关方法，并提出了评估机制可解释性主张的统一框架。该工作可用于了解机制可解释性如何支持知识编辑、引导与监控等安全用途，同时明确指出其在局限性、失败模式与开放问题上仍需进一步检验。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 2,
+      "alpha_rank": 1,
       "authors": [
         "Fazl Barez",
         "Tung-Yu Wu",
@@ -4410,7 +4339,7 @@
       "excerpt": "Humanoid robots are typically trained as solitary agents, leaving them unable to coordinate physically with human partners who naturally anticipate and adjust to one another. To bridge this gap, we present Social Humanoid, a hierarchical system that generates and executes socially responsive whole-body motion on a 29-DoF Unitree G1 conditioned on a human partner's motion. Its high-level policy performs flexible sequence modeling of human and humanoid motion through a shared tokenized representation, generating reactive humanoid motion and anticipating the partner's motion when they are occluded, while a low-level whole-body tracking controller executes the generated motion on the robot. To train the system, we introduce a two-phase adaptive retargeting procedure that retargets one interaction partner to the robot while morphing the other partner to preserve contact dynamics, reachability, and relative body scale. We apply this procedure across five motion-capture datasets to produce a new Human-Humanoid Interaction (HHI) benchmark of 260 hours of human-humanoid interactions. Our results demonstrate that Social Humanoid produces coordinated, human-aligned behavior across diverse interaction types in simulation and the real world. Project page: https://von31.github.io/social-humanoid/",
       "summary": "本文提出Social Humanoid分层系统，在29自由度Unitree G1上根据人类伙伴动作生成并执行社交响应式全身运动，并通过两阶段自适应重定向构建260小时人-人形交互基准。该系统可用于研究人机物理协调与遮挡时伙伴动作预判，但摘要称性能仅在仿真和真实世界展示协调行为，未给出量化结果，尚需独立验证。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 8,
+      "alpha_rank": 9,
       "authors": [
         "Vongani H. Maluleke",
         "James Ni",
@@ -4788,7 +4717,7 @@
       "excerpt": "How would we know whether a machine truly understands the world? We argue that one key capability is \\textit{observational theory learning}: acquiring reusable theories from pure observations and applying them to new situations. Current visual reasoning benchmarks focus primarily on the latter, presenting each task as a few-shot puzzle grouped by a common rule. We introduce BabyTheorist, a benchmark for controlled training and evaluation of observational theory learning. BabyTheorist generates continual streams of before-after visual observations from hidden compositional programs; during training, learners see only the resulting transitions, with no program labels, task identities, or support sets. To support theory learning and evaluation, BabyTheorist controls the program language, a curriculum over program complexity, recurring frequent subprograms, and a continual train-test protocol with level skipping. Seven representative baselines plateau well below ceiling, with the gap widening as the curriculum advances---evidence that BabyTheorist isolates a capability current program-learning approaches do not yet address.",
       "summary": "本文提出BabyTheorist基准，通过隐藏组合程序生成连续的“前—后”视觉观察流，让学习者在训练中仅接触由此产生的结果转变，并配以程序语言控制、复杂度课程、频繁子程序设置及带跳级的持续训练—测试协议，用于受控地训练和评估观察性理论学习。该基准可用于考察机器能否从纯观察中获取可复用理论并迁移到新情境，但原文仅报告七个代表性基线明显低于上限且差距随课程推进而扩大，据此说明当前程序学习方法尚未解决这一能力，尚未给出可验证的性能数字。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 9,
+      "alpha_rank": 10,
       "authors": [
         "Doojin Baek",
         "Junyeob Baek",
@@ -5183,8 +5112,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "James A. Evans",
-        "E. Glen Weyl"
+        "James A. Evans and E. Glen Weyl"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -5373,8 +5301,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Blánaid Hicks",
-        "Anton Pottegård"
+        "Blánaid Hicks and Anton Pottegård"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -5490,8 +5417,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Kenneth C. Shadlen",
-        "Olivier J. Wouters"
+        "Kenneth C. Shadlen and Olivier J. Wouters"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -5549,11 +5475,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Nan Wang",
-        "Hai-Dong Li",
-        "Hao Shi",
-        "Xiao-Mian Zhang",
-        "Li Liu"
+        "Nan Wang, Hai-Dong Li, Hao Shi, Xiao-Mian Zhang, and Li Liu"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -5669,19 +5591,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Sacha Vignieri",
-        "Phil Szuromi",
-        "Jesse Smith",
-        "Jelena Stajic",
-        "Christiana N. Fogg",
-        "Laura Ensign",
-        "L. Bryan Ray",
-        "Priscilla N. Kelly",
-        "Yevgeniya Nusinovich",
-        "Angela Hessler",
-        "Yury Suleymanov",
-        "Annalisa VanHook",
-        "Ji-Xin Cheng"
+        "Michael Funk, and Sacha Vignieri, Phil Szuromi, Jesse Smith, Jelena Stajic, Christiana N. Fogg, Laura Ensign, L. Bryan Ray, Priscilla N. Kelly, Yevgeniya Nusinovich, Angela Hessler, Yury Suleymanov, Annalisa VanHook, and Ji-Xin Cheng"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -5739,8 +5649,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Zara Harmon",
-        "Caroline F. Rowland"
+        "Zara Harmon and Caroline F. Rowland"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -5914,10 +5823,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Yevgeniya Nusinovich",
-        "Mattia Maroso",
-        "Joana OsÓRio",
-        "Brad Wible"
+        "Yevgeniya Nusinovich, Mattia Maroso, Joana OsÓRio, and Brad Wible"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -6033,13 +5939,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Corinne Simonti",
-        "Jack Huang",
-        "Bianca Lopez",
-        "Phil Szuromi",
-        "Melissa McCartney",
-        "Joana Osório",
-        "Ian S. Osborne"
+        "Corinne Simonti, and Jesse Smith, Corinne Simonti, Jack Huang, Bianca Lopez, Phil Szuromi, Melissa McCartney, Joana Osório, and Ian S. Osborne"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -6329,8 +6229,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Nora D. Volkow",
-        "Eric M. Wargo"
+        "Nora D. Volkow and Eric M. Wargo"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -9878,7 +9777,7 @@
       "excerpt": "AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated sub-tasks, or paper reproduction with given solutions, and rarely check research quality alongside correctness. We introduce FrontierPhysics, an end-to-end benchmark with 56 tasks made by 42 physicists based on their own research, covering nine domains across theoretical, computational, and experimental physics. Each task requires agents to review the literature, develop a research plan, conduct research and experiments, and produce structured outputs and scientific manuscripts. Combining deterministic verifiers with expert-authored rubrics, FrontierPhysics evaluates whether agents' research is correct and publishable. Across 22 models in 26 configurations, no configuration passes more than 46 of its 168 rollouts. Manual review of agent trajectories shows that frontier agents' main weaknesses are insufficiently rigorous reasoning and limited expert intuition, rather than gaps in physics knowledge or execution errors.",
       "summary": "该论文提出端到端物理研究基准 FrontierPhysics（含42位物理学家设计的56个跨九大领域任务，要求智能体完成文献综述、研究规划、实验与论文撰写，并结合确定性验证和专家量表评估研究的正确性与可发表性），对22个模型26种配置的测试显示最佳配置也仅通过168次中的46次，且主要瓶颈是推理不够严谨与专家直觉不足，而非物理知识或执行错误。",
       "summary_kind": "upstream_tldr",
-      "alpha_rank": 5,
+      "alpha_rank": 6,
       "authors": [
         "Bingran You",
         "Wenjun Ke",
@@ -16112,7 +16011,7 @@
       "excerpt": "Later tokens are costlier to generate than earlier tokens. On frontier open weight models, the disparity in cost may rise to as much as 7x. Through frequent compaction, we show across a broad range of long-horizon and long-input tasks that frontier language models sacrifice little to no task accuracy when maintaining short contexts. We further demonstrate that LLM performance does not collapse on long-horizon software engineering tasks even when taking at most one action per context, and based on that we outline the concept of semantic state space models (SSSMs). Our findings question the need for long-context language models.",
       "summary": "本文通过频繁压缩上下文，在多种长程与长输入任务上测试前沿语言模型维持短上下文时的任务准确率，并报告在长程软件工程任务中每次上下文最多执行一个动作时性能未崩溃，据此提出语义状态空间模型（SSSM）概念。上述结论来自服务提取的摘要，未阅读完整全文，也未验证其性能数字；原文明确表示这些发现对长上下文语言模型的必要性提出了质疑，但研究问题与限制的边界应以原文及后续验证为准。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 6,
+      "alpha_rank": 5,
       "authors": [
         "Peter Belcak",
         "Saurav Muralidharan",
@@ -16732,7 +16631,7 @@
       "summary": "本文在可控合成调控系统中追踪七个大语言模型的实验轨迹，发现模型往往能恢复健康表型却无法正确诊断隐藏故障，并指出失败源于模型难以预测各竞争性病因下实验的结果，而非探索不足或证据不可获得。该工作对科研工作的用途在于提示仅以干预是否成功评估科学智能体可能掩盖因果推理缺陷，其限制是结论来自合成系统与摘要所述实验设置，公开材料未验证完整全文。",
       "summary_kind": "ai_summary",
       "authors": [
-        "A. Gogleva",
+        "Anna Gogleva",
         "Thomas Charman",
         "Martin Balla",
         "Karl Gemayel"
@@ -16939,14 +16838,14 @@
       "summary": "本文提出“面向科学发现的具身AI”这一统一视角，用操作闭合、认知闭合和证据闭合三个层次组织机器人学习与科学AI交叉领域的文献，并通过记录—诊断—校准—确认的证据循环、委托决策分类和28个工作流证据地图来比较不同物理实验流程。该框架可用于按实验记录所能支撑的论证深度而非单一加速指标来评估自主实验系统，但原文所述结论基于作者自建的叙述性综述与证据地图，并非已验证标准，且部分贡献在提供的摘录中未完整呈现。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Wen-Hao Xu",
+        "Wenhao Xu",
         "Changwei Wang",
-        "Shun-Peng Chen",
-        "Yu-Kun Song",
-        "Si-Fan Zhou",
-        "Kai-Ze Luo",
-        "Shi-Biao Xu",
-        "Yue-Hua Zhao",
+        "Shunpeng Chen",
+        "Yukun Song",
+        "Sifan Zhou",
+        "Kaize Luo",
+        "Shibiao Xu",
+        "Yuehua Zhao",
         "Rongtao Xu"
       ],
       "topic_labels": [
@@ -18589,22 +18488,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Tingting Guo",
-        "Yu Zhu",
-        "Zhe Zhang",
-        "Ruiman Han",
-        "Hanzhe Shi",
-        "Haoyu Li",
-        "Wenkai Zhao",
-        "Jing Zhang",
-        "Mengfan Li",
-        "Chen Geng",
-        "Wangqiao Chen",
-        "Guankui Long",
-        "Guanghui Li",
-        "Zhaoyang Yao",
-        "Yanfang Wang",
-        "Yongsheng Chen"
+        "Tingting Guo, Yu Zhu, Zhe Zhang, Ruiman Han, Hanzhe Shi, Haoyu Li, Wenkai Zhao, Jing Zhang, Mengfan Li, Chen Geng, Wangqiao Chen, Guankui Long, Guanghui Li, Zhaoyang Yao, Yanfang Wang, Yongsheng Chen"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -21964,14 +21848,14 @@
         "Eric R. Sokol",
         "Marty Downs",
         "Gina Glenne",
-        "G. Maurer",
-        "S. Record",
+        "Gregory E. Maurer",
+        "Sydne Record",
         "Dustin R. Rubenstein",
-        "Matthew Thompson",
+        "Matthew J. Thompson",
         "Christine Laney",
-        "H. Lapp",
-        "M. Tarján",
-        "Tanya Y. Berger-Wolf"
+        "Hilmar Lapp",
+        "Max Tarjan",
+        "Tanya Berger-Wolf"
       ],
       "topic_labels": [
         {
@@ -29329,10 +29213,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Hongbin Na",
-        "Kyeonghyeon Nam",
-        "Yonghyuk Lee",
-        "Sung-Kon Kim"
+        "Hongbin Na, Kyeonghyeon Nam, Yonghyuk Lee, Sung-Kon Kim"
       ],
       "journal_id": "advanced-energy-materials",
       "journal_title": "Advanced Energy Materials",
@@ -29513,22 +29394,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Guolang Zhou",
-        "Minmeng Tang",
-        "Xinwang Xu",
-        "Xin Tang",
-        "Tianshi Wang",
-        "Chong Zhao",
-        "Chao Tang",
-        "Cheng Liu",
-        "Tengfei Miao",
-        "Le Xu",
-        "Yubo Yan",
-        "Zhendong Yu",
-        "Zhipeng Cheng",
-        "Lili Zhang",
-        "Wenshuai Zhu",
-        "Junwu Zhu"
+        "Guolang Zhou, Minmeng Tang, Xinwang Xu, Xin Tang, Tianshi Wang, Chong Zhao, Chao Tang, Cheng Liu, Tengfei Miao, Le Xu, Yubo Yan, Zhendong Yu, Zhipeng Cheng, Lili Zhang, Wenshuai Zhu, Junwu Zhu"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -108167,6 +108033,84 @@
       "topic_cache_token": "248b444c6d83808838d9161fb1ca1c9706d1f11202e936d55f7d0bd4cea7bed5",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "da19d389ff3b026b75c0ebae",
+      "url": "https://arxiv.org/abs/2610.20333",
+      "title": "VIGOR-MPC: Vision-Guided Objective Regulation MPC",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-10-14T15:15:32+00:00",
+      "first_seen": "2026-11-07T03:11:51.191923+00:00",
+      "excerpt": "Controlling an agent in an environment solely perceived through onboard vision is challenging: perception yields noisy, variable-length, and partially occluded context, while onboard compute is shared between perception and control, limiting the planning horizon executable in real time. We propose VIGOR-MPC, a modular student-teacher framework, agnostic to the perception pipeline, which addresses reference tracking across navigation tasks by distilling a privileged, field-of-view-aware long-horizon MPC into a computationally lightweight short-horizon MPC whose cost parameters are determined online from vision. The teacher operates in simulation with full state knowledge and a multi-trajectory formulation that guarantees the agent can stay within its field of view. The student observes only the noisy, occluded context produced by a perception module and learns, via a multi-level recurrent mapping, to infer cost parameters that aim to recover the teacher's behavior despite missing information. We evaluate VIGOR-MPC on vision-based autonomous racing in simulation and on hardware. Using only onboard perception of the track, VIGOR-MPC generalizes to tracks unseen during training and approaches the lap times of the privileged long-horizon teacher while reducing per-step computation by over 90%.",
+      "summary": "VIGOR-MPC提出一种模块化学生-教师框架，将具备全状态知识且保证视场约束的特权长时域MPC蒸馏为计算轻量的短时域MPC，其代价参数由感知模块输出的含噪、遮挡且变长的视觉上下文通过多级循环映射在线推断。该框架在仿真和硬件的视觉自动驾驶赛车任务中进行了评估，作者报告其仅凭车载感知即可泛化至训练中未见赛道，并接近特权教师的圈速，同时每步计算量降低超过90%；但相关性能数字来自原文声明，且该方法是针对参考跟踪任务蒸馏MPC代价参数，其适用性和泛化边界仍受感知噪声、遮挡以及未建模环境所限。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 4,
+      "authors": [
+        "Jelena Trisovic",
+        "Rahel Rickenbach",
+        "Marek Landert",
+        "Panagiotis Minos",
+        "Melanie N. Zeilinger"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：training。"
+        },
+        {
+          "id": "zotero:8f22e62349472c4815f4275fbcf89c76",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：agent。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7937,
+      "topic_cache_token": "171bfca517c4388fe769be961203116dbffb50ab037d66e3fdd6a96db354e111",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.20333",
+        "sha256": "2231a8c5b623a5b1c5223963d7f18d01078a5db25c06c5425ab0fa5c35fa515d",
+        "chars": 12000
+      }
     },
     {
       "id": "377b15d0b062f5fe6f23cc90",
@@ -226075,7 +226019,7 @@
       "doi": "10.1002/adma.74491",
       "published_online_at": "2026-08-17T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-16T15:57:58+00:00",
+      "indexed_at": "2026-11-07T02:35:05+00:00",
       "journal_relevance": {
         "status": "relevant",
         "method": "rule-v1",
@@ -229376,7 +229320,7 @@
       "doi": "10.1038/s41467-026-76296-8",
       "published_online_at": "2026-08-12T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-06T01:12:10+00:00",
+      "indexed_at": "2026-11-07T01:37:08+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -245641,12 +245585,12 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-11-07T01:33:31.038263+00:00",
+    "last_success": "2026-11-07T03:11:51.191923+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 80,
+      "classified": 1,
       "unclassified": 1776,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
@@ -245751,8 +245695,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
       "status": "ok",
       "count": 10
     },
@@ -245760,7 +245704,7 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -245771,8 +245715,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
       "status": "ok",
       "count": 12
     },
@@ -245780,8 +245724,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
       "status": "ok",
       "count": 12
     },
@@ -245789,8 +245733,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
       "status": "ok",
       "count": 11
     },
@@ -245798,8 +245742,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
       "status": "ok",
       "count": 1
     },
@@ -245807,8 +245751,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
       "status": "ok",
       "count": 12
     },
@@ -245816,8 +245760,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
       "status": "ok",
       "count": 0
     },
@@ -245829,14 +245773,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
       "count": 176,
       "counters": {
         "relevant": 4,
         "pending": 172,
         "excluded": 2,
-        "fetched": 113,
+        "fetched": 101,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -245849,14 +245793,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
       "count": 62,
       "counters": {
         "relevant": 8,
         "pending": 54,
         "excluded": 278,
-        "fetched": 157,
+        "fetched": 149,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -245869,14 +245813,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
       "count": 192,
       "counters": {
         "relevant": 30,
         "pending": 162,
         "excluded": 1429,
-        "fetched": 436,
+        "fetched": 403,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -245889,14 +245833,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
       "count": 189,
       "counters": {
         "relevant": 27,
         "pending": 162,
         "excluded": 901,
-        "fetched": 304,
+        "fetched": 283,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -245909,14 +245853,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
       "count": 102,
       "counters": {
         "relevant": 1,
         "pending": 101,
         "excluded": 2,
-        "fetched": 111,
+        "fetched": 105,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -245929,14 +245873,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
       "count": 103,
       "counters": {
         "relevant": 1,
         "pending": 102,
         "excluded": 629,
-        "fetched": 256,
+        "fetched": 222,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -245949,14 +245893,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
-      "count": 1076,
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
+      "count": 1075,
       "counters": {
         "relevant": 10,
-        "pending": 1066,
-        "excluded": 1010,
-        "fetched": 360,
+        "pending": 1065,
+        "excluded": 1012,
+        "fetched": 280,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -245969,14 +245913,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
       "count": 29,
       "counters": {
         "relevant": 0,
         "pending": 29,
         "excluded": 35,
-        "fetched": 21,
+        "fetched": 18,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -245988,18 +245932,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
       "last_success": "2026-11-07T01:33:31.038263+00:00",
       "count": 117,
       "counters": {
         "relevant": 1,
         "pending": 116,
         "excluded": 223,
-        "fetched": 132,
+        "fetched": 45,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-science-advances",
@@ -246008,25 +245954,27 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
       "last_success": "2026-11-07T01:33:31.038263+00:00",
       "count": 23,
       "counters": {
         "relevant": 2,
         "pending": 21,
         "excluded": 675,
-        "fetched": 201,
+        "fetched": 81,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
       "status": "ok",
       "count": 1
     },
@@ -246034,8 +245982,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
       "status": "ok",
       "count": 12
     },
@@ -246043,8 +245991,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
       "status": "ok",
       "count": 1
     },
@@ -246052,8 +246000,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
+      "last_success": "2026-11-07T03:11:51.191923+00:00",
       "status": "ok",
       "count": 0
     },
@@ -246061,17 +246009,19 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
       "last_success": "2026-11-07T01:33:31.038263+00:00",
-      "status": "ok",
-      "count": 12
+      "status": "error",
+      "count": 0,
+      "message": "采集失败，保留上次结果",
+      "error_type": "HTTPError"
     },
     {
       "id": "zotero",
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 20,
-      "last_attempt": "2026-11-07T01:33:31.038263+00:00",
+      "last_attempt": "2026-11-07T03:11:51.191923+00:00",
       "last_success": "2026-11-07T01:32:39.822118+00:00",
       "run_id": "42324135377",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -246079,15 +246029,15 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 20,
+    "generated": 1,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
       "status": "partial",
-      "attempted": 8,
+      "attempted": 2,
       "public_html": 1,
       "bohr_graph": 0,
-      "fallback": 7,
+      "fallback": 1,
       "bohr_calls": 0
     }
   },
