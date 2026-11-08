@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-08T00:59:26.012870+00:00",
+  "generated_at": "2026-11-08T02:41:35.303536+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -3808,17 +3808,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Yuna Wu",
-        "Xiaojie Qi",
-        "Yunfei Zhou",
-        "Huan Liu",
-        "Ting Yuan",
-        "Jinghua Jiang",
-        "Fei Chu",
-        "Qianwen Zhou",
-        "Panpan Zhou",
-        "Xuezhang Xiao",
-        "Lixin Chen"
+        "Yuna Wu, Xiaojie Qi, Yunfei Zhou, Huan Liu, Ting Yuan, Jinghua Jiang, Fei Chu, Qianwen Zhou, Panpan Zhou, Xuezhang Xiao, Lixin Chen"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -5024,7 +5014,7 @@
       "summary_kind": "upstream_tldr",
       "authors": [
         "Taiming Lu",
-        "Sachin Konan",
+        "Sachin G. Konan",
         "Zhuang Liu"
       ],
       "zotero_score": 3.4901463157118555,
@@ -5543,6 +5533,93 @@
       "topic_cache_token": "54493727674f9d0ad7d0cb7d0a5f4881b2c1584725f20dabe5e342f51a587575",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "ee6cdd0f138c0c908a667376",
+      "url": "https://arxiv.org/abs/2611.08286",
+      "title": "Interactive Visual Gym: Evaluating Visual Interaction Models with Simulated Users in Interactive Worlds",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-11-05T16:50:31+00:00",
+      "first_seen": "2026-11-08T02:41:35.303536+00:00",
+      "excerpt": "Visual interaction models that support users during ongoing physical tasks require evaluation in closed loop, where assistant responses can change subsequent user behavior and task outcomes. Existing benchmarks largely rely on offline replay and therefore cannot capture these effects. We introduce Interactive Visual Gym, a framework for closed-loop evaluation and training of visual interaction models through joint simulation of executable task environments and human users. We contribute three simulators that recreate everyday tasks and human-aligned action spaces across cooking, household manipulation, and mobile-interface domains, together with a persona-conditioned user simulation harness that collaborates with the assistant while incorporating controlled execution errors and other out-of-plan behaviors. We instantiate the framework as IVG-Bench, a benchmark with 315 interaction scenarios. Evaluating state-of-the-art VLMs as visual interaction models reveals substantial limitations: the best-performing model, Gemini 4 Argon, completes only 53.4% of tasks within the time limit, exhibits significant weaknesses in factual grounding and actionable guidance, and is often too slow to prevent errors when response latency is considered. We verify our evaluation protocol with a human study which finds 78.5% agreement between our interaction-quality metric and participant preferences. We further show that the environments provide useful learning signals: in a proof-of-concept GRPO experiment, closed-loop training improves both task success and interaction quality for Qwen3.5-4B model in our cooking environment.",
+      "summary": "本文公开介绍了Interactive Visual Gym框架及IVG-Bench基准，通过联合仿真可执行任务环境与带有人设条件的用户模拟来闭环评估视觉交互模型，并报告了在该框架下对若干视觉语言模型的评测结果以及一项小规模GRPO训练概念验证。该框架可用于在闭环中评估依赖用户后续行为变化的交互式视觉辅助模型，但其摘要和引言未提供经独立验证的通用性能结论，且模拟用户可能与真实用户存在系统性偏差，因而结论受来源材料范围限制。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 10,
+      "authors": [
+        "Chenhao Zheng",
+        "Zixian Ma",
+        "Kai Li",
+        "Kanchana Ranasinghe",
+        "Jieyu Zhang",
+        "Artemis Panagopoulou",
+        "Weikai Huang",
+        "Jianxu Shangguan",
+        "Yuanyuan Tan",
+        "Silvio Savarese",
+        "Juan Carlos Niebles",
+        "Ranjay Krishna",
+        "Ran Xu",
+        "Honglu Zhou"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark、evaluation。"
+        },
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8987,
+      "topic_cache_token": "66cf28a15a8913f046c01c547b421b383ad5b9d534a0690fb4467d4f7330299a",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.08286",
+        "sha256": "6dece3adf883552ec8b3ec142110b769b8d93ea21305b3f4a94c08d88221d070",
+        "chars": 12000
+      }
     },
     {
       "id": "37def078f4352fe78125f790",
@@ -6267,8 +6344,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "James A. Evans",
-        "E. Glen Weyl"
+        "James A. Evans and E. Glen Weyl"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -6457,8 +6533,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Blánaid Hicks",
-        "Anton Pottegård"
+        "Blánaid Hicks and Anton Pottegård"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -6574,8 +6649,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Kenneth C. Shadlen",
-        "Olivier J. Wouters"
+        "Kenneth C. Shadlen and Olivier J. Wouters"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -6633,11 +6707,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Nan Wang",
-        "Hai-Dong Li",
-        "Hao Shi",
-        "Xiao-Mian Zhang",
-        "Li Liu"
+        "Nan Wang, Hai-Dong Li, Hao Shi, Xiao-Mian Zhang, and Li Liu"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -6753,19 +6823,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Sacha Vignieri",
-        "Phil Szuromi",
-        "Jesse Smith",
-        "Jelena Stajic",
-        "Christiana N. Fogg",
-        "Laura Ensign",
-        "L. Bryan Ray",
-        "Priscilla N. Kelly",
-        "Yevgeniya Nusinovich",
-        "Angela Hessler",
-        "Yury Suleymanov",
-        "Annalisa VanHook",
-        "Ji-Xin Cheng"
+        "Michael Funk, and Sacha Vignieri, Phil Szuromi, Jesse Smith, Jelena Stajic, Christiana N. Fogg, Laura Ensign, L. Bryan Ray, Priscilla N. Kelly, Yevgeniya Nusinovich, Angela Hessler, Yury Suleymanov, Annalisa VanHook, and Ji-Xin Cheng"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -6823,8 +6881,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Zara Harmon",
-        "Caroline F. Rowland"
+        "Zara Harmon and Caroline F. Rowland"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -6998,10 +7055,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Yevgeniya Nusinovich",
-        "Mattia Maroso",
-        "Joana OsÓRio",
-        "Brad Wible"
+        "Yevgeniya Nusinovich, Mattia Maroso, Joana OsÓRio, and Brad Wible"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -7117,13 +7171,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Corinne Simonti",
-        "Jack Huang",
-        "Bianca Lopez",
-        "Phil Szuromi",
-        "Melissa McCartney",
-        "Joana Osório",
-        "Ian S. Osborne"
+        "Corinne Simonti, and Jesse Smith, Corinne Simonti, Jack Huang, Bianca Lopez, Phil Szuromi, Melissa McCartney, Joana Osório, and Ian S. Osborne"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -7413,8 +7461,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Nora D. Volkow",
-        "Eric M. Wargo"
+        "Nora D. Volkow and Eric M. Wargo"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -10427,7 +10474,7 @@
       "topic_cache_token": "023a30c826fc01ebd9eec85251788c61daa7444ada334fedfa2b1b6ffe075d92",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical",
-      "alpha_rank": 10
+      "alpha_rank": 11
     },
     {
       "id": "ce46af3b95e9f7110c6cf861",
@@ -10609,17 +10656,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Ning Sun",
-        "Zhibo Yao",
-        "Haojing Zhang",
-        "Shucheng Shi",
-        "Qiang Zhang",
-        "Hui Zhang",
-        "Feng Liu",
-        "Yongfeng Hu",
-        "Zhi Liu",
-        "Yongfeng Zhou",
-        "Jun Li"
+        "Ning Sun, Zhibo Yao, Haojing Zhang, Shucheng Shi, Qiang Zhang, Hui Zhang, Feng Liu, Yongfeng Hu, Zhi Liu, Yongfeng Zhou, Jun Li"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -10779,11 +10816,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Shuying Li",
-        "Yachao Zeng",
-        "Zhi-Jian Zhao",
-        "Peng Zhang",
-        "Jinlong Gong"
+        "Shuying Li, Yachao Zeng, Zhi-Jian Zhao, Peng Zhang, Jinlong Gong"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -10879,7 +10912,7 @@
       "excerpt": "We study whether \\emph{long-horizon model-based value expansion} can serve as an effective framework in pixel-based offline reinforcement learning (RL). Long-horizon model-based value expansion from pixels is substantially harder than state-based environments, as the agent must learn both the representation and its dynamics, and errors from either can accumulate recursively over imagined trajectories. We introduce MAC-v2, which enables long-horizon model-based expansion from pixels by training a reconstruction-free latent world model with action chunking. By learning representations from prediction and control objectives, MAC-v2 does not need to encode control-irrelevant visual details that can hinder the dynamics prediction. Action chunking further mitigates the prediction error by reducing the number of recursive model predictions required for value expansion. Across diverse visual benchmarks including visual OGBench, MMBench2, Robomimic, and LIBERO-10, MAC-v2 achieves strong performance against model-free and model-based offline RL baselines. Our analyses show that long-horizon model-based value expansion is critical for the performance of MAC-v2, and that both action chunking and latent learning objectives are essential for reliable long-horizon latent imagination.",
       "summary": "本文提出MAC-v2，通过以动作分块训练无重建的潜在世界模型，在基于像素的离线强化学习中实现长时域基于模型的价值展开，并在多种视觉基准上与无模型和基于模型的离线强化学习基线进行比较。其公开摘要表明该方法可用于从固定视觉数据集中支持长时域想象与价值估计，但摘要中未给出具体性能数值，且所述优势属于作者报告的结果，尚不等同于已独立验证的结论。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 11,
+      "alpha_rank": 6,
       "authors": [
         "Kwanyoung Park",
         "Sergey Levine"
@@ -17416,7 +17449,7 @@
       "excerpt": "Naive on-policy RL is often bottlenecked by the capabilities of the base model --- insufficient coverage can result in an inability to learn from certain rewards. At the same time, rewards in modern post-training systems often come from rich textual sources, e.g. judge models with a rubric of criteria. Can we utilize such structures to provide a rich directional signal that enables improving on otherwise difficult to optimize rewards? In this work, we examine a framework we refer to as targeted guidance that learns from per-turn textual feedback via an on-policy self-distillation objective. Our focus is not only on directly improving hard-to-optimize behaviors, but on how to do so throughout the training process without degrading baseline RL performance. Over a range of settings across an agentic multi-turn software engineering environment, we find success by combining targeted self-distillation with a per-criteria RL reward, and by limiting feedback to turns where the policy specifically fails. We further examine the design choices that lead to stable entropy and reduce oscillatory behavior throughout training.",
       "summary": "本文提出并考察了一种面向智能体强化学习的定向引导框架，通过逐轮文本反馈进行同策略自蒸馏，并结合按标准分解的强化学习奖励，将反馈限制在策略明确失败的轮次，以在训练过程中稳定熵并减少振荡。该框架面向多轮软件工程智能体环境，其用途是改善难以通过常规同策略强化学习优化的行为，同时尽量不降低基线强化学习性能；摘要未给出具体性能数字，相关效果仍需以原文实验为准。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 6,
+      "alpha_rank": 9,
       "authors": [
         "Kevin Frans",
         "Alexander M Rush",
@@ -17895,7 +17928,7 @@
       "summary": "本文在可控合成调控系统中追踪七个大语言模型的实验轨迹，发现模型往往能恢复健康表型却无法正确诊断隐藏故障，并指出失败源于模型难以预测各竞争性病因下实验的结果，而非探索不足或证据不可获得。该工作对科研工作的用途在于提示仅以干预是否成功评估科学智能体可能掩盖因果推理缺陷，其限制是结论来自合成系统与摘要所述实验设置，公开材料未验证完整全文。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Anna Gogleva",
+        "A. Gogleva",
         "Thomas Charman",
         "Martin Balla",
         "Karl Gemayel"
@@ -18102,14 +18135,14 @@
       "summary": "本文提出“面向科学发现的具身AI”这一统一视角，用操作闭合、认知闭合和证据闭合三个层次组织机器人学习与科学AI交叉领域的文献，并通过记录—诊断—校准—确认的证据循环、委托决策分类和28个工作流证据地图来比较不同物理实验流程。该框架可用于按实验记录所能支撑的论证深度而非单一加速指标来评估自主实验系统，但原文所述结论基于作者自建的叙述性综述与证据地图，并非已验证标准，且部分贡献在提供的摘录中未完整呈现。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Wenhao Xu",
+        "Wen-Hao Xu",
         "Changwei Wang",
-        "Shunpeng Chen",
-        "Yukun Song",
-        "Sifan Zhou",
-        "Kaize Luo",
-        "Shibiao Xu",
-        "Yuehua Zhao",
+        "Shun-Peng Chen",
+        "Yu-Kun Song",
+        "Si-Fan Zhou",
+        "Kai-Ze Luo",
+        "Shi-Biao Xu",
+        "Yue-Hua Zhao",
         "Rongtao Xu"
       ],
       "topic_labels": [
@@ -22303,16 +22336,7 @@
       "summary": "本文综述了通过催化、纳米结构、合金化和外场辅助等改性策略调控镁基储氢复合材料热力学与动力学性能的最新进展，并讨论了机器学习在材料设计与优化中的作用及镁基储氢在氢能价值链中的技术经济可行性。该文可为镁基储氢材料的理性设计和后续研究方向提供参考，但其实际应用仍受镁基材料热力学稳定性高和吸放氢动力学缓慢的限制。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Yingyan Zhao",
-        "Yinghui Li",
-        "Bolun Wang",
-        "Xi Lin",
-        "Zhigang Hu",
-        "Ji Nie",
-        "Boyang Mao",
-        "Wenjiang Ding",
-        "Andrea C. Ferrari",
-        "Jianxin Zou"
+        "Yingyan Zhao, Yinghui Li, Bolun Wang, Xi Lin, Zhigang Hu, Ji Nie, Boyang Mao, Wenjiang Ding, Andrea C. Ferrari, Jianxin Zou"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -23112,14 +23136,14 @@
         "Eric R. Sokol",
         "Marty Downs",
         "Gina Glenne",
-        "Gregory E. Maurer",
-        "Sydne Record",
+        "G. Maurer",
+        "S. Record",
         "Dustin R. Rubenstein",
-        "Matthew J. Thompson",
+        "Matthew Thompson",
         "Christine Laney",
-        "Hilmar Lapp",
-        "Max Tarjan",
-        "Tanya Berger-Wolf"
+        "H. Lapp",
+        "M. Tarján",
+        "Tanya Y. Berger-Wolf"
       ],
       "topic_labels": [
         {
@@ -174607,17 +174631,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Yunfei Bu",
-        "Minghao Zhang",
-        "Huixian Liu",
-        "Mengyuan Guo",
-        "Yuxuan Zhang",
-        "Yijing Shang",
-        "Hua Liu",
-        "Xingyu Xiong",
-        "Yantao Zhao",
-        "Zhibin Yang",
-        "Suping Peng"
+        "Yunfei Bu, Minghao Zhang, Huixian Liu, Mengyuan Guo, Yuxuan Zhang, Yijing Shang, Hua Liu, Xingyu Xiong, Yantao Zhao, Zhibin Yang, Suping Peng"
       ],
       "journal_id": "advanced-energy-materials",
       "journal_title": "Advanced Energy Materials",
@@ -179459,26 +179473,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Hongbin Xiao",
-        "Li Tang",
-        "Yi Yang",
-        "Can Deng",
-        "Zhengwei Xu",
-        "Pingping Luo",
-        "Zhuojun Li",
-        "Tianyu Lei",
-        "Liyi Yang",
-        "Heng Li",
-        "Yushan Song",
-        "Shunchang Liu",
-        "Lili Gao",
-        "Yan Zhan",
-        "Tao Lin",
-        "Wenke Zhou",
-        "Jiyun Zhang",
-        "Karen Forberich",
-        "Christoph J. Brabec",
-        "Yicheng Zhao"
+        "Hongbin Xiao, Li Tang, Yi Yang, Can Deng, Zhengwei Xu, Pingping Luo, Zhuojun Li, Tianyu Lei, Liyi Yang, Heng Li, Yushan Song, Shunchang Liu, Lili Gao, Yan Zhan, Tao Lin, Wenke Zhou, Jiyun Zhang, Karen Forberich, Christoph J. Brabec, Yicheng Zhao"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -186541,18 +186536,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Yu Deng",
-        "Keyu Chen",
-        "Wenhe Xie",
-        "Chengcheng Zhu",
-        "Honggang Chen",
-        "Tianming Hu",
-        "Jichun Li",
-        "Xin-Yu Huang",
-        "Xinhua You",
-        "Qunyan Yao",
-        "Wei Luo",
-        "Yonghui Deng"
+        "Yu Deng, Keyu Chen, Wenhe Xie, Chengcheng Zhu, Honggang Chen, Tianming Hu, Jichun Li, Xin-Yu Huang, Xinhua You, Qunyan Yao, Wei Luo, Yonghui Deng"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -219046,14 +219030,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Takeshi Ono",
-        "Tsunaki Takahashi",
-        "Jiangyang Liu",
-        "Haruka Honda",
-        "Zeng Jing",
-        "Wataru Tanaka",
-        "Takuro Hosomi",
-        "Takeshi Yanagida"
+        "Takeshi Ono, Tsunaki Takahashi, Jiangyang Liu, Haruka Honda, Zeng Jing, Wataru Tanaka, Takuro Hosomi, Takeshi Yanagida"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -245973,6 +245950,88 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "ea8fde82e4761fc59d2f68e0",
+      "url": "https://arxiv.org/abs/2606.09258",
+      "title": "Back to the Familiar Future: Failure Recovery for VLA Policies via Pre-Imagined Milestone Selection",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-06-08T09:30:38+00:00",
+      "first_seen": "2026-11-08T02:41:35.303536+00:00",
+      "excerpt": "Vision-language-action (VLA) policies can deviate from nominal trajectories during manipulation, even when tasks remain physically feasible. Recovering from these deviations is challenging, as they push the policy into unfamiliar state spaces where direct re-planning frequently destabilizes action sequences. We propose Back to the Familiar Future (B2FF), a recovery framework for foresight-driven VLAs that leverages future visual conditioning as a recovery interface. Before execution, the VLA generates a milestone bank of familiar future states conditioned on the clean initial observation. At recovery time, a recoverability-aware selector selects a recovery milestone from this bank and enforces it as a fixed visual goal. This enables the VLA to robustly map off-trajectory observations back to a familiar future. On failure-injected LIBERO, under controlled recovery timing aligned with the injected failure, B2FF increases the average success rate of a baseline VLA from 56.3% to 74.0%, demonstrating that pre-imagined milestones can guide recovery without fine-tuning the low-level action generator.",
+      "summary": "本文提出B2FF推理时恢复框架，在冻结VLA策略的前提下，预先从初始观测构建熟悉未来里程碑库，并在执行偏离时由可恢复性感知选择器挑选里程碑作为固定视觉目标来引导动作生成。在注入失败的LIBERO基准上，与注入失败时序对齐的受控恢复条件下，B2FF将该基线VLA的平均成功率从56.3%提升至74.0%，但该结果仅来自该受控实验设置，未声称适用于其他失败模式或真实世界场景。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 4,
+      "authors": [
+        "Suyeon Shin",
+        "Juwon Kim",
+        "Hyeonbin Park",
+        "Hyunseo Kim",
+        "Hyundo Lee",
+        "Hyung-Sin Kim",
+        "Byoung-Tak Zhang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：fine-tuning。"
+        },
+        {
+          "id": "zotero:d680e95392def25285a997e886e86a05",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：planning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7257,
+      "topic_cache_token": "b5e0a4fa11123fbc7aace8ef5a046918275f2bb4a71257662d2bfca98959d9ee",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2606.09258",
+        "sha256": "24786a806cf513eb1ad3cc3e97dd58f7dc398798b6f8e99cb8d27aa133cc7cbc",
+        "chars": 12000
+      }
+    },
+    {
       "id": "7ec609f83a3ef47f14a3a085",
       "url": "https://arxiv.org/abs/2606.05035",
       "title": "Anchor3R: Streaming 3D Reconstruction with Transient Anchors for Long-Horizon Visual Mapping",
@@ -247054,12 +247113,12 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-11-08T00:59:26.012870+00:00",
+    "last_success": "2026-11-08T02:41:35.303536+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 19,
+      "classified": 2,
       "unclassified": 1783,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
@@ -247164,8 +247223,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
-      "last_success": "2026-11-08T00:59:26.012870+00:00",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
+      "last_success": "2026-11-08T02:41:35.303536+00:00",
       "status": "ok",
       "count": 11
     },
@@ -247173,7 +247232,7 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -247184,8 +247243,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
-      "last_success": "2026-11-08T00:59:26.012870+00:00",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
+      "last_success": "2026-11-08T02:41:35.303536+00:00",
       "status": "ok",
       "count": 12
     },
@@ -247193,8 +247252,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
-      "last_success": "2026-11-08T00:59:26.012870+00:00",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
+      "last_success": "2026-11-08T02:41:35.303536+00:00",
       "status": "ok",
       "count": 12
     },
@@ -247202,8 +247261,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
-      "last_success": "2026-11-08T00:59:26.012870+00:00",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
+      "last_success": "2026-11-08T02:41:35.303536+00:00",
       "status": "ok",
       "count": 11
     },
@@ -247211,8 +247270,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
-      "last_success": "2026-11-08T00:59:26.012870+00:00",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
+      "last_success": "2026-11-08T02:41:35.303536+00:00",
       "status": "ok",
       "count": 1
     },
@@ -247220,8 +247279,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
-      "last_success": "2026-11-08T00:59:26.012870+00:00",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
+      "last_success": "2026-11-08T02:41:35.303536+00:00",
       "status": "ok",
       "count": 12
     },
@@ -247229,8 +247288,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
-      "last_success": "2026-11-08T00:59:26.012870+00:00",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
+      "last_success": "2026-11-08T02:41:35.303536+00:00",
       "status": "ok",
       "count": 0
     },
@@ -247241,18 +247300,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
       "last_success": "2026-11-08T00:59:26.012870+00:00",
       "count": 179,
       "counters": {
         "relevant": 4,
         "pending": 175,
         "excluded": 2,
-        "fetched": 114,
+        "fetched": 76,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-advanced-energy-materials",
@@ -247262,14 +247323,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
-      "last_success": "2026-11-08T00:59:26.012870+00:00",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
+      "last_success": "2026-11-08T02:41:35.303536+00:00",
       "count": 62,
       "counters": {
         "relevant": 8,
         "pending": 54,
         "excluded": 286,
-        "fetched": 160,
+        "fetched": 122,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -247282,14 +247343,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
-      "last_success": "2026-11-08T00:59:26.012870+00:00",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
+      "last_success": "2026-11-08T02:41:35.303536+00:00",
       "count": 194,
       "counters": {
         "relevant": 30,
         "pending": 164,
         "excluded": 1427,
-        "fetched": 433,
+        "fetched": 403,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -247301,18 +247362,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
       "last_success": "2026-11-08T00:59:26.012870+00:00",
       "count": 187,
       "counters": {
         "relevant": 26,
         "pending": 161,
         "excluded": 885,
-        "fetched": 366,
+        "fetched": 223,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-matter",
@@ -247321,18 +247384,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
       "last_success": "2026-11-08T00:59:26.012870+00:00",
       "count": 103,
       "counters": {
         "relevant": 1,
         "pending": 102,
         "excluded": 2,
-        "fetched": 107,
+        "fetched": 75,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-nature",
@@ -247342,14 +247407,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
-      "last_success": "2026-11-08T00:59:26.012870+00:00",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
+      "last_success": "2026-11-08T02:41:35.303536+00:00",
       "count": 102,
       "counters": {
         "relevant": 1,
         "pending": 101,
         "excluded": 630,
-        "fetched": 226,
+        "fetched": 172,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -247362,14 +247427,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
-      "last_success": "2026-11-08T00:59:26.012870+00:00",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
+      "last_success": "2026-11-08T02:41:35.303536+00:00",
       "count": 1074,
       "counters": {
         "relevant": 10,
         "pending": 1064,
         "excluded": 1018,
-        "fetched": 309,
+        "fetched": 251,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -247382,14 +247447,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
-      "last_success": "2026-11-08T00:59:26.012870+00:00",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
+      "last_success": "2026-11-08T02:41:35.303536+00:00",
       "count": 28,
       "counters": {
         "relevant": 0,
         "pending": 28,
         "excluded": 35,
-        "fetched": 18,
+        "fetched": 17,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -247401,18 +247466,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
       "last_success": "2026-11-08T00:59:26.012870+00:00",
       "count": 117,
       "counters": {
         "relevant": 1,
         "pending": 116,
         "excluded": 224,
-        "fetched": 123,
+        "fetched": 45,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-science-advances",
@@ -247421,25 +247488,27 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
       "last_success": "2026-11-08T00:59:26.012870+00:00",
       "count": 24,
       "counters": {
         "relevant": 2,
         "pending": 22,
         "excluded": 678,
-        "fetched": 199,
+        "fetched": 81,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
-      "last_success": "2026-11-08T00:59:26.012870+00:00",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
+      "last_success": "2026-11-08T02:41:35.303536+00:00",
       "status": "ok",
       "count": 1
     },
@@ -247447,8 +247516,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
-      "last_success": "2026-11-08T00:59:26.012870+00:00",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
+      "last_success": "2026-11-08T02:41:35.303536+00:00",
       "status": "ok",
       "count": 12
     },
@@ -247456,8 +247525,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
-      "last_success": "2026-11-08T00:59:26.012870+00:00",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
+      "last_success": "2026-11-08T02:41:35.303536+00:00",
       "status": "ok",
       "count": 1
     },
@@ -247465,8 +247534,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
-      "last_success": "2026-11-08T00:59:26.012870+00:00",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
+      "last_success": "2026-11-08T02:41:35.303536+00:00",
       "status": "ok",
       "count": 0
     },
@@ -247474,19 +247543,17 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
-      "last_success": "2026-11-07T01:33:31.038263+00:00",
-      "status": "error",
-      "count": 0,
-      "message": "采集失败，保留上次结果",
-      "error_type": "HTTPError"
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
+      "last_success": "2026-11-08T02:41:35.303536+00:00",
+      "status": "ok",
+      "count": 12
     },
     {
       "id": "zotero",
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 0,
-      "last_attempt": "2026-11-08T00:59:26.012870+00:00",
+      "last_attempt": "2026-11-08T02:41:35.303536+00:00",
       "last_success": "2026-11-08T00:58:42.713949+00:00",
       "run_id": "42432141785",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -247494,13 +247561,13 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 4,
+    "generated": 2,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
       "status": "partial",
-      "attempted": 5,
-      "public_html": 4,
+      "attempted": 3,
+      "public_html": 2,
       "bohr_graph": 0,
       "fallback": 1,
       "bohr_calls": 0
