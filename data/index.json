@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-09T01:20:39.844991+00:00",
+  "generated_at": "2026-11-09T02:57:46.342559+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -5233,7 +5233,7 @@
       "summary_kind": "upstream_tldr",
       "authors": [
         "Taiming Lu",
-        "Sachin G. Konan",
+        "Sachin Konan",
         "Zhuang Liu"
       ],
       "zotero_score": 3.4901463157118555,
@@ -5696,7 +5696,7 @@
       "excerpt": "Reliable robotic manipulation requires both semantic understanding and precise control in three-dimensional space. However, vision-language-action (VLA) foundations largely inherit visual representations from 2D vision-language pre-training, while spatial supervision is often introduced only during task-specific adaptation. Developing spatial understanding as a transferable foundation-model capability therefore calls for learning from broader robot experience. We present SLA, a Spatial-Language-Action Model that scales implicit spatial alignment to continual pre-training and maintains it during downstream post-training. Initialized from a pretrained pi05 policy, SLA jointly optimizes action prediction and alignment between intermediate visual embeddings and spatial representations from a frozen 3D perception model. We curate and unify heterogeneous robot datasets to support spatial learning across diverse embodiments, tasks, and scenes. To accommodate this diversity, we introduce feature-dependent gates that adaptively aggregate visual embeddings from multiple VLA layers for spatial supervision. The teacher further exploits partially available depth and camera calibration alongside RGB observations, enabling effective use of heterogeneous geometric annotations. Probabilistic state dropout encourages reliance on visual cues and mitigates overfitting to demonstration trajectories. All auxiliary components are used only during training, allowing direct reuse of pretrained VLA weights and preserving the original inference architecture.",
       "summary": "本文提出SLA空间-语言-动作模型，将隐式空间对齐扩展到持续预训练并在下游后训练中保持，通过联合优化动作预测与中间视觉嵌入和冻结3D感知模型空间表示之间的对齐，并引入特征相关门控、部分可用深度与相机标定以及概率状态丢弃。该工作面向机器人操作中空间理解作为可迁移基础模型能力的研究问题，但所有辅助组件仅用于训练，实际效果和限制需依据原文进一步确认。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 4,
+      "alpha_rank": 5,
       "authors": [
         "Fuhao Li",
         "Wenxuan Song",
@@ -6642,7 +6642,8 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "James A. Evans and E. Glen Weyl"
+        "James A. Evans",
+        "E. Glen Weyl"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -6831,7 +6832,8 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Blánaid Hicks and Anton Pottegård"
+        "Blánaid Hicks",
+        "Anton Pottegård"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -6947,7 +6949,8 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Kenneth C. Shadlen and Olivier J. Wouters"
+        "Kenneth C. Shadlen",
+        "Olivier J. Wouters"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -7005,7 +7008,11 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Nan Wang, Hai-Dong Li, Hao Shi, Xiao-Mian Zhang, and Li Liu"
+        "Nan Wang",
+        "Hai-Dong Li",
+        "Hao Shi",
+        "Xiao-Mian Zhang",
+        "Li Liu"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -7121,7 +7128,19 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Michael Funk, and Sacha Vignieri, Phil Szuromi, Jesse Smith, Jelena Stajic, Christiana N. Fogg, Laura Ensign, L. Bryan Ray, Priscilla N. Kelly, Yevgeniya Nusinovich, Angela Hessler, Yury Suleymanov, Annalisa VanHook, and Ji-Xin Cheng"
+        "Sacha Vignieri",
+        "Phil Szuromi",
+        "Jesse Smith",
+        "Jelena Stajic",
+        "Christiana N. Fogg",
+        "Laura Ensign",
+        "L. Bryan Ray",
+        "Priscilla N. Kelly",
+        "Yevgeniya Nusinovich",
+        "Angela Hessler",
+        "Yury Suleymanov",
+        "Annalisa VanHook",
+        "Ji-Xin Cheng"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -7179,7 +7198,8 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Zara Harmon and Caroline F. Rowland"
+        "Zara Harmon",
+        "Caroline F. Rowland"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -7353,7 +7373,10 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Yevgeniya Nusinovich, Mattia Maroso, Joana OsÓRio, and Brad Wible"
+        "Yevgeniya Nusinovich",
+        "Mattia Maroso",
+        "Joana OsÓRio",
+        "Brad Wible"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -7469,7 +7492,13 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Corinne Simonti, and Jesse Smith, Corinne Simonti, Jack Huang, Bianca Lopez, Phil Szuromi, Melissa McCartney, Joana Osório, and Ian S. Osborne"
+        "Corinne Simonti",
+        "Jack Huang",
+        "Bianca Lopez",
+        "Phil Szuromi",
+        "Melissa McCartney",
+        "Joana Osório",
+        "Ian S. Osborne"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -7759,7 +7788,8 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Nora D. Volkow and Eric M. Wargo"
+        "Nora D. Volkow",
+        "Eric M. Wargo"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -10279,22 +10309,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Yuxin Tian",
-        "Zhiyan Jia",
-        "Qian Chen",
-        "Shizhe Wu",
-        "Mengfan Zhao",
-        "Yi Wang",
-        "Xueqi Guo",
-        "Xinyu Gao",
-        "Yonghao Sun",
-        "Yan Zhang",
-        "Fang Zhang",
-        "Kun Ye",
-        "Shuai Hu",
-        "Haixin Chang",
-        "Jingsheng Chen",
-        "Yong Jiang"
+        "Yuxin Tian, Zhiyan Jia, Qian Chen, Shizhe Wu, Mengfan Zhao, Yi Wang, Xueqi Guo, Xinyu Gao, Yonghao Sun, Yan Zhang, Fang Zhang, Kun Ye, Shuai Hu, Haixin Chang, Jingsheng Chen, Yong Jiang"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -11199,6 +11214,108 @@
       "topic_cache_token": "24965885fe13b120b52c781703713985ca5123d7cb08640223dab25211836d31",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "c8753503fff574e519637975",
+      "url": "https://arxiv.org/abs/2611.07624",
+      "title": "Beneath the Surface: What We Overlook When We Talk About Agent Evolution",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-05T00:00:00+00:00",
+      "first_seen": "2026-11-09T02:57:46.342559+00:00",
+      "excerpt": "Agent harness evolution enables recursive self-improvement (RSI) without updating model weights. We examine whether higher benchmark scores yield reliable, efficient, and transferable improvement. We evaluate four methods across harnesses, general and coding tasks. Repeated evaluations, controlled agent expansion, component interventions, and admission replays reveal recurring patterns. All sixteen evolved agents gain previously uncovered tasks while losing previously covered ones. In one general-task case, reliability rises by 5.2 points despite losing ten previously covered tasks. Most reliability gains also increase deployment cost. Specific changes usually outperform generic reminders, but their benefits can change when combined. The highest-scoring agent does not yield the largest mean improvement in any of our four pools, and stricter admission can discard useful alternatives. Transfer selectively preserves gains: coverage usually falls on the general-task target across both harness types and paradigms, but rises on the coding target with the outer-layer-only harness. These findings motivate preservation-aware evaluation, tested decision rules, and explicit applicability conditions. As a constructive follow-up, EvoAudit turns these diagnostics into revisions of select, analyze, mutate, and gate, achieving the best performance.",
+      "summary": "本文通过重复评测、受控扩展、组件干预和准入回放，考察了四种智能体框架进化方法在通用与编码任务上的表现，发现进化后的智能体在获得新任务覆盖的同时会丢失已覆盖任务，且可靠性提升常伴随部署成本增加。研究表明，基准分数提升并不等同于可靠、高效和可迁移的改进，因此科研工作中应关注保留感知的评测、经过测试的决策规则和明确适用条件，而非仅依赖单一总分。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.07624",
+      "authors": [
+        "Xiaobo Wang",
+        "Zimu Wang",
+        "Siyu Ye",
+        "Jiaqi Li",
+        "Min Tang",
+        "Jun Bai",
+        "Yuling Shi",
+        "Ruobing Wang",
+        "Jingjing Zhang",
+        "Chaofan Wang",
+        "Kai Wu",
+        "Mengnan Qi",
+        "Kai Cai",
+        "Xiaodong Gu",
+        "Qi Liu",
+        "Zilong Zheng"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark、evaluation。"
+        },
+        {
+          "id": "zotero:8f22e62349472c4815f4275fbcf89c76",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：agent。"
+        },
+        {
+          "id": "zotero:a8ae06724434b39ec85ba030f9bbc6e2",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：self-improvement。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:a8ae06724434b39ec85ba030f9bbc6e2"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:a8ae06724434b39ec85ba030f9bbc6e2"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.869,
+      "topic_cache_token": "5488296a0dae08140af28f236abd103da8181c126bfb48cd611bdca4ccf3c519",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.07624",
+        "sha256": "fc03fea0f32847fc5f323b9266e10dc71587dd810b4d21d4d1b4ccd417349720",
+        "chars": 12000
+      }
     },
     {
       "id": "48437fe4b5eca9c6ca06d898",
@@ -18359,6 +18476,71 @@
       "topic_cache_token": "9a6a285f904b0f2621392917356b3f5a99638b48a21ffcebf7162f741da6f6e0",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "6b69173e54980bfd26226efc",
+      "url": "https://arxiv.org/abs/2611.04434",
+      "title": "Sketchpad: certified exact arithmetic with a small vision-language model",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "biology",
+        "tools"
+      ],
+      "published_at": "2026-11-03T07:25:42+00:00",
+      "first_seen": "2026-11-09T02:57:46.342559+00:00",
+      "excerpt": "Language models are accurate on most long-arithmetic problems, but their accuracy is estimated on samples and carries no guarantee for an unseen input; tool use is exact but moves the computation outside the network. We show that exactness at all input lengths becomes a finite, checkable property of a network when each of its steps reads only a bounded view of an external working memory. In Sketchpad, Qwen3.5-0.8B with a low-rank adapter executes arithmetic procedures on a rendered sheet. Each forward pass reads a three-cell view and emits one step: a digit, a carry or borrow, and the next operation. A fixed runtime moves the view and writes no digit of a result. We prove in Lean that the model is then exact on all inputs of any length if and only if it is exact on the finite set of views the runtime presents, that no finite test suffices when steps also read earlier steps, and that the guarantee tolerates bounded numerical perturbation and extends to compositions of procedures. All 2,446 views pass on the deployment device, a laptop GPU running the model in a web browser. The certified model performs signed addition and subtraction, long multiplication and division, square roots and greatest common divisors at arbitrary length. It solved 200 of 200 pre-registered problems in the browser, and 220 of 220 sums of up to 1,000 digits and products of up to 20 digits, of which GPT-6.1 Sol, the strongest of ten other models, solved 217. A symbolic runtime built on these procedures solves, expands and factors polynomials with every number computed by the model, and a multiplicative gate on the adapter recovers the base model exactly when the sheet is not in use.",
+      "summary": "本文提出Sketchpad：一个视觉语言模型每步只读取外部工作表上三个单元格的有限视图并输出一步，配合固定运行时推进；作者用Lean证明当每步仅依赖有界视图时，模型在任意长度输入上的精确性等价于其在运行时呈现的有限视图集（2,446个）上均正确，并证明若每步可读取先前步骤则不存在有限测试能保证任意长度正确，同时给出对有界数值扰动的容忍条件及保证可扩展到过程组合。对科研工作的用途在于：该有限视图逐项校验与形式化保证为评估模型任意长度算术的可靠性提供了可检查的认证途径，支持将模型步骤嵌入符号运行时（如多项式求解、展开与因式分解中每个数由模型计算）；但原文明确限制是保证相对于运行时，运行时的布局、外层循环和参考过程仍为常规代码且未在Lean中形式化，证书针对其部署路径（网页浏览器中的笔记本电脑GPU、16位精度），且对话适配器在新鲜小学应用题上较基座模型下降5.8分；所给材料为摘要与部分正文，未阅读完整全文，不将上述性能表述视为已验证结论。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.04434",
+      "authors": [
+        "Mostafa 'Neo' Mohsenvand"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:c143f684d9fa5b5af6a7ff1ee4101832",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：tool use。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:c143f684d9fa5b5af6a7ff1ee4101832"
+      ],
+      "topic_ids": [
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:c143f684d9fa5b5af6a7ff1ee4101832"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7329,
+      "topic_cache_token": "8f2ec0d50df54e2fc2ec38d7b5c2e5ce44516d7d7b812b3cb6db60a0de3ae92f",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.04434",
+        "sha256": "a6b2618a39c7fd6aec2cdb48e157c53d6e864ffb7d1ca6147a406319564e870d",
+        "chars": 12000
+      }
     },
     {
       "id": "4613e85d09f408da1440bbac",
@@ -110526,6 +110708,74 @@
       }
     },
     {
+      "id": "8c72c61f3028e5efc3a8461e",
+      "url": "https://arxiv.org/abs/2610.19479",
+      "title": "Active Generative Simulation: Meta-Learning What to Simulate for Sim-and-Real Policy Co-Training",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-14T02:57:04+00:00",
+      "first_seen": "2026-11-09T02:57:46.342559+00:00",
+      "excerpt": "Sim-and-real co-training is an effective way to scale robot learning by augmenting limited real-world demonstrations with simulation data. However, existing approaches typically treat simulators as fixed data sources, relying on uniform generation, offline retrieval, or manual parameter alignment by domain experts. We formulate \\textit{Active Generative Simulation}: optimizing a simulator's data-generation distribution to maximize downstream real-world performance. To solve this problem, we propose MetaGenSim, a meta-learning framework that trains an auxiliary rater network via meta-gradients to automatically discover high-utility data-generation distributions within a user-specified simulation parameter space, without manual parameter alignment. Across simulation and real-world manipulation tasks, MetaGenSim outperforms uniform generation and retrieval baselines, achieves a 150% relative improvement in real-world full-task success over uniform generation, and matches expert manual alignment. We further show that distributions curated with a lightweight proxy policy transfer to VLA fine-tuning, and that MetaGenSim can exploit partial alignment through atomic skill stitching and object-receptacle composition when exact sim-and-real task alignment is unavailable. Project website: https://meta-gensim.github.io",
+      "summary": "本文提出并形式化了“主动生成式模拟”问题，并给出MetaGenSim这一元学习框架，通过元梯度训练辅助评分网络，在用户指定的模拟参数空间内自动发现高价值的数据生成分布，从而引导面向真实任务性能的模拟数据生成。对科研工作而言，该框架可用于在无需人工参数对齐的情况下，将模拟数据生成从固定分布转为可控且目标导向的合成，并可能用于模拟与真实策略协同训练；但材料为公开摘要与节选，未经验证完整，所提性能改进、与专家手动对齐相当等结果来自作者陈述，尚非经独立验证的结论，且其效果依赖用户预先指定的模拟参数空间及可用的真实探测数据。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 4,
+      "authors": [
+        "Liqian Ma",
+        "Vaibhav Saxena",
+        "Utkarsh Aashu Mishra",
+        "Shuo Cheng",
+        "Yongxin Chen",
+        "Danfei Xu"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8504,
+      "topic_cache_token": "9a2ff504d5cf5a1fd1e724c86cc1c8b551ba0313787486d71a0cb5b2f9fb72a0",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.19479",
+        "sha256": "fdecff33d376685c98103fc9d05416336657459c29dab9a1eba7742083443a66",
+        "chars": 12000
+      }
+    },
+    {
       "id": "b76b11a1199f73b7027f051c",
       "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi",
       "title": "Google DeepMind and Singapore Government announce new AI tool to protect citizens against scams",
@@ -128750,7 +129000,7 @@
       "doi": "10.1038/s41467-026-78575-w",
       "published_online_at": "2026-10-11T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-09T00:22:04+00:00",
+      "indexed_at": "2026-11-09T01:22:53+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -128824,7 +129074,7 @@
       "doi": "10.1038/s41467-026-78648-w",
       "published_online_at": "2026-10-11T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-09T00:22:07+00:00",
+      "indexed_at": "2026-11-09T01:22:56+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -130522,7 +130772,7 @@
       "doi": "10.1038/s41467-026-78349-4",
       "published_online_at": "2026-10-10T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-09T00:22:03+00:00",
+      "indexed_at": "2026-11-09T01:22:52+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -130845,7 +131095,7 @@
       "doi": "10.1038/s41467-026-78567-w",
       "published_online_at": "2026-10-10T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-09T00:22:04+00:00",
+      "indexed_at": "2026-11-09T01:22:54+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -131102,7 +131352,7 @@
       "doi": "10.1038/s41467-026-78329-8",
       "published_online_at": "2026-10-10T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-09T00:21:42+00:00",
+      "indexed_at": "2026-11-09T01:22:56+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -135509,7 +135759,7 @@
       "doi": "10.1038/s41467-026-78405-z",
       "published_online_at": "2026-10-09T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-09T00:21:33+00:00",
+      "indexed_at": "2026-11-09T01:22:58+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -136085,7 +136335,7 @@
       "doi": "10.1038/s41467-026-78488-8",
       "published_online_at": "2026-10-09T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-09T00:21:31+00:00",
+      "indexed_at": "2026-11-09T01:22:54+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -179385,11 +179635,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Zhen Bi",
-        "Ximing Wang",
-        "Junjie Xu",
-        "Jinzhong Zhao",
-        "Weizhong Yuan"
+        "Zhen Bi, Ximing Wang, Junjie Xu, Jinzhong Zhao, Weizhong Yuan"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -179485,16 +179731,7 @@
       "summary": "本文通过在热响应PNIPAM基体中嵌入液态金属与碳纳米管构成的微纳协同岛桥导电网络，利用导电通路可逆断裂与重构，制备了高灵敏度自感知致动水凝胶，并展示其在人体运动监测、手势控制车辆导航及仿生触手识别中的应用。该材料在可穿戴电子、人机交互和软体智能系统中具有应用潜力，但摘要未说明长期稳定性、生物相容性及实际器件环境下的性能限制。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Zhilin Zhang",
-        "Yuhang Li",
-        "Zhaoyang Chen",
-        "Lina Wang",
-        "Deliang Li",
-        "Jiaqi Miao",
-        "Hanyang Li",
-        "Baoyang Lu",
-        "Ye Tian",
-        "Tieqiang Wang"
+        "Zhilin Zhang, Yuhang Li, Zhaoyang Chen, Lina Wang, Deliang Li, Jiaqi Miao, Hanyang Li, Baoyang Lu, Ye Tian, Tieqiang Wang"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -179579,21 +179816,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Xin Li",
-        "Xin Kou",
-        "Linna Deng",
-        "Gaoshan Zeng",
-        "Shuiju Guo",
-        "Zhi Li",
-        "Lihua Zhong",
-        "Haonan Tang",
-        "Yingqi Peng",
-        "Jianwu Dai",
-        "Jiangtao Zhao",
-        "Dandan Han",
-        "Hui Huang",
-        "Yuchao Wang",
-        "Yongpeng Zhao"
+        "Xin Li, Xin Kou, Linna Deng, Gaoshan Zeng, Shuiju Guo, Zhi Li, Lihua Zhong, Haonan Tang, Yingqi Peng, Jianwu Dai, Jiangtao Zhao, Dandan Han, Hui Huang, Yuchao Wang, Yongpeng Zhao"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -179689,16 +179912,7 @@
       "summary": "本文通过可解释机器学习分析提出了将迁移数、相对交换电流密度和弹性模量统一为一个预测指标的金属负极/电解质界面描述符MAEID，并在所给数据集上显示其对全电池容量保持率的预测能力优于单参数描述符，据此设计了一种基于聚丙烯酸复合物的软固态电解质界面。该工作为金属电池界面设计提供了从单参数经验优化转向多参数协同的数据驱动框架；其结论基于特定数据集，所报道的循环稳定性与描述符预测优势需在更广泛条件下进一步验证。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Lingbo Yao",
-        "Zhurui Wang",
-        "Tianshi Zhao",
-        "Zeyu Wei",
-        "Gege Wang",
-        "Zifei Shi",
-        "Zhichao Li",
-        "Yanyu Sun",
-        "Xiaowei Chi",
-        "Yu Liu"
+        "Lingbo Yao, Zhurui Wang, Tianshi Zhao, Zeyu Wei, Gege Wang, Zifei Shi, Zhichao Li, Yanyu Sun, Xiaowei Chi, Yu Liu"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -247665,12 +247879,12 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-11-09T01:20:39.844991+00:00",
+    "last_success": "2026-11-09T02:57:46.342559+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 8,
+      "classified": 3,
       "unclassified": 1786,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
@@ -247775,16 +247989,16 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "status": "ok",
-      "count": 11
+      "count": 9
     },
     {
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -247795,8 +248009,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "status": "ok",
       "count": 12
     },
@@ -247804,8 +248018,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "status": "ok",
       "count": 12
     },
@@ -247813,8 +248027,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "status": "ok",
       "count": 11
     },
@@ -247822,8 +248036,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "status": "ok",
       "count": 1
     },
@@ -247831,8 +248045,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "status": "ok",
       "count": 12
     },
@@ -247840,8 +248054,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "status": "ok",
       "count": 0
     },
@@ -247853,14 +248067,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 182,
       "counters": {
         "relevant": 4,
         "pending": 178,
         "excluded": 2,
-        "fetched": 112,
+        "fetched": 105,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -247873,14 +248087,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 62,
       "counters": {
         "relevant": 8,
         "pending": 54,
         "excluded": 287,
-        "fetched": 124,
+        "fetched": 112,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -247893,14 +248107,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 194,
       "counters": {
         "relevant": 30,
         "pending": 164,
         "excluded": 1408,
-        "fetched": 404,
+        "fetched": 300,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -247913,14 +248127,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 187,
       "counters": {
         "relevant": 26,
         "pending": 161,
         "excluded": 881,
-        "fetched": 349,
+        "fetched": 335,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -247933,14 +248147,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 103,
       "counters": {
         "relevant": 1,
         "pending": 102,
         "excluded": 2,
-        "fetched": 82,
+        "fetched": 80,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -247953,14 +248167,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 102,
       "counters": {
         "relevant": 1,
         "pending": 101,
         "excluded": 628,
-        "fetched": 176,
+        "fetched": 150,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -247973,14 +248187,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 1067,
       "counters": {
         "relevant": 10,
         "pending": 1057,
         "excluded": 1014,
-        "fetched": 282,
+        "fetched": 201,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -247992,20 +248206,18 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-08T02:41:35.303536+00:00",
+      "status": "ok",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 27,
       "counters": {
         "relevant": 0,
         "pending": 27,
         "excluded": 35,
-        "fetched": 8,
+        "fetched": 17,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "journal-science",
@@ -248014,20 +248226,18 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-08T00:59:26.012870+00:00",
+      "status": "ok",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 117,
       "counters": {
         "relevant": 1,
         "pending": 116,
-        "excluded": 224,
-        "fetched": 45,
+        "excluded": 226,
+        "fetched": 115,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "journal-science-advances",
@@ -248037,14 +248247,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 24,
       "counters": {
         "relevant": 2,
         "pending": 22,
         "excluded": 679,
-        "fetched": 154,
+        "fetched": 143,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -248053,8 +248263,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "status": "ok",
       "count": 1
     },
@@ -248062,8 +248272,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "status": "ok",
       "count": 12
     },
@@ -248071,8 +248281,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "status": "ok",
       "count": 0
     },
@@ -248080,8 +248290,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "status": "ok",
       "count": 0
     },
@@ -248089,8 +248299,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
-      "last_success": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_success": "2026-11-09T02:57:46.342559+00:00",
       "status": "ok",
       "count": 12
     },
@@ -248099,7 +248309,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 0,
-      "last_attempt": "2026-11-09T01:20:39.844991+00:00",
+      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
       "last_success": "2026-11-09T01:19:47.991165+00:00",
       "run_id": "42544925228",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -248107,15 +248317,15 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 2,
+    "generated": 3,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
-      "status": "partial",
+      "status": "ok",
       "attempted": 3,
-      "public_html": 2,
+      "public_html": 3,
       "bohr_graph": 0,
-      "fallback": 1,
+      "fallback": 0,
       "bohr_calls": 0
     }
   },
