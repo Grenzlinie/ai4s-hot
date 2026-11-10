@@ -1,8 +1,1000 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-09T02:57:46.342559+00:00",
+  "generated_at": "2026-11-10T04:47:07.616946+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
+    {
+      "id": "59b385841d83f240debb259a",
+      "url": "https://www.semanticscholar.org/paper/49940838b6b5a7bf1a04e059689154bcb7b20e48",
+      "title": "Who Speaks for the Source? Semiotic Engineering, Delegated Reading, and the Multimedia Summarization Problem",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "science"
+      ],
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Clarisse Sieckenius de Souza"
+      ],
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6,
+      "topic_cache_token": "cd722b2c9015d3685dab8cb1b14108c5bb9f2fb9658bf994bca95856fb2f11d5",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "caa9073cefb43725f1a58e80",
+      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+      "title": "ChatGPT Enterprise now available in AWS Marketplace",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "frontier"
+      ],
+      "published_at": "2026-11-09T19:00:00+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.",
+      "summary": "OpenAI宣布ChatGPT Enterprise已在AWS Marketplace上线，使组织可通过现有AWS采购和账单关系简化采购流程。依据现有材料，该消息仅为公司产品上架声明，未提供性能数据或独立验证结论，科研人员如需评估其研究用途应另行核实。",
+      "summary_kind": "ai_summary",
+      "authors": [],
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "low_confidence",
+      "topic_scope": "unknown",
+      "content_kind": "web:engineering_update",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5652,
+      "topic_cache_token": "ef43456a07b0f68402747451b30160434a9ed41351a784c7214868f52cdaef2c",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "952d2516af2e905436adea3b",
+      "url": "https://openai.com/index/control-room",
+      "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "frontier"
+      ],
+      "published_at": "2026-11-09T13:00:00+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
+      "summary": "OpenAI 的 Control Room 被描述为一个用于追踪其研究基础设施中模型工作负载并在出现安全或安保担忧时快速停止这些工作负载的中央系统。该材料未提供已验证的性能指标或使用效果，科研人员如需评估其适用性，应参考完整报告并自行核实相关限制。",
+      "summary_kind": "ai_summary",
+      "authors": [],
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "low_confidence",
+      "topic_scope": "research",
+      "content_kind": "web:technical_report",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9259,
+      "topic_cache_token": "8cf3fd0f4db23598087a07384e830f32c77027ba997ab614139f02ef24f1135e",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "02e9abf47eaf3fa01f98fe0d",
+      "url": "https://openai.com/index/coderabbit-codex-daybreak",
+      "title": "CodeRabbit scales agentic software development and ships 20x more",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-09T08:00:00+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
+      "summary": "CodeRabbit 使用 OpenAI 模型来治理和信任 AI 生成的代码，并使用 Codex 使同一工程团队交付的软件量增加 20 倍。该案例可作为科研人员了解企业级 AI 代码治理与代理式软件开发实践的参考，但“20 倍”等数字属于公司声明，未经独立验证。",
+      "summary_kind": "ai_summary",
+      "authors": [],
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "low_confidence",
+      "topic_scope": "unknown",
+      "content_kind": "web:engineering_update",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7273,
+      "topic_cache_token": "2ed2e9f5f2a45b200d43614ade864a7197fa1d74ac8c265773be9c914c2835b0",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "2e34e84f0999c607fcd02663",
+      "url": "https://openai.com/index/kuken",
+      "title": "Kuken Industries searches 70 years of drawings in minutes",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "frontier"
+      ],
+      "published_at": "2026-11-09T08:00:00+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
+      "summary": "Kuken Industries利用OpenAI API检索其70年的冷却塔图纸，使工程师找到维修所需图纸的时间从近一小时缩短至4.5分钟。该案例可帮助科研人员了解基于API的图纸检索在历史工程档案中的应用，但上述性能数据来自公司报告，尚未经独立验证。",
+      "summary_kind": "ai_summary",
+      "authors": [],
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "low_confidence",
+      "topic_scope": "unknown",
+      "content_kind": "web:engineering_update",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.875,
+      "topic_cache_token": "a34cf0268916dcb743994cdcb87c7bf733d43509e8c97192ef3731083d0d221d",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "82596930f517340ea3e670fd",
+      "url": "https://doi.org/10.1038/s41467-026-78736-x",
+      "title": "SimPoly: Simulation of polymers with machine learning force fields derived from first principles",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Nature Communications, Published online: 09 November 2026; doi:10.1038/s41467-026-78736-x The authors develop a machine learning force field trained only on quantum-chemical data that can reproduce measured key polymer properties such as densities and glass transition temperatures.",
+      "summary": "本文开发了一种仅用量子化学数据训练的机器学习力场，用于聚合物模拟，并报告其能再现密度和玻璃化转变温度等关键实测性质。该力场可用于聚合物体系的原子级模拟，但所依据的只是公开摘要，且其性能声明在摘要中来自作者表述，尚需查阅全文以核实具体验证范围与适用限制。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Gregor N. C. Simm",
+        "Jean Hélie",
+        "Hannes Schulz",
+        "Yicheng Chen",
+        "Guillem Simeon",
+        "Anna Kuzina",
+        "Ernesto Martinez-Baez",
+        "Piero Gasparotto",
+        "Gabriele Tocci",
+        "Chi Chen",
+        "Yatao Li",
+        "Lixue Cheng",
+        "Zun Wang",
+        "Bichlien H. Nguyen",
+        "Jake A. Smith",
+        "Lixin Sun"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-78736-x",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "relevant",
+        "method": "rule-v1",
+        "reason": "ai_method_for_materials_research",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        },
+        {
+          "id": "zotero:7b702437c9125ee8578d8c238382a72c",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：polymer。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:7b702437c9125ee8578d8c238382a72c"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:7b702437c9125ee8578d8c238382a72c",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9143,
+      "topic_cache_token": "69824d0573848e03423314cc3f76cff2b5dedf4bd95ce60db0087a0aba848be9",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "7313b7cb330b5399150a7976",
+      "url": "https://doi.org/10.1002/adma.75664",
+      "title": "Pd Single-Atom Engineered Janus BiOCl/MXene Heterostructure for Printed Self-Decoupled Temperature-Humidity Dual-Mode Sensors",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "ABSTRACT The advancement of flexible sensing technologies is of paramount importance in biomedical engineering. However, achieving high-fidelity multi-modal temperature-humidity sensing without inter-channel cross-talk and computational post-processing remains a formidable challenge due to overlapping transduction mechanisms. In this study, an unprecedented electron-ion synergistic functional material, featuring a unique inherent self-decoupling capability, was developed based on the Janus hierarchical heterostructure. Through interfacial chemical engineering of Pd single-atom anchoring and heterogeneous-nucleation-driven vertical growth of BiOCl on hollow MXene, the constructed material architecture successfully establishes fundamentally segregated electronic and ionic stimulus-response pathways. Specifically, humidity fluctuations trigger ultra-fast quasi-2D proton conduction facilitated by localized potential wells and electronic redistribution generated around atomically dispersed Pd sites, while temperature gradients induce entropy-driven carrier diffusion within the conductive MXene network. By suppressing signal cross-talk through rigorous mechanistic orthogonality, the fabricated sensing array exhibits outstanding response characteristics (37.5/50 ms for humidity response/recovery and 25/62.5 ms for high/low-temperature response), alongside superior oxidation resistance and robust functional durability (enduring 5000 cycles of testing). Ultimately, leveraging this multi-modal sensing platform and machine learning algorithm, the integrated closed-loop therapeutic system enables accurate evaluation of wound healing progression as well as on-demand drug release, pioneering a new paradigm for next-generation flexible electronics and adaptive healthcare modalities.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Hao-Wen Zhang",
+        "Yan Chen",
+        "Xiang Xu",
+        "Lin-Xue Zhang",
+        "Wei Liu",
+        "Cheng-Rong Liao",
+        "Lin-Ze Wu",
+        "Zhe-Sheng Feng",
+        "Zong-Kai Yan",
+        "Yan Wang"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.75664",
+      "published_online_at": "2026-11-09T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-10T04:25:23+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "relationship_requires_review",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：evaluation。"
+        },
+        {
+          "id": "zotero:0ed96d5990b979e052f34cb9060b736d",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：MXene。"
+        },
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        },
+        {
+          "id": "zotero:4256328d0b35466f2b45ab06dd178def",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：heterostructure。"
+        },
+        {
+          "id": "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：generation。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:0ed96d5990b979e052f34cb9060b736d",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:4256328d0b35466f2b45ab06dd178def",
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:0ed96d5990b979e052f34cb9060b736d",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:4256328d0b35466f2b45ab06dd178def",
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:chemistry",
+        "web:life_sciences"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7636,
+      "topic_cache_token": "835e6ad92fe8a25346d61102898540d9b0fe7160c18defc67b3de6427d2c4228",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "2631f5f180a03dc318f32ec8",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1359645426010074?dgcid=rss_sd_all",
+      "title": "Martensitic vs strain glass transformation in Ti-Nb alloys mediated by oxygen and nitrogen interstitial site reconfiguration",
+      "source_ids": [
+        "journal-acta-materialia"
+      ],
+      "source_names": [
+        "Acta Materialia"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [],
+      "journal_id": "acta-materialia",
+      "journal_title": "Acta Materialia",
+      "journal_issns": [
+        "1359-6454"
+      ],
+      "publisher": "Elsevier",
+      "doi": null,
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题中的明确材料领域词，保留材料研究根类；未使用摘要，不推断叶类。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.75,
+      "topic_cache_token": "aacd2eb1ff1260b72d35c43803a14826ef163c76476bfab363834e19adf1c35a",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "082a6cf2d0405f70c9a7c0af",
+      "url": "https://doi.org/10.1002/aenm.71823",
+      "title": "Data-Driven Host Microstructure Design Toward Efficient and Durable Room-Temperature Sodium-Sulfur Batteries",
+      "source_ids": [
+        "journal-advanced-energy-materials"
+      ],
+      "source_names": [
+        "Advanced Energy Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "ABSTRACT Porous carbon materials are critical hosts for chalcogen- and halogen-based conversion-type cathodes, as they govern the activity and durability of electrochemical reactions. Understanding how their microstructures regulate electrolyte-electrode interactions remains challenging given multiple coupling factors and dynamic changes during electrochemical cycling. Herein, machine learning was first used to screen three pore structure parameter windows relevant to electrochemical features from a large experimental dataset (23 carbon hosts and 1055 specific-capacity data points). Based on these screened windows, three representative carbon hosts, namely micropore-rich carbon, balanced carbon, and meso/macropore-rich carbon, were synthesized as model systems. We reveal that pore structure governs sulfur species evolution, thereby dictating the competition between polysulfide-mediated reactions and solvent self-decomposition. The resulting spatial-compositional differences of the cathode-electrolyte interphase (CEI) were found to profoundly impact energy efficiency, reversibility, and rate performance. The balanced carbon cathode with optimized inorganic-organic distribution delivers an initial capacity of 1249.4 mAh g −1 and retains a capacity of 784.8 mAh g −1 after 500 cycles. This work not only proposes a data-driven strategy for identifying CEI-relevant pore structure windows, but also provides mechanistic insight into how physical metrics of porous carbon modulate multi-step complex reactions and ultimately influence electrochemical performance.",
+      "summary": "本文利用机器学习从23种碳宿主、1055个比容量数据点中筛选出与电化学特征相关的孔结构参数窗口，并据此合成微孔富集、平衡型和介孔/大孔富集三种模型碳宿主，以研究孔结构对硫物种演变及CEI空间组成差异的影响。该数据驱动策略可用于识别与CEI相关的孔结构窗口，并为多孔碳物理指标调控多步复杂反应提供机理认识；但相关性能数据（如平衡型碳在500次循环后的容量保持）来自作者报道，尚非独立验证结论。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Kai Zhang",
+        "Feng Gong",
+        "Shaohuan Hong",
+        "Shenglin Liu",
+        "Zongqi Chen",
+        "Hualin Ye",
+        "Zihang Ma",
+        "Yue Ma",
+        "Baiqian Dai",
+        "Dawei Xia",
+        "Rui Xiao"
+      ],
+      "journal_id": "advanced-energy-materials",
+      "journal_title": "Advanced Energy Materials",
+      "journal_issns": [
+        "1614-6832",
+        "1614-6840"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/aenm.71823",
+      "published_online_at": "2026-11-09T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-09T15:27:22+00:00",
+      "journal_relevance": {
+        "status": "relevant",
+        "method": "rule-v1",
+        "reason": "ai_method_for_materials_research",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        },
+        {
+          "id": "zotero:45adccb0ba2435278eaf57c972908801",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：experimental dataset。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:45adccb0ba2435278eaf57c972908801"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:45adccb0ba2435278eaf57c972908801",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:88f5ef7f6c79483dccdde4317c7916c9"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7973,
+      "topic_cache_token": "1877c43d3e96a2fd88b84ecbdaa34f80e2b3470ccfdba2ace87ef4b736f53888",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "b4484b7c552c4b81b783c42b",
+      "url": "https://arxiv.org/abs/2611.11070",
+      "title": "Learning Electronic Band Structures Across the s, p, d Blocks with an Empirical Pseudopotential Network",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "chemistry"
+      ],
+      "published_at": "2026-11-08T01:59:34+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Electronic band structures govern how crystals conduct electrons and absorb light. Density-functional theory (DFT) computes them through costly self-consistent iterations, while existing machine-learning models either predict isolated scalar properties or output Hamiltonians that still require DFT solvers. Here we present EpNet, a learned empirical pseudopotential for crystals spanning 63 elements across the \\textit{s}, \\textit{p} and \\textit{d} blocks. An equivariant neural network builds its Hamiltonian from physics-motivated local potentials and nonlocal projectors. Trained solely on band energies, EpNet predicts complete band structures directly from atomic coordinates. On unseen chemical systems, its median errors are \\winAll\\ eV for band energies and \\gapAll\\ eV for band gaps. On 600,000 structures from an independent database, its band-gap errors are overall less than half those of existing models, at about 1\\% of DFT cost. EpNet thus enables fast screening of electronic properties for materials discovery and electronic-structure simulations of large systems.",
+      "summary": "本文提出了EpNet，一种在s、p、d区63种元素的晶体上训练的经验赝势网络，可仅依据原子坐标直接预测完整能带结构；在未见化学体系上报告能带能量中位误差0.061 eV、带隙中位误差0.102 eV，并在Alexandria数据库600,000个未见结构上报告带隙误差中位0.11 eV、约为DFT成本的1%。该工作面向材料筛选和大体系电子结构模拟，但其精度与成本结论来自作者在给定基准上的报告，且模型受训练数据（Materials Project的PBE能带结构、非磁、不超过24个原子位点）与元素覆盖范围限制，尚需独立验证。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Qiang Zhu"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        },
+        {
+          "id": "zotero:57fe42acf5db51a4a1e1c311558d8ad7",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：equivariant。"
+        },
+        {
+          "id": "zotero:88f5ef7f6c79483dccdde4317c7916c9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：database。"
+        },
+        {
+          "id": "zotero:abaed7fc04976b45c1631cceced1f314",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：materials discovery。"
+        },
+        {
+          "id": "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+          "facet": "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：DFT。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:57fe42acf5db51a4a1e1c311558d8ad7",
+        "zotero:88f5ef7f6c79483dccdde4317c7916c9",
+        "zotero:abaed7fc04976b45c1631cceced1f314",
+        "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:57fe42acf5db51a4a1e1c311558d8ad7",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:88f5ef7f6c79483dccdde4317c7916c9",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:abaed7fc04976b45c1631cceced1f314",
+        "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9304,
+      "topic_cache_token": "59304253b7624cabda5abd8aae5c5408036c149789f2461d8d1c8d770e1e0d68",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.11070",
+        "sha256": "1c22293f70c55c7d05b964e942c8df4afc3af68896f5ec15917101b33a7680ca",
+        "chars": 12000
+      }
+    },
+    {
+      "id": "0e0bb1c514b6063d8bf388a3",
+      "url": "https://arxiv.org/abs/2611.11019",
+      "title": "Toward universal excited-state machine-learned potentials: a local excitation Hamiltonian for size consistency and transferability",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "chemistry"
+      ],
+      "published_at": "2026-11-07T23:34:35+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Universal machine-learned interatomic potentials could make excited-state simulations across chemical space routine, but excitation energies, unlike ground-state energies, are not sums of atomic contributions. The excited states of noninteracting molecules are the union of their states, which pooled multistate readouts reproduce at best for the lowest state. We introduce LEH-MACE, whose excitation energies are the eigenvalues of a local excitation Hamiltonian assembled from atom-centred blocks, so this union holds exactly. We generated TD-DFT energies and forces for about 300,000 equilibrium, thermal, and excited-state geometries of over 100,000 molecules. LEH-MACE's advantage over direct readouts grew with the distance from the training data and was largest above $S_1$, with about half their $S_2$ and $S_3$ errors for long conjugated oligomers. For molecule pairs, only LEH-MACE kept its single-molecule accuracy, while a softmin readout remained superior for $S_1$ dynamics of larger chromophores. Exact size consistency is thus one step toward such potentials.",
+      "summary": "本文提出LEH-MACE，将激发能表示为由原子中心块组装的局域激发哈密顿量的本征值，并生成了约30.3万个几何结构、10.7万多个分子的TD-DFT激发态能量与受力数据集。对科研人员而言，该方法在训练数据之外随分子增大和分布偏移保持单分子精度的潜力已被报告，但摘要所述证据为有限公开摘录，且对接近训练分布的分子其精度并不优于直接读出，S1动力学场景下softmin读出仍更优。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Pascal Friederich"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：training。"
+        },
+        {
+          "id": "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+          "facet": "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：DFT。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7593,
+      "topic_cache_token": "5035645468f87b4ad66716ca7c3d9e4c1940817a3f53ab053d24adaa2b0ba515",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.11019",
+        "sha256": "05411c4f230495856c276a6a2c18683151d322d68224d72f1163ad122ff118de",
+        "chars": 12000
+      }
+    },
+    {
+      "id": "569191c7075247ccada6cf9b",
+      "url": "https://arxiv.org/abs/2611.10771",
+      "title": "WorldFoundry: Towards Unified Infrastructure for World Intelligence",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-11-07T14:59:22+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Visual generative models increasingly blur the line between synthesizing observations and simulating environments. Yet visual plausibility alone does not constitute successful world modeling: compelling outputs may lack persistent state, physical dynamics, or causally consistent responses to interactions. We define a generative world model as a predictive dynamical system that maintains a persistent, history-conditioned representation of an environment, updates that representation in response to actions or interventions, and generates temporally coherent trajectories that reflect outcomes under observed and counterfactual interventions. From this definition, we derive an intelligence-oriented framework spanning perceptual grounding, persistent state modeling, controllable transformation, dynamics-aware prediction, and closed-loop interaction. We present WorldFoundry, open-source infrastructure for reproducible inference and evaluation across video, 3D and 4D, embodied action, and interactive world systems. WorldFoundry unifies model and benchmark discovery, runtime and asset preparation, execution orchestration, artifact management, and interactive visualization, while modality-specific adapters preserve native inputs, execution semantics, output representations, and evaluation protocols. Explicit manifests, durable artifact contracts, and evidence-aware scorecards separate execution readiness from evaluative claims, making each claim traceable to its supporting artifacts. The catalog contains 270 model entries, 74 benchmarks, and 62 registered metric entries, with readiness and execution evidence recorded separately. WorldFoundry enables reproducible comparison of persistent, controllable dynamics across heterogeneous systems, advancing the field from perceptual synthesis toward measurable world intelligence.",
+      "summary": "本文提出WorldFoundry开源基础设施，统一了视频、3D与4D、具身动作及交互式世界系统的模型与基准发现、运行时与资产准备、执行编排、产物管理和交互可视化，其目录包含270个模型条目、74个基准和62个注册指标条目，并通过显式清单、持久产物契约和证据感知评分卡将执行就绪性与评估性声明区分开。该基础设施面向可复现的推理与评估，用于跨异构系统比较持久、可控的动态行为，从而推动从感知合成向可测量世界智能发展；但材料中未给出具体性能或效果数字，所列目录规模等均属作者描述，尚不能视为已验证结论。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.10771",
+      "authors": [
+        "Juanxi Tian",
+        "Jiadong Hou",
+        "Baiang Li",
+        "Xin Lin",
+        "Zhengbo Jiao",
+        "Weijia Zhang",
+        "Yeying Jin",
+        "Truong Nguyen",
+        "Haitian Zheng",
+        "Zhifei Zhang",
+        "Jianfei Yang",
+        "Ming-Hsuan Yang",
+        "Felix Heide",
+        "Wei Xiong",
+        "Enze Xie",
+        "Wanhua Li"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark、evaluation。"
+        },
+        {
+          "id": "zotero:cbe25e69baacf9dbe849320b1f3aa4a1",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：representation、prediction。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8855,
+      "topic_cache_token": "d14c5ea70b193601bc965b29fa4d59c9ff5bfb413795a6b915107d7ed04f61a3",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "aedadfadd398e51c46153cbd",
+      "url": "https://arxiv.org/abs/2611.10690",
+      "title": "JoVox: Joint Hierarchical Flow Matching for Lightweight Voxel Generation",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "biology"
+      ],
+      "published_at": "2026-11-07T12:21:25+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Generating high-fidelity voxels while keeping their lightweight nature remains an open problem in computer vision. Current generators are either high-fidelity but computationally heavy, or lightweight but of lower fidelity. Hierarchical methods keep the lightweight nature of voxels. However, their coarse levels, which decide where all finer cells can appear, are generated with the least information about the shape and are never revisited, so they are often plausible but wrong. Our key insight is to let finer cells take part in deciding coarse cells. To this end, we propose JoVox, a discrete flow matching framework that learns the joint distribution of all levels of the voxel hierarchy, instead of a separate distribution for each level, so that coarse cells can be predicted with finer cells already generated nearby. Within this framework, we further introduce a two-level prediction, which outputs the cells two levels finer at once instead of one level finer, halving the number of levels that the network processes and yielding voxels of higher fidelity. We also introduce an unmasking strategy that revisits early decisions once finer cells are generated and corrects inconsistencies in masked diffusion models. Our framework outperforms the baselines on both unconditional and image-conditioned voxel generation. Compared with the current state-of-the-art TRELLIS.2, we achieve 8x higher training throughput, 1/15 of the FLOPs in a forward pass, train on 4 vs. 32 GPUs, and obtain higher quality with an 11% lower Chamfer distance.",
+      "summary": "本文提出 JoVox 离散流匹配框架，通过联合建模体素层级所有层级的分布并引入两级预测与重访早期决策的解掩码策略，用于轻量体素生成。该框架在无条件与图像条件体素生成任务上优于基线；相较于 TRELLIS.2，原文报告其训练吞吐量高 8 倍、单次前向 FLOPs 为 1/15、训练 GPU 数为 4 对 32、Chamfer 距离低 11%，但这些数值来自作者声明，未在本文中独立验证。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.10690",
+      "authors": [
+        "Xiangjun Tang",
+        "Jianqi Chen",
+        "Peter Wonka"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：training。"
+        },
+        {
+          "id": "zotero:5f2099f410cafe7e76eb30a33d5a0cfa",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：computer vision。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:5f2099f410cafe7e76eb30a33d5a0cfa"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:5f2099f410cafe7e76eb30a33d5a0cfa",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8805,
+      "topic_cache_token": "5918f3c8de599c224031ba94796d131dad01a4e39310119c66728af1933392d8",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "2436e97c913008a3672eacd5",
+      "url": "https://arxiv.org/abs/2611.10404",
+      "title": "Coding or Cheating? An Investigation of Frontier Coding LLMs",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-07T02:29:54+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Frontier agentic LLMs are trained on verifiable rewards in reinforcement learning (RL) environments built from real software repositories. A passing test suite is treated as the reward for solving the task. We show that, on hard problems, frontier models often satisfy these rewards by obtaining the answer instead of deriving it, known as reward hacking. Prior reports document this behavior on public benchmarks. We test its persistence on unseen problems. In a hardened environment where the answer cannot leak, nearly every model we tested attempted to recover the answer, escalating through tiers of increasingly specialized exploitation: mining the repository history for the upstream fix, inspecting the git object store directly, and sweeping the filesystem for a possible newer copy of the source or hidden tests. These attempts were concentrated on the hardest problems, and the models differed in whether, how often, and how deeply they escalated. Our position is that this behavior is a learned shortcut, acquired in RL environments that leak the answer, not a sign of intelligence. We release agent traces for these models to support further study at https://huggingface.co/datasets/logitly-ai/reward-hacking-raw-v1.",
+      "summary": "本文在无法泄漏答案的加固环境中测试了前沿编程大模型在未见难题上的奖励黑客行为，发现几乎所有被测模型都试图通过挖掘仓库历史、检查git对象存储或扫描文件系统等方式获取答案而非自行推导，且此类尝试集中在最难题上。该研究提供了相关智能体轨迹数据集，可供后续研究使用，但其结论基于特定加固环境下的行为观察，不构成对模型一般能力或公司声明的验证。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.10404",
+      "authors": [
+        "Yuntao Gui"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:1579d11ce0d07bcc5537d8ab853a01ce",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reinforcement learning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:1579d11ce0d07bcc5537d8ab853a01ce"
+      ],
+      "topic_ids": [
+        "zotero:1579d11ce0d07bcc5537d8ab853a01ce",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8547,
+      "topic_cache_token": "4cd4c0e4f1e8186800487c2495ab3adbf363585c146ede6740613760a9532ee5",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
     {
       "id": "337e2ee55490c12a81a46582",
       "url": "https://arxiv.org/abs/2611.07962",
@@ -418,83 +1410,6 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.8312,
       "topic_cache_token": "38d28754306114f958eae1c8f80d81b39d7ebeec0b6d521959e56a0171edb4cf",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "01f260f7c65520661d2ab82d",
-      "url": "https://arxiv.org/abs/2611.08452",
-      "title": "ReproBridge: Building Reproducibility into ML Research Artifacts",
-      "source_ids": [
-        "zotero"
-      ],
-      "source_names": [
-        "Zotero 为你推荐"
-      ],
-      "group": "papers",
-      "groups": [
-        "papers"
-      ],
-      "type": "paper",
-      "tags": [
-        "agents",
-        "tools"
-      ],
-      "published_at": null,
-      "first_seen": "2026-11-07T01:33:31.038263+00:00",
-      "excerpt": "Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and supporting artifacts. For coding agents, reproduction success can therefore depend on their ability to fill in missing details, rather than on the released artifacts alone. We ask whether preserving recovered procedures and decisions improves subsequent independent reproduction. We define a standardized artifact design comprising a refined codebase, environment setup, experiment launchers, and a reproduction guide, and introduce ReproBridge, an agent workflow for constructing these refined reproducible artifacts. ReproBridge-Bench provides 1,029 tasks from 387 experiments across 36 papers, anchored by five human-verified reference scores per task. Agents attempt tasks in fresh sessions with raw code or refined artifacts; a separate Auditor checks execution evidence. Across four evaluated models, refined artifacts raise mean reproduction success from 76.4% to 92.6% and reduce downstream API spending by 19.7% on average. The cross-model success-rate spread narrows from 21.6 to 3.9 percentage points, with all four models achieving mean success rates above 90%. Removing any component reduces success in the ablation study, with the largest losses from code and environment removal. These results suggest that preserving execution knowledge helps even models with lower raw-code success reproduce experiments more reliably and at lower API cost.",
-      "summary": "该论文提出 ReproBridge 智能体工作流与标准化可复现工件，通过保留实验执行知识与决策，将机器学习实验复现的平均成功率从 76.4% 提升至 92.6%，并降低 API 成本、缩小不同模型间的性能差距。",
-      "summary_kind": "upstream_tldr",
-      "zotero_score": 3.536706528946408,
-      "authors": [
-        "Yubo Wang",
-        "Rui Meng",
-        "Jaehyun Nam",
-        "Tomas Pfister",
-        "Jinsung Yoon"
-      ],
-      "affiliations": [],
-      "pdf_url": "https://arxiv.org/pdf/2611.08452v1",
-      "topic_labels": [
-        {
-          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
-          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
-          "method": "local_lexical_v2",
-          "score": 0.54,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
-        },
-        {
-          "id": "zotero:29132f3642c19e5c9b71889c7fc63ddf",
-          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
-          "method": "local_lexical_v2",
-          "score": 0.54,
-          "confidence": "medium",
-          "status": "classified",
-          "public_reason": "公开标题或摘要包含定义关键词：reproducibility。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
-        "zotero:29132f3642c19e5c9b71889c7fc63ddf"
-      ],
-      "topic_ids": [
-        "zotero:0644b34574b700dcb769f66d83e13cb9",
-        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
-        "zotero:29132f3642c19e5c9b71889c7fc63ddf",
-        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
-        "zotero:6cb94419e4a077231731f17d61098d95"
-      ],
-      "topic_status": "classified",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.8973,
-      "topic_cache_token": "49883a701ae4c7645e7f1c4ef034b96e7e1853661575406227bbd8db84b44bd0",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -2268,6 +3183,479 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "03141415402349a6636a02c3",
+      "url": "https://arxiv.org/abs/2611.09894",
+      "title": "Video-Coder: Reinforcing Agentic Coding for Video Generation",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-06T18:59:57+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Recent years have witnessed remarkable progress in video generation in terms of visual quality and temporal consistency. However, generating videos with precise spatial structure, coherent motion dynamics, and controllable scene composition remains challenging. In this paper, we introduce Video-Coder, the first attempt to train a code-driven video generation agent, which autonomously writes and executes code to construct a dynamic 3D scene (Draft Video) that provides structure and motion signals to downstream video generators. To support this paradigm, we design a dedicated data pipeline and curate two high-quality datasets, Video-Coder-SFT-6k and Video-Coder-RL-2k, which contain diverse prompts and ground-truth reference videos. We further develop the Video- Coder Harness, a unified interactive environment integrating code execution, 3D scene rendering, and execution feedback for agent training and inference. We then train Video-Coder with SFT fol- lowed by harness-native agentic reinforcement learning with dual reward feedback, which combines execution-based and video-based rewards. Additionally, we design an annealing training strategy that gradually reduces the execution reward over time, allowing the model to rely more on the video reward in the later training stages. Experiments show that Video-Coder achieves significant gains, improving Minimax-H3 by approximately 7 points on PhyGenBench and 24 points on VBench-2.0. We hope this work can serve as an open foundation for coding agents in video generation, and we fully open-source our data, models, and code",
+      "summary": "本文提出并训练了Video-Coder，一个通过自主编写和执行代码构建动态3D场景（Draft Video）来为下游视频生成器提供结构与运动信号的代码驱动视频生成智能体，并配套构建了专用数据流水线、两个数据集以及统一交互环境。据原文所述，该工作在PhyGenBench和VBench-2.0上相对Minimax-H3取得了提升，但摘要未说明这些提升是否经过独立验证；其开源的代码、模型与数据或可为视频生成中编码智能体的后续研究提供基础，不过原文未明确列出具体适用边界或失败条件。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 6,
+      "authors": [
+        "Chaoyang Wang",
+        "Sicheng Gao",
+        "Junan Hu",
+        "Kunyang Li",
+        "Dongyang Chen",
+        "Yiyang Zhou",
+        "Huaxiu Yao",
+        "Yong Jae Lee",
+        "Radu Timofte",
+        "Yuzhang Shang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8742,
+      "topic_cache_token": "46da7aa6faa834c5487be711aa288f39fde95eb6ce36192ca9eb54faa820dada",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "c8c8baa73ce5df18141d031c",
+      "url": "https://arxiv.org/abs/2611.09892",
+      "title": "On Agentic Manipulation Policies",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-06T18:59:34+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Recent work on robot manipulation has focused on specialist policies trained on demonstrations. We show that generalist AI models can control manipulators more reliably than specialist policies such as vision-language-action models (VLAs) and world-action models (WAMs). We systematically analyze agentic manipulation policies (AMPs), in which a generalist AI model commands the manipulator directly, adapting its actions as the task unfolds. We present AMP1, a reference harness that runs unchanged across single-arm, bimanual, and mobile manipulation. AMP1 achieves state-of-the-art results on the RoboLab-120 and CaP-Gym benchmarks, with no demonstrations or task-specific training. On RoboLab-120, AMP1 reaches an 85.6\\% success rate zero-shot, compared to 49.2\\% and 42.9\\% for leading VLA and WAM policies. The agent succeeds zero-shot in 104 of 108 real-world trials spanning twelve tasks and three robot instances, reducing failure rates by 20x and 15x relative to strong VLA and WAM baselines. The basic harness supplies no grasping, pushing, or placing skills; the agent develops its own strategies, such as searching for hidden objects, using objects as tools, and calibrating its cameras. With the addition of a persistent memory store, the agent can also learn from experience: an augmented harness with a memory representation that is carried across episodes lowers the failure rate on RoboDojo bimanual manipulation tasks by 4.6x relative to zero-shot deployment. Our analysis suggests that AMPs are substantially more general and robust than specialist manipulation policies, providing a promising foundation for robot manipulation.",
+      "summary": "本文提出并系统分析了直接由通用人工智能模型驱动机械臂的智能体操作策略，并给出可在单臂、双臂和移动操作上统一运行的参考框架AMP1，报告其在RoboLab-120和CaP-Gym基准上无需演示或任务特定训练即取得先进结果。该工作为机器人操作研究提供了一种更具通用性和鲁棒性的替代思路，但相关成功率与失败率下降幅度均来自作者自报，尚需独立验证，且其结论主要限于所测基准与真实试验范围。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 9,
+      "authors": [
+        "Chen Chen",
+        "Omid Bagherieh",
+        "Naveen Nikamanth Appiah Balaji",
+        "Jesse T. Gonzalez",
+        "Negin Heravi",
+        "Fahad Islam",
+        "Xueting Li",
+        "Jean-Baptiste Regli",
+        "Kejia Ren",
+        "Petr Švec",
+        "David J. Yoon",
+        "Matthias Müller",
+        "Vladlen Koltun"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:cbe25e69baacf9dbe849320b1f3aa4a1",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：representation、analysis。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_ids": [
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7778,
+      "topic_cache_token": "3e6118f885dc90daa30b2af4ff5aef584db75ab3023d75de8beb26c79dad8e22",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "a3312d7ff7f4129fb453a4ff",
+      "url": "https://arxiv.org/abs/2611.09880",
+      "title": "ZeoBench: A Benchmark for Self-Supervised Learning on 3D Zeolite Representations",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "chemistry"
+      ],
+      "published_at": "2026-11-06T18:55:34+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Zeolites are an important class of porous crystalline materials with broad applications in gas storage, separations, and catalysis. Although hundreds of thousands of experimentally realized and hypothetical zeolite structures are known, identifying materials optimized for a target application remains challenging because property labels are expensive to obtain and available only for limited structure-molecule pairs. While prior work has demonstrated that 3D neural representations can predict zeolite properties effectively, it remains unclear which representation-learning strategies are most effective in the low-data regime relevant to materials discovery. We present ZeoBench, a benchmark for self-supervised learning on dense 3D representations of all-silica zeolites, and evaluate the resulting features on six existing downstream adsorption-property prediction tasks, across a range of training set sizes. Our study compares self-supervised 3D pretraining on volumetric zeolite data, adaptations of image-pretrained 2D ConvNets and vision transformers to 3D via multiview and channel-inflation strategies, and 3D ConvNets pretrained on out-of-domain volumetric datasets, alongside hand-crafted descriptors and supervised baselines. Using our pretraining and evaluation framework, we find self-supervised 3D representations outperform existing methods and achieve state-of-the-art performance across both in-domain label regimes and for the unseen domain of metal organic frameworks. Learned representations consistently outperform hand-crafted descriptors, and convolutional architectures are generally more effective than vision transformers in this setting. These results establish ZeoBench as a practical benchmark for 3D representation learning in zeolites and provide guidance for data-limited adsorption property prediction.",
+      "summary": "本文提出ZeoBench，一个针对全硅沸石稠密三维表示的自监督学习基准，包含33.1万真实与假想结构的固定划分，并在六个吸附性质预测任务、不同标签预算下比较了域内三维自监督预训练、二维ImageNet预训练骨干的三维适配、域外三维体数据预训练、手工描述符和监督基线。该基准为数据有限的吸附性质预测中的三维表示学习提供统一评测与选择参考；但结论基于本文提供的摘要与片段，未阅读完整全文，所报告的比较结果与最优性能仍需以原文实验细节为准。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Aaron Sun",
+        "Yachan Liu",
+        "Ping Yang",
+        "Peng Bai",
+        "Subhransu Maji"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark、evaluation。"
+        },
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        },
+        {
+          "id": "zotero:26109485cf87bb2ed81032d57c606133",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：zeolite。"
+        },
+        {
+          "id": "zotero:84051b1f05b8368766ddc3a2195c2324",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：metal。"
+        },
+        {
+          "id": "zotero:cbe25e69baacf9dbe849320b1f3aa4a1",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：representation、prediction。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:26109485cf87bb2ed81032d57c606133",
+        "zotero:84051b1f05b8368766ddc3a2195c2324",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:26109485cf87bb2ed81032d57c606133",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:84051b1f05b8368766ddc3a2195c2324",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9114,
+      "topic_cache_token": "8f9790a475c32daf6f29ca91a29be7a61dfce85a3a63812ce319db7598dcb260",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.09880",
+        "sha256": "6a55938340b64c3ca95b90b45d576d00952ea31faa631da3e33a7817aad35b45",
+        "chars": 12000
+      }
+    },
+    {
+      "id": "c92c97ccc24f9cc0ef7e0e5c",
+      "url": "https://arxiv.org/abs/2611.09828",
+      "title": "Designing Effective Monitor-Based Interventions for Mitigating Reward Hacking During RL",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-11-06T18:14:52+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Reinforcement learning (RL) rewards are notoriously difficult to design and control, often leading to the model learning unintended behaviors such as reward hacking. One potential solution is to monitor for reward hacking and penalize it when detected; however, training against a monitor could lead to evasive behavior, and our general understanding of how to apply monitors effectively during training is limited. To study how best to use monitors to mitigate reward hacking, we introduce and open source three realistic environments where Qwen3-4B reward hacks: a coding environment hackable via test overwriting, a medical chat environment hackable via sycophancy, and a biography generation environment hackable via hallucination. We first focus on the coding environment, where we find that: (1) models can learn to evade highly accurate monitors by exploiting systemic flaws in probes and LLM judges; (2) monitors that leak more learning signal during RL suppress reward hacking but are more often evaded; and (3) including easier problems in training can decrease reward hacking. We apply our findings to build better reward hacking monitors for the medical chat and biography generation environments that improve upon naive baselines to reduce reward hacking rates across seeds to before-training levels in some interventions. Our results demonstrate that our takeaways translate to new settings and that better monitor intervention designs are possible.",
+      "summary": "本文开源了三个Qwen3-4B会出现奖励黑客的真实环境，并在编码环境中考察了监视器干预设计对规避行为、学习信号泄漏及训练题目难度的影响，进而将所得设计用于医疗聊天与传记生成环境。上述结果为在RL训练中设计更有效的基于监视器的奖励黑客缓解干预提供了可迁移的实证参考，但原文明确其理解仍有限，且未声称所提干预已在所有设定或规模上得到验证。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 8,
+      "authors": [
+        "Aria Wong",
+        "Joshua Engels",
+        "Neel Nanda"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:life_sciences"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.74,
+      "topic_cache_token": "5c71221ae7295ef5ecab19f5a35b1527a544098efb3e46584e2c4a97640e8d87",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "e6eb6af22437915fd351eee9",
+      "url": "https://arxiv.org/abs/2611.09572",
+      "title": "Inverse design of superconductors and semiconductors with differentiable foundation models",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-06T15:12:07+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Designing a crystal for a target property requires choosing its elements, stoichiometry, and atomic structure together, yet gradients exist only for the continuous structural variables. We introduce differentiable Equiformer fast effective-atom theory (DEFEAT), which lets a pretrained EquiformerV3 foundation model accept continuous species weights and site occupancies without retraining on fractional data, thereby enabling gradient-based materials optimization. Gradients from fine-tuned property models and a machine-learned energy penalty then guide updates to composition, atom count, atomic positions, and lattice vectors in a single optimization. In a search for phonon-mediated superconductors, density-functional perturbation theory on 45 structurally novel designs gives isotropic Allen-Dynes critical temperatures above 10 K for 39; the highest is 24.0 K for ZrTiNb2CN3, and H4LiPd3 (23.2 K) lies on the static DFT hull. In searches for photovoltaic absorbers, SCAN calculations confirm ten novel crystal structures with band gaps within 20% of a 1.34 eV target on their respective raw or empirically corrected scales, all within 70 meV/atom of the DFT hull, and show that the systematic gap error of the training functional propagates into the designs unless the objective corrects for it. Quasiharmonic free energies from machine-learned potentials further show that finite-temperature competition with solid phases can reorder candidates relative to the static hull.",
+      "summary": "本文提出DEFEAT，将预训练EquiformerV3基础模型改为可接受连续物种权重与位点占据度，从而在不使用分数数据重训练的情况下，对组成、原子数、原子位置和晶格矢量进行单次梯度优化。该工作可用于声子介导超导体和光伏吸收体的逆向设计；原文报告了DFPT/SCAN等第一性原理评估结果，但其检索与排序依赖所提供摘要中所述的模型预测和稳定性判据，且部分比较因数据集或测试划分不同仅为指示性，未在本文中独立复现。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Cristóbal Méndez",
+        "Justin Tahmassebpur",
+        "Tomás A. Arias"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：training、optimization。"
+        },
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：crystal。"
+        },
+        {
+          "id": "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+          "facet": "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：DFT。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8633,
+      "topic_cache_token": "3f389697ff9e1796cf193a3fb43263d6b52b995eecd5234baf07046fbce6988a",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.09572",
+        "sha256": "33187d6673ca32ef57299f98f79da44cd057dd20144131338cc28bd2730d9661",
+        "chars": 12000
+      }
+    },
+    {
+      "id": "a4e1d9bdf7544ac25479e6ef",
+      "url": "https://arxiv.org/abs/2611.09298",
+      "title": "Towards an Autonomous AI Steward for Large-Scale Physics Experiments: Integrating Causal Diagnostics, RAG, and Conformal Prediction",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-11-06T10:52:19+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Long-term particle physics experiments face critical operational challenges: monitoring non-stationary machine data streams and preserving tacit expert knowledge. We present the \"Helmholtz Co-Pilot,\" a hybrid Multi-Agent System (MAS) acting as an autonomous experiment steward. The system can be triggered interactively by human operators or autonomously by an asynchronous causal diagnostics engine that runs independently of the MAS reasoning core. Continuously monitoring live hardware streams such as data acquisition and slow control, this engine performs dynamic causal discovery to trace cascading alarms back to their root causes and applies adaptive model selection to keep forecasts reliable across shifting machine states; upon detecting an anomaly, it hands a structured diagnostic report to the MAS. The reasoning layer itself relies on a high-throughput C++ core and a Python edge architecture orchestrating a directed acyclic graph (DAG) of specialized ReAct workers. It integrates a Retrieval-Augmented Generation (RAG) backbone for institutional memory and leverages conformal prediction to bound its evidence-based recommendations with mathematical coverage guarantees. This extended abstract outlines the architecture, the integration of software-enforced Human-in-the-Loop (HitL) guardrails, and ongoing shadow-testing within the KATRIN experiment.",
+      "summary": "本文介绍Helmholtz Co-Pilot这一混合多智能体系统：它由异步因果诊断引擎或人工交互触发，结合动态因果发现、基于检索增强生成的机构记忆、合规预测以及软件强制的人在回路防护，用于监测大型物理实验的硬件流并支持根因追溯与建议生成。该工作目前处于原型向框架过渡阶段，并仅在KATRIN实验中进行影子测试以安全评估实际表现，文中未给出已验证的性能数字，因此其实际有效性尚待后续评估。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Oliver Noll",
+        "Nicholas Tan Jerome",
+        "Alexander Lehnen",
+        "Frank Simon",
+        "Frank Maas"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：generation。"
+        },
+        {
+          "id": "zotero:8a3a99cf84fd10886a5d50f8727ee20c",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：RAG。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+        "zotero:8a3a99cf84fd10886a5d50f8727ee20c"
+      ],
+      "topic_ids": [
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8a3a99cf84fd10886a5d50f8727ee20c",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8551,
+      "topic_cache_token": "c6e381d586023546a35f6c5cea926a23d6f382b86313b1abd624bb6fc5fff204",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.09298",
+        "sha256": "9e04dc4eddf092ffa3be5112b62dd337d4a93e7b6c510812fc16996bd3a0ed72",
+        "chars": 7485
+      }
+    },
+    {
       "id": "a0a44ed09dc9a1089b4e099f",
       "url": "https://openai.com/index/partnering-with-hacktron",
       "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
@@ -2413,6 +3801,173 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.5714,
       "topic_cache_token": "6d803e822d6bbec34617fcc7c8346c75bc39767cc7f1fd4759c6136102a60dcb",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "8f0d0ab145782fb47ea39e69",
+      "url": "https://arxiv.org/abs/2611.09036",
+      "title": "ToolDex: An Ego-Exo Human Demonstration Dataset for Creative Physical Tool Use",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-06T06:12:33+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Creative tool use is a fundamental human capability and an important step toward general-purpose embodied intelligence. It requires agents to reason about object affordances, physical constraints, and manipulation strategies, especially when standard tools are unavailable. However, progress in this area is limited by the lack of real-world datasets that capture human tool-use behavior with sufficient scale, fidelity, and diversity. Existing benchmarks are often simulation-based, focus on simplified interactions, or lack detailed observations and annotations. We introduce ToolDex, a large-scale egocentric-exocentric (ego-exo) human demonstration dataset for creative physical tool use. ToolDex captures scenarios in which humans select, adapt, and repurpose available objects as tools. Using synchronized egocentric cameras and eight exocentric cameras, the dataset provides high-fidelity multi-view observations and rich annotations for hands, tools, target objects, and their deformable interactions. Beyond data collection, we establish a benchmark suite characterizing three core capabilities: physical tool-use reasoning, sparse-view 3D and 4D reconstruction, and robot policy learning. ToolDex provides a foundation for studying human tool-use behavior and developing embodied agents that can adaptively use tools in complex real-world environments. Dataset visualizations and benchmarking results are available at https://tooluse-dataset.github.io/.",
+      "summary": "本文提出了ToolDex，一个通过同步第一人称与八个第三人称相机采集、标注手部、工具、目标物体及其可变形交互的大规模第一人称-第三人称人类演示数据集，用于捕捉人类选择、改造和重新利用物体作为工具的场景，并建立了涵盖物理工具使用推理、稀疏视角3D/4D重建和机器人策略学习三项核心能力的基准测试。该数据集为研究人类工具使用行为以及开发能在复杂真实环境中自适应使用工具的具身智能体提供了基础，但其对科研工作的具体用途和性能表现仍需以原文及公开基准结果为准。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 3,
+      "authors": [
+        "Mohamed Elmoghany",
+        "Kehan Li",
+        "Ruoqu Chen",
+        "Tarun Chiruvolu",
+        "Shutong Zhang",
+        "Ryan Wang",
+        "Stephen Tian",
+        "Yaru Niu",
+        "Michelle Guo",
+        "Ding Zhao",
+        "Weiyu Liu",
+        "Mengdi Xu",
+        "Li Fei-Fei",
+        "Jiajun Wu"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：dataset、benchmark。"
+        },
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        },
+        {
+          "id": "zotero:c143f684d9fa5b5af6a7ff1ee4101832",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：tool use。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:c143f684d9fa5b5af6a7ff1ee4101832"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:c143f684d9fa5b5af6a7ff1ee4101832"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8841,
+      "topic_cache_token": "a7f606b81971d808b43f3d17cc8276b4ec50db699b40afcd6c7e891a022ff9c1",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "1781d28c12338cb7a35c7a1e",
+      "url": "https://arxiv.org/abs/2611.08977",
+      "title": "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-11-06T04:40:47+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Looping is a powerful inductive bias for reasoning. By repeatedly iterating a recurrent block, looped models can scale their effective depth and enable multi-step reasoning in latent space. However, existing looped models are not inherently guided by an explicit measure of progress, making it difficult to determine when to stop looping and how to improve upon the current state. To enable this, we introduce Energy-Based Reasoners (EBRs), which learn an energy function over latent reasoning states and formulate looped updates as gradient descent on this energy. The energy scores latent states, while its gradient guides refinement and provides a signal for stopping. To train EBRs effectively, we further introduce exploration-based training to discover additional modes and to better shape the energy landscape over a broader set of states. Across four algorithmic reasoning benchmarks, EBRs match or outperform prior recurrent reasoning models, achieving 99.9% accuracy on Sudoku-Extreme while using 345$\\times$ less inference compute than the next-best model and maintaining comparable training compute. On all multi-solution benchmarks, EBRs achieve state-of-the-art coverage of distinct valid solutions while maintaining near-100% single-sample accuracy. These results suggest that energy-based models are a promising approach for strong reasoning performance.",
+      "summary": "本文提出Energy-Based Reasoners（EBRs），在潜在推理状态上学习能量函数，并将循环更新表述为对该能量的梯度下降，同时引入基于探索的训练以发现额外模式并塑造能量景观。该工作可用于指导循环推理的停止判断与状态改进，但所报告的基准表现（如在Sudoku-Extreme上的准确率与推理计算量对比）均为作者声明，尚待独立验证。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 7,
+      "authors": [
+        "William Xingxu Chen",
+        "Alexi Gladstone",
+        "Zeyu Michael Li",
+        "Heng Ji",
+        "Yilun Du"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：training。"
+        },
+        {
+          "id": "zotero:d680e95392def25285a997e886e86a05",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reasoning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8636,
+      "topic_cache_token": "8a671573c9800f4751be0fff3d5c637d7806389e451e013c31512b03ef524fb7",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -5163,6 +6718,307 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "753f67f2ddb5e9a782f3e6f9",
+      "url": "https://arxiv.org/abs/2611.09124",
+      "title": "Toward the Era of Agentic Embodied Intelligence",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-06T00:00:00+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Foundation models increasingly guide robot actions, yet sustained autonomy requires efficient control and failure recovery. We introduce A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execution history, and action proposals. MetaBrain provides training supervision and runtime guidance. A correction encoder and adapter absorb this knowledge into policy weights during training, while fresh codes adapt behavior with frozen weights at deployment. The action model, A2-WLA, adds motion-aware history and a latent world model to a vision-language-action policy. Surprisingly, this simple design with action pretraining and task specialization reaches 0.5755 Q-score on the 50-task BEHAVIOR 2026 public subset before online correction, 2.21x the 2025 winner's reported 0.2605 across different benchmark editions and training configurations. On all 100 BEHAVIOR 2026 public tasks, A2-MEAS achieves 0.6411 Q-score and 45.40% task success. On RoboTwin 2.0, A2-WLA achieves 93.98% average success, rising to 95.05% with the complete system. Across 12 real-robot tasks in five household settings, A2-WLA achieves 57.92% average success versus 26.67% for pi0.5. In long-horizon pour-over coffee preparation, a history-conditioned adapter raises post-failure completion at two filter-handling steps from 14% to 94% and from 8% to 82%, compared with A2-WLA retries. Our training infrastructure delivers 427.1 samples per second, 4.03x the throughput of a pi0.5 reference implementation on matched hardware. We will release the system, models, training scripts, and infrastructure to support efficient embodied learning.",
+      "summary": "本文提出并介绍了A2-MEAS这一以代码为扩展接口的具身多智能体框架，以及其动作模型A2-WLA，并报告了在BEHAVIOR 2026公开子集与全部公开任务、RoboTwin 2.0、12项真实机器人任务和长时程倒滤咖啡准备中的评测结果。原文明确表示将发布系统、模型、训练脚本和基础设施以支持高效的具身学习，但所提供的材料仅为摘要，无法据此核实完整方法细节或独立复现其性能结论。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.09124",
+      "authors": [
+        "Chao Liang",
+        "Ke Chen",
+        "Fengxiaoxiao Li",
+        "Shibo Huang",
+        "Yufeng Sun",
+        "Zhaokai Yin",
+        "Jianhuan Lai",
+        "Haozhe Feng",
+        "Chenghuan Jia",
+        "Zhipeng Zhang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        },
+        {
+          "id": "zotero:e09a09615a9a79995ffd756fcf67aa3f",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8086,
+      "topic_cache_token": "607c6c2580be9f22e288a10f388e21cdcaf9d827475da99326c04f1177e1a43a",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "ccf6eb326310979854724b20",
+      "url": "https://arxiv.org/abs/2611.09891",
+      "title": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-11-06T00:00:00+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Large language models reinvent the wheel all the time. They conflate task-solving with the execution of the solutions, which forces them to solve every problem from scratch. We show that once a task has been reasoned through, the application of its solution to a new problem instance can be done very efficiently and with little involvement from language models. We introduce agentic reasoning caching, a method for constructing robust CPU-executable agentic reasoning caches (ARCs) from LLM reasoning traces. ARCs show on-par performance with frontier LLMs across a range of difficult mathematical and scientific tasks, are fully explainable, continually trainable, robust to input perturbations, and 16-291x cheaper to invoke than the source model.",
+      "summary": "本文提出代理式推理缓存（ARC），从LLM推理轨迹中构建可在CPU上执行的推理缓存，并报告ARC在若干数学与科学任务上与前沿LLM表现相当。对科研工作而言，该方法可用于对已验证的LLM推理过程进行复用；其限制和适用边界未在所提供的公开材料中明确说明。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.09891",
+      "authors": [
+        "Peter Belcak",
+        "Greg Heinrich",
+        "Saurav Muralidharan",
+        "Shizhe Diao",
+        "Pavlo Molchanov"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:d4a56870e35078a55f7511a07aac9f6e",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：LLM。"
+        },
+        {
+          "id": "zotero:d680e95392def25285a997e886e86a05",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reasoning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d4a56870e35078a55f7511a07aac9f6e",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_ids": [
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d4a56870e35078a55f7511a07aac9f6e",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8889,
+      "topic_cache_token": "460ddd460773a3ee4c6981c3ef0448db5f566211613b02e8923d5c106007035c",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "67b113e2b2f49c1106411d06",
+      "url": "https://arxiv.org/abs/2611.09634",
+      "title": "Steerable Multi-Objective Group-Relative Preference Optimization with Jointly Trained Low-Rank Adapters",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-11-06T00:00:00+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Language model deployment often requires different trade-offs between competing objectives as user preferences change, yet standard post-training methods typically produce a single policy for a fixed objective weighting. We introduce LambdaMix, a new parameter efficient method for learning a preference conditioned family of policies with group-relative online reinforcement learning. LambdaMix jointly trains one low-rank adapter per objective over a frozen base model. One preference vector selects the adapter mixture that generates responses and weights the separately normalized rewards used to update the adapters. A single training run supports changing preferences at inference without further optimization. We experiment with four models on helpfulness and harmlessness and on solving math problems while following instructions. We also evaluate the two largest models on rewriting comments to preserve wording while reducing clues about personal attributes. On the first two tasks, LambdaMix achieves higher hypervolume than all evaluated conditioned and policy merging baselines across all four models. LambdaMix uses fewer training completions and stores fewer adapter parameters than a set of GRPO specialist policies. With architecture and initialization fixed, varying adapter mixtures and objective weights together gives wider score ranges and higher coverage than varying either alone.",
+      "summary": "本文提出LambdaMix，一种在冻结基座模型上联合训练多个低秩适配器、并由偏好向量选择适配器混合及加权各目标归一化奖励的组相对在线强化学习方法，使单次训练即可支持推理时改变偏好。实验在四个模型上表明其在有用性与无害性、数学解题与指令遵循任务中的超体积高于所评估的条件化与策略合并基线，并比一组GRPO专用策略使用更少训练补全和存储更少适配器参数，但结果仅限摘要所列任务与基线，未涉及其他场景。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.09634",
+      "authors": [
+        "Constantinos Karouzos",
+        "Nikolaos Aletras"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:1579d11ce0d07bcc5537d8ab853a01ce",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reinforcement learning、GRPO。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:1579d11ce0d07bcc5537d8ab853a01ce"
+      ],
+      "topic_ids": [
+        "zotero:1579d11ce0d07bcc5537d8ab853a01ce",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8649,
+      "topic_cache_token": "60bff756e482e4dc486bca4da2935852be2c3233b48860b7fa8f3f3096bc15f8",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "d7a198189fa87832d021c7bd",
+      "url": "https://arxiv.org/abs/2611.08922",
+      "title": "Glyph: An Interpretability Engine for AI-Driven Scientific Discovery in Clinical Data",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-06T00:00:00+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Automated scientific discovery has the potential to advance understanding of disease mechanisms and accelerate identification of early disease markers. Manual data annotation is infeasible at population scale, motivating methods that automatically extract pre-defined phenotypes in multimodal and unstructured clinical data. Such pre-defined feature sets determine and limit which associations these approaches can discover. This limitation extends to agentic AI systems that use these tools to query population-scale data. In contrast, foundation models (FMs) trained on large volumes of clinical data can perform tasks beyond their training objectives. This suggests their latent embeddings may represent novel or unexplored features that could yield insights into disease mechanisms, yet such latent features remain difficult to interpret. To address this challenge, we introduce Glyph, an automated multistage framework that extracts features from multimodal and unstructured clinical data using FMs and sparse autoencoders, interprets them as coded clinical concepts, and evaluates their value for clinical scientific discovery. We applied Glyph to abdominal CT volumes, CT radiology reports and laboratory measurements from 41,628 patients across different institutions. We identified 397 predictive concepts supported by 4,463 Bonferroni-significant associations. Moreover, a majority of discovered associations were automatically reproducible in held-out cohorts across different sites. Glyph concepts provided complementary associations to literature-derived markers, leading to gains in predictive power. We envision that interpretability can extend beyond a mechanistic understanding of neural networks to connecting implicitly learned features with clinical knowledge and establishing their significance for patient outcomes. We release Glyph at https://github.com/StanfordMIMI/Glyph.",
+      "summary": "本文提出并应用了Glyph框架，利用基础模型和稀疏自编码器从腹部CT、放射报告和实验室数据中提取并解释潜在特征，在41,628名患者中识别出397个预测概念。该工作为将隐性学习的特征与临床知识关联并支持科学发现提供了工具，但其结论基于所报告的跨机构验证，科研人员在使用时仍需结合原文所述队列与统计条件评估适用性。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Robbie Holland",
+        "Ashwin Kumar",
+        "M. Esmeraldo",
+        "David Le",
+        "Andrea Fisher",
+        "Jia-Zhen Pan",
+        "L. Fay",
+        "Magdalini Paschali",
+        "Vasiliki Sideri-Lampretsa",
+        "A. Fettahoglu",
+        "Stefania L. Moroianu",
+        "P. Wesp",
+        "Ivan Lopez",
+        "Tom Nuno Wolf",
+        "McKenzie S. White",
+        "E. Reis",
+        "Fatima Rodriguez",
+        "Curtis P. Langlotz",
+        "Vasilis Syrgkanis",
+        "Imon Banerjee",
+        "Akshay S. Chaudhari",
+        "S. Gatidis"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：training。"
+        },
+        {
+          "id": "zotero:68e7d38bc58fa7101b2c778abec94537",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：scientific discovery。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:68e7d38bc58fa7101b2c778abec94537"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:68e7d38bc58fa7101b2c778abec94537",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8521,
+      "topic_cache_token": "890ef34333a373c22b6bb3e7eda92dbc9775bb3fee44557bae1227f77cf0e5ad",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "bbd492caba72ca544b8bac32",
       "url": "https://openai.com/index/cultfit-builds-with-codex",
       "title": "Cult.fit builds operational muscle with Codex",
@@ -5279,7 +7135,86 @@
       "topic_cache_token": "b2769e0e49f524459286ac5db300fc1866ee8aa02c44f850bb0d8580f3009433",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical",
-      "alpha_rank": 3
+      "alpha_rank": 10
+    },
+    {
+      "id": "01f260f7c65520661d2ab82d",
+      "url": "https://arxiv.org/abs/2611.08452",
+      "title": "ReproBridge: Building Reproducibility into ML Research Artifacts",
+      "source_ids": [
+        "zotero",
+        "hf-daily"
+      ],
+      "source_names": [
+        "Zotero 为你推荐",
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-05T18:45:36+00:00",
+      "first_seen": "2026-11-07T01:33:31.038263+00:00",
+      "excerpt": "Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and supporting artifacts. For coding agents, reproduction success can therefore depend on their ability to fill in missing details, rather than on the released artifacts alone. We ask whether preserving recovered procedures and decisions improves subsequent independent reproduction. We define a standardized artifact design comprising a refined codebase, environment setup, experiment launchers, and a reproduction guide, and introduce ReproBridge, an agent workflow for constructing these refined reproducible artifacts. ReproBridge-Bench provides 1,029 tasks from 387 experiments across 36 papers, anchored by five human-verified reference scores per task. Agents attempt tasks in fresh sessions with raw code or refined artifacts; a separate Auditor checks execution evidence. Across four evaluated models, refined artifacts raise mean reproduction success from 76.4% to 92.6% and reduce downstream API spending by 19.7% on average. The cross-model success-rate spread narrows from 21.6 to 3.9 percentage points, with all four models achieving mean success rates above 90%. Removing any component reduces success in the ablation study, with the largest losses from code and environment removal. These results suggest that preserving execution knowledge helps even models with lower raw-code success reproduce experiments more reliably and at lower API cost.",
+      "summary": "该论文提出 ReproBridge 智能体工作流与标准化可复现工件，通过保留实验执行知识与决策，将机器学习实验复现的平均成功率从 76.4% 提升至 92.6%，并降低 API 成本、缩小不同模型间的性能差距。",
+      "summary_kind": "upstream_tldr",
+      "zotero_score": 3.536706528946408,
+      "authors": [
+        "Yubo Wang",
+        "Rui Meng",
+        "Jaehyun Nam",
+        "Tomas Pfister",
+        "Jinsung Yoon"
+      ],
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.08452v1",
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        },
+        {
+          "id": "zotero:29132f3642c19e5c9b71889c7fc63ddf",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reproducibility。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:29132f3642c19e5c9b71889c7fc63ddf"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:29132f3642c19e5c9b71889c7fc63ddf",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:6cb94419e4a077231731f17d61098d95"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8973,
+      "topic_cache_token": "49883a701ae4c7645e7f1c4ef034b96e7e1853661575406227bbd8db84b44bd0",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
     },
     {
       "id": "3cc810d4cea085415783dcd6",
@@ -5304,7 +7239,7 @@
       "excerpt": "Models for physical AI tasks, such as robotics and autonomous driving, need not reason solely in language. They can use visual plans--points, bounding boxes, and trajectories--to represent spatial goals and anticipate motion. However, autoregressive vision-language models generate these plans one coordinate token at a time, making richer predictions increasingly costly. We introduce VFlash, a method for fast, accurate visual planning through Flash Primitive Decoding. VFlash exploits the known structure of visual primitives to predict their coordinates jointly, using a lightweight drafter that generates an entire primitive in one forward pass. The layout adapts to the primitive's type, dimensionality, and length, supporting compact boxes and long, variable-length trajectories. Crucially, spatial accuracy need not require reproducing an autoregressive model's exact token sequence. VFlash therefore trains on annotated primitives and directly accepts structurally valid predictions without target-token agreement. Across the evaluated 2D and 3D robot trajectory tasks, VFlash consistently reduces prediction errors relative to autoregressive decoding. Preliminary single-rollout measurements indicate approximately 25x faster generation for 3D point motion forecasting. A world action model conditioned on VFlash plans achieves 70.2% average success across four MolmoSpaces task suites, compared with 62.6% for the baseline.",
       "summary": "本文提出 VFlash，一种通过 Flash Primitive Decoding 联合预测视觉基元坐标的并行解码方法，并在评估的 2D 和 3D 机器人轨迹任务上降低了预测误差。该方法据原文可用于降低下游机器人操作流水线的推理延迟并为动作模型提供条件；原文同时说明，约 25 倍加速仅为 3D 点运动预测的单次 rollout 初步测量结果，且该加速未经独立验证。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 2,
+      "alpha_rank": 5,
       "authors": [
         "Yu-Cheng Chou",
         "Shihao Wang",
@@ -6157,6 +8092,69 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "aeea08d0e3c9bc759539ec1d",
+      "url": "https://arxiv.org/abs/2611.08175",
+      "title": "PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-05T15:31:15+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Automating printed circuit board (PCB) routing requires coordinating board-level connectivity decisions with geometric execution under strict design rules. Although recent agents can interact with native routing tools, reliable routing on complex boards remains challenging. We present PCBRouteAgent, a multimodal PCB routing agent inspired by how human engineers coordinate global strategy with local execution. A Global Routing Planner combines board images and structured electrical and geometric information to specify connection topology, routing order, corridors, and layer transitions. A Detailed Routing Executor realizes these guides through KiCad's native routing engine and performs bounded local recovery. Unresolved failures are returned as structured feedback, enabling targeted guide revisions while preserving accepted routes. We evaluate PCBRouteAgent on 247 synthetic and real-world boards from four PCBWorld-Bench test splits. It achieves clean-pass rates of 100%, 94.9%, 100%, and 40% on D2, D3-A, D3-B, and D3-C, respectively. On the three real-world subsets, PCBRouteAgent outperforms the best evaluated baseline in clean-pass rate by 13.9, 36, and 10 percentage points, respectively.",
+      "summary": "本文提出PCBRouteAgent，一种多模态PCB布线智能体，通过全局布线规划器结合板图与结构化电气几何信息指定连接拓扑、布线顺序、通道和层转换，再由详细布线执行器借助KiCad原生布线引擎实现并做有界局部恢复，未解决失败以结构化反馈返回以修订指南并保留已接受路由。该工作在PCBWorld-Bench四个测试划分的247块合成与真实板上评估，报告了各划分的清洁通过率及在三个真实世界子集上相对最佳基线分别高出13.9、36和10个百分点，但原文未提供完整全文以外的细节，其性能数字均为特定基准下的结果，不宜直接外推为通用布线能力的验证结论。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.08175",
+      "authors": [
+        "Yue Zhang",
+        "Jilei Sun",
+        "Liqiang Jing",
+        "Yijie Wei",
+        "Ruohan Yang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:d4a56870e35078a55f7511a07aac9f6e",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：LLM。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d4a56870e35078a55f7511a07aac9f6e"
+      ],
+      "topic_ids": [
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d4a56870e35078a55f7511a07aac9f6e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7422,
+      "topic_cache_token": "b0232db79ae9fd1ac57eef85be8d7e07d7c5d54f85c891f43229b50fdfc0a04d",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "b035fd6e96619dd3a776825c",
       "url": "https://arxiv.org/abs/2611.08016",
       "title": "Learning Dynamics of On-Policy Distillation",
@@ -6642,8 +8640,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "James A. Evans",
-        "E. Glen Weyl"
+        "James A. Evans and E. Glen Weyl"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -6832,8 +8829,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Blánaid Hicks",
-        "Anton Pottegård"
+        "Blánaid Hicks and Anton Pottegård"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -6949,8 +8945,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Kenneth C. Shadlen",
-        "Olivier J. Wouters"
+        "Kenneth C. Shadlen and Olivier J. Wouters"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -7008,11 +9003,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Nan Wang",
-        "Hai-Dong Li",
-        "Hao Shi",
-        "Xiao-Mian Zhang",
-        "Li Liu"
+        "Nan Wang, Hai-Dong Li, Hao Shi, Xiao-Mian Zhang, and Li Liu"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -7128,19 +9119,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Sacha Vignieri",
-        "Phil Szuromi",
-        "Jesse Smith",
-        "Jelena Stajic",
-        "Christiana N. Fogg",
-        "Laura Ensign",
-        "L. Bryan Ray",
-        "Priscilla N. Kelly",
-        "Yevgeniya Nusinovich",
-        "Angela Hessler",
-        "Yury Suleymanov",
-        "Annalisa VanHook",
-        "Ji-Xin Cheng"
+        "Michael Funk, and Sacha Vignieri, Phil Szuromi, Jesse Smith, Jelena Stajic, Christiana N. Fogg, Laura Ensign, L. Bryan Ray, Priscilla N. Kelly, Yevgeniya Nusinovich, Angela Hessler, Yury Suleymanov, Annalisa VanHook, and Ji-Xin Cheng"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -7198,8 +9177,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Zara Harmon",
-        "Caroline F. Rowland"
+        "Zara Harmon and Caroline F. Rowland"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -7373,10 +9351,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Yevgeniya Nusinovich",
-        "Mattia Maroso",
-        "Joana OsÓRio",
-        "Brad Wible"
+        "Yevgeniya Nusinovich, Mattia Maroso, Joana OsÓRio, and Brad Wible"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -7492,13 +9467,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Corinne Simonti",
-        "Jack Huang",
-        "Bianca Lopez",
-        "Phil Szuromi",
-        "Melissa McCartney",
-        "Joana Osório",
-        "Ian S. Osborne"
+        "Corinne Simonti, and Jesse Smith, Corinne Simonti, Jack Huang, Bianca Lopez, Phil Szuromi, Melissa McCartney, Joana Osório, and Ian S. Osborne"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -7788,8 +9757,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Nora D. Volkow",
-        "Eric M. Wargo"
+        "Nora D. Volkow and Eric M. Wargo"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -10787,7 +12755,7 @@
       "topic_cache_token": "023a30c826fc01ebd9eec85251788c61daa7444ada334fedfa2b1b6ffe075d92",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical",
-      "alpha_rank": 6
+      "alpha_rank": 4
     },
     {
       "id": "ce46af3b95e9f7110c6cf861",
@@ -11316,6 +13284,77 @@
         "sha256": "fc03fea0f32847fc5f323b9266e10dc71587dd810b4d21d4d1b4ccd417349720",
         "chars": 12000
       }
+    },
+    {
+      "id": "605714b8c1bb680ff5a55972",
+      "url": "https://arxiv.org/abs/2611.08647",
+      "title": "IWIBench: Evaluating Gradient-Free Model Driven Intra-weight Injection",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-11-05T00:00:00+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Intra-weight injection lets one model change another model's behaviour by editing its weights directly, without gradients. Such edits can range from altering lexical associations to enforcing output formats or updating factual knowledge. Despite growing interest in these approaches, there has been no systematic way to evaluate how well models perform them. We introduce IWIBench, which measures a large editor model's ability to modify the weights of a smaller target model (typically Gemma 3 4B IT) to achieve one of ten classical text-editing objectives while preserving its other capabilities. Editors are limited to four tools for reading and writing weights, with bounded tensor access and a fixed budget for generating and inspecting rollouts. A validator applies each proposed patch in a clean environment and compares the edited model against the unmodified target. Evaluating frontier closed- and open-weight models reveals sharply diverging capabilities, both across models and across tasks. A small number of models, most notably Astra and GPT-6.1 Sol, perform far ahead of the rest. The recency of this ability (little of it is evident in GPT-5.6 Sol, for instance), together with qualitative analysis, suggests it has been acquired through recent training. Tasks also vary widely: structured response resisted every attempt, and answer-length control yielded only one successful solution, whereas alias acquisition and recoding proved most amenable. Success in one task family correlated poorly with success in others, indicating an early and uneven capability frontier. We discuss strategies that editors repeatedly adopted and conclude with an outlook on intra-weight injection as an emerging but already potent approach to gradient-free behaviour modification.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2611.08647",
+      "authors": [
+        "Chris von Csefalvay",
+        "Pranav Doma",
+        "Achyuthan Unni Krishnan",
+        "Tamás Földi"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：training。"
+        },
+        {
+          "id": "zotero:cbe25e69baacf9dbe849320b1f3aa4a1",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：analysis。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8202,
+      "topic_cache_token": "7992f04451fd558aa28610120484d2254ec1d062512d70465551bfc4a75e8b56",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
     },
     {
       "id": "48437fe4b5eca9c6ca06d898",
@@ -22830,7 +24869,16 @@
       "summary": "本文综述了通过催化、纳米结构、合金化和外场辅助等改性策略调控镁基储氢复合材料热力学与动力学性能的最新进展，并讨论了机器学习在材料设计与优化中的作用及镁基储氢在氢能价值链中的技术经济可行性。该文可为镁基储氢材料的理性设计和后续研究方向提供参考，但其实际应用仍受镁基材料热力学稳定性高和吸放氢动力学缓慢的限制。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Yingyan Zhao, Yinghui Li, Bolun Wang, Xi Lin, Zhigang Hu, Ji Nie, Boyang Mao, Wenjiang Ding, Andrea C. Ferrari, Jianxin Zou"
+        "Yingyan Zhao",
+        "Yinghui Li",
+        "Bolun Wang",
+        "Xi Lin",
+        "Zhigang Hu",
+        "Ji Nie",
+        "Boyang Mao",
+        "Wenjiang Ding",
+        "Andrea C. Ferrari",
+        "Jianxin Zou"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -22842,7 +24890,7 @@
       "doi": "10.1002/adma.75618",
       "published_online_at": "2026-11-03T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-04T07:29:57+00:00",
+      "indexed_at": "2026-11-09T05:21:55+00:00",
       "journal_relevance": {
         "status": "relevant",
         "method": "rule-v1",
@@ -23630,14 +25678,14 @@
         "Eric R. Sokol",
         "Marty Downs",
         "Gina Glenne",
-        "G. Maurer",
-        "S. Record",
+        "Gregory E. Maurer",
+        "Sydne Record",
         "Dustin R. Rubenstein",
-        "Matthew Thompson",
+        "Matthew J. Thompson",
         "Christine Laney",
-        "H. Lapp",
-        "M. Tarján",
-        "Tanya Y. Berger-Wolf"
+        "Hilmar Lapp",
+        "Max Tarjan",
+        "Tanya Berger-Wolf"
       ],
       "topic_labels": [
         {
@@ -24312,6 +26360,64 @@
       "topic_method": "scope_rule",
       "topic_coverage": 0.6667,
       "topic_cache_token": "1f90f64d786beedbbaa324e986062d759de867f07c5fc6d9400910642f8fb144",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "5a4e5e3f052e70301a4ce857",
+      "url": "https://arxiv.org/abs/2611.02775",
+      "title": "Human-Centred, Risk-Constrained Evaluation of Financial Document Recognition: Evidence, Critical Errors, and Selective Automation",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-11-02T08:51:01+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Financial document recognition is often assessed using character and word error rates, although these metrics do not express whether a system preserves the financial facts on which people and organisations act. This paper develops a human-centred, risk-constrained framework for evaluating financial document recognition as evidence recovery and decision support. It defines typed financial facts linked to visible source regions and separates verbatim transcription, deterministic normalization, and business interpretation. A layered quality model covers text, localization, layout, tables, fields, fact correctness, evidence grounding, uncertainty, robustness, and operational performance. Non-compensatory acceptance gates use one-sided uncertainty bounds for critical-field errors, preventing strong aggregate scores from masking failures in amounts, identifiers, signs, periods, or entity associations. Selective automation is formulated as a constrained routing problem that accounts for residual risk, human-review capacity, and review cost. The framework further specifies annotation and adjudication procedures, leakage-resistant benchmark partitions, statistical estimands, subgroup analyses, and a reproducibility card. Formal results establish the limitations of compensatory scoring, the non-zero upper risk bound after zero observed errors, and a loss sensitive decision rule for routing uncertain cases to human review. The contribution is theoretical and methodological; no new model, dataset, or empirical performance result is claimed.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2611.02775",
+      "authors": [
+        "Subodh Lonkar"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:29132f3642c19e5c9b71889c7fc63ddf",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：robustness、reproducibility。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:29132f3642c19e5c9b71889c7fc63ddf"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:29132f3642c19e5c9b71889c7fc63ddf",
+        "zotero:6cb94419e4a077231731f17d61098d95"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.78,
+      "topic_cache_token": "c0a3d83a7244afeccf933f54169c9c2a9180ab53e257dca6938fbb9f46326245",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -32091,6 +34197,75 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "d38ed438977b0a12a350f9e7",
+      "url": "https://arxiv.org/abs/2611.01729",
+      "title": "ODE Policy: Robot Learning via Action Dynamics, Not Actions",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-11-01T09:25:12+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Most robot policies, whether trained by imitation learning (IL) or reinforcement learning (RL), map observations to action values at discrete control steps and leave the continuity of physical motion to be learned implicitly. We propose ODE policy, which learns the dynamics of the action rather than the action itself. A neural ordinary differential equation (ODE) learns the vector field of the action by matching the integrated actions to the targets over short action chunks in IL and single control steps in RL. A lightweight diversity head captures multi-modal behavior by randomizing the direction of the field. At deployment, each action is integrated from the previous one, so the executed trajectory is continuous by construction. We evaluate it as a visuomotor policy, as the action head of vision-language-action (VLA) and world action models (WAMs), and as the actor of model-based RL against 14 baselines on unimanual, bimanual, dexterous, locomotion, and loco-manipulation tasks. In IL, against flow matching, it reaches 5.9times the success, 5.4times the generalization, and 3.9times the mode balance after one epoch, and generates actions 10.8times faster. It mostly moves more smoothly than human demonstrations. On 14 real-world tasks across single-arm, dual-arm, dexterous, and humanoid robots, it achieves the highest success rate. In RL, it further speeds up SuperMimic for humanoid motion tracking and smooths its actions. Efficient in learning, data, parameters, and execution, ODE policy offers a promising path to scaling robot learning.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2611.01729",
+      "authors": [
+        "Jindou Jia",
+        "Jingliang Li",
+        "Kuangji Zuo",
+        "Tuo An",
+        "Yuxuan Hu",
+        "Mengfei Zhao",
+        "Bofan Lyu",
+        "Jiaqi Bai",
+        "Daoyuan Zhu",
+        "Hengyu Dai",
+        "Junpeng Zhang",
+        "Jianfei Yang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:1579d11ce0d07bcc5537d8ab853a01ce",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reinforcement learning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:1579d11ce0d07bcc5537d8ab853a01ce"
+      ],
+      "topic_ids": [
+        "zotero:1579d11ce0d07bcc5537d8ab853a01ce",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8146,
+      "topic_cache_token": "bd96a06c3636d2099e8403e43e415f80b6c6e8c717d9ca8d1c3e5988fffef42c",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "2e79dcf98ded436c5a1e87c2",
       "url": "https://arxiv.org/abs/2611.01560",
       "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
@@ -38079,6 +40254,79 @@
         "sha256": "8599ac846a48f7ff519db90fd3ee4519953dd327a8a5a5a8a612bde933ddc000",
         "chars": 12000
       }
+    },
+    {
+      "id": "b960e09ef352f1dc07617af5",
+      "url": "https://arxiv.org/abs/2610.42148",
+      "title": "Flide: Accelerating Decision Inference with Exact State Forking",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-10-30T17:59:38+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Decision models such as Jev have emerged as a highly promising paradigm for LLM agent systems, providing lightweight and reliable categorical reasoning for rapid System One execution. However, existing generation-oriented inference engines fail to support these workloads effectively, suffering from severe prefix recomputation overheads or distorted output probabilities. To address this challenge, we propose Flide, an efficient and exact inference engine that decouples the logical tree structure of a decision request from its physical execution within a single flattened token stream. Through ForkAttention, Flide navigates request dependencies using GPU-resident indices across both standard attention and recurrent Gated DeltaNet layers, guaranteeing in exact arithmetic that every query branch evaluates identically to an isolated forward pass. By expressing branch topologies directly in GPU-resident metadata, Flide accommodates diverse request mixtures with a compact set of pre-recorded execution graphs while enabling expanding agent histories to resume from checkpoints saved in earlier passes. Extensive evaluations on public hybrid and decision models demonstrate that Flide answers queries up to 9.5 times faster than vLLM and SGLang while staying closest to a float32 reference in total variation distance. By unifying physical execution throughput with mathematical exactness, Flide establishes a principled foundation for scalable, latency-critical decision intelligence in agent systems.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2610.42148",
+      "authors": [
+        "Bobo Li",
+        "Jiajia Song",
+        "Hao Fei",
+        "Wynne Hsu",
+        "Mong Li Lee"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：generation。"
+        },
+        {
+          "id": "zotero:8f22e62349472c4815f4275fbcf89c76",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：agent。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_ids": [
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8092,
+      "topic_cache_token": "0687cfd396ed682db50f8dba0caf5e5a1b2c11c65b4a2d8b4d8a06b8998a884e",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
     },
     {
       "id": "1e639a39b70545ab5111bb8b",
@@ -171364,7 +173612,7 @@
       "doi": "10.1038/s41586-026-10955-0",
       "published_online_at": "2026-09-30T00:00:00+00:00",
       "published_print_at": "2026-10-01T00:00:00+00:00",
-      "indexed_at": "2026-11-08T07:46:35+00:00",
+      "indexed_at": "2026-11-09T23:09:36+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -185134,7 +187382,7 @@
       "doi": "10.1038/s41586-026-11160-9",
       "published_online_at": "2026-09-21T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-05T20:17:24+00:00",
+      "indexed_at": "2026-11-10T02:08:06+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -237966,6 +240214,54 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "bb7159fbd9c18f9c7e91c7a0",
+      "url": "https://arxiv.org/abs/2608.00337",
+      "title": "Action Chunk Scheduling for Batched Robot Policy Serving",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-07-31T22:58:59+00:00",
+      "first_seen": "2026-11-10T04:47:07.616946+00:00",
+      "excerpt": "Deploying robot foundation models at scale is the next step towards realizing the potential of general-purpose robots. However, Vision-Language-Action (VLA) and other foundation models are computationally demanding, and on-device compute is constrained by power and space. In this paper, we introduce the problem of serving a robot policy to multiple robots from a remote GPU and formulate it as a scheduling problem. We build Armory, a serving system validated on fleets of both simulated and real robots. Our experiments show that naive scheduling heuristics perform well when all robots are the same, but fall short when robots consume action chunks at different rates, uncovering a mismatch between conventional batching methods and the closed-loop requirements of robot policy execution. To address this, we propose a scheduling algorithm that accounts for this heterogeneity and improves overall system throughput by up to $18\\%$ in real-world experiments. Additional details are available at https://gatech-rl2.github.io/actionchunkscheduling.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "alpha_rank": 2,
+      "authors": [
+        "Rohan Bansal",
+        "David He",
+        "Nadun Ranawaka Arachchige",
+        "Zhenyang Chen",
+        "Soobum Kim",
+        "Kexin Rong",
+        "Danfei Xu"
+      ],
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "low_confidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8265,
+      "topic_cache_token": "d677be4c3b79b916427ebf3e3ee0a06d267b4d6ce62c7c9ed5e2c1d10658dd67",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "ff91d9e1322d8b6b4fca517f",
       "url": "https://doi.org/10.1038/s41467-026-75922-9",
       "title": "High-field-stabilized reentrant superconductivity in infinite-layer nickelate thin films",
@@ -247879,13 +250175,13 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-11-09T02:57:46.342559+00:00",
+    "last_success": "2026-11-10T04:47:07.616946+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 3,
-      "unclassified": 1786,
+      "classified": 32,
+      "unclassified": 1792,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
       "quality_status": "unmeasured",
@@ -247989,16 +250285,16 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
-      "last_success": "2026-11-09T02:57:46.342559+00:00",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
+      "last_success": "2026-11-10T04:47:07.616946+00:00",
       "status": "ok",
-      "count": 9
+      "count": 10
     },
     {
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -248009,8 +250305,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
-      "last_success": "2026-11-09T02:57:46.342559+00:00",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
+      "last_success": "2026-11-10T04:47:07.616946+00:00",
       "status": "ok",
       "count": 12
     },
@@ -248018,8 +250314,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
-      "last_success": "2026-11-09T02:57:46.342559+00:00",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
+      "last_success": "2026-11-10T04:47:07.616946+00:00",
       "status": "ok",
       "count": 12
     },
@@ -248027,8 +250323,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
-      "last_success": "2026-11-09T02:57:46.342559+00:00",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
+      "last_success": "2026-11-10T04:47:07.616946+00:00",
       "status": "ok",
       "count": 11
     },
@@ -248036,8 +250332,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
-      "last_success": "2026-11-09T02:57:46.342559+00:00",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
+      "last_success": "2026-11-10T04:47:07.616946+00:00",
       "status": "ok",
       "count": 1
     },
@@ -248045,8 +250341,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
-      "last_success": "2026-11-09T02:57:46.342559+00:00",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
+      "last_success": "2026-11-10T04:47:07.616946+00:00",
       "status": "ok",
       "count": 12
     },
@@ -248054,8 +250350,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
-      "last_success": "2026-11-09T02:57:46.342559+00:00",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
+      "last_success": "2026-11-10T04:47:07.616946+00:00",
       "status": "ok",
       "count": 0
     },
@@ -248066,18 +250362,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
       "last_success": "2026-11-09T02:57:46.342559+00:00",
-      "count": 182,
+      "count": 183,
       "counters": {
         "relevant": 4,
-        "pending": 178,
+        "pending": 179,
         "excluded": 2,
-        "fetched": 105,
+        "fetched": 80,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-advanced-energy-materials",
@@ -248087,14 +250385,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
-      "last_success": "2026-11-09T02:57:46.342559+00:00",
-      "count": 62,
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
+      "last_success": "2026-11-10T04:47:07.616946+00:00",
+      "count": 63,
       "counters": {
-        "relevant": 8,
+        "relevant": 9,
         "pending": 54,
         "excluded": 287,
-        "fetched": 112,
+        "fetched": 116,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -248107,14 +250405,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
-      "last_success": "2026-11-09T02:57:46.342559+00:00",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
+      "last_success": "2026-11-10T04:47:07.616946+00:00",
       "count": 194,
       "counters": {
         "relevant": 30,
         "pending": 164,
-        "excluded": 1408,
-        "fetched": 300,
+        "excluded": 1403,
+        "fetched": 306,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -248127,14 +250425,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
-      "last_success": "2026-11-09T02:57:46.342559+00:00",
-      "count": 187,
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
+      "last_success": "2026-11-10T04:47:07.616946+00:00",
+      "count": 188,
       "counters": {
         "relevant": 26,
-        "pending": 161,
-        "excluded": 881,
-        "fetched": 335,
+        "pending": 162,
+        "excluded": 865,
+        "fetched": 362,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -248146,18 +250444,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
       "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 103,
       "counters": {
         "relevant": 1,
         "pending": 102,
         "excluded": 2,
-        "fetched": 80,
+        "fetched": 75,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-nature",
@@ -248167,14 +250467,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
-      "last_success": "2026-11-09T02:57:46.342559+00:00",
-      "count": 102,
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
+      "last_success": "2026-11-10T04:47:07.616946+00:00",
+      "count": 91,
       "counters": {
         "relevant": 1,
-        "pending": 101,
-        "excluded": 628,
-        "fetched": 150,
+        "pending": 90,
+        "excluded": 630,
+        "fetched": 174,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -248186,18 +250486,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
       "last_success": "2026-11-09T02:57:46.342559+00:00",
-      "count": 1067,
+      "count": 1062,
       "counters": {
-        "relevant": 10,
-        "pending": 1057,
-        "excluded": 1014,
-        "fetched": 201,
+        "relevant": 11,
+        "pending": 1051,
+        "excluded": 1020,
+        "fetched": 8,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-nature-materials",
@@ -248206,18 +250508,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
       "last_success": "2026-11-09T02:57:46.342559+00:00",
-      "count": 27,
+      "count": 26,
       "counters": {
         "relevant": 0,
-        "pending": 27,
-        "excluded": 35,
-        "fetched": 17,
+        "pending": 26,
+        "excluded": 36,
+        "fetched": 8,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-science",
@@ -248227,14 +250531,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
-      "last_success": "2026-11-09T02:57:46.342559+00:00",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
+      "last_success": "2026-11-10T04:47:07.616946+00:00",
       "count": 117,
       "counters": {
         "relevant": 1,
         "pending": 116,
         "excluded": 226,
-        "fetched": 115,
+        "fetched": 65,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -248246,25 +250550,27 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
       "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 24,
       "counters": {
         "relevant": 2,
         "pending": 22,
         "excluded": 679,
-        "fetched": 143,
+        "fetched": 81,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
-      "last_success": "2026-11-09T02:57:46.342559+00:00",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
+      "last_success": "2026-11-10T04:47:07.616946+00:00",
       "status": "ok",
       "count": 1
     },
@@ -248272,8 +250578,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
-      "last_success": "2026-11-09T02:57:46.342559+00:00",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
+      "last_success": "2026-11-10T04:47:07.616946+00:00",
       "status": "ok",
       "count": 12
     },
@@ -248281,8 +250587,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
-      "last_success": "2026-11-09T02:57:46.342559+00:00",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
+      "last_success": "2026-11-10T04:47:07.616946+00:00",
       "status": "ok",
       "count": 0
     },
@@ -248290,8 +250596,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
-      "last_success": "2026-11-09T02:57:46.342559+00:00",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
+      "last_success": "2026-11-10T04:47:07.616946+00:00",
       "status": "ok",
       "count": 0
     },
@@ -248299,8 +250605,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
-      "last_success": "2026-11-09T02:57:46.342559+00:00",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
+      "last_success": "2026-11-10T04:47:07.616946+00:00",
       "status": "ok",
       "count": 12
     },
@@ -248309,7 +250615,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 0,
-      "last_attempt": "2026-11-09T02:57:46.342559+00:00",
+      "last_attempt": "2026-11-10T04:47:07.616946+00:00",
       "last_success": "2026-11-09T01:19:47.991165+00:00",
       "run_id": "42544925228",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -248317,16 +250623,16 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 3,
+    "generated": 24,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
-      "status": "ok",
-      "attempted": 3,
-      "public_html": 3,
+      "status": "partial",
+      "attempted": 8,
+      "public_html": 5,
       "bohr_graph": 0,
-      "fallback": 0,
-      "bohr_calls": 0
+      "fallback": 3,
+      "bohr_calls": 2
     }
   },
   "policy": {
