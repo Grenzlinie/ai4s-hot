@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-12T02:43:13.181194+00:00",
+  "generated_at": "2026-11-12T04:12:23.686159+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -5251,11 +5251,7 @@
       "summary": "本文综述将质子交换膜水电解槽阳极退化框定为多层级界面稳定性问题，梳理了Ir/Ru活性位点近表面稳定性窗口的价态演化、羟基化、晶格氧参与、重构和金属溶解过程，以及膜电极组装中催化剂层逾渗、离聚物分布、孔结构、多孔传输层与催化剂层接触、膜污染、金属迁移和动态运行应力对该窗口的重塑，并总结了将宏观性能衰减追溯至特定界面失稳路径的分层诊断策略。该框架可为设计耐久且面向实际可再生制氢的非贵金属质子交换膜水电解槽阳极提供参考，但其结论基于综述性归纳，文中提出的标准化评价、真实运行环境和数据驱动材料-界面-器件优化仍属未来方向，尚需实验验证。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Ning Yu",
-        "Qianxi Lv",
-        "Weijia Zhou",
-        "Yongming Chai",
-        "Bin Dong"
+        "Ning Yu, Qianxi Lv, Weijia Zhou, Yongming Chai, Bin Dong"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -5434,18 +5430,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Xingfeng Zhao",
-        "Yangyang Pei",
-        "Bolin Kang",
-        "Maomao He",
-        "Yumeng Xue",
-        "Ting Liu",
-        "Jiangli Cai",
-        "Bin Liu",
-        "Huasheng Tian",
-        "Lili Sun",
-        "Linghai Xie",
-        "Wei Huang"
+        "Xingfeng Zhao, Yangyang Pei, Bolin Kang, Maomao He, Yumeng Xue, Ting Liu, Jiangli Cai, Bin Liu, Huasheng Tian, Lili Sun, Linghai Xie, Wei Huang"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -8942,6 +8927,85 @@
       "topic_cache_token": "21d3a662c63bbb6656af0788ea364ab25fd7975d987bc8c8e275ebc789cb82a9",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "05e0692506e6950c029da048",
+      "url": "https://arxiv.org/abs/2611.13028",
+      "title": "GTAGym: Real AAA Game Tasks Environment for Evaluation and Reinforcement Learning",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "first_seen": "2026-11-12T04:12:23.686159+00:00",
+      "excerpt": "AAA games offer a rich testbed for evaluating agent perception, reasoning, and control. However, evaluating whether agents can complete tasks in AAA games is challenging and often human-annotated because task outcomes are often difficult to verify automatically, let alone applying it for Reinforcement Learning (RL). We introduce GTAGym, an environment and framework for evaluation and RL on GTA V tasks. Its evaluation benchmark, GTAVBench, derived from GTA V main-story missions, contains 103 online tasks reconstructed across nine task families, alongside 47 image-based shooting and sniping tasks using GTA V imagery. A web server provides access to the online environment and evaluation interface, supporting parallel testing through screenshots and keyboard-mouse actions with automatic engine-state outcome checks. We evaluate six frontier LLMs on GTAVBench with textual task instructions and on its GTAVBench-AGI branch, where instructions appear only in the first screenshot and a harness automatically compresses interaction history. The best configuration achieves 70.9% overall accuracy in GTAVBench-AGI, yet aerial navigation, evasion and interception remain difficult. GTAGym also provides a scalable generator that samples task parameters within user-specified ranges and option sets under fixed templates, creating batches of 3D and image-based shooting environments for RL with automatic reward and termination signals. LoRA RL of Qwen3.8-27B on generated on-foot navigation tasks improves the in-domain performance and transfers to out-of-domain task categories, and native GTA V tasks from 15% to 23%.",
+      "summary": "GTAGym 提供了一个基于 GTA V 主线任务重建的并行评估与强化学习环境，包含 103 个在线 3D 任务和 47 个基于图像的射击与狙击任务，并通过引擎状态自动判定任务结果，其 GTAVBench-AGI 分支仅在首张截图中给出任务指令。该工作可用于评测和训练智能体的感知、推理与控制能力，但原文指出空中导航、躲避与拦截类任务仍然困难，且所报告的结果仅为特定配置下的表现，并非已验证的通用性能结论。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.13028",
+      "authors": [
+        "Jiajun Chen",
+        "Shicheng Fang",
+        "Jiahao Lu",
+        "Yuxin Wang",
+        "Xipeng Qiu"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark、evaluation。"
+        },
+        {
+          "id": "zotero:1579d11ce0d07bcc5537d8ab853a01ce",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reinforcement learning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:1579d11ce0d07bcc5537d8ab853a01ce"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:1579d11ce0d07bcc5537d8ab853a01ce",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7914,
+      "topic_cache_token": "8cdec6331722ad388ae5ed6256454904ee804a39ab53764e1c3548fdeb480666",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.13028",
+        "sha256": "3c95e0529e631c335e3137ded4445e40ae6a3b067176457756fa939fb1b7ca78",
+        "chars": 12000
+      }
     },
     {
       "id": "a286e0ec129e6abb3e604e67",
@@ -60739,6 +60803,78 @@
       "topic_cache_token": "70667737ddd01165fb90690102315d3481eff90d9a12a2f8762fe5b0a9042b27",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "046b16e2c22fa7eb7db74102",
+      "url": "https://arxiv.org/abs/2610.39671",
+      "title": "Incentivizing Self-Learning in Large Language Models via Reinforcement Learning",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "first_seen": "2026-11-12T04:12:23.686159+00:00",
+      "excerpt": "Large language models (LLMs) draw on parametric knowledge and retrieval-augmented generation (RAG) to solve knowledge-intensive tasks. Yet problem solving in unfamiliar domains calls for tightly coupled knowledge acquisition and reasoning, beyond factual retrieval and aggregation or learning solely from a preassembled context. We study self-learning -- autonomously retrieving, studying, and applying knowledge from long-form reference materials on the fly. To investigate this capability, we formulate a textbook-based mathematical problem-solving task. LLMs must navigate textbook exposition, learn and apply relevant principles, and construct proofs for exercises, with reference solutions withheld. We introduce a BookNavigator interface to support this human-inspired study process and incentivize self-learning through reinforcement learning (RL) with fine-grained rewards. Experiments show that our method improves performance across in-domain and out-of-domain textbooks and subjects, raising Intern-S2-Preview-35B's overall proof accuracy from 51.5% to 79.5% and outperforming RL-trained textbook-free and fixed-retrieval baselines. These gains extend to complex long-context benchmarks involving different task types, with improvements over the base model of 1.7 and 2.3 percentage points on BrowseComp-Plus and CL-bench, respectively. Together, these findings suggest that RL can foster a domain-agnostic self-learning strategy, highlighting the potential of self-learning from long-form corpora to strengthen broader problem-solving capabilities on complex, long-context tasks.",
+      "summary": "本文提出并研究“自主学习”能力，构建了基于教材的数学证明任务与BookNavigator交互式教材查阅接口，并通过带细粒度奖励的强化学习激励模型在解题过程中自主检索、学习和应用长文本参考材料。该工作可用于探索让大语言模型从教材等长文本语料中自主学习以增强复杂长上下文任务表现的策略；但摘要层面的证据未证明其能泛化到所有领域，相关性能提升与跨基准改进均为原文报告的结果。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2610.39671",
+      "authors": [
+        "Lingkai Kong",
+        "Yuzhe Gu",
+        "Haiteng Zhao",
+        "Zijian Wu",
+        "Youqing Fang",
+        "Zhouqi Hua",
+        "Yanan Sun",
+        "Kai Chen",
+        "Wenwei Zhang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:1579d11ce0d07bcc5537d8ab853a01ce",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reinforcement learning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:1579d11ce0d07bcc5537d8ab853a01ce"
+      ],
+      "topic_ids": [
+        "zotero:1579d11ce0d07bcc5537d8ab853a01ce",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8284,
+      "topic_cache_token": "1356072e715cd716fb286f7149630ff4112830ea4ef249023dc1c9b96fa86258",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2610.39671",
+        "sha256": "a60ee4a92acebbd97a57bbdf672d60bb19e292cf988ef7cf9da4c844167060b7",
+        "chars": 12000
+      }
     },
     {
       "id": "0283c17ff41feb9fac1ab69a",
@@ -130089,7 +130225,7 @@
       "doi": "10.1016/j.actamat.2026.122769",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-27T13:19:08+00:00",
+      "indexed_at": "2026-11-12T04:00:39+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -184619,17 +184755,7 @@
       "summary": "本文采用基于高斯过程贝叶斯优化的主动学习框架，结合体相与表面晶格性质及杂质相信息，对脉冲激光沉积生长空间进行映射，以识别相纯、表面二维、晶格参数接近理想且亚带隙光吸收最小的优化区域。该工作可用于加速复杂氧化物薄膜的材料优化，并为理解脉冲激光沉积中非平衡生长机制提供途径，但其结论基于特定材料体系，摘要未给出可推广的性能保证。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Jackson S. Bentley",
-        "Christopher Rouleau",
-        "Ilia N. Ivanov",
-        "T. Zac Ward",
-        "Jiaqiang Yan",
-        "Anghea Dolisca",
-        "Rob G. Moore",
-        "Gyula Eres",
-        "Richard F. Haglund",
-        "Sumner B. Harris",
-        "Matthew Brahlek"
+        "Jackson S. Bentley, Christopher Rouleau, Ilia N. Ivanov, T. Zac Ward, Jiaqiang Yan, Anghea Dolisca, Rob G. Moore, Gyula Eres, Richard F. Haglund, Sumner B. Harris, Matthew Brahlek"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -223140,10 +223266,7 @@
       "summary": "本文作为一篇Perspective，系统讨论了将物理知识通过先验知识、描述符、约束、验证器和基础设施五种互补角色融入材料智能的PhysMat AI框架，并以催化、固态电池电解质和储氢材料为例说明物理原理如何指导数据表示、模型推理、验证流程与知识管理。该框架可为科研人员提供机制引导的发现思路，并勾勒出从物理感知AI到物理推理AI再到物理自主AI的发展路线图；上述内容基于摘要概述，具体性能与效果需查阅原文验证。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Yuhang Wang",
-        "Qian Wang",
-        "Seong-Hoon Jang",
-        "Hao Li"
+        "Yuhang Wang, Qian Wang, Seong-Hoon Jang, Hao Li"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -235640,8 +235763,7 @@
       "summary": "本文综述了高熵钙钛矿（包括氧化物和卤化物）在析氧反应中的研究进展，涵盖合成路线、性能调控、计算机制分析以及AI驱动理性设计四个方面，并构建了从合成到设计闭环逻辑。该综述可为高熵钙钛矿电催化剂的开发提供参考，但其对具体材料性能的预测依赖计算与AI筛选，尚需实验验证。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Jing Jia",
-        "Li-Ming Yang"
+        "Jing Jia, Li-Ming Yang"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -259287,6 +259409,78 @@
       }
     },
     {
+      "id": "474875ef6b3bcff58e8cd5b5",
+      "url": "https://arxiv.org/abs/2606.05873",
+      "title": "LadderMan: Learning Humanoid Perceptive Ladder Climbing",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-06-04T08:47:08+00:00",
+      "first_seen": "2026-11-12T04:12:23.686159+00:00",
+      "excerpt": "Humanoid robots hold great promise for operating in human-centered environments, yet ladder climbing remains one of the most challenging tasks due to sparse footholds and handholds, complex whole-body coordination, and sensitivity to perception and control errors. We present \\textbf{LadderMan}, a unified system that enables humanoid robots to robustly climb diverse ladders and perform manipulation under such constrained conditions. Our climbing policy is built on a scalable two-stage learning pipeline, where we use hybrid motion tracking to learn multiple climbing experts from a single reference motion, and distill these experts into a unified depth-based visuomotor climbing policy via hybrid imitation and reinforcement learning. To enable real-world deployment, we leverage vision foundation models to bridge the sim-to-real gap in depth perception. Building on the learned climbing policy, we further train a separate manipulation policy using a dual-agent formulation, allowing stable on-ladder manipulation via teleoperation. Experiments demonstrate that LadderMan achieves robust ladder climbing across a wide range of geometries, successfully transfers to real-world hardware in a zero-shot manner, and supports various manipulation tasks under challenging ladder constraints. Video results are available at https://ladderman-robot.github.io .",
+      "summary": "本文提出LadderMan系统，采用两阶段学习流程：先通过混合运动跟踪从单一参考动作学习多个爬梯专家策略，再经混合模仿与强化学习蒸馏为统一的深度视觉运动爬梯策略，并利用视觉基础模型缓解深度感知的仿真到现实差距，另以双智能体形式训练梯上操作策略。据原文摘要，该系统在多种梯子几何条件下实现稳健爬梯并零样本迁移到真实硬件，还支持梯上受限操作；但所述性能与迁移结论来自作者公开材料，尚未经独立验证，且未覆盖完整全文。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 5,
+      "authors": [
+        "Siheng Zhao",
+        "Yuanhang Zhang",
+        "Ziqi Lu",
+        "Pieter Abbeel",
+        "Rocky Duan",
+        "Koushil Sreenath",
+        "Yue Wang",
+        "C. Karen Liu",
+        "Guanya Shi"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:1579d11ce0d07bcc5537d8ab853a01ce",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reinforcement learning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:1579d11ce0d07bcc5537d8ab853a01ce"
+      ],
+      "topic_ids": [
+        "zotero:1579d11ce0d07bcc5537d8ab853a01ce",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7426,
+      "topic_cache_token": "3a3974f5cf4f66d9225a98e8ae601a69b02b5970914a4b8954ab9c922ee8b4ce",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2606.05873",
+        "sha256": "bcb5aacbdff916ad16359f897bce729214f29c257f6334055a3988c7624dd121",
+        "chars": 12000
+      }
+    },
+    {
       "id": "7ec609f83a3ef47f14a3a085",
       "url": "https://arxiv.org/abs/2606.05035",
       "title": "Anchor3R: Streaming 3D Reconstruction with Transient Anchors for Long-Horizon Visual Mapping",
@@ -260606,12 +260800,12 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-11-12T02:43:13.181194+00:00",
+    "last_success": "2026-11-12T04:12:23.686159+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 55,
+      "classified": 3,
       "unclassified": 1817,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
@@ -260716,8 +260910,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "status": "ok",
       "count": 12
     },
@@ -260725,7 +260919,7 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -260736,8 +260930,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "status": "ok",
       "count": 12
     },
@@ -260745,8 +260939,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "status": "ok",
       "count": 12
     },
@@ -260754,8 +260948,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "status": "ok",
       "count": 12
     },
@@ -260763,8 +260957,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "status": "ok",
       "count": 1
     },
@@ -260772,8 +260966,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "status": "ok",
       "count": 12
     },
@@ -260781,8 +260975,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "status": "ok",
       "count": 0
     },
@@ -260794,14 +260988,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "count": 186,
       "counters": {
         "relevant": 4,
         "pending": 182,
         "excluded": 3,
-        "fetched": 183,
+        "fetched": 163,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -260814,14 +261008,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "count": 66,
       "counters": {
         "relevant": 10,
         "pending": 56,
         "excluded": 297,
-        "fetched": 132,
+        "fetched": 130,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -260833,18 +261027,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
       "last_success": "2026-11-12T02:43:13.181194+00:00",
       "count": 196,
       "counters": {
         "relevant": 31,
         "pending": 165,
         "excluded": 1471,
-        "fetched": 451,
+        "fetched": 300,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-advanced-materials",
@@ -260854,14 +261050,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "count": 189,
       "counters": {
         "relevant": 26,
         "pending": 163,
         "excluded": 877,
-        "fetched": 296,
+        "fetched": 294,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -260874,8 +261070,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "count": 106,
       "counters": {
         "relevant": 1,
@@ -260894,14 +261090,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "count": 89,
       "counters": {
         "relevant": 1,
         "pending": 88,
         "excluded": 699,
-        "fetched": 229,
+        "fetched": 220,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -260914,13 +261110,13 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
       "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 1048,
       "counters": {
         "relevant": 11,
         "pending": 1037,
-        "excluded": 1034,
+        "excluded": 1035,
         "fetched": 8,
         "abstracts_recovered": 0
       },
@@ -260936,8 +261132,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "count": 29,
       "counters": {
         "relevant": 0,
@@ -260956,14 +261152,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "count": 116,
       "counters": {
         "relevant": 1,
         "pending": 115,
         "excluded": 219,
-        "fetched": 56,
+        "fetched": 55,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -260976,14 +261172,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "count": 25,
       "counters": {
         "relevant": 2,
         "pending": 23,
         "excluded": 700,
-        "fetched": 97,
+        "fetched": 96,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -260992,8 +261188,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "status": "ok",
       "count": 1
     },
@@ -261001,8 +261197,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "status": "ok",
       "count": 12
     },
@@ -261010,8 +261206,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "status": "ok",
       "count": 0
     },
@@ -261019,8 +261215,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "status": "ok",
       "count": 0
     },
@@ -261028,8 +261224,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
-      "last_success": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
+      "last_success": "2026-11-12T04:12:23.686159+00:00",
       "status": "ok",
       "count": 12
     },
@@ -261038,7 +261234,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 20,
-      "last_attempt": "2026-11-12T02:43:13.181194+00:00",
+      "last_attempt": "2026-11-12T04:12:23.686159+00:00",
       "last_success": "2026-11-12T02:42:17.024824+00:00",
       "run_id": "43142543948",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -261046,15 +261242,15 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 24,
+    "generated": 3,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
       "status": "partial",
-      "attempted": 8,
-      "public_html": 1,
+      "attempted": 6,
+      "public_html": 3,
       "bohr_graph": 0,
-      "fallback": 7,
+      "fallback": 3,
       "bohr_calls": 0
     }
   },

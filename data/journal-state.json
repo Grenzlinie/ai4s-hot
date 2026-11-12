@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updated_at": "2026-11-12T02:43:13.181194+00:00",
+  "updated_at": "2026-11-12T04:12:23.686159+00:00",
   "journals": {
     "nature-materials": {
-      "last_success_at": "2026-11-12T02:43:13.181194+00:00",
-      "last_crossref_at": "2026-11-12T02:43:13.181194+00:00",
+      "last_success_at": "2026-11-12T04:12:23.686159+00:00",
+      "last_crossref_at": "2026-11-12T04:12:23.686159+00:00",
       "records": {
         "10.1038/s41563-026-02770-9": {
           "doi": "10.1038/s41563-026-02770-9",
@@ -2272,8 +2272,8 @@
       }
     },
     "nature": {
-      "last_success_at": "2026-11-12T02:43:13.181194+00:00",
-      "last_crossref_at": "2026-11-12T02:43:13.181194+00:00",
+      "last_success_at": "2026-11-12T04:12:23.686159+00:00",
+      "last_crossref_at": "2026-11-12T04:12:23.686159+00:00",
       "records": {
         "10.1038/d41586-026-03244-3": {
           "doi": "10.1038/d41586-026-03244-3",
@@ -32205,8 +32205,8 @@
       }
     },
     "science": {
-      "last_success_at": "2026-11-12T02:43:13.181194+00:00",
-      "last_crossref_at": "2026-11-12T02:43:13.181194+00:00",
+      "last_success_at": "2026-11-12T04:12:23.686159+00:00",
+      "last_crossref_at": "2026-11-12T04:12:23.686159+00:00",
       "records": {
         "10.1126/science.ael8752": {
           "doi": "10.1126/science.ael8752",
@@ -118836,17 +118836,51 @@
             "reason": "no_ai_method_evidence",
             "version": "1"
           }
+        },
+        "10.1038/s41467-026-79636-w": {
+          "doi": "10.1038/s41467-026-79636-w",
+          "title": "Phylogeographic and functional assembly of population-level bacterial immunity",
+          "url": "https://doi.org/10.1038/s41467-026-79636-w",
+          "abstract": "Nature Communications, Published online: 12 November 2026; doi:10.1038/s41467-026-79636-w In this study, the authors use comparative genomics and cross-infection assays to show a spatially and evolutionarily structured bacterial immune reservoir in which interactions among defense systems can reinforce or undermine phage resistance, refining the pan-immunity framework.",
+          "rss_published_at": "2026-11-12T00:00:00+00:00",
+          "published_online_at": null,
+          "published_print_at": null,
+          "indexed_at": null,
+          "article_type": "  ",
+          "providers": [
+            "rss"
+          ],
+          "authors": [
+            "Xuefang Huang",
+            "Jingxian Yang",
+            "Luokai Wang",
+            "Jiayi Zhang",
+            "Shuanshuan Xu",
+            "Shuangshuang Wang",
+            "Xinyan Xu",
+            "Luqiong Lv",
+            "Pan Tao",
+            "Bin Li"
+          ],
+          "first_seen": "2026-11-12T04:12:23.686159+00:00",
+          "item_id": "27e48139740f07bde7fe96ab",
+          "journal_relevance": {
+            "status": "excluded",
+            "method": "rule-v1",
+            "reason": "no_ai_method_evidence",
+            "version": "1"
+          }
         }
       },
       "counters": {
         "relevant": 11,
         "pending": 1037,
-        "excluded": 1034
+        "excluded": 1035
       }
     },
     "science-advances": {
-      "last_success_at": "2026-11-12T02:43:13.181194+00:00",
-      "last_crossref_at": "2026-11-12T02:43:13.181194+00:00",
+      "last_success_at": "2026-11-12T04:12:23.686159+00:00",
+      "last_crossref_at": "2026-11-12T04:12:23.686159+00:00",
       "records": {
         "10.1126/sciadv.aed2180": {
           "doi": "10.1126/sciadv.aed2180",
@@ -141454,8 +141488,8 @@
       }
     },
     "advanced-materials": {
-      "last_success_at": "2026-11-12T02:43:13.181194+00:00",
-      "last_crossref_at": "2026-11-12T02:43:13.181194+00:00",
+      "last_success_at": "2026-11-12T04:12:23.686159+00:00",
+      "last_crossref_at": "2026-11-12T04:12:23.686159+00:00",
       "records": {
         "10.1002/adma.75347": {
           "doi": "10.1002/adma.75347",
@@ -170813,8 +170847,8 @@
       }
     },
     "advanced-energy-materials": {
-      "last_success_at": "2026-11-12T02:43:13.181194+00:00",
-      "last_crossref_at": "2026-11-12T02:43:13.181194+00:00",
+      "last_success_at": "2026-11-12T04:12:23.686159+00:00",
+      "last_crossref_at": "2026-11-12T04:12:23.686159+00:00",
       "records": {
         "10.1002/aenm.71681": {
           "doi": "10.1002/aenm.71681",
@@ -190736,7 +190770,7 @@
           "published_online_at": "2026-10-07T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:03+00:00",
-          "article_type": "journal-article",
+          "article_type": "CORRECTION   CORRECTION",
           "providers": [
             "crossref",
             "rss"
@@ -193581,17 +193615,13 @@
           "published_online_at": "2026-09-30T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:15+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yuxiao Zhou",
-            "Yali Zhang",
-            "Yuheng Pang",
-            "Dongxu Geng",
-            "Junwei Gu"
+            "Yuxiao Zhou, Yali Zhang, Yuheng Pang, Dongxu Geng, Junwei Gu"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "58d6e9a7054b0cddc50bd3af",
@@ -193639,15 +193669,13 @@
           "published_online_at": "2026-09-30T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:29:58+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Lichang Lu",
-            "Noboru Koshimizu",
-            "Mohand O. Saed"
+            "Lichang Lu, Noboru Koshimizu, Mohand O. Saed"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "114567519ae3ebb1f31699d8",
@@ -193660,30 +193688,20 @@
         },
         "10.1002/adfm.78127": {
           "doi": "10.1002/adfm.78127",
-          "title": "Interface and Strain Control of Emergent Weyl Semimetallic Phase in SrNbO 3 /LaFeO 3 Heterostructures",
+          "title": "Interface and Strain Control of Emergent Weyl Semimetallic Phase in SrNbO3/LaFeO3 Heterostructures",
           "url": "https://doi.org/10.1002/adfm.78127",
           "abstract": "ABSTRACT Realizing correlated topological semimetallic phases in bulk transition-metal oxides remains challenging due to rigid lattice symmetry, correlation-induced gap opening, and limited structural tunability. However, complex-oxide thin films and heterostructures provide a powerful platform to stabilize topological phases by tailoring the requisite lattice symmetry through strain control and interface design. In this study, we demonstrate the emergence of Weyl-like electronic states and associated chiral transport in (SNO)/ (LFO) bilayers. Transport measurements reveal signatures consistent with nontrivial topology, including large non-saturating MR, a nonlinear Hall response, and a chiral anomaly like feature in longitudinal magnetotransport under parallel electric and magnetic fields (). First-principles calculations reveal an rotation pattern of the octahedra, together with interfacial lattice distortions in the SNO layer that drive the emergence of a twofold degenerate Weyl semimetallic phase protected by screw axis lattice symmetry. This is further confirmed by Berry curvature calculations, which show opposite sign Berry curvature peaks for the upper and lower band characteristic of a Weyl node. Our combined experimental and theoretical results highlight the critical role of strain and interfacial octahedral distortions in stabilizing Weyl phase in transition metal based perovskite bilayer.",
           "rss_published_at": "2026-11-10T13:18:09+00:00",
           "published_online_at": "2026-09-30T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:04+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Sairam Ithineni",
-            "Pratik Sahu",
-            "Soumyakanta Panda",
-            "Aditya Mehta",
-            "Debashree Nayak",
-            "Amit Chauhan",
-            "Shwetha G Bhat",
-            "Niharika Mohapatra",
-            "K. Senapati",
-            "B. R. K. Nanda",
-            "D. Samal"
+            "Sairam Ithineni, Pratik Sahu, Soumyakanta Panda, Aditya Mehta, Debashree Nayak, Amit Chauhan, Shwetha G Bhat, Niharika Mohapatra, K. Senapati, B. R. K. Nanda, D. Samal"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "b5fc9efc684807629b40d713",
@@ -193793,27 +193811,20 @@
         },
         "10.1002/adfm.78773": {
           "doi": "10.1002/adfm.78773",
-          "title": "Lattice Reconstruction and Surface Engineering Enable High-Voltage Operation of Regenerated LiCoO 2 Cathodes",
+          "title": "Lattice Reconstruction and Surface Engineering Enable High-Voltage Operation of Regenerated LiCoO2 Cathodes",
           "url": "https://doi.org/10.1002/adfm.78773",
           "abstract": "ABSTRACT Efficient recycling and high-value regeneration of spent LiCoO 2 (LCO) cathodes are important for advancing lithium-ion batteries (LIBs) recycling and promoting the sustainable utilization of critical resources. Here, we identify the intrinsic factors limiting the structural recovery of spent LCO (SLCO) and demonstrate that lattice reconstruction effectively restores both structural integrity and electrochemical stability at high voltages up to 4.6 V. We develop a multistep regeneration strategy that integrates selective impurity removal, lithium compensation, and high-temperature solid-state sintering to reconstruct the layered lattice and enhance Li + diffusion kinetics. Moreover, a uniform nanoscopic rock-salt surface layer is deliberately engineered to suppress phase transitions and mitigate parasitic side reactions during high-voltage cycling. Benefiting from these synergistic modifications, the regenerated LCO delivers good cycling stability, retaining 81.0% of its capacity after 1500 cycles at 2 C/4 C and achieving 121.3 mAh g −1 at 10 C under 4.6 V. This work provides a practical and scalable approach for regenerating SLCO cathodes with high-voltage capability, offering new insights into green recycling and the sustainable development of LIBs cathode materials.",
           "rss_published_at": "2026-11-10T13:18:09+00:00",
           "published_online_at": "2026-09-30T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:30:49+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Sidong Zhang",
-            "Jun Wang",
-            "Xincheng Lei",
-            "Lihai Zhou",
-            "Huaican Chen",
-            "Wen Yin",
-            "Dong Su",
-            "Yutao Li"
+            "Sidong Zhang, Jun Wang, Xincheng Lei, Lihai Zhou, Huaican Chen, Wen Yin, Dong Su, Yutao Li"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "627b8d5c8fb87b0820965ab4",
@@ -193833,19 +193844,13 @@
           "published_online_at": "2026-09-30T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:06+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Ziwu Han",
-            "Qing Hu",
-            "Yumin Wang",
-            "Zhenfei Fu",
-            "Shilong Suo",
-            "Yuanyuan Li",
-            "Pengfei Fang"
+            "Ziwu Han, Qing Hu, Yumin Wang, Zhenfei Fu, Shilong Suo, Yuanyuan Li, Pengfei Fang"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "c2b9ba9011a1cda2148f5fdf",
@@ -193865,23 +193870,13 @@
           "published_online_at": "2026-09-30T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:11+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Xuan Zhang",
-            "Wenjie Qiao",
-            "Kaixin Jiang",
-            "Sherry Chen",
-            "Hanyu Cui",
-            "Kirsten Dyer",
-            "Xuefeng Zhu",
-            "Ting Wang",
-            "Xuehua Zhang",
-            "Ben Bin Xu",
-            "Jie Kong"
+            "Xuan Zhang, Wenjie Qiao, Kaixin Jiang, Sherry Chen, Hanyu Cui, Kirsten Dyer, Xuefeng Zhu, Ting Wang, Xuehua Zhang, Ben Bin Xu, Jie Kong"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "b4145c6cfabfd893a823bf25",
@@ -193901,22 +193896,13 @@
           "published_online_at": "2026-09-30T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:13+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Fanzhan Zeng",
-            "Penghui Xia",
-            "Wei Huang",
-            "Chaoyi Peng",
-            "Jiangshuai Wu",
-            "Anmin Huang",
-            "Yue Ru",
-            "Zhaoyan Guo",
-            "Jinliang Qiao",
-            "Jianfeng Wang"
+            "Fanzhan Zeng, Penghui Xia, Wei Huang, Chaoyi Peng, Jiangshuai Wu, Anmin Huang, Yue Ru, Zhaoyan Guo, Jinliang Qiao, Jianfeng Wang"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "8e975a97e5ddce433620c71e",
@@ -193936,26 +193922,13 @@
           "published_online_at": "2026-09-30T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:14+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yue Lu",
-            "Yi Ding",
-            "Linyuan Liu",
-            "Yangge Ren",
-            "Juanjuan Gao",
-            "Hao Huang",
-            "Qing Ye",
-            "Yujia Guo",
-            "Yao Ouyang",
-            "Nan Xie",
-            "Haijie Wang",
-            "Chengji Wang",
-            "Ruling Shen",
-            "Lin Jia"
+            "Yue Lu, Yi Ding, Linyuan Liu, Yangge Ren, Juanjuan Gao, Hao Huang, Qing Ye, Yujia Guo, Yao Ouyang, Nan Xie, Haijie Wang, Chengji Wang, Ruling Shen, Lin Jia"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "2fcd96fb73d8929b329ed0c5",
@@ -193975,19 +193948,13 @@
           "published_online_at": "2026-09-30T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:07+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Shuangjiang Feng",
-            "Renhao Ding",
-            "Bin Gu",
-            "Shenyang Ni",
-            "Mengfan Duan",
-            "Fengwei Liu",
-            "Dongliang Zhao"
+            "Shuangjiang Feng, Renhao Ding, Bin Gu, Shenyang Ni, Mengfan Duan, Fengwei Liu, Dongliang Zhao"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "b40b62d34b7acc52c4b7b283",
@@ -194007,21 +193974,13 @@
           "published_online_at": "2026-09-30T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:11+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Li Ren",
-            "Mingkun Chen",
-            "Yaling Lu",
-            "Guodong Zhao",
-            "Luxuan Shen",
-            "Ao Gao",
-            "Jun Luo",
-            "Xinyuan Xu",
-            "Jianshu Li"
+            "Li Ren, Mingkun Chen, Yaling Lu, Guodong Zhao, Luxuan Shen, Ao Gao, Jun Luo, Xinyuan Xu, Jianshu Li"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "fc909905cc0e671b7dc4dbb9",
@@ -194041,21 +194000,13 @@
           "published_online_at": "2026-09-30T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:30:47+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Rui Wang",
-            "Jinbo Sun",
-            "Nicole L. D. Sui",
-            "Zitao Li",
-            "Jie Chen",
-            "Shulai Lei",
-            "Yuntong Sun",
-            "Wenjun Fan",
-            "Jong-Min Lee"
+            "Rui Wang, Jinbo Sun, Nicole L. D. Sui, Zitao Li, Jie Chen, Shulai Lei, Yuntong Sun, Wenjun Fan, Jong-Min Lee"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "70fe0a28db732954123ddf09",
@@ -194075,18 +194026,13 @@
           "published_online_at": "2026-09-30T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:31:11+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Nannan Zhang",
-            "Zhi Zhang",
-            "Rui Feng",
-            "Yisong Yang",
-            "Yifan Zhong",
-            "Zejun Li"
+            "Nannan Zhang, Zhi Zhang, Rui Feng, Yisong Yang, Yifan Zhong, Zejun Li"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "a653d5e40a8a39e3f4adfe3f",
@@ -194106,25 +194052,13 @@
           "published_online_at": "2026-09-30T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:12+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Junyuan Zhang",
-            "Tong Zhou",
-            "Jiwei Sun",
-            "Baoying Zhao",
-            "Huaibin Yu",
-            "Chengchen Wu",
-            "Haoqi Lei",
-            "Yifan Zhang",
-            "Yang Liu",
-            "Yifan Wang",
-            "Zhicai Feng",
-            "Yuzhou Wu",
-            "Cheng Yang"
+            "Junyuan Zhang, Tong Zhou, Jiwei Sun, Baoying Zhao, Huaibin Yu, Chengchen Wu, Haoqi Lei, Yifan Zhang, Yang Liu, Yifan Wang, Zhicai Feng, Yuzhou Wu, Cheng Yang"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "f000d4bd22b09fd4b23abd2c",
@@ -194144,19 +194078,13 @@
           "published_online_at": "2026-09-30T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:10+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jingyi Sun",
-            "He Wang",
-            "Chengye Wang",
-            "Wenhao Liu",
-            "Qiang Liu",
-            "Kaiyi Chen",
-            "Tinghai Yang"
+            "Jingyi Sun, He Wang, Chengye Wang, Wenhao Liu, Qiang Liu, Kaiyi Chen, Tinghai Yang"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "099aeb0058cfafce9bf262bf",
@@ -194202,19 +194130,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:23+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Shiyang Lin",
-            "Yingbo Sun",
-            "Zhichao Yao",
-            "Yan Gao",
-            "Fenyong Sun",
-            "Zhongqi Cui",
-            "Shuo Shi"
+            "Shiyang Lin, Yingbo Sun, Zhichao Yao, Yan Gao, Fenyong Sun, Zhongqi Cui, Shuo Shi"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "ad113548c638dc3dd93be985",
@@ -194234,23 +194156,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-11T02:19:25+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jackson S. Bentley",
-            "Christopher Rouleau",
-            "Ilia N. Ivanov",
-            "T. Zac Ward",
-            "Jiaqiang Yan",
-            "Anghea Dolisca",
-            "Rob G. Moore",
-            "Gyula Eres",
-            "Richard F. Haglund",
-            "Sumner B. Harris",
-            "Matthew Brahlek"
+            "Jackson S. Bentley, Christopher Rouleau, Ilia N. Ivanov, T. Zac Ward, Jiaqiang Yan, Anghea Dolisca, Rob G. Moore, Gyula Eres, Richard F. Haglund, Sumner B. Harris, Matthew Brahlek"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "7c7004cd4ed6dc3c850e1d0e",
@@ -194270,17 +194182,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:08+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Farhad Sanaei",
-            "Pascal Bertsch",
-            "Juliette Lafosse",
-            "Sander C. G. Leeuwenburgh",
-            "Mani Diba"
+            "Farhad Sanaei, Pascal Bertsch, Juliette Lafosse, Sander C. G. Leeuwenburgh, Mani Diba"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "8728f670f034bf4ef4c1405b",
@@ -194300,15 +194208,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:17+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Amritesh Kumar",
-            "Celia Rufo-Martín",
-            "George Youssef"
+            "Amritesh Kumar, Celia Rufo-Martín, George Youssef"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "ebff494d7ac2f5bd0190591b",
@@ -194321,27 +194227,20 @@
         },
         "10.1002/adfm.78750": {
           "doi": "10.1002/adfm.78750",
-          "title": "Particle-Level ZrO 2 Atomic Layer Deposition Enables Fast-Cycling and Long-Life Graphite Cathodes for Dual-Ion Batteries",
+          "title": "Particle-Level ZrO2 Atomic Layer Deposition Enables Fast-Cycling and Long-Life Graphite Cathodes for Dual-Ion Batteries",
           "url": "https://doi.org/10.1002/adfm.78750",
           "abstract": "ABSTRACT Fast-charging and long-life energy storage systems require electrode architectures that can sustain rapid ion transport while resisting structural and interfacial degradation. Dual-ion batteries are attractive high-voltage systems based on reversible anion intercalation into a graphite cathode. However, their long-term operation is limited by large graphite volume changes, solvent co-intercalation, unstable cathode-electrolyte interphase formation, and electrolyte decomposition at high potentials. This study demonstrates that the spatial location of an atomic layer deposition (ALD) coating is a decisive factor in stabilizing graphite cathodes. After identifying ZrO 2 as an effective coating, electrode-level ALD and particle-level ALD were compared using the same coating chemistry. Unlike electrode-level ALD, which coats the pre-fabricated composite electrode and covers inactive components, particle-level ALD directly modifies graphite particles before electrode fabrication. This particle-level ZrO 2 coating improves electrode cohesion, preserves electronic connectivity, enriches PF 6 − near the graphite interface, and facilitates anion transport. As a result, the particle-level ALD graphite cathode delivers stable high-rate cycling for 4000 cycles at a 5 C-rate. Post-cycling analyses confirm that particle-level ZrO 2 reinforces graphite, suppresses solvent-assisted structural collapse, and mitigates excessive electrolyte decomposition. This work establishes the scale of coating application, particle-level versus electrode-level, as a key design principle for durable graphite cathodes in fast-cycling dual-ion batteries.",
           "rss_published_at": "2026-11-10T13:18:09+00:00",
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:09+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jieun Kang",
-            "Sung Eun Jo",
-            "Yunah Ji",
-            "Dongjoo Kim",
-            "Sungho Kim",
-            "Jaegeon Ryu",
-            "Jihwan An",
-            "Soojin Park"
+            "Jieun Kang, Sung Eun Jo, Yunah Ji, Dongjoo Kim, Sungho Kim, Jaegeon Ryu, Jihwan An, Soojin Park"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "c33da98a3db31042b1296e60",
@@ -194361,17 +194260,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:15+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Chengshuo Xu",
-            "Tongyue Wu",
-            "Xinghe Lu",
-            "Weijiang Guan",
-            "Chao Lu"
+            "Chengshuo Xu, Tongyue Wu, Xinghe Lu, Weijiang Guan, Chao Lu"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "fd0a129290f29a0425770d4f",
@@ -194391,18 +194286,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:17+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Xiaoqing Liu",
-            "Lingdong Chen",
-            "Zhenduo Qiu",
-            "Xinhai Zhang",
-            "Meifang Zhu",
-            "Yanhua Cheng"
+            "Xiaoqing Liu, Lingdong Chen, Zhenduo Qiu, Xinhai Zhang, Meifang Zhu, Yanhua Cheng"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "bfef583b1078ba54078a6434",
@@ -194446,26 +194336,20 @@
         },
         "10.1002/adfm.78797": {
           "doi": "10.1002/adfm.78797",
-          "title": "Phase-Purified and Highly Textured 2D Perovskite ( n = 5) Photodetectors Grown via a Temperature-Gradient-Free Thermal-Pressing-Casting Strategy for Broadband Response and Weak-Light Imaging",
+          "title": "Phase-Purified and Highly Textured 2D Perovskite (n = 5) Photodetectors Grown via a Temperature-Gradient-Free Thermal-Pressing-Casting Strategy for Broadband Response and Weak-Light Imaging",
           "url": "https://doi.org/10.1002/adfm.78797",
           "abstract": "ABSTRACT Self-powered photodetectors (SPPDs) with broadband response and high-resolution weak-light imaging capabilities are crucial for next-generation optoelectronics. Quasi-two-dimensional (quasi-2D) Ruddlesden-Popper perovskites are promising candidates, but their solution-processed films typically suffer from multiphase coexistence and random crystallographic orientation, which severely impede vertical charge transport. Here, we report a facile temperature-gradient-free thermal-pressing-casting (TGF-TPC) strategy to fabricate quasi-2D (FPEA) 2 MA 4 Pb 5 I 16 perovskite films with a phase-purified composition and a vertically aligned, highly textured structure. This method simultaneously applies uniform temperature and isostatic pressure, synergistically regulating crystallization thermodynamics and kinetics to suppress phase segregation and promote out-of-plane grain growth. The resulting films exhibit reduced trap-state density, suppressed non-radiative recombination, efficient vertical charge transport, and favorable interfacial energy alignment. Consequently, planar heterojunction SPPDs demonstrate outstanding optoelectronic performances, e.g., remarkable responsivity, ultralow noise, high specific detectivity, and robust stability. Crucially, they achieve high-fidelity UV-vis-NIR broadband imaging under an ultralow power density of 50 nW cm −2 . This work provides a simple and scalable processing paradigm to control the microstructure of quasi-2D perovskites, unlocking their potential for advanced low-power photodetection and imaging.",
           "rss_published_at": "2026-11-10T13:18:09+00:00",
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:07+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yongzhen Huang",
-            "Kaiwen Meng",
-            "Guanglu Zhu",
-            "Qilong Wang",
-            "Deliang Cui",
-            "Haohai Yu",
-            "Gang Lian"
+            "Yongzhen Huang, Kaiwen Meng, Guanglu Zhu, Qilong Wang, Deliang Cui, Haohai Yu, Gang Lian"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "867058a2fe85b2c5ada98d2c",
@@ -194485,19 +194369,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:17+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Tal Binyamin",
-            "Stav Rahmany",
-            "Anat Shvets",
-            "Hadar Shema",
-            "Elad Gross",
-            "Ido Hadar",
-            "Lioz Etgar"
+            "Tal Binyamin, Stav Rahmany, Anat Shvets, Hadar Shema, Elad Gross, Ido Hadar, Lioz Etgar"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "e475932b2064982d38b4a09d",
@@ -194517,21 +194395,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:17+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jeong-ik Park",
-            "Changhyeon Lee",
-            "Chungryeol Lee",
-            "Taehyun Nam",
-            "Yebin Bak",
-            "Sukwon Jang",
-            "Hocheon Yoo",
-            "Junhwan Choi",
-            "Sung Gap Im"
+            "Jeong-ik Park, Changhyeon Lee, Chungryeol Lee, Taehyun Nam, Yebin Bak, Sukwon Jang, Hocheon Yoo, Junhwan Choi, Sung Gap Im"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "576055ce4daf96affe5d582a",
@@ -194551,20 +194421,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:30:49+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Chuanzhen Feng",
-            "Shuangshuang Tang",
-            "Yating Wu",
-            "Qi Lan",
-            "Shicheng Xu",
-            "Jiangli Zhang",
-            "Huijuan Zhang",
-            "Yu Wang"
+            "Chuanzhen Feng, Shuangshuang Tang, Yating Wu, Qi Lan, Shicheng Xu, Jiangli Zhang, Huijuan Zhang, Yu Wang"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "d3abfff2dc278991da8a590c",
@@ -194584,24 +194447,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:30:34+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Bin Ren",
-            "Tao Li",
-            "Yujun Jia",
-            "Yameng Jiao",
-            "Zhicong Yan",
-            "Guanghui Feng",
-            "Mingde Tong",
-            "Hang Yu",
-            "Yi Zhang",
-            "Mengyu Dai",
-            "Yumeng Deng",
-            "Hejun Li"
+            "Bin Ren, Tao Li, Yujun Jia, Yameng Jiao, Zhicong Yan, Guanghui Feng, Mingde Tong, Hang Yu, Yi Zhang, Mengyu Dai, Yumeng Deng, Hejun Li"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "b8795741dbfa70c81fcc7a1c",
@@ -194621,23 +194473,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:30:46+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Xu Luo",
-            "Lintao Jiang",
-            "Hongyu Zhao",
-            "Xin Tan",
-            "Linbo Jiang",
-            "Mengxiao Wang",
-            "Haowen Wu",
-            "Ruidong Li",
-            "Jixiang Jiao",
-            "Weihao Zeng",
-            "Shichun Mu"
+            "Xu Luo, Lintao Jiang, Hongyu Zhao, Xin Tan, Linbo Jiang, Mengxiao Wang, Haowen Wu, Ruidong Li, Jixiang Jiao, Weihao Zeng, Shichun Mu"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "1e44c20793dfb7c226f584e9",
@@ -194657,16 +194499,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:04+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Xintong Ou",
-            "Bin Zhang",
-            "Guoliang Zhang",
-            "Chunfeng Ma"
+            "Xintong Ou, Bin Zhang, Guoliang Zhang, Chunfeng Ma"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "8bac59ee035821574341d431",
@@ -194679,27 +194518,20 @@
         },
         "10.1002/adfm.78765": {
           "doi": "10.1002/adfm.78765",
-          "title": "Lateral Scaling Effects on Thermal Transport in Suspended Bilayer WS 2 Nanoribbons",
+          "title": "Lateral Scaling Effects on Thermal Transport in Suspended Bilayer WS2 Nanoribbons",
           "url": "https://doi.org/10.1002/adfm.78765",
           "abstract": "ABSTRACT As transistor scaling enters the post-Moore era, two-dimensional van der Waals semiconductors such as WS 2 are promising channel materials, yet heat dissipation under aggressive lateral scaling and 3D integration remains a major challenge. Here, we experimentally reveal strong width-dependent thermal conductivity, κ , in suspended bilayer WS 2 nanoribbons synthesized via vapor-liquid-solid growth. Using a refined transfer process, we measure nanoribbons with widths of 156-788 nm and observe that κ increases from 31.9 to 66.2 W m − 1 K − 1 at 300 K, demonstrating pronounced phonon-boundary scattering under lateral scaling. Callaway-Holland analysis attributes this size effect primarily to low-frequency phonons with long mean free paths. Despite this strong size effect, WS 2 maintains κ more than an order of magnitude higher than comparably scaled Si nanostructures. Thermal simulations of vertically stacked nanosheet gate-all-around (GAA) transistors further demonstrate that WS 2 channels suppress hot-spot formation and yield more uniform temperature distributions than Si under identical operating conditions. These findings identify lateral-size-controlled phonon transport as a critical design dimension and establish ultrathin WS 2 as a thermally robust channel material for post-Moore nanoelectronics.",
           "rss_published_at": "2026-11-10T13:18:09+00:00",
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:06+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Xiaohui Sun",
-            "Guodong Xue",
-            "Shuo Qiao",
-            "Weihao Yao",
-            "Jun Lyu",
-            "Quanlin Guo",
-            "Kaihui Liu",
-            "Lin Yang"
+            "Xiaohui Sun, Guodong Xue, Shuo Qiao, Weihao Yao, Jun Lyu, Quanlin Guo, Kaihui Liu, Lin Yang"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "bb454a37ced62e9c36fadad0",
@@ -194719,22 +194551,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:31:11+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Ruixin Chen",
-            "Yuhang Yan",
-            "Sihang Pan",
-            "Jianpeng Chen",
-            "Xianruo Du",
-            "Wenxin Li",
-            "Zihan Gao",
-            "Xinyu Liang",
-            "Zungui Shao",
-            "Gaofeng Zheng"
+            "Ruixin Chen, Yuhang Yan, Sihang Pan, Jianpeng Chen, Xianruo Du, Wenxin Li, Zihan Gao, Xinyu Liang, Zungui Shao, Gaofeng Zheng"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "adf82e36e911dc4c086a5fe2",
@@ -194747,43 +194570,20 @@
         },
         "10.1002/adfm.78734": {
           "doi": "10.1002/adfm.78734",
-          "title": "Room-Temperature Anomalous Hall Effect and Out-of-Plane Spin-Orbit Torques in CoFe 2 O 4 -Buffered RuO 2",
+          "title": "Room-Temperature Anomalous Hall Effect and Out-of-Plane Spin-Orbit Torques in CoFe2O4-Buffered RuO2",
           "url": "https://doi.org/10.1002/adfm.78734",
           "abstract": "ABSTRACT Realizing room-temperature out-of-plane spin currents remains a key challenge for low-power perpendicular spin-orbit torque devices. Oxides with strong spin-orbit coupling are highly desirable spin sources for spintronic applications, and RuO 2 has recently attracted widespread attention owing to its excellent spin transport properties. However, the generation of out-of-plane spin polarization is limited to specific crystallographic orientations, restricting materials design flexibility and practical device integration. Here, we demonstrate that interfacial magnetic coupling between RuO 2 and an insulating ferromagnet can provide an effective route to circumvent this constraint. In RuO 2 (110)/CoFe 2 O 4 heterostructures, the interfacial coupling induces a net magnetization component in RuO 2 tilted toward the film plane, giving rise to a robust anomalous Hall effect up to room temperature. Spin-torque ferromagnetic resonance measurements reveal a high spin-orbit torque efficiency of ∼0.18 in CoFe 2 O 4 -buffered RuO 2 , representing a sixfold enhancement compared with bare RuO 2 (110) films. Notably, the spin tilting of RuO 2 generates a distinct z-polarized spin-current component with a torque efficiency of ∼0.014, indicating that interfacial magnetic engineering enables out-of-plane spin polarization in RuO 2 (110). These results suggest interfacial magnetic modulation as a versatile strategy for realizing room-temperature anomalous Hall effects and efficient spin-orbit torques in strongly spin-orbit coupled oxide heterostructures, opening new opportunities for oxide-based spintronic applications.",
           "rss_published_at": "2026-11-10T13:18:09+00:00",
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:30:30+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jie Zheng",
-            "Guibin Lan",
-            "He Bai",
-            "Jing Zhang",
-            "Haodong Liu",
-            "Ziqi Han",
-            "Daming Tian",
-            "Pengju Wang",
-            "Meng Zhao",
-            "Furong Han",
-            "Hui Zhang",
-            "Jine Zhang",
-            "Wang Dengjing",
-            "Cheng Zhang",
-            "Hongrui Zhang",
-            "Guoqiang Yu",
-            "Tao Zhu",
-            "Hao Wu",
-            "Jianwang Cai",
-            "Yunzhong Chen",
-            "Fengxia Hu",
-            "Jirong Sun",
-            "Yuansha Chen",
-            "Baogen Shen"
+            "Jie Zheng, Guibin Lan, He Bai, Jing Zhang, Haodong Liu, Ziqi Han, Daming Tian, Pengju Wang, Meng Zhao, Furong Han, Hui Zhang, Jine Zhang, Wang Dengjing, Cheng Zhang, Hongrui Zhang, Guoqiang Yu, Tao Zhu, Hao Wu, Jianwang Cai, Yunzhong Chen, Fengxia Hu, Jirong Sun, Yuansha Chen, Baogen Shen"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "ba53af66a45e9c847c39ca5e",
@@ -194803,22 +194603,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:08+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Penghan Yue",
-            "Yiding Wang",
-            "Cong Liu",
-            "Hongqian Liu",
-            "Yongjie Lin",
-            "Mingzhong Li",
-            "Liujun Xu",
-            "Yujia Huang",
-            "Yanhui Li",
-            "Huayu Tian"
+            "Penghan Yue, Yiding Wang, Cong Liu, Hongqian Liu, Yongjie Lin, Mingzhong Li, Liujun Xu, Yujia Huang, Yanhui Li, Huayu Tian"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "5c22b5ba51e9d075fa7a8a95",
@@ -194838,24 +194629,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:30:32+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Nan Wang",
-            "Yan Yan",
-            "Mingqi Ding",
-            "Yuxuan Zhang",
-            "Mengxi Gu",
-            "Jie Zhou",
-            "Wu Guo",
-            "Haoran Pei",
-            "Bowen Li",
-            "Quan Quan",
-            "Yu Song",
-            "Johnny C. Ho"
+            "Nan Wang, Yan Yan, Mingqi Ding, Yuxuan Zhang, Mengxi Gu, Jie Zhou, Wu Guo, Haoran Pei, Bowen Li, Quan Quan, Yu Song, Johnny C. Ho"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "5a228a33c47e737bfd3176cc",
@@ -194875,22 +194655,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:06+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Alessandro Namar",
-            "Basant Roondhe",
-            "Michela De Col",
-            "Stefania Baronio",
-            "Matteo Jugovac",
-            "Mattia Scardamaglia",
-            "Eleanor Frampton",
-            "Nikolay Vinogradov",
-            "Paolo Giannozzi",
-            "Erik Vesselli"
+            "Alessandro Namar, Basant Roondhe, Michela De Col, Stefania Baronio, Matteo Jugovac, Mattia Scardamaglia, Eleanor Frampton, Nikolay Vinogradov, Paolo Giannozzi, Erik Vesselli"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "4e1fc081533b52b991919061",
@@ -194910,18 +194681,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:21+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Qiuxia Luo",
-            "Shuo Xiang",
-            "Lei Wang",
-            "Yi Qin",
-            "Dong Wang",
-            "Ben Zhong Tang"
+            "Qiuxia Luo, Shuo Xiang, Lei Wang, Yi Qin, Dong Wang, Ben Zhong Tang"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "0c352c5eb0ccffd19f24e020",
@@ -194941,20 +194707,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:14+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Xizheng Wang",
-            "Lisheng Zhang",
-            "Xin Li",
-            "Yufan Pan",
-            "Siyuan Zhang",
-            "Fan Yang",
-            "Huifang Li",
-            "Dianxing Ju"
+            "Xizheng Wang, Lisheng Zhang, Xin Li, Yufan Pan, Siyuan Zhang, Fan Yang, Huifang Li, Dianxing Ju"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "0dc965216b26ce007d07c218",
@@ -194974,25 +194733,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:30:47+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Xuepeng Liu",
-            "Shuangwei Lv",
-            "Liwen Zhang",
-            "Mingyuan Han",
-            "Rahim Ghadari",
-            "Botong Li",
-            "Hanqing Yang",
-            "Ruiting Cai",
-            "Ziwen Ling",
-            "Xiaopeng Feng",
-            "Shuzhang Yang",
-            "Zhipeng Shao",
-            "Yong Ding"
+            "Xuepeng Liu, Shuangwei Lv, Liwen Zhang, Mingyuan Han, Rahim Ghadari, Botong Li, Hanqing Yang, Ruiting Cai, Ziwen Ling, Xiaopeng Feng, Shuzhang Yang, Zhipeng Shao, Yong Ding"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "e3977955c5af5cfd72bf0268",
@@ -196449,31 +196196,20 @@
         },
         "10.1002/adfm.78617": {
           "doi": "10.1002/adfm.78617",
-          "title": "Surface Oxidation Induced Ferroelectricity and Memristor Like Conductance in Bulk T d -WTe 2",
+          "title": "Surface Oxidation Induced Ferroelectricity and Memristor Like Conductance in Bulk Td-WTe2",
           "url": "https://doi.org/10.1002/adfm.78617",
           "abstract": "ABSTRACT Tungsten ditelluride (WTe 2 ) is a unique Type-II semimetal described by the Weyl equation to define its electronic topological band structure and known to show ferroelectricity at room temperature in the bulk phase. In this regard, two competing explanations exist: ferroelectricity arising due to intrinsic non-centrosymmetric structure analogous to polar metals first proposed by Anderson decades ago, or extrinsic ferroelectricity induced by surface oxidation. Here, we address this question by using a combination of controlled experiments comprising of bulk characterization techniques in conjunction with in situ scribing of the local surface using an atomic force microscopy (AFM) tip to remove the top oxide layer and perform conducting atomic force microscopy (CAFM), Kelvin probe force microscopy (KPFM), and piezoresponse force microscopy (PFM) measurements. Furthermore, ab initio simulations provide supporting findings to corroborate the origin of ferroelectric polarization from switchable interfacial dipoles on the oxidized surface while double loop phase spectrum points to antiferroelectricity in the scribed surface. Our results demonstrate that the observed ferroelectric switching is a surface-mediated phenomenon associated with the naturally oxidized layer on bulk T d -WTe 2 , and offering new opportunities for nanoscale manipulation and local characterization using scanning probe microscopy-based techniques in Weyl and Dirac semimetals.",
           "rss_published_at": "2026-11-10T13:18:09+00:00",
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:30:43+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Rajarshi Roy",
-            "Jan Čermák",
-            "Pavel Hubík",
-            "Oleksandr Romanyuk",
-            "Jan Rohlíček",
-            "Nilesh Mazumder",
-            "Souvik Bhattacharjee",
-            "Subhajit Saha",
-            "Pavel Ondračka",
-            "Zuzana Gedeonová",
-            "Alexander Kromka",
-            "David Holec"
+            "Rajarshi Roy, Jan Čermák, Pavel Hubík, Oleksandr Romanyuk, Jan Rohlíček, Nilesh Mazumder, Souvik Bhattacharjee, Subhajit Saha, Pavel Ondračka, Zuzana Gedeonová, Alexander Kromka, David Holec"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "abc104f8d20f4e2887101b06",
@@ -196486,24 +196222,20 @@
         },
         "10.1002/adfm.78293": {
           "doi": "10.1002/adfm.78293",
-          "title": "Light Polarization Sensitive Transistor Action in the van der Waals Ferroelectric 4H-SnS 2",
+          "title": "Light Polarization Sensitive Transistor Action in the van der Waals Ferroelectric 4H-SnS2",
           "url": "https://doi.org/10.1002/adfm.78293",
           "abstract": "ABSTRACT Van der Waals (vdW) ferroelectric semiconductors provide a unique platform for exploring the interplay between spontaneous polarization, electronic transport, ion migration, and photocarrier generation at the nanoscale. Here, we establish a room-temperature ferroelectric state in SnS 2 and its sensitivity to structural polytype by directly contrasting the centrosymmetric 2H-phase with the polar 4H-phase. Raman spectroscopy distinguishes the 2H and 4H polymorphs of SnS 2 through their characteristic phonon fingerprints. Piezoresponse force microscopy confirms room-temperature ferroelectricity in the 4H phase, while the 2H phase exhibits no ferroelectric response. The built-in polarization in a three-terminal transistor device of the 4H-SnS 2 is modulated significantly by electrostatic gating and on exposure to linear and circularly polarized light. This device reveals polarization-controlled output characteristics with distinct gate-voltage induced hysteretic response and thermally activated carrier transport, confirming p -type semiconducting behavior strongly coupled to ferroelectric polarization. The photoresponse likewise exhibits polarization-assisted carrier separation, sublinear power-law scaling, a nonmonotonic temperature response correlated with the characteristic Raman modes, ferroelectric hysteresis, and a pronounced dependence on the circular and linear polarization states of the incident laser beam. These results establish 4H-SnS 2 as a promising material system for polarization-driven electronic and optoelectronic technologies, including nonvolatile memory and photoferroelectric functionalities.",
           "rss_published_at": "2026-11-10T13:18:09+00:00",
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:29:58+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Abhishek Bajgain",
-            "Rabindra Basnet",
-            "Subhashree Chatterjee",
-            "Alexander Samokhvalov",
-            "Ramesh C. Budhani"
+            "Abhishek Bajgain, Rabindra Basnet, Subhashree Chatterjee, Alexander Samokhvalov, Ramesh C. Budhani"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "568dc5b6e21d5ab2af12ad11",
@@ -196516,28 +196248,20 @@
         },
         "10.1002/adfm.78769": {
           "doi": "10.1002/adfm.78769",
-          "title": "High-Gain MoS 2 Differential PNP Bipolar Junction Transistors for Dynamic Amplification via Contact-Barrier Tuning",
+          "title": "High-Gain MoS2 Differential PNP Bipolar Junction Transistors for Dynamic Amplification via Contact-Barrier Tuning",
           "url": "https://doi.org/10.1002/adfm.78769",
           "abstract": "ABSTRACT Silicon-based bipolar junction transistors (BJTs) have been the workhorse of high-frequency analog circuits, yet their scaling is fundamentally constrained by base-width reduction and heavy-doping-induced carrier scattering. Although two-dimensional (2D) semiconductors offer atomically thin bodies that are attractive for vertically scaled bipolar devices, realizing high current gain PNP BJT remains particularly challenging because stable, damage-free p-type doping and efficient hole-injection schemes are difficult to achieve. Here, we demonstrate a dopant-free PNP BJT based on multilayer MoS 2 , in which the transistor polarity is defined by metal-semiconductor contact engineering rather than chemical doping or van der Waals heterostacking. High-work-function metal Pt/MoS 2 Schottky contacts act as bias-tunable emitter and collector junctions for hole injection and collection, whereas a low-work-function metal Ag/MoS 2 Ohmic contact serves as the base electrode. Benefiting from an ultrashort vertical base region and asymmetric effective Pt/MoS 2 Schottky barriers, the device achieves a near-1 common-base current gain of α ≈ 0.99 and a high common-emitter current gain of β ≈ 254. Furthermore, dynamic single-transistor and differential-amplifier confirm signal amplification with reduced waveform distortion, supporting the proof-of-concept dynamic amplification capability of the PNP operation. This work establishes contact-induced band engineering as a compact strategy for complementary bipolar devices in integrated 2D analog electronics.",
           "rss_published_at": "2026-11-10T13:18:09+00:00",
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:04+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Xiangkai Liu",
-            "Ling Wang",
-            "Ximing Sun",
-            "Xiangyu Chen",
-            "Chunchi Zhang",
-            "Chao Tan",
-            "Guohua Hu",
-            "Zhenyu Yang",
-            "Zegao Wang"
+            "Xiangkai Liu, Ling Wang, Ximing Sun, Xiangyu Chen, Chunchi Zhang, Chao Tan, Guohua Hu, Zhenyu Yang, Zegao Wang"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "d6a6a8a4ad1e5c1eb477be74",
@@ -196557,18 +196281,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:30:30+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Munawar Abbas",
-            "Dan Wang",
-            "Kunkun Xu",
-            "He Li",
-            "Ziyu Wang",
-            "Ruihu Wang"
+            "Munawar Abbas, Dan Wang, Kunkun Xu, He Li, Ziyu Wang, Ruihu Wang"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "f5acb143a40dc0160790d5e2",
@@ -196588,19 +196307,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:30:49+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Hao Zhang",
-            "Dongshuo Xin",
-            "Fulong Wang",
-            "Huabin Han",
-            "Feng Xiao",
-            "Chang Guo",
-            "Yanhui Wu"
+            "Hao Zhang, Dongshuo Xin, Fulong Wang, Huabin Han, Feng Xiao, Chang Guo, Yanhui Wu"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "e707572c39fa35c0df4d9efc",
@@ -196613,30 +196326,20 @@
         },
         "10.1002/adfm.78755": {
           "doi": "10.1002/adfm.78755",
-          "title": "Pressure-Induced Topochemical Reconstruction for Quenchable Metastable ZnIn 2 S 4 With Enhanced Photoelectric Effect for Artificial Synapses Application",
+          "title": "Pressure-Induced Topochemical Reconstruction for Quenchable Metastable ZnIn2S4 With Enhanced Photoelectric Effect for Artificial Synapses Application",
           "url": "https://doi.org/10.1002/adfm.78755",
           "abstract": "ABSTRACT Layered ternary sulfide ZnIn 2 S 4 is an attractive visible-light semiconductor for photodetection, photocatalysis, and neuromorphic optoelectronics, but its photoelectric output is limited by inefficient carrier separation and sluggish carrier dynamics. Pressure offers a versatile route to reconstruct crystal and electronic structures, yet the enhanced properties generated under compression are usually lost after release. Here we report a pressure-induced topochemical reconstruction in layered rhombohedral ZnIn 2 S 4 (3R-ZnIn 2 S 4 ) that produces a quenchable metastable high-pressure R 3 m phase (HP- R 3 m ). In-situ photocurrent measurements show that the photocurrent density ( J ph ), responsivity ( R ), and external quantum efficiency ( EQE ) increase by five orders of magnitude under pressure. Notably, the enhanced response still enhanced by approximately several tens of times after decompression. The transition from layered low pressure phase (LP- R 3 m ) to compact HP- R 3 m narrows the bandgap, lowers the resistance by orders of magnitude that suppresses photocarrier recombination for enhanced photoelectric behavior. At the same time, this enhanced photoelectric effect further enables pressure-enhanced optoelectronic synaptic behavior, including paired-pulse facilitation, pulse-number-dependent postsynaptic current, and prolonged forgetting time, which are useful for artificial synapses application. This work establishes pressure-induced topochemical reconstruction as a promising strategy for creating quenchable metastable semiconductors with retained photoelectric and neuromorphic functions.",
           "rss_published_at": "2026-11-10T13:18:09+00:00",
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:10+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Shixin Li",
-            "Yifan Tian",
-            "Shuailing Ma",
-            "Xiao Ma",
-            "Shuo Yang",
-            "Meiyan Ye",
-            "Hao Song",
-            "Min Lian",
-            "Xingbin Zhao",
-            "Bing Sun",
-            "Tian Cui"
+            "Shixin Li, Yifan Tian, Shuailing Ma, Xiao Ma, Shuo Yang, Meiyan Ye, Hao Song, Min Lian, Xingbin Zhao, Bing Sun, Tian Cui"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "13d90ca8cc03ee4e15433313",
@@ -196649,33 +196352,20 @@
         },
         "10.1002/adfm.78762": {
           "doi": "10.1002/adfm.78762",
-          "title": "Engineering a Fluorinated AlPO 4 Interface: Toward High Initial Coulombic Efficiency and Stable Oxygen Redox in Li-Rich Layered Oxide Cathodes",
+          "title": "Engineering a Fluorinated AlPO4 Interface: Toward High Initial Coulombic Efficiency and Stable Oxygen Redox in Li-Rich Layered Oxide Cathodes",
           "url": "https://doi.org/10.1002/adfm.78762",
           "abstract": "ABSTRACT Li-rich layered oxides (LLOs) are promising high-energy-density cathode candidates; however, their practical application is hindered by severe voltage decay originating from irreversible layered-to-spinel phase transformation and interfacial degradation under high-voltage operation (>4.5 V). Herein, we report a fluorinated AlPO 4 (AlPO 4 -F) surface architecture for LLO cathodes designed to simultaneously stabilize the oxygen framework and modify the interfacial charge environment. Electrostatic force microscopy, zeta-potential measurements, and density functional theory calculations reveal that fluorination induces localized charge redistribution and a more negative surface potential, accompanied by enhanced Li affinity at the cathode surface. In situ Raman spectroscopy and in situ X-ray diffraction further demonstrate improved structural reversibility, suppressed c-axis contraction, and mitigated phase-transition behavior during electrochemical cycling. As a result, the fluorinated AlPO 4 -coated cathode (LLO-APF) delivers an initial Coulombic efficiency of 95.9% and stable cycling over 244 cycles at 1 C, compared with 57 cycles for pristine LLO under identical conditions, while limiting voltage decay to 0.23 V. These results suggest that fluorinated phosphate interfaces can provide a multifunctional platform for simultaneously regulating interfacial stability, Li + transport behavior, and structural reversibility in high-capacity anionic-redox cathode systems.",
           "rss_published_at": "2026-11-10T13:18:09+00:00",
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:06+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Hojun Moon",
-            "Harim Jeong",
-            "Younghwon Kim",
-            "Buseong Kim",
-            "Geunhyeong Kim",
-            "Suyeon Lee",
-            "Jeongjin Lee",
-            "Joonwoo Kim",
-            "Jemin Lee",
-            "Youngsoo Kim",
-            "Young-Il Kim",
-            "Dae Won Cho",
-            "Jeeyoung Yoo",
-            "Misook Kang"
+            "Hojun Moon, Harim Jeong, Younghwon Kim, Buseong Kim, Geunhyeong Kim, Suyeon Lee, Jeongjin Lee, Joonwoo Kim, Jemin Lee, Youngsoo Kim, Young-Il Kim, Dae Won Cho, Jeeyoung Yoo, Misook Kang"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "d96d8032906194218dc30bc7",
@@ -196695,16 +196385,13 @@
           "published_online_at": "2026-09-29T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:07+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Teng Li",
-            "Haojie Zhou",
-            "Junfeng Wang",
-            "He Lu"
+            "Teng Li, Haojie Zhou, Junfeng Wang, He Lu"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "230ace73ac2c13be5dac48f1",
@@ -196724,20 +196411,13 @@
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:03+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Han Yu",
-            "Yuankai Jin",
-            "Yue Zhu",
-            "Gantong Chen",
-            "Bohao Duan",
-            "Zhichun Yang",
-            "Zuankai Wang",
-            "Shengxi Zhou"
+            "Han Yu, Yuankai Jin, Yue Zhu, Gantong Chen, Bohao Duan, Zhichun Yang, Zuankai Wang, Shengxi Zhou"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "66dc926b52c4f1ef8d0212a4",
@@ -196750,26 +196430,20 @@
         },
         "10.1002/adfm.78766": {
           "doi": "10.1002/adfm.78766",
-          "title": "Synergistic Topology and Node Engineering in Mesoporous COFs for Efficient H 2 O 2 Photosynthesis",
+          "title": "Synergistic Topology and Node Engineering in Mesoporous COFs for Efficient H2O2 Photosynthesis",
           "url": "https://doi.org/10.1002/adfm.78766",
           "abstract": "ABSTRACT Covalent organic frameworks (COFs) represent a promising class of metal-free photocatalysts. However, the synergistic optimization of exciton dissociation and mass/charge transport still remains a significant challenge. Herein, a synergistic topological and electronic engineering strategy was implemented in COFs to decrease exciton dissociation energy during photocatalysis, while planar-locking and mesopore engineering in COF frameworks enhanced mass/charge transport properties. Isomeric carbazole-based COFs (COF-Cz-kgd-v versus COF-Cz-hcb) with distinct topologies and node-site hybridization states (sp 2 ─NH─ in COF-Cz-hcb versus sp 3 ─CH 2 ─ in fluorene-based COF-Flu-hcb) have been prepared. Theoretical and experimental studies indicated that the enhanced spatial separation efficiency of the frontier orbitals from COF-Cz-kgd-v, COF-Cz-hcb to COF-Flu-hcb would result in a decreasing exciton binding energy (59.35, 57.47 to 42.46 meV) and prolonging photogenerated charge migration. Inspired by this, the H 2 O 2 photogeneration was investigated, and its rates were elevated from 49.5 mmol g −1 h −1 for COF-Cz-kgd-v, 66.3 mmol g −1 h −1 for COF-Cz-hcb to 97.9 mmol g −1 h −1 over COF-Flu-hcb in an O 2 -pre-saturated benzylamine-acetonitrile system. A two-step indirect 2e − oxygen reduction pathway mediated by *OOH intermediates, coupled with a hole-driven dehydrogenation of benzylamine on donor-acceptor sites, also contributed to their high photosynthetic performance.",
           "rss_published_at": "2026-11-10T13:18:09+00:00",
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:03+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Hongyuan Xu",
-            "Yuzhuo Zhou",
-            "Tao Yang",
-            "Jinglun Yang",
-            "Hanming Ding",
-            "Qichun Zhang",
-            "Aiguo Kong"
+            "Hongyuan Xu, Yuzhuo Zhou, Tao Yang, Jinglun Yang, Hanming Ding, Qichun Zhang, Aiguo Kong"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "e7473cb26e3c031e8719ed11",
@@ -196789,19 +196463,13 @@
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:02+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Qinkai Zou",
-            "Le Zhang",
-            "Shuaibin Hua",
-            "Puli Gan",
-            "Ruhui Zheng",
-            "Tian Jin",
-            "Xin Guo"
+            "Qinkai Zou, Le Zhang, Shuaibin Hua, Puli Gan, Ruhui Zheng, Tian Jin, Xin Guo"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "7f5c530882603d30598f5110",
@@ -196821,21 +196489,13 @@
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:15+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Zhefeng Liu",
-            "Tianhao Chen",
-            "Rui Wang",
-            "Hancong Zheng",
-            "Sha Sha",
-            "Haoyu Qi",
-            "Yuxuan Dong",
-            "Yongbin Zhao",
-            "Aihua Chen"
+            "Zhefeng Liu, Tianhao Chen, Rui Wang, Hancong Zheng, Sha Sha, Haoyu Qi, Yuxuan Dong, Yongbin Zhao, Aihua Chen"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "b3b14e8cbd17f7c7eaa6b737",
@@ -196855,28 +196515,13 @@
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:04+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Hyunjin Lee",
-            "Xinyi Wang",
-            "Sirui Li",
-            "Jihyang Park",
-            "Hyunseok Lee",
-            "Jianting Yao",
-            "Kedar Narayan",
-            "Yuqi Wang",
-            "Jiashu Ren",
-            "Yueqi Deng",
-            "Salahuddin Ahmed",
-            "Denver I. Greenawalt",
-            "Archana Pandiyan",
-            "Loganathan Veeramuthu",
-            "Chi-Ching Kuo",
-            "Tao Zhou"
+            "Hyunjin Lee, Xinyi Wang, Sirui Li, Jihyang Park, Hyunseok Lee, Jianting Yao, Kedar Narayan, Yuqi Wang, Jiashu Ren, Yueqi Deng, Salahuddin Ahmed, Denver I. Greenawalt, Archana Pandiyan, Loganathan Veeramuthu, Chi-Ching Kuo, Tao Zhou"
           ],
           "first_seen": "2026-10-13T12:06:10.113449+00:00",
           "item_id": "b810dc50983c757b1fd3d8ed",
@@ -210247,14 +209892,13 @@
           "published_online_at": "2026-08-24T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:08+00:00",
-          "article_type": "journal-article",
+          "article_type": "REVIEW   REVIEW",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jing Jia",
-            "Li-Ming Yang"
+            "Jing Jia, Li-Ming Yang"
           ],
           "first_seen": "2026-10-24T23:53:18.413440+00:00",
           "item_id": "fe63db32ed8e276f475cdaff",
@@ -223970,15 +223614,13 @@
           "published_online_at": "2026-09-24T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-11T00:03:25+00:00",
-          "article_type": "journal-article",
+          "article_type": "REVIEW   REVIEW",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yan Zhao",
-            "Shuai Zhao",
-            "Xue-Dong Wang"
+            "Yan Zhao, Shuai Zhao, Xue-Dong Wang"
           ],
           "first_seen": "2026-11-06T02:01:23.988294+00:00",
           "item_id": "2acbe49478de6eb2ae2d5a22",
@@ -226408,19 +226050,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T09:27:28+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yuefeng Wang",
-            "Meng Xia",
-            "Yuhua Chen",
-            "Yinchang Liao",
-            "Hongxin Sun",
-            "Zhiwei Yan",
-            "Xingwang Zhang"
+            "Yuefeng Wang, Meng Xia, Yuhua Chen, Yinchang Liao, Hongxin Sun, Zhiwei Yan, Xingwang Zhang"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "5036b21e64cdb43d8967dab2",
@@ -226433,30 +226069,20 @@
         },
         "10.1002/adfm.79530": {
           "doi": "10.1002/adfm.79530",
-          "title": "Compositionally Tuned FeNiMnCuNbAg x High-Entropy Alloy Nanoparticles With Enhanced ROS Generation and Photothermal Antibacterial Activity",
+          "title": "Compositionally Tuned FeNiMnCuNbAgx High-Entropy Alloy Nanoparticles With Enhanced ROS Generation and Photothermal Antibacterial Activity",
           "url": "https://doi.org/10.1002/adfm.79530",
           "abstract": "ABSTRACT The development of multifunctional antibacterial nanomaterials is of considerable interest in combating antibiotic resistance and marine biofouling. Herein, Ag-containing FeNiMnCuNbAgx high-entropy alloy nanoparticles (HEA-NPs) with tunable composition were synthesized through a non-equilibrium arc-discharge plasma strategy. By introducing Nb to stabilize Ag within the alloy matrix, homogeneous HEA-NPs with adjustable Ag content were successfully obtained. The resulting nanoparticles exhibited broad-spectrum antibacterial activity, efficient photothermal conversion, and strong biofilm-removal capability. In particular, FeNiMnCuNbAg 0.25 HEA-NPs achieved 99.99% elimination of planktonic Pseudomonas aeruginosa bacteria at a low dosage of 15 µg·mL −1 (15 ppm), while under simulated solar irradiation (1 sun), the biofilm removal efficiency at 50 µg·mL −1 increased from 86% to 98%, demonstrating a pronounced photothermal enhancement effect. Mechanistic investigations combining electron spin resonance (ESR), density functional theory (DFT) calculations, and transcriptomic analysis revealed that the Ag incorporation altered the thermodynamic evolution of oxygen reduction intermediates and modulated reactive oxygen species (ROS) generation behavior. Meanwhile, transcriptomic results indicated that HEA-NP treatment induced redox imbalance, respiratory dysfunction, and translational suppression in the bacterium. These findings highlight the potential of Ag-containing HEA-NPs as multifunctional antibacterial materials for biofilm control and antimicrobial protection in marine-relevant environments.",
           "rss_published_at": "2026-11-10T08:55:45+00:00",
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T09:26:36+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yu Qiu",
-            "Jia Lin",
-            "Tangqing Wu",
-            "Bin Yu",
-            "Linlin Yang",
-            "Zhiqun Yu",
-            "Yongqiang Fan",
-            "Yong Hu",
-            "Di Wang",
-            "Yixing Li",
-            "Dake Xu"
+            "Yu Qiu, Jia Lin, Tangqing Wu, Bin Yu, Linlin Yang, Zhiqun Yu, Yongqiang Fan, Yong Hu, Di Wang, Yixing Li, Dake Xu"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "f40d5a39ed80af4e4a844788",
@@ -226469,30 +226095,20 @@
         },
         "10.1002/adfm.79464": {
           "doi": "10.1002/adfm.79464",
-          "title": "Understanding Multiscale Disorder in Superconducting Nanowire Single-Photon Detectors1",
+          "title": "Understanding Multiscale Disorder in Superconducting Nanowire Single-Photon Detectors",
           "url": "https://doi.org/10.1002/adfm.79464",
           "abstract": "ABSTRACT Superconducting nanowire single-photon detectors are central to applications across quantum information science, but their performance is constrained by the effects of disorder and electrodynamic inhomogeneities that are not well understood. By combining DC transport, dark-count measurements, and bias-dependent microwave transmission spectroscopy in the presence of controlled nanoscale disorder introduced through helium-ion irradiation, local instabilities and global superfluid response are distinguished. This approach enables controlled tuning of the depairing current, kinetic inductance, microwave dissipation, and mode structure within a single device through systematic variation of the ion fluence. Bias- and temperature-dependent resonance shifts quantify disorder-induced modifications of the superconducting density of states through the nonlinear kinetic inductance, while the emergence of multiple resonant modes reveals the formation of electrodynamically distinct superconducting regions. The combined microwave response, characterized by the resonance frequency and quality factor , provides qualitative fingerprints of perturbation-dependent microwave dissipation under bias current, temperature, perpendicular magnetic field, RF power, and disorder, thereby establishing a multifunctional foundation for disorder engineering of superconducting nanowire detectors and resonators.",
           "rss_published_at": "2026-11-10T08:50:29+00:00",
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T09:26:16+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Nirjhar Sarkar",
-            "Ronan Gourgues",
-            "Yueh-Chun Wu",
-            "Chengyun Hua",
-            "Katyayani Seal",
-            "Niels Noordzij",
-            "Andreas Fognini",
-            "Steven Randolph",
-            "Eugene Dumitrescu",
-            "Gábor B. Halász",
-            "Benjamin J. Lawrie"
+            "Nirjhar Sarkar, Ronan Gourgues, Yueh-Chun Wu, Chengyun Hua, Katyayani Seal, Niels Noordzij, Andreas Fognini, Steven Randolph, Eugene Dumitrescu, Gábor B. Halász, Benjamin J. Lawrie"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "f9ec729e2d5742e2a6ba4361",
@@ -226512,20 +226128,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T09:25:14+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Chen Zhang",
-            "Tianjiao Dong",
-            "Liqiang He",
-            "Chuanxin Liang",
-            "Xuesong Pei",
-            "Zhizhi Xu",
-            "Xiaobing Ren",
-            "Dong Wang"
+            "Chen Zhang, Tianjiao Dong, Liqiang He, Chuanxin Liang, Xuesong Pei, Zhizhi Xu, Xiaobing Ren, Dong Wang"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "860ae882cef013bc9b360d0c",
@@ -226545,21 +226154,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T09:24:35+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Meng Yuan",
-            "Yue Yu",
-            "Lingxiu Chen",
-            "Xinlei Zhang",
-            "Xiaolan Xue",
-            "Shixuan Wang",
-            "Chuanlei Jia",
-            "Yang Zhang",
-            "Liwei Shi"
+            "Meng Yuan, Yue Yu, Lingxiu Chen, Xinlei Zhang, Xiaolan Xue, Shixuan Wang, Chuanlei Jia, Yang Zhang, Liwei Shi"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "ba2234a99d84db97d8f3dafa",
@@ -226579,23 +226180,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T09:24:20+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Kyo-Cheol Kang",
-            "Ji-sung Lee",
-            "Sangpil Hwang",
-            "Hyejung Lim",
-            "Junwoo Kil",
-            "Ji-Hyeon Kwon",
-            "Je-Wook Shin",
-            "Jae Young Cho",
-            "Seonyeong Choi",
-            "Jun-Young Park",
-            "Byeong-Kwon Ju"
+            "Kyo-Cheol Kang, Ji-sung Lee, Sangpil Hwang, Hyejung Lim, Junwoo Kil, Ji-Hyeon Kwon, Je-Wook Shin, Jae Young Cho, Seonyeong Choi, Jun-Young Park, Byeong-Kwon Ju"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "85775a0a3c22ec1b8b2ad881",
@@ -226615,24 +226206,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T09:23:19+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jinpeng Zhang",
-            "Zuhong Zhang",
-            "Yehua Zhang",
-            "Ying Tang",
-            "Jinbo Zhao",
-            "Xinxin Wan",
-            "Hongzhuo Wu",
-            "Shuai Guo",
-            "Tao Feng",
-            "Chuanlang Zhan",
-            "Meng Li",
-            "Hairui Liu"
+            "Jinpeng Zhang, Zuhong Zhang, Yehua Zhang, Ying Tang, Jinbo Zhao, Xinxin Wan, Hongzhuo Wu, Shuai Guo, Tao Feng, Chuanlang Zhan, Meng Li, Hairui Liu"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "473a009f98f36bcccd312951",
@@ -226652,15 +226232,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T09:23:07+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Ethan Fort",
-            "Mohamed Mousa",
-            "Mostafa Nouh"
+            "Ethan Fort, Mohamed Mousa, Mostafa Nouh"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "57f35047535d6ac38c00cff7",
@@ -226680,17 +226258,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T09:21:56+00:00",
-          "article_type": "journal-article",
+          "article_type": "REVIEW   REVIEW",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Rui Xu",
-            "Jiajun Song",
-            "Wai-Yeung Wong",
-            "Li Wang",
-            "Feng Yan"
+            "Rui Xu, Jiajun Song, Wai-Yeung Wong, Li Wang, Feng Yan"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "c51d42e81474dc6923d80d6d",
@@ -226710,22 +226284,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T08:28:31+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Xin Chen",
-            "Yongjie Shen",
-            "Aling Chen",
-            "Jun Liu",
-            "Xingchi Li",
-            "Xiangyu Liu",
-            "Jiang Deng",
-            "Zhenggang Xue",
-            "Wenqiang Qu",
-            "Dengsong Zhang"
+            "Xin Chen, Yongjie Shen, Aling Chen, Jun Liu, Xingchi Li, Xiangyu Liu, Jiang Deng, Zhenggang Xue, Wenqiang Qu, Dengsong Zhang"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "28fc4a3a524d61d9714998c3",
@@ -226745,24 +226310,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T08:28:26+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Xingfeng Zhao",
-            "Yangyang Pei",
-            "Bolin Kang",
-            "Maomao He",
-            "Yumeng Xue",
-            "Ting Liu",
-            "Jiangli Cai",
-            "Bin Liu",
-            "Huasheng Tian",
-            "Lili Sun",
-            "Linghai Xie",
-            "Wei Huang"
+            "Xingfeng Zhao, Yangyang Pei, Bolin Kang, Maomao He, Yumeng Xue, Ting Liu, Jiangli Cai, Bin Liu, Huasheng Tian, Lili Sun, Linghai Xie, Wei Huang"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "40e7796bc46f632da0ae1b9e",
@@ -226782,25 +226336,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T08:28:08+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Meilin Qiao",
-            "Qirui Fang",
-            "Xinyue Huang",
-            "Ruibing Yu",
-            "Yuan Chen",
-            "Junhao Pan",
-            "Yuteng Chu",
-            "Maier Shi",
-            "Yi Hua",
-            "Hong Wang",
-            "Huawei Zhang",
-            "Yue Cai",
-            "Xuanrong Sun"
+            "Meilin Qiao, Qirui Fang, Xinyue Huang, Ruibing Yu, Yuan Chen, Junhao Pan, Yuteng Chu, Maier Shi, Yi Hua, Hong Wang, Huawei Zhang, Yue Cai, Xuanrong Sun"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "c8e650f3f0d90da5cbfdab10",
@@ -226820,19 +226362,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T08:27:42+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Dongmi Heo",
-            "Minhu Huang",
-            "Youngseok Kim",
-            "Bowen Ding",
-            "Il-Young Jo",
-            "Martin Heeney",
-            "Myung-Han Yoon"
+            "Dongmi Heo, Minhu Huang, Youngseok Kim, Bowen Ding, Il-Young Jo, Martin Heeney, Myung-Han Yoon"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "61faaf207fcba25d92a8affc",
@@ -226852,18 +226388,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T08:26:38+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yuanxi Chang",
-            "Xiufen Liu",
-            "Yangyi Chen",
-            "Yan Jia",
-            "Haifeng Cheng",
-            "Mei Zu"
+            "Yuanxi Chang, Xiufen Liu, Yangyi Chen, Yan Jia, Haifeng Cheng, Mei Zu"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "f83acf168ffd0c30b19c4210",
@@ -226883,18 +226414,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T08:26:12+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Tianhai Wu",
-            "Po Chun Chen",
-            "Atsunori Tanaka",
-            "Paul K. L. Yu",
-            "Peter M. Asbeck",
-            "Shadi A. Dayeh"
+            "Tianhai Wu, Po Chun Chen, Atsunori Tanaka, Paul K. L. Yu, Peter M. Asbeck, Shadi A. Dayeh"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "fa0180dc8a4f739043a99bb7",
@@ -226907,25 +226433,20 @@
         },
         "10.1002/adfm.79597": {
           "doi": "10.1002/adfm.79597",
-          "title": "Spatial Tailoring of Pt Clusters and Co Single Atoms Over TiO 2 Nanosheets Achieves Directed Charge Separation for Boosted Methanol Photoreforming",
+          "title": "Spatial Tailoring of Pt Clusters and Co Single Atoms Over TiO2 Nanosheets Achieves Directed Charge Separation for Boosted Methanol Photoreforming",
           "url": "https://doi.org/10.1002/adfm.79597",
           "abstract": "ABSTRACT Efficient methanol photoreforming requires the coupling of methanol oxidative dehydrogenation and proton reduction, yet these half-reactions demand distinct active-site configurations. Here, acid-etching-assisted dual-site engineering enables the synergistic integration of Pt clusters (Pt C ) and Co single atoms (Co SA ) on TiO 2 nanosheets (TNS). Experimental results and theoretical calculations reveal that the electronic interaction between Pt C and Co SA upshifts the d-band center of Co SA to enhance the adsorption and activation of methanol-derived intermediates, while downshifting the d-band center of Pt C to weaken proton adsorption and facilitate H 2 desorption. Furthermore, compared with isolated Pt single atoms (Pt SA ), Pt C reduces the proton migration energy barrier and apparent activation energy, thereby facilitating efficient H 2 evolution. More importantly, the nanosheet structure of TNS accelerates the migration of holes toward Co SA and electrons toward Pt C , effectively suppressing charge recombination and establishing a directional redox pathway. Consequently, spatial tailoring of the reactive active sites enables Pt C Co SA /TNS to deliver an H 2 evolution rate of 117.8 mmol g −1 h −1 , approximately 2 times that of Pt SA Co SA /TNS, together with an apparent quantum yield of 66.4% at 365 nm. This work provides a novel strategy for the controlled fabrication of active sites on photocatalysts and efficient methanol photoreforming.",
           "rss_published_at": "2026-11-10T08:05:58+00:00",
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T08:26:27+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jianan Liu",
-            "Xuemeng Sun",
-            "Yuying Fan",
-            "Wei Lin",
-            "Chen Zhao",
-            "Baojiang Jiang"
+            "Jianan Liu, Xuemeng Sun, Yuying Fan, Wei Lin, Chen Zhao, Baojiang Jiang"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "f4f0670e91c563b9055ae6ba",
@@ -226938,32 +226459,20 @@
         },
         "10.1002/adfm.79526": {
           "doi": "10.1002/adfm.79526",
-          "title": "Non-Invasive Optical Inspection of Thermally Driven Interface State Evolution at Buried Metal-MoS 2 Contacts",
+          "title": "Non-Invasive Optical Inspection of Thermally Driven Interface State Evolution at Buried Metal-MoS2 Contacts",
           "url": "https://doi.org/10.1002/adfm.79526",
           "abstract": "ABSTRACT Van der Waals (vdW) metal contacts to two-dimensional semiconductors promise efficient carrier extraction alongside long photocarrier lifetimes, yet how the buried interface evolves under back-end-of-line thermal budgets remains difficult to track. Here, annealing-dependent transient reflection spectroscopy is established as a device-free optical readout of interface state evolution for transferred vdW Au, graphene-buffered Au, and deposited semimetal Sb contacts on multilayer MoS 2 up to 400°C, correlated with cross-sectional electron microscopy, photoelectron spectroscopy, and first-principles calculations. As the Au-S separation contracts from 3.47 Å to 2.16 Å (into the bonding range) two distinct optical signatures emerge: reduction of the early-time excitonic response from the first annealing step, consistent with strengthening extraction, and a picosecond capture channel that appears at 200°C, following thermally activated chemisorption whose hybridization-induced gap states straddle the pinned Fermi level. At matched separation, the Sb interface forms comparable gap states that lie occupied below its Fermi level, explaining its nearly invariant response, whereas graphene delays the transformation by holding the metal away from the semiconductor. These results frame contact selection as a navigable trade-off between carrier extraction and photocarrier lifetime and identify interlayer engineering and semimetal contacts as complementary routes to thermally robust 2D interfaces.",
           "rss_published_at": "2026-11-10T08:00:47+00:00",
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T08:24:24+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Seung-Hyun Ji",
-            "Chengyun Hong",
-            "Joonsoo Kim",
-            "Wonchan Lee",
-            "Hyundong Kim",
-            "Seunghyun Noh",
-            "Dohun Gwak",
-            "Yunjung Cho",
-            "Ji-Hee Kim",
-            "Jin Yong Lee",
-            "Hyeon Suk Shin",
-            "Seunguk Song",
-            "Taeyeon Kim"
+            "Seung-Hyun Ji, Chengyun Hong, Joonsoo Kim, Wonchan Lee, Hyundong Kim, Seunghyun Noh, Dohun Gwak, Yunjung Cho, Ji-Hee Kim, Jin Yong Lee, Hyeon Suk Shin, Seunguk Song, Taeyeon Kim"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "2918d4767c154e43da7d3279",
@@ -226983,26 +226492,13 @@
           "published_online_at": "2026-11-09T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T08:24:56+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jinyang Dong",
-            "Teng Yang",
-            "Jiayu Zhao",
-            "Yiling Ren",
-            "Yibiao Guan",
-            "Yun Lu",
-            "Kang Yan",
-            "Jianan Hao",
-            "Yiya Wang",
-            "Xinbai He",
-            "Jinqing Liu",
-            "Ning Li",
-            "Yuefeng Su",
-            "Lai Chen"
+            "Jinyang Dong, Teng Yang, Jiayu Zhao, Yiling Ren, Yibiao Guan, Yun Lu, Kang Yan, Jianan Hao, Yiya Wang, Xinbai He, Jinqing Liu, Ning Li, Yuefeng Su, Lai Chen"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "83ff3583101a915d79687f83",
@@ -227015,27 +226511,20 @@
         },
         "10.1002/adfm.79538": {
           "doi": "10.1002/adfm.79538",
-          "title": "Trap-Mediated Photonic Synapses Based on Cs 2 AgBiBr 6 /ZnO x Heterojunctions for Audiovisual Physical Reservoir Computing",
+          "title": "Trap-Mediated Photonic Synapses Based on Cs2AgBiBr6/ZnOx Heterojunctions for Audiovisual Physical Reservoir Computing",
           "url": "https://doi.org/10.1002/adfm.79538",
           "abstract": "ABSTRACT Emulating biological sensory processing in hardware requires synaptic devices with tunable dynamics and multimodal integration capability. However, heterogeneous physical signals are difficult to encode uniformly in a single synaptic device. Herein, we construct an optically programmable photonic synapse (CZH-PS) based on Cs 2 AgBiBr 6 /ZnO x (defect-type) heterostructure, where abundant oxygen vacancy (Ov) deep traps in ZnO x dominate the synaptic plasticity. Photoexcited electrons injected from the perovskite into ZnO x are stored in Ov trap states and thermally released, producing a persistent photocurrent whose decay kinetics are optically tunable. This mechanism underpins a rich repertoire of synaptic behaviors, including short-term/long-term memory (STM/LTM), Ebbinghaus forgetting, and the habituation/sensitization of the Aplysia gill-withdrawal reflex under dual-wavelength programming. Moreover, the nonlinear, history-dependent excitatory postsynaptic current (EPSC) serves as a physical reservoir for temporal information processing. With 4-bit optical pulse coding, a reservoir computing system is constructed that achieves recognition accuracies of 91.7% and 95.0% for letter and audio classification tasks, respectively. These results establish trap-mediated photonic synapses as a versatile hardware platform for bimodal bio-inspired computing.",
           "rss_published_at": "2026-11-10T07:56:45+00:00",
           "published_online_at": "2026-11-09T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T08:23:46+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Kaikai Gao",
-            "Zelin Cao",
-            "Mengna Wang",
-            "Bo Yang",
-            "Zhongqiang Wang",
-            "Songling Wang",
-            "Bai Sun",
-            "Jinyou Shao"
+            "Kaikai Gao, Zelin Cao, Mengna Wang, Bo Yang, Zhongqiang Wang, Songling Wang, Bai Sun, Jinyou Shao"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "1aba9c0abfb3b3b363e11627",
@@ -227048,27 +226537,20 @@
         },
         "10.1002/adfm.79516": {
           "doi": "10.1002/adfm.79516",
-          "title": "Crack-Defect Landscapes Enable Multimodal Memristive Switching in WS 2 Mono-Bilayers",
+          "title": "Crack-Defect Landscapes Enable Multimodal Memristive Switching in WS2 Mono-Bilayers",
           "url": "https://doi.org/10.1002/adfm.79516",
           "abstract": "ABSTRACT While nano or micro cracks are often unavoidable during the scalable growth of 2D materials, their role and interactions with vacancies in facilitating variable memristive switching are generally overlooked in device applications. Addressing device-to-device and cyclic variability in 2D memristor demands a mechanistic understanding of vacancy dynamics and their conduction pathways. We unveil how point defects and intergranular cracks modulate dynamic memristor behavior in mono-bilayer WS 2 lateral devices associated with varied sulfur vacancy concentrations, ranging from nearly pristine to ∼10 14 cm −2 , as confirmed by aberration-corrected electron microscopic and spectroscopic investigations. The crack boundaries act as preferential sites for vacancy migration and charged species, facilitating resistive switching in polycrystalline like WS 2 mono-bilayers. The observed conductance switching originate from Schottky barrier modulation at the WS 2 metal interface and the redistribution of vacancies within the channel. To enhance the device performance, controlled thermal annealing in distinct environments has been performed. The devices exhibited distinguishable switching for 800 cycles with consistent resistance ratios followed by onset of toggling state and later collapsing to trap state. These findings establish a direct correlation between atomic-scale defects and memristive performance, providing fundamental insights into vacancy-crack interactions that govern charge transport and stability in 2D materials.",
           "rss_published_at": "2026-11-10T07:56:40+00:00",
           "published_online_at": "2026-11-09T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T08:24:13+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Anjali Sharma",
-            "Moritz Quincke",
-            "Yadu Chandran",
-            "Bhumit Luhar",
-            "Rajib Sahu",
-            "Christian Kübel",
-            "Ute Kaiser",
-            "Viswanath Balakrishnan"
+            "Anjali Sharma, Moritz Quincke, Yadu Chandran, Bhumit Luhar, Rajib Sahu, Christian Kübel, Ute Kaiser, Viswanath Balakrishnan"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "59dc43372643545519ca9921",
@@ -227088,21 +226570,13 @@
           "published_online_at": "2026-11-09T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T08:23:41+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jiasheng Wei",
-            "Di Li",
-            "Sijie Zhuang",
-            "Hao Jia",
-            "Ping He",
-            "Zhu Long",
-            "Xin Tong",
-            "Yonghao Ni",
-            "Lei Dai"
+            "Jiasheng Wei, Di Li, Sijie Zhuang, Hao Jia, Ping He, Zhu Long, Xin Tong, Yonghao Ni, Lei Dai"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "ae4e25e0d431302948fb4246",
@@ -227122,15 +226596,13 @@
           "published_online_at": "2026-11-09T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T08:23:13+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Zhifei Deng",
-            "James C. Weaver",
-            "Ling Li"
+            "Zhifei Deng, James C. Weaver, Ling Li"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "0b03a9609da0632f773c61a8",
@@ -227150,19 +226622,13 @@
           "published_online_at": "2026-11-09T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T08:22:42+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Guo-Wei Chen",
-            "Xin-Yi Zeng",
-            "Yan-Qing Li",
-            "Yaozu Su",
-            "Jun-Yu Liu",
-            "Yanping Huo",
-            "Jian-Xin Tang"
+            "Guo-Wei Chen, Xin-Yi Zeng, Yan-Qing Li, Yaozu Su, Jun-Yu Liu, Yanping Huo, Jian-Xin Tang"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "e574103c831ca36a0b36079f",
@@ -227175,23 +226641,20 @@
         },
         "10.1002/adfm.79557": {
           "doi": "10.1002/adfm.79557",
-          "title": "Synergistic Defect−Disorder Engineering in RuO 2 Nanosheets for Enhanced Hydrogen Evolution Electrocatalysis",
+          "title": "Synergistic Defect−Disorder Engineering in RuO2 Nanosheets for Enhanced Hydrogen Evolution Electrocatalysis",
           "url": "https://doi.org/10.1002/adfm.79557",
           "abstract": "ABSTRACT The regulation of defect structures and crystal disorder has attracted tremendous research interest due to its high efficacy in developing high-performance electrocatalysts for diverse energy technologies. In this study, we developed a dual defect−disorder engineering strategy to optimize the electrocatalytic performance of atomically thin RuO 2 nanosheets by controlling their stacking structure and degree of amorphization. The self-assembly of exfoliated RuO 2 nanosheets with intermediate-sized Sr 2+ ions enabled the simultaneous optimization of the defect concentration and surface area in the restacked RuO 2 nanosheets. Through the synergistic combination of this approach with calcination-induced amorphization, the Sr 2+ -restacked RuO 2 nanosheets calcined at 250°C showed outstanding electrocatalyst activity toward the hydrogen evolution reaction (HER), delivering a low overpotential of 12 mV in alkaline electrolyte. The benefit of the amorphization approach was more pronounced in alkaline media than in acidic one, underscoring the pH-dependent impact of disorder introduction on the HER mechanism through modulation of the Volmer step barrier. In situ spectroscopic investigations and density functional theory calculations offered compelling evidence that the combined amorphization and defect-engineering approach effectively promotes interfacial charge-transfer kinetics, H 2 O adsorption, and dynamic activation of the interfacial water network in alkaline media.",
           "rss_published_at": "2026-11-10T07:46:25+00:00",
           "published_online_at": "2026-11-09T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T08:22:39+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Geon Yu",
-            "Yiyang Sun",
-            "Xiaoyan Jin",
-            "Seong-Ju Hwang"
+            "Geon Yu, Yiyang Sun, Xiaoyan Jin, Seong-Ju Hwang"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "f70e7c82be754e047d6da272",
@@ -227204,26 +226667,20 @@
         },
         "10.1002/adfm.79582": {
           "doi": "10.1002/adfm.79582",
-          "title": "Benzotriazole-Functionalized g-C 3 N 4 /NH 2 -UiO-66 Heterojunctions Enable Photothermal Self-Healing and Durable Polyurea Protective Coatings",
+          "title": "Benzotriazole-Functionalized g-C3N4/NH2-UiO-66 Heterojunctions Enable Photothermal Self-Healing and Durable Polyurea Protective Coatings",
           "url": "https://doi.org/10.1002/adfm.79582",
           "abstract": "ABSTRACT Protective polymer coatings for marine and island infrastructures are expected to integrate resistance to mechanical damage, chloride attack, ultraviolet aging and fungal colonization, yet achieving these functions in a single dynamic coating remains challenging. Herein, an Oct-CUPU coating is developed by embedding a benzotriazole-modified g-C 3 N 4 /NH 2 -UiO-66 heterostructure, denoted as Oct-CU, into a disulfide-containing polyurea network. The g-C 3 N 4 /NH 2 -UiO-66 heterointerface provides photothermal conversion and interfacial reinforcement; the benzotriazole moiety improves UV shielding, and the dynamic polyurea matrix supplies reversible hydrogen bonding and disulfide exchange for damage repair. These coupled molecular and interfacial interactions enable localized light-to-heat conversion to activate chain mobility and network reconstruction, while the rod-like heterostructure promotes stress redistribution and improves long-term barrier stability. As a result, the optimized Oct-CUPU coating exhibits rapid NIR-triggered scratch healing and markedly enhanced corrosion-barrier retention. It also maintains improved abrasion tolerance, UV-aging resistance, and mold resistance compared with the unmodified coatings. This work presents a heterostructure-assisted design strategy for adaptive polyurea coatings with integrated self-healing, anticorrosion, anti-aging, and antifouling-related functions, offering potential for durable protection of metallic structures in marine, coastal, and outdoor environments.",
           "rss_published_at": "2026-11-11T01:32:48+00:00",
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-11T02:23:44+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yang Han",
-            "Lin Cao",
-            "Qiang Sun",
-            "Xinwei Zhang",
-            "Yutong Liu",
-            "Bowen Jiang",
-            "Wei Wang"
+            "Yang Han, Lin Cao, Qiang Sun, Xinwei Zhang, Yutong Liu, Bowen Jiang, Wei Wang"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "6dbca14a1e919614928adaf7",
@@ -227243,25 +226700,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-11T02:23:00+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Zhuo Song",
-            "Ningxin Zhang",
-            "Jiaxiang Zhou",
-            "Chen Guan",
-            "Ya Liu",
-            "Tianyang Li",
-            "Haiyan Yu",
-            "Chunhua Han",
-            "Wen Cheng",
-            "Bolin Wu",
-            "Gang Wei",
-            "Yichi Chen",
-            "Yan Xu"
+            "Zhuo Song, Ningxin Zhang, Jiaxiang Zhou, Chen Guan, Ya Liu, Tianyang Li, Haiyan Yu, Chunhua Han, Wen Cheng, Bolin Wu, Gang Wei, Yichi Chen, Yan Xu"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "cc9e9a321ba1a6616eb5b6b1",
@@ -227274,24 +226719,20 @@
         },
         "10.1002/adfm.79178": {
           "doi": "10.1002/adfm.79178",
-          "title": "Advancing CO 2 Electroreduction Toward Multicarbon Products via Catalyst Engineering and Integrated Paired Electrolysis",
+          "title": "Advancing CO2 Electroreduction Toward Multicarbon Products via Catalyst Engineering and Integrated Paired Electrolysis",
           "url": "https://doi.org/10.1002/adfm.79178",
           "abstract": "ABSTRACT Electrochemical carbon dioxide reduction (CO 2 RR) provides a compelling pathway for converting CO 2 into value-added multicarbon (C 2+ ) products using renewable electricity, yet its technological translation remains limited by coupled challenges spanning catalyst chemistry, reaction microenvironments, reactor architecture, and cathode-anode integration. This review develops a multiscale framework that connects molecular-level C-C coupling with device- and process-level performance. Fundamental CO 2 activation, reaction pathways, electrochemical metrics, and structure-activity relationships are critically examined, with particular emphasis on Cu-based catalysts and emerging catalyst-engineering strategies for selective C 2+ synthesis. These catalytic principles are then linked to operando surface states, intermediate coverage, local microenvironments, mass transport, membrane behavior, and electrolyzer configuration under technologically relevant conditions. Beyond cathodic optimization, oxygen evolution and alternative anodic chemistries, including biomass-derived alcohol oxidation and plastic-derived stream valorization, are assessed within integrated paired-electrolysis architectures. Their practical significance is benchmarked through matched current density, full-cell voltage, carbon and electron efficiency, product concentration, crossover, separation, durability, and realistic feed compatibility. This framework exposes critical catalyst-reactor-process trade-offs and defines design principles for scalable, durable, and economically credible CO 2 -to-C 2+ electrosynthesis.",
           "rss_published_at": "2026-11-11T01:28:18+00:00",
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-11T02:22:26+00:00",
-          "article_type": "journal-article",
+          "article_type": "REVIEW   REVIEW",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Feng Ming Yap",
-            "Jian Yiing Loh",
-            "Shaoyu Yuan",
-            "Xianhai Zeng",
-            "Wee-Jun Ong"
+            "Feng Ming Yap, Jian Yiing Loh, Shaoyu Yuan, Xianhai Zeng, Wee-Jun Ong"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "e9a7531d452f43d6187b5fc1",
@@ -227311,17 +226752,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T15:28:12+00:00",
-          "article_type": "journal-article",
+          "article_type": "REVIEW   REVIEW",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Ning Yu",
-            "Qianxi Lv",
-            "Weijia Zhou",
-            "Yongming Chai",
-            "Bin Dong"
+            "Ning Yu, Qianxi Lv, Weijia Zhou, Yongming Chai, Bin Dong"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "7756adbc117031e7afc8c551",
@@ -227341,17 +226778,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T15:27:44+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Sujan Manna",
-            "Keerthana Unni",
-            "Sinchan Mukhopadhyay",
-            "Depanjan Sarkar",
-            "Thalappil Pradeep"
+            "Sujan Manna, Keerthana Unni, Sinchan Mukhopadhyay, Depanjan Sarkar, Thalappil Pradeep"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "2f7f44b290bc7dfdb23d1ba2",
@@ -227371,21 +226804,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T15:27:20+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Andrew H. Cannon",
-            "Albert L. Kwansa",
-            "Nikhil Kaimal",
-            "Arsenii Panteleev",
-            "Ashlynn Zhang",
-            "Loc Nguyen",
-            "Preeta Pratakshya",
-            "Alon A. Gorodetsky",
-            "Yaroslava G. Yingling"
+            "Andrew H. Cannon, Albert L. Kwansa, Nikhil Kaimal, Arsenii Panteleev, Ashlynn Zhang, Loc Nguyen, Preeta Pratakshya, Alon A. Gorodetsky, Yaroslava G. Yingling"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "dc7c1b94c0ce52481c16f479",
@@ -227405,7 +226830,7 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T15:27:07+00:00",
-          "article_type": "journal-article",
+          "article_type": "CORRECTION   CORRECTION",
           "providers": [
             "crossref",
             "rss"
@@ -227429,16 +226854,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T15:26:44+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Zheng Yu",
-            "Chunyi Zhang",
-            "Roberto Car",
-            "Annabella Selloni"
+            "Zheng Yu, Chunyi Zhang, Roberto Car, Annabella Selloni"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "70e14d8e9703ad4c183fa9df",
@@ -227458,18 +226880,13 @@
           "published_online_at": "2026-09-08T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:22+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jingshun Liu",
-            "Wen Guo",
-            "Ze Li",
-            "Chao Yang",
-            "Wenjie Zhang",
-            "Yueshun Zhao"
+            "Jingshun Liu, Wen Guo, Ze Li, Chao Yang, Wenjie Zhang, Yueshun Zhao"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "2157e60c496daff682423f49",
@@ -227489,25 +226906,13 @@
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:21+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yuhang Huang",
-            "Bo Shi",
-            "Bisheng Cheng",
-            "Liyuan Zhang",
-            "Jiayi Bian",
-            "Endian Huang",
-            "Lelei Xiao",
-            "Minghao Sun",
-            "Yue Chen",
-            "Xiaojun Xu",
-            "Yichun Zheng",
-            "Hai Huang",
-            "Wenpei Fan"
+            "Yuhang Huang, Bo Shi, Bisheng Cheng, Liyuan Zhang, Jiayi Bian, Endian Huang, Lelei Xiao, Minghao Sun, Yue Chen, Xiaojun Xu, Yichun Zheng, Hai Huang, Wenpei Fan"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "3b678efaa591e01324fde4fc",
@@ -227527,20 +226932,13 @@
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:17+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jian Feng",
-            "Qingbin Cao",
-            "Yang Lu",
-            "Xuan Song",
-            "Zhi Liu",
-            "Quanquan Pang",
-            "Shaojun Guo",
-            "Kai Liu"
+            "Jian Feng, Qingbin Cao, Yang Lu, Xuan Song, Zhi Liu, Quanquan Pang, Shaojun Guo, Kai Liu"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "f02751379b106043f536bc7c",
@@ -227560,24 +226958,13 @@
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:17+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Hyungchang Jeong",
-            "Junsung Byeon",
-            "Jinhyeok Pyo",
-            "Eunhee Cho",
-            "Seokjin Oh",
-            "Min Jung",
-            "Jaesik Eom",
-            "Onesik Harm",
-            "Byeongchan Kim",
-            "Chaewon Song",
-            "Sangyeon Pak",
-            "SeungNam Cha"
+            "Hyungchang Jeong, Junsung Byeon, Jinhyeok Pyo, Eunhee Cho, Seokjin Oh, Min Jung, Jaesik Eom, Onesik Harm, Byeongchan Kim, Chaewon Song, Sangyeon Pak, SeungNam Cha"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "73a426c7cc8b60b88a72b945",
@@ -227597,17 +226984,13 @@
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:13+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Pengfei Long",
-            "Wanshun Duan",
-            "Yue Xiao",
-            "Qijia Su",
-            "Wen Guo"
+            "Pengfei Long, Wanshun Duan, Yue Xiao, Qijia Su, Wen Guo"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "44db168be8c89a56b9e6e9e3",
@@ -227627,21 +227010,13 @@
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:11+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Guanglei Yao",
-            "Yilin Xu",
-            "Jiabin Chen",
-            "Zhenwei Gao",
-            "Wenlei Zhang",
-            "Wenli Chen",
-            "Jingwen Ren",
-            "Yalei Zhang",
-            "Xuefei Zhou"
+            "Guanglei Yao, Yilin Xu, Jiabin Chen, Zhenwei Gao, Wenlei Zhang, Wenli Chen, Jingwen Ren, Yalei Zhang, Xuefei Zhou"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "3c67d24ba513d3e1ea8b56af",
@@ -227661,23 +227036,13 @@
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:11+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Shipeng Wu",
-            "Jiawei Lai",
-            "Shouming Li",
-            "Jiaoxu Wei",
-            "Hailing Sun",
-            "Yingying Dou",
-            "Dong Yuan",
-            "Jan Groenewold",
-            "Ziying Wu",
-            "Guofu Zhou",
-            "Biao Tang"
+            "Shipeng Wu, Jiawei Lai, Shouming Li, Jiaoxu Wei, Hailing Sun, Yingying Dou, Dong Yuan, Jan Groenewold, Ziying Wu, Guofu Zhou, Biao Tang"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "28e5e99599d3cdd75b05b499",
@@ -227697,20 +227062,13 @@
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:08+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jiaxing Zhang",
-            "Yining Shi",
-            "Lu Wang",
-            "Linlin Huo",
-            "Shankui Liu",
-            "Qian Liu",
-            "Hang Qian",
-            "Jinping Wang"
+            "Jiaxing Zhang, Yining Shi, Lu Wang, Linlin Huo, Shankui Liu, Qian Liu, Hang Qian, Jinping Wang"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "9e4a54f2a95f7ebae0fad0b6",
@@ -227730,16 +227088,13 @@
           "published_online_at": "2026-09-03T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:06+00:00",
-          "article_type": "journal-article",
+          "article_type": "PERSPECTIVE   PERSPECTIVE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yuhang Wang",
-            "Qian Wang",
-            "Seong-Hoon Jang",
-            "Hao Li"
+            "Yuhang Wang, Qian Wang, Seong-Hoon Jang, Hao Li"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "fb2d0156a6e09c7a134bd042",
@@ -227752,25 +227107,20 @@
         },
         "10.1002/adfm.78764": {
           "doi": "10.1002/adfm.78764",
-          "title": "Liquid-Metal-Printed Ga 2 O 3 Weaves a Spherical Self-Driven Meta-Array With Panoramic Solar-Blind Polarization Compass Function",
+          "title": "Liquid-Metal-Printed Ga2O3 Weaves a Spherical Self-Driven Meta-Array With Panoramic Solar-Blind Polarization Compass Function",
           "url": "https://doi.org/10.1002/adfm.78764",
           "abstract": "ABSTRACT Low-dimensional ultrawide-bandgap oxides underpin the development of integrated solar-blind photodetectors. However, the cumbersome production line and the humdrum photodetection dimension both restrict further application in the field of integrated optoelectronics. Herein, we optimize the liquid-metal-printing process on both planar and curved-surface substrates and synthesize a 2D 8-inch β-Ga 2 O 3 single crystal. The β-Ga 2 O 3 solar-blind photodetector features an excellent ultraviolet-visible rejection ratio (> 10 5 ), prominent anisotropy ratio (4.5), and wide linear dynamic range (∼130 dB). Based on a 2D crossed-printed β-Ga 2 O 3 homojunction, a self-driven solar-blind polarization photodetector with high responsivity (33.3 A/W) and fast response speed (< 2 µs) is exquisitely constructed. Inspired by the skylight polarization pattern in the solar-terrestrial system, we introduce a novel spherical meta-array, working as a panoramic polarization compass to detect solar-blind sources within a complete 720° spatial angle. This work delivers insights into the growth platform for single-crystal Ga 2 O 3 and demonstrates a prospective passive device architecture for solar-blind warning, positioning, and monitoring.",
           "rss_published_at": "2026-11-10T13:18:09+00:00",
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:06+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Weiheng Zhong",
-            "Yucheng Jiang",
-            "Zhihao Peng",
-            "Weizhen Liu",
-            "Haiyang Xu",
-            "Yichun Liu"
+            "Weiheng Zhong, Yucheng Jiang, Zhihao Peng, Weizhen Liu, Haiyang Xu, Yichun Liu"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "e6c36c1f4295c9a6645785f5",
@@ -227790,27 +227140,13 @@
           "published_online_at": "2026-08-31T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:06+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Shu-Yan Jiang",
-            "Christian Sandoval-Pauker",
-            "Harsh Vardhan",
-            "Sophia Nance",
-            "Ravindra Saxena",
-            "Tafadzwa Mutepaire",
-            "Ai-Shi Wang",
-            "Kevin Shumard",
-            "Xu Wang",
-            "Juan Donoso",
-            "Fiona Chen",
-            "Angel A. Martí",
-            "Michael S. Wong",
-            "Thomas P. Senftle",
-            "Rafael Verduzco"
+            "Shu-Yan Jiang, Christian Sandoval-Pauker, Harsh Vardhan, Sophia Nance, Ravindra Saxena, Tafadzwa Mutepaire, Ai-Shi Wang, Kevin Shumard, Xu Wang, Juan Donoso, Fiona Chen, Angel A. Martí, Michael S. Wong, Thomas P. Senftle, Rafael Verduzco"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "138d14f448b9deab74a66054",
@@ -227830,20 +227166,13 @@
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:05+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Linjian Sang",
-            "Heguo Han",
-            "Jianhang Qiu",
-            "Hang Zhang",
-            "Yuxuan Sun",
-            "Guorui Qin",
-            "Shenghai Li",
-            "Suobo Zhang"
+            "Linjian Sang, Heguo Han, Jianhang Qiu, Hang Zhang, Yuxuan Sun, Guorui Qin, Shenghai Li, Suobo Zhang"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "dd10471c73edbef94ad9b198",
@@ -227863,23 +227192,13 @@
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:04+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Xinxin Bu",
-            "Jie Wu",
-            "Jintong Zhou",
-            "Haisi Wu",
-            "Mengna Sun",
-            "Xiaobang Liu",
-            "Deyu Zhao",
-            "Ting Wu",
-            "Feng Liu",
-            "Qun Gu",
-            "Huae Xu"
+            "Xinxin Bu, Jie Wu, Jintong Zhou, Haisi Wu, Mengna Sun, Xiaobang Liu, Deyu Zhao, Ting Wu, Feng Liu, Qun Gu, Huae Xu"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "8abc0bde247998eb3f38a065",
@@ -227899,19 +227218,13 @@
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:04+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Wenjie Li",
-            "Xiaonan Lai",
-            "Jiurong Li",
-            "Wenxuan Sun",
-            "Dongdong Zhang",
-            "Qing Lou",
-            "Xiao Gong"
+            "Wenjie Li, Xiaonan Lai, Jiurong Li, Wenxuan Sun, Dongdong Zhang, Qing Lou, Xiao Gong"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "9bf577523a537744a56077bb",
@@ -227931,21 +227244,13 @@
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:03+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yiting He",
-            "Xiaoyan Zhuo",
-            "Zexin Zhang",
-            "Lu Zhang",
-            "Junjie Liu",
-            "Zihan Li",
-            "Han Zhang",
-            "Song Chen",
-            "Jun Xuan"
+            "Yiting He, Xiaoyan Zhuo, Zexin Zhang, Lu Zhang, Junjie Liu, Zihan Li, Han Zhang, Song Chen, Jun Xuan"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "5ae88db299421d7c42fcedb8",
@@ -227965,17 +227270,13 @@
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:02+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Zhimin Lu",
-            "Yuhang Song",
-            "Changming Wu",
-            "Yang Xu",
-            "Jia Huang"
+            "Zhimin Lu, Yuhang Song, Changming Wu, Yang Xu, Jia Huang"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "a7c0521587ab6d6c7cc98ba5",
@@ -227995,20 +227296,13 @@
           "published_online_at": "2026-08-21T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T14:21:01+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Ao Li",
-            "Jun Xu",
-            "Dezhong Xu",
-            "Zhaohui Zhang",
-            "Jiyi Li",
-            "Daxian Cao",
-            "Kefu Chen",
-            "Mizi Fan"
+            "Ao Li, Jun Xu, Dezhong Xu, Zhaohui Zhang, Jiyi Li, Daxian Cao, Kefu Chen, Mizi Fan"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "7f0938d2780a6337fd100d21",
@@ -228028,19 +227322,13 @@
           "published_online_at": "2026-08-24T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:31:14+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Mohammad Shoghi Tekmedash",
-            "Rituparna Mohanty",
-            "Jack Leber",
-            "David Nageb",
-            "Mirella Richard",
-            "Sharan Singh",
-            "Amin Reihani"
+            "Mohammad Shoghi Tekmedash, Rituparna Mohanty, Jack Leber, David Nageb, Mirella Richard, Sharan Singh, Amin Reihani"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "b01731312c6d775d2c88afee",
@@ -228060,20 +227348,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:31:11+00:00",
-          "article_type": "journal-article",
+          "article_type": "INSIDE FRONT COVER   INSIDE FRONT COVER",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Ao Li",
-            "Jun Xu",
-            "Dezhong Xu",
-            "Zhaohui Zhang",
-            "Jiyi Li",
-            "Daxian Cao",
-            "Kefu Chen",
-            "Mizi Fan"
+            "Ao Li, Jun Xu, Dezhong Xu, Zhaohui Zhang, Jiyi Li, Daxian Cao, Kefu Chen, Mizi Fan"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "3b5e99c8938e4b98cd272a53",
@@ -228093,19 +227374,13 @@
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:30:49+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yumin Ren",
-            "Kai Zhang",
-            "Xianqiang Xie",
-            "Wenlin Shen",
-            "Guanghao Lu",
-            "Shihe Yang",
-            "Laju Bu"
+            "Yumin Ren, Kai Zhang, Xianqiang Xie, Wenlin Shen, Guanghao Lu, Shihe Yang, Laju Bu"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "359ec48296388fd933c12579",
@@ -228125,16 +227400,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:30:48+00:00",
-          "article_type": "journal-article",
+          "article_type": "BACK COVER   BACK COVER",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yuhang Wang",
-            "Qian Wang",
-            "Seong-Hoon Jang",
-            "Hao Li"
+            "Yuhang Wang, Qian Wang, Seong-Hoon Jang, Hao Li"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "45c1851dc42de13016f9b830",
@@ -228154,7 +227426,7 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:30:44+00:00",
-          "article_type": "journal-article",
+          "article_type": "ISSUE INFORMATION   ISSUE INFORMATION",
           "providers": [
             "crossref",
             "rss"
@@ -228178,18 +227450,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:30:44+00:00",
-          "article_type": "journal-article",
+          "article_type": "INSIDE BACK COVER   INSIDE BACK COVER",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jingshun Liu",
-            "Wen Guo",
-            "Ze Li",
-            "Chao Yang",
-            "Wenjie Zhang",
-            "Yueshun Zhao"
+            "Jingshun Liu, Wen Guo, Ze Li, Chao Yang, Wenjie Zhang, Yueshun Zhao"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "d13a10f9d8634af4e5917f48",
@@ -228209,15 +227476,13 @@
           "published_online_at": "2026-09-08T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:30:34+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Fuxing Zhai",
-            "Lixin Xu",
-            "Huijian Ye"
+            "Fuxing Zhai, Lixin Xu, Huijian Ye"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "3e012ccd6fa59e282c1c6667",
@@ -228237,21 +227502,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:30:23+00:00",
-          "article_type": "journal-article",
+          "article_type": "COVER PICTURE   COVER PICTURE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yuseung Choi",
-            "Gilyong Shin",
-            "Hoyeon Lee",
-            "Eun Jae Nam",
-            "Byeong Jun So",
-            "Sungryul Yun",
-            "Fu-Kuo Chang",
-            "Jei Gyeong Jeon",
-            "Tae June Kang"
+            "Yuseung Choi, Gilyong Shin, Hoyeon Lee, Eun Jae Nam, Byeong Jun So, Sungryul Yun, Fu-Kuo Chang, Jei Gyeong Jeon, Tae June Kang"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "8a710fa3f817c48fc8ffe017",
@@ -228264,25 +227521,20 @@
         },
         "10.1002/adfm.78736": {
           "doi": "10.1002/adfm.78736",
-          "title": "Coupling *CO Protonation on Cu Single Atoms With H 2 O Dissociation on Bi Nanoclusters for Synergistic CO 2 -to-Methanol Electrosynthesis",
+          "title": "Coupling *CO Protonation on Cu Single Atoms With H2O Dissociation on Bi Nanoclusters for Synergistic CO2-to-Methanol Electrosynthesis",
           "url": "https://doi.org/10.1002/adfm.78736",
           "abstract": "ABSTRACT The electrochemical reduction of CO 2 to methanol (CH 3 OH) represents a promising strategy for mitigating global warming and energy shortages. However, the rational design of high-performance electrocatalysts for selective CO 2 -to-CH 3 OH conversion remains challenging. Herein, we construct a dual-site catalyst featuring Cu single atoms (Cu SAs ) and Bi nanoclusters (Bi NCs ) co-anchored on a hierarchical porous nitrogen-doped carbon (NC) support (Cu SAs Bi NCs /NC). It delivers a high CH 3 OH Faradaic efficiency (FE) of 73.6% with a stability of 120 h in an H-cell, and reaches a CH 3 OH partial current density of 106.6 mA cm −2 with 82% FE in a flow cell. The excellent performance is attributed to a synergistic mechanism: Cu SAs promote the generation and protonation of the key *CO intermediate, while Bi NCs facilitate H 2 O dissociation to supply *H to adjacent Cu sites. Their electronic interaction strengthens *CO adsorption and lowers its protonation barrier at Cu sites, while accelerating H 2 O activation at Bi sites. Furthermore, the confinement effect of the hierarchical pore structure in the NC support facilitates the enrichment of *CO intermediate and stabilizes the catalyst. This work establishes a conceptual framework for developing synergistic electrocatalysts through precise atomic-scale component integration, offering an appealing strategy to boost CH 3 OH production by simultaneously tuning *CO adsorption/protonation and H 2 O dissociation.",
           "rss_published_at": "2026-11-10T13:18:09+00:00",
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:30:23+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Tonglin Yang",
-            "Fangqi Yang",
-            "Quan Zhang",
-            "Haoming Yu",
-            "Xuanzhao Lu",
-            "Wenlei Zhu"
+            "Tonglin Yang, Fangqi Yang, Quan Zhang, Haoming Yu, Xuanzhao Lu, Wenlei Zhu"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "f8e1272da99912d810bf1212",
@@ -228302,24 +227554,13 @@
           "published_online_at": "2026-09-28T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:29:56+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Valentin Semkin",
-            "Kirill Kapralov",
-            "Ilya Mazurenko",
-            "Mikhail Kashchenko",
-            "Alexander Morozov",
-            "Yakov Matyushkin",
-            "Alena Nikolskaya",
-            "Vladislav Myltsev",
-            "Dmitry Mylnikov",
-            "Li Lin",
-            "Alexey Bocharov",
-            "Dmitry Svintsov"
+            "Valentin Semkin, Kirill Kapralov, Ilya Mazurenko, Mikhail Kashchenko, Alexander Morozov, Yakov Matyushkin, Alena Nikolskaya, Vladislav Myltsev, Dmitry Mylnikov, Li Lin, Alexey Bocharov, Dmitry Svintsov"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "531770dee7ce407b18babdf1",
@@ -228339,22 +227580,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T13:25:02+00:00",
-          "article_type": "journal-article",
+          "article_type": "REVIEW   REVIEW",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Yani Zhang",
-            "Zhe Guang",
-            "Jiali Yin",
-            "Yun Xia Zhang",
-            "Shao Jie Li",
-            "Bo Guo",
-            "Yong Mei Chen",
-            "Xueni Zhao",
-            "Jie Hu",
-            "Liyang Shao"
+            "Yani Zhang, Zhe Guang, Jiali Yin, Yun Xia Zhang, Shao Jie Li, Bo Guo, Yong Mei Chen, Xueni Zhao, Jie Hu, Liyang Shao"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "00e08696b2ba243f299c891f",
@@ -228367,31 +227599,20 @@
         },
         "10.1002/adfm.79601": {
           "doi": "10.1002/adfm.79601",
-          "title": "Six-Electron-Storage Polynuclear Quinoxaline Derivatives with Multiple S -Propanoic Acid Side-Groups for High-Capacity Aqueous Redox Flow Batteries",
+          "title": "Six-Electron-Storage Polynuclear Quinoxaline Derivatives with Multiple S-Propanoic Acid Side-Groups for High-Capacity Aqueous Redox Flow Batteries",
           "url": "https://doi.org/10.1002/adfm.79601",
           "abstract": "ABSTRACT Aqueous organic redox flow batteries are promising for constructing large-scale energy storage systems with inherent safety and eco-friendliness, but restricted by limited capacity and cyclability. Herein, we design and synthesize two types of six-electron-storage triquinoxalinylene derivatives functionalized with six or three S -propionic acid side groups, namely HATN-HSPA or HATN-TSPA, both demonstrating a reversible three-step six-electron storage capability. The extended π -conjugation structure of triquinoxalinylene redox core and rational modification of S -propionic acid groups bring them high electrochemical reversibility and stability. The strong solubilizing effect of hexa-substituted S -propanoic acid groups rendered HATN-HSPA a maximum solubility of 1.26 m (i.e., a charge storage concentration of 7.56 m ) and a theoretical capacity (202.62 Ah L −1 ), which are over three times those of traditional organic active molecules with single- or two-electron storage processes. The flow batteries grounded in nearly saturated HATN-HSPA anolyte achieved a record-breaking capacity of 150 Ah L −1 . The flow batteries grounded in 0.5 m HATN-HSPA anolyte also released high-capacity retention of 98.4% after 600 cycles (or 60 days), with a capacity decrement of 0.0027% cycle −1 (or 0.027% day −1 ). This work presents a multi-electron molecular engineering methodology for developing high-storage and durable multi-electron-storage organic species for scalable and sustainable grid-scale energy storage.",
           "rss_published_at": "2026-11-10T09:47:10+00:00",
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T10:28:00+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Guochun Ding",
-            "Zhihu You",
-            "Qianchuan Yu",
-            "Tianyu Shen",
-            "Zuoao Wu",
-            "Pengbo Zhang",
-            "Yuzhu Liu",
-            "Sheng Wen",
-            "Zuoxiu Tie",
-            "Yichao Yan",
-            "Lianbo Ma",
-            "Zhong Jin"
+            "Guochun Ding, Zhihu You, Qianchuan Yu, Tianyu Shen, Zuoao Wu, Pengbo Zhang, Yuzhu Liu, Sheng Wen, Zuoxiu Tie, Yichao Yan, Lianbo Ma, Zhong Jin"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "39916e01d9a738ff9f090e3b",
@@ -228411,22 +227632,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T10:27:19+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Wei Jin",
-            "Yan Lou",
-            "Jiaze Xiao",
-            "Zhiwei Huang",
-            "Bowen Hu",
-            "Jipan Yu",
-            "Kongqiu Hu",
-            "Liyong Yuan",
-            "Weiqun Shi",
-            "Lei Mei"
+            "Wei Jin, Yan Lou, Jiaze Xiao, Zhiwei Huang, Bowen Hu, Jipan Yu, Kongqiu Hu, Liyong Yuan, Weiqun Shi, Lei Mei"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "860b3775d9b1651aa0fbe824",
@@ -228439,26 +227651,20 @@
         },
         "10.1002/adfm.79593": {
           "doi": "10.1002/adfm.79593",
-          "title": "Thickness-Confined Mo-VO 2 /CNTs Heterogeneous Composite Films for Synergistic Dynamic Infrared Camouflage and Electromagnetic Protection",
+          "title": "Thickness-Confined Mo-VO2/CNTs Heterogeneous Composite Films for Synergistic Dynamic Infrared Camouflage and Electromagnetic Protection",
           "url": "https://doi.org/10.1002/adfm.79593",
           "abstract": "ABSTRACT As a typical phase-change material for adaptive infrared (IR) camouflage, the development of VO 2 is constrained by its inherent “extreme-emissivity trap”, with modulation limited to a narrow range of 0.9-0.65, and suffers from intrinsically low free-electron density that precludes coinstantaneous electromagnetic interference (EMI) shielding. Here, a multi-modulation strategy via thickness-confined Mo-VO 2 /CNTs composite films is adopted to resolve these issues. By controlling the in-situ growth on flexible CNTs films, Mo-VO 2 with an appropriate thickness can partially allow IR information transmission of CNTs. The high-conductivity CNTs scaffold effectively pulls down the radiative baseline, escaping the “extreme-emissivity trap”, while Mo 6+ -induced band modulation and interfacial charge redistribution optimize the modulation amplitude (Δε) to 0.335 (0.795-0.460). Crucially, the CNTs network provides the massive free-electron reservoir required to overcome shielding deficiency of VO 2 , elevating EMI shielding performance to an exceptional 62-76 dB. Furthermore, leveraging Joule heating effect as a compensatory dimension, the composite films enable active IR camouflage across extreme thermal mismatches (60 C-75°C). This work integrates desirable baseline IR optical modulation with highly efficient electromagnetic protection, redefining the design paradigm of advanced protective materials.",
           "rss_published_at": "2026-11-10T09:34:36+00:00",
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T10:25:06+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Junlin Liu",
-            "Mingyu Li",
-            "Tong Xu",
-            "Shujuan Tan",
-            "Baoshan Zhang",
-            "Yi Yang",
-            "Guangbin Ji"
+            "Junlin Liu, Mingyu Li, Tong Xu, Shujuan Tan, Baoshan Zhang, Yi Yang, Guangbin Ji"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "243df394c1c3191a278bc162",
@@ -228471,28 +227677,20 @@
         },
         "10.1002/adfm.79603": {
           "doi": "10.1002/adfm.79603",
-          "title": "A Dual-Functional Inherent Hydroxyl Chainmail on Defective La(OH) 3 for Robust Electrocatalytic Hydrogenation in Extreme Aqueous Matrices",
+          "title": "A Dual-Functional Inherent Hydroxyl Chainmail on Defective La(OH)3 for Robust Electrocatalytic Hydrogenation in Extreme Aqueous Matrices",
           "url": "https://doi.org/10.1002/adfm.79603",
           "abstract": "ABSTRACT Electrocatalytic hydrogenation of carbon-heteroatom bonds promises sustainable chemical synthesis and water remediation, yet practical deployment is challenged by both sluggish proton supply from water dissociation in alkaline media and rapid catalyst poisoning by dissolved organic matter (DOM). Herein, we show that the defective La(OH) 3 nanorods bearing an inherent hydroxyl chainmail circumvent these two bottlenecks simultaneously. The chainmail is proposed to be capable of reconstructing the interfacial hydrogen-bond continuum into a proposed proton-relay highway that accelerates water-dissociation-limited proton delivery, while acting as a proposed biomimetic, multisite hydrogen-bonding shield that sequesters macromolecular DOM to protect active sites from fouling. Demonstrated for the electrocatalytic hydrodechlorination reaction, the catalyst achieves highly effective dechlorination of florfenicol across pH 3.0-13.0 and sustains exceptional stability in high-chemical oxygen demand (COD) matrices (1000 mg L −1 humic acid), outperforming most state-of-the-art catalysts. Continuous-flow treatment of real aquaculture and pharmaceutical effluents confirms sustained dechlorination efficiency and pronounced toxicity abatement. By revealing how this seemingly passive OH − chainmail orchestrates proton transfer and molecular sieving, this work establishes a broadly applicable design paradigm for fouling-resistant electrocatalysts operating in complex aqueous environments.",
           "rss_published_at": "2026-11-10T09:30:50+00:00",
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T10:22:34+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Heng Shi",
-            "Huiming Sui",
-            "Shenbin Zheng",
-            "Yuting Xue",
-            "Wenyang Fu",
-            "Lei Zhang",
-            "Xiaoshu Lv",
-            "Fan Dong",
-            "Guangming Jiang"
+            "Heng Shi, Huiming Sui, Shenbin Zheng, Yuting Xue, Wenyang Fu, Lei Zhang, Xiaoshu Lv, Fan Dong, Guangming Jiang"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "9478b2193f7dd8cd95c40178",
@@ -228505,32 +227703,20 @@
         },
         "10.1002/adfm.79576": {
           "doi": "10.1002/adfm.79576",
-          "title": "Hydroxyl-Rich Sodium Gluconate Enables Dense SAM Assembly and Enhances Conductivity in NiO x -Based Inverted Perovskite Solar Cells",
+          "title": "Hydroxyl-Rich Sodium Gluconate Enables Dense SAM Assembly and Enhances Conductivity in NiOx-Based Inverted Perovskite Solar Cells",
           "url": "https://doi.org/10.1002/adfm.79576",
           "abstract": "ABSTRACT Nickel oxide (NiO x )/self-assembled monolayer (SAM) composite hole transport layers represent a promising configuration for inverted perovskite solar cells (IPSCs). Nevertheless, the insufficient electrical conductivity of NiO x and the limited number of binding sites on its surface lead to incomplete monolayer coverage, resulting in substantial interfacial charge losses that constrain efficiency improvements. To address these issues, we introduce hydroxyl-rich sodium gluconate (SG) into the NiO x solution. Gluconate anions from SG modulate the electronic properties of NiO x , thereby enhancing its conductivity. Meanwhile, the abundant hydroxyl groups along the SG backbone furnish additional hydrogen-bonding sites for the subsequent adsorption of the SAM, promoting the formation of a compact and well-ordered interfacial molecular layer. This dense SAM not only suppresses leakage currents but also optimizes the energetic cascade at the heterojunction, ultimately enabling the resulting IPSCs to achieve a power conversion efficiency of 26.24%. During maximum-power-point operation under ISOS-L-1 protocol, the optimized device preserves 91.6% of the starting output after 1000 h. This work establishes a versatile interfacial engineering approach that overcomes limitations in both SAM assembly and charge transport, offering new opportunities for the development of highly efficient and durable IPSCs.",
           "rss_published_at": "2026-11-10T09:28:59+00:00",
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T10:22:31+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Junkang Hou",
-            "Xilai He",
-            "Hui Chen",
-            "Guangpeng Feng",
-            "Ranhao Yin",
-            "Zihao Zhou",
-            "Xingyan Wang",
-            "Chenhao Wen",
-            "Dapeng Wang",
-            "Bing Wang",
-            "Qi Cao",
-            "Ilkhom Tajibaev",
-            "Xuanhua Li"
+            "Junkang Hou, Xilai He, Hui Chen, Guangpeng Feng, Ranhao Yin, Zihao Zhou, Xingyan Wang, Chenhao Wen, Dapeng Wang, Bing Wang, Qi Cao, Ilkhom Tajibaev, Xuanhua Li"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "600e54ec78e14f083f20dd74",
@@ -228550,18 +227736,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T10:22:24+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Maria Kalogeropoulou",
-            "Prabhdeep Kaur",
-            "Monica Boffito",
-            "Pierpaolo Fucile",
-            "Gianluca Ciardelli",
-            "Lorenzo Moroni"
+            "Maria Kalogeropoulou, Prabhdeep Kaur, Monica Boffito, Pierpaolo Fucile, Gianluca Ciardelli, Lorenzo Moroni"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "0362209fe6ffbfe348613888",
@@ -228581,23 +227762,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T10:21:36+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Solleti Goutham",
-            "Ashok Keerthi",
-            "Mohan T. Dronadula",
-            "Raj Kumar Gogoi",
-            "Hiran Jyothilal",
-            "Muhammad Sajeer Parambath",
-            "Alexander Rakowski",
-            "Sarah J. Haigh",
-            "Kalon Gopinadhan",
-            "Narayana R. Aluru",
-            "Boya Radha"
+            "Solleti Goutham, Ashok Keerthi, Mohan T. Dronadula, Raj Kumar Gogoi, Hiran Jyothilal, Muhammad Sajeer Parambath, Alexander Rakowski, Sarah J. Haigh, Kalon Gopinadhan, Narayana R. Aluru, Boya Radha"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "1010fb636f2e424a1d374454",
@@ -228617,20 +227788,13 @@
           "published_online_at": "2026-11-10T00:00:00+00:00",
           "published_print_at": null,
           "indexed_at": "2026-11-10T09:29:55+00:00",
-          "article_type": "journal-article",
+          "article_type": "RESEARCH ARTICLE   RESEARCH ARTICLE",
           "providers": [
             "crossref",
             "rss"
           ],
           "authors": [
-            "Jing Xie",
-            "Dan Zhou",
-            "Xueyu Yu",
-            "Qi Dong",
-            "Jiayang Mo",
-            "Daocheng Pan",
-            "Bingsuo Zou",
-            "Heng Zhang"
+            "Jing Xie, Dan Zhou, Xueyu Yu, Qi Dong, Jiayang Mo, Daocheng Pan, Bingsuo Zou, Heng Zhang"
           ],
           "first_seen": "2026-11-11T02:59:54.300277+00:00",
           "item_id": "b303a1ee0032de93ed0d53cf",
@@ -229115,8 +228279,8 @@
       }
     },
     "acta-materialia": {
-      "last_success_at": "2026-11-12T02:43:13.181194+00:00",
-      "last_crossref_at": "2026-11-12T02:43:13.181194+00:00",
+      "last_success_at": "2026-11-12T04:12:23.686159+00:00",
+      "last_crossref_at": "2026-11-12T04:12:23.686159+00:00",
       "records": {
         "10.1016/j.actamat.2026.122828": {
           "doi": "10.1016/j.actamat.2026.122828",
@@ -231218,7 +230382,7 @@
           "rss_published_at": "2026-12-01T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
-          "indexed_at": "2026-10-27T13:19:08+00:00",
+          "indexed_at": "2026-11-12T04:00:39+00:00",
           "article_type": "journal-article",
           "providers": [
             "crossref",
@@ -233072,7 +232236,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-11-07T19:25:47+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -234090,14 +233254,14 @@
         },
         "10.1016/j.actamat.2026.122924": {
           "doi": "10.1016/j.actamat.2026.122924",
-          "title": "Energetic role of adaptive Mg sublattice in size-mismatched Mg2(Si, Sn) thermoelectric meta-phases",
+          "title": "Energetic role of adaptive Mg sublattice in size-mismatched Mg 2 (Si, Sn) thermoelectric meta-phases",
           "url": "https://doi.org/10.1016/j.actamat.2026.122924",
           "abstract": "",
           "rss_published_at": "2027-01-15T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-11-06T14:27:09+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -234163,14 +233327,14 @@
         },
         "10.1016/j.actamat.2026.122918": {
           "doi": "10.1016/j.actamat.2026.122918",
-          "title": "Structural origin of high piezoelectricity, electrostrain and energy density in quantum paraelectric doped Na0.5Bi0.5TiO3 piezoelectric",
+          "title": "Structural origin of high piezoelectricity, electrostrain and energy density in quantum paraelectric doped Na 0.5 Bi 0.5 TiO 3 piezoelectric",
           "url": "https://doi.org/10.1016/j.actamat.2026.122918",
           "abstract": "",
           "rss_published_at": "2027-01-15T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-11-07T19:25:48+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -234264,7 +233428,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-11-07T05:29:27+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -234325,14 +233489,14 @@
         },
         "10.1016/j.actamat.2026.122906": {
           "doi": "10.1016/j.actamat.2026.122906",
-          "title": "Critical roles of sublattice chemistry in governing mechanical behavior and deformation mechanism of L12-type chemically complex intermetallic alloys",
+          "title": "Critical roles of sublattice chemistry in governing mechanical behavior and deformation mechanism of L1 2 -type chemically complex intermetallic alloys",
           "url": "https://doi.org/10.1016/j.actamat.2026.122906",
           "abstract": "",
           "rss_published_at": "2027-01-15T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-11-06T18:25:59+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -234438,7 +233602,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-11-06T18:25:59+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -234509,7 +233673,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-11-06T11:28:46+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -234619,14 +233783,14 @@
         },
         "10.1016/j.actamat.2026.122932": {
           "doi": "10.1016/j.actamat.2026.122932",
-          "title": "Dopant Dependent Grain Growth and Mechanical Property Heterogeneity in Al-, Cr- and Al/Cr-doped UO2 Nuclear Fuels",
+          "title": "Dopant Dependent Grain Growth and Mechanical Property Heterogeneity in Al-, Cr- and Al/Cr-doped UO 2 Nuclear Fuels",
           "url": "https://doi.org/10.1016/j.actamat.2026.122932",
           "abstract": "",
           "rss_published_at": "2026-11-06T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-11-06T17:25:15+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -234732,14 +233896,14 @@
         },
         "10.1016/j.actamat.2026.122934": {
           "doi": "10.1016/j.actamat.2026.122934",
-          "title": "Modulating the octahedral tilting and electronic structure in NaNbO3 for highly selective piezocatalyzed CO2 reduction",
+          "title": "Modulating the octahedral tilting and electronic structure in NaNbO 3 for highly selective piezocatalyzed CO 2 reduction",
           "url": "https://doi.org/10.1016/j.actamat.2026.122934",
           "abstract": "",
           "rss_published_at": "2026-11-07T00:00:00+00:00",
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-11-07T08:25:32+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -234834,7 +233998,7 @@
           "published_online_at": null,
           "published_print_at": null,
           "indexed_at": "2026-11-08T00:23:30+00:00",
-          "article_type": "journal-article",
+          "article_type": "  ",
           "providers": [
             "crossref",
             "rss"
@@ -235095,8 +234259,8 @@
       }
     },
     "matter": {
-      "last_success_at": "2026-11-12T02:43:13.181194+00:00",
-      "last_crossref_at": "2026-11-12T02:43:13.181194+00:00",
+      "last_success_at": "2026-11-12T04:12:23.686159+00:00",
+      "last_crossref_at": "2026-11-12T04:12:23.686159+00:00",
       "records": {
         "10.1016/j.matt.2026.103052": {
           "doi": "10.1016/j.matt.2026.103052",
@@ -238704,7 +237868,7 @@
     "attempted": 0,
     "improved": 0,
     "failed": 0,
-    "skipped": 7390,
+    "skipped": 7391,
     "requests": 0,
     "providers": {
       "crossref": 0,
@@ -238712,7 +237876,7 @@
       "publisher": 0
     },
     "skip_reasons": {
-      "excluded": 5340,
+      "excluded": 5341,
       "no_materials_ai_title_hint": 1815,
       "has_abstract": 183,
       "retry_backoff": 12,
