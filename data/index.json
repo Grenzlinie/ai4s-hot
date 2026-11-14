@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-14T01:59:34.814218+00:00",
+  "generated_at": "2026-11-14T03:32:11.091935+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -3338,7 +3338,7 @@
       "excerpt": "Embodied foundation models hinge on diverse robot interaction data, which are costly to collect. Egocentric human videos offer a complementary source of experience, and latent action models (LAMs) provide a popular means of leveraging these videos for policy supervision. Compared with world-action models (WAMs), LAMs can offer greater training efficiency and potentially lower inference costs by avoiding explicit pixel prediction during policy learning and execution. However, most existing LAMs learn latent actions solely through video reconstruction, which can cause their representations to cluster by visual appearance rather than by the underlying actions. As a result, they struggle to align human actions with their robot counterparts. To bridge the gap, we introduce SALA, which emphasizes establishing the semantic correspondence for latent actions. Without requiring paired data, we use the language descriptions of unpaired human and robot clips to estimate semantic similarities and supervise cross-embodiment correspondence. Specifically, we translate these similarities into soft neighborhood structures that guide human latent actions toward semantically related robot latents, while robot action reconstruction grounds the latent space in control. The resulting shared latent action space provides a unified supervision signal for training an embodied foundation model on both human and robot videos. Notably, latent action supervision enables scaling along two axes: (1) pre-training on increasing amounts of general human video consistently reduces robot action prediction error on downstream tasks, and (2) post-training on increasing amounts of task-specific human video substantially improves real-world robot task success rates.",
       "summary": "本文提出SALA，一种通过语言描述估计无配对人类与机器人视频片段间的语义相似度、并以此监督跨具身对应关系的潜在动作模型，从而构建共享潜在动作空间，为在人类和机器人视频上训练具身基础模型提供统一监督信号。据原文，该方法无需配对数据和显式像素预测，可用于沿预训练与后训练两个方向扩展数据规模；但所提供的公开材料未给出具体性能数值，相关效果仍需以原文及后续验证为准。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 8,
+      "alpha_rank": 6,
       "authors": [
         "Jiachun Jin",
         "Zetong Zhou",
@@ -3501,7 +3501,7 @@
       "excerpt": "Second-order optimizers (e.g., Shampoo, SOAP) have emerged as compelling alternatives to Adam/AdamW and promise faster per-step convergence than AdamW in transformer training. However, they still remain costly in practice, and even SOAP still pays substantial optimizer-state memory and eigendecomposition overhead. We ask whether the benefits of SOAP can be retained at nearly the efficiency of AdamW. In this paper, we answer yes with a lightweight SOAP variant, Factored One-sided Adam-Moment (FOAM). The path to practical impact is twofold: first, FOAM employs input-only preconditioning, dropping the output-side Kronecker factor to reduce memory and remove one eigendecomposition. The Kronecker structure of the Hessian shows that this is exact for a diagonal output-side curvature and nearly lossless for a near-diagonal one, as we observe empirically. Second, FOAM replaces SOAP's dense rotated second moment with a factored Adam-moment estimator based on row-by-column statistics. Under the K-FAC Fisher assumption with a diagonal output curvature, this estimator exactly recovers SOAP's dense second moment, and we measure only a 15-20% K-FAC violation, with negligible effect on the update. Our empirical results support the claim that FOAM matches strong SOAP and Muon baselines in validation loss across scales of large language model (LLM) pre-training, uses half of SOAP's optimizer state, runs at Muon-class wall-clock time, and retains robustness across a three-fold learning-rate range. The results hold from 124M to 760M parameters, demonstrating that SOAP's gains need not require SOAP's cost. Code: https://github.com/naver-ai/foam",
       "summary": "本文提出FOAM（Factored One-sided Adam-Moment），一种SOAP轻量变体：采用仅输入端预条件并去掉输出侧Kronecker因子以减少内存和一次特征分解，同时用基于行列统计的因子化Adam矩估计替代SOAP的稠密旋转二阶矩。依据原文，在K-FAC Fisher假设且输出侧曲率为对角时该估计可精确恢复SOAP稠密二阶矩，实测K-FAC违反约15–20%且对更新影响可忽略；在124M至760M参数LLM预训练中验证损失与SOAP、Muon基线相当，优化器状态为SOAP一半、墙钟时间与Muon同级，并在三倍学习率范围内保持稳健。上述为作者报告结果，未经本文独立验证；摘要仅依据公开摘要材料，未阅读全文。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 7,
+      "alpha_rank": 8,
       "authors": [
         "Jaemyung Yu",
         "Byeongho Heo",
@@ -3587,7 +3587,7 @@
       "excerpt": "Recent advances in frontier models have pushed the boundaries of agentic robot control, enabling agents to perform complex robotic tasks through reasoning and interaction. However, repeated calls to these models during execution can substantially increase task completion time. Code as Policies (CaP) offers a route for coding agents to acquire physical skills through experience and retain them in executable programs, allowing the reasoning invested in development to be reused across runs. Developing reliable code policies while limiting the cost of physical experimentation remains a central challenge. We investigate human guidance as a source of priors for feasible actions and simulation as an auxiliary environment for exploring and testing candidate policies. Our findings favor robot demonstrations available on request and simulation used selectively during real-world policy refinement. These findings inform ACE-CaP-0, an agentic recipe that couples policy revision with experience acquisition through Demonstrations on Request and Simulation on Demand. Across eight real-world manipulation tasks spanning alignment, multi-object handling, and bimanual coordination, the resulting frozen programs achieve 92.1\\% success (221/240 trials). Mean execution times across tasks range from 0.97 to 2.27 minutes. The programs execute with runtime perception and control, without a human or coding agent in the loop. These results highlight CaP's potential to turn experience into reliable, reusable physical skills.",
       "summary": "本文提出ACE-CaP-0，一种通过按需演示和按需仿真将策略修订与经验获取相结合的方法，并在八项真实世界操作任务中测试了其生成的程序。若原文结论成立，其成果可能为将经验固化为可复用机器人代码策略提供参考，但所报告的成功率和执行时间来自作者实验，且对更广泛任务的适用性仍需进一步验证。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 10,
+      "alpha_rank": 9,
       "authors": [
         "ACE-CaP Team",
         "Changxu Wei",
@@ -6991,7 +6991,7 @@
         "Ming-Hsuan Yang",
         "Xun Huang"
       ],
-      "alpha_rank": 6,
+      "alpha_rank": 3,
       "topic_labels": [
         {
           "id": "zotero:0b5a1249a1e93e49428e264a989dd3e7",
@@ -12176,8 +12176,8 @@
       "published_at": "2026-11-11T00:00:00+00:00",
       "first_seen": "2026-11-14T01:59:34.814218+00:00",
       "excerpt": "GPT-6 Astra can drive a robot arm directly through a fixed harness, and scores of such robot-use agents on RoboDojo have risen quickly since. Reported systems differ in harness and test subset and often change several designs at once, so it is hard to tell which choices produce the gains. We take these designs apart and test them in one framework, along the harness around the model, the action interface, the reuse of experience and the scene geometry given to the model. A lean harness that keeps the full episode history and stops each motion early goes a long way. Reusing experience changes how the model acts but is not a free lunch, and scene geometry helps most, even when depth is predicted from RGB alone. JustRUA starts from the official L3 harness and keeps only what matters most. Even with no learned policy, self-improvement loop or task-specific tuning, this simple harness raises the score on the RoboDojo simulation benchmark substantially, from 29.7 to 50.3.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文在统一的L3测试框架下控制变量地拆解并比较了机器人使用智能体在模型外围执行框架、动作接口、经验复用和场景几何四类设计，并从官方L3框架出发保留完整回合历史、每步动作提前停止、本体抓取读数和由RGB预测的深度等改动。对科研工作而言，该工作提供了一个可复用的111回合评测集和逐回合视频复核流程，但其结果基于作者自建的评测子集和特定Codex版本，文中明确剩余失败多为任务特定的长尾问题，修复往往需要逐任务试错，接近在测试任务上调参。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.16009",
       "authors": [
         "Zefan Wang",
@@ -12234,7 +12234,13 @@
       "topic_coverage": 0.8241,
       "topic_cache_token": "f4ad7730fbaf29c420d122c50dccfa39362ecefb9f3ac9b6f2b94c9afc06a317",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.16009",
+        "sha256": "9fca141f34824e50da8604f6daa5ab7d7fd19df636925c1e2592604bf4926201",
+        "chars": 12000
+      }
     },
     {
       "id": "03618d79ef031431f8368e9c",
@@ -12257,8 +12263,8 @@
       "published_at": "2026-11-11T00:00:00+00:00",
       "first_seen": "2026-11-14T01:59:34.814218+00:00",
       "excerpt": "Recent work suggests that pretrained image generators encode real-world understanding beyond image synthesis. Vision Banana exploits this by framing vision tasks as conditional image editing. However, its data, weights, code, and implementation details are not public. We present Open Vision Banana (OVB), a fully open and reproducible recipe for converting pretrained generators into unified multi-task perception systems. Our analyses identify the design choices that matter most for generalization, including color encoding, prompt design, parameter adaptation, and task balancing. These choices interact, so individually helpful choices can hurt when combined with others. Starting from 4B and 9B parameter open-weight base models and using 2.1M-3.8M training pairs from public datasets, OVB surpasses Vision Banana's reported Cityscapes zero-shot performance (73.9 vs. 69.9 mIoU) and rivals state-of-the-art affine-invariant depth estimators. Its non-zero-shot variants come within five points of Vision Banana on referring and reasoning segmentation but remain further behind on instance segmentation. All models largely retain the base model's image-editing abilities. With legend ensembling, we introduce a test-time scaling method for generator-based perception. It segments an image under several class-color legends and fuses the results by majority vote, correcting unstable color-class bindings and improving mIoU by up to 8.7 points on Cityscapes and 15.0 points on COCO-Object without retraining. We release the dataset construction and processing pipeline, the training and evaluation code, as well as the final, intermediate, and ablation checkpoints. Project website: https://openvisionbanana.github.io",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出了 Open Vision Banana，一个全开放、可复现的方案，用公开数据集训练 4B 和 9B 参数的开放权重生成器，将其转化为可处理语义、指代、推理和实例分割以及深度与表面法线估计的多任务感知系统，并公开数据流程、训练评估代码和模型检查点。其用途在于为研究人员提供可复现的生成式视觉感知基线，并揭示颜色编码、提示设计、参数适配与任务平衡等设计选择之间的相互作用；原文同时指出这些非零样本变体在指代与推理分割上落后 Vision Banana 五点，在实例分割上差距更大，且分析受限于公开材料，未验证完整全文。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.15844",
       "authors": [
         "Arpit Jadon",
@@ -12320,7 +12326,13 @@
       "topic_coverage": 0.8263,
       "topic_cache_token": "e1fa774f9b59d6a13135ff699b2667ee9b43d55d52134f44b22afaad6b593aca",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.15844",
+        "sha256": "6b81a093c7ae722bd37f2519f2571b48e91550c5a7c428ae3a06e06adedafbf6",
+        "chars": 12000
+      }
     },
     {
       "id": "50f34a9d1891a79761201b2f",
@@ -13055,7 +13067,7 @@
       "excerpt": "Understanding 4D scenes is a core challenge in visual intelligence, requiring models to jointly capture scene geometry, appearance, and dynamics from partial observations. However, existing approaches are subdivided into feedforward models for direct geometric prediction, and generative models for visual synthesis. We introduce UGG, a unified framework for 4D scene understanding that jointly models RGB video and geometric representations such as depth and camera pose. By assigning different noise levels across modalities and time, UGG formulates visual generation and geometric prediction as conditional completion within a single generative model. This flexible formulation enables the model to learn from diverse, heterogeneous datasets with different subsets of geometric and visual annotations. Furthermore, our generative formulation enables inference-time search over multiple plausible scene hypotheses, using geometric evidence extracted from observed RGB frames to improve geometric prediction without ground truth geometry. We demonstrate UGG's effectiveness over non-unified baselines across camera-controlled video generation, depth estimation, and camera pose prediction, including in challenging sparse observation settings. Code and visualizations are available at https://ugg-model.github.io/",
       "summary": "本文提出UGG统一生成式几何模型，将RGB视频与深度、相机位姿等几何表示联合建模，通过跨模态和时间的噪声分配，把视觉生成与几何预测统一为单一生成模型中的条件补全，并支持在推理阶段利用观测RGB帧中的几何证据进行多假设搜索。该框架可借助几何与视觉标注子集各异的异构数据集进行学习，在相机控制视频生成、深度估计和相机位姿预测（包括稀疏观测场景）中相对非统一基线展示了有效性；但摘要未给出具体性能数字，且相关效果仍需以论文正文和代码为准。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 4,
+      "alpha_rank": 7,
       "authors": [
         "Amani Kiruga",
         "Zhiyi Li",
@@ -13192,7 +13204,7 @@
       "excerpt": "Energy-based models (EBMs) define a distribution through a scalar energy, $p_θ(x)\\propto\\exp(-E_θ(x))$, and are usually presented as one model family among many. This tutorial has a broader goal: beyond introducing EBMs, it uses them as a single lens that connects the different aspects of machine learning. Any EBM is specified by three choices, the energy, which determines what the model represents; the inference procedure, which samples from or optimizes the energy; and the learning method, which fits the energy to data. We first develop these components, including sampling, variational inference, and learning by maximum likelihood, noise contrastive estimation, pseudolikelihood, score matching, and adversarial training, and show that the learning methods share one contrastive structure. We then show that discriminative models, generative models such as GANs, normalizing flows, diffusion and autoregressive models, representation learning methods such as contrastive learning, word2vec, BERT, denoising auto-encoders, and diffusion representations, reinforcement learning with EBM policies and world models, inverse reinforcement learning, and planning, as well as inference-time computation with verifiers, are all EBMs that differ in these three choices, mostly in how they handle the partition function and sampling. This view explains existing methods, organizes them into a common framework, and suggests new algorithms by replacing one component while keeping the others, with composition of energies as a principled way to combine learned models at inference time.",
       "summary": "本文以能量基模型为统一视角，将判别模型、生成模型、表示学习、强化学习及推理阶段计算等方法统一为能量函数、推理过程和学习方法三要素组合，并指出各学习方法共享对比结构，还提出通过替换单一组件或组合能量来设计新算法。该视角可用于梳理和解释现有机器学习方法，而将能量组合用于推理时组合已学模型，则被原文视为一种有原则的做法。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 9,
+      "alpha_rank": 10,
       "authors": [
         "Bo Dai",
         "Yilun Du"
@@ -15454,11 +15466,7 @@
       "summary": "本文综述将质子交换膜水电解槽阳极退化框定为多层级界面稳定性问题，梳理了Ir/Ru活性位点近表面稳定性窗口的价态演化、羟基化、晶格氧参与、重构和金属溶解过程，以及膜电极组装中催化剂层逾渗、离聚物分布、孔结构、多孔传输层与催化剂层接触、膜污染、金属迁移和动态运行应力对该窗口的重塑，并总结了将宏观性能衰减追溯至特定界面失稳路径的分层诊断策略。该框架可为设计耐久且面向实际可再生制氢的非贵金属质子交换膜水电解槽阳极提供参考，但其结论基于综述性归纳，文中提出的标准化评价、真实运行环境和数据驱动材料-界面-器件优化仍属未来方向，尚需实验验证。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Ning Yu",
-        "Qianxi Lv",
-        "Weijia Zhou",
-        "Yongming Chai",
-        "Bin Dong"
+        "Ning Yu, Qianxi Lv, Weijia Zhou, Yongming Chai, Bin Dong"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -15637,18 +15645,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Xingfeng Zhao",
-        "Yangyang Pei",
-        "Bolin Kang",
-        "Maomao He",
-        "Yumeng Xue",
-        "Ting Liu",
-        "Jiangli Cai",
-        "Bin Liu",
-        "Huasheng Tian",
-        "Lili Sun",
-        "Linghai Xie",
-        "Wei Huang"
+        "Xingfeng Zhao, Yangyang Pei, Bolin Kang, Maomao He, Yumeng Xue, Ting Liu, Jiangli Cai, Bin Liu, Huasheng Tian, Lili Sun, Linghai Xie, Wei Huang"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -17131,8 +17128,8 @@
       "published_at": "2026-11-10T00:00:00+00:00",
       "first_seen": "2026-11-14T01:59:34.814218+00:00",
       "excerpt": "Recent work shows that multimodal agents increasingly self-improve without recurring human annotation. However, each self-improvement mechanism is designed and evaluated within a single scenario, leaving its preconditions unverified under cross-scenario transfer. This survey investigates the structural source of asymmetric mechanism transfer across four scenarios: multimodal reasoning, multimodal generation, GUI and Web navigation, and embodied manipulation. We first formalize the self-evolving multimodal agent by four criteria and a differentia of self-reference, and adopt the three-stage self-evolving loop of experience generation, feedback acquisition, and update consolidation as our analytical framework to position the scenarios along ceilings on rollout count and feedback fidelity. Comparing self-evolving with fixed loops within each scenario separates the limitations that the scenario imposes from those inherent in the self-evolving design. We then recast each mechanism as a trade-off that raises a scarce factor by presupposing a task-structural resource, such as output equivalence or checkable outcomes, and judge it portable, conditional, blocked, or redundant across scenarios. We attribute the asymmetry to divergent combinations of scarce factors and resources across opposite transfer directions, and identify the matched-budget measurements that could overturn these still untested verdicts.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文对自我演化多模态智能体进行了跨场景调研，将自我演化重新表述为以预设任务结构资源换取稀缺因素的权衡，并判断各机制在四个场景间的可迁移性。该工作可为科研人员识别跨场景迁移的不对称来源及尚待检验的判定提供分析框架，但文中的可迁移性结论仍属未经测试的判定，其适用性受各机制预设条件与场景结构资源差异的限制。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.14256",
       "authors": [
         "Jingjing Jiang"
@@ -18870,16 +18867,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Hao-Wen Zhang",
-        "Yan Chen",
-        "Xiang Xu",
-        "Lin-Xue Zhang",
-        "Wei Liu",
-        "Cheng-Rong Liao",
-        "Lin-Ze Wu",
-        "Zhe-Sheng Feng",
-        "Zong-Kai Yan",
-        "Yan Wang"
+        "Hao-Wen Zhang, Yan Chen, Xiang Xu, Lin-Xue Zhang, Wei Liu, Cheng-Rong Liao, Lin-Ze Wu, Zhe-Sheng Feng, Zong-Kai Yan, Yan Wang"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -19886,8 +19874,8 @@
       "published_at": "2026-11-09T00:00:00+00:00",
       "first_seen": "2026-11-14T01:59:34.814218+00:00",
       "excerpt": "Large language models (LLMs) increasingly mediate how people seek and consume information, including accounts that differ across languages and regions, especially on contested topics. Supporting diverse information seeking requires models to help users navigate competing narratives across languages and information streams. We define six capabilities necessary for diverse multilingual information seeking: three foundational capabilities for narrative inclusion, narrative exclusion, and missing narrative identification; and three higher-level capabilities for presenting diverse narratives, preserving narrative coverage under confirmatory queries, and maintaining information parity across languages. To guide the development of those information seeking capabilities, we introduce NarrativeBench, a benchmark comprising 1,333 news articles in 23 publication languages across 23 contested topics and 460 Reddit-grounded queries. Evaluating 14 LLMs across 24 query languages, we find that current models lack the capabilities needed to reliably navigate diverse narratives, limiting users' control over the perspectives they receive and leaving substantial gaps in exposure to competing accounts even when diversity is explicitly requested. Information access also differs across query framings and languages, risking echo chambers, linguistic filter bubbles, and information disparities that weaken the common ground needed for democratic discourse. NarrativeBench provides a foundation for developing information systems that give users across languages and regions agency to navigate diverse narratives.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出多语言信息获取所需的六项叙事能力，并发布包含23种出版语言、23个争议话题下1333篇新闻及460条Reddit来源查询的NarrativeBench基准，用于评估14个模型在24种查询语言下的表现。该基准为开发支持跨语言、跨地区用户自主浏览多元叙事的系统提供基础，但原文将叙事简化为特定语言与地理来源的报道，作者明确指出这仅是多元信息获取的必要非充分条件，且在同一地区或语言内部的叙事差异尚未纳入。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.12750",
       "authors": [
         "Nikhil Sharma",
@@ -19923,7 +19911,13 @@
       "topic_coverage": 0.8889,
       "topic_cache_token": "f845f31a9320b197b2c9c5ad484a88051d7728dc9b6909c236579891b9f8c44c",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.12750",
+        "sha256": "6cb1c3b594725e0d399d929955a0032f71678f098c15f5e31eca0e28e719c6bb",
+        "chars": 12000
+      }
     },
     {
       "id": "a286e0ec129e6abb3e604e67",
@@ -23180,6 +23174,86 @@
       "topic_cache_token": "1e6e679efcc2f9a831b77f68f64e64445aefff2abe1dd86348cfaeca51c856d3",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "0334fef1173355abea3de2d8",
+      "url": "https://arxiv.org/abs/2611.10439",
+      "title": "Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-07T00:00:00+00:00",
+      "first_seen": "2026-11-14T03:32:11.091935+00:00",
+      "excerpt": "Self-evolving agents improve their own skills, memory, and harness code from experience without retraining the base LLM, and group-evolving agents go further by sharing these lessons across agents. Yet most such systems overlook that sharing across users and heterogeneous agents requires deciding who can benefit from each lesson and what information must remain private. We present MixUA, a memory system that distills independent user-agent trajectories into lessons and assigns each lesson to a user-agent pair, user, agent, or global scope according to whom it benefits and what it may disclose. For evaluation, we introduce CrossLearnBench, a mixed-user-agent benchmark that pairs established agent tasks with user preferences and privacy probes that test whether private facts leak into memory other users can read. With five users and seven agents, MixUA raises pass rates by up to 16 points over no memory and 5 over a single global memory, even on tasks previously tried only by other users on other agents. It retains up to 90% of previously stated preferences, and at most 0.02% of privacy probes find a planted private fact in a forbidden scope. We hope MixUA offers a scalable path toward a global system where users and agents co-evolve.",
+      "summary": "本文提出MixUA记忆系统，将独立的用户-智能体轨迹提炼为经验条目，并按受益对象与可披露范围将其分配到用户-智能体对、用户、智能体或全局四种作用域，同时引入CrossLearnBench基准，在五用户七智能体的混合设置下联合评估任务效用、偏好保留与隐私泄露。该工作为跨用户、跨异构智能体的经验共享与隐私边界划分提供了可评估的研究框架，但摘要中报告的性能提升、偏好保留率与隐私泄露比例均为原文在特定基准与实验设置下的结果，尚未经独立验证，且其结论受所设任务、用户与智能体数量等条件限制。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.10439",
+      "authors": [
+        "Yunzhe Wang",
+        "Mesut Erhan Unal",
+        "Sheng Zhang",
+        "Shabnam Ghadar",
+        "Peng Tang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark、evaluation。"
+        },
+        {
+          "id": "zotero:c65fbf3f1dc429e795b4b57f3926a4cc",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：multi-agent。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:c65fbf3f1dc429e795b4b57f3926a4cc"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:c65fbf3f1dc429e795b4b57f3926a4cc"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8662,
+      "topic_cache_token": "420c940dc9d2c12089a90c1c4bf05651f950814e0fe203ed3fc8a916b52bd08b",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.10439",
+        "sha256": "8bc04ed9c3003ad5a8090d9e35a40b23b64d6e2069e1d07e1a3bcf8568c12e10",
+        "chars": 12000
+      }
     },
     {
       "id": "03141415402349a6636a02c3",
@@ -27453,8 +27527,8 @@
       "published_at": "2026-11-06T00:00:00+00:00",
       "first_seen": "2026-11-14T01:59:34.814218+00:00",
       "excerpt": "Machine-learning surrogates are increasingly used to accelerate computational fluid dynamics, yet progress is limited by the lack of benchmarks capturing realistic, time-dependent turbulent flows. We introduce TurtLES, a 14 TB dataset of 3D turbulent cylinder wakes in the shear-layer transition regime, computed via high-fidelity implicit large-eddy simulations. The dataset contains 400 trajectories of 400 time steps each, with 3-11 million points per frame, spanning variations in geometry, Reynolds number, and angle of attack. Unlike existing datasets, TurtLES combines (i) physically realistic turbulence with an active energy cascade driven by vortex stretching, (ii) dense irregular meshes, and (iii) long-horizon temporal dynamics. We benchmark state-of-the-art neural operators on autoregressive rollouts and identify key failure modes, including temporal instability, loss of small-scale energy, and challenges in learning on large irregular domains. TurtLES provides a new benchmark for evaluating surrogate models on 3D turbulent wakes at industrially relevant mesh resolution.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出TurtLES，一个约14 TB的三维圆柱尾流数据集，包含400条轨迹、每条400个时间步、每帧300万至1100万个不规则网格点，覆盖几何、雷诺数和攻角变化，并用以在自回归长时滚动中评测多种神经算子。该数据集面向三维湍流神经PDE代理模型的研究，可用于评估长时稳定性、小尺度能量保持和几何相关泛化等失效模式；但材料未给出经独立验证的性能数字，相关结论限于公开摘要与片段所报告的内容。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.09567",
       "authors": [
         "Jarno Platenburg",
@@ -27513,7 +27587,13 @@
       "topic_coverage": 0.7685,
       "topic_cache_token": "86901d3a3fa0d063124af33056ee077299d4da43efb35cd3bcde8725724f8b74",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.09567",
+        "sha256": "c62ff2905b65590c56e568f98d3b73e9357b83eb8770479adb1f05a26ba598af",
+        "chars": 12000
+      }
     },
     {
       "id": "bbd492caba72ca544b8bac32",
@@ -72174,6 +72254,66 @@
         "sha256": "a60ee4a92acebbd97a57bbdf672d60bb19e292cf988ef7cf9da4c844167060b7",
         "chars": 12000
       }
+    },
+    {
+      "id": "df05d2ec8b99db3e1f900ebd",
+      "url": "https://arxiv.org/abs/2610.39062",
+      "title": "HEARSAYBENCH: Can AI Navigate from Abstract Human Rights to Lived Lives?",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-10-28T23:49:28+00:00",
+      "first_seen": "2026-11-14T03:32:11.091935+00:00",
+      "excerpt": "As large language models (LLMs) reach users worldwide, personal counseling has emerged as one of their most consequential applications, sometimes in life-critical situations. Yet broader access does not mean equal support. The text these models learn from disproportionately reflects people with the freedom to act, embedding an implicit assumption that users can leave, report, seek help, or appeal. Existing benchmarks largely inherit this assumption, overlooking users whose agency is constrained by structural conditions such as war, statelessness, and displacement. Meanwhile, models are increasingly shaped by normative frameworks such as Constitutional AI, often grounded in ideals like human rights, even as many users live where those rights offer little protection or recourse. We introduce HEARSAYBENCH, a human-authored dataset of 400 test cases with in-region human verification grounded in scenarios where structural barriers stand between a person and the exercise of their rights. Built from United Nations and other human rights reports, the scenarios span over 80 regions and cover social, environmental, and personal constraints. Drawing on Nobel laureate Amartya Sen's Capabilities Approach, HEARSAYBENCH tests whether models can distinguish what a person is formally entitled to do from what they are actually able to do. Across 14 proprietary and open-weight models, every model infers a user's situation more accurately than it advises on it. Stronger models narrow this gap, but their recommendations remain unsafe to follow. Models may understand lives shaped by constraint, yet that knowledge remains hearsay if it cannot translate into advice people can act on. Those people are not alignment's long tail; they are among the users for whom good guidance matters most. HEARSAYBENCH makes this failure measurable, a step toward systems that serve the world as it is rather than as assumed.",
+      "summary": "本文提出了HEARSAYBENCH，一个由人工编写、包含400个测试用例并经区域内人工验证的数据集，用于评估大语言模型能否在战争、无国籍和流离失所等结构性障碍下区分用户形式上被赋予的权利与其实际能够行使的权利。该数据集可用于测量模型从抽象人权框架转向受约束现实生活情境时的建议失效问题，但其测试范围限于所构建的场景，且14个模型的评估结果显示，较强模型虽能缩小理解与建议之间的差距，其建议仍不具安全可遵循性，因此结论不构成对模型实际辅助能力的验证。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 4,
+      "authors": [
+        "Ava Iranmanesh",
+        "Sobhan Lotfi",
+        "Ali Iranmanesh",
+        "Liwei Jiang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:88f5ef7f6c79483dccdde4317c7916c9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：dataset。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:88f5ef7f6c79483dccdde4317c7916c9"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:88f5ef7f6c79483dccdde4317c7916c9"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8021,
+      "topic_cache_token": "e770b289fd9ca8ce967381a4eb1835fedf5dd4ab66d2819f7543cf8bf3a51ae3",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
     },
     {
       "id": "0283c17ff41feb9fac1ab69a",
@@ -193287,19 +193427,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Dijie Yao",
-        "Qiuhua Yu",
-        "Yifan Zheng",
-        "Huizhi Chen",
-        "Cheng Shen",
-        "Jiajia Yang",
-        "Zhenwen Liang",
-        "Kai Tao",
-        "Gang Chen",
-        "Fei Liu",
-        "Fengwei Huo",
-        "Junyou Yang",
-        "Jin Wu"
+        "Dijie Yao, Qiuhua Yu, Yifan Zheng, Huizhi Chen, Cheng Shen, Jiajia Yang, Zhenwen Liang, Kai Tao, Gang Chen, Fei Liu, Fengwei Huo, Junyou Yang, Jin Wu"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -196849,16 +196977,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Ziting Chen",
-        "Pengyuan Wang",
-        "Jiaqi Yu",
-        "Yihao Yang",
-        "Puwu Liang",
-        "Ahmed Abdel-Aziz",
-        "Mujtaba Aminu Muhammad",
-        "Xiang Hu",
-        "Junxiang Chen",
-        "Zhenhai Wen"
+        "Ziting Chen, Pengyuan Wang, Jiaqi Yu, Yihao Yang, Puwu Liang, Ahmed Abdel-Aziz, Mujtaba Aminu Muhammad, Xiang Hu, Junxiang Chen, Zhenhai Wen"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -203912,16 +204031,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Wei He",
-        "Huiling Fang",
-        "Zijing Huo",
-        "Jiaqi Yu",
-        "Puwu Liang",
-        "Mujtaba Aminu Muhammad",
-        "Ahmed Abdel-Aziz",
-        "Xiang Hu",
-        "Suqin Ci",
-        "Zhenhai Wen"
+        "Wei He, Huiling Fang, Zijing Huo, Jiaqi Yu, Puwu Liang, Mujtaba Aminu Muhammad, Ahmed Abdel-Aziz, Xiang Hu, Suqin Ci, Zhenhai Wen"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -235089,10 +235199,7 @@
       "summary": "本文作为一篇Perspective，系统讨论了将物理知识通过先验知识、描述符、约束、验证器和基础设施五种互补角色融入材料智能的PhysMat AI框架，并以催化、固态电池电解质和储氢材料为例说明物理原理如何指导数据表示、模型推理、验证流程与知识管理。该框架可为科研人员提供机制引导的发现思路，并勾勒出从物理感知AI到物理推理AI再到物理自主AI的发展路线图；上述内容基于摘要概述，具体性能与效果需查阅原文验证。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Yuhang Wang",
-        "Qian Wang",
-        "Seong-Hoon Jang",
-        "Hao Li"
+        "Yuhang Wang, Qian Wang, Seong-Hoon Jang, Hao Li"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -247690,8 +247797,7 @@
       "summary": "本文综述了高熵钙钛矿（包括氧化物和卤化物）在析氧反应中的研究进展，涵盖合成路线、性能调控、计算机制分析以及AI驱动理性设计四个方面，并构建了从合成到设计闭环逻辑。该综述可为高熵钙钛矿电催化剂的开发提供参考，但其对具体材料性能的预测依赖计算与AI筛选，尚需实验验证。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Jing Jia",
-        "Li-Ming Yang"
+        "Jing Jia, Li-Ming Yang"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -272260,8 +272366,8 @@
       "published_at": "2026-01-31T20:01:47+00:00",
       "first_seen": "2026-11-14T01:59:34.814218+00:00",
       "excerpt": "Among parallel decoding paradigms, diffusion large language models (dLLMs) have emerged as a promising candidate that balances generation quality and throughput. However, their integration with Mixture-of-Experts (MoE) architectures is constrained by an expert explosion: as the number of tokens generated in parallel increases, the number of distinct experts activated grows nearly linearly. This results in substantial memory traffic that pushes inference into a memory-bound regime, negating the efficiency gains of both MoE and parallel decoding. To address this challenge, we propose Dynamic Expert Sharing (DES), a novel technique that shifts MoE optimization from token-centric pruning and conventional expert skipping methods to sequence-level coreset selection. To maximize expert reuse, DES identifies a compact, high-utility set of experts to satisfy the requirements of an entire parallel decoding block. We introduce two innovative selection strategies: (1) Intra-Sequence Sharing (DES-Seq), which adapts optimal allocation to the sequence level, and (2) Saliency-Aware Voting (DES-Vote), a novel mechanism that allows tokens to collectively elect a coreset based on aggregated router weights. Extensive experiments on MoE dLLMs demonstrate that DES reduces unique expert activations by over 55% and latency by up to 38%, while retaining 99% of vanilla accuracy, effectively decoupling memory overhead from the degree of parallelism.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出动态专家共享（DES）技术，将MoE扩散大语言模型的专家优化从token级剪枝和专家跳过大方法转向序列级核心集选择，并引入序列内共享（DES-Seq）与显著性感知投票（DES-Vote）两种策略。该工作针对并行解码中专家激活随token数近线性增长导致的内存受限问题，实验报告在MoE dLLMs上减少超过55%的唯一专家激活、延迟最多降低38%并保持99%原始准确率，但上述性能数据来自作者实验声明，尚未经独立验证。",
+      "summary_kind": "ai_summary",
       "alpha_rank": 3,
       "authors": [
         "Hao Mark Chen",
@@ -273144,12 +273250,12 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-11-14T01:59:34.814218+00:00",
+    "last_success": "2026-11-14T03:32:11.091935+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 102,
+      "classified": 2,
       "unclassified": 1900,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
@@ -273254,8 +273360,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "status": "ok",
       "count": 10
     },
@@ -273263,7 +273369,7 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -273274,8 +273380,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "status": "ok",
       "count": 11
     },
@@ -273283,8 +273389,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "status": "ok",
       "count": 12
     },
@@ -273292,8 +273398,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "status": "ok",
       "count": 12
     },
@@ -273301,8 +273407,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "status": "ok",
       "count": 1
     },
@@ -273310,8 +273416,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "status": "ok",
       "count": 12
     },
@@ -273319,8 +273425,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "status": "ok",
       "count": 0
     },
@@ -273332,14 +273438,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "count": 192,
       "counters": {
         "relevant": 4,
         "pending": 188,
         "excluded": 3,
-        "fetched": 192,
+        "fetched": 184,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -273352,14 +273458,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "count": 92,
       "counters": {
         "relevant": 13,
         "pending": 79,
         "excluded": 303,
-        "fetched": 201,
+        "fetched": 194,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -273372,14 +273478,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "count": 205,
       "counters": {
         "relevant": 33,
         "pending": 172,
         "excluded": 1557,
-        "fetched": 793,
+        "fetched": 671,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -273391,18 +273497,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
       "last_success": "2026-11-14T01:59:34.814218+00:00",
       "count": 192,
       "counters": {
         "relevant": 26,
         "pending": 166,
         "excluded": 932,
-        "fetched": 474,
+        "fetched": 311,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-matter",
@@ -273412,14 +273520,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "count": 108,
       "counters": {
         "relevant": 1,
         "pending": 107,
         "excluded": 2,
-        "fetched": 88,
+        "fetched": 84,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -273432,7 +273540,7 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
       "last_success": "2026-11-13T03:34:18.271952+00:00",
       "count": 89,
       "counters": {
@@ -273454,13 +273562,13 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
       "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 1081,
       "counters": {
         "relevant": 13,
         "pending": 1068,
-        "excluded": 1069,
+        "excluded": 1071,
         "fetched": 208,
         "abstracts_recovered": 0
       },
@@ -273476,14 +273584,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "count": 30,
       "counters": {
         "relevant": 0,
         "pending": 30,
         "excluded": 39,
-        "fetched": 33,
+        "fetched": 16,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -273496,14 +273604,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "count": 136,
       "counters": {
         "relevant": 1,
         "pending": 135,
         "excluded": 248,
-        "fetched": 112,
+        "fetched": 110,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -273516,14 +273624,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "count": 27,
       "counters": {
         "relevant": 2,
         "pending": 25,
         "excluded": 746,
-        "fetched": 193,
+        "fetched": 190,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -273532,8 +273640,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "status": "ok",
       "count": 1
     },
@@ -273541,8 +273649,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "status": "ok",
       "count": 12
     },
@@ -273550,8 +273658,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "status": "ok",
       "count": 0
     },
@@ -273559,8 +273667,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "status": "ok",
       "count": 0
     },
@@ -273568,8 +273676,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_success": "2026-11-14T03:32:11.091935+00:00",
       "status": "ok",
       "count": 12
     },
@@ -273578,7 +273686,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 20,
-      "last_attempt": "2026-11-14T01:59:34.814218+00:00",
+      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
       "last_success": "2026-11-14T01:58:37.060270+00:00",
       "run_id": "43543272247",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -273586,16 +273694,16 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 24,
+    "generated": 8,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
       "status": "partial",
       "attempted": 8,
-      "public_html": 3,
+      "public_html": 5,
       "bohr_graph": 0,
-      "fallback": 5,
-      "bohr_calls": 3
+      "fallback": 3,
+      "bohr_calls": 0
     }
   },
   "policy": {
