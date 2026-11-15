@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-14T03:32:11.091935+00:00",
+  "generated_at": "2026-11-15T01:27:14.663155+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -1486,13 +1486,14 @@
       ],
       "type": "paper",
       "tags": [
-        "materials"
+        "materials",
+        "chemistry"
       ],
       "published_at": "2026-11-14T00:00:00+00:00",
       "first_seen": "2026-11-14T01:59:34.814218+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "excerpt": "Atomistic simulations of electrochemical interfaces typically require large system sizes and long simulation times to obtain reliable thermodynamic properties. In this context, machine learning interatomic potentials (MLIPs) allow for computationally efficient sampling compared to density functional theory-based molecular dynamics simulations. Although conventional short-range MLIPs are recognized as inadequate for modeling the (potentially nanometer-wide) diffuse layer, they may still be capable of describing the inner electric double layer that is relevant for electrochemical reactions. Here, we evaluate the performance of common (short-ranged) MLIP architectures [the deep potential DP, the (graph) atomic cluster expansion-based models GRACE and MACE, and the pre-trained eSEN-OC25] for charged Au/electrolyte interfaces. In the evaluation, we focus on the effect of message passing and on the potentially adverse effect of data interference when training for a broad range of surface charges. Our results suggest that both local and message-passing models are able to reliably learn the interfacial structure when training on a single charge state. However, when trained on datasets that span multiple charge states, the MLIPs tested yield inconsistent predictions of interfacial water orientation and ion distributions. This behavior can be traced to the MLIPs being \"blind\" to the actual surface charge. Message-passing models show somewhat greater robustness to mixed-charge training data, likely due to their larger receptive field, but are still prone to artifacts and errors in the description of the interfacial structure. Overall, our results provide practical guidance on the expected accuracy and cross-charge-state transferability of short-ranged MLIPs for the description of the inner layer of electrode/electrolyte interfaces that will be relevant to their use in computational electrocatalysis.",
+      "summary": "本文评估了深度势能、GRACE、MACE及预训练eSEN-OC25等常见短程机器学习原子间势在带电Au/电解质界面上对内电双层结构的建模表现，重点考察了消息传递机制以及在多表面电荷数据上训练时数据干扰的影响。研究结果表明，这些短程MLIPs在单一电荷态训练时可较可靠地学习界面结构，但在跨多个电荷态训练时对界面水取向和离子分布的预测不一致，原因在于模型对实际表面电荷不敏感；这为将其用于计算电催化中内电双层描述时的预期精度和跨电荷态可迁移性提供了参考，同时也指出该类模型在多电荷态条件下仍易产生人为假象和误差。",
+      "summary_kind": "ai_summary",
       "authors": [
         "Lucas B. T. de Kam",
         "Jia-Xin Zhu",
@@ -1505,28 +1506,125 @@
           "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
           "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
           "method": "local_lexical_v2",
-          "score": 0.54,
+          "score": 0.66,
           "confidence": "low",
           "status": "broad_only",
-          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题直接命中定义关键词：learning；未使用摘要，需复核。"
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        },
+        {
+          "id": "zotero:29132f3642c19e5c9b71889c7fc63ddf",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：robustness。"
         }
       ],
       "topic_leaf_ids": [
-        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:29132f3642c19e5c9b71889c7fc63ddf"
       ],
       "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
         "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
-        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+        "zotero:29132f3642c19e5c9b71889c7fc63ddf",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:6cb94419e4a077231731f17d61098d95"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.904,
+      "topic_cache_token": "d2baea8cd9edee46d5d6640e009badfa68189f0fc42c4a006212a12ef15c8c3d",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "a09f91c7a59a898e2cc33aca",
+      "url": "https://doi.org/10.1016/j.actamat.2026.122956",
+      "title": "Reactive precursor engineering enables in-situ nanophase inoculation in high-strength LPBF aluminum alloys",
+      "source_ids": [
+        "journal-acta-materialia"
+      ],
+      "source_names": [
+        "Acta Materialia"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T01:27:14.663155+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Shoukui Yang",
+        "Dongdong Zhao",
+        "Xiangren Bai",
+        "Zhihang Xu",
+        "Hao Yu",
+        "Da Song",
+        "Mengyao Kong",
+        "Yuhan Ma",
+        "Ying Tang",
+        "Xudong Rong",
+        "Xiang Zhang",
+        "Naiqin Zhao",
+        "Chunnian He"
+      ],
+      "journal_id": "acta-materialia",
+      "journal_title": "Acta Materialia",
+      "journal_issns": [
+        "1359-6454"
+      ],
+      "publisher": "Elsevier",
+      "doi": "10.1016/j.actamat.2026.122956",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T09:21:44+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题中的明确材料领域词，保留材料研究根类；未使用摘要，不推断叶类。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
       ],
       "topic_status": "broad_only",
       "topic_scope": "research",
       "content_kind": "web:paper",
       "domain_facets": [
-        "web:general_ai"
+        "web:materials"
       ],
       "topic_method": "local_lexical_v2",
-      "topic_coverage": 1.0,
-      "topic_cache_token": "3a297365f57a058e778b8a7a79e601b1f18605e154fb57731b5d5111de087d1d",
+      "topic_coverage": 0.6364,
+      "topic_cache_token": "c4695fe3c614dacbf76fb2a3e5933b586c25ee6943677bcd1eb9e5bfe76f7492",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -1658,7 +1756,7 @@
       "doi": "10.1126/sciadv.aef7673",
       "published_online_at": null,
       "published_print_at": "2026-11-13T00:00:00+00:00",
-      "indexed_at": "2026-11-13T19:23:47+00:00",
+      "indexed_at": "2026-11-14T04:13:14+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -3154,6 +3252,689 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "fe556f97db98fa29ea802c72",
+      "url": "https://doi.org/10.1016/j.actamat.2026.122938",
+      "title": "Role of local lattice distortion in the defect evolution of NbTiZr-based refractory high entropy alloys under heavy ion irradiation",
+      "source_ids": [
+        "journal-acta-materialia"
+      ],
+      "source_names": [
+        "Acta Materialia"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-13T00:00:00+00:00",
+      "first_seen": "2026-11-15T01:27:14.663155+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Zhuocheng Xie",
+        "Zhaoying Ding",
+        "Soumya S. Dash",
+        "Huicong Chen",
+        "Hao Chen",
+        "Tianyi Lyu",
+        "Xuemei Wang",
+        "Yinyin Hong",
+        "Lin Shao",
+        "Penghao Xiao",
+        "Yanwen Zhang",
+        "Yu Zou"
+      ],
+      "journal_id": "acta-materialia",
+      "journal_title": "Acta Materialia",
+      "journal_issns": [
+        "1359-6454"
+      ],
+      "publisher": "Elsevier",
+      "doi": "10.1016/j.actamat.2026.122938",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": "2026-11-13T18:21:45+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题中的明确材料领域词，保留材料研究根类；未使用摘要，不推断叶类。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8667,
+      "topic_cache_token": "c36068c50208461577a688a6145e863d1e79bf060e29f3dc8cbd18cb9adbe3e6",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "e7a2937c4540f6b5e3823429",
+      "url": "https://doi.org/10.1002/adma.75739",
+      "title": "Biomimetic Optically Encoded Hydrogel Fiber Enables Simultaneous Olfactory-Mechanosensory Perception for Robotic Plume Tracing",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-13T00:00:00+00:00",
+      "first_seen": "2026-11-15T01:27:14.663155+00:00",
+      "excerpt": "ABSTRACT Dynamic odor plumes encode gas identity and airflow transport as coupled spatiotemporal cues, requiring olfactory-mechanosensory fusion perception for intelligent robotic navigation in vision-denied environments. Yet current olfactory-mechanosensory systems typically rely on separated sensing units, limiting co-localized mechanochemical discrimination. Here, we report a biomimetic flexible optical fiber (BFOF) comprising a coaxial hydrogel fiber with distributed, self-assembled odor-sensitive metal-organic frameworks (MOFs) on its exterior, enabling simultaneous decoding of wind vectors and olfactory cues within a single compact optical architecture. Inspired by the spatially integrated mechanoreceptors and chemoreceptors in ant antennae, the BFOF employs conformal MOF-hydrogel interfaces to enhance evanescent-field coupling without compromising receptor activity or waveguiding, partitioning multidimensional airflow attenuation and odor fluorescence into separable optical channels for low-crosstalk olfactory-mechanosensory fusion. Therefore, it achieves high sensitivity, fine directional selectivity, and fast temporal response across a wide range of airflow conditions. It identifies 16 individual gases, 96 mixtures, and the physiological states (unripe, ripe, overripe, and rotten) of 8 fruits with high accuracy. Coupled with a lightweight machine-learning framework, this work establishes rapid, precise, and closed-loop anemotactic navigation and multi-target odor tracing in complex three-dimensional (3D) spaces, offering a compact optical sensing platform for embodied robotic olfaction beyond static gas classification.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Xuyao Zhou",
+        "Yiqin Guo",
+        "Zhenyu Chen",
+        "Xue Zhou",
+        "Kaitian Yu",
+        "Yuzhi Qin",
+        "Zihan Xu",
+        "Kaixuan Lin",
+        "Chenyu Yang",
+        "Weiting Chen",
+        "Songyang Wu",
+        "Penglin Lyu",
+        "Xuan Liu",
+        "Zhengji Jin",
+        "Yang Chen",
+        "Tingli Hu",
+        "Weihang Chen",
+        "Yupeng Guo",
+        "Wenqi Han",
+        "Xiongjian Huang",
+        "Jiulin Gan",
+        "Guoping Dong",
+        "Qianyi Guo",
+        "Zhongmin Yang"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.75739",
+      "published_online_at": "2026-11-13T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T05:20:15+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "relationship_requires_review",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        },
+        {
+          "id": "zotero:26109485cf87bb2ed81032d57c606133",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：MOF。"
+        },
+        {
+          "id": "zotero:84051b1f05b8368766ddc3a2195c2324",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：metal。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:26109485cf87bb2ed81032d57c606133",
+        "zotero:84051b1f05b8368766ddc3a2195c2324"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:26109485cf87bb2ed81032d57c606133",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:84051b1f05b8368766ddc3a2195c2324",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6485,
+      "topic_cache_token": "ddf496c97ac0eeb0206afad4e1ace06610208ab70f27bf55a4cfa6bd0df99f24",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "da1320450b6a850524c1c31c",
+      "url": "https://doi.org/10.1016/j.actamat.2026.122955",
+      "title": "Eliminating Electric-Field-Induced Cu Drift in Bi2Te2.7Se0.3 via Dislocation Pinning for Robust Thermoelectric Refrigeration",
+      "source_ids": [
+        "journal-acta-materialia"
+      ],
+      "source_names": [
+        "Acta Materialia"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-13T00:00:00+00:00",
+      "first_seen": "2026-11-15T01:27:14.663155+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Shudian Wu",
+        "Zhengfengyi Du",
+        "Yu-Ke Zhu",
+        "Guang Wang",
+        "Le Zhang",
+        "Jitao Niu",
+        "Hongrui Ma",
+        "Xingyan Dong",
+        "Ming Liu",
+        "Yi-Xin Zhang",
+        "Junbo Niu",
+        "Zhen-Hua Ge",
+        "Jiehe Sui"
+      ],
+      "journal_id": "acta-materialia",
+      "journal_title": "Acta Materialia",
+      "journal_issns": [
+        "1359-6454"
+      ],
+      "publisher": "Elsevier",
+      "doi": "10.1016/j.actamat.2026.122955",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T01:21:48+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5,
+      "topic_cache_token": "62d48140927a9805af561b3b1b1afe9ce5b3b69170e94bbddee8df35e197889c",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "cd05359b22a295edaecafcd6",
+      "url": "https://doi.org/10.1016/j.actamat.2026.122895",
+      "title": "Acta Materialia Silver Medal 2027",
+      "source_ids": [
+        "journal-acta-materialia"
+      ],
+      "source_names": [
+        "Acta Materialia"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-13T00:00:00+00:00",
+      "first_seen": "2026-11-15T01:27:14.663155+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [],
+      "journal_id": "acta-materialia",
+      "journal_title": "Acta Materialia",
+      "journal_issns": [
+        "1359-6454"
+      ],
+      "publisher": "Elsevier",
+      "doi": "10.1016/j.actamat.2026.122895",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": "2026-11-13T14:23:30+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.25,
+      "topic_cache_token": "e78034e1cf1156ad489605586c39fdc0dc1b61fae42de9c96fe41bd529cd26d4",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "aa76cf25a659e58a4e12b5c9",
+      "url": "https://doi.org/10.1016/j.actamat.2026.122893",
+      "title": "Acta Biomaterialia Silver Medal 2027",
+      "source_ids": [
+        "journal-acta-materialia"
+      ],
+      "source_names": [
+        "Acta Materialia"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-13T00:00:00+00:00",
+      "first_seen": "2026-11-15T01:27:14.663155+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [],
+      "journal_id": "acta-materialia",
+      "journal_title": "Acta Materialia",
+      "journal_issns": [
+        "1359-6454"
+      ],
+      "publisher": "Elsevier",
+      "doi": "10.1016/j.actamat.2026.122893",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": "2026-11-13T14:23:31+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.25,
+      "topic_cache_token": "ab71072348844548681a50f21d26a828da90d47ed39d9511a6f9a1cd5de40d7c",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "74f1f6423368bd0ed4ae89a4",
+      "url": "https://doi.org/10.1016/j.actamat.2026.122896",
+      "title": "Acta Materialia Gold Medal 2027",
+      "source_ids": [
+        "journal-acta-materialia"
+      ],
+      "source_names": [
+        "Acta Materialia"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-13T00:00:00+00:00",
+      "first_seen": "2026-11-15T01:27:14.663155+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [],
+      "journal_id": "acta-materialia",
+      "journal_title": "Acta Materialia",
+      "journal_issns": [
+        "1359-6454"
+      ],
+      "publisher": "Elsevier",
+      "doi": "10.1016/j.actamat.2026.122896",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": "2026-11-13T14:22:47+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.25,
+      "topic_cache_token": "6ec5e9b769caa5164a85017c75f2381d43a5bdc5f4c2aa1f9d7569ff6d716726",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "5e835c8274e5bb138e1ad9f6",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1359645426009894?dgcid=rss_sd_all",
+      "title": "Mary Fortune Award 2027",
+      "source_ids": [
+        "journal-acta-materialia"
+      ],
+      "source_names": [
+        "Acta Materialia"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-13T00:00:00+00:00",
+      "first_seen": "2026-11-15T01:27:14.663155+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [],
+      "journal_id": "acta-materialia",
+      "journal_title": "Acta Materialia",
+      "journal_issns": [
+        "1359-6454"
+      ],
+      "publisher": "Elsevier",
+      "doi": null,
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.0,
+      "topic_cache_token": "ace67a9729559d248bfe4afccb69ba0d356f80d729fc399b4d32d02bb013e523",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "348b7f0c005c8baf8d6b09d0",
+      "url": "https://doi.org/10.1016/j.actamat.2026.122894",
+      "title": "Acta Biomaterialia Gold Medal 2027",
+      "source_ids": [
+        "journal-acta-materialia"
+      ],
+      "source_names": [
+        "Acta Materialia"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-13T00:00:00+00:00",
+      "first_seen": "2026-11-15T01:27:14.663155+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [],
+      "journal_id": "acta-materialia",
+      "journal_title": "Acta Materialia",
+      "journal_issns": [
+        "1359-6454"
+      ],
+      "publisher": "Elsevier",
+      "doi": "10.1016/j.actamat.2026.122894",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": "2026-11-13T14:24:03+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.25,
+      "topic_cache_token": "d720ff691340654b8bb1a4ca909122b19e60f55586203c0eada7390cb8eb0b9a",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "157139b753d7ea496c37efe8",
+      "url": "https://doi.org/10.1016/j.actamat.2026.122946",
+      "title": "Dislocation-rich Mn-doped Ni catalysts activate magnesium hydrogen storage through strained Mg2Ni/Mg2NiH4 interfaces",
+      "source_ids": [
+        "journal-acta-materialia"
+      ],
+      "source_names": [
+        "Acta Materialia"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-13T00:00:00+00:00",
+      "first_seen": "2026-11-15T01:27:14.663155+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Haotian Sun",
+        "Wanqiang Liu",
+        "Yufei Liu",
+        "Wenfeng Qiao",
+        "Yao Liang",
+        "Lele Liu",
+        "Ying Wang",
+        "Chunli Wang",
+        "Jianguang Yuan",
+        "Han Zhu",
+        "Limin Wang",
+        "Yong Cheng"
+      ],
+      "journal_id": "acta-materialia",
+      "journal_title": "Acta Materialia",
+      "journal_issns": [
+        "1359-6454"
+      ],
+      "publisher": "Elsevier",
+      "doi": "10.1016/j.actamat.2026.122946",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T01:22:33+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题中的明确材料领域词，保留材料研究根类；未使用摘要，不推断叶类。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5,
+      "topic_cache_token": "651afd5a708ab30dee83983f07a200c9462a2460c16d8482629bad891d7b991a",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "0f7824fdcc90e36dbe4ab26e",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1359645426009900?dgcid=rss_sd_all",
+      "title": "The Hollomon Award 2027",
+      "source_ids": [
+        "journal-acta-materialia"
+      ],
+      "source_names": [
+        "Acta Materialia"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-13T00:00:00+00:00",
+      "first_seen": "2026-11-15T01:27:14.663155+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [],
+      "journal_id": "acta-materialia",
+      "journal_title": "Acta Materialia",
+      "journal_issns": [
+        "1359-6454"
+      ],
+      "publisher": "Elsevier",
+      "doi": null,
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.0,
+      "topic_cache_token": "d31e2291be48473ee8b8fdc6e5cb232b0d0c2885b9a9d0d6c5c7336eb2b02b10",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "67672a694e389b29af5588bf",
       "url": "https://openai.com/business/customer-stories/amplitude",
       "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
@@ -3207,6 +3988,83 @@
       "topic_cache_token": "8f3bfb6634cdebf756480161221a962eaaec6a1478194a886a931fe9767a997f",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "48b87064e2611c2ec2c9bb55",
+      "url": "https://arxiv.org/abs/2611.17309",
+      "title": "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-11-12T18:56:56+00:00",
+      "first_seen": "2026-11-15T01:27:14.663155+00:00",
+      "excerpt": "Looped models have emerged as a prominent paradigm for reasoning, with successes on simple reasoning puzzles such as Sudoku-Extreme and Maze-Unique. However, these models can be unstable, slow to train, and use many parameters and FLOPs to solve simple puzzles. Descent on an energy not only mitigates these issues but also offers advantages: built-in early stopping, compute that adapts to problem difficulty, fast training without differentiating through a solver, and interpretable weights that learn the constraints of the puzzle. Here we demonstrate this with a learned version of Hopfield & Tank's energy from the 80s, which we term CRAM, solves 99.996% of Sudoku-Extreme and 100% of Maze-Unique test puzzles after 42 ms and 132 ms of training on one GPU, at least 1,000x faster than looped models on these tasks. CRAM also matches baseline looped models at their highest accuracy on Sudoku-Extreme using at least 282x fewer inference FLOPs. Our work suggests two things. First, that energies are an extremely promising direction for training reasoning from data. Second, a caution against using trivially solvable benchmarks like Sudoku and Maze to test the scalability of looped reasoning techniques.",
+      "summary": "本文提出可学习能量的CRAM，通过对Hopfield-Tank式能量进行数据训练，在Sudoku-Extreme和Maze-Unique测试题上分别报告99.996%和100%的求解率，并称训练与推理效率较循环模型提升至少1000倍和282倍。原文明确限制在于这些基准本身过于简单，高准确率不能推断其在更难推理任务上的可扩展性。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 8,
+      "authors": [
+        "Benjamin Hoover",
+        "Hugh Blayney",
+        "James C. R. Whittington"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：training。"
+        },
+        {
+          "id": "zotero:d680e95392def25285a997e886e86a05",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reasoning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7928,
+      "topic_cache_token": "f94b714ac264daec3d7d80dcf4d7df56ff6f932c1947a2b7275c67b36b979e33",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.17309",
+        "sha256": "22a4b298f0d0b95cd98912d30c9340a840c8623ffb812d26ff466dbb08feb870",
+        "chars": 12000
+      }
     },
     {
       "id": "5b69826eead48a963c75ef96",
@@ -3271,7 +4129,7 @@
       "excerpt": "Decision models answer a question with a typed output, such as a choice among options with a probability for each, so one model can choose an agent's actions, evaluate actions already taken, or score every action to teach a policy with reinforcement learning. Prior work has studied them mainly as actors, judging their usefulness by how well they act. We ask whether a decision model that acts poorly can still teach well. We compare three decision models and three general LLMs as actors and judges on ALFWorld, and use JEV as a teacher on ALFWorld and WebShop. As actors, all six models are pulled away from a subgoal that must come first by an easier one. As judges that see the whole trajectory, the same models credit the steps toward that subgoal, and asking whether each action helped, rather than whether the task will succeed, separates useful from useless actions. As a teacher, JEV raises a Qwen2.5-1.5B policy over GRPO from 72.8% to 82.9% success on ALFWorld and from 56.8% to 71.4% on WebShop. These results suggest that a poor actor can still teach well, because judging an action after the episode ends reveals the consequences that acting must anticipate. Code is available at https://github.com/ZJU-REAL/decision-agents.",
       "summary": "本文在ALFWorld和WebShop上比较了三个决策模型与三个通用大语言模型作为行动者、评判者和教师的表现，并在ALFWorld上用JEV作为教师通过GRPO训练Qwen2.5-1.5B策略。对科研工作的用途是：结果提示行动表现差的决策模型仍可能适合教学，因为事后评判动作能揭示行动时需预判的后果；但材料仅给出arXiv摘要及代码链接，未提供完整实验细节，具体适用性仍需核查全文与代码。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 5,
+      "alpha_rank": 7,
       "authors": [
         "Haochen Liu",
         "Qianhao Zhu",
@@ -3314,6 +4172,79 @@
       "topic_cache_token": "24713503810853347a924c9e53df36b45b26961bd9ce0aafae33782819d247e1",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "a9bfc5d5e6273e72fcc39d34",
+      "url": "https://arxiv.org/abs/2611.17142",
+      "title": "FORGE: Force-Aware Multi-Granularity Control for Efficient Humanoid Loco-Manipulation",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-11-12T17:30:11+00:00",
+      "first_seen": "2026-11-15T01:27:14.663155+00:00",
+      "excerpt": "Humanoid loco-manipulation requires coordinated locomotion, balance regulation, and manipulation under frequent contacts, making teleoperated demonstration collection difficult: a practical controller must simultaneously provide precision, stability, and contact awareness. We propose FORGE, a force-aware multi-granularity control system with a coarse-to-fine command space spanning velocity navigation, planar foot placement, wrist-pose tracking, and optional force-conditioning inputs. Policy training requires no full-body human motion trajectories or joint-angle references; deployment consumes only sparse bilateral wrist poses relative to the pelvis, coarse motion commands, and optional desired wrist-load inputs. For sustained contact, FORGE combines a momentum observer with a learned correction trained using simulator contact-force supervision. At deployment, it estimates low-frequency, wrist-equivalent interaction forces from proprioception and reconstructed low-level arm PD torques, without wrist force/torque sensors. A quasi-static virtual-target loop uses this estimate and an optional desired applied-force input to adapt the wrist target. A frozen locomotion prior and asymmetric residual actions stabilize manipulation-induced whole-body corrections. Experiments evaluate unified-control stability, task-space tracking, quasi-static wrist-equivalent force estimation, squeezing forces during sustained contact with a rigid box, and downstream diffusion-policy execution of a squat-and-lift task across payload conditions. Website: https://bb0928.github.io/forge/.",
+      "summary": "本文提出FORGE，一种力感知多粒度控制方法，用于人形机器人移动操作，其命令空间涵盖速度导航、平面足部放置、腕部姿态跟踪及可选力条件输入，并通过物理信息混合力估计器在部署时仅凭本体感觉和重建的底层手臂PD力矩估计低频腕部等效交互力，无需腕部力/力矩传感器。该工作面向难以采集遥操作演示的人形移动操作场景，提供从粗到细的统一控制接口和持续接触下的虚拟目标调整能力；但原文仅评估准静态接触下的低频腕部等效力估计，明确不涉及全扳手传感或动态阻抗控制，未建模的连杆接触与全身耦合也未被单独辨识，且所报告性能均限于其特定实验条件。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 9,
+      "authors": [
+        "Liangjun Xing",
+        "Ke Fan",
+        "Kailin Li",
+        "Bin Wang",
+        "Xiaojie Niu",
+        "Qingwei Ben",
+        "Jiafei Cao",
+        "Wei Yao",
+        "Yebin Liu",
+        "Jingbo Wang",
+        "Weinan Zhang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：training。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6218,
+      "topic_cache_token": "4e356b60eb162f67842247de2a267d40ff1f7c88d22d51ef1fa1a740a5677d4f",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.17142",
+        "sha256": "357cbf79a5babee700728e8f5c5f4f594768d3223735b849cde7adeb8dd97bc8",
+        "chars": 12000
+      }
     },
     {
       "id": "e1a4a02f305b49e1e4fc05c6",
@@ -6991,7 +7922,7 @@
         "Ming-Hsuan Yang",
         "Xun Huang"
       ],
-      "alpha_rank": 3,
+      "alpha_rank": 5,
       "topic_labels": [
         {
           "id": "zotero:0b5a1249a1e93e49428e264a989dd3e7",
@@ -8442,10 +9373,12 @@
       "url": "https://arxiv.org/abs/2611.15939",
       "title": "Atomistic simulations of electrochemical systems with machine learning potentials",
       "source_ids": [
-        "arxiv-ai4s"
+        "arxiv-ai4s",
+        "semantic-scholar"
       ],
       "source_names": [
-        "arXiv / AI4S"
+        "arXiv / AI4S",
+        "Semantic Scholar"
       ],
       "group": "science",
       "groups": [
@@ -8515,11 +9448,13 @@
       "title": "Reward-Driven Collider Physics Challenges for Self-Improving Agentic AI via Reinforcement Learning",
       "source_ids": [
         "arxiv-ai4s",
-        "zotero"
+        "zotero",
+        "semantic-scholar"
       ],
       "source_names": [
         "arXiv / AI4S",
-        "Zotero 为你推荐"
+        "Zotero 为你推荐",
+        "Semantic Scholar"
       ],
       "group": "science",
       "groups": [
@@ -8537,8 +9472,8 @@
       "summary_kind": "upstream_tldr",
       "authors": [
         "Alexander Yue",
-        "Qibin Liu",
-        "Julia Gonski"
+        "Qi-Bin Liu",
+        "J. Gonski"
       ],
       "zotero_score": 3.6512716809238848,
       "affiliations": [],
@@ -10339,7 +11274,7 @@
       "summary_kind": "upstream_tldr",
       "authors": [
         "Paulo R. Pires",
-        "Th\\'eo Cavignac",
+        "Théo Cavignac",
         "Tiago F. T. Cerqueira",
         "Hai-Chen Wang",
         "Silvana Botti",
@@ -12983,6 +13918,95 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "a6b9793f0e014ad8a150e459",
+      "url": "https://www.semanticscholar.org/paper/85079e0bb0ed69b3622c353ecb2008e3c604d99b",
+      "title": "A Systematic Benchmark of Multifidelity Training Strategies for Reactive Machine Learning Potentials",
+      "source_ids": [
+        "semantic-scholar"
+      ],
+      "source_names": [
+        "Semantic Scholar"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "chemistry",
+        "tools"
+      ],
+      "published_at": "2026-11-11T00:00:00+00:00",
+      "first_seen": "2026-11-15T01:27:14.663155+00:00",
+      "excerpt": "Training reactive machine learning potentials (MLPs) requires extensive quantum chemical labeling of nonequilibrium configurations along reaction pathways, motivating the use of data from lower levels of theory through pretraining and Δ-learning. However, whether combining these strategies consistently improves accuracy and downstream performance remains unclear. Here, we benchmark direct and residual training, each with and without pretraining, across DPA-2, DPA-3, MACE, and DPA4-Neo, using 17.6 million configurations labeled with GFN2-xTB and 198,622 configurations labeled at the ωB97X-D/def2-TZVP level. With the full DFT training set, pretrained Δ-learning achieves the lowest energy or force MAE averaged over three training seeds in 31 of 32 combinations of architecture, data set, and property. Learning curves for DPA4-Neo nevertheless show that direct finetuning reaches the MAE of a model trained from scratch on the full data set using no more DFT training configurations than pretrained Δ-learning in all eight combinations of data set and property, while avoiding repeated GFN2-xTB evaluations during inference. Pretrained Δ-learning also improves reaction energies and forward barriers across all four architectures on GDB-10-rxn and reduces median Hessian eigenvalue errors for the evaluated DPA4-Neo checkpoint. However, local force errors can remain incompletely corrected, and these improvements do not consistently increase the success rates of reaction search workflows initialized from specified reactant and product geometries, indicating that the preferred protocol depends on the data budget, target property, and downstream workflow.",
+      "summary": "本文在DPA-2、DPA-3、MACE和DPA4-Neo四种架构上，系统比较了直接训练与残差训练各自有无预训练的多保真训练策略，使用1760万条GFN2-xTB标注构型和198622条ωB97X-D/def2-TZVP标注构型进行基准测试。该基准可用于判断不同数据预算、目标性质和下游工作流下应优先选择哪种训练协议，但原文明确指出局部力误差可能无法被完全校正，且这些改进并未一致提升从指定反应物和产物几何出发的反应搜索工作流成功率，因此优选方案取决于具体条件。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "Bo-Wen Li",
+        "Shu-Wen Zhang",
+        "Si-Xuan Mi",
+        "Jin Xiao",
+        "Jia-Bin Yin",
+        "Duo-Duo Zhang",
+        "J. Z. Zhang",
+        "Han Wang",
+        "Tong Zhu"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        },
+        {
+          "id": "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+          "facet": "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：DFT。"
+        },
+        {
+          "id": "zotero:e09a09615a9a79995ffd756fcf67aa3f",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8765,
+      "topic_cache_token": "5cb6177555245487f79920cd066d0c164ae31a890a208786a0d392a9b11a7aea",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "b06c2cabb303879e8b494b2c",
       "url": "https://arxiv.org/abs/2611.14467",
       "title": "A Theory of Policy Optimization in Post-Training: Coverage Collapse and Reference Resets",
@@ -13067,7 +14091,7 @@
       "excerpt": "Understanding 4D scenes is a core challenge in visual intelligence, requiring models to jointly capture scene geometry, appearance, and dynamics from partial observations. However, existing approaches are subdivided into feedforward models for direct geometric prediction, and generative models for visual synthesis. We introduce UGG, a unified framework for 4D scene understanding that jointly models RGB video and geometric representations such as depth and camera pose. By assigning different noise levels across modalities and time, UGG formulates visual generation and geometric prediction as conditional completion within a single generative model. This flexible formulation enables the model to learn from diverse, heterogeneous datasets with different subsets of geometric and visual annotations. Furthermore, our generative formulation enables inference-time search over multiple plausible scene hypotheses, using geometric evidence extracted from observed RGB frames to improve geometric prediction without ground truth geometry. We demonstrate UGG's effectiveness over non-unified baselines across camera-controlled video generation, depth estimation, and camera pose prediction, including in challenging sparse observation settings. Code and visualizations are available at https://ugg-model.github.io/",
       "summary": "本文提出UGG统一生成式几何模型，将RGB视频与深度、相机位姿等几何表示联合建模，通过跨模态和时间的噪声分配，把视觉生成与几何预测统一为单一生成模型中的条件补全，并支持在推理阶段利用观测RGB帧中的几何证据进行多假设搜索。该框架可借助几何与视觉标注子集各异的异构数据集进行学习，在相机控制视频生成、深度估计和相机位姿预测（包括稀疏观测场景）中相对非统一基线展示了有效性；但摘要未给出具体性能数字，且相关效果仍需以论文正文和代码为准。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 7,
+      "alpha_rank": 10,
       "authors": [
         "Amani Kiruga",
         "Zhiyi Li",
@@ -13204,7 +14228,7 @@
       "excerpt": "Energy-based models (EBMs) define a distribution through a scalar energy, $p_θ(x)\\propto\\exp(-E_θ(x))$, and are usually presented as one model family among many. This tutorial has a broader goal: beyond introducing EBMs, it uses them as a single lens that connects the different aspects of machine learning. Any EBM is specified by three choices, the energy, which determines what the model represents; the inference procedure, which samples from or optimizes the energy; and the learning method, which fits the energy to data. We first develop these components, including sampling, variational inference, and learning by maximum likelihood, noise contrastive estimation, pseudolikelihood, score matching, and adversarial training, and show that the learning methods share one contrastive structure. We then show that discriminative models, generative models such as GANs, normalizing flows, diffusion and autoregressive models, representation learning methods such as contrastive learning, word2vec, BERT, denoising auto-encoders, and diffusion representations, reinforcement learning with EBM policies and world models, inverse reinforcement learning, and planning, as well as inference-time computation with verifiers, are all EBMs that differ in these three choices, mostly in how they handle the partition function and sampling. This view explains existing methods, organizes them into a common framework, and suggests new algorithms by replacing one component while keeping the others, with composition of energies as a principled way to combine learned models at inference time.",
       "summary": "本文以能量基模型为统一视角，将判别模型、生成模型、表示学习、强化学习及推理阶段计算等方法统一为能量函数、推理过程和学习方法三要素组合，并指出各学习方法共享对比结构，还提出通过替换单一组件或组合能量来设计新算法。该视角可用于梳理和解释现有机器学习方法，而将能量组合用于推理时组合已学模型，则被原文视为一种有原则的做法。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 10,
+      "alpha_rank": 3,
       "authors": [
         "Bo Dai",
         "Yilun Du"
@@ -28802,6 +29826,45 @@
       }
     },
     {
+      "id": "14e90e72d3401ddf817f6448",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber",
+      "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-11-05T09:00:00+00:00",
+      "first_seen": "2026-11-06T02:01:23.988294+00:00",
+      "excerpt": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
+      "summary": "本文介绍 OpenAI 的网络安全模型 GPT‑6 Cyber，据称用于发现可利用漏洞并开发修复方案，并经过训练以保持在授权范围内。其科研用途与限制需以原文及后续独立验证为准。",
+      "summary_kind": "ai_summary",
+      "authors": [],
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "classified",
+      "topic_scope": "non_research",
+      "content_kind": "web:model_release",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "scope_rule",
+      "topic_coverage": 0.6818,
+      "topic_cache_token": "a6b293bc53ffd00ef08d1ba7767cb4f28f6bcd4a5bea5b04beba21c89427d138",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "c0e4ba808aef095cb32ec757",
       "url": "https://doi.org/10.1002/adfm.77487",
       "title": "Mn Single Atoms Coupled With MnO Grains as a Hierarchical Parallel Catalyst to Accelerate Polysulfide Conversion Kinetics for Room-Temperature Sodium-Sulfur Batteries",
@@ -28819,7 +29882,7 @@
       "tags": [
         "materials"
       ],
-      "published_at": "2026-11-05T11:19:58+00:00",
+      "published_at": "2026-11-05T08:00:00+00:00",
       "first_seen": "2026-11-07T01:33:31.038263+00:00",
       "excerpt": "",
       "summary": "",
@@ -28891,7 +29954,7 @@
       "tags": [
         "materials"
       ],
-      "published_at": "2026-11-05T11:19:58+00:00",
+      "published_at": "2026-11-05T08:00:00+00:00",
       "first_seen": "2026-11-08T00:59:26.012870+00:00",
       "excerpt": "",
       "summary": "",
@@ -28942,45 +30005,6 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.5,
       "topic_cache_token": "c4cf93a9634e34798707f4e21eef755f50a9e9ea12a5d0cc6ba1e88feecdd98c",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "14e90e72d3401ddf817f6448",
-      "url": "https://openai.com/index/introducing-gpt-6-cyber",
-      "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
-      "source_ids": [
-        "openai"
-      ],
-      "source_names": [
-        "OpenAI"
-      ],
-      "group": "frontier",
-      "groups": [
-        "frontier"
-      ],
-      "type": "report",
-      "tags": [
-        "agents"
-      ],
-      "published_at": "2026-11-05T09:00:00+00:00",
-      "first_seen": "2026-11-06T02:01:23.988294+00:00",
-      "excerpt": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
-      "summary": "本文介绍 OpenAI 的网络安全模型 GPT‑6 Cyber，据称用于发现可利用漏洞并开发修复方案，并经过训练以保持在授权范围内。其科研用途与限制需以原文及后续独立验证为准。",
-      "summary_kind": "ai_summary",
-      "authors": [],
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "classified",
-      "topic_scope": "non_research",
-      "content_kind": "web:model_release",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "scope_rule",
-      "topic_coverage": 0.6818,
-      "topic_cache_token": "a6b293bc53ffd00ef08d1ba7767cb4f28f6bcd4a5bea5b04beba21c89427d138",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -39316,16 +40340,7 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [
-        "Xiangyu Liu",
-        "Qingdong He",
-        "Fang Guo",
-        "Jinfang Wu",
-        "Jie Qi",
-        "Feilong Gong",
-        "Jian Liu",
-        "Wenbo Wang"
-      ],
+      "authors": [],
       "journal_id": "matter",
       "journal_title": "Matter",
       "journal_issns": [
@@ -172889,7 +173904,7 @@
       "doi": "10.1038/s41586-026-11073-7",
       "published_online_at": "2026-10-07T00:00:00+00:00",
       "published_print_at": "2026-10-08T00:00:00+00:00",
-      "indexed_at": "2026-10-07T15:52:58+00:00",
+      "indexed_at": "2026-11-13T10:26:02+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -173341,7 +174356,7 @@
       "doi": "10.1038/s41586-026-11153-8",
       "published_online_at": "2026-10-07T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-22T22:38:13+00:00",
+      "indexed_at": "2026-11-14T10:55:19+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -174702,7 +175717,7 @@
       "doi": "10.1038/s41586-026-11142-x",
       "published_online_at": "2026-10-07T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-01T00:50:19+00:00",
+      "indexed_at": "2026-11-14T10:15:23+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -193427,7 +194442,19 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Dijie Yao, Qiuhua Yu, Yifan Zheng, Huizhi Chen, Cheng Shen, Jiajia Yang, Zhenwen Liang, Kai Tao, Gang Chen, Fei Liu, Fengwei Huo, Junyou Yang, Jin Wu"
+        "Dijie Yao",
+        "Qiuhua Yu",
+        "Yifan Zheng",
+        "Huizhi Chen",
+        "Cheng Shen",
+        "Jiajia Yang",
+        "Zhenwen Liang",
+        "Kai Tao",
+        "Gang Chen",
+        "Fei Liu",
+        "Fengwei Huo",
+        "Junyou Yang",
+        "Jin Wu"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -194604,7 +195631,7 @@
       "doi": "10.1038/s41586-026-11078-2",
       "published_online_at": "2026-09-30T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-10T21:35:24+00:00",
+      "indexed_at": "2026-11-13T14:09:48+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -195340,7 +196367,7 @@
       "doi": "10.1038/s41586-026-11064-8",
       "published_online_at": "2026-09-30T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-24T02:38:39+00:00",
+      "indexed_at": "2026-11-13T13:51:11+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -196977,7 +198004,16 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Ziting Chen, Pengyuan Wang, Jiaqi Yu, Yihao Yang, Puwu Liang, Ahmed Abdel-Aziz, Mujtaba Aminu Muhammad, Xiang Hu, Junxiang Chen, Zhenhai Wen"
+        "Ziting Chen",
+        "Pengyuan Wang",
+        "Jiaqi Yu",
+        "Yihao Yang",
+        "Puwu Liang",
+        "Ahmed Abdel-Aziz",
+        "Mujtaba Aminu Muhammad",
+        "Xiang Hu",
+        "Junxiang Chen",
+        "Zhenhai Wen"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -204031,7 +205067,16 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Wei He, Huiling Fang, Zijing Huo, Jiaqi Yu, Puwu Liang, Mujtaba Aminu Muhammad, Ahmed Abdel-Aziz, Xiang Hu, Suqin Ci, Zhenhai Wen"
+        "Wei He",
+        "Huiling Fang",
+        "Zijing Huo",
+        "Jiaqi Yu",
+        "Puwu Liang",
+        "Mujtaba Aminu Muhammad",
+        "Ahmed Abdel-Aziz",
+        "Xiang Hu",
+        "Suqin Ci",
+        "Zhenhai Wen"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -206456,7 +207501,7 @@
       "doi": "10.1038/s41586-026-11059-5",
       "published_online_at": "2026-09-23T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-22T22:38:02+00:00",
+      "indexed_at": "2026-11-14T10:35:43+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -206595,7 +207640,7 @@
       "doi": "10.1038/s41586-026-11169-0",
       "published_online_at": "2026-09-23T00:00:00+00:00",
       "published_print_at": "2026-11-12T00:00:00+00:00",
-      "indexed_at": "2026-11-11T14:22:03+00:00",
+      "indexed_at": "2026-11-14T06:38:31+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -212902,7 +213947,7 @@
       "doi": "10.1038/s41586-026-11032-2",
       "published_online_at": "2026-09-16T00:00:00+00:00",
       "published_print_at": "2026-10-08T00:00:00+00:00",
-      "indexed_at": "2026-11-12T12:32:34+00:00",
+      "indexed_at": "2026-11-14T05:23:43+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -213064,7 +214109,7 @@
       "doi": "10.1038/s41586-026-11000-w",
       "published_online_at": "2026-09-16T00:00:00+00:00",
       "published_print_at": "2026-09-17T00:00:00+00:00",
-      "indexed_at": "2026-11-07T03:19:26+00:00",
+      "indexed_at": "2026-11-14T01:44:03+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -222912,7 +223957,7 @@
       "doi": "10.1016/j.matt.2026.103012",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-01T09:23:41+00:00",
+      "indexed_at": "2026-11-14T22:09:56+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -223374,7 +224419,7 @@
       "doi": "10.1126/science.aee7868",
       "published_online_at": null,
       "published_print_at": "2026-09-10T00:00:00+00:00",
-      "indexed_at": "2026-11-12T08:07:17+00:00",
+      "indexed_at": "2026-11-14T13:07:52+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -224450,7 +225495,7 @@
       "doi": "10.1038/s41586-026-11001-9",
       "published_online_at": "2026-09-09T00:00:00+00:00",
       "published_print_at": "2026-10-22T00:00:00+00:00",
-      "indexed_at": "2026-11-08T08:23:49+00:00",
+      "indexed_at": "2026-11-13T17:02:12+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -238318,7 +239363,7 @@
       "doi": "10.1016/j.matt.2026.102828",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-02T02:10:49+00:00",
+      "indexed_at": "2026-11-14T03:45:41+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -238858,7 +239903,7 @@
       "doi": "10.1038/s41586-026-10529-0",
       "published_online_at": "2026-09-02T00:00:00+00:00",
       "published_print_at": "2026-09-03T00:00:00+00:00",
-      "indexed_at": "2026-11-10T22:10:36+00:00",
+      "indexed_at": "2026-11-14T04:30:52+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -238990,7 +240035,7 @@
       "doi": "10.1038/s41586-026-10672-8",
       "published_online_at": "2026-09-02T00:00:00+00:00",
       "published_print_at": "2026-09-03T00:00:00+00:00",
-      "indexed_at": "2026-11-06T23:23:01+00:00",
+      "indexed_at": "2026-11-15T00:09:07+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -239072,6 +240117,91 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.8,
       "topic_cache_token": "4a0af415b7471b3bf777fb0ace920d7e8390f0b13842aae104b57a0a0fb4c58b",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "ff47a6a8f79fbd22b7ffcfa1",
+      "url": "https://doi.org/10.1038/s41586-026-10898-6",
+      "title": "Designing physics experiments with artificial intelligence",
+      "source_ids": [
+        "journal-nature"
+      ],
+      "source_names": [
+        "Nature"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-09-02T00:00:00+00:00",
+      "first_seen": "2026-11-15T01:27:14.663155+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Jonathan Klimesch",
+        "Sören Arlt",
+        "Carlos Ruiz-Gonzalez",
+        "Carla Rodríguez",
+        "Xuemei Gu",
+        "Philipp Haslinger",
+        "Pietro Vischia",
+        "Christian Haack",
+        "Yehonathan Drori",
+        "Rana Adhikari",
+        "Markus Arndt",
+        "Michael Kagan",
+        "Lukas Heinrich",
+        "Mario Krenn"
+      ],
+      "journal_id": "nature",
+      "journal_title": "Nature",
+      "journal_issns": [
+        "0028-0836",
+        "1476-4687"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41586-026-10898-6",
+      "published_online_at": "2026-09-02T00:00:00+00:00",
+      "published_print_at": "2026-09-03T00:00:00+00:00",
+      "indexed_at": "2026-11-13T22:17:09+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题直接命中定义关键词：artificial intelligence；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_ids": [
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 1.0,
+      "topic_cache_token": "c8cc5ef28fee06532eafa4132c27812a912f1b4e6fd18dc5f9587c1792594d29",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -272368,7 +273498,7 @@
       "excerpt": "Among parallel decoding paradigms, diffusion large language models (dLLMs) have emerged as a promising candidate that balances generation quality and throughput. However, their integration with Mixture-of-Experts (MoE) architectures is constrained by an expert explosion: as the number of tokens generated in parallel increases, the number of distinct experts activated grows nearly linearly. This results in substantial memory traffic that pushes inference into a memory-bound regime, negating the efficiency gains of both MoE and parallel decoding. To address this challenge, we propose Dynamic Expert Sharing (DES), a novel technique that shifts MoE optimization from token-centric pruning and conventional expert skipping methods to sequence-level coreset selection. To maximize expert reuse, DES identifies a compact, high-utility set of experts to satisfy the requirements of an entire parallel decoding block. We introduce two innovative selection strategies: (1) Intra-Sequence Sharing (DES-Seq), which adapts optimal allocation to the sequence level, and (2) Saliency-Aware Voting (DES-Vote), a novel mechanism that allows tokens to collectively elect a coreset based on aggregated router weights. Extensive experiments on MoE dLLMs demonstrate that DES reduces unique expert activations by over 55% and latency by up to 38%, while retaining 99% of vanilla accuracy, effectively decoupling memory overhead from the degree of parallelism.",
       "summary": "本文提出动态专家共享（DES）技术，将MoE扩散大语言模型的专家优化从token级剪枝和专家跳过大方法转向序列级核心集选择，并引入序列内共享（DES-Seq）与显著性感知投票（DES-Vote）两种策略。该工作针对并行解码中专家激活随token数近线性增长导致的内存受限问题，实验报告在MoE dLLMs上减少超过55%的唯一专家激活、延迟最多降低38%并保持99%原始准确率，但上述性能数据来自作者实验声明，尚未经独立验证。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 3,
+      "alpha_rank": 4,
       "authors": [
         "Hao Mark Chen",
         "Zhiwen Mo",
@@ -273250,13 +274380,13 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-11-14T03:32:11.091935+00:00",
+    "last_success": "2026-11-15T01:27:14.663155+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 2,
-      "unclassified": 1900,
+      "classified": 16,
+      "unclassified": 1907,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
       "quality_status": "unmeasured",
@@ -273360,8 +274490,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
       "status": "ok",
       "count": 10
     },
@@ -273369,7 +274499,7 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -273380,8 +274510,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
       "status": "ok",
       "count": 11
     },
@@ -273389,8 +274519,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
       "status": "ok",
       "count": 12
     },
@@ -273398,8 +274528,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
       "status": "ok",
       "count": 12
     },
@@ -273407,8 +274537,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
       "status": "ok",
       "count": 1
     },
@@ -273416,8 +274546,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
       "status": "ok",
       "count": 12
     },
@@ -273425,8 +274555,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
       "status": "ok",
       "count": 0
     },
@@ -273438,14 +274568,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
-      "count": 192,
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "count": 202,
       "counters": {
         "relevant": 4,
-        "pending": 188,
+        "pending": 198,
         "excluded": 3,
-        "fetched": 184,
+        "fetched": 199,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -273458,14 +274588,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
       "count": 92,
       "counters": {
         "relevant": 13,
         "pending": 79,
-        "excluded": 303,
-        "fetched": 194,
+        "excluded": 308,
+        "fetched": 200,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -273478,14 +274608,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
       "count": 205,
       "counters": {
         "relevant": 33,
         "pending": 172,
-        "excluded": 1557,
-        "fetched": 671,
+        "excluded": 1563,
+        "fetched": 681,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -273497,20 +274627,18 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T01:59:34.814218+00:00",
-      "count": 192,
+      "status": "ok",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "count": 189,
       "counters": {
-        "relevant": 26,
+        "relevant": 23,
         "pending": 166,
-        "excluded": 932,
-        "fetched": 311,
+        "excluded": 926,
+        "fetched": 466,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "journal-matter",
@@ -273520,14 +274648,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
-      "count": 108,
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "count": 110,
       "counters": {
         "relevant": 1,
-        "pending": 107,
+        "pending": 109,
         "excluded": 2,
-        "fetched": 84,
+        "fetched": 87,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -273539,20 +274667,18 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-13T03:34:18.271952+00:00",
+      "status": "ok",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
       "count": 89,
       "counters": {
         "relevant": 1,
         "pending": 88,
-        "excluded": 713,
-        "fetched": 75,
+        "excluded": 712,
+        "fetched": 250,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "journal-nature-communications",
@@ -273562,14 +274688,14 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
       "last_success": "2026-11-09T02:57:46.342559+00:00",
-      "count": 1081,
+      "count": 1077,
       "counters": {
         "relevant": 13,
-        "pending": 1068,
-        "excluded": 1071,
-        "fetched": 208,
+        "pending": 1064,
+        "excluded": 1074,
+        "fetched": 8,
         "abstracts_recovered": 0
       },
       "errors": [
@@ -273584,12 +274710,12 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
-      "count": 30,
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "count": 29,
       "counters": {
         "relevant": 0,
-        "pending": 30,
+        "pending": 29,
         "excluded": 39,
         "fetched": 16,
         "abstracts_recovered": 0
@@ -273604,14 +274730,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
       "count": 136,
       "counters": {
         "relevant": 1,
         "pending": 135,
         "excluded": 248,
-        "fetched": 110,
+        "fetched": 112,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -273624,14 +274750,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
       "count": 27,
       "counters": {
         "relevant": 2,
         "pending": 25,
-        "excluded": 746,
-        "fetched": 190,
+        "excluded": 751,
+        "fetched": 197,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -273640,8 +274766,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
       "status": "ok",
       "count": 1
     },
@@ -273649,8 +274775,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
       "status": "ok",
       "count": 12
     },
@@ -273658,8 +274784,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
       "status": "ok",
       "count": 0
     },
@@ -273667,8 +274793,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
       "status": "ok",
       "count": 0
     },
@@ -273676,8 +274802,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T03:32:11.091935+00:00",
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:27:14.663155+00:00",
       "status": "ok",
       "count": 12
     },
@@ -273685,22 +274811,22 @@
       "id": "zotero",
       "name": "Zotero 为你推荐",
       "status": "ok",
-      "count": 20,
-      "last_attempt": "2026-11-14T03:32:11.091935+00:00",
-      "last_success": "2026-11-14T01:58:37.060270+00:00",
-      "run_id": "43543272247",
+      "count": 0,
+      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_success": "2026-11-15T01:26:28.970036+00:00",
+      "run_id": "43663054465",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
     }
   ],
   "summaries": {
     "status": "ok",
-    "generated": 8,
+    "generated": 4,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
       "status": "partial",
-      "attempted": 8,
-      "public_html": 5,
+      "attempted": 5,
+      "public_html": 2,
       "bohr_graph": 0,
       "fallback": 3,
       "bohr_calls": 0
