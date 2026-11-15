@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-15T01:27:14.663155+00:00",
+  "generated_at": "2026-11-15T03:03:37.573487+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -1625,6 +1625,1300 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.6364,
       "topic_cache_token": "c4695fe3c614dacbf76fb2a3e5933b586c25ee6943677bcd1eb9e5bfe76f7492",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "eb6b816387b0f498a06ee545",
+      "url": "https://doi.org/10.1038/s41467-026-79146-9",
+      "title": "Built-in electric field driven MXene/perovskite Schottky heterojunction for photo-electro-thermal energy redistribution in thermochromic smart windows",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Xin Li",
+        "Xiaoke Lu",
+        "Chuyao Wang",
+        "Qiang Li",
+        "Yang Fu",
+        "Wenqi Wang",
+        "Rui Zhang",
+        "Qiuyi Shi",
+        "Ze Li",
+        "Dan Feng",
+        "Sai Liu",
+        "Yihao Zhu",
+        "Xiaomeng Fan",
+        "Hongjing Wu",
+        "Yongsheng Liu",
+        "Chi Yan Tso"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-79146-9",
+      "published_online_at": "2026-11-14T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T15:31:34+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:0ed96d5990b979e052f34cb9060b736d",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：MXene；未使用摘要，需复核。"
+        },
+        {
+          "id": "zotero:d05fd259021f78cf27fb6def1ecb915e",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：perovskite；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0ed96d5990b979e052f34cb9060b736d",
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_ids": [
+        "zotero:0ed96d5990b979e052f34cb9060b736d",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5714,
+      "topic_cache_token": "37da2a98e33e6418247edb20863eb38db370bc543448ad4d0ff75f12f6e6ca67",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "e81a0456495c2e6eb2bbc460",
+      "url": "https://doi.org/10.1038/s41467-026-79602-6",
+      "title": "Enhancer-driven gene regulatory network of human forebrain development provides insights into autism",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Alexandre Jourdon",
+        "Jessica Mariani",
+        "Abhiram Natu",
+        "Feinan Wu",
+        "Boxun Li",
+        "Davide Capauto",
+        "Kevin T. Hagy",
+        "Scott Norton",
+        "Livia Tomasini",
+        "Alexias Safi",
+        "Anahita Amiri",
+        "Jeremy Schreiner",
+        "Cindy Khanh Nguyen",
+        "Neal Nolan",
+        "Matthew P. Nelson",
+        "Daniel M. Ramos",
+        "Michael E. Ward",
+        "Anna Szekely",
+        "James C. McPartland",
+        "Kevin Pelphrey",
+        "Pamela Ventola",
+        "Katarzyna Chawarska",
+        "Charles A. Gersbach",
+        "Gregory E. Crawford",
+        "Alexej Abyzov",
+        "Flora M. Vaccarino"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-79602-6",
+      "published_online_at": "2026-11-14T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T11:21:06+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6,
+      "topic_cache_token": "846ec5a8c2f7a73a5e562bc04db03bbcd682cfa5532d22efc6c71bd4b92a5345",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "da24c2265f3ec73be75500ab",
+      "url": "https://doi.org/10.1038/s41467-026-79233-x",
+      "title": "Taming crystallization to achieve superior soft magnetic performance via fine nanocrystallines",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "R. C. Sun",
+        "X. S. Li",
+        "J. Zhou",
+        "Y. Q. Yan",
+        "S. Y. Di",
+        "J. H. Luan",
+        "H. L. Peng",
+        "B. A. Sun",
+        "H. B. Ke",
+        "W. H. Wang",
+        "H. Y. Bai"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-79233-x",
+      "published_online_at": "2026-11-14T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T04:31:58+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.875,
+      "topic_cache_token": "6ec4675673dd94efd179b33569ae2df4e9a724e5468bc184ec933205a23477ad",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "d48cb4cd1a91f5f6a6671ea7",
+      "url": "https://doi.org/10.1038/s41467-026-79395-8",
+      "title": "Kinetic balancing for near-equilibrium growth of defect-suppressed lead bromide perovskite single crystals",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Xiao Zhao",
+        "Ziqing Li",
+        "Tao Zhou",
+        "Yingying Hao",
+        "Shimao Wang",
+        "Gang Meng",
+        "Yadong Xu",
+        "Xiaosheng Fang"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-79395-8",
+      "published_online_at": "2026-11-14T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T08:24:59+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:d05fd259021f78cf27fb6def1ecb915e",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：perovskite；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8,
+      "topic_cache_token": "f4c87d7c00b2e742a07f981685d79582967e0ab1b7e2f137787f4e445947464b",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "c624aa6b4e557ed6181e69fe",
+      "url": "https://doi.org/10.1038/s41467-026-79482-w",
+      "title": "A Miniaturized Electrostatic Field Sensor Based on MOS Depletion-Layer Capacitance Modulation",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Xinting Liu",
+        "Shilin Wu",
+        "Yihan Ye",
+        "Xiaozhou Jiang",
+        "Fangwei Liang",
+        "Xiaotong Shen",
+        "Weiyi Ye",
+        "Chuanyang Li",
+        "Bo Zhang",
+        "Qi Li",
+        "Jinliang He",
+        "Jun Hu"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-79482-w",
+      "published_online_at": "2026-11-14T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T12:25:19+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.25,
+      "topic_cache_token": "984c6a0fa896b2d13305eb9d55e67a07fcf49c7013c24e8de0c625e888db2348",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "be8649c6b2ead77cf50482cc",
+      "url": "https://doi.org/10.1038/s41467-026-79569-4",
+      "title": "Emergent mesoscale nanoparticle patterns from a non-equilibrium liquid lens",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Jonathan Palumbo",
+        "Anjali Asthagiri",
+        "Tobias Hanrath"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-79569-4",
+      "published_online_at": "2026-11-14T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T11:22:57+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8571,
+      "topic_cache_token": "2d07688f8287a00b41938caa9f555a7de4069517c5d5f13beb97b5d957a401ff",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "a565cc93e95609326610f3c4",
+      "url": "https://doi.org/10.1038/s41467-026-79442-4",
+      "title": "Global patterns of radial growth-structural heterogeneity relationships in forests",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Yuan Yao",
+        "Shumiao Shu",
+        "Jian Feng",
+        "Hanying Hu",
+        "Wenzheng Yang",
+        "Ruixuan Liu",
+        "Xiaodan Wang",
+        "Sheng Zhang"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-79442-4",
+      "published_online_at": "2026-11-14T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T10:23:50+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7143,
+      "topic_cache_token": "317e3cfce0edd3455d4d7624256e33a2a8dc720348c36019bb3cd1ec20612c04",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "9e742ca695248c17f37b8a92",
+      "url": "https://doi.org/10.1038/s41467-026-79324-9",
+      "title": "Single cell RNA sequencing reveals unexpected heterogeneity and identifies AP2XI-6 as a mature bradyzoite specific cell cycle regulator",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Emma Franklin",
+        "Argenis Arriojas Maldonado",
+        "Kyra Lee",
+        "Grace Hilliard",
+        "Bruno Martorelli Di Genova",
+        "Gary E. Ward",
+        "Kourosh Zarringhalam",
+        "Robyn Kent"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-79324-9",
+      "published_online_at": "2026-11-14T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T15:30:29+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7333,
+      "topic_cache_token": "a77fb4ae76e874e75f2e6affea20f6813d8965a49bff5273e8787e9654c4dcdc",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "9ccf9529821d51773a3d60b0",
+      "url": "https://doi.org/10.1038/s41467-026-79307-w",
+      "title": "Phenotypic variation in Drosophila complex traits is influenced more by genotype and environmental interactions than by mitonuclear coevolutionary history",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Leah J. Darwin",
+        "Faye A. Lemieux",
+        "Rebecca Z. Bachtel",
+        "Jack H. Blocker",
+        "Camille P. Brown",
+        "Alexander D. Griffin",
+        "Jacob D. Lerman",
+        "Olivia C. Maule",
+        "Yevgeniy Raynes",
+        "David M. Rand"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-79307-w",
+      "published_online_at": "2026-11-14T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T13:32:20+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6154,
+      "topic_cache_token": "8cf4090f3122c9cc1f80f3896a0ea934c519bc15c9f96beaad10958990e66d32",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "944fccd503e37a720f1b12b4",
+      "url": "https://doi.org/10.1038/s41467-026-79388-7",
+      "title": "Glutamine binding and sodium coordination reveal the transport mechanism of y⁺LAT1/CD98hc",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "David Aparicio",
+        "Marc González-Subías",
+        "Patricia Gómez-Gejo",
+        "Héctor Gaitán-Peñas",
+        "Miguel Luengo",
+        "Josep Lluis Gelpí",
+        "Maria Martínez-Molledo",
+        "Adrià Caballe",
+        "Oscar Llorca",
+        "Victor Guallar",
+        "Raúl Estévez",
+        "Manuel Palacín"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-79388-7",
+      "published_online_at": "2026-11-14T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T11:22:56+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5556,
+      "topic_cache_token": "0455d08190b093059fc1826203347ffeb57c9e3d2cde7346714baa84785faa39",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "793bc137911d13c7a4daf1a7",
+      "url": "https://doi.org/10.1038/s41467-026-79607-1",
+      "title": "Sunflower pollen microgels enable sonication-free dispersion of carbon nanotubes for bio-based conductive inks",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Changdan Gao",
+        "Di Yang",
+        "Jingwen Liang",
+        "Zongyu Wang",
+        "Mingyu Zhao",
+        "Ze Zhao",
+        "Hongbing Deng"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-79607-1",
+      "published_online_at": "2026-11-14T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T18:21:43+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.2727,
+      "topic_cache_token": "11776ed90d75a56aaf47c26f2cdae353fe1744fab0f811248a9c119830ae4d7d",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "74b54d56d95d257c57e4e3bb",
+      "url": "https://doi.org/10.1038/s41467-026-78951-6",
+      "title": "Bright and stable near-infrared tin-perovskite LEDs enabled by efficient optical and thermal management",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Yuhan Zhou",
+        "Yangyu Liu",
+        "Chunping Pu",
+        "Qipan Yu",
+        "Xingjiao Feng",
+        "Danping Chen",
+        "Wenxiao Niu",
+        "Yuhui Ye",
+        "Xiaoyong Wang",
+        "Tao Yu",
+        "Feng Gao",
+        "Zhigang Zou",
+        "Chunxiong Bao"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-78951-6",
+      "published_online_at": "2026-11-14T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T18:21:43+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:d05fd259021f78cf27fb6def1ecb915e",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：perovskite；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:d05fd259021f78cf27fb6def1ecb915e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6,
+      "topic_cache_token": "eaff241a38fe93a9766bdb54fd883cb35c6bb0cddb777503d2b62f7d96247e3e",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "4b81b239d4e8aa24b337a978",
+      "url": "https://doi.org/10.1038/s41467-026-79121-4",
+      "title": "A subspecialty diagnostic system powered by self-supervised learning for cervical histopathology",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Yizhi Wang",
+        "Li Chen",
+        "Qiang Huang",
+        "Tian Guan",
+        "Xi Deng",
+        "Zhiyuan Shen",
+        "Jiawen Li",
+        "Xinrui Chen",
+        "Bin Hu",
+        "Zhe Lei",
+        "Xitong Ling",
+        "Taojie Zhu",
+        "Zirui Huang",
+        "Deshui Yu",
+        "Fanyi Zeng",
+        "Yan Liu",
+        "Jiurun Chen",
+        "Lianghui Zhu",
+        "Qiming He",
+        "Yiqing Liu",
+        "Diwei Shi",
+        "Hanzhong Liu",
+        "Junbo Hu",
+        "Hongyi Gao",
+        "Zhen Song",
+        "Xilong Zhao",
+        "Lingchuan Guo",
+        "Chao He",
+        "Ming Zhao",
+        "Yonghong He"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-79121-4",
+      "published_online_at": "2026-11-14T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T08:25:09+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.625,
+      "topic_cache_token": "fc0e85576ffc28b250b2b163bf998ac7369e69c029aa107d33aa74fe30672ecc",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "4481df392cf230adeeb2474e",
+      "url": "https://doi.org/10.1038/s41467-026-79788-9",
+      "title": "Tuning methanol-CO selectivity in CO2 hydrogenation by Ga coordination engineering in ZnGa2O4",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Zhufu Fu",
+        "Huang Qin",
+        "Yunian Chen",
+        "Xi Gao",
+        "Yuan Xue",
+        "Hai Zhang",
+        "Tianfu Wang"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-79788-9",
+      "published_online_at": "2026-11-14T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T11:21:16+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5,
+      "topic_cache_token": "4e96dce2d9d5251f52c8ad95b9096073b1e1387b9e2ba643a630927750f7e6ec",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "2e621a391c31437c65a2df12",
+      "url": "https://doi.org/10.1038/s41467-026-79430-8",
+      "title": "Light-driven oxidative coupling of methane via charge-symmetry-breaking",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Fei Xue",
+        "Chunyang Zhang",
+        "Wenlong Fu",
+        "Cheng Cheng",
+        "Xueli Yan",
+        "Saiya Liu",
+        "Feng Liu",
+        "Huiping Peng",
+        "Hong-chao Li",
+        "Qiuyue Zhang",
+        "Yuanbin Qin",
+        "Zhiwei Hu",
+        "Wei-Hsiang Huang",
+        "Chih-wen Pao",
+        "Mingshu Chen",
+        "Maochang Liu",
+        "Xiaoqing Huang",
+        "Yong Xu"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-79430-8",
+      "published_online_at": "2026-11-14T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T15:32:07+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.4,
+      "topic_cache_token": "e964ab3dd4ecb72421afaac5f3c12b81fc214e3a092e4fb231e520ab57c4f952",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "2d8dbfcd123211d4fdb8a5c0",
+      "url": "https://doi.org/10.1038/s41467-026-79375-y",
+      "title": "Agricultural economic responses to ecoclimate teleconnections induced by forest loss",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Yayun B. Chen",
+        "Lunyu C. Zhao",
+        "Chengcheng J. Fei",
+        "Bruce A. McCarl",
+        "Xingguo Wang",
+        "Mengqiao Q. Liu",
+        "David D. Breshears",
+        "Xiao Feng",
+        "Elizabeth Baldwin",
+        "Haotian Cheng",
+        "Jonathan J. Derbridge",
+        "Jessie D. Golding",
+        "Aaron M. Lien",
+        "Laura López-Hoffman",
+        "Danielle M. McLaughlin",
+        "Abigail L. S. Swann",
+        "José R. Soto"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-79375-y",
+      "published_online_at": "2026-11-14T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T15:32:20+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.625,
+      "topic_cache_token": "f628d9af9f9fa75073fd882e5a66cef0e1de941a4206a9b3f6a3ca552310f77c",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "1e0f8fe260b17b14eda3db65",
+      "url": "https://doi.org/10.1038/s41467-026-79722-z",
+      "title": "A split RNA-guided Cas9 system for PAM-independent and cis-cleavage-free nucleic acid detection",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Wenhao Yin",
+        "Hong Xu",
+        "Xiangang Xia",
+        "Yi Du",
+        "Xinping Wang",
+        "Ruyi He",
+        "Zhuo Chen",
+        "Jie Qiao",
+        "Yi Liu"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-79722-z",
+      "published_online_at": "2026-11-14T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T15:32:02+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.3333,
+      "topic_cache_token": "1c07b998eaff01af11e6c0ee77db84e28f67b0d529382babc9400bb111800b24",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "0a98ce6fd6f06b1fa7c2257b",
+      "url": "https://doi.org/10.1038/s41467-026-79466-w",
+      "title": "An electrically driven multimodal soft robot enabled by a monolithic heterolayer elastomer",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Lvting Wang",
+        "Huangwei Ji",
+        "Zixuan Wang",
+        "Jiangshan Zhuo",
+        "Lu Jiang",
+        "Ning Xu",
+        "Mengke Shi",
+        "Huifeng Dong",
+        "Junbo Peng",
+        "Ofoq Normahmedov",
+        "Shengchao Jiang",
+        "Xin Zhao",
+        "Zhijian Wang",
+        "Feifei Chen",
+        "Ye Shi"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-79466-w",
+      "published_online_at": "2026-11-14T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T18:21:54+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6667,
+      "topic_cache_token": "ceec462085768ddfd958834a0f4f50a3efbef4e553dec15196e67fc554c086d5",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -3357,30 +4651,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Xuyao Zhou",
-        "Yiqin Guo",
-        "Zhenyu Chen",
-        "Xue Zhou",
-        "Kaitian Yu",
-        "Yuzhi Qin",
-        "Zihan Xu",
-        "Kaixuan Lin",
-        "Chenyu Yang",
-        "Weiting Chen",
-        "Songyang Wu",
-        "Penglin Lyu",
-        "Xuan Liu",
-        "Zhengji Jin",
-        "Yang Chen",
-        "Tingli Hu",
-        "Weihang Chen",
-        "Yupeng Guo",
-        "Wenqi Han",
-        "Xiongjian Huang",
-        "Jiulin Gan",
-        "Guoping Dong",
-        "Qianyi Guo",
-        "Zhongmin Yang"
+        "Xuyao Zhou, Yiqin Guo, Zhenyu Chen, Xue Zhou, Kaitian Yu, Yuzhi Qin, Zihan Xu, Kaixuan Lin, Chenyu Yang, Weiting Chen, Songyang Wu, Penglin Lyu, Xuan Liu, Zhengji Jin, Yang Chen, Tingli Hu, Weihang Chen, Yupeng Guo, Wenqi Han, Xiongjian Huang, Jiulin Gan, Guoping Dong, Qianyi Guo, Zhongmin Yang"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -4331,7 +5602,7 @@
       "excerpt": "Large foundation models such as GPT-6 Astra and Claude Fable 5.1 have recently been shown to control robots directly from visual observations. They nevertheless remain brittle on long-horizon, contact-rich tasks in real-world environments. Further progress depends on two complementary resources: demonstrations of human behavior that supervise how tasks are performed, and interactive environments in which policies can be rolled out, evaluated, and improved in closed loop. Language models have advanced along well-characterized scaling laws; the corresponding question for physical AI is how capability scales with environments and behaviors, which first requires identifying which data to scale and how to produce and reuse such data continuously. To address this question, we introduce Ropedia Xperience 2, comprising 1,589 released metric-scale 3D scans and a collection of 4,230 egocentric recordings of 74 tasks (131 hours). We further show that each capture can be repurposed for robot learning: scenes are converted into physically interactive simulation environments, human motion is retargeted to whole-body robot trajectories, and additional robot behaviors are obtained through virtual teleoperation and automated long-horizon trajectory generation. We propose this joint capture of environments and behaviors as a gold standard for physical AI data collection, laying a data foundation for establishing scaling laws over environments and behaviors.",
       "summary": "本文介绍了Ropedia Xperience 2数据集，包含1,589个已发布的公制尺度3D扫描以及74项任务的4,230段第一人称视角记录（131小时），并说明每项采集可被转换为物理交互仿真环境、将人体运动重定向为全身机器人轨迹，以及通过虚拟遥操作和自动长时程轨迹生成获得额外机器人行为。该数据集被提出作为物理AI数据采集的参考标准，为研究环境与行为规模如何影响物理AI能力提供数据基础；上述用途与规模效应均属原文主张，需在后续研究中独立验证。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 2,
+      "alpha_rank": 3,
       "authors": [
         "Hao Li",
         "Fangzhou Hong",
@@ -4618,6 +5889,179 @@
       "topic_cache_token": "e75de81ca079db605a2ebdf52c37cd1b15f1d9d9350ae31eb86616bf64245fee",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "a85437cc0b5848c54e568e22",
+      "url": "https://arxiv.org/abs/2611.16642",
+      "title": "Dataset Distillation via Drifting",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-11-12T11:17:40+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "The task of dataset distillation concerns the learning of a small set of synthetic samples that can serve as an effective replacement for a large real dataset when used for downstream tasks. While many solutions have been proposed since the problem's inception, most of them primarily seek to optimize the distilled data with respect to a classifier. In this work, we propose a new distillation method that learns a set of samples such that they directly approximate the per-class data distribution. Specifically, we \"drift\" our distilled data in the latent space of a feature extractor such that they move both toward the real data and away from each other without using a classification objective. We find that our drifted data cover the real distribution significantly better than existing methods while still serving as powerful training samples for classification. Furthermore, we showcase our method's use as a visualization tool for better interpreting models and extend it beyond images to other modalities. Our work advances the frontier of dataset distillation, offering a novel synthesis method and proposing distribution-based metrics as a complementary evaluation. More broadly, our findings help address the growing need to understand both data and models by uncovering more about how they interact.",
+      "summary": "本文提出一种无需分类目标的数据集蒸馏方法，在特征提取器的隐空间中令合成样本同时向真实数据靠近并彼此远离，从而使蒸馏数据直接近似各类别数据分布，并扩展到图像以外的模态。所述方法可作为分布层面的补充评估和相关模型可视化途径，但材料未说明其在分类训练以外的通用性边界，阅读时需以原文的完整方法和实验约束为准。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 9,
+      "authors": [
+        "George Cazenavette",
+        "Angelina Quan",
+        "Giannis Daras",
+        "Antonio Torralba",
+        "Vincent Sitzmann"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：dataset、evaluation。"
+        },
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9483,
+      "topic_cache_token": "b5e53feb154933f927dd104d800dc813203babb4d800c220a3ef08ffc5c1204b",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.16642",
+        "sha256": "9ec8ff9252a7ef80ca7c5386ab3a2c58be770ae49b09535f30d129c7fcddb414",
+        "chars": 12000
+      }
+    },
+    {
+      "id": "6c7f15d1f2b374c282fb86ef",
+      "url": "https://arxiv.org/abs/2611.16591",
+      "title": "Singularity-Bench: Can Agents Build Agents?",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-12T10:24:51+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "Frontier AI agents increasingly succeed on realistic, long-horizon tasks and are beginning to improve the systems through which they operate. Yet existing benchmarks often restrict agents to narrow action spaces, use simplified environments, or rely on verification methods that are unreliable for evaluating arbitrary agent-generated systems. We introduce Singularity-Bench, an open-ended benchmark for autonomous AI development with six end-to-end tasks spanning pre-training, mid-training, post-training, inference, the agent harness, and cluster orchestration. Each task requires agents to implement core systems from a minimal starting point and evaluates them against mature human-engineered baselines on identical hardware. Additionally, through extensive red-teaming covering 9 of the 10 categories in the OWASP Top 10 for Agentic Applications, we expose reward-hacking vulnerabilities in the conventional Harbor framework and develop Breakwater, an extension of Harbor that blocks all attacks tested in our study. Across 11 agents built from 7 frontier models and 2 harnesses, Opus 5.5 with Claude Code matches or outperforms the human baseline on all six tasks with a Singularity-Index of 1.25, suggesting it may have the skills needed to reach the singularity. The remaining agents average only 0.58. Our vision is for Singularity-Bench to track how much of AI development agents can already automate and when they may transition from assisting to taking end-to-end responsibility for building stronger successors.",
+      "summary": "本文提出并公开了Singularity-Bench，一个面向自主AI开发的开源基准，包含覆盖预训练、中训练、后训练、推理、智能体框架和集群编排的六项端到端任务，并配套报告了Harbor框架中的奖励作弊漏洞与名为Breakwater的防护扩展。该基准可用于追踪智能体在AI开发各环节已能自动化的程度及其从辅助走向端到端负责的进展，但其为开放基准且验证依赖任务设计与红队测试；摘要中关于具体智能体表现及“可能具备通向奇点所需技能”的表述属于作者在特定设置下的结果与解读，并非经独立验证的普适结论。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 10,
+      "authors": [
+        "Yang Zhou",
+        "Krish Agarwal",
+        "Zhuoming Chen",
+        "Zerui Wang",
+        "Zhenyu Zhang",
+        "Wenshuang Li",
+        "Xinpeng Wei",
+        "Zhichen Zeng",
+        "Jingyu Liu",
+        "Jue Wang",
+        "Sen Wu",
+        "Ziheng Jiang",
+        "Zhen Dong",
+        "Han Cai",
+        "Binhang Yuan",
+        "Ying Sheng",
+        "Ce Zhang",
+        "Bo Li",
+        "Beidi Chen"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：post-training。"
+        },
+        {
+          "id": "zotero:e09a09615a9a79995ffd756fcf67aa3f",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8714,
+      "topic_cache_token": "d645b7b974ca4a245222170099199a42e1453a6b3bc90951f13c24696d36a651",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.16591",
+        "sha256": "6be23500faf62de458e77d00fe9e84fa75c319725da621da704c5bdb373636bc",
+        "chars": 12000
+      }
     },
     {
       "id": "4922ca6fb0dd92994c349853",
@@ -14228,7 +15672,7 @@
       "excerpt": "Energy-based models (EBMs) define a distribution through a scalar energy, $p_θ(x)\\propto\\exp(-E_θ(x))$, and are usually presented as one model family among many. This tutorial has a broader goal: beyond introducing EBMs, it uses them as a single lens that connects the different aspects of machine learning. Any EBM is specified by three choices, the energy, which determines what the model represents; the inference procedure, which samples from or optimizes the energy; and the learning method, which fits the energy to data. We first develop these components, including sampling, variational inference, and learning by maximum likelihood, noise contrastive estimation, pseudolikelihood, score matching, and adversarial training, and show that the learning methods share one contrastive structure. We then show that discriminative models, generative models such as GANs, normalizing flows, diffusion and autoregressive models, representation learning methods such as contrastive learning, word2vec, BERT, denoising auto-encoders, and diffusion representations, reinforcement learning with EBM policies and world models, inverse reinforcement learning, and planning, as well as inference-time computation with verifiers, are all EBMs that differ in these three choices, mostly in how they handle the partition function and sampling. This view explains existing methods, organizes them into a common framework, and suggests new algorithms by replacing one component while keeping the others, with composition of energies as a principled way to combine learned models at inference time.",
       "summary": "本文以能量基模型为统一视角，将判别模型、生成模型、表示学习、强化学习及推理阶段计算等方法统一为能量函数、推理过程和学习方法三要素组合，并指出各学习方法共享对比结构，还提出通过替换单一组件或组合能量来设计新算法。该视角可用于梳理和解释现有机器学习方法，而将能量组合用于推理时组合已学模型，则被原文视为一种有原则的做法。",
       "summary_kind": "ai_summary",
-      "alpha_rank": 3,
+      "alpha_rank": 2,
       "authors": [
         "Bo Dai",
         "Yilun Du"
@@ -107465,7 +108909,7 @@
       "doi": "10.1016/j.actamat.2026.122868",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-11T06:23:38+00:00",
+      "indexed_at": "2026-11-15T02:19:39+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -138486,66 +139930,6 @@
       }
     },
     {
-      "id": "47a338507f0c53abe5e19290",
-      "url": "https://doi.org/10.1002/aenm.71689",
-      "title": "Sodium-Ion Battery Technology: Advances and Challenges",
-      "source_ids": [
-        "journal-advanced-energy-materials"
-      ],
-      "source_names": [
-        "Advanced Energy Materials"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-10-14T00:00:00+00:00",
-      "first_seen": "2026-10-15T00:18:40.225017+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Xiaolin Li",
-        "Maria Forsyth",
-        "Teofilo Rojo"
-      ],
-      "journal_id": "advanced-energy-materials",
-      "journal_title": "Advanced Energy Materials",
-      "journal_issns": [
-        "1614-6832",
-        "1614-6840"
-      ],
-      "publisher": "Wiley",
-      "doi": "10.1002/aenm.71689",
-      "published_online_at": "2026-10-14T00:00:00+00:00",
-      "published_print_at": null,
-      "indexed_at": "2026-11-11T15:30:45+00:00",
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [],
-      "topic_leaf_ids": [],
-      "topic_ids": [],
-      "topic_status": "insufficient_evidence",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.8,
-      "topic_cache_token": "1eca05dd320e7a5a47881ad4e90b22acea4d77988ebec3ade8809507603c5165",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
       "id": "1dc99b611b2499a3b88164db",
       "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely",
       "title": "Developing Gemini 4 Argon responsibly and safely",
@@ -161466,7 +162850,7 @@
       "doi": "10.1038/s41467-026-77358-7",
       "published_online_at": "2026-10-09T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-13T21:21:53+00:00",
+      "indexed_at": "2026-11-14T08:28:58+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -194442,19 +195826,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Dijie Yao",
-        "Qiuhua Yu",
-        "Yifan Zheng",
-        "Huizhi Chen",
-        "Cheng Shen",
-        "Jiajia Yang",
-        "Zhenwen Liang",
-        "Kai Tao",
-        "Gang Chen",
-        "Fei Liu",
-        "Fengwei Huo",
-        "Junyou Yang",
-        "Jin Wu"
+        "Dijie Yao, Qiuhua Yu, Yifan Zheng, Huizhi Chen, Cheng Shen, Jiajia Yang, Zhenwen Liang, Kai Tao, Gang Chen, Fei Liu, Fengwei Huo, Junyou Yang, Jin Wu"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -197282,17 +198654,7 @@
       "summary": "本文采用基于高斯过程贝叶斯优化的主动学习框架，结合体相与表面晶格性质及杂质相信息，对脉冲激光沉积生长空间进行映射，以识别相纯、表面二维、晶格参数接近理想且亚带隙光吸收最小的优化区域。该工作可用于加速复杂氧化物薄膜的材料优化，并为理解脉冲激光沉积中非平衡生长机制提供途径，但其结论基于特定材料体系，摘要未给出可推广的性能保证。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Jackson S. Bentley",
-        "Christopher Rouleau",
-        "Ilia N. Ivanov",
-        "T. Zac Ward",
-        "Jiaqiang Yan",
-        "Anghea Dolisca",
-        "Rob G. Moore",
-        "Gyula Eres",
-        "Richard F. Haglund",
-        "Sumner B. Harris",
-        "Matthew Brahlek"
+        "Jackson S. Bentley, Christopher Rouleau, Ilia N. Ivanov, T. Zac Ward, Jiaqiang Yan, Anghea Dolisca, Rob G. Moore, Gyula Eres, Richard F. Haglund, Sumner B. Harris, Matthew Brahlek"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -198004,16 +199366,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Ziting Chen",
-        "Pengyuan Wang",
-        "Jiaqi Yu",
-        "Yihao Yang",
-        "Puwu Liang",
-        "Ahmed Abdel-Aziz",
-        "Mujtaba Aminu Muhammad",
-        "Xiang Hu",
-        "Junxiang Chen",
-        "Zhenhai Wen"
+        "Ziting Chen, Pengyuan Wang, Jiaqi Yu, Yihao Yang, Puwu Liang, Ahmed Abdel-Aziz, Mujtaba Aminu Muhammad, Xiang Hu, Junxiang Chen, Zhenhai Wen"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -205067,16 +206420,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Wei He",
-        "Huiling Fang",
-        "Zijing Huo",
-        "Jiaqi Yu",
-        "Puwu Liang",
-        "Mujtaba Aminu Muhammad",
-        "Ahmed Abdel-Aziz",
-        "Xiang Hu",
-        "Suqin Ci",
-        "Zhenhai Wen"
+        "Wei He, Huiling Fang, Zijing Huo, Jiaqi Yu, Puwu Liang, Mujtaba Aminu Muhammad, Ahmed Abdel-Aziz, Xiang Hu, Suqin Ci, Zhenhai Wen"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -224761,6 +226105,64 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "62f0addd90ec9678af4b9304",
+      "url": "https://doi.org/10.1038/s41467-026-77532-x",
+      "title": "Developing neoantigen cancer vaccines: where are we now?",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-09-10T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Nune Markosyan",
+        "Robert H. Vonderheide"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-77532-x",
+      "published_online_at": "2026-09-10T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T21:18:25+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6667,
+      "topic_cache_token": "dcc72d8d7eb4160ac145b28e51e0cb2bc3f1a1caf84e8ccb6b77104dac0551b8",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "ef98781c84420c094c6c1186",
       "url": "https://doi.org/10.1038/s41467-026-77343-0",
       "title": "Explainable data generation from observed small samples by matrix tri-factorization",
@@ -227329,7 +228731,7 @@
       "doi": "10.1038/s41467-026-77388-1",
       "published_online_at": "2026-09-08T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-09T11:51:45+00:00",
+      "indexed_at": "2026-11-14T05:41:12+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -229652,7 +231054,7 @@
       "doi": "10.1038/s41467-026-76570-9",
       "published_online_at": "2026-09-07T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-23T19:49:25+00:00",
+      "indexed_at": "2026-11-14T09:31:19+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -230078,7 +231480,7 @@
       "doi": "10.1038/s41467-026-77574-1",
       "published_online_at": "2026-09-07T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-08T05:54:46+00:00",
+      "indexed_at": "2026-11-14T22:14:12+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -232423,7 +233825,7 @@
       "doi": "10.1038/s41467-026-77482-4",
       "published_online_at": "2026-09-04T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-13T03:37:51+00:00",
+      "indexed_at": "2026-11-14T14:11:09+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -246421,6 +247823,75 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "e8ba3962d68c5bc626beb31b",
+      "url": "https://doi.org/10.1038/s41467-026-77114-x",
+      "title": "Dynamic neuro-immune regulation of psychiatric risk loci in human neurons",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-08-27T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Kayla G. Retallick-Townsley",
+        "Seoyeon Lee",
+        "Sarah E. Williams",
+        "Sam Cartwright",
+        "Sophie Cohen",
+        "Annabel Sen",
+        "Meng Jia",
+        "Hannah Young",
+        "Lee Dobbyn",
+        "Michael Deans",
+        "Meilin Fernandez-Garcia",
+        "Laura M. Huckins",
+        "Kristen J. Brennand"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-77114-x",
+      "published_online_at": "2026-08-27T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T19:39:45+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5,
+      "topic_cache_token": "840c3137eb83d555141a25a35b5c42bfcb82c4b8ec6b52eac4631c5039982b88",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "fd2b57d5a35977caf890dc2e",
       "url": "https://doi.org/10.1038/s41586-026-10949-y",
       "title": "Automated prototyping of genetic codes",
@@ -247803,7 +249274,7 @@
       "doi": "10.1038/s41467-026-76923-4",
       "published_online_at": "2026-08-26T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-13T05:16:18+00:00",
+      "indexed_at": "2026-11-14T10:54:19+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -249985,6 +251456,89 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "7f9fdcb2941c491ed922eb54",
+      "url": "https://doi.org/10.1038/s41467-026-76905-6",
+      "title": "Landfill: time capsule of plastic waste but microplastic generation source",
+      "source_ids": [
+        "journal-nature-communications"
+      ],
+      "source_names": [
+        "Nature Communications"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-08-22T00:00:00+00:00",
+      "first_seen": "2026-11-15T03:03:37.573487+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Qiujie Huang",
+        "Hui Wang",
+        "Changfu Yang",
+        "Jicui Cui",
+        "Muhammad Amjad Farooq",
+        "Zhaowen Cheng",
+        "Xiaoming Wang",
+        "Zhiyong Han",
+        "Beidou Xi",
+        "Youcai Zhao",
+        "Yong Geng",
+        "Ziyang Lou"
+      ],
+      "journal_id": "nature-communications",
+      "journal_title": "Nature Communications",
+      "journal_issns": [
+        "2041-1723"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41467-026-76905-6",
+      "published_online_at": "2026-08-22T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-14T03:35:39+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:7b702437c9125ee8578d8c238382a72c",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：plastic；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:7b702437c9125ee8578d8c238382a72c"
+      ],
+      "topic_ids": [
+        "zotero:7b702437c9125ee8578d8c238382a72c",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6667,
+      "topic_cache_token": "42b9b34f3fd5ba544f02742ed0aff2186a5202f9bd257877469cd7c225cbaa33",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "c58d4ef302963f350fa3e079",
       "url": "https://doi.org/10.1038/s41467-026-76827-3",
       "title": "Bright isolated light pulses reaching 18 attoseconds from high-order harmonic generation by post-compressed Yb lasers",
@@ -250032,7 +251586,7 @@
       "doi": "10.1038/s41467-026-76827-3",
       "published_online_at": "2026-08-21T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-04T07:56:59+00:00",
+      "indexed_at": "2026-11-14T10:56:50+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -250281,7 +251835,7 @@
       "doi": "10.1038/s41467-026-76937-y",
       "published_online_at": "2026-08-21T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-23T19:48:13+00:00",
+      "indexed_at": "2026-11-14T06:29:38+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -274380,13 +275934,13 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-11-15T01:27:14.663155+00:00",
+    "last_success": "2026-11-15T03:03:37.573487+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 16,
-      "unclassified": 1907,
+      "classified": 23,
+      "unclassified": 1923,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
       "quality_status": "unmeasured",
@@ -274490,8 +276044,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "status": "ok",
       "count": 10
     },
@@ -274499,7 +276053,7 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -274510,8 +276064,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "status": "ok",
       "count": 11
     },
@@ -274519,8 +276073,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "status": "ok",
       "count": 12
     },
@@ -274528,8 +276082,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "status": "ok",
       "count": 12
     },
@@ -274537,8 +276091,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "status": "ok",
       "count": 1
     },
@@ -274546,8 +276100,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "status": "ok",
       "count": 12
     },
@@ -274555,8 +276109,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "status": "ok",
       "count": 0
     },
@@ -274568,14 +276122,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "count": 202,
       "counters": {
         "relevant": 4,
         "pending": 198,
         "excluded": 3,
-        "fetched": 199,
+        "fetched": 136,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -274588,14 +276142,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
-      "count": 92,
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
+      "count": 91,
       "counters": {
         "relevant": 13,
-        "pending": 79,
-        "excluded": 308,
-        "fetched": 200,
+        "pending": 78,
+        "excluded": 309,
+        "fetched": 180,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -274608,14 +276162,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "count": 205,
       "counters": {
         "relevant": 33,
         "pending": 172,
         "excluded": 1563,
-        "fetched": 681,
+        "fetched": 659,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -274627,18 +276181,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
       "last_success": "2026-11-15T01:27:14.663155+00:00",
       "count": 189,
       "counters": {
         "relevant": 23,
         "pending": 166,
         "excluded": 926,
-        "fetched": 466,
+        "fetched": 311,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-matter",
@@ -274648,14 +276204,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "count": 110,
       "counters": {
         "relevant": 1,
         "pending": 109,
         "excluded": 2,
-        "fetched": 87,
+        "fetched": 84,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -274668,14 +276224,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "count": 89,
       "counters": {
         "relevant": 1,
         "pending": 88,
         "excluded": 712,
-        "fetched": 250,
+        "fetched": 155,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -274688,14 +276244,14 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
       "last_success": "2026-11-09T02:57:46.342559+00:00",
-      "count": 1077,
+      "count": 1098,
       "counters": {
         "relevant": 13,
-        "pending": 1064,
-        "excluded": 1074,
-        "fetched": 8,
+        "pending": 1085,
+        "excluded": 1082,
+        "fetched": 208,
         "abstracts_recovered": 0
       },
       "errors": [
@@ -274710,14 +276266,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "count": 29,
       "counters": {
         "relevant": 0,
         "pending": 29,
         "excluded": 39,
-        "fetched": 16,
+        "fetched": 13,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -274730,14 +276286,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "count": 136,
       "counters": {
         "relevant": 1,
         "pending": 135,
         "excluded": 248,
-        "fetched": 112,
+        "fetched": 107,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -274750,14 +276306,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "count": 27,
       "counters": {
         "relevant": 2,
         "pending": 25,
         "excluded": 751,
-        "fetched": 197,
+        "fetched": 172,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -274766,8 +276322,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "status": "ok",
       "count": 1
     },
@@ -274775,8 +276331,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "status": "ok",
       "count": 12
     },
@@ -274784,8 +276340,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "status": "ok",
       "count": 0
     },
@@ -274793,8 +276349,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "status": "ok",
       "count": 0
     },
@@ -274802,8 +276358,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_success": "2026-11-15T03:03:37.573487+00:00",
       "status": "ok",
       "count": 12
     },
@@ -274812,7 +276368,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 0,
-      "last_attempt": "2026-11-15T01:27:14.663155+00:00",
+      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
       "last_success": "2026-11-15T01:26:28.970036+00:00",
       "run_id": "43663054465",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -274820,15 +276376,15 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 4,
+    "generated": 2,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
       "status": "partial",
-      "attempted": 5,
+      "attempted": 3,
       "public_html": 2,
       "bohr_graph": 0,
-      "fallback": 3,
+      "fallback": 1,
       "bohr_calls": 0
     }
   },
