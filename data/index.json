@@ -1,8 +1,102 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-15T03:03:37.573487+00:00",
+  "generated_at": "2026-11-16T01:29:51.560636+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
+    {
+      "id": "2e8f421d2ee2a3dfd36bfcc5",
+      "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+      "title": "A step toward defining the Standard Model on a lattice",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "frontier"
+      ],
+      "published_at": "2026-11-15T22:00:01+00:00",
+      "first_seen": "2026-11-16T01:29:51.560636+00:00",
+      "excerpt": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+      "summary": "本文探讨了一种标准模型的非微扰格点定义候选方案，并描述了GPT-6 Astra如何协助将该构想推进为详细证明。该工作对在格点上严格定义标准模型具有潜在参考价值，但公开材料未提供完整论证或已验证的性能结论，相关证明的完整性与有效性仍需以正式论文为准。",
+      "summary_kind": "ai_summary",
+      "authors": [],
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "low_confidence",
+      "topic_scope": "unknown",
+      "content_kind": "web:engineering_update",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7895,
+      "topic_cache_token": "c956c140238131d692c85f664082712f05132cc49d61d7ee061b5ae50460fe94",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "33b95c2112c46efd09554302",
+      "url": "https://openai.com/index/our-new-blog-for-science",
+      "title": "Our new blog for science",
+      "source_ids": [
+        "openai"
+      ],
+      "source_names": [
+        "OpenAI"
+      ],
+      "group": "frontier",
+      "groups": [
+        "frontier"
+      ],
+      "type": "report",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-11-15T22:00:00+00:00",
+      "first_seen": "2026-11-16T01:29:51.560636+00:00",
+      "excerpt": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
+      "summary": "OpenAI 科学博客汇集了研究人员利用 AI 推进科学发现的新发现、实用方法和第一手经验。该博客可作为科研人员了解相关实践方法和研究者经验的参考，但其内容属于博客报告，不构成经过验证的性能结论。",
+      "summary_kind": "ai_summary",
+      "authors": [],
+      "topic_labels": [
+        {
+          "id": "zotero:68e7d38bc58fa7101b2c778abec94537",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：scientific discovery。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:68e7d38bc58fa7101b2c778abec94537"
+      ],
+      "topic_ids": [
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:68e7d38bc58fa7101b2c778abec94537",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:technical_report",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7857,
+      "topic_cache_token": "078efd70bc204d18d3506e94515c604b09a94cd9c447209c1c70c80b810050dd",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
     {
       "id": "38bc1ffb937b7e1210fcf847",
       "url": "https://arxiv.org/abs/2611.16308",
@@ -3025,21 +3119,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Xiaocang Han",
-        "Yuan Meng",
-        "Qilong Cai",
-        "Yanhui Hong",
-        "Zanlin Qiu",
-        "Weiwei Hu",
-        "Shu Miao",
-        "Kangshu Li",
-        "Jun Zhao",
-        "Fanqi Meng",
-        "Xiao Hai",
-        "Zezhong Zhang",
-        "Jiong Lu",
-        "Jin Zhang",
-        "Xiaoxu Zhao"
+        "Xiaocang Han, Yuan Meng, Qilong Cai, Yanhui Hong, Zanlin Qiu, Weiwei Hu, Shu Miao, Kangshu Li, Jun Zhao, Fanqi Meng, Xiao Hai, Zezhong Zhang, Jiong Lu, Jin Zhang, Xiaoxu Zhao"
       ],
       "journal_id": "science-advances",
       "journal_title": "Science Advances",
@@ -3124,21 +3204,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Md Farhad Hassan",
-        "Shounak Das",
-        "Dolendra Vikas Addepalli",
-        "Leikhang Xiong",
-        "Mohammad Shafiqul Islam",
-        "A. K. M. Rakib",
-        "Samiha Tasnim",
-        "Xiao Yu",
-        "Emily Rawson",
-        "Mohammed Arfan",
-        "Antonin Brun",
-        "Gale M. Lucas",
-        "Burçin Becerik-Gerber",
-        "Adam Frank",
-        "Yasser Khan"
+        "Md Farhad Hassan, Shounak Das, Dolendra Vikas Addepalli, Leikhang Xiong, Mohammad Shafiqul Islam, A. K. M. Rakib, Samiha Tasnim, Xiao Yu, Emily Rawson, Mohammed Arfan, Antonin Brun, Gale M. Lucas, Burçin Becerik-Gerber, Adam Frank, Yasser Khan"
       ],
       "journal_id": "science-advances",
       "journal_title": "Science Advances",
@@ -4591,7 +4657,7 @@
       "doi": "10.1016/j.actamat.2026.122938",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-13T18:21:45+00:00",
+      "indexed_at": "2026-11-15T19:19:22+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -4651,7 +4717,30 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Xuyao Zhou, Yiqin Guo, Zhenyu Chen, Xue Zhou, Kaitian Yu, Yuzhi Qin, Zihan Xu, Kaixuan Lin, Chenyu Yang, Weiting Chen, Songyang Wu, Penglin Lyu, Xuan Liu, Zhengji Jin, Yang Chen, Tingli Hu, Weihang Chen, Yupeng Guo, Wenqi Han, Xiongjian Huang, Jiulin Gan, Guoping Dong, Qianyi Guo, Zhongmin Yang"
+        "Xuyao Zhou",
+        "Yiqin Guo",
+        "Zhenyu Chen",
+        "Xue Zhou",
+        "Kaitian Yu",
+        "Yuzhi Qin",
+        "Zihan Xu",
+        "Kaixuan Lin",
+        "Chenyu Yang",
+        "Weiting Chen",
+        "Songyang Wu",
+        "Penglin Lyu",
+        "Xuan Liu",
+        "Zhengji Jin",
+        "Yang Chen",
+        "Tingli Hu",
+        "Weihang Chen",
+        "Yupeng Guo",
+        "Wenqi Han",
+        "Xiongjian Huang",
+        "Jiulin Gan",
+        "Guoping Dong",
+        "Qianyi Guo",
+        "Zhongmin Yang"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -4771,7 +4860,7 @@
       "doi": "10.1016/j.actamat.2026.122955",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-14T01:21:48+00:00",
+      "indexed_at": "2026-11-16T00:18:25+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -5114,7 +5203,7 @@
       "doi": "10.1016/j.actamat.2026.122946",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-14T01:22:33+00:00",
+      "indexed_at": "2026-11-16T00:18:51+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -24323,7 +24412,7 @@
       "doi": "10.1016/j.actamat.2026.122902",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-11T20:22:53+00:00",
+      "indexed_at": "2026-11-15T18:17:45+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -25089,7 +25178,7 @@
       "doi": "10.1016/j.actamat.2026.122919",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-10T10:29:27+00:00",
+      "indexed_at": "2026-11-15T05:21:05+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -25164,7 +25253,7 @@
       "doi": "10.1016/j.actamat.2026.122920",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-12T16:23:23+00:00",
+      "indexed_at": "2026-11-16T01:21:10+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -25226,7 +25315,7 @@
       "doi": "10.1016/j.actamat.2026.122939",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-11T20:22:58+00:00",
+      "indexed_at": "2026-11-15T18:18:04+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -29217,7 +29306,7 @@
       "doi": "10.1016/j.actamat.2026.122933",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-11T14:23:12+00:00",
+      "indexed_at": "2026-11-15T18:17:53+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -41784,7 +41873,16 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [],
+      "authors": [
+        "Xiangyu Liu",
+        "Qingdong He",
+        "Fang Guo",
+        "Jinfang Wu",
+        "Jie Qi",
+        "Feilong Gong",
+        "Jian Liu",
+        "Wenbo Wang"
+      ],
       "journal_id": "matter",
       "journal_title": "Matter",
       "journal_issns": [
@@ -108909,7 +109007,7 @@
       "doi": "10.1016/j.actamat.2026.122868",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-15T02:19:39+00:00",
+      "indexed_at": "2026-11-15T19:19:34+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -144131,7 +144229,7 @@
       "doi": "10.1016/j.actamat.2026.122769",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-14T01:44:01+00:00",
+      "indexed_at": "2026-11-15T04:48:11+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -144334,7 +144432,7 @@
       "doi": "10.1016/j.actamat.2026.122819",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-19T16:42:48+00:00",
+      "indexed_at": "2026-11-15T11:14:29+00:00",
       "journal_relevance": {
         "status": "relevant",
         "method": "rule-v1",
@@ -167788,7 +167886,7 @@
       "doi": "10.1126/science.aeh7034",
       "published_online_at": null,
       "published_print_at": "2026-10-08T00:00:00+00:00",
-      "indexed_at": "2026-11-12T13:31:56+00:00",
+      "indexed_at": "2026-11-15T20:43:19+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -195826,7 +195924,19 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Dijie Yao, Qiuhua Yu, Yifan Zheng, Huizhi Chen, Cheng Shen, Jiajia Yang, Zhenwen Liang, Kai Tao, Gang Chen, Fei Liu, Fengwei Huo, Junyou Yang, Jin Wu"
+        "Dijie Yao",
+        "Qiuhua Yu",
+        "Yifan Zheng",
+        "Huizhi Chen",
+        "Cheng Shen",
+        "Jiajia Yang",
+        "Zhenwen Liang",
+        "Kai Tao",
+        "Gang Chen",
+        "Fei Liu",
+        "Fengwei Huo",
+        "Junyou Yang",
+        "Jin Wu"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -199366,7 +199476,16 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Ziting Chen, Pengyuan Wang, Jiaqi Yu, Yihao Yang, Puwu Liang, Ahmed Abdel-Aziz, Mujtaba Aminu Muhammad, Xiang Hu, Junxiang Chen, Zhenhai Wen"
+        "Ziting Chen",
+        "Pengyuan Wang",
+        "Jiaqi Yu",
+        "Yihao Yang",
+        "Puwu Liang",
+        "Ahmed Abdel-Aziz",
+        "Mujtaba Aminu Muhammad",
+        "Xiang Hu",
+        "Junxiang Chen",
+        "Zhenhai Wen"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -201354,7 +201473,17 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Yunfei Bu, Minghao Zhang, Huixian Liu, Mengyuan Guo, Yuxuan Zhang, Yijing Shang, Hua Liu, Xingyu Xiong, Yantao Zhao, Zhibin Yang, Suping Peng"
+        "Yunfei Bu",
+        "Minghao Zhang",
+        "Huixian Liu",
+        "Mengyuan Guo",
+        "Yuxuan Zhang",
+        "Yijing Shang",
+        "Hua Liu",
+        "Xingyu Xiong",
+        "Yantao Zhao",
+        "Zhibin Yang",
+        "Suping Peng"
       ],
       "journal_id": "advanced-energy-materials",
       "journal_title": "Advanced Energy Materials",
@@ -201366,7 +201495,7 @@
       "doi": "10.1002/aenm.71608",
       "published_online_at": "2026-09-27T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-04T06:25:32+00:00",
+      "indexed_at": "2026-11-15T21:41:02+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -204062,7 +204191,7 @@
       "doi": "10.1038/s41563-026-02749-6",
       "published_online_at": "2026-09-25T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-12T12:02:04+00:00",
+      "indexed_at": "2026-11-15T04:51:28+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -206420,7 +206549,16 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Wei He, Huiling Fang, Zijing Huo, Jiaqi Yu, Puwu Liang, Mujtaba Aminu Muhammad, Ahmed Abdel-Aziz, Xiang Hu, Suqin Ci, Zhenhai Wen"
+        "Wei He",
+        "Huiling Fang",
+        "Zijing Huo",
+        "Jiaqi Yu",
+        "Puwu Liang",
+        "Mujtaba Aminu Muhammad",
+        "Ahmed Abdel-Aziz",
+        "Xiang Hu",
+        "Suqin Ci",
+        "Zhenhai Wen"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -215353,7 +215491,7 @@
       "doi": "10.1038/s41586-026-11044-y",
       "published_online_at": "2026-09-16T00:00:00+00:00",
       "published_print_at": "2026-10-29T00:00:00+00:00",
-      "indexed_at": "2026-11-12T14:12:29+00:00",
+      "indexed_at": "2026-11-15T12:56:00+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -241305,7 +241443,7 @@
       "doi": "10.1038/s41586-026-10529-0",
       "published_online_at": "2026-09-02T00:00:00+00:00",
       "published_print_at": "2026-09-03T00:00:00+00:00",
-      "indexed_at": "2026-11-14T04:30:52+00:00",
+      "indexed_at": "2026-11-15T22:17:53+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -246875,7 +247013,14 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Jiahong Yang, Yao Xiong, Rui Gu, Yang Liu, Liang Wei, Chao Liu, Zhong Lin Wang, Qijun Sun"
+        "Jiahong Yang",
+        "Yao Xiong",
+        "Rui Gu",
+        "Yang Liu",
+        "Liang Wei",
+        "Chao Liu",
+        "Zhong Lin Wang",
+        "Qijun Sun"
       ],
       "journal_id": "advanced-functional-materials",
       "journal_title": "Advanced Functional Materials",
@@ -246887,7 +247032,7 @@
       "doi": "10.1002/adfm.77947",
       "published_online_at": "2026-08-27T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-01T10:57:50+00:00",
+      "indexed_at": "2026-11-15T12:51:35+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -248281,7 +248426,7 @@
       "doi": "10.1038/s41586-026-10946-1",
       "published_online_at": "2026-08-26T00:00:00+00:00",
       "published_print_at": "2026-10-22T00:00:00+00:00",
-      "indexed_at": "2026-10-21T10:41:07+00:00",
+      "indexed_at": "2026-11-15T15:53:26+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -275934,13 +276079,13 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-11-15T03:03:37.573487+00:00",
+    "last_success": "2026-11-16T01:29:51.560636+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 23,
-      "unclassified": 1923,
+      "classified": 2,
+      "unclassified": 1924,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
       "quality_status": "unmeasured",
@@ -276044,16 +276189,18 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
       "last_success": "2026-11-15T03:03:37.573487+00:00",
-      "status": "ok",
-      "count": 10
+      "status": "error",
+      "count": 0,
+      "message": "采集失败，保留上次结果",
+      "error_type": "HTTPError"
     },
     {
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -276064,8 +276211,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
-      "last_success": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
+      "last_success": "2026-11-16T01:29:51.560636+00:00",
       "status": "ok",
       "count": 11
     },
@@ -276073,17 +276220,19 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
       "last_success": "2026-11-15T03:03:37.573487+00:00",
-      "status": "ok",
-      "count": 12
+      "status": "error",
+      "count": 0,
+      "message": "采集失败，保留上次结果",
+      "error_type": "HTTPError"
     },
     {
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
-      "last_success": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
+      "last_success": "2026-11-16T01:29:51.560636+00:00",
       "status": "ok",
       "count": 12
     },
@@ -276091,8 +276240,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
-      "last_success": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
+      "last_success": "2026-11-16T01:29:51.560636+00:00",
       "status": "ok",
       "count": 1
     },
@@ -276100,8 +276249,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
-      "last_success": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
+      "last_success": "2026-11-16T01:29:51.560636+00:00",
       "status": "ok",
       "count": 12
     },
@@ -276109,8 +276258,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
-      "last_success": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
+      "last_success": "2026-11-16T01:29:51.560636+00:00",
       "status": "ok",
       "count": 0
     },
@@ -276122,14 +276271,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
-      "last_success": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
+      "last_success": "2026-11-16T01:29:51.560636+00:00",
       "count": 202,
       "counters": {
         "relevant": 4,
         "pending": 198,
         "excluded": 3,
-        "fetched": 136,
+        "fetched": 141,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -276142,14 +276291,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
-      "last_success": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
+      "last_success": "2026-11-16T01:29:51.560636+00:00",
       "count": 91,
       "counters": {
         "relevant": 13,
         "pending": 78,
-        "excluded": 309,
-        "fetched": 180,
+        "excluded": 306,
+        "fetched": 183,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -276162,14 +276311,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
-      "last_success": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
+      "last_success": "2026-11-16T01:29:51.560636+00:00",
       "count": 205,
       "counters": {
         "relevant": 33,
         "pending": 172,
-        "excluded": 1563,
-        "fetched": 659,
+        "excluded": 1554,
+        "fetched": 657,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -276181,20 +276330,18 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
-      "last_success": "2026-11-15T01:27:14.663155+00:00",
+      "status": "ok",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
+      "last_success": "2026-11-16T01:29:51.560636+00:00",
       "count": 189,
       "counters": {
         "relevant": 23,
         "pending": 166,
-        "excluded": 926,
-        "fetched": 311,
+        "excluded": 922,
+        "fetched": 457,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "journal-matter",
@@ -276203,18 +276350,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
       "last_success": "2026-11-15T03:03:37.573487+00:00",
-      "count": 110,
+      "count": 108,
       "counters": {
         "relevant": 1,
-        "pending": 109,
+        "pending": 107,
         "excluded": 2,
-        "fetched": 84,
+        "fetched": 75,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-nature",
@@ -276224,14 +276373,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
-      "last_success": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
+      "last_success": "2026-11-16T01:29:51.560636+00:00",
       "count": 89,
       "counters": {
         "relevant": 1,
         "pending": 88,
-        "excluded": 712,
-        "fetched": 155,
+        "excluded": 710,
+        "fetched": 158,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -276244,14 +276393,14 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
       "last_success": "2026-11-09T02:57:46.342559+00:00",
-      "count": 1098,
+      "count": 1096,
       "counters": {
         "relevant": 13,
-        "pending": 1085,
-        "excluded": 1082,
-        "fetched": 208,
+        "pending": 1083,
+        "excluded": 1087,
+        "fetched": 8,
         "abstracts_recovered": 0
       },
       "errors": [
@@ -276266,12 +276415,12 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
-      "last_success": "2026-11-15T03:03:37.573487+00:00",
-      "count": 29,
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
+      "last_success": "2026-11-16T01:29:51.560636+00:00",
+      "count": 27,
       "counters": {
         "relevant": 0,
-        "pending": 29,
+        "pending": 27,
         "excluded": 39,
         "fetched": 13,
         "abstracts_recovered": 0
@@ -276286,14 +276435,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
-      "last_success": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
+      "last_success": "2026-11-16T01:29:51.560636+00:00",
       "count": 136,
       "counters": {
         "relevant": 1,
         "pending": 135,
         "excluded": 248,
-        "fetched": 107,
+        "fetched": 109,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -276305,25 +276454,27 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
       "last_success": "2026-11-15T03:03:37.573487+00:00",
       "count": 27,
       "counters": {
         "relevant": 2,
         "pending": 25,
         "excluded": 751,
-        "fetched": 172,
+        "fetched": 81,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
-      "last_success": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
+      "last_success": "2026-11-16T01:29:51.560636+00:00",
       "status": "ok",
       "count": 1
     },
@@ -276331,8 +276482,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
-      "last_success": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
+      "last_success": "2026-11-16T01:29:51.560636+00:00",
       "status": "ok",
       "count": 12
     },
@@ -276340,8 +276491,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
-      "last_success": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
+      "last_success": "2026-11-16T01:29:51.560636+00:00",
       "status": "ok",
       "count": 0
     },
@@ -276349,8 +276500,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
-      "last_success": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
+      "last_success": "2026-11-16T01:29:51.560636+00:00",
       "status": "ok",
       "count": 0
     },
@@ -276358,8 +276509,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
-      "last_success": "2026-11-15T03:03:37.573487+00:00",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
+      "last_success": "2026-11-16T01:29:51.560636+00:00",
       "status": "ok",
       "count": 12
     },
@@ -276368,9 +276519,9 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 0,
-      "last_attempt": "2026-11-15T03:03:37.573487+00:00",
-      "last_success": "2026-11-15T01:26:28.970036+00:00",
-      "run_id": "43663054465",
+      "last_attempt": "2026-11-16T01:29:51.560636+00:00",
+      "last_success": "2026-11-16T01:29:07.464012+00:00",
+      "run_id": "43786454993",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
     }
   ],
@@ -276382,9 +276533,9 @@
     "enrichment": {
       "status": "partial",
       "attempted": 3,
-      "public_html": 2,
+      "public_html": 0,
       "bohr_graph": 0,
-      "fallback": 1,
+      "fallback": 3,
       "bohr_calls": 0
     }
   },
