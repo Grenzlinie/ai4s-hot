@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T03:16:42.045554+00:00",
+  "generated_at": "2026-11-19T04:29:52.420959+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -1652,6 +1652,72 @@
       "topic_cache_token": "7a4acf4cb6c31b1cfbbbb02e1b3df402ff011bc74e71f533657dbc9cac83d835",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "d046221010a63eb262e64cbd",
+      "url": "https://arxiv.org/abs/2611.24525",
+      "title": "Machine-learned potentials for iron oxides at extreme conditions",
+      "source_ids": [
+        "arxiv-ai4s"
+      ],
+      "source_names": [
+        "arXiv / AI4S"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-18T14:39:40+00:00",
+      "first_seen": "2026-11-19T04:29:52.420959+00:00",
+      "excerpt": "Reliable phase stability requires accurate relative free energies, which small force errors alone do not guarantee. We develop atomic-cluster-expansion potentials for five iron oxides from Fe$_2$O to Fe$_2$O$_3$, covering crystalline and liquid states at 140--260\\,GPa and 1000--11000\\,K, with electronic and ionic temperatures matched. Force-dominated training leaves systematic energy offsets between structure families of up to 41\\,meV/atom that persist despite additional training data. Stronger energy weighting and weaker regularization largely remove these offsets, while converged k-point sampling prevents further composition-dependent biases. The final potentials achieve held-out energy errors of 2.0--5.5\\,meV/atom and first-order free-energy errors within 3.4\\,meV/atom for liquids at 5000--9000\\,K. However, an untrained NiAs-type FeO phase exhibits a free-energy error of 57\\,meV/atom despite a low extrapolation grade. These results show that reliable phase-diagram calculations require control of relative energy offsets and explicit free-energy validation of every competing phase.",
+      "summary": "本文开发了覆盖五种铁氧化物（Fe₂O 至 Fe₂O₃）、在140–260 GPa和1000–11000 K范围内晶态与液态的原子团簇展开势，通过加强能量权重、减弱正则化并采用收敛的k点采样，降低了力主导训练遗留的、不同结构族之间最高达41 meV/atom的系统性能量偏移。其用途是支持极端条件下铁氧化物的相图与自由能计算；但文中的自由能验证显示，未参与训练的NiAs型FeO相即使外推等级较低，自由能误差仍达57 meV/atom，因此原文明确指出可靠相图计算需要对每个竞争相进行显式自由能验证，且上述误差与性能均限于该研究所用DFT协议。",
+      "summary_kind": "ai_summary",
+      "authors": [
+        "S. Azadi",
+        "S. M. Vinko",
+        "T. D. Kühne",
+        "A. Principi",
+        "M. S. Bahramy"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：training。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8333,
+      "topic_cache_token": "fbca18df22af53d7db5f3e3be0cd4b0174e6d5fcaff300ead97b6df8852ad7e9",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.24525",
+        "sha256": "a18c50cd0f87d29e948bc69d06ebf41499b42aa6ddbf5382e263b7190a3e8a97",
+        "chars": 12000
+      }
     },
     {
       "id": "366c02670915d458ce41a68d",
@@ -5257,6 +5323,173 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "8c5914db57aa649d69383cf8",
+      "url": "https://arxiv.org/abs/2611.24738",
+      "title": "Jeveration: System One Models Now Generate",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-11-18T00:00:00+00:00",
+      "first_seen": "2026-11-19T04:29:52.420959+00:00",
+      "excerpt": "System One models such as Jev return decisions through fast, parallel prediction. In this paper, we introduce Jeveration, showing that the same decision paradigm can also generate high-quality images in a single forward pass. Jeveration builds on a frozen vision-language model, repurposing its visual-semantic knowledge for holistic image generation. The key challenge is to maintain global consistency. A single prompt admits many valid images, yet parallel predictions must converge on a coherent whole. We therefore condition all positions on a shared random state to coordinate parallel predictions, so that each draw yields a different but coherent image. Since the model tends to ignore this state under direct image supervision, we first learn a distribution over discrete image codes to guide single-pass generation. Beyond text-to-image generation, we further unify image-to-image generation and dense prediction within the same architecture, so that one checkpoint supports all three tasks, each in one forward pass. Experiments show that Jeveration generates a 512x512 image in 78 ms, up to 122x faster than existing unified models, while maintaining competitive image quality and dense prediction performance.",
+      "summary": "本文提出 Jeveration，让基于 Jev 式并行预测的 System One 模型在单次前向传播中完成图像生成，并在同一架构下统一文本到图像、图像到图像和密集预测三类任务。对科研工作而言，该方法提供了一种将冻结视觉语言模型复用于生成与感知任务的思路，但摘要与公开材料中报告的速度、质量和性能数字来自作者声明，尚未经独立验证，且该材料为有限摘录，并非完整全文。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.24738",
+      "authors": [
+        "Yuhe Liu",
+        "Qi Li",
+        "Shihua Zhang",
+        "Xinchao Wang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：generation。"
+        },
+        {
+          "id": "zotero:8f22e62349472c4815f4275fbcf89c76",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：language model。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_ids": [
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.92,
+      "topic_cache_token": "36434f8b3f3fecf9830cd418f86cddae440f09dccdb5583b3acf0aa22a4144a8",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.24738",
+        "sha256": "57359c29b296eaace0012b333f224593bb6f4f3df287c28b4bab7a43a44d9f85",
+        "chars": 12000
+      }
+    },
+    {
+      "id": "9e7ca7a4acd54204688625ff",
+      "url": "https://arxiv.org/abs/2611.24154",
+      "title": "Game2Player: Scaling Gameplay Experience for Visual Agents through Environment-Player Co-Development",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-18T00:00:00+00:00",
+      "first_seen": "2026-11-19T04:29:52.420959+00:00",
+      "excerpt": "Games are a rich testbed for visual agents, demanding perception, long-horizon planning, and precise control. However, collecting human gameplay is costly, and learning from gameplay videos requires inferring missing actions. Existing datasets also cover a limited range of games, often without explicit tasks or verifiable outcomes. To address these gaps, we introduce Game2Player, a framework that co-develops game environments and players to collect diverse and verifiable gameplay experience at scale. In the Game2Player loop, a Builder agent adapts existing web games, exposes their internal state, and defines tasks with state-based progress measures and success checks. A Coding Player and a VLM Player then attempt the tasks and report problems to the Builder for repair, so that play serves as both environment validation and training data collection. With Game2Player, we build 568 verified web games with 3,436 tasks, collect 15.7K trajectories (307 hours of gameplay), and hold out 50 games as the benchmark PlayerBench. To evaluate the collected experience as training data, we train VLM agents with progress-weighted SFT, assigning greater weight to steps that advance task progress. Game2Player-9B improves progress from 14.3% to 31.2% on PlayerBench and from 30.0% to 53.1% on the external GameWorld benchmark. More broadly, our work suggests a path for visual agents to scale their gameplay experience by building, verifying, and learning from existing game worlds.",
+      "summary": "本文提出并构建了 Game2Player 框架，通过 Builder 与 VLM Player、Coding Player 协同开发，将现有网页游戏适配为可验证环境并定义任务，共构建 568 个已验证游戏、3,436 个任务，采集 15.7K 条轨迹（307 小时游戏时长），并留出 50 个游戏作为 PlayerBench 基准。据原文，该工作将这些轨迹用于进度加权 SFT 训练，使 Qwen3.5-9B 在 PlayerBench 上的进度从 14.3% 提升至 31.2%、在 GameWorld 上从 30.0% 提升至 53.1%；上述性能数字为原文报告结果，未在本次依据的公开材料中独立验证，且该材料为有限摘录，不能视为完整全文。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.24154",
+      "authors": [
+        "Xirui Jiang",
+        "Yuxi Chen",
+        "Rui Yang",
+        "Feng Luo",
+        "Pengcheng Wang",
+        "Bingxuan Li",
+        "Zihao Zhao",
+        "Yushan Li",
+        "Han Wang",
+        "Manling Li",
+        "Yang Zhang",
+        "Shiyu Chang",
+        "Tong Zhang",
+        "Huan Zhang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        },
+        {
+          "id": "zotero:2e1b59a73acec66ff62939b1f8ec1fc9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：data collection。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:2e1b59a73acec66ff62939b1f8ec1fc9"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:2e1b59a73acec66ff62939b1f8ec1fc9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:6cb94419e4a077231731f17d61098d95"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8389,
+      "topic_cache_token": "bae3bb8dcb467f93bcfc8c3c6d16781ea47bf976b1f5cb7717b68ece3e24207a",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.24154",
+        "sha256": "a3ec338353f123f011a5fb22f5500c5aa80d31f5d63eb003123cf14394d5f7d2",
+        "chars": 12000
+      }
+    },
+    {
       "id": "d7d94e690de8db065963f332",
       "url": "https://arxiv.org/abs/2611.23219",
       "title": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
@@ -5560,10 +5793,12 @@
       "url": "https://arxiv.org/abs/2611.22925",
       "title": "Code World Model 2.0: Towards Infinite Controllable Video Generation",
       "source_ids": [
-        "alphaxiv"
+        "alphaxiv",
+        "hf-daily"
       ],
       "source_names": [
-        "alphaXiv Hot"
+        "alphaXiv Hot",
+        "Hugging Face Daily Papers"
       ],
       "group": "papers",
       "groups": [
@@ -5769,7 +6004,7 @@
       "summary_kind": "ai_summary",
       "authors": [
         "Yun Fu",
-        "Jie-Lan Ding"
+        "Jielan Ding"
       ],
       "topic_labels": [],
       "topic_leaf_ids": [],
@@ -7433,12 +7668,12 @@
       "summary": "本文提出一种基于学习的控制器，利用哈密顿量、线路、光锥和当前状态特征预测量子比特逐位对易分组对参数移位梯度的相关性，并通过可调覆盖阈值选择测量，在15个分子VQE设置中相对Full-QWC节省49.6%的标称梯度测量次数，平均绝对能量间隙为5.67 mHa。该工作为变分量子算法中缓解重复测量瓶颈提供了数据驱动的测量稀疏化思路，但其报告的性能数字来自原文所述实验设置，且LLM在无微调条件下不能稳定优先关注最重要的物理信息，表明此类方法仍需依赖明确的物理表示、任务特定目标和领域验证。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Yi-Feng Peng",
+        "Yifeng Peng",
         "Bin Yan",
         "Harshal Shah",
-        "S. Raghuraman",
+        "Srinivasan Raghuraman",
         "Kim Wagner",
-        "S. S. Arora"
+        "Sunpreet Singh Arora"
       ],
       "topic_labels": [
         {
@@ -9024,8 +9259,8 @@
       "published_at": "2026-11-17T00:00:00+00:00",
       "first_seen": "2026-11-19T03:16:42.045554+00:00",
       "excerpt": "Latent diffusion models rely on a decoder to map denoised latents to pixels, adding complexity and inference cost. We introduce Decoding Without a Decoder (DWD), which lets a finetuned diffusion transformer produce final pixels directly through a linear head. Unlike previous methods, where the denoising output leads to final pixels, DWD separates the two roles: the original denoising head continues to drive sampling, then the new DWD head predicts the pixels at the final step. We extend pretrained latent models with DWD efficiently by finetuning only the last few transformer blocks, training the DWD head with pixel quality losses while anchoring the denoising head to the pretrained model to preserve the sample trajectory. Across latent image and video generators, DWD removes the decoder and reduces inference cost while maintaining or even improving pixel quality. On Wan video generation, it visibly reduces detail distortion and flickering, lowering warping error by 23%. Remarkably, the same separation also improves pixel diffusion models that do not even use a decoder: a final-step DWD head produces substantially better texture detail in text-to-image generation, and improves ImageNet FID from 1.55 to 1.43, a new state of the art among pixel flow models.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出“Decoding Without a Decoder（DWD）”，通过给预训练扩散Transformer增加一个线性像素预测头，并在仅微调最后几个Transformer模块时用像素质量损失训练该头、同时将原去噪头锚定到预训练模型以保留采样轨迹，从而在最终去噪步骤直接输出像素。对科研工作而言，该方法可用于在潜在图像和视频生成中移除解码器并降低推理成本；原文报告其在Wan视频生成中降低扭曲误差23%，在ImageNet像素流模型上将FID从1.55改善到1.43，但这些数值来自原文声明，且材料为受限摘录，未经过独立验证，也不代表已阅读完整全文。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.22287",
       "authors": [
         "Hansheng Chen",
@@ -9075,7 +9310,13 @@
       "topic_coverage": 0.8214,
       "topic_cache_token": "e0ff5b11f758e9948404138e42bf6cc16615722d8185e1b502a3fc067ebf2d00",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.22287",
+        "sha256": "36d49bcdfae3c971f4356cb663ecf5c0f33ed6fc0c19391c5e76af7fa85dc5de",
+        "chars": 12000
+      }
     },
     {
       "id": "0e580c33761cad534cfe2cd1",
@@ -9099,8 +9340,8 @@
       "published_at": "2026-11-17T00:00:00+00:00",
       "first_seen": "2026-11-19T03:16:42.045554+00:00",
       "excerpt": "Post-training quantization is the standard way to serve large language models at low cost. However, the best quantization recipe differs across models and precisions. As a result, experts must redesign it for every new model, which is time-consuming and often sub-optimal. Fortunately, an LLM agent can take over this design by refining the recipe over rounds of building and evaluating candidates, so that more rounds lead to better recipes. However, evaluating one quantized reasoning model takes tens of GPU-hours, and combining methods from different codebases means porting each to the new architecture by hand. We present QDA, a system in which an agent designs the recipe for each model and precision. To make evaluation fast, QDA scores each candidate in minutes by its output KL divergence from the original model on reasoning traces that the agent never sees, and checks promising ones with long generations to catch failures such as repetition loops. To make building fast, QDA provides a library of public PTQ methods that are compatible with one another and with new model architectures. Across four reasoning models, QDA improves accuracy over the strongest public recipe by 0.9, 1.4 and 2.2 percentage points on average at W4A16, W4A8 and W3A16, using 64 GPU-hours per search. On the 320B-parameter MoE model GLM-5.3-Flash at NVFP4 W4A4, it recovers 98.3% of the FP8 model's accuracy, against 96.9% for the best vendor checkpoint. Every QDA checkpoint also runs on existing serving kernels with no inference overhead. We will release the library, the evaluator and the harness.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出 QDA，一个让 LLM 代理为每个模型和精度自动设计量化配方的闭环系统，通过基于参考推理轨迹的 KL 散度快速评分候选配方，并提供一个统一的 21 种 PTQ 方法库以便方法可堆叠与适配新架构。据原文报告，该系统在四个推理模型上以每次搜索 64 GPU 小时的成本改进了平均精度，并在 320B MoE 模型 NVFP4 设置下恢复了 FP8 模型 98.3% 的精度；但需注意这些均为原文报告结果，尚待独立验证，且材料仅提供有限摘录、未声称已阅读完整全文。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.23388",
       "authors": [
         "Xingyang Li",
@@ -9148,7 +9389,13 @@
       "topic_coverage": 0.8158,
       "topic_cache_token": "e88ca7421ef1e6bf3e4f3f2c2d9dfb9a7a51caf6056a8020105b94630e72a37d",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.23388",
+        "sha256": "0af72d1250c3ad34372379b03157ecea1d1a8b05486a7806e874f5a45c53dbe5",
+        "chars": 12000
+      }
     },
     {
       "id": "6ed05805c40d1357349c637d",
@@ -9171,8 +9418,8 @@
       "published_at": "2026-11-17T00:00:00+00:00",
       "first_seen": "2026-11-19T03:16:42.045554+00:00",
       "excerpt": "Attention scores candidate supports of an answer, which we call witnesses, and reads the scores at a temperature. We build a higher-order attention layer whose state lives on pairs of items: for a pair (a, b), each third item k is a witness judged through its legs (a, k) and (k, b). It reads witnesses at zero temperature, keeping the best and the number tied with it, passes on only bits comparing such counts, rebuilds its pair state from the input and these bits at every loop, and is trained from answers alone. Each choice removes one way soft attention fails at size: dispersed weight, unresolved gaps between learned scores, and a drifting soft state. In maximum retrieval it is right on at least 99.95% of sets 1,000 times larger than in training, on all ten seeds; trained with a soft count, the same network falls to 42% at 4,096 items. On CLRS-30 without hints, a general form of the layer (half its channels read at zero temperature, numbers embedded, state carried) beats the best published model, which uses hints on some tasks; the full cold layer is exact on every test input of 9 of the 12 tasks whose answers depend on numbers only through comparisons. From yes-or-no answers it decides 2-SAT and two-colouring exactly at 500 variables and, as our theory predicts, not parity equations. Beside a frozen 7B language model it chains family relations exactly at 1,000 statements after training on 16, where the model alone falls to 44%; finite checks on the weights prove every block that learned correct at every size, on acyclic contexts and given what the model reads. On CLUTRR it is right on every story of five to ten relations given the graphs, learning the 62 rules exactly; from text, with the model frozen, no hand-written rule and only a small read-in trained, it lifts an open 7B model from 33% to 65%, above every system we found without hand-written rules except frontier reasoning models.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出一种零温度读取的高阶注意力层，其状态位于物品对上，通过保留最佳见证及其并列计数并仅传递比较位数，在最大检索任务上对训练规模一千倍的集合仍保持至少99.95%正确率，并在无提示的CLRS-30上部分配置超过有提示的已发表模型。该工作提示将比较驱动、无连续状态漂移的注意力设计用于提升算法类任务的尺度泛化，但相关结论仅来自所提供摘要与节选，未经过完整全文核验，公司或作者声明不能视为已验证性能。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.11937",
       "authors": [
         "Mostafa &#39;Neo&#39; Mohsenvand"
@@ -9205,7 +9452,13 @@
       "topic_coverage": 0.8737,
       "topic_cache_token": "7c1f32aef17b292d548d1d1849bf92e846cf2a3be640e0fab23118991de54cda",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.11937",
+        "sha256": "275a56504067f915847cebdffd5cd5836e424a88643ae94d961980a0dd0c28bd",
+        "chars": 12000
+      }
     },
     {
       "id": "e0168c77421884245be90093",
@@ -9628,6 +9881,89 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "d740404e27f79d3cdccc2fbf",
+      "url": "https://arxiv.org/abs/2611.22033",
+      "title": "Thinking Harder Doesn't Lead to Better Choices: Reasoning Effort Increases the Confidence but Not the Correctness of LLM Shopping Agents",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-11-17T00:00:00+00:00",
+      "first_seen": "2026-11-19T04:29:52.420959+00:00",
+      "excerpt": "Large language models (LLMs) are increasingly deployed as autonomous shopping agents that process multimodal product listings (consisting of visual and text data) and recommend purchases on behalf of consumers. Naturally, one might assume that models with more thinking power would make higher-quality purchasing decisions. To test this belief, we ask two questions about such agents: does asking a model to think harder make it choose better products, and does the confidence it reports tell us the likelihood it may be wrong? We benchmark ten frontier models on three product-choice benchmarks built from WebShop, Amazon's SQID and Wayfair's WANDS platforms to see if LLMs with more thinking power actually make better-quality product purchase decisions. Across all three benchmarks, we found that increasing the thinking effort does not increase decision quality in a statistically meaningful way. The same change in thinking effort raises stated confidence at a statistically significant level, so extra thinking buys confidence rather than correctness. We also measure the calibration of these models (how well their reported confidence percentage matches their true correctness percentage) in these tasks and show that most models are not well-calibrated at every effort level. We also find that errors are strongly shared: when one model errs in a task, several others tend to err on that same task. Furthermore, on tasks where several models all err, a large number of them pick the same wrong product.",
+      "summary": "本文在WebShop、SQID和WANDS构建的三个商品选择基准上评测十个前沿模型，发现提高推理投入未能在统计意义上提升购物决策质量，却显著抬高模型自报置信度，且多数模型在各投入水平下校准不佳、错误在模型间高度共享。该结果提示科研人员不宜把推理投入或模型自报置信度当作购物智能体决策正确性的可靠依据，并需关注跨模型共同错误对评测结论的影响。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.22033",
+      "authors": [
+        "Adi Krishnamoorthy",
+        "X. Y. Han"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:c47053dfcccd108c9bd7068f27074597",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：calibration。"
+        },
+        {
+          "id": "zotero:d4a56870e35078a55f7511a07aac9f6e",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：LLM。"
+        },
+        {
+          "id": "zotero:e09a09615a9a79995ffd756fcf67aa3f",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:c47053dfcccd108c9bd7068f27074597",
+        "zotero:d4a56870e35078a55f7511a07aac9f6e",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:c47053dfcccd108c9bd7068f27074597",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1",
+        "zotero:d4a56870e35078a55f7511a07aac9f6e",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8133,
+      "topic_cache_token": "2660bce8a8de2c44ee5b1f72037d016ea8c80d834a01aa4a8810f0105848ab88",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "aec425a30903ded4516c6cb0",
       "url": "https://arxiv.org/abs/2611.21925",
       "title": "DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding",
@@ -9648,8 +9984,8 @@
       "published_at": "2026-11-16T21:41:20+00:00",
       "first_seen": "2026-11-19T03:16:42.045554+00:00",
       "excerpt": "Speculative-diffusion decoding uses a small parallel drafter model to generate b draft tokens in one forward pass, which then undergo parallel verification via a larger target model. Faster inference can be achieved when multiple draft tokens pass verification simultaneously. Recent parallel draft architectures (DFlash, DSpark) improve draft quality by conditioning on rich features computed by the target, through a mechanism known as feature encoding. However, standard feature encoding mechanisms have three limitations: (1) they are lossy, applying encoding projections that are destructive to the underlying target feature-space via a discovered effect known as residual mixing, (2) they are memory-less, with no record of previously processed proposals, and (3) they utilize features sampled uniformly from across the target layers, omitting important hidden states. To address these issues, we propose Mixture-of-Features Attention (MoFA), a lightweight feature-encoding approach equipped with a working memory that encodes previously rejected proposals. Leveraging MoFA, rejection memory, and a set of further enhancements, including 2-tap causal convolutions, prefix-only cross-attention, and non-uniform target layer selection, the final architecture, DNeo, achieves 1.3x faster generation speed than SoTA (DFlash-2) without impacting drafter footprint or generation quality. DNeo marks a new state of the art in high quality, fast LLM inference.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出DNeo，用Mixture-of-Features Attention、拒绝记忆及2-tap因果卷积、前缀交叉注意力和非均匀目标层选择等改进特征编码，在摘要所述设定下比DFlash-2生成速度提升1.3倍且不增加草稿模型开销或影响生成质量。对科研工作，该工作针对现有并行草稿架构特征编码的有损、无记忆和层采样均匀三项限制提供改进思路，但摘要中1.3倍加速属作者报告结果，尚需独立验证，且未说明未阅读全文。",
+      "summary_kind": "ai_summary",
       "alpha_rank": 11,
       "authors": [
         "Jameson Sandler",
@@ -9724,8 +10060,8 @@
       "published_at": "2026-11-16T21:31:18+00:00",
       "first_seen": "2026-11-19T03:16:42.045554+00:00",
       "excerpt": "Learning from human demonstrations has enabled robots to acquire a wide range of manipulation skills, but learned policies typically execute far slower than ordinary humans. This speed gap is mainly due to lack of an interface for collecting demonstration data at high speed, and the difficulty in training policies that can robustly execute high-speed motions. In this paper, we present ALOHA Lightning (Flash ALOHA), a system for learning fast and precise robotic manipulation. Our system uses kinesthetic teaching to intuitively collect near-human-speed demonstrations on a backdrivable bimanual platform, yielding natural and fast trajectories. We also present a learning pipeline that enables smooth high-speed execution through test-time action smoothing and aligns the visual data distribution between data collection and deployment with masking. Given 50 demonstrations for each task, ALOHA Lightning autonomously completes bimanual tasks such as ball tossing and catching, folding shorts, battery insertion, and bussing tables for over 80% success rates while close to human speed. Project website: https://flash-aloha.github.io/",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出ALOHA Lightning（Flash ALOHA）系统，通过可反向驱动的双臂平台上的动觉示教采集接近人类速度的演示数据，并采用测试时动作平滑和视觉数据分布掩码对齐的学习流程，实现高速灵巧操作；据原文所述，每项任务给定50个演示时，该系统能自主完成抛接球、叠短裤、电池插入和收拾餐桌等双臂任务，成功率超过80%且速度接近人类。该工作为高速高精度机器人操作的学习与演示数据采集提供了一种可参考的系统与流程，但上述成功率与速度表述来自原文声明，尚未在此处作为独立验证结论。",
+      "summary_kind": "ai_summary",
       "alpha_rank": 4,
       "authors": [
         "John Hua Yao. Qi Wu",
@@ -10661,9 +10997,9 @@
       "summary_kind": "ai_summary",
       "authors": [
         "Lucas B. T. de Kam",
-        "P. Rinke",
-        "C. J. Stein",
-        "P. Loche"
+        "Patrick Rinke",
+        "Christopher J. Stein",
+        "Philip Loche"
       ],
       "topic_labels": [
         {
@@ -12533,8 +12869,8 @@
       "published_at": "2026-11-16T00:00:00+00:00",
       "first_seen": "2026-11-19T03:16:42.045554+00:00",
       "excerpt": "Streaming video LLMs can continuously observe the world, yet often handle user requests in isolation. We introduce ALIVE, an interactive streaming video model supporting proactive monitoring, streaming task coordination, and feedback-seeking interaction. We construct ALIVE-SFT-288K and ALIVE-RL-3K for two-stage training. Contrastive supervised fine-tuning teaches when and how to respond, while reinforcement learning with Behavior-Aligned Credit Assignment (BACA) combines trajectory-level and local advantages to refine decisions, responses, and silence across multi-turn interactions. We also introduce FSI-Bench to evaluate feedback seeking and subsequent task completion. ALIVE achieves the highest overall scores among the compared models on four public benchmarks and FSI-Bench, demonstrating strong streaming understanding and interactive capabilities.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出ALIVE交互式流式视频模型，支持主动监测、流式任务协调和寻求反馈的交互，并构建ALIVE-SFT-288K与ALIVE-RL-3K用于两阶段训练，同时引入FSI-Bench评估反馈寻求及后续任务完成。原文称ALIVE在四个公开基准和FSI-Bench上总体得分最高，但这些是作者报告的结果，且本文未提供可独立验证的性能数字；其用途在于为流式视频模型的交互式监测与多轮任务协调研究提供方法及评测参考。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.21366",
       "authors": [
         "Jinzhao Li",
@@ -12605,8 +12941,8 @@
       "published_at": "2026-11-16T00:00:00+00:00",
       "first_seen": "2026-11-19T03:16:42.045554+00:00",
       "excerpt": "In structured Bayesian models, a large latent block is often Gaussian conditional on a smaller set of parameters, yet generic inference methods relearn this geometry during warmup. We study how this structure can be used to construct transports for posterior inference. The conditional mean and precision determine exact affine maps, including symmetric Brenier and triangular Knothe-Rosenblatt maps, that separate a standard normal block from the remaining non-Gaussian core. KL and relative Fisher objectives then reduce to objectives on this core. We introduce CONGA, a compiler that identifies candidate Gaussian blocks and selects a temporal, spectral, or sparse implementation according to their structure and computational cost. Marginalization requires an identity established from the model; numerical evidence alone permits only a target-preserving change of variables, and a failed check leaves the model unchanged. On the Stock-Watson inflation model, CONGA improves minimum ESS per second by 12.5x for NUTS. It also restores convergence where the raw target fails: for WALNUTS on the same model, and for NUTS on a 6760-dimensional electricity load model reduced to 34 core coordinates. Experiments on graph-indexed fields show how coloring and fill affect the choice of map, including cases where retaining the original target is preferable. Code at https://github.com/vicgalle/conga",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "CONGA 是一个编译器，用于识别结构化贝叶斯模型中的候选高斯潜变量块，并依据其结构计算成本选择时间、谱或稀疏实现来构造仿射传输映射，从而将标准正态块与非高斯核心分离。该方法可用于在满足模型可建立恒等关系时进行边缘化、否则仅作保持目标的变化，并且在数值证据不足或检查失败时保持原模型不变；其适用性受此恒等关系是否存在以及具体实现成本的影响。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.20995",
       "authors": [
         "Víctor Gallego"
@@ -12707,6 +13043,78 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.916,
       "topic_cache_token": "2ca40ee7f77e3089b7772ec315624fb63c21eaa9854f64d9b6d62a007e1cb3c8",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "81a8a811c04d6a1399901491",
+      "url": "https://arxiv.org/abs/2611.21114",
+      "title": "VAE Rhythm: Temporal Decoding Traces for AI-Generated Video Detection",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-11-16T00:00:00+00:00",
+      "first_seen": "2026-11-19T04:29:52.420959+00:00",
+      "excerpt": "Visible artifacts are an unreliable cue for detecting generated videos, because newer generators learn to remove them. We instead detect a trace left by the generation pipeline itself. Most video generators decode latents with a 3D causal VAE that groups consecutive frames in time, so the fidelity of generated frames rises and falls periodically with their position in a group. We call this periodic trace VAE Rhythm. Real videos are captured frame by frame and do not have it. To reveal it without training, we propose a phase scan. The scan reconstructs a clip with an off-the-shelf VAE from successive start offsets and measures the periodicity of the reconstruction error across these offsets. We find VAE Rhythm in most of the 39 variants of 31 generators we test, including the closed-source Sora, Kling 3.0 and Seedance 2.0. We use the rhythm as a zero-shot score, as a plug-in for existing detectors and as a data engine that pairs real videos with their VAE reconstructions to train our detector CaDet. On DF26, the training-free rhythm score outperforms all 15 retrained baselines, and as a plug-in it improves all 19 tested detectors by 6.7% to 23.7% AUROC. CaDet achieves the best AUROC on AIGVDBench, DF26 and three 2026 closed-source models, and its variant trained without any generated video still exceeds 90% on AIGVDBench.",
+      "summary": "本文提出一种无需训练的相位扫描方法，通过现成VAE从连续起始偏移重建视频片段并测量重建误差周期性，从而检测多数视频生成器3D因果VAE解码时留下的周期性痕迹（VAE Rhythm），并将其用作零样本分数、现有检测器插件及训练数据引擎。该痕迹可作为区分生成视频与逐帧拍摄真实视频的信号，但摘要仅报告在特定基准和生成器变体上的表现，未说明其对未列生成器或真实场景的泛化能力，且相关性能数字来自原文报告，尚未经独立验证。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.21114",
+      "authors": [
+        "Ke Sun",
+        "Shuwei Li",
+        "Haiyang Mei",
+        "Mike Zheng Shou"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0b5a1249a1e93e49428e264a989dd3e7",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：VAE。"
+        },
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：training。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0b5a1249a1e93e49428e264a989dd3e7",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:0b5a1249a1e93e49428e264a989dd3e7",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.806,
+      "topic_cache_token": "5db4dbbc3c7acf8412d4418b9f572d711c3e8d55b41d7173d64a220cf7ee9140",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -16154,6 +16562,83 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "b0dc784b9dabbfb02c89f0c9",
+      "url": "https://arxiv.org/abs/2611.19200",
+      "title": "LogT: Logically Think with Images for Visual Search",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "first_seen": "2026-11-19T04:29:52.420959+00:00",
+      "excerpt": "Thinking with images empowers vision-language models (VLMs) to use an external Zoom-in tool for fine-grained visual search. Recent works employ supervised fine-tuning (SFT) and reinforcement learning (RL) with tool-specific designs to enable such capabilities. However, achieving logical reasoning alongside accurate and efficient tool use remains a significant challenge. To address this, we shift the focus away from increasing RL complexity and instead identify SFT data quality as a key bottleneck. We then propose LogT (short for Logically Think with Images), a fully automated SFT data engine that explicitly enforces logic-chain-guided reasoning. LogT generates an SFT dataset featuring challenging, visually grounded questions and structured tool-use traces with human-like logic. We validate our approach by fine-tuning two base models, Qwen2.5-VL-7B and InternVL3.5-8B, on the dataset and evaluating them across seven benchmark test sets. We show that LogT-SFT based on Qwen2.5-VL-7B outperforms the state-of-the-art trained with both SFT and RL, despite using 3.1times less data and >120times fewer GPU hours. Furthermore, applying a simple RL recipe without tool-specific design on LogT-SFT yields a model that surpasses prior methods with complex RL setups by a substantial 9.59-point margin. In addition to strong performance gains, our model exhibits higher tool-use accuracy and efficiency, as well as more structured and logically consistent reasoning traces, directly validating the effectiveness of our approach.",
+      "summary": "本文提出LogT，一个全自动的SFT数据引擎，通过显式强制逻辑链引导推理来生成包含视觉基础问题和结构化工具使用轨迹的SFT数据集，并在Qwen2.5-VL-7B和InternVL3.5-8B两个基础模型上微调后于七个基准测试集评估。该工作表明在Qwen2.5-VL-7B上基于LogT的SFT以更少数据和GPU时间优于先前SFT与RL结合的方法，且在其上应用无工具特定设计的简单RL即可超越复杂RL方案，但上述性能与效率优势均来自原论文报告，尚需独立验证。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.19200",
+      "authors": [
+        "Yanjun Fu",
+        "Quanzeng You",
+        "Jiadong Guo",
+        "Yujie Lu",
+        "Sai Charitha Akula",
+        "Haiping Wu",
+        "Miao Liu",
+        "Sanghamitra Dutta",
+        "Lu Yuan"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：dataset、benchmark。"
+        },
+        {
+          "id": "zotero:1579d11ce0d07bcc5537d8ab853a01ce",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reinforcement learning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:1579d11ce0d07bcc5537d8ab853a01ce"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:1579d11ce0d07bcc5537d8ab853a01ce",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9097,
+      "topic_cache_token": "deeccb78f259ad813317c63e641f8ea628c94d91ccd938a66bca0bfe97eb7d66",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "eca8ea19f9894d6a2678c712",
       "url": "https://arxiv.org/abs/2611.18562",
       "title": "Training Reasoning Models in Simulation to Natively Use Real Robots",
@@ -19359,8 +19844,8 @@
       "published_at": "2026-11-13T00:00:00+00:00",
       "first_seen": "2026-11-19T03:16:42.045554+00:00",
       "excerpt": "Flow-based generative models are trained on a hand-chosen prediction target, such as the velocity, the noise, or the clean data. This choice strongly affects training and sample quality. We introduce Anisotropic Flow Models (AnisoFlow), which replaces a fixed prediction target with a fully learnable one. AnisoFlow learns to scale the noise component of the target anisotropically, assigning a separate nonnegative weight to each direction in a jointly learned basis. A closed-form map recovers the velocity from the network's prediction, leaving the architecture, flow-matching loss, and sampler unchanged. Since recovery is exact, training optimizes the target purely to make it easier for the network to predict. We theoretically analyze the resulting prediction error and predict that the preferred noise weight in each direction scales near-linearly with data variance, in agreement with the weights learned empirically in pixel space. AnisoFlow improves FID from 1.90 to 1.55 over the JiT baseline on ImageNet 256times256, by learning only the prediction target, without representation alignment or architectural changes. In pixel-space text-to-image generation, AnisoFlow improves image quality and, through better-conditioned velocity recovery, largely removes patch-seam artifacts under reduced-precision inference.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出AnisoFlow，将流模型中固定的预测目标替换为可学习目标，在联合学习基下对目标噪声分量按方向分别赋非负权重进行各向异性缩放，并通过闭式映射精确恢复速度，不改变架构、流匹配损失与采样器。该设计使预测目标仅针对网络预测难度进行优化，理论上预测各方向偏好噪声权重随数据方差近线性缩放，并在像素空间实验中与学习权重一致；其限制在于公开材料仅给出ImageNet 256×256上FID从1.90降至1.55及像素空间文生图改善的摘要性结论，未提供完整实验细节或独立验证。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.17767",
       "authors": [
         "Rayhan Zirvi",
@@ -31137,6 +31622,64 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "7f0938d2780a6337fd100d21",
+      "url": "https://doi.org/10.1002/adfm.77836",
+      "title": "Gradient-Conductivity Architecture Enables Synchronous Enhancement of Sensitivity and Detection Range in Multifunctional All-Paper Sensors",
+      "source_ids": [
+        "journal-advanced-functional-materials"
+      ],
+      "source_names": [
+        "Advanced Functional Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-10T13:18:09+00:00",
+      "first_seen": "2026-11-19T04:29:52.420959+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Ao Li, Jun Xu, Dezhong Xu, Zhaohui Zhang, Jiyi Li, Daxian Cao, Kefu Chen, Mizi Fan"
+      ],
+      "journal_id": "advanced-functional-materials",
+      "journal_title": "Advanced Functional Materials",
+      "journal_issns": [
+        "1616-301X",
+        "1616-3028"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adfm.77836",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5455,
+      "topic_cache_token": "fd777296ce4a255370858fee8236f793c72f3dc1382a0e518cbcffe3cee4c14e",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "aa0496647cfa3e69d8a64d85",
       "url": "https://arxiv.org/abs/2611.14048",
       "title": "LaST0.5: A Generalist World Action Model with Interaction-Centric Latent Reasoning",
@@ -34912,6 +35455,74 @@
       }
     },
     {
+      "id": "720cb2d013bb5a9c57110428",
+      "url": "https://arxiv.org/abs/2611.14848",
+      "title": "Tideway: Phase-Aware Tiered Memory Management for MoE Inference on Consumer Devices",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "first_seen": "2026-11-19T04:29:52.420959+00:00",
+      "excerpt": "Large language model (LLM) agents are rapidly becoming a dominant paradigm for AI applications. Recently, there is a growing demand to deploy large-scale Mixture-of-Experts (MoE) models locally on consumer PCs to balance data privacy, API costs, and inference efficiency. However, unlike datacenter servers with abundant DRAM, consumer devices are tightly constrained in both GPU VRAM and host RAM, forcing massive MoE weights to spill across VRAM, host RAM, and SSD. Under such spilling, we observe that existing systems fail to fully utilize this memory hierarchy, treating the tiers as independent caches and thrashing in inference. We present TIDEWAY, a system for efficient inference of large MoE models on memory-constrained consumer devices. Our core insight is to manage host RAM and GPU VRAM as a unified memory pool. Within this pool, TIDEWAY couples phase-aware memory layouts, which adapt to the distinct access patterns of prefill and decode, with an execution engine that optimizes CUDA Graph execution under expert paging. Our evaluations on representative consumer hardware with frontier MoE models demonstrate that TIDEWAY significantly outperforms state-of-the-art systems. On average, TIDEWAY achieves speedups of 1.97x in end-to-end latency and 2.40x in Time-to-First-Token (TTFT), along with 1.61x higher decode throughput against the fastest baseline. Our source code is publicly available at https://github.com/Afterglow231/Tideway .",
+      "summary": "本文提出并实现了 Tideway，一种面向内存受限消费级设备上大规模 MoE 模型推理的阶段感知分层内存管理系统，将主机内存与 GPU 显存作为统一内存池管理，并针对预填充和解码阶段采用不同内存布局，同时优化专家分页下的 CUDA Graph 执行。在作者所述代表性消费级硬件与前沿 MoE 模型评测中，该系统相对其所述最快基线取得端到端延迟 1.97 倍、首 token 时间 2.40 倍和解码吞吐 1.61 倍的平均加速，但这些性能提升来自原文报告而非独立验证，且其适用性限于所测试的消费级内存受限场景，源代码已公开。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.14848",
+      "authors": [
+        "Yifei Wang",
+        "Tsun-yu Yang",
+        "Yechen Xu",
+        "Hancheng Ye",
+        "Qinsi Wang",
+        "Baijun Zhou",
+        "Tingjun Chen",
+        "Hai &#34;Helen&#34; Li",
+        "Danyang Zhuo",
+        "Yiran Chen"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:d4a56870e35078a55f7511a07aac9f6e",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：large language model、LLM。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d4a56870e35078a55f7511a07aac9f6e"
+      ],
+      "topic_ids": [
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d4a56870e35078a55f7511a07aac9f6e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8117,
+      "topic_cache_token": "b590dc04be843722208306f32b3e9d68203059c1325f4aec9454a7fff3ef4134",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "5fd8186d68dd6892ebd45f89",
       "url": "https://arxiv.org/abs/2611.13309",
       "title": "PegasusAI Studio: Legible Cyberinfrastructure and Accountable AI Agents for Scientific Workflows",
@@ -38077,8 +38688,8 @@
       "published_at": "2026-11-08T00:00:00+00:00",
       "first_seen": "2026-11-19T03:16:42.045554+00:00",
       "excerpt": "High-resolution weather prediction is important for resolving local atmospheric patterns missed by coarse global forecasts. Large pretrained weather backbones have improved global forecasting, but adapting them to produce future high-resolution fields from recent coarse states remains challenging and costly. We formulate this setting as Predictive Spatiotemporal Weather Downscaling (PSWD), a task that jointly refines spatial and temporal resolution while predicting future high-resolution trajectories. To this end, we propose a framework that decomposes prediction into spatial and temporal stages using a shared pretrained backbone, fixed numerical scaffolds, and lightweight residual heads. For backbone adaptation, we introduce PROLA (PRincipal-Orthogonal Low-rank Adaptation), which allocates a fixed low-rank budget between pretrained weights' principal directions and their orthogonal complement. PROLA further rescales rank-1 optimizer updates using gradient signals, improving adaptation without increasing trainable rank. Experiments in the PSWD setting show that PROLA outperforms representative low-rank adaptation baselines. Further experiments across diverse datasets and tasks support the broader applicability of PROLA, showing that its benefits extend beyond the primary weather downscaling setting.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出预测性时空天气降尺度（PSWD）任务，并给出将预测分解为空间与时间两阶段、共享预训练骨干网络并结合固定数值支架与轻量残差头的框架，同时提出PROLA低秩适配方法，在固定低秩预算下于预训练权重的主方向与正交补之间进行分配。公开材料显示，PSWD设定下PROLA优于代表性低秩适配基线，并在多数据集与任务上得到进一步支持；但材料未给出具体性能数字，也未说明该方法在超出所测数据集与任务范围外的适用性限制。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.11318",
       "authors": [
         "Minseo Yoon",
@@ -57859,7 +58470,7 @@
       "doi": "10.1016/j.matt.2026.102949",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-18T04:29:40+00:00",
+      "indexed_at": "2026-11-19T04:18:56+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -155522,8 +156133,8 @@
       "published_at": "2026-10-14T00:00:00+00:00",
       "first_seen": "2026-11-19T03:16:42.045554+00:00",
       "excerpt": "Multimodal large language models (MLLMs) excel in vision-language tasks; yet, whether they maintain consistent understanding of information-rich visuals (InfoVis) when the surface language changes remains unclear. To quantify this capability, we introduce MInfoVisQA, a parallel benchmark with 8,960 QA configurations derived from 128 seed instances across 24 languages. We construct seed-matched, language-parallel visuals and QA pairs by disentangling numerical-structural data from text and programmatically synchronizing translated labels. We evaluate 25 MLLMs under two settings: Language-Aligned QA (LQA, matching visual-text languages) and Cross-Language QA (XQA, fixed QA language with varying visual languages). The results show that aggregate accuracy masks substantial robustness gaps: two models with comparable mean LQA accuracy (80.4\\%) exhibit performance spreads of 7.8 and 20.3 percentage points across languages. Moreover, all 25 models score lower with non-English visuals under fixed English QA, underscoring the need for cross-language sensitivity metrics.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文构建了MInfoVisQA多语言平行基准，包含来自128个种子实例、覆盖24种语言的8,960个问答配置，并通过分离数值结构数据与文本、程序化同步翻译标签来生成语言平行视觉与问答对，在语言对齐问答和跨语言问答两种设置下评估了25个多模态大语言模型。该基准可用于衡量多模态大语言模型在表面语言变化时对信息丰富视觉内容理解的一致性与跨语言鲁棒性；原文报告的结果显示，平均准确率会掩盖显著的鲁棒性差距，且所有25个模型在固定英语问答下使用非英语视觉时得分均更低，表明需要引入跨语言敏感性指标。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.21644",
       "authors": [
         "Changjiang Jiang",
@@ -190985,7 +191596,7 @@
       "doi": "10.1016/j.matt.2026.102870",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-03T05:14:40+00:00",
+      "indexed_at": "2026-11-19T03:43:51+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -216975,17 +217586,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Yunfei Bu",
-        "Minghao Zhang",
-        "Huixian Liu",
-        "Mengyuan Guo",
-        "Yuxuan Zhang",
-        "Yijing Shang",
-        "Hua Liu",
-        "Xingyu Xiong",
-        "Yantao Zhao",
-        "Zhibin Yang",
-        "Suping Peng"
+        "Yunfei Bu, Minghao Zhang, Huixian Liu, Mengyuan Guo, Yuxuan Zhang, Yijing Shang, Hua Liu, Xingyu Xiong, Yantao Zhao, Zhibin Yang, Suping Peng"
       ],
       "journal_id": "advanced-energy-materials",
       "journal_title": "Advanced Energy Materials",
@@ -222385,7 +222986,7 @@
       "doi": "10.1038/s41586-026-10271-7",
       "published_online_at": "2026-09-23T00:00:00+00:00",
       "published_print_at": "2026-09-24T00:00:00+00:00",
-      "indexed_at": "2026-11-17T02:27:08+00:00",
+      "indexed_at": "2026-11-19T03:36:23+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -246886,7 +247487,7 @@
       "doi": "10.1038/s41467-026-77589-8",
       "published_online_at": "2026-09-07T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-10-08T11:51:31+00:00",
+      "indexed_at": "2026-11-19T04:03:43+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -261047,6 +261648,68 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.9167,
       "topic_cache_token": "c38a195adbf31831890f3be7452f8dc021a3b812f35eb4d26e6e2a5d663f0c79",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "6beeb0c9ff6d8c3dc7467a43",
+      "url": "https://doi.org/10.1038/s41563-026-02710-7",
+      "title": "The meta way of thinking",
+      "source_ids": [
+        "journal-nature-materials"
+      ],
+      "source_names": [
+        "Nature Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-08-31T00:00:00+00:00",
+      "first_seen": "2026-11-19T04:29:52.420959+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Alexandre Dmitriev",
+        "Magnus P. Jonsson",
+        "Mark L. Brongersma",
+        "Nader Engheta",
+        "Nicolò Maccaferri"
+      ],
+      "journal_id": "nature-materials",
+      "journal_title": "Nature Materials",
+      "journal_issns": [
+        "1476-1122",
+        "1476-4660"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s41563-026-02710-7",
+      "published_online_at": "2026-08-31T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-19T03:43:54+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [],
+      "topic_leaf_ids": [],
+      "topic_ids": [],
+      "topic_status": "insufficient_evidence",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 1.0,
+      "topic_cache_token": "36902e619d9a928891fd3d567e7da577d89205813a29be2b41b7548918905d64",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -290810,8 +291473,8 @@
       "published_at": "2026-05-16T03:47:26+00:00",
       "first_seen": "2026-11-19T03:16:42.045554+00:00",
       "excerpt": "Tool use enables large language models to solve complex tasks through sequences of API calls, yet existing reinforcement learning approaches fail to scale to multi-step composition settings. Outcome-based rewards provide only sparse feedback, while trajectory-supervised rewards depend on annotated reference solutions, penalizing valid alternatives and limiting scalability. We propose TIER: Trajectory-Invariant Execution Rewards, a reward framework that derives supervision directly from function schemas and runtime execution, rather than from reference trajectories. The reward decomposes into format validity, schema adherence, execution success, and answer correctness, providing dense, interpretable sequence-level feedback derived from fine-grained verification of individual steps of tool use. This design allows any valid execution path to receive credit, naturally supporting multiple solution strategies and adapting to evolving tool interfaces. On DepthBench, a compositional benchmark stratified by depth (1 to 6 steps), TIER achieves >90% accuracy across steps, where trajectory-supervised rewards collapse beyond step-4. We further demonstrate consistent gains on benchmarks like BFCL v3 and NestFUL. Ablation studies confirm that all reward components are necessary, highlighting the importance of multi-level supervision for compositional reasoning.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出TIER，一种轨迹不变的执行奖励框架，其监督信号直接来自函数模式和运行时执行而非参考轨迹，并将奖励分解为格式有效性、模式符合、执行成功和答案正确性。若原文报告的DepthBench及BFCL v3、NestFUL结果成立，该框架可为多步工具组合的强化学习提供不依赖参考解法的密集序列级反馈；但其实际效果仍取决于这些基准上的验证，且不声称已阅读完整全文。",
+      "summary_kind": "ai_summary",
       "alpha_rank": 5,
       "authors": [
         "Anay Kulkarni",
@@ -290861,6 +291524,77 @@
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.9348,
       "topic_cache_token": "a2b3470afad5f4a10c293d1258e274f4e3ab439b37751ac99221bd6dca167e97",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "f8e9922ed3e536dbc376e88a",
+      "url": "https://arxiv.org/abs/2605.10405",
+      "title": "Valid Best-Model Identification for LLM Evaluation via Low-Rank Factorization",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-05-11T11:43:28+00:00",
+      "first_seen": "2026-11-19T04:29:52.420959+00:00",
+      "excerpt": "Selecting the best large language model (LLM) for a fixed benchmark is often expensive, since exhaustive evaluation requires running every model on every example. Multi-armed bandit (MAB) algorithms can reduce the number of LLM calls by sequentially selecting the next model-example pair to evaluate, thereby avoiding wasted evaluations on clearly underperforming models. Further savings can be achieved by predicting model scores from the partially observed model-example score matrix using low-rank factorization. However, such predictions are not ground truth: they can be biased and may therefore lead to incorrect identification of the best model. In this work, we propose a principled framework that combines MAB with cheap predicted scores without compromising statistical validity. Specifically, we derive doubly robust estimators of each model's performance that use the low-rank predictions to reduce variance. This enables the construction of valid finite-sample confidence intervals in our setting, where models are selected adaptively and examples are sampled without replacement. Empirical results on real-world benchmarks show that our approach reduces the number of required evaluations, yielding meaningful savings in compute and cost while accurately identifying the best-performing model.",
+      "summary": "本文提出一个将多臂老虎机与低秩预测分数结合的双稳健估计框架，用于在自适应选择模型且不放回抽样样本的条件下构建有效的有限样本置信区间。该框架可在保持统计有效性的前提下减少大语言模型评测所需的调用次数，从而降低计算与成本；但摘要中的节省与识别准确率来自真实基准上的实证结果，其具体幅度未在摘要中给出。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 5,
+      "authors": [
+        "Elad Tolochinsky",
+        "Yaniv Tenzer",
+        "Yaniv Romano"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark、evaluation。"
+        },
+        {
+          "id": "zotero:d4a56870e35078a55f7511a07aac9f6e",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：large language model、LLM。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:d4a56870e35078a55f7511a07aac9f6e"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d4a56870e35078a55f7511a07aac9f6e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8417,
+      "topic_cache_token": "5d105b7e4b158cb7df3633a9fd621ccd6d091203e338ca579ecf57997eb71fff",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -292410,13 +293144,13 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-11-19T03:16:42.045554+00:00",
+    "last_success": "2026-11-19T04:29:52.420959+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 83,
-      "unclassified": 1993,
+      "classified": 10,
+      "unclassified": 1995,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
       "quality_status": "unmeasured",
@@ -292520,8 +293254,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "status": "ok",
       "count": 12
     },
@@ -292529,7 +293263,7 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -292540,8 +293274,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "status": "ok",
       "count": 11
     },
@@ -292549,8 +293283,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "status": "ok",
       "count": 12
     },
@@ -292558,8 +293292,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "status": "ok",
       "count": 12
     },
@@ -292567,8 +293301,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "status": "ok",
       "count": 0
     },
@@ -292576,8 +293310,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "status": "ok",
       "count": 12
     },
@@ -292585,8 +293319,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "status": "ok",
       "count": 1
     },
@@ -292598,14 +293332,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "count": 211,
       "counters": {
         "relevant": 4,
         "pending": 207,
         "excluded": 3,
-        "fetched": 243,
+        "fetched": 241,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -292618,14 +293352,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "count": 94,
       "counters": {
         "relevant": 13,
         "pending": 81,
         "excluded": 306,
-        "fetched": 217,
+        "fetched": 215,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -292638,14 +293372,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
-      "count": 209,
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
+      "count": 210,
       "counters": {
         "relevant": 34,
-        "pending": 175,
+        "pending": 176,
         "excluded": 1572,
-        "fetched": 624,
+        "fetched": 617,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -292658,14 +293392,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "count": 189,
       "counters": {
         "relevant": 22,
         "pending": 167,
         "excluded": 924,
-        "fetched": 538,
+        "fetched": 533,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -292678,14 +293412,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "count": 109,
       "counters": {
         "relevant": 1,
         "pending": 108,
         "excluded": 2,
-        "fetched": 81,
+        "fetched": 82,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -292698,14 +293432,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "count": 79,
       "counters": {
         "relevant": 1,
         "pending": 78,
         "excluded": 771,
-        "fetched": 238,
+        "fetched": 231,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -292718,14 +293452,14 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
       "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 1107,
       "counters": {
         "relevant": 14,
         "pending": 1093,
-        "excluded": 1125,
-        "fetched": 408,
+        "excluded": 1128,
+        "fetched": 208,
         "abstracts_recovered": 0
       },
       "errors": [
@@ -292740,14 +293474,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
-      "count": 26,
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
+      "count": 27,
       "counters": {
         "relevant": 0,
-        "pending": 26,
+        "pending": 27,
         "excluded": 41,
-        "fetched": 12,
+        "fetched": 13,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -292760,14 +293494,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "count": 135,
       "counters": {
         "relevant": 1,
         "pending": 134,
         "excluded": 238,
-        "fetched": 68,
+        "fetched": 66,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -292780,14 +293514,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "count": 28,
       "counters": {
         "relevant": 3,
         "pending": 25,
         "excluded": 781,
-        "fetched": 127,
+        "fetched": 121,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -292796,8 +293530,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "status": "ok",
       "count": 1
     },
@@ -292805,8 +293539,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "status": "ok",
       "count": 12
     },
@@ -292814,8 +293548,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "status": "ok",
       "count": 0
     },
@@ -292823,8 +293557,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "status": "ok",
       "count": 0
     },
@@ -292832,8 +293566,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
-      "last_success": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
+      "last_success": "2026-11-19T04:29:52.420959+00:00",
       "status": "ok",
       "count": 12
     },
@@ -292842,7 +293576,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 20,
-      "last_attempt": "2026-11-19T03:16:42.045554+00:00",
+      "last_attempt": "2026-11-19T04:29:52.420959+00:00",
       "last_success": "2026-11-19T03:15:46.662736+00:00",
       "run_id": "44447520760",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -292850,16 +293584,16 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 24,
+    "generated": 19,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
       "status": "partial",
       "attempted": 8,
-      "public_html": 3,
+      "public_html": 6,
       "bohr_graph": 0,
-      "fallback": 5,
-      "bohr_calls": 3
+      "fallback": 2,
+      "bohr_calls": 0
     }
   },
   "policy": {
