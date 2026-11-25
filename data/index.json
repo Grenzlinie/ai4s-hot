@@ -1,8 +1,1239 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T05:40:22.499527+00:00",
+  "generated_at": "2026-11-25T06:19:57.451799+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
+    {
+      "id": "b937d4514213e147772b4452",
+      "url": "https://arxiv.org/abs/2611.29187",
+      "title": "CLFF: Automated Framework for Concurrent Learning Force Fields and Material Property Calculations",
+      "source_ids": [
+        "zotero"
+      ],
+      "source_names": [
+        "Zotero 为你推荐"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "chemistry",
+        "agents",
+        "tools"
+      ],
+      "published_at": null,
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "Machine learning interatomic potentials (MLIPs) offer an efficient paradigm for large-scale atomistic simulations with near first-principles accuracy. However, developing and deploying these potentials often involves intricate procedures that require substantial manual effort and domain expertise. In this work, we present CLFF, an open-source Python framework designed to automate concurrent learning workflows for MLIPs. CLFF integrates model training, MLIP-driven sampling, uncertainty-based candidate selection, quantum-mechanical labeling, and dataset augmentation into a unified workflow. The framework currently supports several modern graph-based MLIP architectures and is compatible with widely used computational chemistry and materials science tools. A distinguishing feature of CLFF is its ability to asynchronously distribute computational tasks across multiple heterogeneous remote computing resources, enabling users to aggregate fragmented hardware infrastructure within a single controllable workflow. In addition to concurrent learning, CLFF provides automated workflows for initial data generation and material property calculations, including phonon dispersion and potential energy surface scans. By minimizing manual intervention and enhancing reproducibility, CLFF offers a flexible platform for developing and deploying MLIPs in computational materials research.",
+      "summary": "CLFF 是一个开源 Python 框架，可自动化机器学习原子间势的并发学习全流程（训练、采样、筛选、量子标注与数据增强），并支持跨异构远程资源调度及声子色散、势能面扫描等材料性质计算。",
+      "summary_kind": "upstream_tldr",
+      "zotero_score": 4.387773244297806,
+      "authors": [
+        "Cao Thang Nguyen",
+        "Sung Youb Kim"
+      ],
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.29187v1",
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        },
+        {
+          "id": "zotero:29132f3642c19e5c9b71889c7fc63ddf",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reproducibility。"
+        },
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：materials science、material。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:29132f3642c19e5c9b71889c7fc63ddf",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:29132f3642c19e5c9b71889c7fc63ddf",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:6cb94419e4a077231731f17d61098d95",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9124,
+      "topic_cache_token": "2575614795171ad3584172704ba7fbddd91783cbac829deca59752ec439644f5",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "886d1877258aaf1c6d92a08b",
+      "url": "https://arxiv.org/abs/2611.29248",
+      "title": "AgenticMM: A Material-Centered Multi-Agent Architecture for Scalable First-Principles Materials Modeling",
+      "source_ids": [
+        "zotero"
+      ],
+      "source_names": [
+        "Zotero 为你推荐"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "chemistry",
+        "agents"
+      ],
+      "published_at": null,
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "Multi-agent frameworks are attracting increasing attention as a means of autonomously driving complex, long-running workflows in first-principles materials modeling. However, such frameworks commonly organize AI agents by computational task or scientific role. When scaled across many materials, this organization can require repeated transfers of material-specific context and complicate persistent execution and resource coordination. Here, we introduce AgenticMM, a material-centered multi-agent architecture in which each material has a persistent agent that owns its complete workflow and retains its scientific context, while a persistent coordinator allocates shared resources, mediates communication, and tracks campaign progress. AgenticMM is designed to incorporate reusable, prompt-based skills as modular definitions of these workflows. Using DefectSkills prompts, we demonstrate the feasibility of AgenticMM through a multistage point-defect campaign in which material-specific agents concurrently perform host electronic-structure, phase-stability, and intrinsic-defect calculations for five chemically diverse semiconductors.",
+      "summary": "AgenticMM 提出了一种以材料为中心的多智能体架构，为每种材料分配持久智能体以保留完整工作流和科学上下文，并由持久协调器统一调度资源与通信，从而支持可扩展的第一性原理材料建模。",
+      "summary_kind": "upstream_tldr",
+      "zotero_score": 4.032143497840174,
+      "authors": [
+        "Zhenkun Yuan",
+        "Geoffroy Hautier"
+      ],
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.29248v1",
+      "topic_labels": [
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：material。"
+        },
+        {
+          "id": "zotero:c65fbf3f1dc429e795b4b57f3926a4cc",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：multi-agent。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:c65fbf3f1dc429e795b4b57f3926a4cc"
+      ],
+      "topic_ids": [
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:c65fbf3f1dc429e795b4b57f3926a4cc"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8365,
+      "topic_cache_token": "45cd82360e43fa4ff04bfe4902f8b887354696f78771b26bfa6b31e70a86c626",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "95729ecf114331f9364ad072",
+      "url": "https://arxiv.org/abs/2611.29675",
+      "title": "CrysLDM: Latent Diffusion Model for Crystal Material Generation",
+      "source_ids": [
+        "zotero"
+      ],
+      "source_names": [
+        "Zotero 为你推荐"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "chemistry",
+        "tools"
+      ],
+      "published_at": null,
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "Generating new crystal materials with desirable chemical properties has long been a challenging task. Existing diffusion models operate in feature space, requiring complex diffusion architectures to model the joint distribution of atom types, coordinates, and lattice structures. This complexity increases the number of diffusion steps, leading to higher training and sampling costs. In this work, we aim to generate novel crystal materials within a time- and resource-constrained setup, where existing models are not well-suited. To address this, we propose CrysLDM, a novel latent diffusion model for 3D crystal materials, which integrates a variational autoencoder and a diffusion model. The VAE encoder maps 3D crystal structures into a latent space, where the diffusion model operates. Since CrysLDM leverages a smooth, lower-dimensional latent space, it simplifies the generative process and accelerates both training and inference. Through extensive experiments on benchmark datasets and tasks, we show that CrysLDM generates stable and valid materials with quality comparable to state-of-the-art methods, while being significantly more efficient in terms of computational resources and time.",
+      "summary": "CrysLDM 是一种将变分自编码器与扩散模型结合、在低维潜空间中生成三维晶体材料的新型潜扩散模型，能在显著降低训练与采样成本的同时生成质量与最先进方法相当且稳定有效的材料。",
+      "summary_kind": "upstream_tldr",
+      "zotero_score": 3.984629991531487,
+      "authors": [
+        "Subhojyoti Khastagir",
+        "Kishalay Das",
+        "Pawan Goyal",
+        "Seung-Cheol Lee",
+        "Satadeep Bhattacharjee",
+        "Niloy Ganguly"
+      ],
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.29675v1",
+      "topic_labels": [
+        {
+          "id": "zotero:0b5a1249a1e93e49428e264a989dd3e7",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：variational autoencoder、VAE。"
+        },
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：material、crystal。"
+        },
+        {
+          "id": "zotero:e09a09615a9a79995ffd756fcf67aa3f",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0b5a1249a1e93e49428e264a989dd3e7",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:0b5a1249a1e93e49428e264a989dd3e7",
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9554,
+      "topic_cache_token": "1324cd4318d8e12eebd2d518da05d830d5ca52958178f4b5a7284b9ae52f3471",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "fc00fc1c9b234c28286d9cfd",
+      "url": "https://arxiv.org/abs/2611.29467",
+      "title": "Beyond Accuracy: A Diagnostic Benchmark for Hypothesis-Driven Experiment Planning in LLM Agents",
+      "source_ids": [
+        "zotero"
+      ],
+      "source_names": [
+        "Zotero 为你推荐"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": null,
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "Evaluating large language model (LLM) agents on scientific tasks typically reduces to final-task accuracy, which obscures where reasoning succeeds or breaks down. We introduce a benchmark and diagnostic evaluation framework for hypothesis-driven adaptive experimental planning in closed-world system identification, instantiated in kinetic mechanism identification. The framework goes beyond final accuracy in two ways. First, we evaluate exploration behavior by quantifying the extent to which agents exhibit space-filling or corner-seeking patterns in the experimental design space. Second, we decompose the reasoning process into four interpretable steps: belief update, hypothesis discrimination, discriminative experiment design, and predictive reasoning under interventions, each scored separately on reasoning traces. Across ten LLM agents, we find that stronger agents outperform both adaptive (Bayesian optimization) and non-adaptive (Latin hypercube) baselines and exhibit exploration patterns inconsistent with naive heuristics. Decomposing reasoning reveals that the stronger agents score consistently well across all four steps, whereas weaker agents often succeed at belief update and hypothesis discrimination but are less reliable at translating them into actionable designs and sharp contrastive predictions. Independent expert annotations support predictive reasoning under our stated validation criteria, while evidence for discriminative experiment design is positive but less consistent. The results suggest a gap between recognizing plausible hypotheses and translating them into contrastive predictions, with more tentative evidence for a corresponding experiment-design bottleneck. The benchmark website is available at https://schwallergroup.github.io/beyond-accuracy/.",
+      "summary": "该论文提出了一个超越最终准确率的诊断基准，用于评估LLM智能体在动力学机制识别等闭环系统辨识任务中的假设驱动实验规划，并通过探索行为分析与“信念更新、假设区分、判别性实验设计、干预下预测推理”四步推理分解，发现强智能体优于贝叶斯优化和拉丁超立方基线且各步表现均衡，而弱智能体的主要瓶颈在于将假设转化为可操作实验和鲜明对比预测。",
+      "summary_kind": "upstream_tldr",
+      "zotero_score": 3.968236733408072,
+      "authors": [
+        "Ryo Kuroki",
+        "Amin Mansouri",
+        "Philippe Schwaller"
+      ],
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.29467v1",
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark、evaluation。"
+        },
+        {
+          "id": "zotero:d4a56870e35078a55f7511a07aac9f6e",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：large language model、LLM。"
+        },
+        {
+          "id": "zotero:d680e95392def25285a997e886e86a05",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reasoning、planning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:d4a56870e35078a55f7511a07aac9f6e",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d4a56870e35078a55f7511a07aac9f6e",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9227,
+      "topic_cache_token": "6288154225e9a4d806706ffe713c2b7f026bd625288ce68e3a347454e3ceae82",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "e49478eaf5df2dd4a8d791c2",
+      "url": "https://arxiv.org/abs/2611.30141",
+      "title": "Reading the Tea Leaves, Again: Can Large Language Models Predict Language Model Training Runs?",
+      "source_ids": [
+        "zotero"
+      ],
+      "source_names": [
+        "Zotero 为你推荐"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": null,
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "LLM agents now propose research ideas and run the experiments that test them, but they train every run to its end, whereas a researcher reads a run's configuration and the beginning of its curve and stops the runs that show no promise. Reading a run this way takes more than describing or implementing a training method: it takes knowing what a design choice does to a run. We build Tea Leaves to measure this knowledge on 682 real training runs across pretraining, fine-tuning, and reinforcement learning (RL): a forecaster sees the first 20% of a run with its configuration, description, and code, and predicts the rest. Across 11 LLMs and a range of forecasting baselines, the strongest LLMs match or exceed the best curve fitter on smooth loss curves (skill 0.66 against 0.62) and lead on noisy RL reward curves (0.43 against 0.13). What bounds every forecaster is what the log carries: on sparsely logged community runs all methods lose most of their skill, and none reliably flags a failing run in advance. Beyond the curve, information helps and effort does not: related runs in the prompt cut the error on loss curves by 39%, and knowledge of training dynamics lets the strongest LLMs order all 36 pairs of runs that differ by a described code change, which the early curves do not separate, whereas tools add little. This knowledge can be learned from logged runs: a small open model trained on public runs matches the best LLM on loss curves. Applied to the progress curves of research agents, the same reading ranks tasks by their remaining headroom, although for a single agent run it does not improve on the last value. We release the benchmark, the trained readers, and their training data to test and train LLMs' understanding of training and to help research agents decide which runs deserve their compute.",
+      "summary": "该论文提出 Tea Leaves 基准，用 682 个真实训练运行评估大语言模型能否仅凭运行配置、代码和前 20% 曲线预测后续训练表现，发现强 LLM 在平滑损失曲线和噪声 RL 奖励曲线上可优于曲线拟合基线，但预测效果受日志信息质量限制，且相关运行信息与训练动力学知识比工具更重要。",
+      "summary_kind": "upstream_tldr",
+      "zotero_score": 3.803866731309861,
+      "authors": [
+        "Xinran Zhao",
+        "Xiang Li",
+        "Tong Chen",
+        "Jinchuan Tian",
+        "Zichun Yu",
+        "Tongshuang Wu"
+      ],
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.30141v1",
+      "topic_labels": [
+        {
+          "id": "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：pretraining、fine-tuning。"
+        },
+        {
+          "id": "zotero:e09a09615a9a79995ffd756fcf67aa3f",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9146,
+      "topic_cache_token": "441b1140ad0be4bcc013d57ba697e1f97c70f5e673d8efe732e01c78ccff1310",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "c7a34070b3834c9445990c91",
+      "url": "https://arxiv.org/abs/2611.28669",
+      "title": "Physical regime changes expose formula misuse in large language models",
+      "source_ids": [
+        "zotero"
+      ],
+      "source_names": [
+        "Zotero 为你推荐"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": null,
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "Large language models (LLMs) are increasingly employed for scientific computing across the Earth and environmental sciences, but problems in these fields often involve distinct physical regimes. LLMs may fail to recognize these regime-dependent constraints, applying formulas outside their domains of validity and producing plausible but physically incorrect results. We systematically investigate these failures through controlled experiments and assess whether post-training can improve regime-aware reasoning. Across 72 physical mechanisms, we find frontier LLMs frequently misapply formulas outside their regimes of validity, reducing accuracy by 13-57 percentage points. Reinforcement learning with verifiable rewards enables Qwen3.5-9B to match DeepSeek V4 Flash (284B) on regime-dependent tasks, but its effectiveness is limited by the formulas available in the base model. Combining supervised fine-tuning on a few worked examples with reinforcement learning improves accuracy by 61 percentage points, while distillation from a teacher supplied with the correct formula raises accuracy from 0% to 71%.",
+      "summary": "该论文系统研究发现，大语言模型在72种物理机制中常因忽略不同物理适用区间而误用公式，导致准确率下降13–57个百分点，并证明结合少量示例监督微调与可验证奖励强化学习（以及从提供正确公式的教师模型蒸馏）能显著提升其区间感知的科学计算能力。",
+      "summary_kind": "upstream_tldr",
+      "zotero_score": 3.803053317960674,
+      "authors": [
+        "Maohao Ran",
+        "Yanting Zhang",
+        "Chendong Ma",
+        "Jun Song"
+      ],
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.28669v1",
+      "topic_labels": [
+        {
+          "id": "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：post-training、fine-tuning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9167,
+      "topic_cache_token": "2d2b78ab380ff159ba97f069253d27ac9a306eca5e7b67789566f090173bcabd",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "7b6f79f021420f23cc7c9d95",
+      "url": "https://arxiv.org/abs/2611.29349",
+      "title": "Graph Neural Networks for Accurate Quasiparticle Energy Levels in Large Supercells of Transition Metal Dichalcogenides",
+      "source_ids": [
+        "zotero"
+      ],
+      "source_names": [
+        "Zotero 为你推荐"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials",
+        "biology",
+        "agents"
+      ],
+      "published_at": null,
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "The GW method is the one of the main workhorses of the materials science community to accurately calculate the electronic bandgap of materials, as it overcomes the gap underestimation problem from Density Functional Theory (DFT). Despite its accuracy, its computational cost becomes prohibitive when calculations have more than 10-100 atoms, which makes more difficult its use for defects, surfaces and moir\\'e systems that demand large supercells. To overcome this problem, we developed a Graph Neural Network trained with smaller GW calculations which can make accurate predictions on large supercells at a small fraction of the computational cost. Our model uses as features the projection of DFT wavefunctions into localized atomic orbitals, while graph nodes represent the atomic positions and edges represent atom to atom distances, which captures the system geometry. We explore how to do \"small AI\", providing a workflow of how to create a personal and convenient dataset of GW calculations to train the model that can be applied to different materials so that the final user does not need to rely on massive datasets. We define what must be included in the training dataset to capture the physics of our objective simulation, and perform a Bayesian optimization of hyperparameters. In the case of monolayer MoS$_2$ with a sulfur vacancy our GNN models achieve high accuracy (MAE ranging 10 to 50 meV) with a simplified workflow applicable to other materials, accelerating accurate large electronic structure calculations.",
+      "summary": "该论文提出一种用小型GW计算训练、以DFT波函数局域轨道投影和原子距离图为输入的图神经网络，能在极低计算成本下准确预测过渡金属硫族化合物大超胞的准粒子能级（如单层MoS₂硫空位MAE约10–50 meV），并提供可推广的“小AI”训练流程。",
+      "summary_kind": "upstream_tldr",
+      "zotero_score": 3.7200355446785585,
+      "authors": [
+        "Rafael R. Del Grande",
+        "David A. Strubbe"
+      ],
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.29349v1",
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：training、optimization。"
+        },
+        {
+          "id": "zotero:57fe42acf5db51a4a1e1c311558d8ad7",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：graph neural network、GNN。"
+        },
+        {
+          "id": "zotero:84051b1f05b8368766ddc3a2195c2324",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：metal。"
+        },
+        {
+          "id": "zotero:88f5ef7f6c79483dccdde4317c7916c9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：dataset。"
+        },
+        {
+          "id": "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+          "facet": "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：DFT。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:57fe42acf5db51a4a1e1c311558d8ad7",
+        "zotero:84051b1f05b8368766ddc3a2195c2324",
+        "zotero:88f5ef7f6c79483dccdde4317c7916c9",
+        "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:57fe42acf5db51a4a1e1c311558d8ad7",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:84051b1f05b8368766ddc3a2195c2324",
+        "zotero:88f5ef7f6c79483dccdde4317c7916c9",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:bbd4b4812b6a362cf5e92be5ce1b0aa9",
+        "zotero:cbe25e69baacf9dbe849320b1f3aa4a1"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9463,
+      "topic_cache_token": "1c0682b80408138c2bd488bf8cdba2491eb7f647948e6a3cf79f10ab229c9285",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "7ab3a7227b8a45931f5436c0",
+      "url": "https://arxiv.org/abs/2611.28420",
+      "title": "Diversity over Scale: Recursive Self-Improvement with Ensembles of Small Open-Weight Models",
+      "source_ids": [
+        "zotero"
+      ],
+      "source_names": [
+        "Zotero 为你推荐"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": null,
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "The advancement of large language models (LLMs) has significantly enhanced the capabilities of agents across various tasks. Recursive self-improvement (RSI) loops, in which a language model repeatedly rewrites a program and builds on its previous version, now perform well in machine-learning tasks, but they rely on frontier models and hundreds of calls per run. Small open-weight models are far cheaper, yet when used alone, their programs often crash and their improvements stall. We propose DiVE (diverse models evolve), an ensemble method for RSI that aims to improve creativity and diversity of generated solutions. DiVE uses three components: a shared memory, a failure log, and best-idea-wins rounds. This allows models to write candidate solutions from the same context and retain the best idea at each iteration. On 22 MLE-bench Lite competitions, an ensemble of five 8-12B open-weight models has 25.4% less test error than its average member and 16.7% less than Llama 3.3 70B, and comes within 7.1% of Qwen 3.5 122B-A10B at 75% of its cost. Diversity among small models can thus stand in for part of the scale that RSI relies on.",
+      "summary": "DiVE 通过共享记忆、失败日志和“最佳想法胜出”轮次集成多个小型开放权重模型进行递归自我改进，在 MLE-bench Lite 上以更低成本显著优于单个小模型甚至部分大模型，表明模型多样性可部分替代规模。",
+      "summary_kind": "upstream_tldr",
+      "zotero_score": 3.703171583155182,
+      "authors": [
+        "Navapat Nananukul",
+        "Mayank Kejriwal"
+      ],
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.28420v1",
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        },
+        {
+          "id": "zotero:8f22e62349472c4815f4275fbcf89c76",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：language model。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.9107,
+      "topic_cache_token": "48b9d10eb10d4f46322f32a6df83323b1d8b3aa715ae4d208eaa125f0497d2f3",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "3c8e329cde91a36951f254a2",
+      "url": "https://arxiv.org/abs/2611.29255",
+      "title": "NoeVera: Can Knowledge Guide Experiments and Experiments Refine Knowledge?",
+      "source_ids": [
+        "zotero"
+      ],
+      "source_names": [
+        "Zotero 为你推荐"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": null,
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "With the growing demand for large language model (LLM) services, optimizing LLM serving systems is becoming increasingly complex, and the bottleneck is no longer predicting how a given configuration will perform. The harder problem is deciding what to investigate: which mechanisms matter for a workload, which configurations are worth testing, and what evidence a decision still needs. In this work, we present NoeVera, an agentic Second Brain that goes beyond just one-shot retrieval by turning papers, code, benchmarks, and experimental results into a persistent, provenance-preserving knowledge base with three planes: source evidence, reusable synthesis, and agent memory. Decision-aware retrieval assembles compact evidence packs, role-specific agents reason over them and invoke a simulator (Vidur or GAUSS) whenever quantitative support is needed, and every finding is written back as a scoped evidence record, so knowledge guides experiments and experiments refine knowledge. In configuration search over four serving scenarios, NoeVera comes within 5% of the optimum in a median of 6-7 simulator calls, versus 9 for Bayesian optimization and 15 for a knowledge-free agent with the same tools; on A100 GPUs, its representative configurations deliver ~1.30x vLLM-default throughput and meet every scenario's latency objective. When reused, provenance-preserving evidence records over-generalize on only 8% of applicability traps, versus 28% for a general-purpose agent memory. On the held-out 48-task split of a 72-task benchmark, NoeVera scores 29% higher than an equally equipped agent and 36% higher than its single-call retrieval counterpart (0.80 vs. 0.62 and 0.59), and even when baselines receive NoeVera's own prompts, a statistically significant part of its evidence-evolution advantage remains.",
+      "summary": "NoeVera 通过构建可溯源、可写回的证据知识库与决策感知的多智能体实验循环，让知识指导模拟和配置搜索、实验结果再精炼知识，从而以更少模拟调用找到近优的 LLM 服务配置并显著提升下游任务表现。",
+      "summary_kind": "upstream_tldr",
+      "zotero_score": 3.7010731524445903,
+      "authors": [
+        "Pinaki Prasad Guha Neogi",
+        "Spyros Mastorakis",
+        "Ankur Mallick",
+        "Saravan Rajmohan",
+        "Victor R\\\"uhle"
+      ],
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.29255v1",
+      "topic_labels": [
+        {
+          "id": "zotero:d4a56870e35078a55f7511a07aac9f6e",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：large language model、LLM。"
+        },
+        {
+          "id": "zotero:e09a09615a9a79995ffd756fcf67aa3f",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d4a56870e35078a55f7511a07aac9f6e",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d4a56870e35078a55f7511a07aac9f6e",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8497,
+      "topic_cache_token": "906b8f2c44392511008ef8f7df0baabb3a41c9bd73c175d4ca95c9ebe648782b",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "70a074735f062e3d305d676a",
+      "url": "https://arxiv.org/abs/2611.29367",
+      "title": "BenchMint: From Real-World Tasks to Executable Benchmarks",
+      "source_ids": [
+        "zotero"
+      ],
+      "source_names": [
+        "Zotero 为你推荐"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "biology",
+        "tools"
+      ],
+      "published_at": null,
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "Large language models (LLMs) need evaluations of everyday reasoning and tool use, such as planning itineraries under user constraints and grounding numerical answers in evidence. We introduce BenchMint, an automated benchmark-construction workflow, and Daily-Life, its collection of 100 selected tasks across 11 real-world domains. BenchMint jointly constructs tasks and scoring criteria from the same source documents. Language-model judges assess possible answers against these criteria using tool traces and private evidence. We report 26 model/harness configurations, including GPT, Claude and Gemini families; 17 have complete domain profiles. These are descriptive configuration results, not a controlled model ranking. In one selected travel task, we corrected the reference total from 320 to 380 minutes while keeping both answers unchanged. The incorrect answer's arithmetic verdict switched from pass to fail; the correct answer's switched from fail to pass. With one ballot per cell, this exposes a reference error without establishing repeatability or collection-wide validity. Incomplete construction comparisons establish no general advantage of joint authoring or feedback-guided revision.",
+      "summary": "BenchMint 提出从真实世界任务自动构建可执行基准的工作流，并发布涵盖 11 个领域的 100 个日常任务集 Daily-Life，通过联合生成任务与评分准则、用 LLM 裁判结合工具轨迹和私有证据评估模型，展示其能发现参考错误，但尚未验证可重复性或构造方法的普遍优势。",
+      "summary_kind": "upstream_tldr",
+      "zotero_score": 3.6250633604913,
+      "authors": [
+        "Zining Huang",
+        "Zuo Wang",
+        "Mengyao Zhang",
+        "Yilan Piao",
+        "Zhe Wang",
+        "Shuohan Wang",
+        "Ruiying Wang",
+        "Huicong Yi",
+        "Qianyu Yang",
+        "Zilong Pan",
+        "Wenlong Wu",
+        "Jiajun Shi",
+        "Shen Yan",
+        "Xingyu Pan",
+        "Houxuan Chen",
+        "Yuan Xu",
+        "Jinzhao Li"
+      ],
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.29367v1",
+      "topic_labels": [
+        {
+          "id": "zotero:9ade13cdaad8f75e22a31d765794ac2c",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：scoring。"
+        },
+        {
+          "id": "zotero:d680e95392def25285a997e886e86a05",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reasoning、planning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:9ade13cdaad8f75e22a31d765794ac2c",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:6cb94419e4a077231731f17d61098d95",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:9ade13cdaad8f75e22a31d765794ac2c",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8534,
+      "topic_cache_token": "4d29c8d7aef5053ed244ebe34c55b39ed5fa9488831b2be81b2b2d31042c75cf",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "1f51cb4c6dd80396c46b5dc0",
+      "url": "https://arxiv.org/abs/2611.28483",
+      "title": "Don't Train It, Write It: An AI Agent Writes New Capabilities into Language Model Weights",
+      "source_ids": [
+        "zotero"
+      ],
+      "source_names": [
+        "Zotero 为你推荐"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": null,
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "We show that an AI agent can write new capabilities into a pretrained language model by adding gated attention heads and MLP neurons inside its existing layers, without backpropagation and without fitting any weight to the answers of task examples. It has a budget of 50 model passes and sees no validation or test instance. Composed in one model, its modules for six BIG-Bench Hard (BBH) subtasks raise the normalized BBH score of Qwen2.5-1.5B-Instruct from 19.95 to 41.05 (Qwen2.5-7B-Instruct: at most 35.01) and that of Gemma-3-1B-it from 10.25 to 32.86. Against the unmodified model at the same precision, both composites leave the next-token distribution on 1,023,000 WikiText tokens unchanged (KL exactly 0), give identical answers on 15,845 items of five other Leaderboard tests and identical scores on the other 18 BBH subtasks. The agent also writes exact multiplication up to 20 digits, running the model only up to 6 (100.0% on the absent lengths of the sealed test in both models; a LoRA with the same budget: at most 2.1%). Sets, rules and report sentences were sealed in git before the first session (manifests timestamped in Bitcoin), with dated amendments listed in Appendix D; a frozen evaluator ran the sealed test once. Verdicts (H5: tracking; H6: composite; H8: one pass vs. chain of thought; H9: fresh and rewritten instances; H10: side effects; H12: multiplication), on the preregistered sealed test, Qwen2.5-1.5B-Instruct: H5 success, H6 success, H8 (web_of_lies) success, H9 success, H10 (composite) success on (i) to (iii), (iv) confirmed, H12 success; Gemma-3-1B-it (H7: H5, H6, H8 and H9 in this model): H5 success, H6 success, H8 (web_of_lies) success, H8 (tracking 3) success, H9 partial, H10 (composite) success on (i) to (iii), (iv) confirmed, H12 success. Not everything worked: 4 of 45 single modules show small side effects and 5 of 50 sessions hit the 12-hour limit without a module.",
+      "summary": "该论文证明 AI 智能体无需反向传播或基于任务示例训练，只需向预训练语言模型已有层中“写入”门控注意力头和 MLP 神经元，就能以极少模型调用直接赋予其新能力，在 BBH 子任务和 20 位精确乘法上大幅提升，且基本不破坏原有输出分布与行为。",
+      "summary_kind": "upstream_tldr",
+      "zotero_score": 3.584211632058818,
+      "authors": [
+        "Santiago Rivadeneira Quintero"
+      ],
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.28483v1",
+      "topic_labels": [
+        {
+          "id": "zotero:4256328d0b35466f2b45ab06dd178def",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：composite。"
+        },
+        {
+          "id": "zotero:8f22e62349472c4815f4275fbcf89c76",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：language model、agent。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:4256328d0b35466f2b45ab06dd178def",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_ids": [
+        "zotero:4256328d0b35466f2b45ab06dd178def",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7238,
+      "topic_cache_token": "8a9bb3654e19ff1b118d250352c6bc6c641b08dac447696ed72a40a7caec36d1",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "b8dfc084ade289aef4b1f224",
+      "url": "https://arxiv.org/abs/2611.29274",
+      "title": "MetaSkill: Reusable Problem-Solving Methods for Adaptive Skill Orchestration in LLM Agents",
+      "source_ids": [
+        "zotero"
+      ],
+      "source_names": [
+        "Zotero 为你推荐"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": null,
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "Reusable skills provide specialized procedures, but large language model (LLM) agents must still determine how to organize and adapt their use. We introduce MetaSkill, a two-layer framework for reusing problem-solving methods across tasks and domains. The method layer selects from 26 curated methods and binds abstract roles to task objects. The execution layer uses the instantiated method to identify intermediate objectives, coordinate native skills, and guide repair or method reselection. On 89 SkillsBench tasks and 995 ToolHop examples, MetaSkill outperforms the evaluated baselines in all six configurations, with accuracy gains of 3.51-13.48% over the strongest baseline. Ablations support explicit method-guided orchestration beyond direct method injection and further gains from method reselection.",
+      "summary": "本文提出 MetaSkill——一个通过方法层从 26 种精选方法中选择并将抽象角色绑定到任务对象、执行层利用实例化方法识别中间目标并协调原生技能以支持修复或方法重选的两层框架，使 LLM 智能体能够跨任务与领域自适应编排可复用解题方法，并在 SkillsBench 和 ToolHop 上较最强基线取得 3.51–13.48% 的准确率提升。",
+      "summary_kind": "upstream_tldr",
+      "zotero_score": 3.5634257213174223,
+      "authors": [
+        "Tianxing Wang",
+        "Mingming Zhao",
+        "Shuai Huang",
+        "Chaoyue Niu",
+        "Huiyang Xu",
+        "Fan Wu",
+        "Guihai Chen"
+      ],
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.29274v1",
+      "topic_labels": [
+        {
+          "id": "zotero:d4a56870e35078a55f7511a07aac9f6e",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：large language model、LLM。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d4a56870e35078a55f7511a07aac9f6e"
+      ],
+      "topic_ids": [
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d4a56870e35078a55f7511a07aac9f6e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.875,
+      "topic_cache_token": "ee16b8db4c34c043972e334e460a1b4d092d128acbb39bc65e2c761e0411a06b",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "18533d0f6961fad9717ec0f5",
+      "url": "https://arxiv.org/abs/2611.31198",
+      "title": "ToolSmith: An Automatic Tool-Generation Framework for Multimodal Search Agents",
+      "source_ids": [
+        "zotero"
+      ],
+      "source_names": [
+        "Zotero 为你推荐"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": null,
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "Recent multimodal search agents use reasoning, vision, and live web search across many turns to answer questions beyond parametric knowledge by orchestrating a small library of hand-crafted search and visual tools. However, the library is laborious to create and maintain, and frozen when new query types, evidence formats, and failure modes are encountered in the wild. Human practitioners, by contrast, cope with insufficient tools by fashioning new ones from familiar parts and reusing them across tasks. Inspired by this, we propose ToolSmith, an automatic tool-generation framework that grows and reuses modules on top of a lean base tool library. We evaluate ToolSmith on three in-domain multimodal search benchmarks and ten out-of-domain benchmarks under a VLM-as-a-Judge protocol. ToolSmith consistently improves over the base library across deployed agents of varying scales, with larger backbones reaping greater gains, demonstrating the scalability of the approach. Our code and data are available at https://threesr.github.io/toolsmith/.",
+      "summary": "ToolSmith 是一个自动工具生成框架，能在精简的基础工具库上自动扩展并复用新工具模块，从而持续提升多模态搜索智能体的性能与可扩展性。",
+      "summary_kind": "upstream_tldr",
+      "zotero_score": 3.550609684404178,
+      "authors": [
+        "Rui Sun",
+        "Junhua Huang",
+        "Luca Zancato",
+        "Md Mofijul Islam",
+        "Kai-Wei Chang"
+      ],
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.31198v1",
+      "topic_labels": [
+        {
+          "id": "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：generation。"
+        },
+        {
+          "id": "zotero:d680e95392def25285a997e886e86a05",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reasoning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_ids": [
+        "zotero:5f5b1ffd786d65cc04ad22dfa2da4ff0",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8611,
+      "topic_cache_token": "cefd38248d18d123693ea77c55e8e2d1e7fc9110654e9e6a18151f931b2a8961",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "c9d93b3115a3658e7672276e",
+      "url": "https://arxiv.org/abs/2611.28965",
+      "title": "MolReJev: Decision Models Are In-Context Molecular Predictors",
+      "source_ids": [
+        "zotero"
+      ],
+      "source_names": [
+        "Zotero 为你推荐"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "chemistry",
+        "biology",
+        "tools"
+      ],
+      "published_at": null,
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "Molecular prediction helps prioritize compounds for screening. Specialized predictors are trained for a fixed set of tasks, limiting cross-task generalization. Language models can condition on task descriptions and have recently shown promise in molecular prediction. However, generating answers token by token adds inference cost, and general-purpose models often lack task-specific molecular knowledge. We thus propose MolReJev, which combines Jev-style candidate scoring with in-context learning (ICL) on a language model. MolReJev retrieves similar labeled examples from existing task data and scores candidate labels jointly in one forward pass. ICL improves predictions from the released general-purpose Kev checkpoint and the separately trained MolReJev. For the trained model, gains span all evaluation groups, including held-out tasks, and extend to compounds absent from training. MolReJev generally outperforms MolecularGPT on matched evaluations and nearest-neighbor prediction with the same examples. With four examples, MolReJev and a trained text baseline achieve similar ROC-AUC, with higher measured throughput for MolReJev. These results show that decision models can serve as in-context molecular predictors for compounds, drug pairs, and reactions.",
+      "summary": "MolReJev通过结合Jev式候选评分与上下文学习，检索相似标注样例并在单次前向传播中联合评分候选标签，使决策模型成为可跨任务预测化合物、药物对和反应的上下文分子预测器，并在多项评估中优于MolecularGPT等基线。",
+      "summary_kind": "upstream_tldr",
+      "zotero_score": 3.5338974030902657,
+      "authors": [
+        "Kaiyuan Lu",
+        "Jiatong Li",
+        "Yatao Bian"
+      ],
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.28965v1",
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        },
+        {
+          "id": "zotero:9ade13cdaad8f75e22a31d765794ac2c",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：scoring。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:9ade13cdaad8f75e22a31d765794ac2c"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:6cb94419e4a077231731f17d61098d95",
+        "zotero:9ade13cdaad8f75e22a31d765794ac2c"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:chemistry",
+        "web:life_sciences"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8852,
+      "topic_cache_token": "81ef21e140b70966434498a9f6530bc11c456eed9194cc053138ac767ec0cdd0",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "3976ff412d24d46a3c32fdad",
+      "url": "https://arxiv.org/abs/2611.29716",
+      "title": "Fin-RSI: A Unified Library of Financial Skills, Checks, and Self-Improvement for LLM Agents",
+      "source_ids": [
+        "zotero"
+      ],
+      "source_names": [
+        "Zotero 为你推荐"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": null,
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "As large language models (LLMs) become more capable, financial agents need tools they can readily discover and use. Yet financial software is fragmented across libraries with different interfaces and conventions, making it difficult to build reliable agent workflows. We present Fin-RSI, a unified Python library of financial skills, checks, and self-improvement designed for LLM agents. It brings together tools for market analysis, forecasting, portfolio construction, and trading research through shared interfaces across models and agent frameworks. Agents can find suitable tools from natural-language requests, reuse tested implementations, and improve generated programs through checking and feedback. Developers can extend the library with new tools without rebuilding integrations for each model. Across 20 open-weight models on six trading-position tasks, tool discovery increased the proportion of episodes producing valid programs from 9.7% to 29.2%; for models with at least 14 billion parameters, it rose from 23.6% to 64.6%. We release the library and benchmark as a shared resource for the community and plan to expand its tools and task coverage as financial agents evolve.",
+      "summary": "Fin-RSI 是一个面向 LLM 智能体的统一 Python 金融技能库，集成了市场分析、预测、投资组合构建与交易研究等工具，并支持工具发现、复用、检查反馈和自我改进，从而显著提升智能体生成有效金融程序的比例，且可跨模型与智能体框架扩展使用。",
+      "summary_kind": "upstream_tldr",
+      "zotero_score": 3.5227299586536045,
+      "authors": [
+        "Wanghao Ye",
+        "Shwai He",
+        "Sihan Chen",
+        "Yiting Wang",
+        "Bowei Tian",
+        "Guoheng Sun",
+        "Ziyi Wang",
+        "Ziyao Wang",
+        "Yexiao He",
+        "Zheyu Shen",
+        "Meng Liu",
+        "Yuning Zhang",
+        "Meng Feng",
+        "Yifei Dong",
+        "Yanhong Qian",
+        "Yang Wang",
+        "Siyuan Peng",
+        "Yilong Dai",
+        "Zhenle Duan",
+        "Joshua Liu",
+        "Lang Xiong",
+        "Aarosh Das",
+        "Zhaoyi Liu",
+        "Daeun Jung",
+        "Aditya Sarkar",
+        "Parastoo Pilevar",
+        "Xiaochuan Gong",
+        "Yancheng Zhu",
+        "Yingying Fan",
+        "Qiong Wang",
+        "Ang Li"
+      ],
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.29716v1",
+      "topic_labels": [
+        {
+          "id": "zotero:8f22e62349472c4815f4275fbcf89c76",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：agent。"
+        },
+        {
+          "id": "zotero:a8ae06724434b39ec85ba030f9bbc6e2",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：self-improvement。"
+        },
+        {
+          "id": "zotero:e09a09615a9a79995ffd756fcf67aa3f",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:a8ae06724434b39ec85ba030f9bbc6e2",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:a8ae06724434b39ec85ba030f9bbc6e2",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8824,
+      "topic_cache_token": "7cc69766e6bfa69af45bfdf0447ef27fe977347c0337a8d2f91423a276d151b3",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
     {
       "id": "eaa8faa3f24bea2d007da12b",
       "url": "https://arxiv.org/abs/2611.33089",
@@ -3990,8 +5221,8 @@
       "published_at": "2026-11-24T00:00:00+00:00",
       "first_seen": "2026-11-25T05:40:22.499527+00:00",
       "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "iFood 的公开材料介绍了其 Remote Agents Platform：该平台通过 REST API 接收任务，在隔离沙箱中运行 GPT‑5.6 Luna 执行代码相关任务，并以合并请求形式返回结果；材料还称该平台已完成超过 25,000 次运行、平均每次推理成本 0.04 美元，并已用于扫描其 15,000 多个代码仓库中的漏洞依赖。材料同时说明，该平台是 iFood 内部系统、灵感来自 OpenAI 的 Batch API 和 Agents API，且成本效益数据与漏洞修复效果均为公司自述；在考虑复现或用于科研工作流时，需注意这些声明尚未经独立验证，且材料未提供可复现实验细节。",
+      "summary_kind": "ai_summary",
       "authors": [],
       "topic_labels": [],
       "topic_leaf_ids": [],
@@ -4006,7 +5237,13 @@
       "topic_coverage": 0.8571,
       "topic_cache_token": "541fec4acdf1e140dce74f63dc76b6335b2a0c1fdab4e749a26b1ee726504711",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://openai.com/business/customer-stories/ifood/",
+        "sha256": "dcc7d8e5c09bdf3a22204a23ac6402fa9f8838c1dae98a1fa0860e8683fcdf5a",
+        "chars": 8336
+      }
     },
     {
       "id": "a3c9028eefd69cfd15ff27f4",
@@ -5462,6 +6699,380 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "cdf775648a247bf3bcf841ee",
+      "url": "https://arxiv.org/abs/2611.33010",
+      "title": "Embodied AI Fails the Mirror Test: How a Simple Mirror Breaks Robot Policies",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "Can a simple mirror expose the limitations of today's robotic manipulation policies? Inspired by the mirror self-recognition test in animal cognition, we investigate whether robot policies can reliably manipulate physical objects in scenes containing their reflections. We introduce RoboDojo-Mirror, a benchmark built on RoboDojo that preserves task objectives, success criteria, and policy checkpoints while comparing a mirror-free baseline with single-mirror, dual-mirror, and mirrored-tabletop conditions. Across five policies spanning Vision-Language-Action models, World Action Models, and agentic policies, every mirror condition reduces aggregate success rates: averaged over the three conditions, the drop ranges from 10.8 to 56.7 percentage points across policies, and it reaches 62.5 points on the mirrored tabletop. Because a mirror is also a physical obstacle, we compare it against geometrically matched non-reflective panels; 50--88\\% of mirror-specific failures occur without recorded robot--panel contact, so direct collisions alone do not explain the degradation. Trajectory and contact analyses instead reveal recurring behaviors consistent with phantom targeting of reflected objects and spatial mislocalization of real ones. Targeted diagnostics further characterize grasping near reflections, policy-dependent pushing progress, and physical-target interaction under main-camera occlusion. Real-robot experiments with π_{0.5} and FastWAM also show lower overall success rates under the upright-mirror and mirrored-tabletop conditions. These findings reveal a shared vulnerability to reflective environments across diverse robot policies and motivate reflection-aware evaluation of embodied intelligence. Code is available at https://github.com/iPPLab/robodojo-mirror.",
+      "summary": "本文提出RoboDojo-Mirror基准，在RoboDojo上保留原任务目标、成功标准和策略检查点，对比无镜与单镜、双镜、镜面桌面四种条件，并测试了五类策略及真实机器人实验。该基准可用于在既有策略和任务评估器下考察反射环境中的操作鲁棒性，并借助轨迹、接触和针对性诊断区分反射特有失败与镜面作为物理障碍的影响；原文报告的成功率下降、无接触失败比例等均为其自身实验条件下的结果，而非已独立验证的性能结论。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.33010",
+      "authors": [
+        "Xuanchen Liu",
+        "Hejun Zhang",
+        "Boxuan Dong",
+        "Ying Wu",
+        "Heshuai Li",
+        "Wen Gao",
+        "Yonghong Tian",
+        "Weihao Yu"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark、evaluation。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8012,
+      "topic_cache_token": "684d6a718d446d0f456f0b692faa769fb063294f034899a41f9f3f6fac139799",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.33010",
+        "sha256": "53d7c895799a980007eb3b62afbe4f82eeb412fe12ff0f2c8ae396e97c7d8562",
+        "chars": 12000
+      }
+    },
+    {
+      "id": "4f7afaa54c50cfa8bd527f79",
+      "url": "https://arxiv.org/abs/2611.32423",
+      "title": "Factorized Context Attention: From Emulated to Native Grid Probing",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "Models read a book, an hour of video, or an image in one forward pass. As the context grows, this pass slows down, loses accuracy, and stops at the context window. Sparse attention is efficient, but keeps the other two limitations. Grid probing, a recent training-free method, recovers the accuracy and extends the reach by asking a frozen model the same question about short local and strided spans of the input, but every question repeats the whole computation, since each span is encoded again. Our insight is that grid probing is emulated attention, an attention pattern reproduced from outside the model through prompts, since each probe only restricts which part of the input the question can see. We introduce Factorized Context Attention (FCA), a training-free block-sparse attention that runs the same pattern natively, as the attention of the model itself. FCA encodes the input once into a KV cache, reads all spans as masked sequences in one batched forward, and uses a stair position schedule to keep every span inside the trained position range. Across long video understanding, long-context text inference and image grounding, FCA matches the accuracy and the reach of grid probing at a fraction of its cost. It gains about 10 points over the single pass on long video and 9 to 14 points on long novels, finds needles in videos of over a thousand frames and in texts four times the length of the window, and answers a later question about the same input in as little as a tenth of the time of grid probing. Native attention thus keeps what emulated attention gains without its cost, all with existing frozen language and vision-language models.",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "hf_url": "https://huggingface.co/papers/2611.32423",
+      "authors": [
+        "Mohamed Eltahir",
+        "Manar Eyad",
+        "Yara Alzahrani",
+        "Fatimah Albesher",
+        "Duaa M. Tahir",
+        "Tanveer Hussain",
+        "Naeemullah Khan"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：training。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8634,
+      "topic_cache_token": "c682a3558cdda6b741dad9c7cd5d3c3238dfebf49fe9b2deb17f148b1b57e849",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "516b29408e01f25100965bf1",
+      "url": "https://arxiv.org/abs/2611.32617",
+      "title": "VenusOCR2.0: Towards Efficient and Effective Document Parsing",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "We present VenusOCR2.0, a compact 1B-parameter vision-language recognizer designed for both high-accuracy and high-throughput document parsing across text, tables, and formulas. To continuously improve recognition quality without self-training collapse, we build a bounded recursive self-improvement (RSI) data engine where the model acts strictly as a weakness probe, while external multi-expert medoid consensus, VLM visual verification, and factorized synthesis supply reliable supervision across pretraining, curated SFT, and RLVR. VenusOCR2.0 couples a dynamic-resolution SigLIP2 encoder and 2x2 spatial token merging with a Qwen3-0.6B decoder, adopting compact atomic OTSL tokens to shorten table sequences and reduce structural errors. To further eliminate the autoregressive decoding bottleneck, we introduce PTPv2, a lightweight (sim67M) decoupled parallel draft module that combines frozen multi-layer verifier conditioning, a standalone learned mask, and block-causal all-position next-token prediction. On OmniDocBenchv1.6, VenusOCR2.0 achieves an overall score of 96.45 and a state-of-the-art 98.57 formula CDM, substantially outperforming massive general-purpose VLMs such as Gemini-3-Pro (92.91) and Qwen3-VL-235B (89.78). Deployed in vLLM on a single H20 GPU, PTPv2 delivers a 2.96x single-request speedup and up to 2.36x higher batched throughput while guaranteeing lossless, token-for-token equivalence with standard autoregressive decoding.",
+      "summary": "VenusOCR2.0提出了一个紧凑的1B参数视觉语言识别器，采用将弱项探测与标签生成分离的有界递归自改进数据引擎，并引入PTPv2轻量解耦并行草稿模块，用于文档文本、表格和公式的解析。公开摘要报告其在OmniDocBench v1.6上取得96.45总体分数和98.57公式CDM，并称PTPv2在单张H20 GPU上以vLLM部署时实现单请求加速与更高批量吞吐，同时保证与标准自回归解码逐token无损等价。对科研工作的用途在于：该工作把数据质量治理与解码加速作为紧凑文档解析器的两个关键问题，其“模型仅作弱项探测、标签由外部多专家共识与视觉验证提供”的思路可用于设计可审计的训练数据流程，其并行草稿与自回归等价性声明可用于研究无损推测解码在结构化文档输出上的适用性。原文明确的限制包括：朴素数据扩展或自训练在紧凑模型上收益递减且会放大标签噪声；PTPv2需在vLLM中部署且其等价性声明仅针对非截断请求。上述性能与加速数字来自公开摘要，未经独立验证，不应视为已验证结论。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.32617",
+      "authors": [
+        "Lei Li",
+        "Zheng Wei",
+        "Yi Yuan",
+        "Qingbin Liu",
+        "Jiang Bian",
+        "Zang Li"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：pretraining。"
+        },
+        {
+          "id": "zotero:9ade13cdaad8f75e22a31d765794ac2c",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：verifier。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:9ade13cdaad8f75e22a31d765794ac2c"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:5c29e6d91274150f2721aa941ccb4fb3",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:6cb94419e4a077231731f17d61098d95",
+        "zotero:9ade13cdaad8f75e22a31d765794ac2c"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7338,
+      "topic_cache_token": "9e82b7f4296ce01fab266d4bc3f6f985581ec62aa3c273bf634a555adb88dc9a",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.32617",
+        "sha256": "1ac7fa7b1991d7f67b44d5baf8a06851f621a41e4964e7aae4ab0cb0fc9e1e14",
+        "chars": 12000
+      }
+    },
+    {
+      "id": "0744badbb33cb571d620c5bc",
+      "url": "https://arxiv.org/abs/2611.30986",
+      "title": "Reinforcing Diffusion Models by Instantaneous Trajectory Distribution Matching",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "Forward diffusion reinforcement learning (RL)---enabling deterministic ODE sampling without trajectory backpropagation---has grown increasingly popular for efficiently aligning diffusion models. However, we reveal that existing methods essentially rely on signed reward-weighted regression (RWR), regressing the trainable policy velocity onto rollouts from a behavior distribution. Unbiased baseline subtraction implicitly assumes that the policy velocity equals the behavior marginal velocity---an idealized assumption violated under classifier-free guidance (CFG) rollouts, offline/off-policy updates, and imperfect online self-consistency. This behavior--policy mismatch breaks baseline invariance and injects baseline-induced gradient drift, destabilizing training. To resolve this issue, we propose Instantaneous Trajectory Distribution Matching (iTDM), taking the infinitesimal limit of Trajectory Distribution Matching toward a time-local reward-guided target via the posterior-score identity to yield a sample-level gradient anchored at the behavior velocity without learning an additional reward-tilted target score. Tracking this velocity with an online auxiliary denoiser guarantees exact baseline invariance at the auxiliary optimum, effectively suppressing baseline drift across both online and offline RL. Extensive experiments across compositional generation, text rendering, and preference alignment show that iTDM achieves state-of-the-art in-domain and out-of-domain performance across group-wise online/offline RL and pairwise offline RL. Notably, on the challenging GenEval2 benchmark, iTDM converges nearly 3\\times faster than competing methods while scaling smoothly to 0.87 without collapse. Furthermore, iTDM scales effectively to the 5.6B FLUX.3 model, achieving better performance across both in-domain and unseen metrics. Code is available at https://github.com/Luo-Yihong/iTDM",
+      "summary": "本文提出 iTDM，将轨迹分布匹配取无穷小极限，在无需学习额外奖励倾斜目标分数的情况下，把奖励引导目标转化为以行为速度为锚的样本级梯度，并在线辅助去噪器以抑制基线漂移。据原文，该框架旨在统一在线与离线强化学习并缓解少步展开伪影拟合，但所给材料仅含摘要与部分正文，未提供完整方法细节、理论证明或独立验证。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.30986",
+      "authors": [
+        "Yihong Luo"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        },
+        {
+          "id": "zotero:e09a09615a9a79995ffd756fcf67aa3f",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7845,
+      "topic_cache_token": "c4586964ef6c204899f8efee1d9990e85b6ef1f07c0f1bea22c9ca72f27c1ede",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.30986",
+        "sha256": "afcfd3e8379f780df3670fa30528d9d9db64ed0fc5e225a9adda78b1dcbc60c0",
+        "chars": 12000
+      }
+    },
+    {
+      "id": "cf9f4fd6674e23e8b79943e3",
+      "url": "https://arxiv.org/abs/2611.32183",
+      "title": "ThinkMorph-SSL: Scaling Interleaved Multimodal Reasoning with Pretext Tasks",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "People reason with pictures as well as words. Interleaved multimodal reasoning gives models a similar way to solve problems by creating intermediate images and using them to guide further reasoning. Training models with this ability usually relies on task-specific demonstrations, which are difficult to collect. We introduce ThinkMorph-SSL, a two-stage training recipe that uses images themselves as a source of supervision. The first stage, pretext reasoning, converts visual pretext tasks, such as image colorization and denoising, into instruction-free interleaved traces. Models describe a corrupted or transformed image, generate a restored or canonical image, and interpret the result. The second stage uses automatically constructed demonstrations for question-driven instruction tuning. At the same instruction-tuning budget, models trained with pretext reasoning outperform those trained with instruction tuning alone. The full recipe improves over the base model by an average of 11.33 accuracy points across twelve benchmarks. These results show that supervision derived from images can build the visual skills needed for interleaved reasoning and improve learning from task-specific demonstrations.",
+      "summary": "本文提出ThinkMorph-SSL两阶段训练方案：第一阶段将拼图、上色、去噪等七种视觉前置任务自动转换为无指令的交错文本-图像-文本轨迹（Pretext-270K），第二阶段使用自动构建的演示进行问题驱动的指令微调（Instruct-180K）。据摘要，在相同指令微调预算下，经前置推理训练的模型优于仅做指令微调者，完整方案在十二个基准上平均较基座模型提升11.33个准确率点；原文指出该方法旨在减少对任务特定演示的依赖，但未声称已阅读完整全文，且相关提升来自摘要报告而非独立复现。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.32183",
+      "authors": [
+        "Jiawei Gu",
+        "Linjie Li",
+        "Yiming Liu",
+        "Yunzhuo Hao",
+        "Huichen Wang",
+        "Guanzheng Chen",
+        "Zhichao Peng",
+        "Luxin Xu",
+        "Xinyu Zhang",
+        "Li Luo",
+        "Disen Lan",
+        "Zican Hu",
+        "Mingyang Song",
+        "David Valente",
+        "Alex Jinpeng Wang",
+        "Yafu Li",
+        "Ganqu Cui",
+        "Zhengyuan Yang",
+        "Qizhe Xie",
+        "Yejin Choi",
+        "Ranjay Krishna",
+        "Yu Cheng"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8673,
+      "topic_cache_token": "6ac52928d677a849d8e4bd7f2401bcf42eef8b9d55f6cbb839fc32cf12848f83",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.32183",
+        "sha256": "16a67d4f5754ec45fbe3e2880e00424c2cbc9b0cc6d5895ef8ceae8cac141fda",
+        "chars": 12000
+      }
+    },
+    {
       "id": "b0689cf87ab570a441c88635",
       "url": "https://openai.com/index/introducing-shirudo",
       "title": "OpenAI and Cisco introduce Shirudo",
@@ -6396,8 +8007,8 @@
       "published_at": "2026-11-23T06:10:48+00:00",
       "first_seen": "2026-11-25T05:40:22.499527+00:00",
       "excerpt": "Robot policies act in real time but fail without knowing why, whereas a reasoning agent that watches the robot can often tell what went wrong. Existing systems either hand the agent control, which takes minutes per episode, or let it send instructions. Yet a policy follows a new instruction only from a fresh start, since a half-finished task leaves it in states outside its training data. Nor can an instruction fix how the robot moves. If a drift keeps pulling the hand to the left, \"push right, slightly\" is not a task the policy has learned. We propose RoboThink, in which the agent thinks and the policy learns to act on the agent's guidance. An instruction channel tells the policy what to do. When the user says \"the milk, not the butter\" after the robot has started, the agent rewrites the instruction and the robot undoes its own motion, with no training. A feedback channel tells it how to move. It is taught from the agent alone with agent-labelled DAgger, role tokens and counterfactual feedback, and is read only by the policy's action module. On LIBERO, RoboThink with Claude Opus 5.5 raises success from 0.09 to 0.87 under an unknown constant drift and from 0.42 to 0.84 under a random one. It also completes misheard and changed requests in 0.91 to 1.00 of the episodes. Acting alone, GPT-6 Astra needs 2.1 min per success and over a million tokens per episode, whereas RoboThink needs 55 s and 8k tokens. The same recipe works across policies, for both vision-language-action models and world action models, and across robots, from one arm to two arms and a mobile manipulator. On all 50 RoboTwin 2.0 tasks with two arms, success rises from 0.12 to 0.74 under the constant drift and from 0.31 to 0.56 under the random one. Finally, the agent is a plug-in. A policy taught by one agent works with other agents, including open-weight ones, and grows stronger with a stronger agent, without retraining.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出 RoboThink，让推理智能体通过指令通道和反馈通道向机器人策略提供指导，其中反馈通道利用智能体自动标注的 DAgger、角色标记和反事实反馈进行训练，使策略能根据智能体的指导调整动作。公开摘要报告该框架在 LIBERO 和 RoboTwin 2.0 的漂移及请求变更等设定下提升了成功率，并显示智能体调用开销低于智能体单独控制；但这些数值来自原文报告，尚未经独立验证，且该方法依赖策略已具备可被指导的动作模块，其适用范围和泛化能力仍受原文所述实验条件限制。",
+      "summary_kind": "ai_summary",
       "alpha_rank": 2,
       "authors": [
         "Yunbei Zhang",
@@ -6447,7 +8058,13 @@
       "topic_coverage": 0.7662,
       "topic_cache_token": "2e5407c73160c90faebbae28cedb42ecdd729cd1f4b6effe528f814eb274d5cc",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.30111",
+        "sha256": "8576436be2685e82592c7b94c4f8de9320a16f398e7b116a4c3711a813337a20",
+        "chars": 12000
+      }
     },
     {
       "id": "2a21b1adc97b62aba8ed2090",
@@ -6455,14 +8072,17 @@
       "title": "Stable but Hidden: Identifiability and Experimental Design under Missing Compositional Support",
       "source_ids": [
         "arxiv-ai4s",
-        "semantic-scholar"
+        "semantic-scholar",
+        "zotero"
       ],
       "source_names": [
         "arXiv / AI4S",
-        "Semantic Scholar"
+        "Semantic Scholar",
+        "Zotero 为你推荐"
       ],
       "group": "science",
       "groups": [
+        "papers",
         "science"
       ],
       "type": "paper",
@@ -6474,11 +8094,11 @@
       "published_at": "2026-11-23T05:26:52+00:00",
       "first_seen": "2026-11-24T05:42:41.494449+00:00",
       "excerpt": "AI-guided scientific discovery often uses inexpensive predictors to allocate scarce verification measurements. We study a structural failure when relevant components have been observed separately but never jointly: distinct admissible response functions can agree on all observed compositions while disagreeing on the missing combinations. Additional same-support data cannot resolve this ambiguity, and agreement among fitted models need not expose it. We characterize the unresolved directions as an invisible subspace $\\mathcal{N}_T(\\mathcal{F}) = \\ker \\mathcal{R}_T$, whose geometry determines oracle zero-shot ambiguity and minimax risk under a symmetric, bounded ambiguity class. When the missing response lies in an $r$-dimensional, well-conditioned linear basis, optimally designed joint measurements achieve minimax integrated risk $Θ(σ^2 r/m)$, with classical $I$-optimality the fixed-design criterion. We validate on materials. In electrocatalysis, a six-dimensional support-derived structural basis (a prior on candidate directions, not an identified physical model) reduces held-out MSE against a dimension-matched generic basis (median paired ratio 0.75, improving 98% of 60 element pairs at $m = 15$), while $I$-optimal and same-basis posterior-variance acquisition show no detected difference. In Materials Project, removing joint property labels reduces $E_{\\text{above hull}}$ ranking on 90% of 30 element pairs, more than matched data-removal controls, under a frozen pretrained representation. Pair difficulty is reproducible across learners but poorly predicted by zero-label ensemble disagreement; 20 joint measurements enable transferable pair-level rankings without reliable absolute calibration. In practice, experiment selection should ask which relationships the observed support leaves unidentified before asking where a fitted model is least certain.",
-      "summary": "本文刻画了缺失组合支持下的结构不可识别性：当相关组件曾被单独观测但从未联合观测时，存在“不可见子空间”使不同容许响应函数在所有已观测组成上一致、却在缺失组合上分歧，而增加同支持数据无法消除该歧义。该框架可用于实验设计，在缺失响应可由良态线性基表示时，最优联合测量可达到极小极大积分风险Θ(σ²r/m)，不过其验证依赖材料案例、预测尺度及候选基等具体设定，绝对性能与校准仍受支持几何和表示选择限制。",
-      "summary_kind": "ai_summary",
+      "summary": "当关键组分只被分别观测而从未联合观测时，模型会在已观测组成上表现稳定却存在无法由同分布数据消除的隐藏不可辨识方向，因此实验设计应先识别观测支持未覆盖的关系，并通过最优联合测量来降低缺失组合上的预测风险。",
+      "summary_kind": "upstream_tldr",
       "authors": [
         "Harry Sevi",
-        "J. Laulainen"
+        "Joonatan E. M. Laulainen"
       ],
       "topic_labels": [
         {
@@ -6522,25 +8142,25 @@
       "topic_cache_token": "39594754a698561efa0fe3266cf250a3b7e78b6be6f101db15c0abfb22f8d73d",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical",
-      "summary_basis": {
-        "kind": "public_html",
-        "url": "https://arxiv.org/html/2611.30070",
-        "sha256": "0b8df6b283e403c92eb08a5f350dd2d3928ead8875ba2940f460426767d67d04",
-        "chars": 12000
-      }
+      "zotero_score": 3.734235188748285,
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.30070v1"
     },
     {
       "id": "88631a7a38dd8d214b2472cd",
       "url": "https://arxiv.org/abs/2611.30066",
       "title": "Diagnostic Accuracy Is Not Deployment Value: Decision-Aligned Reliability Evaluation for Foundation MLIPs in Materials Discovery",
       "source_ids": [
-        "arxiv-ai4s"
+        "arxiv-ai4s",
+        "zotero"
       ],
       "source_names": [
-        "arXiv / AI4S"
+        "arXiv / AI4S",
+        "Zotero 为你推荐"
       ],
       "group": "science",
       "groups": [
+        "papers",
         "science"
       ],
       "type": "paper",
@@ -6551,8 +8171,8 @@
       "published_at": "2026-11-23T05:15:52+00:00",
       "first_seen": "2026-11-24T05:42:41.494449+00:00",
       "excerpt": "In AI-guided materials discovery, machine-learning models increasingly decide which candidate materials should receive expensive first-principles or experimental evaluation. Standard reliability metrics such as uncertainty, calibration, novelty, and ranking accuracy evaluate properties of the predictions, but success on these metrics does not necessarily imply a better downstream screening decision. We study this mismatch for foundation machine-learned interatomic potentials (MACE-MP, CHGNet, Orb V3) used to rank candidate crystal structures before DFT verification. We evaluate three representative reliability interventions (novelty detection, sparse DFT calibration, and chemistry-level ranking audits) using a deployment objective that measures how much DFT can be avoided while maintaining a required recall of near-hull candidates. Across all three, a reliability signal can succeed on its immediate target without improving the final screening decision: novelty detects distribution shift but weakly ranks failure severity; calibration can improve pooled ranking metrics while leaving screening unchanged or degrading it; and sparse audits identify MLIP-chemistry combinations with poor ranking reliability without yielding a robustly beneficial routing policy. A two-oracle analysis further shows that the source of failure depends on the screening decision itself: under formation-energy screening, even perfect knowledge of average ranking reliability can select the wrong model, whereas in the evaluated hull-aligned variant the oracle target becomes decision-aligned but finite-budget audits still fail to realize the value. Reliability should be evaluated relative to the decision it supports: the relevant question is not whether a model is uncertain or inaccurate, but whether acquiring and acting on additional information will improve the final discovery decision enough to justify its cost.",
-      "summary": "本文把novelty检测、稀疏DFT校准和化学体系级排序审计三类可靠性干预放在统一的固定近凸包召回率与DFT节省目标下评估，发现它们可在各自原生指标上成功却不改善下游筛选决策，并用双预言机分析区分了目标错位与预算内信息获取成本过高两种失败来源。对科研工作的用途是提供一个以决策价值而非诊断指标衡量MLIP可靠性干预的评估框架；原文明确的限制包括离线成本–召回前沿需用完整DFT标签回选、审计收益仅集中于少数不安全化学体系且一次性审计在可靠召回标准下可能失效，以及结论基于所报告的材料项目子集和压力测试池，不构成对完整全文或对所有部署场景的验证。",
-      "summary_kind": "ai_summary",
+      "summary": "这篇论文指出，在材料发现中，基础机器学习原子间势的可靠性不应仅由不确定性、校准、新颖性或排序精度等预测指标衡量，而应以是否能在满足近凸包候选召回率的前提下减少昂贵的DFT验证这一下游筛选决策价值来评估，因为多种可靠性干预即使达成自身目标也未必改善最终发现决策。",
+      "summary_kind": "upstream_tldr",
       "authors": [
         "Harry Sevi",
         "Joonatan E. M. Laulainen"
@@ -6633,12 +8253,9 @@
       "topic_cache_token": "8432355ed116fbb7fa100c9e7a4943b8b9d3491b34bf6707bba3e61626519c47",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical",
-      "summary_basis": {
-        "kind": "public_html",
-        "url": "https://arxiv.org/html/2611.30066",
-        "sha256": "061e523c2bb47992e4029635b016923333dc4b28ba354de3484b153597494529",
-        "chars": 12000
-      }
+      "zotero_score": 4.052092556267014,
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.30066v1"
     },
     {
       "id": "2277eedbe7475fac82a482f8",
@@ -6661,8 +8278,8 @@
       "published_at": "2026-11-23T04:19:40+00:00",
       "first_seen": "2026-11-25T05:40:22.499527+00:00",
       "excerpt": "We present OWE-Bench (OpenWorldEngineer-Bench), a benchmark of 26 long-horizon engineering tasks written by domain experts in software engineering, physical engineering, machine learning, and scientific computing. Tasks range from optimizing kernels and designing an aircraft, to identifying the faults responsible for an earthquake. Each task requires significant domain knowledge and engineering work, with models averaging hundreds of millions of tokens per task. Solutions are scored on practical measures such as speed, cost and accuracy, both on provided cases the agent could test against and on hidden cases that an engineer would expect from the task description. The best-performing frontier model so far, Claude Fable 5.2, scores 54.6% and averages 211 million tokens per task. We highlight two findings. First, when models are given more time, they use more test-time compute and achieve higher scores. Models also scale differently with test-time compute: GPT-6 Astra achieves higher scores at shorter time limits and at equal token use, while Claude Fable 5.2 uses more tokens at longer limits to achieve the highest overall score. Second, each model scores lower on hidden cases than on the provided cases, by an average of 18 points, which we call the deployment gap. Models also fail to predict the deployment gap, overestimating their performance on hidden test cases by an average of 21 points. We hope that OWE-Bench grounds progress toward agents whose engineering solutions perform as well in deployment as they do in testing.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出了OWE-Bench，一个由领域专家编写的包含26个长周期工程任务的基准，覆盖软件工程、物理工程、机器学习和科学计算，任务在开发时可测试案例与不可查询的隐藏案例上分别评分。该基准可用于衡量工程智能体在开发证据无法完全反映部署表现时的能力，并以部署差距和智能体自身预测偏差作为观测指标；但材料为公开摘录而非完整全文，分数与平台等结果仍属原文报告，尚待独立验证。",
+      "summary_kind": "ai_summary",
       "alpha_rank": 10,
       "authors": [
         "Jacob Cole",
@@ -6712,7 +8329,13 @@
       "topic_coverage": 0.9236,
       "topic_cache_token": "bad687121c922b1e191f15b1717c6f2a3f1139f4689a14cd2c2e6b0139966c44",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.30017",
+        "sha256": "591bf326b5aed7871e2e9d4b39767e6d1d1231d925839132ee50d1371c98e979",
+        "chars": 12000
+      }
     },
     {
       "id": "149edd9e29eb4d1658c7dfc3",
@@ -8016,8 +9639,8 @@
       "published_at": "2026-11-23T00:00:00+00:00",
       "first_seen": "2026-11-24T07:05:43.153645+00:00",
       "excerpt": "Reinforcement learning (RL) trains coding agents on software tasks whose hidden tests decide the reward, yet task collections check these tests only against the reference fix. We ask what makes a task good training data, focusing on the correctness of its reward labels. We audit SWE-Gym with two LLM families, and a suspected error counts only if execution reproduces it. We find that unsolved often means mislabelled: 74% of the tasks that a 9B base model never solves have a test that rejects correct fixes (a false negative), versus 20% of those it sometimes solves. We repair or remove such tasks, and the audited tasks that remain train better policies. At equal size and matched difficulty, models trained on them score 2.4 and 2.7 points higher on held-out tasks from SWE-bench Verified and SWE-bench Pro than models trained on the original tasks, whereas simply dropping the never-solved tasks shows no such gain. We further find that wrong patches that pass (false positives) make up about a quarter of all passing patches, and that new tests that catch a quarter of them do not change held-out scores detectably. A pass rate shows whether a task yields reward, not whether that reward is right, so the reward labels themselves must be checked. To this end, we release SWE-Gym-Verified with its 1,087 audited tasks, every verdict with its executed evidence, our training sets, and the full audit pipeline.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文审计了SWE-Gym中决定奖励的隐藏测试，发现从不被9B基座模型解决的任务中有74%存在拒绝正确修复的假阴性，并修复或移除这些问题任务，发布了含1,087个审计任务及执行证据的SWE-Gym-Verified。对科研工作而言，这些审计后的任务在同等规模和匹配难度下训练出的策略在SWE-bench Verified和SWE-bench Pro上分别高出2.4和2.7分，但仅删除从未解决任务无此收益；此外假阳性约占全部通过补丁的四分之一，而能捕获其中四分之一的新测试未检测到对留出分数的影响，表明通过率不能反映奖励是否正确，奖励标签本身仍需核查。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.30207",
       "authors": [
         "Yikai Zhang",
@@ -8338,8 +9961,8 @@
       "published_at": "2026-11-23T00:00:00+00:00",
       "first_seen": "2026-11-24T07:05:43.153645+00:00",
       "excerpt": "4D occupancy forecasting predicts the 3D semantic occupancy of a driving scene seconds ahead. Over a few seconds, the scene changes little while the vehicle moves, so most of the space ahead has already been seen. Sorting the future into unchanged, changed, and unseen space, we find that current camera-based world models fall short on the unchanged part: they fail to hold on to what they have already seen, rather than to forecast what will change. We therefore make what the model has seen its state. PersistWorld streams camera frames into a persistent 3D world state anchored in the scene, writing each frame once instead of rebuilding the state from past frames. The state is learned end to end with the forecast, and an evolver predicts it at any queried time along the ego trajectory. On Occ3D-nuScenes, PersistWorld raises the IoU of the best camera-based world model by 19 points at 1-3 s and by 18 to 24 points up to 8 s, while running more than twice as fast. Code and models: https://github.com/wangzian828/PersistWorld. Project page: https://wangzian828.github.io/PersistWorld",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出PersistWorld，将相机帧流式写入锚定于场景的持久3D世界状态，每帧只写入一次而非从过去帧重建状态，并由演化器沿自车轨迹预测任意查询时刻的状态。据原文，该方法在Occ3D-nuScenes上增强了相机世界模型保持已见空间的能力，但摘要未说明其在未见空间或实际部署中的表现，相关结论仍需进一步验证。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.30573",
       "authors": [
         "ZiAn Wang",
@@ -8731,8 +10354,8 @@
       "published_at": "2026-11-23T00:00:00+00:00",
       "first_seen": "2026-11-25T05:40:22.499527+00:00",
       "excerpt": "Learned image captioning metrics are trained and tested on human judgments, so their reported correlation is a claim about generalization. We audit this claim for the three most recent collections of such judgments, Polaris, Nebula, and Spica, matching images at the pixel level. First, test samples reappear in training sets: the Spica training set contains about two-thirds of the Polaris test set, with identical human ratings. Second, controlled retraining shows that duplicates can inflate a metric: for Pearl, the gain is confined to the duplicated samples and grows with every epoch; for DENEB, it stays below one point. The gain depends on the learner and on how often a training set repeats a sample. Third, Kendall's τ over all samples is the sum of two terms, detecting captions with the lowest human score and ranking the others; the first supplies most of the reported correlation and is nearly saturated. The recent test sets cannot order Polos, DENEB and Pearl consistently, and a ridge regression on frozen features matches or exceeds all three. Fourth, we propose a protocol that ranks a learned metric only with a model trained without test samples, reports both terms, and compares metrics by paired tests. Under it, zero-shot vision--language judges rank first on the three recent test sets, and a fine-tuned judge ranks first on the three earlier benchmarks. The same analysis applies to any evaluator learned from human judgments; filter lists and code are released at https://github.com/morninghut/ic-dataset-audit .",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文通过像素级匹配审计了Polaris、Nebula和Spica三个人工判断基准中训练集与测试集的重复样本，并分析了重复样本对学习型图像描述指标相关性的影响，进而提出了一套区分重复影响的评估协议。其用途在于提醒科研人员：在此类人工判断基准上比较或训练学习型评估指标时，需按该协议控制测试样本泄漏并分别报告相关性的两个组成部分，否则报告的相关性可能部分来自重复样本而非泛化；同时原文指出近期测试集无法一致排序Polos、DENEB和Pearl，且冻结特征上的岭回归可达到或超过这三者，但这些结论的具体范围与适用条件仍以原文为准。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.30488",
       "authors": [
         "Xiaochen Zhang",
@@ -8815,8 +10438,8 @@
       "published_at": "2026-11-23T00:00:00+00:00",
       "first_seen": "2026-11-25T05:40:22.499527+00:00",
       "excerpt": "Modern visual generative models operate on tokens, and every visual asset they receive, whether an identity, a scribble, a depth map, or a motion video, is tokenized and appended to the input token sequence. Consequently, conditioning quickly dominates the computation cost. Yet most of these tokens carry redundant spatiotemporal information. Our key insight is that identifying what is genuinely new is exactly the problem that classical video codecs have long solved. Thus, we first introduce a codec-based token pruning method that discards redundant tokens. Then, we propose an on-policy self-distillation (OPSD) strategy to train a DiT adapter capable of learning the codec pruning pattern well without quality degradation. Together, they form On-Policy Codec Distillation (CodecOPSD). We scale CodecOPSD to 16 condition modalities on our own video diffusion model, where it prunes 66% of the condition tokens on average with almost no quality drop. Therefore, denoising becomes 2x faster, and the cache memory shrinks by up to 73% in KV cache mode. CodecOPSD also extends to other state-of-the-art pretrained image and video generative models, where its benefit grows further with more conditions, longer frames, and higher resolution.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出CodecOPSD，先用基于编解码器的token剪枝丢弃冗余条件token，再通过同策略自蒸馏训练DiT适配器学习剪枝模式，并在自研视频扩散模型上扩展到16种条件模态。据原文，该方法在平均剪掉66%条件token且几乎不降质时使去噪快2倍、KV cache内存最多缩小73%，但其效果与作者自研模型及具体配置相关，其他生成模型上的收益也依赖条件数量、帧长和分辨率。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.31184",
       "authors": [
         "Boyang Wang",
@@ -8887,8 +10510,8 @@
       "published_at": "2026-11-23T00:00:00+00:00",
       "first_seen": "2026-11-25T05:40:22.499527+00:00",
       "excerpt": "Computer-use agents (CUAs) are rapidly improving, yet their evaluation remains largely static. Existing benchmarks provide a strong foundation, but fixed difficulty ceilings, limited feature coverage, and coarse aggregate scores progressively weaken their discriminative and diagnostic value. We introduce CUA-SEE, a closed-loop evaluation environment that co-evolves tasks and executable verifiers from rollout evidence. It disentangles three objectives: benchmark evolution expands evaluation scope through cohort-calibrated difficulty and coverage growth; diagnostic evolution increases resolution through agent-conditional capability-boundary probes; and verifier evolution improves precision by translating changing requirements into state-grounded checkpoints with adversarial validation. Across multiple agents, applications, and rounds, CUA-SEE generates challenging, measurable tasks while preserving process-level evidence. Our results position adaptive evaluation as a scalable counterpart to self-evolving agents, continuously tracking what agents can do, where their boundaries lie, and how reliably progress is measured.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出并实现了一个名为CUA-SEE的闭环评测环境，通过任务与可执行验证器基于 rollout 证据协同演化，将基准演化、诊断演化和验证器演化三者分离。该环境可用于生成具有挑战性且可度量的任务并保留过程级证据，但其结论基于原文所述多智能体、多应用和多轮实验，具体性能提升幅度及适用边界需以原文验证为准。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.30962",
       "authors": [
         "Wenhao Wang",
@@ -8965,11 +10588,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Huiting Niu",
-        "Haoyu Wang",
-        "Lei Huang",
-        "Ho Seok Park",
-        "Bao Yu Xia"
+        "Huiting Niu, Haoyu Wang, Lei Huang, Ho Seok Park, Bao Yu Xia"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -9019,19 +10638,83 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "eb4450c95d15fec4fd2bb2f3",
+      "url": "https://arxiv.org/abs/2611.31466",
+      "title": "AdProducer: Towards Agentic Advertising Video Generation",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "Recent advances in video generation have made automated advertising production increasingly feasible. However, an effective advertisement must faithfully represent the product and communicate its selling points through compelling visual storytelling, which requires more than visual synthesis: it calls for deeper product understanding and strategic decisions about how to present product value. Crucially, product research and creative design are closely intertwined, as the information gathered about a product determines which features can be faithfully demonstrated and how they should be presented. In this paper, we introduce AdProducer, the first end-to-end agentic framework for advertising video creation, transforming concise creative briefs into finished advertisements. Our multimodal agent autonomously researches products through web and image search and translates its findings into selling-point-driven storyboards that guide a frozen video generator. To achieve this, we develop a dedicated data construction pipeline that yields two training datasets, AdProducer-SFT and AdProducer-RL, and train the agent through supervised fine-tuning followed by reinforcement learning with joint optimization of storyboard- and video-level rewards. We further introduce AdCreation-Bench, comprising 305 advertising briefs across eight domains, with two complementary metrics: PG-Score for product correctness and creative execution, and Ad-Score for overall advertising effectiveness assessed by an independent judge. Experiments demonstrate that AdProducer improves the PG-Score of MiniMax H3 from 17.3 to 51.3 and generalizes to Veo 3.1 without additional training, improving its score from 28.0 to 35.9, with consistent gains in Ad-Score, VideoScore2, and human evaluations. Code, models, and data are released.",
+      "summary": "本文提出AdProducer，一个端到端智能体框架，通过多模态智能体自主进行产品网络与图像调研，将调研结果转化为卖点驱动的分镜脚本以指导冻结的视频生成器，并配套构建了AdProducer-SFT与AdProducer-RL训练数据集、采用监督微调后接强化学习（联合优化分镜级与视频级奖励）进行训练，同时发布涵盖八个领域305条广告简报的AdCreation-Bench及PG-Score和Ad-Score两项指标。据原文报告，该框架将MiniMax H3的PG-Score从17.3提升至51.3，并在无需额外训练的情况下泛化至Veo 3.1使其从28.0提升至35.9，同时在Ad-Score、VideoScore2和人工评估中取得一致提升；上述性能数字均为原文声明，尚未经独立验证，且其效果受限于所依赖的冻结视频生成器能力及基准测试范围。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.31466",
+      "authors": [
+        "Kunyang Li",
+        "Chaoyang Wang",
+        "Mubarak Shah",
+        "Yuzhang Shang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.78,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training、optimization。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8303,
+      "topic_cache_token": "984b9ee0cb267ef9d3c2a8df777adc7ee762b1bd69299333483c1adac678756e",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "9d4b512bddc939e3b71591b5",
       "url": "https://arxiv.org/abs/2611.29539",
       "title": "AmorphGen: A Python package for amorphous structure generation with machine-learning and classical interatomic potentials",
       "source_ids": [
         "arxiv-ai4s",
-        "semantic-scholar"
+        "semantic-scholar",
+        "zotero"
       ],
       "source_names": [
         "arXiv / AI4S",
-        "Semantic Scholar"
+        "Semantic Scholar",
+        "Zotero 为你推荐"
       ],
       "group": "science",
       "groups": [
+        "papers",
         "science"
       ],
       "type": "paper",
@@ -9043,13 +10726,13 @@
       "published_at": "2026-11-22T15:08:34+00:00",
       "first_seen": "2026-11-24T05:42:41.494449+00:00",
       "excerpt": "AmorphGen is an open-source Python package for generating and analyzing amorphous structures from a composition or a crystal. Chemically informed rules estimate initial densities and assign separation and coordination constraints. Three routes are available: random placement followed by relaxation, melt-quench from a crystal, and a hybrid route that anneals and quenches random structures. ASE provides access to classical and machine-learning potentials, with GPU batching for selected backends. Analysis tools compute coordination numbers, bond angles, rings, and X-ray or neutron structure factors for comparison with measurements. An optional interface to the FEFF code computes extended X-ray absorption fine structure (EXAFS) spectra. For amorphous Ga2O3, TiO2 and InGaZnO4, the cation coordination numbers are close to reference models and measurements, and the X-ray structure factors reproduce the main measured peaks. The EXAFS spectra for Ga2O3 and InGaZnO4 also capture the dominant first-shell features observed experimentally. The hybrid route reduces bonding defects in SiO2 and As and builds the first sharp diffraction peak of SiO2. By simplifying ensemble generation and standardizing structural assessment, AmorphGen makes it practical to compare amorphous models across compositions, potentials, and preparation routes, and to screen new amorphous compositions.",
-      "summary": "AmorphGen是一个开源Python包，可根据给定组成或晶体生成非晶结构，提供随机放置加弛豫、从晶体熔融淬火以及退火-淬火随机结构的混合路线，并集成ASE以使用经典和机器学习势，同时提供配位数、键角、环及X射线/中子结构因子等分析工具。该工作简化了非晶模型系综的生成并标准化了结构评估，便于跨组成、势和制备路线比较模型并筛选新非晶组成；文中对Ga2O3、TiO2、InGaZnO4等体系的配位数、X射线结构因子和EXAFS谱仅报告与参考模型或测量的接近程度，未给出可外推的定量性能保证，且其准确性依赖所选势与制备协议。",
-      "summary_kind": "ai_summary",
+      "summary": "AmorphGen 是一个开源 Python 包，可结合经典或机器学习势、通过随机弛豫、熔融淬火和混合路线从成分或晶体生成并标准化分析非晶结构，其结构参数与谱学结果在多种氧化物中得到验证，从而便于跨成分、势函数和制备路线比较并筛选新非晶材料。",
+      "summary_kind": "upstream_tldr",
       "authors": [
         "Chaiyawat Kaewmeechai",
-        "L. Slocombe",
-        "A. Manche",
-        "D. Scanlon"
+        "Louie Slocombe",
+        "Alexis G. Manche",
+        "David O. Scanlon"
       ],
       "topic_labels": [
         {
@@ -9103,25 +10786,25 @@
       "topic_cache_token": "7b9e51100bf3b690a983b479a9e3f0f17d38e0271d1e57d4557ad8a7e930382d",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical",
-      "summary_basis": {
-        "kind": "public_html",
-        "url": "https://arxiv.org/html/2611.29539",
-        "sha256": "b59910123e59282c1cb54030ab13a37ef9132b90c792f9b036a91662a4a39f2a",
-        "chars": 12000
-      }
+      "zotero_score": 3.7893743358318215,
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.29539v1"
     },
     {
       "id": "fa6c6b9ff1a8239b40148554",
       "url": "https://arxiv.org/abs/2611.29132",
       "title": "DeepDOSReasoner: Physics-Grounded Reasoning for Density-of-States Prediction and Materials Discovery",
       "source_ids": [
-        "arxiv-ai4s"
+        "arxiv-ai4s",
+        "zotero"
       ],
       "source_names": [
-        "arXiv / AI4S"
+        "arXiv / AI4S",
+        "Zotero 为你推荐"
       ],
       "group": "science",
       "groups": [
+        "papers",
         "science"
       ],
       "type": "paper",
@@ -9133,8 +10816,8 @@
       "published_at": "2026-11-22T01:36:59+00:00",
       "first_seen": "2026-11-24T05:42:41.494449+00:00",
       "excerpt": "Predicting a material's behavior from its atomic structure is a longstanding goal of the physical sciences. The electronic and phonon densities of states (eDOS and phDOS) govern key electronic, optical, vibrational, and thermodynamic properties, yet their calculation using density functional theory (DFT) is costly: about 60% of Materials Project entries lack eDOS and over 80% lack phDOS. Existing crystal-to-spectrum models rely on pooled structural representations and pointwise regression, which blur spectral features and violate total-state conservation. Here we introduce DeepDOSReasoner, a physics-grounded framework that decodes spectra through atom-to-energy source attention and refines the normalized DOS through learned continuity-equation transport, enforcing nonnegativity and total-state conservation by construction. DeepDOSReasoner achieves the highest prediction accuracy across all evaluated metrics for both eDOS and phDOS, recovers element-resolved contributions without supervision, and most reliably identifies rare valence-band (VB) gaps. In a prospective screen of 8,106 uncharted materials validated by new DFT calculations, its predictions remain the most accurate among the methods evaluated, with 25 of its top 50 candidates confirmed as VB-gap materials. Three case studies spanning substituted compounds, photovoltaic chalcogenides, and a high-entropy alloy demonstrate transfer across materials classes. Ablations confirm that both stages are necessary, while the model retains comparable accuracy when trained on only 25% of the data. Predicting spectra in milliseconds enables exhaustive screening; we release predictions filling the missing eDOS for 91,405 and phDOS for 127,768 Materials Project entries. DeepDOSReasoner provides a blueprint for integrating machine learning with physical reasoning toward high-throughput spectral screening and autonomous materials discovery.",
-      "summary": "本文提出DeepDOSReasoner，一种基于物理约束的框架，通过原子到能量源注意力机制和连续性方程传输来预测电子与声子态密度，并报告了在所用基准和材料筛选中的评估结果。据作者表述，该模型预测速度可达毫秒级，并可用于填补Materials Project中缺失的eDOS和phDOS条目，但其性能优势与筛选结论仍需以独立评测和实际使用为准。",
-      "summary_kind": "ai_summary",
+      "summary": "DeepDOSReasoner 通过物理启发的原子到能量注意力与连续性方程约束，从晶体结构高精度、快速地预测电子和声子态密度，并在保持非负性与总态守恒的前提下实现大规模材料筛选和新材料发现。",
+      "summary_kind": "upstream_tldr",
       "authors": [
         "Yingheng Wang",
         "Francesco Ricci",
@@ -9198,12 +10881,9 @@
       "topic_cache_token": "09006ae42bb81e48ad3f29bcc66349038e34b2514a3c6058d6f428cca6132e9d",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical",
-      "summary_basis": {
-        "kind": "public_html",
-        "url": "https://arxiv.org/html/2611.29132",
-        "sha256": "3588818bfe53e23163dd454403dbe7ef88c14be4fbb7edeb6d8d9cc32a5c3251",
-        "chars": 12000
-      }
+      "zotero_score": 4.066691929442964,
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.29132v1"
     },
     {
       "id": "1a10f1676d46fc01a909d8ea",
@@ -9575,8 +11255,8 @@
       "published_at": "2026-11-22T00:00:00+00:00",
       "first_seen": "2026-11-25T05:40:22.499527+00:00",
       "excerpt": "Understanding a scene requires both geometry and semantics: geometry recovers its spatial structure, and semantics separates it into objects. Current models obtain the two from separate networks or separate passes. We present PINE, a one-step Omni Diffusion Transformer that predicts the point map, the surface normals, and the instance map of an image in one forward pass. PINE treats each map as a token stream, and a stream mask decides which streams interact. A camera-aware ray encoding positions every token by its camera ray rather than its pixel. Grounding attention adds the affinity of pretrained DINOv3 features to the attention logits. Trained on only 139K synthetic images for geometry, PINE achieves state-of-the-art point maps whether or not intrinsics are given and the best average rank on surface normals. It also exceeds SAM on large objects with less than 1 percent of its training images, and it predicts all three maps 5.7x faster than MoGe-3 with SAM.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出PINE，一种一步式Omni Diffusion Transformer，在单次前向传播中同时预测图像的点图、表面法线和实例图，并将各图视为令牌流、通过流掩码决定交互关系，同时采用相机感知射线编码和结合预训练DINOv3特征的Grounding注意力。据原文，该模型仅用139K合成图像训练几何部分，在有无内参条件下均取得最优的点图结果和表面法线最佳平均排名，并在大物体上以不到SAM百分之一的训练图像超越SAM，但以上性能均为原文声明，尚待独立验证。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.29389",
       "authors": [
         "Zeyu Ren",
@@ -9650,8 +11330,8 @@
       "published_at": "2026-11-22T00:00:00+00:00",
       "first_seen": "2026-11-25T05:40:22.499527+00:00",
       "excerpt": "Representation alignment markedly accelerates diffusion training, but one-step generators raise a question that diffusion does not: which training path should receive the loss? A one-step generator sees two kinds of inputs. Corrupted real images come with their clean counterpart, which provides an instance-paired target. Samples generated from pure noise have no corresponding real image, yet this is where the final model operates. We study this question on Priming, which trains one-step generators from scratch by reconstructing corrupted images and then matching feature distributions with optimal transport. Aligning the generative path, the natural choice, collapses recall (0.45!to!0.15--0.25) in all 17 configurations we test, including five target constructions and loss weights down to 0.05. Aligning the paired reconstruction path with a frozen DINOv2 encoder instead helps in every setting we test. A short analysis explains this asymmetry: when the target carries no instance information about the input, the optimal aligned feature is constant within each class, so the loss pulls samples toward class prototypes. A control confirms this: aligning the paired path to a random same-class image instead of the input's own image removes most of the gain. Inside the generator, paired-path alignment creates an interface block through which post-training routes noise, and the image semantics carried through it predict sample quality across 16 models. The resulting recipe, \\method, accelerates both training stages on ImageNet 256!times!256: it matches the 160-epoch baseline with 2times fewer priming epochs, surpasses its final quality with 4times fewer post-training updates, and lowers FID to 1.30 (B) and 1.155 (L) at the standard budget. A joint single-stage variant trains native one-step generators and reaches FID 1.22 with 115M parameters.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文在 Priming 框架下比较了一步生成器训练中生成路径与配对重建路径的表示对齐，发现在其测试的 17 种配置中生成路径对齐会显著削弱召回率，而用冻结 DINOv2 编码器对齐配对重建路径在各设定下均有帮助，并据此提出相应训练配方。该工作为一步生成器的表示对齐设计提供了实验依据，但摘要中的性能数字均来自作者自报结果，尚未经过独立验证；其结论也限于所测试的 Priming、对齐目标与配置范围。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.29547",
       "authors": [
         "Mingxiao Li",
@@ -12157,8 +13837,8 @@
       "published_at": "2026-11-21T00:00:00+00:00",
       "first_seen": "2026-11-24T07:05:43.153645+00:00",
       "excerpt": "How much interaction experience is needed to distill a capable visual agent? We study learning from few tasks and recorded interaction histories. Our framework selects representative trajectories using skill-context coverage and ordered visual-decision similarity. On-policy distillation (OPD) learns through fresh interaction on selected tasks or fresh student responses at fixed histories. Across Navigation, Sokoban, and spatial mapping, even one online training task supports transfer to other tasks. Four fixed trajectories raise a 4B student's success from 49.17% to 82.08% on standard Navigation and from 60.16% to 85.55% on Sokoban, recovering over 90% of the measured gap to a 27B teacher on these panels. On an independent Navigation panel, replay improves success from 45.83% to 76.67%, retaining 91.36% of the same-task online gain without new interaction during optimization. Training repetitions, matched supervised fine-tuning (SFT), and a 9B extension further support the value of compact experience.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出从少量任务及记录的交互历史中蒸馏视觉智能体，通过技能-上下文覆盖与有序视觉决策相似度筛选代表性轨迹，并采用在线策略蒸馏进行学习。所给材料显示该方法在Navigation、Sokoban和空间映射任务上支持有限交互经验下的迁移，并报告了若干面板上的成功率和差距恢复比例；但这些数值来自原文所述实验，需以论文完整方法和评测条件为准。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.28618",
       "authors": [
         "Siyu Zhou",
@@ -12264,14 +13944,17 @@
       "title": "MatHarness: Towards Long-Horizon Open-ended AutoResearch for Computational Materials Science",
       "source_ids": [
         "arxiv-ai4s",
-        "semantic-scholar"
+        "semantic-scholar",
+        "zotero"
       ],
       "source_names": [
         "arXiv / AI4S",
-        "Semantic Scholar"
+        "Semantic Scholar",
+        "Zotero 为你推荐"
       ],
       "group": "science",
       "groups": [
+        "papers",
         "science"
       ],
       "type": "paper",
@@ -12284,18 +13967,18 @@
       "published_at": "2026-11-20T21:24:27+00:00",
       "first_seen": "2026-11-24T05:42:41.494449+00:00",
       "excerpt": "Materials science research is a non-linear, long-horizon process. Existing scientific agents, however, largely rely on specific task execution or predefined workflows, rendering them brittle in open-ended settings. To bridge this gap, we present MatHarness, an agent harness designed for open-ended, long-horizon computational materials research spanning the complete lifecycle from initial ideation to manuscript writing. MatHarness couples three mechanisms: execution robustness through pre-flight verification, expert-distilled skills, and just-in-time auditing; epistemic adaptability through persistent research artifacts and an evolving scientific mental model; and collective intelligence through a heterogeneous multi-agent round table under targeted human oversight. We evaluate MatHarness on adsorbate-induced surface segregation in Cu-Zn alloys, an open question in methanol-synthesis catalysis. Over a multi-week trajectory consuming roughly 10^3 GPU-hours (50 production DFT relaxations prescreened by 171 machine-learning-potential evaluations) the system revised its plan six times, recovered autonomously from failed calculations, and had an independent auditor overturn one of its own over-attributed claims before publication. Within the sampled metallic dilute-limit models, the validated DFT analysis supports an adsorbate-induced tendency toward greater surface Cu exposure at both composition endpoints, with facet- and coverage-dependent exceptions. These results were compiled into a complete manuscript with human involvement concentrated in specification, approval, and strategic steering gates. The code is publicly available at https://github.com/PrentisAI/pippin.",
-      "summary": "MatHarness 是面向计算材料科学的开放式长周期自动研究智能体框架，结合执行前核验、专家提炼技能、即时审计、持久研究工件与异构多智能体圆桌等机制，并在铜锌合金吸附物诱导表面偏析案例中完成从构思到成稿的多周研究流程。该工作展示了在人工监督下将开放式自动研究用于材料计算流程的潜在用途，但原文结论限定于所采样的金属稀释极限模型，且相关能力与结果仍需独立验证，不宜视为已验证的通用性能。",
-      "summary_kind": "ai_summary",
+      "summary": "MatHarness 是一个面向计算材料科学长周期开放式自动研究的智能体框架，通过执行鲁棒性、认知适应性和多智能体协作机制，在 Cu-Zn 合金吸附诱导表面偏析问题中自主完成从构思到论文写作的完整研究流程。",
+      "summary_kind": "upstream_tldr",
       "authors": [
-        "Yan-Lin Fei",
+        "Yanlin Fei",
         "Lei Li",
-        "Shao-Long Chen",
-        "Na-Zhou Liu",
-        "Xin-Miao Yu",
-        "M. Ciobanu",
+        "Shaolong Chen",
+        "Nazhou Liu",
+        "Xinmiao Yu",
+        "Madalina Ciobanu",
         "Navan Preet Singh",
-        "Q. Mao",
-        "R. Das"
+        "Qingqing Mao",
+        "Ritankar Das"
       ],
       "topic_labels": [
         {
@@ -12373,7 +14056,10 @@
       "topic_coverage": 0.8086,
       "topic_cache_token": "9ad7424b9354db8489ae793668d3afaeeacf0f6ab9d2967184a0445fe71fd8b3",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "zotero_score": 4.5357872092732165,
+      "affiliations": [],
+      "pdf_url": "https://arxiv.org/pdf/2611.28324v1"
     },
     {
       "id": "e260a1d09bbcfe0ad90f55f9",
@@ -12397,8 +14083,8 @@
       "published_at": "2026-11-20T20:31:19+00:00",
       "first_seen": "2026-11-25T05:40:22.499527+00:00",
       "excerpt": "Modern language models (LMs) are post-trained and deployed as agents inside a \"harness\", but standard harness designs accumulate context that the neural network is forced to generalize to, making training for long-horizon tasks expensive and time-consuming. We study an alternative emerging path: training inherently neurosymbolic LM harnesses, which externalize and manage context programmatically to compose existing LM capabilities. We hypothesize that training around these harnesses can offer a better return on compute by enabling compositional generalization, as they can learn to decompose complex problems so that every observation their neural LM receives is locally in-distribution, even when the full task is novel. We find that harnesses like the Recursive Language Model (RLM) learn such decompositions readily under reinforcement learning post-training: (1) we demonstrate that training only on short tasks can generalize to tasks 2-64$\\times$ longer while the base neural LM improves less, and (2) training on one domain transfers to novel domains that share latent structure. On messier, complex tasks, we find that we can target individual LLM calls within a harness by generating and training on easier, synthetically generated surrogate environments with fake tool / sub-calls, a technique we call surrogate harness training. From this finding, we train RLM-27B on synthetic data, and show it improves Qwen3.8-27B in the same RLM harness on a hard suite of long-context tasks like CTC-Bench and ExpertLongBench by 26.9% on average while using $\\sim$2$\\times$ fewer tokens at inference time. Finally, we show that harnesses can compose over these newly learned decompositions using recursive sub-harness calls.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文研究将语言模型载体训练为神经符号系统，通过程序化外置和管理上下文来组合既有语言模型能力，并在强化学习后训练下观察到递归语言模型等载体能学习问题分解，使短任务训练可泛化到更长任务并跨领域迁移。其用途在于为长时程任务提供更具计算效率的训练与推理路径，但摘要所述泛化与效率结论均来自作者实验报告，尚待独立验证。",
+      "summary_kind": "ai_summary",
       "alpha_rank": 9,
       "authors": [
         "Alex L. Zhang",
@@ -22907,8 +24593,8 @@
       "published_at": "2026-11-19T00:00:00+00:00",
       "first_seen": "2026-11-24T05:42:41.494449+00:00",
       "excerpt": "Neural networks encode learned capabilities in their weights, yet extending those capabilities with explicit task knowledge remains a fundamental challenge. Here we show that Weight-Space Programming (WSP), in which executable programs read, construct or modify a network's weights directly, can install new capabilities within trained neural networks. WeightCode, a WSP framework, uses a frozen language model to write executable weight programs that install new computations into trained neural networks using task knowledge and their existing weights, without gradient-based training. Once installed, the new capabilities run independently of the language model. Given a grammar or eight demonstrations, weight programs enable previously unseen command compositions (0% to 99.8% exact match) and a new pickup action (0% to 98.4% success), while preserving the original command and navigation capabilities. On ImageNet, four weight programs achieve net gains of 8.84-17.62 points while preserving clean accuracy, outperforming the best of eight fine-tuning methods under matched examples, checks, and retention constraints. In a Vision Transformer, causal interventions show that installed noise-correction gates drive robustness gains, while their selective activation preserves clean accuracy. Rerun on five independently trained Vision Transformers without further language model calls, ten weight programs retain 83-110% of their source-network gains on average, whereas copying their fixed weight edits yields negligible gains. Six programs written for an already edited network add 5.23-14.50 points of contrast robustness while retaining the previously installed noise gain. Together, these results establish WSP as a new route to acquiring and accumulating capabilities in trained neural networks through reusable weight programs.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "WeightCode提出了一种权重空间编程框架，用冻结的语言模型编写可执行权重程序，在不依赖梯度训练的情况下，向已训练神经网络中安装新能力，并报告在命令组合、抓取动作、ImageNet鲁棒性和视觉Transformer上取得改进。该工作为无须重训即可扩展和累积模型能力提供了新思路，但其结果依赖所给演示或语法等条件，且公司相关性能声明仍需独立验证。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.25476",
       "authors": [
         "Bo Li",
@@ -22988,8 +24674,8 @@
       "published_at": "2026-11-19T00:00:00+00:00",
       "first_seen": "2026-11-24T05:42:41.494449+00:00",
       "excerpt": "Most world models for future prediction prioritize aestetic quality of generated videos, but offer only weak physical grounding and limited geometric consistency over time, due to the lack of explicit 4D modeling. In this paper, we introduce plan4d, a possible next milestone towards building a generative plannable 4D world model that predicts future RGB videos together with dense 4D geometry, including depth, cameras, point clouds, and scene flow from an observed scene context and text-specified actions. Since training data with paired actions and dense 4D annotations is inherently scarce, plan4d leverages the complementary priors of foundational video generators and 3D reconstructors. Specifically, we propose a model-stitching architecture that couples Depth Anything 3 with LongCat-Video and augments it with an auxiliary DPT head for scene-flow prediction. The resulting model allows us to plan and generate complex, long-horizon, and fine-grained actions in a dynamic 3D scenes, while substantially improving both visual fidelity and geometric accuracy of the generated future videos. Extensive experiments on both synthetic and real-world datasets demonstrate that plan4d achieves state-of-the-art performance in generative 4D modeling of environmental reactions. Project Page: https://fogradio.github.io/plan4d-project",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出Plan4D，一种通过模型拼接架构将Depth Anything 3与LongCat-Video耦合、并附加用于场景流预测的辅助DPT头的生成式可规划4D世界模型，用于从观测场景上下文和文本指定动作预测未来RGB视频及包含深度、相机、点云和场景流的密集4D几何。该工作面向动作与密集4D标注配对训练数据稀缺条件下的4D环境反应生成任务，其公开材料称在合成与真实数据集上取得最优性能，但相关性能声明来自原文，未经独立验证。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.26516",
       "authors": [
         "Hangwei Zhang",
@@ -28168,8 +29854,8 @@
       "published_at": "2026-11-18T00:00:00+00:00",
       "first_seen": "2026-11-24T07:05:43.153645+00:00",
       "excerpt": "Graphical user interface (GUI) agents are widely trained in executable GUI environments. To lower cost, build environments in batches, and reduce manual effort, each work trades away part of the environment through its construction choices. We describe these choices along three dimensions: reward coverage, the goal-reaching trajectories the verifier rewards; data coverage, the application data the agent is exposed to beyond what the task reads or writes; and feature coverage, the application features beyond what the task uses. Existing works set each dimension on engineering grounds, but they do not measure its effect on training. How complete must an environment be to train a capable agent, and along which dimensions? In MobileGym, we adjust each dimension separately, train Qwen3-VL-4B-Instruct, and evaluate every policy in the original full environment. A verifier that rewards only one reference path lowers success by 10.53 points, and removing unneeded records also lowers success. Pruning unneeded features instead raises success from 51.61% to 56.13%, entirely on tasks whose environments it left unchanged. The gain reverses when each episode is weighted equally and vanishes when only episodes on the pruned tasks are balanced. Without pruning, length weighting there reinforces long detour successes that erode skills on other tasks. Following these findings, we build MobileGym-Lite, which keeps reward and data coverage complete and prunes unneeded features. It outperforms Full in the full environment (55.48% versus 51.61% success) with lower construction cost.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文通过MobileGym在移动GUI环境中分别调整奖励覆盖、数据覆盖和特征覆盖三个维度，训练Qwen3-VL-4B-Instruct并在原始完整环境中评估策略，报告了仅奖励单一路径使成功率下降10.53点、去除非必要数据也降低成功率、而裁剪非必要特征在未改动任务上使成功率从51.61%升至56.13%，并据此构建保留完整奖励与数据覆盖、裁剪非必要特征的MobileGym-Lite，其在完整环境中以55.48%对51.61%超过Full且构建成本更低。该工作为GUI智能体训练中环境完整性的维度取舍提供可测量的对照依据，并指出特征裁剪的收益依赖任务加权方式、在按回合等权或仅平衡被裁剪任务时会反转或消失，且上述结论限于所测模型、环境与评估设置，未涵盖其他模型或环境的泛化验证。",
+      "summary_kind": "ai_summary",
       "hf_url": "https://huggingface.co/papers/2611.23946",
       "authors": [
         "Jingxing Wang",
@@ -66151,6 +67837,78 @@
       "zotero_score": 3.339455800288956,
       "affiliations": [],
       "pdf_url": "https://arxiv.org/pdf/2611.09298v1"
+    },
+    {
+      "id": "097e4fd0db8ce2da54739182",
+      "url": "https://doi.org/10.1002/adma.74825",
+      "title": "Moiré Phase Mapping in Twisted Bilayer Liquid Crystals with Reconfigurable Light Polarization States",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-06T08:56:46+00:00",
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Jordan A. Wilson, Rui Huang, Allen Sun, Zixian Fang, Doreen Mwangombe, Keerthna Naina Rawat, Oliver Jacobs, Zhiwei Li"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74825",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.0937,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题中的明确材料领域词，保留材料研究根类；未使用摘要，不推断叶类。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8182,
+      "topic_cache_token": "65a1ed05926a6127e12ecf821ea24f1587eb8c38f5c29fecb2ed80d9cbfcae9b",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
     },
     {
       "id": "a0a44ed09dc9a1089b4e099f",
@@ -127620,8 +129378,8 @@
       "published_at": "2026-10-25T21:43:27+00:00",
       "first_seen": "2026-11-24T07:05:43.153645+00:00",
       "excerpt": "A central limitation of modern machine learning systems is the lack of formal certificates guaranteeing their behavior beyond empirical, sample-based evaluation. Sum-of-squares (SOS) methods provide such guarantees by certifying polynomial inequalities over continuous domains via semidefinite programming (SDP). While prior work has introduced SDP layers as differentiable components in neural networks, repeated learning calls can lose the computational benefit of the forward program's sparse representation. We propose Sparse SOS Layers, differentiable value layers whose backward passes reuse the local coordinates of the forward solve. Under a fixed template and learned objective coefficients, each layer avoids building dense certificates and reuses its sparse structure across training steps. Compared with existing methods, our approach achieves up to 2.7 times speedup in total warm-call time, with nearly 100 times lower memory usage (1.7 vs. 160 GiB) for relatively large problem sizes for the tested dense parameterization. Experiments cover sparse polynomial certification, pendulum control, combinatorial relaxations, robotics projection, oscillator chains, and pose graph synchronization. A design study achieves zero certified violations across unseen problem instances and sizes, while requiring roughly 7 times fewer optimization solves than estimating gradients by perturbing the objective coefficients and re-solving the problem (finite differences). These results show that sparse certificate values can be effectively integrated into learning pipelines when the backward pass respects the verifier's structure.",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出稀疏平方和层，使可微平方和验证层在反向传播中复用前向求解的稀疏局部坐标，并在测试的稠密参数化下对较大规模问题报告了最高2.7倍的总热调用加速和约100倍的内存占用降低。该工作面向将稀疏证书值整合进学习流程，但其性能与零违规观察仅基于文中实验设置，且限于固定模板与学习目标系数等条件，不应视为普适保证。",
+      "summary_kind": "ai_summary",
       "alpha_rank": 2,
       "authors": [
         "Ege Gursoy",
@@ -189157,8 +190915,8 @@
       "published_at": "2026-10-13T00:50:38+00:00",
       "first_seen": "2026-11-24T05:42:41.494449+00:00",
       "excerpt": "We propose a unified spatial-density signal to score token importance for both inference phases: bipartite merge for prefill and KV eviction for decode, yielding measurable gains in each stage. To isolate the two phases, we split benchmarks by scoring logic. Prefill probes (MMBench, POPE, ScienceQA) evaluate only the first decoded token; their accuracy reflects prefill logits argmax before any decode KV eviction. Full-pipeline probes (TextVQA, DocVQA, MM-Vet) assess the complete generated sequence and capture both phases. We identify a critical evaluation pitfall: decode pruning claims validated solely on prefill probes measure prefill quality, not decode performance. Experiments show discarding all visual KV during decode barely affects prefill-probe accuracy but degrades TextVQA and MM-Vet drastically; this insensitivity stems from the scoring rule, not compression intensity. Evaluated on seven model variants (InternVL-3.5, Qwen3-VL, LLaVA-1.5) and three full-pipeline benchmarks, our method achieves a three-way Pareto frontier across compute, memory and accuracy. Density-based prefill compression maintains strong accuracy, scales linearly with visual token count, and delivers 100x faster token selection at high resolution. For decode, density top-k KV eviction consistently outperforms strong baselines H2O, SnapKV and StreamingLLM on TextVQA and MM-Vet across three retention ratios. At 0.125 keep ratio on TextVQA, it surpasses H2O by 9.6 points; InternVL-3.5 models (2B to 38B) maintain a 7 to 10 point advantage. Compression scales favorably with model size: every measured 8B to 38B model transition reduces accuracy loss instead of worsening it. We suggest MM-Vet or DocVQA as mandatory full-pipeline validation for any decode-phase claims. Our code is available at https://github.com/Kai-Liu001/TwinPrune",
-      "summary": "",
-      "summary_kind": "source_excerpt",
+      "summary": "本文提出TwinPrune，用统一的密度信号为预填充阶段的双边合并和解码阶段的KV逐出打分，并在七种模型变体、三个全流程基准上报告了计算、内存与准确率的三向帕累托结果。其预填充压缩据称可随视觉token数线性扩展并加速token选择，解码阶段密度top-k KV逐出在TextVQA和MM-Vet上高于H2O、SnapKV和StreamingLLM等基线；但论文也指出仅在预填充探针上验证解码剪枝会误测预填充质量而非解码性能，并建议对解码阶段结论强制使用MM-Vet或DocVQA等全流程验证。",
+      "summary_kind": "ai_summary",
       "alpha_rank": 2,
       "authors": [
         "Kai Liu",
@@ -216626,7 +218384,7 @@
       "doi": "10.1038/s41586-026-11097-z",
       "published_online_at": "2026-10-07T00:00:00+00:00",
       "published_print_at": "2026-11-12T00:00:00+00:00",
-      "indexed_at": "2026-11-11T14:21:44+00:00",
+      "indexed_at": "2026-11-24T21:47:38+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -218071,7 +219829,7 @@
       "doi": "10.1016/j.matt.2026.102923",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-29T23:20:47+00:00",
+      "indexed_at": "2026-11-25T05:46:17+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -238024,7 +239782,7 @@
       "doi": "10.1038/s41586-026-11098-y",
       "published_online_at": "2026-09-30T00:00:00+00:00",
       "published_print_at": "2026-10-29T00:00:00+00:00",
-      "indexed_at": "2026-11-06T21:52:54+00:00",
+      "indexed_at": "2026-11-25T02:49:17+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -256140,7 +257898,7 @@
       "doi": "10.1038/s41586-026-11044-y",
       "published_online_at": "2026-09-16T00:00:00+00:00",
       "published_print_at": "2026-10-29T00:00:00+00:00",
-      "indexed_at": "2026-11-15T12:56:00+00:00",
+      "indexed_at": "2026-11-24T07:40:41+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -282393,7 +284151,7 @@
       "doi": "10.1038/s41586-026-10529-0",
       "published_online_at": "2026-09-02T00:00:00+00:00",
       "published_print_at": "2026-09-03T00:00:00+00:00",
-      "indexed_at": "2026-11-18T23:10:03+00:00",
+      "indexed_at": "2026-11-24T06:41:38+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -316981,6 +318739,85 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "4f831dc0ce30d89a0c214350",
+      "url": "https://arxiv.org/abs/2605.15710",
+      "title": "SMMBench: A Benchmark for Source-Distributed Multimodal Agent Memory",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents"
+      ],
+      "published_at": "2026-05-15T08:00:46+00:00",
+      "first_seen": "2026-11-25T06:19:57.451799+00:00",
+      "excerpt": "Existing benchmarks for multimodal memory reasoning largely evaluate systems within pre-assembled contexts, but under-evaluate whether agents can use evidence distributed across independently originated sources. We argue that source-distributed memory composition is an important and under-examined bottleneck in multimodal agent memory, especially when relevant evidence is fragmented across heterogeneous artifacts such as conversations, profiles, screenshots, tables, images, and documents. To address this gap, we introduce Source-distributed Multimodal Memory Benchmark(SMMBench), which measures whether agents can retrieve, align, and compose multimodal evidence scattered across multiple sources rather than reason within a single curated context. SMMBench evaluates four core capabilities: (1) cross-source multimodal reasoning; (2) conflict resolution; (3) preference reasoning; (4) memory-grounded action prediction. The benchmark contains 1877 samples grounded in 264 sources. Experiments on representative memory-style and retrieval-based baselines show that current systems still struggle on these capabilities, positioning source-distributed multimodal memory as an important and still under-evaluated challenge for multimodal agents. Our data are available at https://huggingface.co/datasets/HuacanChai/SMMBench.",
+      "summary": "本文提出SMMBench，用于评估多模态智能体在跨独立来源的碎片化证据下进行检索、对齐与组合的能力，并包含跨来源多模态推理、冲突解决、偏好推理和基于记忆的行动预测四类任务，数据规模为1877个样本、264个来源。该基准可用于检验记忆式与检索式基线在来源分布式多模态记忆场景中的表现，但公开材料仅显示这些系统在该场景下仍存在困难，未给出具体性能数字，也未说明其结论已获独立验证。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 4,
+      "authors": [
+        "Huacan Chai",
+        "Yukai Wang",
+        "Yingxuan Yang",
+        "Dan Peng",
+        "Yuanyi Song",
+        "Zhihui Fu",
+        "Weiwen Liu",
+        "Jianghao Lin",
+        "Jun Wang",
+        "Weinan Zhang"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:8a3a99cf84fd10886a5d50f8727ee20c",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：agent memory。"
+        },
+        {
+          "id": "zotero:e09a09615a9a79995ffd756fcf67aa3f",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：benchmark。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8a3a99cf84fd10886a5d50f8727ee20c",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8a3a99cf84fd10886a5d50f8727ee20c",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:e09a09615a9a79995ffd756fcf67aa3f"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8361,
+      "topic_cache_token": "94679407915787300912e36c8c43747be3a0a47815331314f948e2689d60d683",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "b53c50f80542615b64082096",
       "url": "https://arxiv.org/abs/2605.12887",
       "title": "EcoGEO: Trajectory-Aware Evidence Ecosystems for Web-Enabled LLM Search Agents",
@@ -319016,12 +320853,12 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-11-25T05:40:22.499527+00:00",
+    "last_success": "2026-11-25T06:19:57.451799+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 108,
+      "classified": 23,
       "unclassified": 2142,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
@@ -319126,8 +320963,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
-      "last_success": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
+      "last_success": "2026-11-25T06:19:57.451799+00:00",
       "status": "ok",
       "count": 12
     },
@@ -319135,7 +320972,7 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -319146,8 +320983,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
-      "last_success": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
+      "last_success": "2026-11-25T06:19:57.451799+00:00",
       "status": "ok",
       "count": 7
     },
@@ -319155,8 +320992,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
-      "last_success": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
+      "last_success": "2026-11-25T06:19:57.451799+00:00",
       "status": "ok",
       "count": 12
     },
@@ -319164,8 +321001,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
-      "last_success": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
+      "last_success": "2026-11-25T06:19:57.451799+00:00",
       "status": "ok",
       "count": 12
     },
@@ -319173,8 +321010,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
-      "last_success": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
+      "last_success": "2026-11-25T06:19:57.451799+00:00",
       "status": "ok",
       "count": 0
     },
@@ -319182,8 +321019,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
-      "last_success": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
+      "last_success": "2026-11-25T06:19:57.451799+00:00",
       "status": "ok",
       "count": 12
     },
@@ -319191,8 +321028,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
-      "last_success": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
+      "last_success": "2026-11-25T06:19:57.451799+00:00",
       "status": "ok",
       "count": 2
     },
@@ -319204,14 +321041,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
-      "last_success": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
+      "last_success": "2026-11-25T06:19:57.451799+00:00",
       "count": 227,
       "counters": {
         "relevant": 4,
         "pending": 223,
         "excluded": 3,
-        "fetched": 136,
+        "fetched": 126,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -319224,7 +321061,7 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
       "last_success": "2026-11-24T05:42:41.494449+00:00",
       "count": 100,
       "counters": {
@@ -319246,7 +321083,7 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
       "last_success": "2026-11-24T05:42:41.494449+00:00",
       "count": 262,
       "counters": {
@@ -319254,7 +321091,7 @@
         "pending": 228,
         "excluded": 1522,
         "fetched": 539,
-        "abstracts_recovered": 1
+        "abstracts_recovered": 0
       },
       "errors": [
         "crossref_request_or_parse_failed"
@@ -319267,18 +321104,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
       "last_success": "2026-11-25T05:40:22.499527+00:00",
-      "count": 189,
+      "count": 190,
       "counters": {
         "relevant": 19,
-        "pending": 170,
+        "pending": 171,
         "excluded": 931,
-        "fetched": 537,
+        "fetched": 468,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-matter",
@@ -319288,14 +321127,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
-      "last_success": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
+      "last_success": "2026-11-25T06:19:57.451799+00:00",
       "count": 111,
       "counters": {
         "relevant": 1,
         "pending": 110,
         "excluded": 2,
-        "fetched": 77,
+        "fetched": 78,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -319307,20 +321146,18 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
-      "last_success": "2026-11-24T05:42:41.494449+00:00",
+      "status": "ok",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
+      "last_success": "2026-11-25T06:19:57.451799+00:00",
       "count": 69,
       "counters": {
         "relevant": 1,
         "pending": 68,
-        "excluded": 832,
-        "fetched": 75,
+        "excluded": 833,
+        "fetched": 208,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "journal-nature-communications",
@@ -319330,7 +321167,7 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
       "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 1134,
       "counters": {
@@ -319352,14 +321189,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
-      "last_success": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
+      "last_success": "2026-11-25T06:19:57.451799+00:00",
       "count": 31,
       "counters": {
         "relevant": 1,
         "pending": 30,
         "excluded": 47,
-        "fetched": 34,
+        "fetched": 33,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -319372,13 +321209,13 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
       "last_success": "2026-11-24T07:05:43.153645+00:00",
       "count": 151,
       "counters": {
         "relevant": 2,
         "pending": 149,
-        "excluded": 247,
+        "excluded": 246,
         "fetched": 35,
         "abstracts_recovered": 0
       },
@@ -319393,25 +321230,27 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
       "last_success": "2026-11-25T05:40:22.499527+00:00",
       "count": 30,
       "counters": {
         "relevant": 3,
         "pending": 27,
         "excluded": 839,
-        "fetched": 113,
+        "fetched": 88,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
-      "last_success": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
+      "last_success": "2026-11-25T06:19:57.451799+00:00",
       "status": "ok",
       "count": 1
     },
@@ -319419,8 +321258,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
-      "last_success": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
+      "last_success": "2026-11-25T06:19:57.451799+00:00",
       "status": "ok",
       "count": 12
     },
@@ -319428,8 +321267,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
-      "last_success": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
+      "last_success": "2026-11-25T06:19:57.451799+00:00",
       "status": "ok",
       "count": 0
     },
@@ -319437,8 +321276,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
-      "last_success": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
+      "last_success": "2026-11-25T06:19:57.451799+00:00",
       "status": "ok",
       "count": 0
     },
@@ -319446,8 +321285,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
-      "last_success": "2026-11-25T05:40:22.499527+00:00",
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
+      "last_success": "2026-11-25T06:19:57.451799+00:00",
       "status": "ok",
       "count": 12
     },
@@ -319455,25 +321294,25 @@
       "id": "zotero",
       "name": "Zotero 为你推荐",
       "status": "ok",
-      "count": 0,
-      "last_attempt": "2026-11-25T05:40:22.499527+00:00",
-      "last_success": "2026-11-24T05:41:42.866194+00:00",
-      "run_id": "45335010102",
+      "count": 20,
+      "last_attempt": "2026-11-25T06:19:57.451799+00:00",
+      "last_success": "2026-11-25T06:19:24.233815+00:00",
+      "run_id": "45548479239",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
     }
   ],
   "summaries": {
-    "status": "ok",
-    "generated": 24,
-    "failed": 0,
+    "status": "partial",
+    "generated": 23,
+    "failed": 1,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
-      "status": "partial",
+      "status": "ok",
       "attempted": 8,
-      "public_html": 5,
+      "public_html": 8,
       "bohr_graph": 0,
-      "fallback": 3,
-      "bohr_calls": 2
+      "fallback": 0,
+      "bohr_calls": 0
     }
   },
   "policy": {
