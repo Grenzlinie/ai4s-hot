@@ -31,6 +31,22 @@ SCIENCE = {
     "agents": ("agent", "scientific discovery", "science", "scientific", "科研", "智能体"),
     "tools": ("code", "coding", "tool", "inference", "工程", "编程"),
 }
+MATERIAL_RESEARCH = re.compile(
+    r"\b(?:materials?|atomistic|atomic[- ]scale|interatomic|crystal\w*|alloys?|polymers?|"
+    r"electro(?:catal\w*|lytes?|des?)|batter(?:y|ies)|catalys\w*|"
+    r"mofs?|metal[- ]organic|xrd|diffraction|microstructur\w*|semiconductors?|"
+    r"solid[- ]state|surface (?:chemistry|energy)|density functional|mlips?|"
+    r"lemat[\w-]*|lematerial|chemical reaction networks?)\b"
+    r"|材料|晶体|晶格|原子间势|原子级|原子尺度|電解質|原子間|电催化|催化剂|合金|电解液|电极|电池|衍射|微观结构",
+    re.I,
+)
+COMPANY_ANNOUNCEMENT = re.compile(
+    r"融资|募资|天使轮|招聘|任命|加入董事|获奖|資金調達|登壇レポート|採用情報"
+    r"|\b(?:fundrais\w*|funding|series [a-f]|hiring|job openings?|"
+    r"advisory board|joins as|appoint\w*|awards?|best inventions|ai infrastructure|"
+    r"general-purpose computer for research)\b",
+    re.I,
+)
 
 
 class UpdateFailure(RuntimeError):
@@ -63,6 +79,14 @@ def iso(value):
 
 def plain(value):
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", str(value or "")))).strip()
+
+
+def accepts_update(source, title, excerpt):
+    if not source.get("materials_only"):
+        return True
+    return not COMPANY_ANNOUNCEMENT.search(plain(title)) and bool(
+        MATERIAL_RESEARCH.search(plain(title) + " " + plain(excerpt)[:1800])
+    )
 
 
 def canonical_url(url):
@@ -117,11 +141,16 @@ def rss(source, limit, cutoff):
     if not feed.entries and feed.bozo:
         raise ValueError("Response is not a usable RSS/Atom feed")
     result = []
+    categories = source.get("feed_categories")
     for entry in feed.entries:
         published = iso(entry.get("published") or entry.get("updated"))
         if published and datetime.fromisoformat(published) < cutoff:
             continue
         if not entry.get("link") or not entry.get("title"):
+            continue
+        if categories and not any(tag.get("term") in categories for tag in entry.get("tags", [])):
+            continue
+        if not accepts_update(source, entry.title, entry.get("summary", "")):
             continue
         result.append(item(source, entry.title, entry.link, published=published,
                            excerpt=entry.get("summary", ""), authors=[a.get("name", "") for a in entry.get("authors", [])]))
@@ -130,8 +159,8 @@ def rss(source, limit, cutoff):
 
 
 def article(url):
-    text = get(url).text
-    doc = trafilatura.bare_extraction(text, url=url, with_metadata=True)
+    response = get(url)
+    doc = trafilatura.bare_extraction(response.content, url=url, with_metadata=True)
     if not doc or not doc.title:
         raise ValueError("Article extraction returned no title")
     return doc
@@ -142,7 +171,7 @@ def website(source, limit, cutoff):
     tree = lhtml.fromstring(response.content)
     base = urlsplit(source["url"])
     links = []
-    for href in tree.xpath("//a/@href"):
+    for href in tree.xpath(source.get("link_xpath", "//a/@href")):
         url = urljoin(response.url, href)
         parts = urlsplit(url)
         if parts.netloc != base.netloc or not any(parts.path.startswith(p) for p in source["paths"]):
@@ -162,7 +191,9 @@ def website(source, limit, cutoff):
             published = iso(doc.date)
             if published and datetime.fromisoformat(published) < cutoff:
                 continue
-            result.append(item(source, doc.title, url, published=published, excerpt=doc.text or doc.description or ""))
+            excerpt = doc.text or doc.description or ""
+            if accepts_update(source, doc.title, excerpt):
+                result.append(item(source, doc.title, url, published=published, excerpt=excerpt))
         except requests.RequestException:
             continue
         except ValueError:
@@ -173,6 +204,28 @@ def website(source, limit, cutoff):
         # Distinguish an unchanged old index from broken parsing.
         return []
     return result[:limit]
+
+
+def publication_cards(source, limit, cutoff):
+    response = get(source["url"])
+    tree = lhtml.fromstring(response.content)
+    records = {}
+    for card in tree.xpath(source["card_xpath"]):
+        title = plain(card.xpath(source["title_xpath"]))
+        excerpt = plain(card.xpath(source["excerpt_xpath"]))
+        date = iso(card.xpath("string(.//time/@datetime)"))
+        url = urljoin(response.url, card.get("href", ""))
+        if not title or not date or urlsplit(url).netloc != urlsplit(source["url"]).netloc:
+            continue
+        records[url] = (title, excerpt, date)
+    if not records:
+        raise ValueError("No dated research cards found")
+    entries = [
+        item(source, title, url, published=date, excerpt=excerpt)
+        for url, (title, excerpt, date) in records.items()
+        if datetime.fromisoformat(date) >= cutoff and accepts_update(source, title, excerpt)
+    ]
+    return sorted(entries, key=lambda entry: entry["published_at"], reverse=True)[:limit]
 
 
 def github(source, limit, cutoff):
@@ -282,7 +335,8 @@ def alphaxiv(source, limit, cutoff):
     return [item(source, e.title, e.link, published=e.get("published"), excerpt=e.get("summary", ""), alpha_rank=rank.get(canonical_url(e.link)), authors=[a.get("name", "") for a in e.get("authors", [])]) for e in feed.entries if e.get("link") and e.get("title")]
 
 
-COLLECTORS = {"rss": rss, "arxiv": rss, "html": website, "github": github, "huggingface": huggingface, "hf_daily": hf_daily, "semantic": semantic, "alphaxiv": alphaxiv}
+COLLECTORS = {"rss": rss, "arxiv": rss, "html": website, "publication_cards": publication_cards,
+              "github": github, "huggingface": huggingface, "hf_daily": hf_daily, "semantic": semantic, "alphaxiv": alphaxiv}
 
 
 def normalized_doi(row):
@@ -449,7 +503,6 @@ def run(args):
     items = {p["id"]: p for p in previous["items"]}
     old_status = {s["id"]: s for s in previous.get("sources", [])}
     statuses = []
-    cutoff = NOW - timedelta(days=config["lookback_days"])
     if args.source:
         sources = [s for s in config["sources"] if s["id"] in args.source]
     else:
@@ -457,6 +510,7 @@ def run(args):
     def fetch(source):
         status = {"id": source["id"], "name": source["name"], "url": source.get("url", "https://github.com/" + source.get("repo", "")), "last_attempt": NOW.isoformat(), "last_success": old_status.get(source["id"], {}).get("last_success")}
         try:
+            cutoff = NOW - timedelta(days=source.get("lookback_days", config["lookback_days"]))
             result = COLLECTORS[source["kind"]](source, source.get("limit", config["max_items_per_source"]), cutoff)
             status.update(status="ok", count=len(result), last_success=NOW.isoformat())
         except NeedsConfiguration:

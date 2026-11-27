@@ -23,10 +23,10 @@ def content_facets(item):
         or re.search(r'\b(?:ceo|cto|cfo|chief|president|director|chair)\b.{0,60}\bappointment\b',text))
     release=kind in ('release','model_release') or bool(re.search(r'\bintroducing\b|\blaunch(?:es|ing)?\b|model release',text))
     paper=kind=='paper' or 'arxiv.org' in item.get('url','')
-    scope='non_research' if organization or (release and not paper) else ('research' if paper or re.search(r'experiment|scientific|research|benchmark|dataset|material|molecular|algorithm',text) else 'unknown')
+    scope='non_research' if organization or (release and not paper) else ('research' if paper or re.search(r'experiment|scientific|research|benchmark|dataset|material|molecular|algorithm|材料|晶体|晶格|原子级|数据集|实验',text) else 'unknown')
     content='web:organization_policy' if organization else ('web:model_release' if release and not paper else ('web:paper' if paper else ('web:technical_report' if scope=='research' else 'web:engineering_update')))
     domains=[]
-    for label,pattern in [('materials',r'material|crystal|alloy|polymer|mof|cof|interatomic'),('chemistry',r'chemistry|chemical|molecul|cataly|reaction'),('life_sciences',r'protein|biolog|genom|drug|medical')]:
+    for label,pattern in [('materials',r'material|atomistic|crystal|alloy|polymer|mof|cof|interatomic|xrd|材料|晶体|晶格|合金|聚合物|原子间势|原子级|电解液|电极|电池'),('chemistry',r'chemistry|chemical|molecul|cataly|reaction'),('life_sciences',r'protein|biolog|genom|drug|medical')]:
         if re.search(pattern,text): domains.append('web:'+label)
     return scope,content,domains or ['web:general_ai']
 

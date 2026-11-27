@@ -24,6 +24,8 @@
 
 Hugging Face Daily API 与官网 HTML 提取需要随来源结构变化维护。Semantic Scholar 查询只覆盖配置中的科学主题，日期上界为本次采集日。来源内容保留原文链接，摘要与网页摘录均标明来源类型。
 
+材料 AI 公司每日读取官方 RSS、新闻页或研究卡片。通常回看 120 天，Entalpic 的研究栏目回看 210 天。条目沿用发布日期、URL 去重与每轮上限。通过标题、公开摘录及部分来源的官方分类筛选材料技术，优先收录模型、数据、仿真、合成和实验验证。开物纪从研究卡片读取发布日期和简介，并链接官方 PDF。
+
 ## 已有配置复用
 
 GitHub Actions Secrets：`ZOTERO_ID`、`ZOTERO_KEY`、`OPENAI_API_KEY`、`OPENAI_API_BASE`、`ALPHAXIV_API_KEY`。可选 `SEMANTIC_SCHOLAR_API_KEY` 可改善共享 API 的限流体验。

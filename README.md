@@ -14,6 +14,8 @@
 
 拖动庄园切换视角，点击图书馆浏览论文，点击望远镜探索图谱。阅读页按细主题或宽分类浏览全部归档。每日来源集中直达 arXiv、alphaXiv 和重点期刊，并新增 Nature Machine Intelligence 与 Nature Computational Science 的站内追踪。
 
+每日来源可按材料 AI 公司浏览。首批跟踪开物纪、深度原理、Periodic Labs、Radical AI、CuspAI、Entalpic 和 Matlantis 的材料技术更新。
+
 ### 2026-10-26 · 主题分类
 
 支持根据明确标题分类，优先补充有材料 AI 线索的公开摘要，并拆分论文相关性与主题分类队列。

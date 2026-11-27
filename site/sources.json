@@ -124,6 +124,88 @@
       "group": "science",
       "type": "paper",
       "url": "https://www.semanticscholar.org/"
+    },
+    {
+      "id": "periodic-labs",
+      "name": "Periodic Labs",
+      "kind": "html",
+      "url": "https://periodic.com/news",
+      "paths": [
+        "/news/"
+      ],
+      "group": "science",
+      "type": "report",
+      "materials_only": true,
+      "lookback_days": 120
+    },
+    {
+      "id": "radical-ai",
+      "name": "Radical AI",
+      "kind": "html",
+      "url": "https://www.radical-ai.com/news",
+      "paths": [
+        "/news/"
+      ],
+      "group": "science",
+      "type": "report",
+      "materials_only": true,
+      "lookback_days": 120
+    },
+    {
+      "id": "cuspai",
+      "name": "CuspAI",
+      "kind": "rss",
+      "url": "https://cusp.ai/blog/rss.xml",
+      "group": "science",
+      "type": "report",
+      "materials_only": true,
+      "lookback_days": 120
+    },
+    {
+      "id": "entalpic",
+      "name": "Entalpic",
+      "kind": "rss",
+      "url": "https://entalpic.ai/feed/",
+      "feed_categories": [
+        "Research"
+      ],
+      "group": "science",
+      "type": "report",
+      "materials_only": true,
+      "lookback_days": 210
+    },
+    {
+      "id": "deep-principle",
+      "name": "深度原理 Deep Principle",
+      "kind": "rss",
+      "url": "https://blog.deepprinciple.com/rss/",
+      "group": "science",
+      "type": "report",
+      "materials_only": true,
+      "lookback_days": 120
+    },
+    {
+      "id": "matlantis",
+      "name": "Matlantis",
+      "kind": "rss",
+      "url": "https://matlantis.com/ja/resources/blog/feed/",
+      "group": "science",
+      "type": "report",
+      "materials_only": true,
+      "lookback_days": 120
+    },
+    {
+      "id": "kairos-materials",
+      "name": "开物纪 Kairos Materials",
+      "kind": "publication_cards",
+      "url": "https://www.kairosmaterials.com/news/",
+      "card_xpath": "//*[@id='research']//a[starts-with(@href, '/papers/')]",
+      "title_xpath": "normalize-space(string((.//div[@class='paper-name']/strong | .//h3)[1]))",
+      "excerpt_xpath": "string(.//p[1])",
+      "group": "science",
+      "type": "report",
+      "materials_only": true,
+      "lookback_days": 120
     }
   ]
 }
