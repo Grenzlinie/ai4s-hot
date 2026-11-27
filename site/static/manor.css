@@ -370,6 +370,34 @@ body {
 .entry h3 a { color: #203455; }
 .entry h3 a:hover { color: #2e56b1; }
 .entry .summary { font-size: 15px; line-height: 1.75; max-width: 82ch; color: #354967; }
+
+.entry .query-hit {
+  background: #fff0ca;
+  color: #223652;
+  border-radius: .18em;
+  font-weight: 750;
+}
+.entry .search-evidence {
+  display: grid;
+  gap: 4px;
+  max-width: 82ch;
+  margin-block: 8px;
+}
+.entry .search-excerpt {
+  margin: 0;
+  color: #354967;
+  font-size: 14px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+.entry .search-field {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 650;
+  margin-inline-end: .55em;
+  white-space: nowrap;
+}
+
 .entry .summary-kind, .entry .signals { font-size: 12px; color: var(--muted); }
 .entry .tags button, .entry .tags span { font-size: 12px; color: #28566c; background: #e6f2f7; }
 .entry .actions button {

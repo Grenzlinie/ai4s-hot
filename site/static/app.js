@@ -77,31 +77,166 @@ function publicationIdentifier(value) {
 function searchQuery() {
   const raw = $("query").value.trim();
   if (raw !== lastSearch.raw) {
-    const phrase = normalizeSearch(publicationIdentifier(raw) || raw);
-    lastSearch = {raw, phrase, terms: phrase ? [...new Set(phrase.split(" "))] : []};
+    const identifier = publicationIdentifier(raw).toLowerCase();
+    const phrase = normalizeSearch(identifier || raw);
+    lastSearch = {
+      raw, identifier, phrase, terms: phrase ? [...new Set(phrase.split(" "))] : [],
+      matches: new WeakMap()
+    };
   }
   return lastSearch;
+}
+
+function searchIdentifiers(p) {
+  return [...new Set([p.doi, p.arxiv_id, p.url].map(publicationIdentifier).filter(Boolean))];
 }
 
 function searchable(p) {
   let entry = searchIndex.get(p);
   if (!entry) {
     const title = normalizeSearch(p.title);
-    const identifiers = [p.doi, p.arxiv_id, p.url].map(publicationIdentifier).filter(Boolean).map(normalizeSearch);
-    const ids = [normalizeSearch(p.url), ...identifiers].join(" ");
-    const body = normalizeSearch([p.summary, p.excerpt, p.journal_title, ...(p.source_ids || []).map(sourceName), ...(p.authors || [])].join(" "));
-    entry = {title, ids, identifiers, full: [title, ids, body].join(" ")};
+    const identifiers = searchIdentifiers(p);
+    const authors = (p.authors || []).map(normalizeSearch).filter(Boolean);
+    const body = normalizeSearch([p.url, ...identifiers, p.summary, p.excerpt, p.journal_title,
+      ...(p.source_ids || []).map(sourceName)].join(" "));
+    entry = {title, identifiers, authors, full: [title, body].join(" ")};
     searchIndex.set(p, entry);
   }
   return entry;
 }
 
+function termMatches(text, term) {
+  return /^[a-z]{1,2}$/.test(term)
+    ? ` ${text} `.includes(` ${term} `)
+    : text.includes(term);
+}
+
+function matchesQuery(p, query) {
+  if (!query.terms.length) return true;
+  if (query.matches.has(p)) return query.matches.get(p);
+  const {identifiers, authors, full} = searchable(p);
+  let matched;
+  if (query.identifier) {
+    matched = identifiers.some(id => id.toLowerCase() === query.identifier);
+  } else {
+    const missing = query.terms.filter(term => !termMatches(full, term));
+    matched = !missing.length || authors.some(author => missing.every(term => termMatches(author, term)));
+  }
+  query.matches.set(p, matched);
+  return matched;
+}
+
 function searchRank(p, query) {
-  const {title, ids, identifiers} = searchable(p);
-  if (title === query.phrase || identifiers.includes(query.phrase)) return 4;
-  if (title.includes(query.phrase) || ids.includes(query.phrase)) return 3;
-  if (query.terms.every(term => title.includes(term))) return 2;
-  return query.terms.some(term => title.includes(term)) ? 1 : 0;
+  const {title, authors} = searchable(p);
+  if (query.identifier || title === query.phrase || authors.includes(query.phrase)) return 4;
+  if ([title, ...authors].some(text => ` ${text} `.includes(` ${query.phrase} `))) return 3;
+  if ([title, ...authors].some(text => query.terms.every(term => termMatches(text, term)))) return 2;
+  return query.terms.some(term => termMatches(title, term)) ? 1 : 0;
+}
+
+function queryHits(text, terms) {
+  const hits = [];
+  for (const word of text.matchAll(/[\p{L}\p{N}\p{M}]+/gu)) {
+    const original = word[0];
+    const normalized = normalizeSearch(original);
+    for (const term of terms) {
+      if (!termMatches(normalized, term)) continue;
+      if (normalized.length !== original.length || normalized.includes(" ")) {
+        hits.push({start: word.index, end: word.index + original.length, term});
+        continue;
+      }
+      for (let at = normalized.indexOf(term); at !== -1; at = normalized.indexOf(term, at + term.length)) {
+        hits.push({start: word.index + at, end: word.index + at + term.length, term});
+      }
+    }
+  }
+  return hits.sort((a, b) => a.start - b.start);
+}
+
+function highlightedText(text, hits, start = 0, end = text.length) {
+  const marked = [];
+  for (const hit of hits) {
+    if (hit.start < start || hit.end > end) continue;
+    const previous = marked.at(-1);
+    if (previous && (hit.start <= previous.end || /^\s+$/.test(text.slice(previous.end, hit.start)))) {
+      previous.end = Math.max(previous.end, hit.end);
+    } else {
+      marked.push({...hit});
+    }
+  }
+  let cursor = start;
+  let output = start ? "…" : "";
+  for (const hit of marked) {
+    output += escapeText(text.slice(cursor, hit.start));
+    output += `<mark class="query-hit">${escapeText(text.slice(hit.start, hit.end))}</mark>`;
+    cursor = hit.end;
+  }
+  return output + escapeText(text.slice(cursor, end)) + (end < text.length ? "…" : "");
+}
+
+function searchPassage(text, hits, needed) {
+  let best;
+  for (const focus of hits) {
+    if (!needed.has(focus.term)) continue;
+    let start = Math.max(0, focus.start - 48);
+    let end = Math.min(text.length, Math.max(start + 176, focus.end + 48));
+    // Cut at a nearby word break when clipping English prose or links.
+    const firstBreak = text.indexOf(" ", start);
+    const lastBreak = text.lastIndexOf(" ", end);
+    if (start && firstBreak >= start && firstBreak < focus.start && firstBreak - start < 18) start = firstBreak + 1;
+    if (end < text.length && lastBreak >= focus.end && end - lastBreak < 18) end = lastBreak;
+    const terms = new Set(hits.filter(hit => hit.start >= start && hit.end <= end && needed.has(hit.term)).map(hit => hit.term));
+    if (!best || terms.size > best.terms.size) best = {start, end, terms};
+    if (best.terms.size === needed.size) break;
+  }
+  return best;
+}
+
+function searchPreview(p, query) {
+  const title = String(p.title ?? "");
+  if (!query.terms.length) return {title: escapeText(title), evidence: ""};
+  const row = (label, markup) => `<p class="search-excerpt"><span class="search-field">${escapeText(label)}</span>${markup}</p>`;
+  if (query.identifier) {
+    const id = searchIdentifiers(p).find(value => value.toLowerCase() === query.identifier);
+    if (!id) return {title: escapeText(title), evidence: ""};
+    const label = /^10\./i.test(id) ? "DOI" : "arXiv";
+    return {
+      title: escapeText(title),
+      evidence: `<div class="search-evidence">${row(label, highlightedText(id, [{start: 0, end: id.length}]))}</div>`
+    };
+  }
+
+  const titleHits = queryHits(title, query.terms);
+  const covered = new Set(titleHits.map(hit => hit.term));
+  const needed = new Set(query.terms.filter(term => !covered.has(term)));
+  const abstracts = [[p.type === "paper" ? "原始摘要" : "来源摘录", p.excerpt]];
+  if (p.summary !== p.excerpt) abstracts.push([summaryLabels[p.summary_kind] || "研究摘要", p.summary]);
+  const fields = needed.size ? [
+    ...(p.authors || []).map(author => ["作者", author]),
+    ...abstracts, ["期刊", p.journal_title],
+    ...(p.source_ids || []).map(id => ["来源", sourceName(id)]), ["原文链接", p.url],
+    ...searchIdentifiers(p).map(id => [/^10\./i.test(id) ? "DOI" : "arXiv", id])
+  ] : abstracts;
+  const candidates = fields.filter(([, value]) => value)
+    .map(([label, value]) => ({label, text: String(value), hits: queryHits(String(value), query.terms)}));
+
+  const snippets = [];
+  const remaining = needed.size ? needed : new Set(query.terms);
+  const limit = needed.size ? 2 : 1;
+  while (remaining.size && snippets.length < limit) {
+    let best;
+    for (const field of candidates) {
+      const passage = searchPassage(field.text, field.hits, remaining);
+      if (passage && (!best || passage.terms.size > best.terms.size)) best = {...field, ...passage};
+    }
+    if (!best) break;
+    snippets.push(row(best.label, highlightedText(best.text, best.hits, best.start, best.end)));
+    for (const term of best.terms) remaining.delete(term);
+  }
+  return {
+    title: highlightedText(title, titleHits),
+    evidence: snippets.length ? `<div class="search-evidence">${snippets.join("")}</div>` : ""
+  };
 }
 
 function matches(p,ignoreAxis=''){
@@ -119,7 +254,7 @@ function matches(p,ignoreAxis=''){
  if(archiveDate){if(localDay(p.first_seen)!==archiveDate)return false;}else if(days&&new Date(p.published_at||p.first_seen).getTime()<Date.now()-days*86400000)return false;
  if(legacySignal==='zotero'&&(!(p.source_ids||[]).includes('zotero')||!Number.isFinite(p.zotero_score)))return false;
  if(legacySignal==='alpha'&&!Number.isFinite(p.alpha_rank))return false;
- return !query.terms.length||query.terms.every(term=>searchable(p).full.includes(term));
+ return matchesQuery(p,query);
 }
 function uniqueItems(items){return [...new Map(items.map(p=>[p.id,p])).values()];}
 function itemTime(p,indexed=false){return Date.parse(indexed?p.first_seen:(p.published_at||p.first_seen))||0;}
@@ -167,7 +302,9 @@ function renderJournals(){
 }
 function topicCounts(id){const axis=rootOf(id),all=new Set(),current=new Set();for(const p of data.items){if(id==='unclassified'?researchUnclassified(p):browseIDs(p).has(id)){all.add(p.id);if(matches(p,axis))current.add(p.id);}}return [current.size,all.size];}
 function card(p){const isRead=read.has(p.id),isSaved=saved.has(p.id);const summary=p.summary||p.excerpt||'来源未提供摘要，点击标题查看原文。';const shortened=summary.length>420?summary.slice(0,420)+'…':summary;const signals=[];if((p.source_ids||[]).includes('zotero')&&Number.isFinite(p.zotero_score))signals.push('研究推荐');if(Number.isFinite(p.alpha_rank))signals.push('alphaXiv #'+p.alpha_rank);if(!signals.length)signals.push(p.published_at?'新近发布':'新近收录');
-  return `<article class="entry ${isRead?'is-read':''}" id="item-${escapeText(p.id)}"><div class="entry-meta"><span class="type-label type-${escapeText(p.type)}">${escapeText(kindOptions.find(([id])=>id===p.content_kind)?.[1]||types[p.type]||'进展')}</span><span class="entry-sources">${(p.source_ids||[]).map(id=>`<button data-source="${escapeText(id)}" class="source-link" aria-pressed="${selectedSources.has(id)}">${escapeText(sourceName(id))}</button>`).join(' / ')}</span><time datetime="${escapeText(p.published_at||p.first_seen)}">${p.published_at?'发表':'收录'} ${escapeText(date(p.published_at||p.first_seen))}</time></div><h3><a href="${escapeText(safeURL(p.url))}" target="_blank" rel="noopener noreferrer" data-open="${escapeText(p.id)}">${escapeText(p.title)}</a></h3><p class="summary">${escapeText(shortened)}</p><p class="summary-kind">${escapeText(summaryLabels[p.summary_kind]||'来源摘录')}</p>${p.journal_id?`<div class="journal-meta"><button class="journal-link" data-journal="${escapeText(p.journal_id)}" aria-pressed="${selectedJournals.has(p.journal_id)}">${escapeText(p.journal_title||journalName(p.journal_id))}</button>${p.journal_relevance?.status==='pending'?'<span class="journal-pending">相关性待确认</span>':''}</div>`:''}${signals.length?`<p class="signals">${escapeText(signals.join('；'))}</p>`:''}<div class="entry-bottom"><div class="tags">${itemTopics(p)}</div><div class="actions"><button data-read="${escapeText(p.id)}" class="${isRead?'selected':''}" aria-pressed="${isRead}">${isRead?'已读':'标为已读'}</button><button data-save="${escapeText(p.id)}" class="${isSaved?'selected':''}" aria-pressed="${isSaved}">${isSaved?'★ 已收藏':'☆ 收藏'}</button><button data-share="${escapeText(p.id)}">链接</button></div></div><details><summary>查看摘要、分类依据与记录</summary>${p.journal_relevance?`<p>期刊相关性筛选：${p.journal_relevance.status==='pending'?'待确认':'相关'}。${escapeText(journalReason(p.journal_relevance.reason))}</p>`:''}${classificationEvidence(p)}<button class="text-button" data-correct="${escapeText(p.id)}">修正本机分类</button>${p.authors?.length?`<p>作者：${escapeText(p.authors.join(', '))}</p>`:''}<p>${escapeText(summary)}</p><p>首次收录：${escapeText(date(p.first_seen,true))}${p.published_at?'；来源发表日期：'+escapeText(date(p.published_at)):''}</p>${p.pdf_url?`<a href="${escapeText(safeURL(p.pdf_url))}" target="_blank" rel="noopener noreferrer">论文 PDF</a>`:''}</details></article>`;
+  const preview = searchPreview(p, searchQuery());
+  const description = preview.evidence || `<p class="summary">${escapeText(shortened)}</p><p class="summary-kind">${escapeText(summaryLabels[p.summary_kind]||'来源摘录')}</p>`;
+  return `<article class="entry ${isRead?'is-read':''}" id="item-${escapeText(p.id)}"><div class="entry-meta"><span class="type-label type-${escapeText(p.type)}">${escapeText(kindOptions.find(([id])=>id===p.content_kind)?.[1]||types[p.type]||'进展')}</span><span class="entry-sources">${(p.source_ids||[]).map(id=>`<button data-source="${escapeText(id)}" class="source-link" aria-pressed="${selectedSources.has(id)}">${escapeText(sourceName(id))}</button>`).join(' / ')}</span><time datetime="${escapeText(p.published_at||p.first_seen)}">${p.published_at?'发表':'收录'} ${escapeText(date(p.published_at||p.first_seen))}</time></div><h3><a href="${escapeText(safeURL(p.url))}" target="_blank" rel="noopener noreferrer" data-open="${escapeText(p.id)}">${preview.title}</a></h3>${description}${p.journal_id?`<div class="journal-meta"><button class="journal-link" data-journal="${escapeText(p.journal_id)}" aria-pressed="${selectedJournals.has(p.journal_id)}">${escapeText(p.journal_title||journalName(p.journal_id))}</button>${p.journal_relevance?.status==='pending'?'<span class="journal-pending">相关性待确认</span>':''}</div>`:''}${signals.length?`<p class="signals">${escapeText(signals.join('；'))}</p>`:''}<div class="entry-bottom"><div class="tags">${itemTopics(p)}</div><div class="actions"><button data-read="${escapeText(p.id)}" class="${isRead?'selected':''}" aria-pressed="${isRead}">${isRead?'已读':'标为已读'}</button><button data-save="${escapeText(p.id)}" class="${isSaved?'selected':''}" aria-pressed="${isSaved}">${isSaved?'★ 已收藏':'☆ 收藏'}</button><button data-share="${escapeText(p.id)}">链接</button></div></div><details><summary>查看摘要、分类依据与记录</summary>${p.journal_relevance?`<p>期刊相关性筛选：${p.journal_relevance.status==='pending'?'待确认':'相关'}。${escapeText(journalReason(p.journal_relevance.reason))}</p>`:''}${classificationEvidence(p)}<button class="text-button" data-correct="${escapeText(p.id)}">修正本机分类</button>${p.authors?.length?`<p>作者：${escapeText(p.authors.join(', '))}</p>`:''}<p>${escapeText(summary)}</p><p>首次收录：${escapeText(date(p.first_seen,true))}${p.published_at?'；来源发表日期：'+escapeText(date(p.published_at)):''}</p>${p.pdf_url?`<a href="${escapeText(safeURL(p.pdf_url))}" target="_blank" rel="noopener noreferrer">论文 PDF</a>`:''}</details></article>`;
 }
 function topicName(id){if(id==='unclassified')return '公开内容分类';const t=taxonomyTopics().find(t=>t.id===id);return (t?.path||labels[id]||id)+(isRetired(t)?'（已归档）':'');}
 function itemTopics(p){if(p.topic_scope==='non_research')return `<span class="tag">${escapeText(kindOptions.find(([id])=>id===p.content_kind)?.[1]||types[p.type]||'其他动态')}</span>`;const ids=leafIDs(p);return ids.length?ids.map(t=>`<button class="tag" title="${escapeText(topicName(t))}" data-topic="${escapeText(t)}">${escapeText(displayTopic(t))}</button>`).join(''):`<span class="tag">${relevancePending(p)?'相关性待确认':'公开信息不足'}</span>`;}
@@ -184,13 +321,14 @@ function syncURL(replace=false){const url=new URL(location.href);url.search='';f
 function restoreURL(){const params=new URL(location.href).searchParams;const original=(params.get('topics')||params.get('topic')||'').split(',').filter(Boolean);selectedTopics=new Set(original.map(resolveTopic).filter(id=>id==='unclassified'||taxonomyTopics().some(t=>t.id===id)));const unavailable=original.filter(id=>id!=='unclassified'&&!taxonomyTopics().some(t=>t.id===resolveTopic(id)));if(unavailable.length)toast('当前归档不支持部分主题筛选，已清除不可用主题；其他筛选与阅读标记保留');else if(original.includes('unclassified'))toast('旧待分类入口已改为公开内容分类；证据不足的内容使用宽类，不推断细类');else if(original.some(id=>resolveTopic(id)!==id))toast('旧主题链接已迁移到当前目录');topic='';selectedTopics.forEach(expandPath);days=params.has('days')?Math.max(0,Number(params.get('days'))||0):30;channel=params.get('channel')||'';savedView=params.get('view')==='saved';$('query').value=params.get('q')||'';selectedSources=new Set((params.get('sources')||params.get('source')||'').split(',').filter(Boolean));selectedJournals=new Set((params.get('journals')||'').split(',').filter(id=>journalOptions().some(j=>j.id===id)));journalReview=params.get('journal_review')==='pending'&&journalOptions().length&&!selectedTopics.has('unclassified')?'pending':'';domain=domainOptions.some(([id])=>id===params.get('domain'))?params.get('domain'):'';kind=kindOptions.some(([id])=>id===params.get('kind'))?params.get('kind'):'';$('archive-date').value=params.get('date')||'';const oldSort=params.get('sort');legacySignal=['zotero','alpha'].includes(params.get('signal'))?params.get('signal'):['zotero','alpha'].includes(oldSort)?oldSort:'';$('sort').value=oldSort==='indexed'?'indexed':'recent';viewMode=['recommended','latest'].includes(params.get('mode'))?params.get('mode'):params.get('view')==='latest'||((!params.has('view')||params.get('view')==='saved')&&oldSort)?'latest':'recommended';$('unread').checked=params.get('unread')==='1';}
 function render(){
  const focused=document.activeElement,scopeID=focused?.closest?.('[id]')?.id,marks=focused?.tagName==='BUTTON'?[...focused.attributes].filter(a=>a.name.startsWith('data-')).map(a=>[a.name,a.value]):[];
- const results=filtered();$('result-count').textContent=results.length+' 条';$('results-title').textContent=savedView?'我的书架':searchQuery().terms.length?'搜索结果':selectedTopics.size?[...selectedTopics].map(displayTopic).join(' · '):viewMode==='latest'?'最新进展':'综合推荐';
- $('entries').innerHTML=results.length?results.slice(0,shown).map(card).join(''):`<div class="empty"><b>${savedView?'还没有符合筛选条件的收藏':journalReview==='pending'?'当前条件下没有相关性待确认文章':'这个组合暂时没有进展'}</b><p>${journalReview==='pending'?'相关性待确认与研究主题是否已分类分别统计；可移除来源、期刊或日期条件查看更多。':'可以逐项移除上方条件，或恢复全部内容。'}</p>${searchQuery().terms.length && (days || $('archive-date').value) ? '<button data-clear-filter="time">搜全部日期</button>' : ''}<button data-clear-filter="all">清除筛选</button>${savedView?'<button data-view="recommended">返回综合推荐</button>':''}</div>`;
+ const query = searchQuery();
+ const results=filtered();$('result-count').textContent=results.length+' 条';$('results-title').textContent=savedView?'我的书架':query.terms.length?'搜索结果':selectedTopics.size?[...selectedTopics].map(displayTopic).join(' · '):viewMode==='latest'?'最新进展':'综合推荐';
+ $('entries').innerHTML=results.length?results.slice(0,shown).map(card).join(''):`<div class="empty"><b>${savedView?'还没有符合筛选条件的收藏':journalReview==='pending'?'当前条件下没有相关性待确认文章':query.terms.length?`没有找到「${escapeText(query.raw)}」`:'这个组合暂时没有进展'}</b><p>${journalReview==='pending'?'相关性待确认与研究主题是否已分类分别统计；可移除来源、期刊或日期条件查看更多。':'可以逐项移除上方条件，或恢复全部内容。'}</p>${searchQuery().terms.length && (days || $('archive-date').value) ? '<button data-clear-filter="time">搜全部日期</button>' : ''}<button data-clear-filter="all">清除筛选</button>${savedView?'<button data-view="recommended">返回综合推荐</button>':''}</div>`;
  $('load-more').hidden=shown>=results.length;$('topics').innerHTML=topicNavigation();$('active-filters').innerHTML=activeFilters();renderFacets();renderJournals();
  document.querySelectorAll('[data-days]').forEach(b=>b.classList.toggle('active',Number(b.dataset.days)===days));document.querySelectorAll('[data-topic]').forEach(b=>b.classList.toggle('active',selectedTopics.has(b.dataset.topic)||Boolean(topic&&b.dataset.topic===topic)));
  for(const [id,active] of [['saved',savedView],['home',!savedView&&viewMode==='recommended'],['latest',!savedView&&viewMode==='latest']]){$(id).classList.toggle('active',active);$(id).setAttribute('aria-pressed',String(active));}
  $('saved-count').textContent=saved.size;$('sort').disabled=Boolean(legacySignal)||viewMode!=='latest';
- $('sort-info').textContent=legacySignal?'保留旧链接范围 · 可在条件中清除':viewMode==='latest'?($('sort').value==='indexed'?'按收录时间':'按发表时间 · 缺日期按收录时间'):searchQuery().terms.length?'标题和编号匹配优先':'综合排序 · 兼顾来源与内容类型';
+ $('sort-info').textContent=legacySignal?'保留旧链接范围 · 可在条件中清除':viewMode==='latest'?($('sort').value==='indexed'?'按收录时间':'按发表时间 · 缺日期按收录时间'):query.terms.length?'标题、作者与编号的精确匹配优先':'综合排序 · 兼顾来源与内容类型';
  if(marks.length){const scope=$(scopeID)||document;const next=[...scope.querySelectorAll('button')].find(b=>marks.every(([key,value])=>b.getAttribute(key)===value));if(next)next.focus({preventScroll:true});else if(marks.some(([key])=>key==='data-save'))$('saved').focus({preventScroll:true});else if(!$('source-dialog').open&&!$('journal-dialog').open)$('query').focus({preventScroll:true});}
 }
 function refresh(writeURL=true){shown=25;render();if(writeURL)syncURL();}
@@ -244,7 +382,7 @@ async function init(){try{const response=await fetch('./data/index.json',{cache:
   document.addEventListener('keydown',e=>{handleDrawerKeys(e);handleTreeKeys(e);if(e.key==='/'&&!document.querySelector('dialog[open]')&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)){e.preventDefault();$('query').focus();}});
   restoreURL();
   $("more-filters").open = Boolean(selectedJournals.size || selectedSources.size || journalReview || $("archive-date").value || $("unread").checked || $("sort").value === "indexed");
-  if(location.hash.startsWith('#item-')){days=0;const id=location.hash.slice(6);if(data.items.find(p=>p.id===id)?.journal_relevance?.status==='pending'){journalReview='pending';selectedTopics.delete('unclassified');}const index=filtered().findIndex(p=>p.id===id);shown=Math.max(25,index+1);document.querySelectorAll('[data-days]').forEach(b=>b.classList.toggle('active',Number(b.dataset.days)===0));}render();syncURL(true);loadUpdateStatus();if(location.hash)document.getElementById(location.hash.slice(1))?.scrollIntoView();
+  if(location.hash.startsWith('#item-')){days=0;const id=location.hash.slice(6);if(data.items.find(p=>p.id===id)?.journal_relevance?.status==='pending'){journalReview='pending';selectedTopics.delete('unclassified');}const index=filtered().findIndex(p=>p.id===id);shown=Math.max(25,index+1);document.querySelectorAll('[data-days]').forEach(b=>b.classList.toggle('active',Number(b.dataset.days)===0));}render();syncURL(true);loadUpdateStatus();if(location.hash)document.getElementById(location.hash.slice(1))?.scrollIntoView();else if(searchQuery().terms.length)$('results').scrollIntoView({block:'start'});
 }catch{$('updated').textContent='归档暂时无法读取';$('coverage').textContent='请刷新页面，或查看 GitHub Actions 的最近运行';$('entries').innerHTML='<div class="empty"><b>归档暂时不可用</b>请稍后刷新页面。<br><a href="https://github.com/Grenzlinie/ai4s-hot/actions">查看更新任务</a></div>';}}
 
 function validateUpdateStatus(value){const fields=['schema_version','status','stage','last_attempt','last_success','error_type','failed_item_id','run_url','retryable'];if(!value||typeof value!=='object'||Array.isArray(value)||Object.keys(value).some(k=>!fields.includes(k))||!['ok','error'].includes(value.status)||!['taxonomy','classification','validation','build'].includes(value.stage)||typeof value.retryable!=='boolean'||typeof value.last_attempt!=='string'||!Number.isFinite(Date.parse(value.last_attempt)))return null;if(value.schema_version!==undefined&&value.schema_version!==1)return null;if(value.last_success!==null&&value.last_success!==undefined&&(typeof value.last_success!=='string'||!Number.isFinite(Date.parse(value.last_success))))return null;for(const key of ['error_type','failed_item_id','run_url'])if(value[key]!==undefined&&(typeof value[key]!=='string'||value[key].length>500))return null;return value;}

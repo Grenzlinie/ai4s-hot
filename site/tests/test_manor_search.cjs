@@ -25,5 +25,34 @@ check('latest mode remains chronological',()=>{viewMode='latest';assert.equal(qu
 check('legacy paper type supports kind filter',()=>{kind='web:paper';assert.deepEqual(query('Graph Li').sort(),['old','title']);kind=''});
 check('current explicit kind filter still applies',()=>{kind='web:technical_report';assert.deepEqual(query('Graph Li'),['report']);kind=''});
 check('normalization handles full-width letters and case',()=>assert.deepEqual(query('ＧＲＡＰＨ potentials'),['title','body']));
+check('short name parts cannot match substrings or different authors',()=>{
+  const old=data.items;
+  data.items=[
+    {...base,id:'false',title:'Whole-Body Learning for Humanoids'},
+    {...base,id:'split',title:'A materials study',authors:['Bo Yang','Xuming Hu']},
+    {...base,id:'direct',title:'A materials study',authors:['Bo Hu']}];
+  assert.deepEqual(query('Bo Hu'),['direct']);
+  assert.ok(card(data.items[2]).includes('作者</span><mark class="query-hit">Bo Hu</mark>'));
+  data.items=old;
+});
+check('search card shows original excerpt around a distant matching term',()=>{
+  const row={...base,title:'Membranes',excerpt:'Prior context. '.repeat(40)+'The phase uses perovskite layers.',summary:'关于膜的进一步研究。'};
+  query('perovskite');
+  const markup=card(row);
+  assert.ok(markup.includes('原始摘要</span>…'));
+  assert.ok(markup.includes('<mark class="query-hit">perovskite</mark> layers'));
+  assert.match(markup,/关于膜的进一步研究/);
+});
+check('title and author hits are visible and text is escaped',()=>{
+  query('Graph Li');
+  const markup=card({...data.items[0],title:'<script>Graph</script> potentials'});
+  assert.ok(markup.includes('&lt;script&gt;<mark class="query-hit">Graph</mark>&lt;/script&gt;'));
+  assert.ok(markup.includes('作者</span>Wei <mark class="query-hit">Li</mark>'));
+  assert.doesNotMatch(markup,/<script>/);
+});
+check('identifier result highlights the stored canonical identifier',()=>{
+  query('https://arxiv.org/abs/2601.12345v2');
+  assert.ok(card(data.items[0]).includes('arXiv</span><mark class="query-hit">2601.12345</mark>'));
+});
 console.log('Manor search focused: '+(checks-failures.length)+'/'+checks+' passed');if(failures.length)throw Error(failures.join('\\n'));
 `,context);
