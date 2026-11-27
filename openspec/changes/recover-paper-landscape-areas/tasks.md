@@ -1,3 +1,0 @@
-- [x] 1. Inspect the 180 baseline papers and define evidence-based recovery.
-- [x] 2. Implement fine-topic mapping, additional title phrases, and focused regression tests.
-- [ ] 3. Run independent checks against the frozen archive and verify the live deployment.
