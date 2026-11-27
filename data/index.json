@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T05:03:07.822796+00:00",
+  "generated_at": "2026-11-27T05:20:10.015722+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -87354,7 +87354,7 @@
       "doi": "10.1016/j.actamat.2026.122874",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-11T06:23:09+00:00",
+      "indexed_at": "2026-11-27T05:09:51+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -97870,6 +97870,153 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "1d774c86ae2f56a009bfdda4",
+      "url": "https://doi.org/10.1002/adma.74863",
+      "title": "Unraveling the Synergistic Catalysis Effect in MOF-Based Photocatalysts",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-02T15:19:34+00:00",
+      "first_seen": "2026-11-27T05:20:10.015722+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Mei Wang, Peng-Yu Shi, Tong-Bu Lu"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74863",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:26109485cf87bb2ed81032d57c606133",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "classified",
+          "public_reason": "仅依据公开标题直接命中定义关键词：MOF；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:26109485cf87bb2ed81032d57c606133"
+      ],
+      "topic_ids": [
+        "zotero:26109485cf87bb2ed81032d57c606133",
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:chemistry"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.6667,
+      "topic_cache_token": "f45fb2faa26e292fcc43876aceb2028918e3104cd2b402edf24a9f861074b1ef",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "1974c2d7c60a1a0120298c5d",
+      "url": "https://doi.org/10.1002/adma.74760",
+      "title": "Advanced Materials for Biologics Delivery to Brain Tumors",
+      "source_ids": [
+        "journal-advanced-materials"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-02T15:19:34+00:00",
+      "first_seen": "2026-11-27T05:20:10.015722+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Yuran Feng, Yuxue Cao, Maria Kavallaris, Taskeen Janjua, Amirali Popat"
+      ],
+      "journal_id": "advanced-materials",
+      "journal_title": "Advanced Materials",
+      "journal_issns": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "publisher": "Wiley",
+      "doi": "10.1002/adma.74760",
+      "published_online_at": null,
+      "published_print_at": null,
+      "indexed_at": null,
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
+          "method": "local_lexical_v2",
+          "score": 0.1199,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题中的明确材料领域词，保留材料研究根类；未使用摘要，不推断叶类。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_ids": [
+        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:materials",
+        "web:life_sciences"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.5,
+      "topic_cache_token": "b82bcd47375570d66a53e01cde1e09f346fad0ca008df847c4b1dd31d3a5122b",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
       "id": "5d33ed0c66ace544e65f6063",
       "url": "https://openai.com/index/grid-protectors-program",
       "title": "Introducing the Grid Protectors Program",
@@ -107929,7 +108076,7 @@
       "doi": "10.1016/j.actamat.2026.122907",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-11T06:23:39+00:00",
+      "indexed_at": "2026-11-27T05:09:51+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -108435,7 +108582,7 @@
       "doi": "10.1016/j.actamat.2026.122908",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:15:00+00:00",
+      "indexed_at": "2026-11-27T05:09:50+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -108505,7 +108652,7 @@
       "doi": "10.1016/j.actamat.2026.122906",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:12:49+00:00",
+      "indexed_at": "2026-11-27T05:09:56+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -108582,7 +108729,7 @@
       "doi": "10.1016/j.actamat.2026.122910",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:13:55+00:00",
+      "indexed_at": "2026-11-27T05:09:56+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -109118,7 +109265,7 @@
       "doi": "10.1016/j.actamat.2026.122883",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-11T06:23:37+00:00",
+      "indexed_at": "2026-11-27T05:09:48+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -144029,7 +144176,7 @@
       "doi": "10.1016/j.actamat.2026.122877",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-11T06:23:30+00:00",
+      "indexed_at": "2026-11-27T05:09:53+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -191887,7 +192034,7 @@
       "doi": "10.1016/j.actamat.2026.122814",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-19T16:42:41+00:00",
+      "indexed_at": "2026-11-27T05:09:49+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -194586,7 +194733,7 @@
       "doi": "10.1016/j.actamat.2026.122815",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-19T16:42:08+00:00",
+      "indexed_at": "2026-11-27T05:09:49+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -325665,6 +325812,70 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "4329abe869cbba97336ca649",
+      "url": "https://arxiv.org/abs/2605.02356",
+      "title": "ZNO: Stable Rational Neural Operators in the Z-Domain for Discrete-Time Dynamics",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "papers"
+      ],
+      "published_at": "2026-05-04T08:59:22+00:00",
+      "first_seen": "2026-11-27T05:20:10.015722+00:00",
+      "excerpt": "We introduce the Z-Domain Neural Operator (ZNO), a causal neural operator whose layers are stable low-rank multiple-input multiple-output (MIMO) rational filters parameterized directly in the $z$-plane. ZNO addresses a limitation of existing operator learning methods, many of which are primarily tailored for continuous-time problems, while a large class of system-identification problems is intrinsically discrete-time. The $z$-domain form expresses stability as a unit-disk pole constraint and makes learned discrete-time poles directly readable. The model combines low-rank channel mixing, smooth stable pole reparameterization, causal recurrence, and an optional short finite impulse response (FIR) branch in a single $z$-domain rational recurrent layer. Across controlled discrete system-identification experiments, ZNO's advantage is most evident when the target dynamics are stable rational systems with lightly damped poles near the unit circle. Under matched parameter budgets, ZNO is not uniformly dominant; however, with validation-selected configurations, the same architecture can achieve the lowest mean error across the controlled tasks. A five-bin difficulty sweep over near-unit-circle / long-memory dynamics shows that ZNO has the lowest mean error across memory regimes, from short (approximately 10 steps) to long (approximately 100-200 steps). On five public nonlinear system-identification benchmarks, ZNO is competitive with neural operator and state-space baselines, achieving the lowest mean error on benchmarks whose dynamics align with stable rational discrete-time filters, while classical or state-space baselines remain preferable on some systems. These results position ZNO as a strong model for stable rational discrete-time dynamics, especially in near-unit-circle and long-memory regimes, but not as a universal replacement for specialized system-identification methods.",
+      "summary": "本文提出Z域神经算子（ZNO），在z平面直接参数化稳定低秩MIMO有理滤波器，并在受控离散系统辨识实验及五个公开非线性系统辨识基准上评估其表现。该工作面向本质离散时间的系统辨识，使学到的离散极点可直接读取；但原文明确ZNO在匹配参数预算下并非普遍占优，也不是对专用系统辨识方法的通用替代，其优势集中在近单位圆和长记忆等稳定有理离散时间动态情形。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 5,
+      "authors": [
+        "Xianli Zhu",
+        "Jia Yin"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7796,
+      "topic_cache_token": "3108705acdee543f160b4ea318ed2d990bde00f6ddd389acb5d708e2a1a003ad",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2605.02356",
+        "sha256": "ef6a9916c1510b84a0fa9bbc83fb1aa43e28a9dffbb3298136702f1c8ae7ba4c",
+        "chars": 12000
+      }
+    },
+    {
       "id": "1d17466c19d0c00ec841eaad",
       "url": "https://arxiv.org/abs/2605.01335",
       "title": "Mean Testing under Truncation beyond Gaussian",
@@ -327378,12 +327589,12 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-11-27T05:03:07.822796+00:00",
+    "last_success": "2026-11-27T05:20:10.015722+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 79,
+      "classified": 3,
       "unclassified": 2135,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
@@ -327488,8 +327699,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "status": "ok",
       "count": 11
     },
@@ -327497,7 +327708,7 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -327508,8 +327719,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "status": "ok",
       "count": 4
     },
@@ -327517,8 +327728,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "status": "ok",
       "count": 12
     },
@@ -327526,8 +327737,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "status": "ok",
       "count": 12
     },
@@ -327535,8 +327746,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "status": "ok",
       "count": 0
     },
@@ -327544,8 +327755,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "status": "ok",
       "count": 12
     },
@@ -327553,8 +327764,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "status": "ok",
       "count": 2
     },
@@ -327566,14 +327777,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "count": 228,
       "counters": {
         "relevant": 4,
         "pending": 224,
         "excluded": 3,
-        "fetched": 249,
+        "fetched": 253,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -327586,15 +327797,15 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "count": 105,
       "counters": {
         "relevant": 13,
         "pending": 92,
         "excluded": 324,
-        "fetched": 272,
-        "abstracts_recovered": 1
+        "fetched": 265,
+        "abstracts_recovered": 0
       },
       "errors": []
     },
@@ -327606,14 +327817,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "count": 213,
       "counters": {
         "relevant": 35,
         "pending": 178,
         "excluded": 1631,
-        "fetched": 753,
+        "fetched": 750,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -327626,14 +327837,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
-      "count": 191,
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "count": 193,
       "counters": {
         "relevant": 19,
-        "pending": 172,
+        "pending": 174,
         "excluded": 919,
-        "fetched": 775,
+        "fetched": 760,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -327646,8 +327857,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "count": 115,
       "counters": {
         "relevant": 1,
@@ -327665,18 +327876,20 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "ok",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
+      "status": "partial",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
       "last_success": "2026-11-27T05:03:07.822796+00:00",
       "count": 69,
       "counters": {
         "relevant": 1,
         "pending": 68,
         "excluded": 890,
-        "fetched": 279,
+        "fetched": 75,
         "abstracts_recovered": 0
       },
-      "errors": []
+      "errors": [
+        "crossref_request_or_parse_failed"
+      ]
     },
     {
       "id": "journal-nature-communications",
@@ -327686,7 +327899,7 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
       "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 1114,
       "counters": {
@@ -327708,14 +327921,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "count": 27,
       "counters": {
         "relevant": 1,
         "pending": 26,
         "excluded": 48,
-        "fetched": 32,
+        "fetched": 31,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -327728,8 +327941,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "count": 170,
       "counters": {
         "relevant": 2,
@@ -327748,14 +327961,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "count": 30,
       "counters": {
         "relevant": 3,
         "pending": 27,
         "excluded": 856,
-        "fetched": 112,
+        "fetched": 110,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -327764,8 +327977,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "status": "ok",
       "count": 1
     },
@@ -327773,8 +327986,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "status": "ok",
       "count": 12
     },
@@ -327782,8 +327995,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "status": "ok",
       "count": 0
     },
@@ -327791,8 +328004,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "status": "ok",
       "count": 0
     },
@@ -327800,8 +328013,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_success": "2026-11-27T05:20:10.015722+00:00",
       "status": "ok",
       "count": 12
     },
@@ -327810,7 +328023,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 20,
-      "last_attempt": "2026-11-27T05:03:07.822796+00:00",
+      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
       "last_success": "2026-11-27T05:02:08.256789+00:00",
       "run_id": "45936639429",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -327818,15 +328031,15 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 18,
+    "generated": 1,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
-      "status": "partial",
-      "attempted": 8,
-      "public_html": 4,
+      "status": "ok",
+      "attempted": 1,
+      "public_html": 1,
       "bohr_graph": 0,
-      "fallback": 4,
+      "fallback": 0,
       "bohr_calls": 0
     }
   },
