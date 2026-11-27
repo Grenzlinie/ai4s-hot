@@ -7,13 +7,14 @@
   <meta name="theme-color" content="#17695b">
   <title>AI4S Hot · 科研进展阅读站</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css?v=classification-20261026">
-  <script src="./app.js?v=classification-20261026" defer></script>
+  <link rel="stylesheet" href="./style.css?v=landscape-20261127">
+  <script src="./app.js?v=landscape-20261127" defer></script>
 </head>
 <body>
 <a class="skip" href="#stream">跳到内容</a>
 <header class="header">
   <a class="brand" href="./" aria-label="AI4S Hot 首页">AI4S <b>Hot.</b></a>
+  <a class="header-link landscape-link" href="./landscape.html">论文图谱</a>
   <a class="header-link" href="https://github.com/Grenzlinie/ai4s-hot" target="_blank" rel="noopener noreferrer">GitHub</a>
 </header>
 <div class="layout">
@@ -34,7 +35,7 @@
   <main id="stream">
     <section class="intro" aria-labelledby="site-heading">
       <div class="eyebrow">THE RESEARCH BRIEF</div>
-      <div class="heading"><div><h1 id="site-heading">科研进展，持续阅读。</h1><p class="lede">论文、模型、工具与研究报告，在同一份简报里接着读。</p></div><span id="updated" class="updated">正在读取归档</span></div>
+      <div class="heading"><div><h1 id="site-heading">科研进展，持续阅读。</h1><p class="lede">每天浏览新论文、模型发布、科研工具和研究报告。</p></div><span id="updated" class="updated">正在读取归档</span></div>
       <nav class="reading-modes" aria-label="阅读方式"><button id="home" class="nav-button active" aria-pressed="true">综合推荐</button><button id="latest" class="nav-button" aria-pressed="false">最新</button><button id="saved" class="nav-button" aria-pressed="false">收藏 <span id="saved-count">0</span></button></nav>
     </section>
     <div id="update-alert" class="update-alert" aria-live="polite" hidden></div>
@@ -43,7 +44,7 @@
       <div class="facet-row"><span class="facet-label" id="domain-label">领域</span><div id="domains" class="chips" role="group" aria-labelledby="domain-label"></div></div>
       <div class="facet-row"><span class="facet-label" id="kind-label">类型</span><div id="kinds" class="chips" role="group" aria-labelledby="kind-label"></div></div>
       <div class="facet-row sourcebar"><span class="facet-label" id="sources-label">来源</span><div id="sources" class="chips source-chips" role="group" aria-labelledby="sources-label"></div></div>
-      <div id="journal-facet" hidden><div class="facet-row journalbar"><span class="facet-label" id="journals-label">期刊</span><div id="journals" class="chips source-chips journal-chips" role="group" aria-labelledby="journals-label"></div></div><div class="journal-review-row"><button id="journal-review" title="当前数量遵循其他筛选条件，全部数量仅统计相关性待确认文章" type="button" aria-pressed="false">相关性待确认</button><p id="journal-review-note" hidden>材料 AI 相关性证据不足的候选文章；即使已有研究主题，也单独列在这里。待补充信息后确认，不代表文章质量。</p></div></div>
+      <div id="journal-facet" hidden><div class="facet-row journalbar"><span class="facet-label" id="journals-label">期刊</span><div id="journals" class="chips source-chips journal-chips" role="group" aria-labelledby="journals-label"></div></div><div class="journal-review-row"><button id="journal-review" title="当前按所选条件统计，全部为归档中的待确认期刊文章" type="button" aria-pressed="false">相关性待确认</button><p id="journal-review-note" hidden>这里收录等待补充材料 AI 相关性信息的期刊文章。</p></div></div>
       <div class="filter-row">
         <div class="periods" id="periods" aria-label="时间范围"><button data-days="7">近 7 天</button><button data-days="30" class="active">近 30 天</button><button data-days="0">全部归档</button></div>
         <label class="date-label">收录日期 <input id="archive-date" type="date"></label>
@@ -55,10 +56,10 @@
     <div id="active-filters" class="active-filters" aria-label="生效的筛选条件"></div>
     <div id="entries"><div class="loading" role="status">正在加载研究归档…</div></div>
     <button id="load-more" class="load-more" hidden>继续阅读</button>
-    <details id="ranking-explanation" class="ranking-explanation"><summary>如何推荐与排序</summary><p>综合推荐结合发布时间、可用的研究推荐信号与公开热榜，适当分散相近类型和来源。没有推荐信号的进展也会保留；推荐效果尚未量化。切换“最新”可按日期阅读。</p></details>
+    <details id="ranking-explanation" class="ranking-explanation"><summary>如何推荐与排序</summary><p>综合推荐参考发布时间、研究推荐和公开热榜，并交替展示不同类型与来源。选择“最新”可按日期浏览。</p></details>
     <div class="archive-status"><span id="coverage">正在加载来源</span><button id="health-toggle" class="text-button" aria-expanded="false" aria-controls="health">来源与更新状态</button></div>
     <section id="health" class="health" hidden aria-label="来源采集与更新状态"></section>
-    <footer><span>摘要用于快速筛选，结论与细节请查看原文。<br>缺少发表日期时使用本站收录日期，并标明“收录”。</span><a href="https://github.com/Grenzlinie/ai4s-hot/tree/main/site" id="source-code" target="_blank" rel="noopener noreferrer">开源代码与采集规则</a></footer>
+    <footer><span>读摘要了解要点，点标题打开原文。<br>日期按卡片标注区分发表与收录。</span><a href="https://github.com/Grenzlinie/ai4s-hot/tree/main/site" id="source-code" target="_blank" rel="noopener noreferrer">开源代码与采集规则</a></footer>
   </main>
 </div>
 <dialog id="source-dialog" aria-labelledby="source-dialog-heading"><div class="dialog-heading"><h2 id="source-dialog-heading">选择来源</h2><button id="source-close" type="button" class="dialog-close" aria-label="关闭来源选择">关闭 ×</button></div><p class="dialog-description">可同时选择多个来源，重合的进展只显示一次。数量为当前其他筛选条件下的结果。</p><label class="sr-only" for="source-search">搜索全部来源</label><input id="source-search" type="search" class="source-search" placeholder="搜索来源名称…" autocomplete="off"><div id="all-sources" class="all-sources" role="group" aria-label="全部来源"></div><button id="source-clear" type="button" class="text-button">清除来源选择</button></dialog>

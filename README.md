@@ -1,13 +1,29 @@
 # AI4S Hot
 
-每日聚合论文、科研报告与模型工具更新，使用 GitHub Actions 采集，GitHub Pages 发布。
+每天汇集 AI 与科研进展。从图谱找研究方向，到阅读页接着读论文、模型、工具和研究报告。
 
-网站：https://grenzlinie.github.io/ai4s-hot/
+[阅读最新进展](https://grenzlinie.github.io/ai4s-hot/) · [探索论文图谱](https://grenzlinie.github.io/ai4s-hot/landscape.html) · [完整更新日志](CHANGELOG.md)
 
-搜索、研究主题与来源筛选、10本材料相关期刊多选、历史归档、收藏与已读；收藏状态仅保存在当前浏览器。
+- **论文图谱**提供论文聚类、领域分布和每周发表趋势，图表与论文列表联动。
+- **阅读页**支持研究主题、来源和十本重点期刊筛选，并在当前浏览器记录收藏与已读。
+- **公开归档**由 GitHub Actions 每日采集，经 GitHub Pages 发布。维护方式见[站点说明](site/README.md)。
 
-详细运行和配置说明见 [site/README.md](site/README.md)。不需要任何邮件配置。
+## 最近更新
 
-## 项目规格与分类改进
+### 2026-11-27 · 论文图谱
 
-使用 [OpenSpec](openspec/README.md) 管理需求、设计、任务和验收。当前 [主题分类完善方案](openspec/changes/archive/2026-10-09-improve-zotero-topic-classification/proposal.md) 同时覆盖分类准确性、目录结构和浏览体验；新版已实现，并按用户决定作为默认；技术验收和部署证据持续记录，分类准确率尚未量化，人工标注及独立质量评估作为后续任务。见 [执行路线](openspec/roadmap.md)。
+新增互动论文地图、宽领域分布和周趋势。选择时间、领域或聚类即可定位对应论文。
+
+### 2026-10-26 · 主题分类
+
+支持根据明确标题分类，优先补充有材料 AI 线索的公开摘要，并拆分论文相关性与主题分类队列。
+
+### 2026-10-13 · 期刊追踪
+
+接入十本重点期刊，可将期刊多选与研究主题组合使用。
+
+[查看历次更新](CHANGELOG.md)
+
+## 项目规格
+
+使用 [OpenSpec](openspec/README.md) 管理功能和验收。阅读[执行路线](openspec/roadmap.md)了解历史改进。

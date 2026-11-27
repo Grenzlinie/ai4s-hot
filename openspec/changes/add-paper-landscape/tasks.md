@@ -1,0 +1,6 @@
+- [x] 1. Research reference projects and write the landscape design.
+- [x] 2. Generate broad areas and text clusters during the public site build.
+- [x] 3. Provide linked views, paper navigation and direct reader copy.
+- [ ] 4. Verify with the public archive and independent checks.
+- [x] 5. Update README and the curated project change log.
+- [ ] 6. Publish through the existing workflow and check the live page.

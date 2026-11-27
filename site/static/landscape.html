@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#275da6" />
+    <title>研究图谱 · AI4S Hot</title>
+    <link rel="icon" href="./favicon.svg" />
+    <link rel="stylesheet" href="./landscape.css" />
+    <script src="./landscape.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#papers">跳到论文列表</a>
+    <header>
+      <a href="./" class="brand">AI4S <b>Hot.</b></a
+      ><a href="./">返回阅读站</a>
+    </header>
+    <main>
+      <div class="intro">
+        <div>
+          <h1>论文图谱</h1>
+          <p>从相近研究、领域分布和每周发表趋势找到论文。</p>
+        </div>
+        <p id="updated"></p>
+      </div>
+      <section class="toolbar" aria-label="图谱筛选">
+        <div id="windows" role="group" aria-label="发表时间">
+          <button data-window="30">近 30 天</button
+          ><button data-window="90">近 90 天</button
+          ><button data-window="0">全部归档</button>
+        </div>
+        <button id="clear">清除筛选</button
+        ><a id="share" href="?window=90">当前视图链接</a>
+      </section>
+      <div id="selection" aria-live="polite"></div>
+      <div id="status" role="status">正在读取研究图谱…</div>
+      <section id="visuals" hidden>
+        <div class="map-layout">
+          <section class="panel map-panel">
+            <div class="panel-heading">
+              <h2>论文相似性地图</h2>
+              <span id="map-count"></span>
+            </div>
+            <p class="note">
+              每个点对应一篇论文。图上邻近的点通常共享标题和摘要中的词组。点选可定位论文。
+            </p>
+            <div class="canvas-wrap">
+              <canvas
+                id="map"
+                role="img"
+                aria-label="论文相似性散点图。也可用研究簇按钮筛选论文。"
+              ></canvas>
+              <div id="hover" hidden></div>
+            </div>
+            <p id="unmapped" class="note"></p>
+          </section>
+          <aside class="panel">
+            <h2>研究簇</h2>
+            <p class="note">按当前筛选的论文数排序。点选研究簇查看论文。</p>
+            <div
+              id="clusters"
+              class="cluster-list"
+              aria-label="选择研究簇"
+            ></div>
+          </aside>
+        </div>
+        <div class="secondary">
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>领域分布</h2>
+              <span>按论文数</span>
+            </div>
+            <p class="note">点选领域查看论文。</p>
+            <div id="areas" class="bars" aria-label="选择研究领域"></div>
+          </section>
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>每周发表趋势</h2>
+              <span>最近 12 周</span>
+            </div>
+            <p class="note">
+              按本站收录论文的发表日期统计。点击周区间筛选论文。
+            </p>
+            <div id="trend" class="trend" aria-label="每周发表论文数量"></div>
+            <p id="date-note" class="note"></p>
+          </section>
+        </div>
+        <section id="papers" class="paper-section" tabindex="-1">
+          <div class="panel-heading">
+            <h2>论文列表 <span id="paper-count"></span></h2>
+            <span id="selected-paper" role="status"></span>
+          </div>
+          <div id="list"></div>
+          <button id="more" hidden>继续查看</button>
+        </section>
+        <footer id="coverage"></footer>
+      </section>
+    </main>
+  </body>
+</html>

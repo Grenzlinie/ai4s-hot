@@ -25,6 +25,9 @@ def build(data_dir, output, static_dir=None):
     shutil.copytree(data_dir, output / "data", dirs_exist_ok=True,
                     ignore=shutil.ignore_patterns("journal-state.json"))
     (output / "data" / "journal-state.json").unlink(missing_ok=True)
+    if (static / "landscape.html").is_file():
+        from landscape import write_landscape
+        write_landscape(payload, output)
     (output / ".nojekyll").touch()
     print(f"Built {len(payload['items'])} items to {output}")
 
