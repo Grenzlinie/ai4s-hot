@@ -39,4 +39,56 @@ class LandscapeContract(unittest.TestCase):
  def test_optional_clustering_runtime_failure_keeps_paper_reader_usable(self):
   with patch('landscape.cluster_papers',side_effect=ImportError('Synthetic missing optional runtime')):result=landscape(archive([paper(1)]))
   self.assertEqual(result['method']['status'],'unavailable');self.assertEqual(result['clusters'],[]);self.assertEqual(result['papers'][0]['id'],'p1');self.assertIsNone(result['papers'][0]['cluster'])
-if __name__=='__main__':unittest.main()
+class LandscapeAreaRecovery(unittest.TestCase):
+    @staticmethod
+    def classify(title, excerpt="", labels=(), topics=()):
+        row = paper(1, title=title, excerpt=excerpt, topic_labels=list(labels))
+        data = {**archive([row]), "taxonomy": {"topics": list(topics)}}
+        return landscape(data)["papers"][0]["area"]
+
+    def test_reuses_corroborated_fine_topic_on_a_previously_unmapped_paper(self):
+        topic = {
+            "id": "training", "path": "display name can change",
+            "catalog_path": "02 AI方法 / 学习、训练与优化 / 预训练与后训练",
+        }
+        label = {"id": "training", "method": "local_lexical_v2", "confidence": "medium"}
+        self.assertEqual(
+            self.classify("Learning strategies under limited supervision", "We study pretraining.", [label], [topic]),
+            "models",
+        )
+        self.assertEqual(
+            self.classify("Learning strategies under limited supervision", "We study pretraining.", [label], [{**topic, "retired": True}]),
+            "other",
+        )
+
+    def test_video_editing_task_is_primary_over_post_training_method(self):
+        topic = {"id": "training", "path": "02 AI方法 / 学习、训练与优化 / 预训练与后训练"}
+        label = {"id": "training", "method": "local_lexical_v2", "confidence": "medium"}
+        self.assertEqual(
+            self.classify(
+                "Improving and Expanding Video Editing Capabilities Without Videos",
+                "We propose post-training to improve editing capabilities.", [label], [topic],
+            ),
+            "embodied",
+        )
+
+    def test_unsupported_and_conflicting_signals_remain_in_other(self):
+        topic = {"id": "2d", "path": "01 材料研究 / 二维材料"}
+        label = {"id": "2d", "method": "local_lexical_v2", "confidence": "medium"}
+        self.assertEqual(
+            self.classify("Evaluating the Transfer of Co-Evolved Communication from 2D to 3D Simulation",
+                          "We test communication in 2D and 3D.", [label], [topic]),
+            "other",
+        )
+        self.assertEqual(self.classify("Hydrogel scaffolds for brain organoid engineering"), "other")
+
+    def test_prior_clear_assignment_keeps_the_existing_area(self):
+        topic = {"id": "generation", "path": "02 AI方法 / 生成模型 / 扩散与流模型"}
+        label = {"id": "generation", "method": "manual", "confidence": "exact"}
+        self.assertEqual(
+            self.classify("Alloy design with language models", "", [label], [topic]), "materials",
+        )
+
+
+if __name__ == "__main__":
+    unittest.main()
