@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T05:53:31.739001+00:00",
+  "generated_at": "2026-11-27T06:52:18.598526+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -5465,7 +5465,27 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Wooseok Kim, Bosung Kim, Dae Han Kim, Pei Liu, Doyoung Kim, Hee Kyu Lee, Sang Uk Park, Janghoon Joo, Byeong Woon Lee, Se Gi Lee, Bogeun Kim, Jaejun Lim, Changsoon Choi, Jong-Woong Kim, Geumbee Lee, Jae-Young Yoo, Sejin Kim, Joohoon Kang, Raudel Avila, Jong Uk Kim, Sang Min Won"
+        "Wooseok Kim",
+        "Bosung Kim",
+        "Dae Han Kim",
+        "Pei Liu",
+        "Doyoung Kim",
+        "Hee Kyu Lee",
+        "Sang Uk Park",
+        "Janghoon Joo",
+        "Byeong Woon Lee",
+        "Se Gi Lee",
+        "Bogeun Kim",
+        "Jaejun Lim",
+        "Changsoon Choi",
+        "Jong-Woong Kim",
+        "Geumbee Lee",
+        "Jae-Young Yoo",
+        "Sejin Kim",
+        "Joohoon Kang",
+        "Raudel Avila",
+        "Jong Uk Kim",
+        "Sang Min Won"
       ],
       "journal_id": "science-advances",
       "journal_title": "Science Advances",
@@ -9396,6 +9416,74 @@
       "topic_cache_token": "51bcd527ff5d174784ca68ae1eb1143151291bf69c1365195476d43e4d72eeef",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "a6a4522ce57254d00ea2c86d",
+      "url": "https://arxiv.org/abs/2611.34782",
+      "title": "Generation as Reverse Encoding",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-11-25T00:00:00+00:00",
+      "first_seen": "2026-11-27T06:52:18.598526+00:00",
+      "excerpt": "Pretrained visual representations accelerate generative learning by abstracting away appearance and spatial detail. Yet the same abstraction makes the return to pixels far harder, shifting much of the burden onto a larger decoder. We ask why the representation-to-pixel path should be learned independently when the encoder already provides a learned pixel-to-semantics path (the semantic encoding path). We introduce RevFlow, based on the principle of generation as reverse encoding. RevFlow uses intermediate representations of a frozen encoder as successive generative targets, first generating deep semantic representations, then shallow representations that retain appearance and spatial detail, before decoding to pixels. To learn these transitions without training a separate generator for each stage, we develop HyC-DiT, a unified generative model with a standard DiT backbone shared across stages and stage-specific condition injection. We further show that native matching in semantic representation space enables few-step generation. RevFlow accelerates both learning and sampling. On ImageNet 256 times 256, RevFlow reaches 1.96 FID at 690M and 1.74 FID at 1.55B after only 5 training epochs. It also achieves 30.25 dB reconstruction PSNR with an 89M decoder. After a short native-matching adaptation phase, RevFlow-XL achieves 2.85 FID using a single sampling step in each stage. Our code repository is at https://github.com/ChengShiest/RevFlow",
+      "summary": "本文提出RevFlow，将生成建模为逆向编码，利用冻结编码器的中间表示作为逐级生成目标，并开发了共享DiT骨干、按阶段注入条件的HyC-DiT，在ImageNet 256×256上报告了5个训练轮次后的FID及89M解码器的重建PSNR，同时表明语义表示空间中的原生匹配支持少步生成。上述结果均来自论文摘要和引言中的自报，未经独立验证，且原文未声称已解决生成与解码负担之间的所有权衡，实际复现效果和适用范围仍需以完整论文、代码及后续验证为准。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.34782",
+      "authors": [
+        "Cheng Shi",
+        "Sibei Yang",
+        "Hanzhong Guo",
+        "Yipeng Qin",
+        "Pietro Lio",
+        "Yizhou Yu"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：learning、training。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.8182,
+      "topic_cache_token": "34f66f03471b469d8ec6c75b93e090bc3645a80b5feb895f874d33170bb42a5a",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.34782",
+        "sha256": "f359ab0e900039e95b315718f230aa29ea8e75f83a393637118ae62c64f72639",
+        "chars": 12000
+      }
     },
     {
       "id": "856a7a48580d88b987199d22",
@@ -16667,6 +16755,82 @@
         "kind": "public_html",
         "url": "https://arxiv.org/html/2611.30483",
         "sha256": "433905a3d9ff1981963966674532807d61a8d022aaa05391033c15141ae5c75f",
+        "chars": 12000
+      }
+    },
+    {
+      "id": "0e3024095248d9735c5be413",
+      "url": "https://arxiv.org/abs/2611.31619",
+      "title": "What a Forecasting Leaderboard Can Establish: Resolution Reporting for Zero-Shot Time-Series Models",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "first_seen": "2026-11-27T06:52:18.598526+00:00",
+      "excerpt": "A foundation model for time series is pretrained once and then asked to forecast series it has never seen, so the evidence for it is its score on held-out datasets. Such datasets are scarce, and a few public leaderboards carry most comparisons, yet none of them states how small a difference its datasets can detect. We call that quantity the resolution of a board and introduce Vernier, a tool that computes it from the files a board already publishes. Vernier also reports which entries a board cannot separate from its leader and whether its order changes when unrelated parties submit. GIFT-Eval resolves 6.8 rank places, and its displayed neighbours sit 0.91 apart. The ten places of its top ten hold fewer than two resolvable steps. fev-bench, Chronos Benchmark II and TIME show the same pattern: their resolution is 3.6 to 19 times the gap between neighbours. With each of its 2,554 series as an independent source, BOOM is the one board that resolves its top ten. Below the resolution the order depends on who else submitted: across four boards, rules that rank against the pool reversed 43 top-ten pairs with neither entry rerun, in one update in seven. Boards also do not record how much history a model receives. On 70 configurations, shortening it raised the error of three of four open models, two of them by 15%. We release Vernier, which runs this report with one command on any leaderboard that publishes per-dataset scores: https://github.com/therealram18/vernier",
+      "summary": "本文提出并发布了Vernier，该工具可基于排行榜已公开的逐数据集分数，按一条命令计算榜单可区分的最小差异（分辨率），并报告榜首无法分离的条目以及榜单排序是否随无关提交者变化；文中据此对GIFT-Eval、fev-bench、Chronos Benchmark II、TIME和BOOM等榜单进行了报告，并另用四个开源模型在70个配置上比较了两种历史长度下的推理结果。上述结果依赖所公布的分数文件，因而无法覆盖未记录的评测设置（如模型接收的历史长度），且这些对排行榜、模型差异和历史长度影响的陈述来自该公开摘要的有限片段，尚未经完整原文或独立验证。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.31619",
+      "authors": [
+        "Arya Sikder",
+        "Sriram Pillutla"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：dataset、benchmark。"
+        },
+        {
+          "id": "zotero:d4a56870e35078a55f7511a07aac9f6e",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：foundation model。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:d4a56870e35078a55f7511a07aac9f6e"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d4a56870e35078a55f7511a07aac9f6e"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7962,
+      "topic_cache_token": "53452e07a61c596107920a5e3e5a9dc072e67c3215e03675a6d97f0b0f5d1478",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.31619",
+        "sha256": "f664857be66c19d11fc39cfd99f33a6e37d3f1554f1ba875ebf878a8836ae55a",
         "chars": 12000
       }
     },
@@ -95768,7 +95932,7 @@
       "doi": "10.1016/j.actamat.2026.122923",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T15:09:53+00:00",
+      "indexed_at": "2026-11-27T06:17:21+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -95844,7 +96008,7 @@
       "doi": "10.1016/j.actamat.2026.122918",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:14:34+00:00",
+      "indexed_at": "2026-11-27T06:17:23+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -95972,7 +96136,7 @@
       "doi": "10.1016/j.actamat.2026.122922",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:14:29+00:00",
+      "indexed_at": "2026-11-27T06:17:19+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -96222,7 +96386,7 @@
       "doi": "10.1016/j.actamat.2026.122921",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:15:15+00:00",
+      "indexed_at": "2026-11-27T06:17:19+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -96290,7 +96454,7 @@
       "doi": "10.1016/j.actamat.2026.122915",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-03T16:33:27+00:00",
+      "indexed_at": "2026-11-27T06:16:50+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -96448,7 +96612,7 @@
       "doi": "10.1016/j.actamat.2026.122917",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:13:17+00:00",
+      "indexed_at": "2026-11-27T06:17:25+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -100877,79 +101041,6 @@
       "topic_backend": "lexical"
     },
     {
-      "id": "69535ab569a959f02cb96661",
-      "url": "https://doi.org/10.1002/adfm.78574",
-      "title": "Reductive Reconstruction Activates High-Entropy Perovskite Fiber-ZnIn2S4 Interfaces in Photocatalytic Hydrogen Evolution and Solar Water Evaporation",
-      "source_ids": [
-        "journal-advanced-functional-materials"
-      ],
-      "source_names": [
-        "Advanced Functional Materials"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-02T06:33:07+00:00",
-      "first_seen": "2026-11-03T03:14:54.137684+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Shuyi Xia, Yafen Hu, Zongze Li, Xiaoke Li, Pan Wu, Deqi Fan, Yi Lu"
-      ],
-      "journal_id": "advanced-functional-materials",
-      "journal_title": "Advanced Functional Materials",
-      "journal_issns": [
-        "1616-301X",
-        "1616-3028"
-      ],
-      "publisher": "Wiley",
-      "doi": "10.1002/adfm.78574",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "zotero:d05fd259021f78cf27fb6def1ecb915e",
-          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
-          "method": "local_lexical_v2",
-          "score": 0.54,
-          "confidence": "low",
-          "status": "classified",
-          "public_reason": "仅依据公开标题直接命中定义关键词：perovskite；未使用摘要，需复核。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "zotero:d05fd259021f78cf27fb6def1ecb915e"
-      ],
-      "topic_ids": [
-        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
-        "zotero:d05fd259021f78cf27fb6def1ecb915e"
-      ],
-      "topic_status": "classified",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:chemistry"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.6154,
-      "topic_cache_token": "cdd2e766f109817a16b8e3e9ecc06c84115e31eee56deb04ac9e9a989cb92537",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
       "id": "637fbb4dc04375b304d22876",
       "url": "https://doi.org/10.1002/adfm.78118",
       "title": "Dual-Interphase Engineering With Nano-Alumina and CVD Carbon Enabling High-Temperature Calendar Aging Mitigation in Silicon-Oxide Anode",
@@ -103004,7 +103095,7 @@
       "doi": "10.1016/j.actamat.2026.122899",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-11T06:23:04+00:00",
+      "indexed_at": "2026-11-27T06:17:13+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -104353,7 +104444,7 @@
       "doi": "10.1016/j.actamat.2026.122913",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:15:11+00:00",
+      "indexed_at": "2026-11-27T06:17:23+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -105491,7 +105582,7 @@
       "doi": "10.1016/j.actamat.2026.122912",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:14:43+00:00",
+      "indexed_at": "2026-11-27T06:17:21+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -105572,7 +105663,7 @@
       "doi": "10.1016/j.actamat.2026.122914",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:13:35+00:00",
+      "indexed_at": "2026-11-27T06:17:21+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -111828,7 +111919,7 @@
       "doi": "10.1016/j.actamat.2026.122903",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:15:49+00:00",
+      "indexed_at": "2026-11-27T06:17:25+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -111969,7 +112060,7 @@
       "doi": "10.1016/j.actamat.2026.122886",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:15:11+00:00",
+      "indexed_at": "2026-11-27T06:17:23+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -182750,7 +182841,7 @@
       "doi": "10.1126/science.aeh2982",
       "published_online_at": "2026-10-15T00:00:00+00:00",
       "published_print_at": "2026-11-26T00:00:00+00:00",
-      "indexed_at": "2026-11-26T19:16:01+00:00",
+      "indexed_at": "2026-11-27T06:44:23+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -190068,7 +190159,7 @@
       "doi": "10.1016/j.actamat.2026.122820",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-19T16:42:26+00:00",
+      "indexed_at": "2026-11-27T06:17:26+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -190508,7 +190599,7 @@
       "doi": "10.1016/j.actamat.2026.122825",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-19T16:42:52+00:00",
+      "indexed_at": "2026-11-27T06:17:22+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -190919,7 +191010,7 @@
       "doi": "10.1016/j.actamat.2026.122827",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-19T16:42:38+00:00",
+      "indexed_at": "2026-11-27T06:17:25+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -193343,7 +193434,7 @@
       "doi": "10.1016/j.actamat.2026.122796",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-19T16:42:27+00:00",
+      "indexed_at": "2026-11-27T06:17:18+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -193865,7 +193956,7 @@
       "doi": "10.1016/j.actamat.2026.122803",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-19T16:42:28+00:00",
+      "indexed_at": "2026-11-27T06:17:29+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -256649,7 +256740,7 @@
       "doi": "10.1016/j.actamat.2026.122813",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-19T17:39:29+00:00",
+      "indexed_at": "2026-11-27T06:17:25+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -289593,7 +289684,7 @@
       "doi": "10.1016/j.matt.2026.102861",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-31T20:20:07+00:00",
+      "indexed_at": "2026-11-27T06:35:04+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -327793,12 +327884,12 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-11-27T05:53:31.739001+00:00",
+    "last_success": "2026-11-27T06:52:18.598526+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 1,
+      "classified": 2,
       "unclassified": 2135,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
@@ -327903,16 +327994,18 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
       "last_success": "2026-11-27T05:53:31.739001+00:00",
-      "status": "ok",
-      "count": 11
+      "status": "error",
+      "count": 0,
+      "message": "采集失败，保留上次结果",
+      "error_type": "ReadTimeout"
     },
     {
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -327923,8 +328016,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
       "status": "ok",
       "count": 4
     },
@@ -327932,8 +328025,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
       "status": "ok",
       "count": 12
     },
@@ -327941,8 +328034,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
       "status": "ok",
       "count": 12
     },
@@ -327950,8 +328043,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
       "status": "ok",
       "count": 0
     },
@@ -327959,8 +328052,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
       "status": "ok",
       "count": 12
     },
@@ -327968,8 +328061,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
       "status": "ok",
       "count": 2
     },
@@ -327981,14 +328074,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
       "count": 228,
       "counters": {
         "relevant": 4,
         "pending": 224,
         "excluded": 3,
-        "fetched": 253,
+        "fetched": 262,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -328001,8 +328094,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
       "count": 105,
       "counters": {
         "relevant": 13,
@@ -328021,14 +328114,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:53:31.739001+00:00",
-      "count": 213,
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
+      "count": 212,
       "counters": {
         "relevant": 35,
-        "pending": 178,
-        "excluded": 1631,
-        "fetched": 751,
+        "pending": 177,
+        "excluded": 1632,
+        "fetched": 753,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -328041,14 +328134,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
       "count": 193,
       "counters": {
         "relevant": 19,
         "pending": 174,
         "excluded": 919,
-        "fetched": 761,
+        "fetched": 762,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -328061,14 +328154,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
       "count": 115,
       "counters": {
         "relevant": 1,
         "pending": 114,
         "excluded": 2,
-        "fetched": 99,
+        "fetched": 100,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -328081,8 +328174,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
       "count": 69,
       "counters": {
         "relevant": 1,
@@ -328101,7 +328194,7 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
       "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 1114,
       "counters": {
@@ -328123,8 +328216,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
       "count": 27,
       "counters": {
         "relevant": 1,
@@ -328143,8 +328236,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
       "count": 170,
       "counters": {
         "relevant": 2,
@@ -328162,27 +328255,25 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:44:31.143523+00:00",
+      "status": "ok",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
       "count": 30,
       "counters": {
         "relevant": 3,
         "pending": 27,
         "excluded": 856,
-        "fetched": 44,
+        "fetched": 110,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
       "status": "ok",
       "count": 1
     },
@@ -328190,8 +328281,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
       "status": "ok",
       "count": 12
     },
@@ -328199,8 +328290,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
       "status": "ok",
       "count": 0
     },
@@ -328208,8 +328299,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
       "status": "ok",
       "count": 0
     },
@@ -328217,19 +328308,17 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
-      "last_success": "2026-11-27T05:44:31.143523+00:00",
-      "status": "error",
-      "count": 0,
-      "message": "采集失败，保留上次结果",
-      "error_type": "HTTPError"
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
+      "last_success": "2026-11-27T06:52:18.598526+00:00",
+      "status": "ok",
+      "count": 12
     },
     {
       "id": "zotero",
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 20,
-      "last_attempt": "2026-11-27T05:53:31.739001+00:00",
+      "last_attempt": "2026-11-27T06:52:18.598526+00:00",
       "last_success": "2026-11-27T05:02:08.256789+00:00",
       "run_id": "45936639429",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -328237,15 +328326,15 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 1,
+    "generated": 2,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
-      "status": "partial",
-      "attempted": 1,
-      "public_html": 0,
+      "status": "ok",
+      "attempted": 2,
+      "public_html": 2,
       "bohr_graph": 0,
-      "fallback": 1,
+      "fallback": 0,
       "bohr_calls": 0
     }
   },
