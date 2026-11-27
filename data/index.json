@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T05:20:10.015722+00:00",
+  "generated_at": "2026-11-27T05:44:31.143523+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -16610,6 +16610,85 @@
       "topic_cache_token": "291eee2e13054384d54eaeb27252da97d0a2470492d5d24f79a5dc7aeff3900c",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
+    },
+    {
+      "id": "882183d60e128d3f5cc94985",
+      "url": "https://arxiv.org/abs/2611.30483",
+      "title": "When an AI agent makes a mistake in a database, what decides the damage?",
+      "source_ids": [
+        "hf-daily"
+      ],
+      "source_names": [
+        "Hugging Face Daily Papers"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "biology",
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "first_seen": "2026-11-27T05:44:31.143523+00:00",
+      "excerpt": "AI agents now run statements against production databases, and several of the incidents that followed deleted production data, which came back only through backups or the provider's help. We ask what decides the damage when such an agent makes a mistake: the model, a guard layer in front of the database, or the database engine itself. The study has two preregistered layers. In Layer A, a frozen library of 22 canonical mistakes is applied by script, with no model involved, to four relational engines under five permission arms and two recovery arms, followed by an engine-native recovery drill (792 cells; 874 drill runs including 10-minute repeats). In Layer B, a minimal tool-calling agent driven by six small open-weight models (4B to 12B parameters, plus one 35B mixture-of-experts model with about 3B active, served locally) works on tasks that contain hazards across nine engines: PostgreSQL, MySQL, SQLite, ClickHouse, Apache Cassandra, MongoDB, Valkey, Apache Kafka and OpenSearch (9,468 trials). A secondary run added MariaDB, Redis and Elasticsearch (2,916 trials); each behaved like its closest core engine. Out of the box, the engines differ less in what a mistake destroys than in what they let you undo. Three of the seven preregistered hypotheses met their decision rule: H2 (for one of nine damage classes) and H3 largely by construction of the arms, and H4 only under its original measure. Four did not; one of them (H5) was uninformative, because in its task the agents never found the credential. The post-hoc analyses (S1-S13) are exploratory and uncorrected for multiple comparisons; on PostgreSQL, MySQL, OpenSearch and ClickHouse the preregistered outcome and original-row loss disagree about G1. We report all of them, with every deviation from the preregistration and its timing.",
+      "summary": "本文在无模型脚本层对四种关系型引擎执行22类规范错误，并在由六种小型开放权重模型驱动的工具调用智能体层，对九种引擎进行含危险任务的行为测试，同时比较权限与恢复配置对损害的影响。其分层设计与恢复演练可用于评估智能体操作数据库时的风险，但结果限于所测配置和样本，事后分析未经多重比较校正，且部分假设未获支持。",
+      "summary_kind": "ai_summary",
+      "hf_url": "https://huggingface.co/papers/2611.30483",
+      "authors": [
+        "Abdullah Kaya",
+        "Cevheri Bozoglan",
+        "Yusuf Gundogdu"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:88f5ef7f6c79483dccdde4317c7916c9",
+          "facet": "zotero:0644b34574b700dcb769f66d83e13cb9",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：database。"
+        },
+        {
+          "id": "zotero:8f22e62349472c4815f4275fbcf89c76",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：agent。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:88f5ef7f6c79483dccdde4317c7916c9",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_ids": [
+        "zotero:0644b34574b700dcb769f66d83e13cb9",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:88f5ef7f6c79483dccdde4317c7916c9",
+        "zotero:8f22e62349472c4815f4275fbcf89c76"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7459,
+      "topic_cache_token": "9a2c24af6f45e8bbdc6f651aabba28943d6de741fbe8ddb210b6a76e1de107d0",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2611.30483",
+        "sha256": "433905a3d9ff1981963966674532807d61a8d022aaa05391033c15141ae5c75f",
+        "chars": 12000
+      }
     },
     {
       "id": "9d4b512bddc939e3b71591b5",
@@ -325021,6 +325100,74 @@
       }
     },
     {
+      "id": "36a7deb93c4001987b295c15",
+      "url": "https://arxiv.org/abs/2606.00206",
+      "title": "Quantized Reasoning Models Think They Need to Think Longer, but They Do Not",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "agents",
+        "tools"
+      ],
+      "published_at": "2026-05-29T18:00:00+00:00",
+      "first_seen": "2026-11-27T05:44:31.143523+00:00",
+      "excerpt": "Post-training quantization (PTQ) is widely used to deploy large language models efficiently, but its effect on reasoning models is not well understood. Across math, coding, and science QA, we find that aggressive PTQ reduces accuracy while increasing chain-of-thought (CoT) length. Surprisingly, we show that in up to 52% of the quantized models' failures, models reach the right answer in intermediate reasoning steps but do not output it as a final answer. To understand why quantization leads to this increase in overthinking errors, we measure the token-level KL divergence between quantized and full-precision output distributions. Positions with high KL divergence correlate strongly with high next-token entropy, and at these positions quantized models disproportionately sample overthinking markers such as \"wait\", \"but\", and \"alternatively\". We show that simply introducing a training-free logit penalty on a curated set of overthinking markers can reduce CoT length by 12--23% while preserving or improving accuracy across 5 models (1.5B-32B parameters), 3 quantization methods, and 5 benchmarks, yielding a favorable Pareto frontier of accuracy against reasoning cost compared to penalizing other token sets. Overthinking errors produced by quantized models are particularly reduced by up to 58%.",
+      "summary": "本文通过对比量化模型与全精度模型在相同生成前缀下的输出分布，发现后训练量化在数学、代码和科学问答任务中会降低准确率并增加思维链长度，且在最激进的量化失败案例中，高达52%的情况是模型在中间推理步骤已得出正确答案却未将其作为最终答案输出，同时识别出与高KL散度和高熵位置相关的“过度思考”标记词，并据此提出一种无需训练的logit惩罚干预，使思维链长度平均减少12–23%。该工作为科研人员理解量化对推理模型的影响提供了一种基于KL散度与熵的token级分析视角和一种免训练缓解思路，但其结论基于特定模型（1.5B–32B）、量化方法（AWQ、GPTQ、FlatQuant）和基准，未声称适用于所有推理模型或量化配置，也未在提供的材料中报告完整实验细节或独立验证。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 5,
+      "authors": [
+        "Sanae Lotfi",
+        "Polina Kirichenko",
+        "Steven Li",
+        "Zechun Liu"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:d680e95392def25285a997e886e86a05",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "medium",
+          "status": "classified",
+          "public_reason": "公开标题或摘要包含定义关键词：reasoning、chain-of-thought。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_ids": [
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+        "zotero:8f22e62349472c4815f4275fbcf89c76",
+        "zotero:d680e95392def25285a997e886e86a05"
+      ],
+      "topic_status": "classified",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.843,
+      "topic_cache_token": "80bc6a76de53514a47f76d1556c1066c34d99e989d865827198e89d22afdf724",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2606.00206",
+        "sha256": "bc276813f4b4aaae13f54bc88aa747d27599eff6bfb9fe0d91833ef95cf5f841",
+        "chars": 12000
+      }
+    },
+    {
       "id": "e4b2fb9a501debe3c5adafa0",
       "url": "https://arxiv.org/abs/2605.29512",
       "title": "MINDGAMES: A Live Arena for Evaluating Social and Strategic Reasoning in Multi-Agent LLMs",
@@ -327589,12 +327736,12 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "5aaf0a085f18d1e67929c1e0977baa00437452f7a104f1f4450f16a813d74a0e",
     "status": "ok",
-    "last_success": "2026-11-27T05:20:10.015722+00:00",
+    "last_success": "2026-11-27T05:44:31.143523+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 3,
+      "classified": 2,
       "unclassified": 2135,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
@@ -327699,8 +327846,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "status": "ok",
       "count": 11
     },
@@ -327708,7 +327855,7 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -327719,8 +327866,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "status": "ok",
       "count": 4
     },
@@ -327728,8 +327875,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "status": "ok",
       "count": 12
     },
@@ -327737,8 +327884,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "status": "ok",
       "count": 12
     },
@@ -327746,8 +327893,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "status": "ok",
       "count": 0
     },
@@ -327755,8 +327902,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "status": "ok",
       "count": 12
     },
@@ -327764,8 +327911,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "status": "ok",
       "count": 2
     },
@@ -327777,8 +327924,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "count": 228,
       "counters": {
         "relevant": 4,
@@ -327797,8 +327944,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "count": 105,
       "counters": {
         "relevant": 13,
@@ -327817,14 +327964,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "count": 213,
       "counters": {
         "relevant": 35,
         "pending": 178,
         "excluded": 1631,
-        "fetched": 750,
+        "fetched": 751,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -327837,14 +327984,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "count": 193,
       "counters": {
         "relevant": 19,
         "pending": 174,
         "excluded": 919,
-        "fetched": 760,
+        "fetched": 761,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -327857,8 +328004,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "count": 115,
       "counters": {
         "relevant": 1,
@@ -327876,20 +328023,18 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:03:07.822796+00:00",
+      "status": "ok",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "count": 69,
       "counters": {
         "relevant": 1,
         "pending": 68,
         "excluded": 890,
-        "fetched": 75,
+        "fetched": 252,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "journal-nature-communications",
@@ -327899,7 +328044,7 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
       "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 1114,
       "counters": {
@@ -327921,8 +328066,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "count": 27,
       "counters": {
         "relevant": 1,
@@ -327941,8 +328086,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "count": 170,
       "counters": {
         "relevant": 2,
@@ -327961,8 +328106,8 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "count": 30,
       "counters": {
         "relevant": 3,
@@ -327977,8 +328122,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "status": "ok",
       "count": 1
     },
@@ -327986,8 +328131,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "status": "ok",
       "count": 12
     },
@@ -327995,8 +328140,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "status": "ok",
       "count": 0
     },
@@ -328004,8 +328149,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "status": "ok",
       "count": 0
     },
@@ -328013,8 +328158,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
-      "last_success": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
+      "last_success": "2026-11-27T05:44:31.143523+00:00",
       "status": "ok",
       "count": 12
     },
@@ -328023,7 +328168,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 20,
-      "last_attempt": "2026-11-27T05:20:10.015722+00:00",
+      "last_attempt": "2026-11-27T05:44:31.143523+00:00",
       "last_success": "2026-11-27T05:02:08.256789+00:00",
       "run_id": "45936639429",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -328031,13 +328176,13 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 1,
+    "generated": 2,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
       "status": "ok",
-      "attempted": 1,
-      "public_html": 1,
+      "attempted": 2,
+      "public_html": 2,
       "bohr_graph": 0,
       "fallback": 0,
       "bohr_calls": 0
