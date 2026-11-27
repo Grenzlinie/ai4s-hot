@@ -49,7 +49,7 @@ body {
   margin: 2px auto 30px;
   max-width: calc(var(--reading-width) - 60px);
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
   align-items: center;
   background: var(--sky);
   border: 1px solid #c8e1f8;
@@ -173,22 +173,113 @@ body {
 .manor-illustration {
   margin: 14px 14px 14px 0;
   min-width: 0;
-  display: grid;
-  place-items: center;
   border: 1px solid #bdd4e7;
   border-radius: 20px;
   overflow: hidden;
-  background: #cbd9e3;
+  background: #f5faff;
 }
 
-.manor-illustration img {
+.manor-stage {
+  position: relative;
+  isolation: isolate;
+  aspect-ratio: 1.83;
+  min-height: 240px;
+  background: radial-gradient(ellipse at 50% 70%, #fff3da, #e0eef7 72%);
+}
+
+.manor-still, .manor-canvas, .manor-markers {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
-  height: auto;
-  aspect-ratio: 3 / 2;
+  height: 100%;
+}
+
+.manor-still {
   object-fit: cover;
   color: #385778;
 }
+
+.manor-canvas {
+  visibility: hidden;
+  touch-action: pan-y !important;
+}
+.manor-illustration[data-ready] .manor-canvas { visibility: visible; cursor: grab; }
+.manor-illustration[data-ready] .manor-canvas:active { cursor: grabbing; }
+.manor-illustration[data-ready] .manor-still { visibility: hidden; }
+.manor-canvas:focus-visible { outline: 3px solid #a55729; outline-offset: -4px; }
+
+.manor-markers { pointer-events: none; }
+.manor-markers span {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  padding: 3px 9px;
+  border: 1px solid #cedbe6;
+  border-radius: 9px;
+  background: #fbfdfff2;
+  box-shadow: 0 2px 6px #324a6626;
+  color: #263f5a;
+  font-size: 12px;
+  font-weight: 750;
+  white-space: nowrap;
+}
+.manor-markers span::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  transform: translate(-50%, -2px) rotate(45deg);
+  background: #fbfdff;
+  border-right: 1px solid #cedbe6;
+  border-bottom: 1px solid #cedbe6;
+}
+
+.manor-reset {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 12px;
+  border: 1px solid #c5d7e4;
+  color: var(--ink);
+  background: #f9fcfff5;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.manor-dock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0 12px;
+  padding: 3px 11px;
+  border-top: 1px solid #c9dbe8;
+}
+.manor-dock nav { display: flex; flex-wrap: wrap; gap: 3px; }
+.manor-dock nav :is(a, button) {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: 8px;
+  border-radius: 8px;
+  border: 0;
+  background: transparent;
+  color: #285493;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.manor-dock nav span { color: #526584; font-weight: 550; }
+.manor-dock nav :is(a, button):hover { background: #e6f0fa; text-decoration: none; }
+.manor-dock :is(a, button):focus-visible,
+.manor-reset:focus-visible { outline: 3px solid #a55729; outline-offset: -1px; }
+#manor-instructions { margin: 0 7px 0 1px; font-size: 12px; color: #526584; }
+.manor-illustration [hidden] { display: none; }
 
 .layout {
   max-width: var(--reading-width);
@@ -329,7 +420,9 @@ body {
   .manor-shortcuts { gap: 7px; }
   .manor-shortcuts .manor-press { padding: 5px 9px; min-height: 35px; font-size: 12px; }
   .manor-illustration { margin: 3px 11px 11px; border-radius: 14px; }
-  .manor-illustration img { max-height: 210px; object-fit: cover; }
+  .manor-stage { aspect-ratio: 1.45; min-height: 213px; }
+  .manor-dock { padding-inline: 6px; }
+  #manor-instructions { padding: 0 8px 5px; }
   .layout { display: block; padding: 0 12px; }
   .layout .rail { border-radius: 0 14px 14px 0; }
   .topic-toggle { margin-bottom: 13px; color: #274e9b; background: #f8fcff; }

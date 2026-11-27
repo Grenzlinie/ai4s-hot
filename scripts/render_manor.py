@@ -18,6 +18,7 @@ from mathutils import Vector
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'site' / 'static'
 GUIDE = '--guide' in sys.argv
+EXPORT_SCENE = '--export-scene' in sys.argv
 if not bpy.app.background or bpy.data.filepath:
     raise RuntimeError("Render the manor in a new Blender background process with --factory-startup.")
 bpy.ops.object.select_all(action='SELECT')
@@ -65,7 +66,7 @@ CHAR=[]
 def finish(obj, name, mat, bevel=0, smooth=False, character=False):
     obj.name=name;obj.data.materials.append(mat)
     if bevel:
-        mod=obj.modifiers.new('Soft toy edge','BEVEL');mod.width=bevel;mod.segments=3
+        mod=obj.modifiers.new('Soft toy edge','BEVEL');mod.width=bevel;mod.segments=2 if EXPORT_SCENE else 3
         obj.modifiers.new('Weighted normals','WEIGHTED_NORMAL')
     if smooth and hasattr(obj.data,'polygons'):
         for p in obj.data.polygons:p.use_smooth=True
@@ -82,13 +83,13 @@ def cube(name, loc, dims, mat, bevel=.05, rot=None, character=False):
 
 
 def sphere(name, loc, scale, mat, character=False):
-    bpy.ops.mesh.primitive_uv_sphere_add(segments=40,ring_count=24,location=loc)
+    bpy.ops.mesh.primitive_uv_sphere_add(segments=16 if EXPORT_SCENE else 40,ring_count=10 if EXPORT_SCENE else 24,location=loc)
     o=bpy.context.object;o.scale=scale
     return finish(o,name,mat,smooth=True,character=character)
 
 
 def cylinder(name, loc, radius, depth, mat, vertices=48, character=False):
-    bpy.ops.mesh.primitive_cylinder_add(vertices=vertices,radius=radius,depth=depth,location=loc)
+    bpy.ops.mesh.primitive_cylinder_add(vertices=min(vertices,16) if EXPORT_SCENE else vertices,radius=radius,depth=depth,location=loc)
     return finish(bpy.context.object,name,mat,.035,smooth=True,character=character)
 
 
@@ -106,10 +107,10 @@ def mesh(name, verts, faces, mat, bevel=0, character=False):
 
 
 def curve(name, coords, radius, mat, character=False):
-    d=bpy.data.curves.new(name,'CURVE');d.dimensions='3D';d.resolution_u=16
+    d=bpy.data.curves.new(name,'CURVE');d.dimensions='3D';d.resolution_u=4 if EXPORT_SCENE else 16
     p=d.splines.new('BEZIER');p.bezier_points.add(len(coords)-1)
     for point,co in zip(p.bezier_points,coords):point.co=co;point.handle_left_type='AUTO';point.handle_right_type='AUTO'
-    d.bevel_depth=radius;d.bevel_resolution=4
+    d.bevel_depth=radius;d.bevel_resolution=2 if EXPORT_SCENE else 4
     obj=bpy.data.objects.new(name,d);bpy.context.collection.objects.link(obj);obj.data.materials.append(mat)
     if character:CHAR.append(obj)
     return obj
@@ -159,6 +160,8 @@ for sign in [-1,1]:
     cube('Book crest page',(lx+sign*.14,ly-1.46,3.15),(.24,.04,.26),M['dark'],.025,rot=(0,0,sign*.04))
 cube('Library chimney',(lx-.8,ly+.65,3.65),(.40,.43,1.0),M['wall'],.05)
 cube('Chimney cap',(lx-.8,ly+.65,4.14),(.53,.55,.12),M['cream'],.035)
+
+LIBRARY = [o for o in bpy.context.scene.objects if o.name not in ('Rounded ceramic garden plinth','Sage lawn surface','Infinite blue studio floor')]
 
 # Blue-violet crystal greenhouse, with open-looking front and thick ivory ribs.
 gx,gy=1.85,1.15;w,d=2.55,2.25;floor=.43;walltop=2.30;peak=3.17
@@ -271,7 +274,7 @@ sphere('Tiny scholar nose',(cx,cy-.66,2.45),(.065,.055,.075),M['skin'],True)
 curve('Small smiling mouth',[(cx-.095,cy-.614,2.31),(cx,cy-.641,2.28),(cx+.095,cy-.614,2.31)],.017,M['hairlight'],True)
 # Round brass spectacles; the glasses sit around, rather than over, the eyes.
 for side in [-1,1]:
-    bpy.ops.mesh.primitive_torus_add(major_radius=.185,minor_radius=.014,major_segments=64,minor_segments=12,
+    bpy.ops.mesh.primitive_torus_add(major_radius=.185,minor_radius=.014,major_segments=24 if EXPORT_SCENE else 64,minor_segments=6 if EXPORT_SCENE else 12,
         location=(cx+side*.25,cy-.68,2.62),rotation=(math.pi/2,0,0))
     finish(bpy.context.object,'Fine round scholar spectacles',M['gold'],smooth=True,character=True)
 curve('Spectacle bridge',[(cx-.065,cy-.68,2.64),(cx,cy-.70,2.67),(cx+.065,cy-.68,2.64)],.014,M['gold'],True)
@@ -323,8 +326,9 @@ def render_webp(name,quality=87):
             scene.render.image_settings.file_format='PNG'
         print('MANOR_ASSET',target,target.stat().st_size,flush=True)
 
-render_webp('manor-hero')
-if GUIDE:
+if not EXPORT_SCENE:
+    render_webp('manor-hero')
+if GUIDE and not EXPORT_SCENE:
     for obj in list(scene.objects):
         if obj.type not in ('LIGHT','CAMERA') and obj not in CHAR:obj.hide_render=True
     camera.location=(4.2,-12,6.3);camera.data.ortho_scale=4.35

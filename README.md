@@ -2,17 +2,17 @@
 
 每天汇集 AI 与科研进展。从图谱找研究方向，到阅读页接着读论文、模型、工具和研究报告。
 
-[阅读最新进展](https://grenzlinie.github.io/ai4s-hot/) · [探索论文图谱](https://grenzlinie.github.io/ai4s-hot/landscape.html) · [完整更新日志](CHANGELOG.md)
+[阅读最新进展](https://grenzlinie.github.io/ai4s-hot/) · [探索论文图谱](https://grenzlinie.github.io/ai4s-hot/landscape.html) · [每日来源](https://grenzlinie.github.io/ai4s-hot/sources.html) · [完整更新日志](CHANGELOG.md)
 
 - **论文图谱**提供论文聚类、领域分布和每周发表趋势，图表与论文列表联动。
-- **阅读页**支持研究主题、来源和十本重点期刊筛选，并在当前浏览器记录收藏与已读。
+- **阅读页**支持研究主题、来源和十二本重点期刊筛选，并在当前浏览器记录收藏与已读。
 - **公开归档**由 GitHub Actions 每日采集，经 GitHub Pages 发布。维护方式见[站点说明](site/README.md)。
 
 ## 最近更新
 
-### 2026-11-27 · 科研庄园与论文图谱
+### 2026-11-27 · 交互庄园与每日来源
 
-首页以原创 Blender 庄园开场，提供关键词、作者、DOI 搜索和近期论文入口。图谱通过相似性地图、领域分布和每周趋势联动浏览论文。
+拖动庄园切换视角，点击图书馆浏览论文，点击望远镜探索图谱。阅读页按细主题或宽分类浏览全部归档。每日来源集中直达 arXiv、alphaXiv 和重点期刊，并新增 Nature Machine Intelligence 与 Nature Computational Science 的站内追踪。
 
 ### 2026-10-26 · 主题分类
 

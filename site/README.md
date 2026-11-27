@@ -97,7 +97,7 @@ CLI 固定为 2.7.11；缺凭据、预算或服务失败均继续使用原摘录
 
 ## 材料 AI 期刊追踪
 
-`site/journals.json` 配置 Nature Materials、Nature、Science、Nature Communications、Science Advances、Advanced Materials、Advanced Energy Materials、Advanced Functional Materials、Acta Materialia、Matter。沿用网站的每日 Actions 和 Pages 发布，不需要额外 API key。
+`site/journals.json` 配置 Nature Materials、Nature、Science、Nature Communications、Science Advances、Advanced Materials、Advanced Energy Materials、Advanced Functional Materials、Acta Materialia、Matter、Nature Machine Intelligence 和 Nature Computational Science。沿用网站的每日 Actions 和 Pages 发布。每日来源页及官方入口维护见 [来源目录说明](source-directory.md)。
 
 每本期刊读取官方 RSS 全部条目，再用 ISSN 限定的 Crossref 元数据补充。Crossref 首次回看最近14天索引更新，后续从上次Crossref完整成功时间重叠3天；发表窗口90天，每页200条、最多10页。达到页上限或单路失败标为“部分采集”，不声称覆盖完整；失败的Crossref游标不前进，后续可补采（RSS单路失败不阻止成功的Crossref推进）。RSS不同于普通来源的12条展示输入限制。在线发表、纸刊日期、索引更新时间和首次发现分别保留；重新索引不会改写旧论文的发表时间。
 
@@ -115,9 +115,9 @@ node site/tests/test_journal_frontend.cjs
 主题配置/凭据仍按已有方式放在进程环境中。期刊源配置是本地可编辑、正常提交的公开文件；期刊筛选不新增LLM请求，相关条目的中文摘要沿用现有总预算。原始实现借鉴RSS+ISSN元数据的组合思路，不引入额外服务或复制外部项目代码。
 
 
-## 分类覆盖与两种待处理队列（v2.5.1）
+## 公开归档的分类覆盖
 
-“相关性待确认”是尚不能确认与材料AI相关的期刊候选；“研究主题待分类”只统计相关性已通过/非期刊、未被判为研究目录外、且没有有效主题标签的条目。两者独立计数，前者即使已有材料主题也不能自动成为相关论文。机构动态、模型发布和工程更新按内容类型浏览，不因缺研究主题而全部进入研究待分队列。每条至少有内容类型，研究主题尽量细分；没有证据时仍保留不确定性。
+公开归档在采集与构建时补齐主题。已有有效细主题保留，存在明确领域词时补宽领域，公开信息较少时进入综合研究或相应内容类别。宽分类标注为 `public_coarse_v1`，供阅读页浏览。论文图谱的科学领域推断继续使用标题、摘要和有据细主题。期刊候选仍遵从独立的材料 AI 相关性判断。
 
 科学上下文的data acquisition、information acquisition和acquisition function不再误当企业收购。分类规则升级到v2.5.1会使旧缓存失效，历史内容随正常更新重新计算，保留ID、首次收录与人工覆盖。显示的分类覆盖提升不是人工准确率验证。
 
@@ -126,3 +126,15 @@ node site/tests/test_journal_frontend.cjs
 公开metadata请求预算在成功归档后按北京时间日期累计，单轮也受20请求限制；如果整个分类/校验更新失败，原state保留，下一次可能重复免费请求。该限制不同于Bohrium付费请求的预留账本。候选摘要与重试状态仅在完整分类/校验成功后提交，候选cache不随Pages发布。
 
 标题中的 next-generation 不等于生成模型，材料 optimization 不等于AI训练优化，chemical robustness 不等于模型评测；v2.5.1要求AI/评测/软件维度分别具有相应科学语境，传统势函数本身也不自动证明AI方法。
+
+## 交互科研庄园
+
+GLB 使用 Blender 原创庄园模型和角色动作。修改几何或动作后，在仓库根目录执行以下命令导出。查看器使用固定版本的 Three.js，改动后重新生成静态 bundle。
+
+```bash
+blender --factory-startup --background --python scripts/export_manor.py
+npm --prefix site/manor3d ci
+npm --prefix site/manor3d run build
+```
+
+GitHub Pages 直接使用 `site/static/` 中的导出文件。WebGL 无法加载时，首页仍可通过插画下方链接浏览论文和图谱。

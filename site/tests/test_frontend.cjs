@@ -65,6 +65,6 @@ vm.runInNewContext(code + `
   assert.equal(navigation.includes('&lt;img src=x'),true);
   assert.equal(itemTopics(paper).includes('data-topic="leaf"'),true);
   assert.equal(itemTopics(paper).includes('<Science>'),false);
-  assert.equal(itemTopics(data.items[1]).includes('主题待分类'),true);
+  assert.equal(itemTopics(data.items[1]).includes('公开信息不足'),true);
 `, sandbox);
 console.log('Frontend behavior: 29 assertions passed (minimal DOM; not a browser deployment test)');

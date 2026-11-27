@@ -519,6 +519,8 @@ def run(args):
                "sources": sorted(statuses, key=lambda s: s["id"]), "summaries": summary_status,
                "policy": {"lookback_days": config["lookback_days"], "max_items_per_source": config["max_items_per_source"], "alpha_window": "30 days"}}
     from topics_schema import validate_archive
+    from topics_public import complete_public_topics
+    complete_public_topics(payload)
     try: validate_archive(payload)
     except Exception: raise UpdateFailure('validation') from None
     enrichment_receipt = {"status": "disabled"}

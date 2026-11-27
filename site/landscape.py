@@ -164,6 +164,8 @@ def recovery_area(item, topic_areas):
     context = title + " " + excerpt[:420]
     confirmed, inferred = set(), set()
     for label in item.get("topic_labels") or ():
+        if label.get("method") == "public_coarse_v1":
+            continue
         area = topic_areas.get(label.get("id"))
         if not area:
             continue
@@ -319,7 +321,7 @@ def landscape(payload):
     return {
         "schema_version": 1, "generated_at": generated_at, "as_of_date": latest.isoformat(),
         "areas": [{"id": key, "label": label} for key, label, _ in AREAS] +
-                 [{"id": "other", "label": "其他与待归类"}],
+                 [{"id": "other", "label": "综合研究"}],
         "clusters": clusters, "papers": papers, "excluded_pending": excluded_pending,
         "method": {"areas": "research-areas-v2", "clustering": "tfidf-kmeans-v1",
                    "projection": "pca-2d", "status": status},

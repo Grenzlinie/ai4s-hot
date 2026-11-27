@@ -34,9 +34,9 @@ def entry(i=1, **kw):
 
 
 class JournalTests(unittest.TestCase):
-    def test_registry_ten_real_journals(self):
+    def test_registry_twelve_real_journals(self):
         rows, cfg = j._load_config(Path(j.__file__).with_suffix('.json'))
-        self.assertEqual(len(rows), 10)
+        self.assertEqual(len(rows), 12)
         self.assertIn("Advanced Functional Materials", [r["title"] for r in rows])
         self.assertEqual(cfg["workers"], 4)
         self.assertEqual(cfg["crossref_max_pages"] * cfg["crossref_rows"], 2000)

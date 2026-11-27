@@ -23,7 +23,7 @@
 
 ## 期刊发现
 
-- `site/journals.json` 为10刊公开配置；`site/journals.py` 独立官方RSS+Crossref增量，候选缓存是site-data的 `data/journal-state.json`，不复制到Pages。
+- `site/journals.json` 维护公开期刊配置；`site/journals.py` 独立运行官方 RSS 与 Crossref 增量采集。候选缓存是 site-data 的 `data/journal-state.json`，不复制到 Pages。
 - 期刊是独立筛选维度，文章仍走现有主题分类。默认不展示相关性pending，不让pending消耗摘要/正文预算；筛选质量仍未人工量化。
 - DOI补充必须保留首次收录ID/first_seen，即使第二天RSS已移出。相同标题存在多个DOI时不猜关联。单刊partial不等于整站更新失败，来源完整性必须如实展示。
 - 实现契约与精确生产证据：`openspec/changes/archive/2026-10-13-add-materials-journal-watch/evidence.md`；当前实时状态需读manifest/来源状态，不能复用历史计数作为当前事实。

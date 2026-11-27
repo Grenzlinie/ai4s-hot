@@ -41,7 +41,7 @@ def _classify_v2(items,taxonomy,corpus,force=False, overrides_payload=None, back
         options["backend"]=backend
         thresholds={**thresholds,"backend":backend}
     corpus=prepare(corpus)
-    topics=[t for t in taxonomy.get('topics',[]) if t.get('active',True)]
+    topics=[t for t in taxonomy.get('topics',[]) if t.get('active',True) and not t['id'].startswith('public:')]
     candidates=LexicalCandidates(corpus,topics,catalog)
     semantic=None;degraded=False
     if options.get('backend') in ('semantic','fusion'):

@@ -27,7 +27,7 @@ clearFilter('topic:mof');assert.equal(selectedTopics.has('mof'),false);clearFilt
 $('topic-search').value='mof';const nav=topicNavigation();assert.match(nav,/data-topic="materials"/);assert.match(nav,/data-topic="mof"/);assert.doesNotMatch(nav,/data-topic="metal"/);assert.match(nav,/aria-expanded="true"/);
 assert.equal(classificationEvidence({topic_status:'insufficient_evidence'}).includes('公开信息不足'),true);
 assert.equal(classificationEvidence({topic_status:'broad_only',topic_labels:[{label_id:'mof',score:.75,public_reason:'<script>no</script>'}]}).includes('<script>'),false);
-assert.match(classificationEvidence({id:'v1-pending',topic_ids:[],topic_leaf_ids:[]}),/等待分类/);
+assert.match(classificationEvidence({id:'v1-pending',topic_ids:[],topic_leaf_ids:[]}),/公开信息不足/);
 assert.doesNotMatch(classificationEvidence({id:'v1-pending',topic_ids:[],topic_leaf_ids:[]}),/已推断细分类/);
 assert.match(classificationEvidence({id:'v1-classified',topic_ids:['mof'],topic_leaf_ids:['mof']}),/已推断细分类/);
 

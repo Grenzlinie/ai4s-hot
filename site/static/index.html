@@ -8,8 +8,9 @@
   <title>AI4S Hot · 科研进展阅读站</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./style.css?v=manor-1">
-  <link rel="stylesheet" href="./manor.css?v=1">
-  <script src="./app.js?v=manor-1" defer></script>
+  <link rel="stylesheet" href="./manor.css?v=2">
+  <script src="./app.js?v=manor-2" defer></script>
+  <script type="module" src="./manor-viewer.js?v=1"></script>
 </head>
 <body>
 <a class="skip" href="#stream">跳到内容</a>
@@ -18,7 +19,7 @@
   <nav class="manor-nav" aria-label="主导航">
     <a href="#results" aria-current="page">阅读站</a>
     <a href="./landscape.html">论文图谱</a>
-    <a href="https://github.com/Grenzlinie/ai4s-hot" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="./sources.html">每日来源</a>
   </nav>
 </header>
 <section class="manor-hero" aria-labelledby="site-heading">
@@ -40,9 +41,25 @@
       <a class="manor-press" href="./landscape.html">按领域探索</a>
     </nav>
   </div>
-  <figure class="manor-illustration">
-    <img src="./manor-hero.webp" alt="手捧书本的小研究员站在图书馆和实验温室前" width="1200" height="800" fetchpriority="high">
-  </figure>
+  <section class="manor-illustration" id="manor-scene" aria-label="交互科研庄园">
+    <div class="manor-stage">
+      <img class="manor-still" src="./manor-hero.webp" alt="手捧书本的小研究员站在图书馆和实验温室前" width="1200" height="800" fetchpriority="high">
+      <canvas class="manor-canvas" aria-label="3D 科研庄园，按方向键移动小研究员" aria-describedby="manor-instructions" aria-hidden="true"></canvas>
+      <div class="manor-markers" aria-hidden="true" hidden>
+        <span data-marker="Library">图书馆</span>
+        <span data-marker="Telescope">望远镜</span>
+      </div>
+      <button class="manor-reset" type="button" title="复位视角" aria-label="复位视角" hidden>↺</button>
+    </div>
+    <div class="manor-dock">
+      <nav aria-label="庄园地标">
+        <a href="?kind=web%3Apaper&amp;days=0#results" data-manor-mode="papers" data-landmark="Library">图书馆<span> · 论文</span></a>
+        <a href="./landscape.html" data-landmark="Telescope">望远镜<span> · 图谱</span></a>
+        <button type="button" data-landmark="Scholar" hidden>打招呼</button>
+      </nav>
+      <p id="manor-instructions" hidden>拖动看庄园，点小路让研究员走动</p>
+    </div>
+  </section>
 </section>
 <div class="layout">
   <button id="topic-toggle" class="topic-toggle" aria-expanded="false" aria-controls="topic-drawer">按研究主题细筛</button>

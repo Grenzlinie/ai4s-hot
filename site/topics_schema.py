@@ -75,7 +75,7 @@ def validate_archive(payload):
             if label.get('facet')!=root['id']: raise ValueError('Incorrect research facet identity')
             score=label.get('score')
             if score is not None and (isinstance(score,bool) or not isinstance(score,(int,float)) or not math.isfinite(score) or not 0<=score<=1): raise ValueError('Invalid public similarity score')
-            if label.get('method') not in {'manual','zotero_exact','local_lexical_v2','local_semantic_v2','local_fusion_v2'}: raise ValueError('Unknown public labeling method')
+            if label.get('method') not in {'manual','zotero_exact','local_lexical_v2','local_semantic_v2','local_fusion_v2','public_coarse_v1'}: raise ValueError('Unknown public labeling method')
             if label.get('confidence') not in {'exact','low','medium','high'}: raise ValueError('Unknown confidence band')
             if label.get('status') not in {'classified','broad_only','low_confidence','insufficient_evidence','taxonomy_gap','pending','error'}: raise ValueError('Unknown classification status')
             if not isinstance(label.get('public_reason'),str): raise ValueError('Public classification reason required')

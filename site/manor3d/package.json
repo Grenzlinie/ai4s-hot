@@ -1,0 +1,14 @@
+{
+  "name": "ai4s-hot-manor",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild viewer.js --bundle --minify --format=esm --target=es2022 --legal-comments=eof --outfile=../static/manor-viewer.js"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.11"
+  }
+}
