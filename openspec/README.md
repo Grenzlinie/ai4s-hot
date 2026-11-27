@@ -4,7 +4,8 @@
 
 ## 当前状态
 
-- `specs/` 记录9个已实现能力、42项要求，包括新期刊发现与期刊浏览。
+- `specs/` 记录已实现能力，包括期刊发现、研究主题、图谱和交互庄园。
+- `changes/archive/2026-11-27-interactive-research-manor/`：庄园可以旋转、点击地标和移动角色，公开归档补齐宽分类，每日来源目录覆盖十二本重点期刊。
 - `changes/archive/2026-10-13-add-materials-journal-watch/`：10刊采集、独立多选、待确认隔离和统一分类已上线；223项Python、254项前端断言、真实本地与线上各19项浏览器检查通过。每次发布精确版本、来源partial和候选计数以该change的evidence及运行收据为准。
 - `changes/add-public-content-enrichment/`：6项实施任务已完成，Bohrium预算与隐私检查见对应evidence；尚未归档，不与期刊变更混合。
 - `changes/measure-topic-classification-quality/`：5项任务仍未完成，等待人工gold与独立质量测量；用户已明确取消它作为新版启用门槛。

@@ -33,15 +33,18 @@ The system SHALL use explicit public title evidence for topics when abstracts ar
 - **THEN** these generic words alone do not produce generative-model, AI-training or benchmark-robustness labels
 
 ### Requirement: Separate triage queues
-The interface SHALL distinguish relevance-pending journal candidates, research-topic-unclassified records, and non-research content types in matching counts and filters.
+
+The interface SHALL keep journal relevance review independent of a record's research topic or content classification.
 
 #### Scenario: Candidate without research labels
-- **WHEN** a journal item has pending relevance
-- **THEN** it belongs to relevance review independently of any inferred research label and does not inflate research-topic-unclassified counts
+
+- **WHEN** a journal item has a valid broad topic and pending relevance
+- **THEN** it remains browsable in the relevance review view and excluded from the default materials-AI stream.
 
 #### Scenario: Non-research and legacy URL
-- **WHEN** a model/organization record has no research label or a visitor opens an old unclassified URL
-- **THEN** content types remain visible, non-research is not queued for research topics, and legacy filters resolve without contradictory relevance conditions
+
+- **WHEN** a model or organization record has a content classification or a reader opens an old unclassified URL
+- **THEN** the content category is browsable and the prior filter resolves to the broad categories.
 
 ### Requirement: Bounded candidate metadata recovery
 The system SHALL prioritize missing public abstracts with AI/material title clues using identity-verified public sources, bounded requests and durable retry backoff.

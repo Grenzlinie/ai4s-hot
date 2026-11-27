@@ -15,6 +15,7 @@
 - `research-manor`：交互场景、角色动作和响应式入口。
 - `topic-assignment`：为缺少细主题的公开记录补齐宽分类。
 - `journal-watch`：增加两本期刊，并集中呈现每日官方更新链接。
+- `classification-recovery`：保留独立的期刊相关性筛选，公开主题统一可浏览。
 
 ## Impact
 
