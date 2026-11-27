@@ -45,8 +45,67 @@ function relevancePending(p){return Boolean(p.journal_id&&p.journal_relevance?.s
 function researchUnclassified(p){return !relevancePending(p)&&p.topic_scope!=='non_research'&&!leafIDs(p).some(id=>activeTopics().some(t=>t.id===id));}
 function pendingCounts(){const rows=uniqueItems(data.items.filter(relevancePending));return [rows.filter(p=>matches(p,'relevance')).length,rows.length];}
 function selectionGroups(){const groups=new Map();for(const id of [...selectedTopics,...(topic?[topic]:[])]){const axis=id==='unclassified'?'unclassified':rootOf(id);if(!groups.has(axis))groups.set(axis,[]);groups.get(axis).push(id);}return groups;}
+const searchIndex = new WeakMap();
+let lastSearch = {raw: null, phrase: "", terms: []};
+
+function normalizeSearch(value) {
+  return String(value ?? "").normalize("NFKC").toLocaleLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+}
+
+function publicationIdentifier(value) {
+  let text = String(value ?? "").trim().replace(/^(?:doi|arxiv):\s*/i, "");
+  if (/^https?:\/\//i.test(text)) {
+    try {
+      const url = new URL(text);
+      const host = url.hostname.replace(/^www\./i, "");
+      if (host === "doi.org" || host === "dx.doi.org") {
+        text = decodeURIComponent(url.pathname.slice(1));
+      } else if (host === "arxiv.org" || host === "alphaxiv.org") {
+        text = decodeURIComponent(url.pathname).replace(/^\/(?:abs|pdf|html)\//i, "").replace(/\.pdf$/i, "");
+      } else {
+        return "";
+      }
+    } catch {
+      return "";
+    }
+  }
+  if (/^10\.\d{4,9}\/\S+$/i.test(text)) return text;
+  return text.match(/^(\d{4}\.\d{4,5}|[a-z-]+(?:\.[a-z]{2})?\/\d{7})(?:v\d+)?$/i)?.[1] || "";
+}
+
+function searchQuery() {
+  const raw = $("query").value.trim();
+  if (raw !== lastSearch.raw) {
+    const phrase = normalizeSearch(publicationIdentifier(raw) || raw);
+    lastSearch = {raw, phrase, terms: phrase ? [...new Set(phrase.split(" "))] : []};
+  }
+  return lastSearch;
+}
+
+function searchable(p) {
+  let entry = searchIndex.get(p);
+  if (!entry) {
+    const title = normalizeSearch(p.title);
+    const identifiers = [p.doi, p.arxiv_id, p.url].map(publicationIdentifier).filter(Boolean).map(normalizeSearch);
+    const ids = [normalizeSearch(p.url), ...identifiers].join(" ");
+    const body = normalizeSearch([p.summary, p.excerpt, p.journal_title, ...(p.source_ids || []).map(sourceName), ...(p.authors || [])].join(" "));
+    entry = {title, ids, identifiers, full: [title, ids, body].join(" ")};
+    searchIndex.set(p, entry);
+  }
+  return entry;
+}
+
+function searchRank(p, query) {
+  const {title, ids, identifiers} = searchable(p);
+  if (title === query.phrase || identifiers.includes(query.phrase)) return 4;
+  if (title.includes(query.phrase) || ids.includes(query.phrase)) return 3;
+  if (query.terms.every(term => title.includes(term))) return 2;
+  return query.terms.some(term => title.includes(term)) ? 1 : 0;
+}
+
 function matches(p,ignoreAxis=''){
- const query=$('query').value.trim().toLocaleLowerCase(),archiveDate=$('archive-date').value;
+ const query=searchQuery(),archiveDate=$('archive-date').value;
  if(savedView&&!saved.has(p.id))return false;
  for(const [axis,ids] of selectionGroups()){if(axis===ignoreAxis||(ignoreAxis==='relevance'&&axis==='unclassified'))continue;const assigned=browseIDs(p);if(!ids.some(id=>id==='unclassified'?researchUnclassified(p):assigned.has(id)))return false;}
  if(channel&&!(p.groups||[p.group]).includes(channel)&&!(channel==='papers'&&p.type==='paper'))return false;
@@ -55,18 +114,22 @@ function matches(p,ignoreAxis=''){
  if(!['relevance','unclassified'].includes(ignoreAxis)&&(journalReview==='pending'?!pending:pending))return false;
  if(ignoreAxis!=='source'&&selectedSources.size&&!(p.source_ids||[]).some(id=>selectedSources.has(id)))return false;
  if(ignoreAxis!=='domain'&&domain&&!(p.domain_facets||[]).includes(domain))return false;
- if(ignoreAxis!=='kind'&&kind&&p.content_kind!==kind)return false;
+ if(ignoreAxis!=='kind'&&kind&&contentType(p)!==kind)return false;
  if($('unread').checked&&read.has(p.id))return false;
  if(archiveDate){if(localDay(p.first_seen)!==archiveDate)return false;}else if(days&&new Date(p.published_at||p.first_seen).getTime()<Date.now()-days*86400000)return false;
  if(legacySignal==='zotero'&&(!(p.source_ids||[]).includes('zotero')||!Number.isFinite(p.zotero_score)))return false;
  if(legacySignal==='alpha'&&!Number.isFinite(p.alpha_rank))return false;
- return !query||[p.title,p.summary,p.excerpt,p.journal_title,...(p.source_ids||[]).map(sourceName),...(p.authors||[])].join(' ').toLocaleLowerCase().includes(query);
+ return !query.terms.length||query.terms.every(term=>searchable(p).full.includes(term));
 }
 function uniqueItems(items){return [...new Map(items.map(p=>[p.id,p])).values()];}
 function itemTime(p,indexed=false){return Date.parse(indexed?p.first_seen:(p.published_at||p.first_seen))||0;}
 function rankItems(list){
  const tie=(a,b)=>String(a.id).localeCompare(String(b.id));
  if(legacySignal)return [...list].sort((a,b)=>(legacySignal==='zotero'?b.zotero_score-a.zotero_score:a.alpha_rank-b.alpha_rank)||tie(a,b));
+ const query=searchQuery();
+ if(query.terms.length&&viewMode!=='latest') {
+   return [...list].sort((a,b)=>searchRank(b,query)-searchRank(a,query)||itemTime(b)-itemTime(a)||tie(a,b));
+ }
  if(viewMode==='latest')return [...list].sort((a,b)=>itemTime(b,$('sort').value==='indexed')-itemTime(a,$('sort').value==='indexed')||tie(a,b));
  const all=uniqueItems(data.items),rank=(rows,cmp)=>new Map([...rows].sort((a,b)=>cmp(a,b)||tie(a,b)).map((p,i)=>[p.id,i+1]));
  const recent=rank(all,(a,b)=>itemTime(b)-itemTime(a));
@@ -81,7 +144,8 @@ function rankItems(list){
  return out;
 }
 function filtered(){return rankItems(uniqueItems(data.items.filter(p=>matches(p))));}
-function facetCount(axis,value){return uniqueItems(data.items.filter(p=>matches(p,axis)&&(!value||(axis==='source'?(p.source_ids||[]).includes(value):axis==='domain'?(p.domain_facets||[]).includes(value):p.content_kind===value)))).length;}
+function contentType(p){return p.content_kind||(p.type==='paper'?'web:paper':'');}
+function facetCount(axis,value){return uniqueItems(data.items.filter(p=>matches(p,axis)&&(!value||(axis==='source'?(p.source_ids||[]).includes(value):axis==='domain'?(p.domain_facets||[]).includes(value):contentType(p)===value)))).length;}
 function sourceButton(id){return `<button data-source="${escapeText(id)}" aria-pressed="${selectedSources.has(id)}">${escapeText(sourceName(id))}<small>${facetCount('source',id)}</small></button>`;}
 function renderFacets(){
  for(const [axis,options,selected] of [['domain',domainOptions,domain],['kind',kindOptions,kind]])$(axis==='domain'?'domains':'kinds').innerHTML=options.map(([id,name])=>`<button data-axis="${axis}" data-value="${id}" aria-pressed="${selected===id}">${escapeText(name)}<small>${facetCount(axis,id)}</small></button>`).join('');
@@ -119,13 +183,13 @@ function syncURL(replace=false){const url=new URL(location.href);url.search='';f
 function restoreURL(){const params=new URL(location.href).searchParams;const original=(params.get('topics')||params.get('topic')||'').split(',').filter(Boolean);selectedTopics=new Set(original.map(resolveTopic).filter(id=>id==='unclassified'||taxonomyTopics().some(t=>t.id===id)));const unavailable=original.filter(id=>id!=='unclassified'&&!taxonomyTopics().some(t=>t.id===resolveTopic(id)));if(unavailable.length)toast('当前归档不支持部分主题筛选，已清除不可用主题；其他筛选与阅读标记保留');else if(original.some(id=>resolveTopic(id)!==id))toast('旧主题链接已迁移到当前目录');topic='';selectedTopics.forEach(expandPath);days=params.has('days')?Math.max(0,Number(params.get('days'))||0):30;channel=params.get('channel')||'';savedView=params.get('view')==='saved';$('query').value=params.get('q')||'';selectedSources=new Set((params.get('sources')||params.get('source')||'').split(',').filter(Boolean));selectedJournals=new Set((params.get('journals')||'').split(',').filter(id=>journalOptions().some(j=>j.id===id)));journalReview=params.get('journal_review')==='pending'&&journalOptions().length&&!selectedTopics.has('unclassified')?'pending':'';domain=domainOptions.some(([id])=>id===params.get('domain'))?params.get('domain'):'';kind=kindOptions.some(([id])=>id===params.get('kind'))?params.get('kind'):'';$('archive-date').value=params.get('date')||'';const oldSort=params.get('sort');legacySignal=['zotero','alpha'].includes(params.get('signal'))?params.get('signal'):['zotero','alpha'].includes(oldSort)?oldSort:'';$('sort').value=oldSort==='indexed'?'indexed':'recent';viewMode=['recommended','latest'].includes(params.get('mode'))?params.get('mode'):params.get('view')==='latest'||((!params.has('view')||params.get('view')==='saved')&&oldSort)?'latest':'recommended';$('unread').checked=params.get('unread')==='1';}
 function render(){
  const focused=document.activeElement,scopeID=focused?.closest?.('[id]')?.id,marks=focused?.tagName==='BUTTON'?[...focused.attributes].filter(a=>a.name.startsWith('data-')).map(a=>[a.name,a.value]):[];
- const results=filtered();$('result-count').textContent=results.length+' 条';$('results-title').textContent=savedView?'收藏':selectedTopics.size?[...selectedTopics].map(displayTopic).join(' · '):viewMode==='latest'?'最新进展':'综合推荐';
- $('entries').innerHTML=results.length?results.slice(0,shown).map(card).join(''):`<div class="empty"><b>${savedView?'还没有符合筛选条件的收藏':journalReview==='pending'?'当前条件下没有相关性待确认文章':selectedTopics.has('unclassified')?'当前条件下没有研究主题待分类文章':'这个组合暂时没有进展'}</b><p>${selectedTopics.has('unclassified')?'这里仅显示相关性不待确认、尚无有效研究主题的文章；模型发布等非研究动态已按内容类型归类。':journalReview==='pending'?'相关性待确认与研究主题是否已分类分别统计；可移除来源、期刊或日期条件查看更多。':'可以逐项移除上方条件，或恢复全部内容。'}</p><button data-clear-filter="all">清除筛选</button>${savedView?'<button data-view="recommended">返回综合推荐</button>':''}</div>`;
+ const results=filtered();$('result-count').textContent=results.length+' 条';$('results-title').textContent=savedView?'我的书架':searchQuery().terms.length?'搜索结果':selectedTopics.size?[...selectedTopics].map(displayTopic).join(' · '):viewMode==='latest'?'最新进展':'综合推荐';
+ $('entries').innerHTML=results.length?results.slice(0,shown).map(card).join(''):`<div class="empty"><b>${savedView?'还没有符合筛选条件的收藏':journalReview==='pending'?'当前条件下没有相关性待确认文章':selectedTopics.has('unclassified')?'当前条件下没有研究主题待分类文章':'这个组合暂时没有进展'}</b><p>${selectedTopics.has('unclassified')?'这里仅显示相关性不待确认、尚无有效研究主题的文章；模型发布等非研究动态已按内容类型归类。':journalReview==='pending'?'相关性待确认与研究主题是否已分类分别统计；可移除来源、期刊或日期条件查看更多。':'可以逐项移除上方条件，或恢复全部内容。'}</p>${searchQuery().terms.length && (days || $('archive-date').value) ? '<button data-clear-filter="time">搜全部日期</button>' : ''}<button data-clear-filter="all">清除筛选</button>${savedView?'<button data-view="recommended">返回综合推荐</button>':''}</div>`;
  $('load-more').hidden=shown>=results.length;$('topics').innerHTML=topicNavigation();$('active-filters').innerHTML=activeFilters();renderFacets();renderJournals();
  document.querySelectorAll('[data-days]').forEach(b=>b.classList.toggle('active',Number(b.dataset.days)===days));document.querySelectorAll('[data-topic]').forEach(b=>b.classList.toggle('active',selectedTopics.has(b.dataset.topic)||Boolean(topic&&b.dataset.topic===topic)));
  for(const [id,active] of [['saved',savedView],['home',!savedView&&viewMode==='recommended'],['latest',!savedView&&viewMode==='latest']]){$(id).classList.toggle('active',active);$(id).setAttribute('aria-pressed',String(active));}
  $('saved-count').textContent=saved.size;$('sort').disabled=Boolean(legacySignal)||viewMode!=='latest';
- $('sort-info').textContent=legacySignal?'保留旧链接范围 · 可在条件中清除':viewMode==='latest'?($('sort').value==='indexed'?'按收录时间':'按发表时间 · 缺日期按收录时间'):'综合排序 · 兼顾来源与内容类型';
+ $('sort-info').textContent=legacySignal?'保留旧链接范围 · 可在条件中清除':viewMode==='latest'?($('sort').value==='indexed'?'按收录时间':'按发表时间 · 缺日期按收录时间'):searchQuery().terms.length?'标题和编号匹配优先':'综合排序 · 兼顾来源与内容类型';
  if(marks.length){const scope=$(scopeID)||document;const next=[...scope.querySelectorAll('button')].find(b=>marks.every(([key,value])=>b.getAttribute(key)===value));if(next)next.focus({preventScroll:true});else if(marks.some(([key])=>key==='data-save'))$('saved').focus({preventScroll:true});else if(!$('source-dialog').open&&!$('journal-dialog').open)$('query').focus({preventScroll:true});}
 }
 function refresh(writeURL=true){shown=25;render();if(writeURL)syncURL();}
@@ -141,18 +205,52 @@ async function init(){try{const response=await fetch('./data/index.json',{cache:
   $('topics').classList.toggle('zotero-topics',Boolean(data.taxonomy?.topics?.length));
   health();persist();
   document.addEventListener('click',async event=>{const b=event.target.closest('button,a');if(!b)return;if(b.dataset.topic!==undefined){event.preventDefault();topic='';const id=resolveTopic(b.dataset.topic);if(!id)selectedTopics.clear();else{if(id==='unclassified')journalReview='';if(b.classList.contains('tag'))selectedTopics.add(id);else selectedTopics.has(id)?selectedTopics.delete(id):selectedTopics.add(id);expandPath(id);}refresh();if(id){const node=document.querySelector(`[data-node="${CSS.escape(id)}"]`);node?.scrollIntoView({block:'nearest'});const select=node?.querySelector('[data-topic]');if(select?.getClientRects().length)select.focus({preventScroll:true});}}if(b.dataset.expand){const id=b.dataset.expand;expandedTopics.has(id)?expandedTopics.delete(id):expandedTopics.add(id);$('topics').innerHTML=topicNavigation();document.querySelector(`[data-expand="${CSS.escape(id)}"]`)?.focus();}if(b.dataset.correct)openCorrection(b.dataset.correct);if(b.dataset.clearFilter){clearFilter(b.dataset.clearFilter);refresh();}if(b.dataset.journal!==undefined){const id=b.dataset.journal;if(b.classList.contains('journal-link'))selectedJournals.add(id);else selectedJournals.has(id)?selectedJournals.delete(id):selectedJournals.add(id);refresh();}if(b.dataset.source!==undefined){const id=b.dataset.source;selectedSources.has(id)?selectedSources.delete(id):selectedSources.add(id);refresh();}if(b.dataset.axis){if(b.dataset.axis==='domain')domain=b.dataset.value;else kind=b.dataset.value;refresh();}if(b.dataset.view){savedView=b.dataset.view==='saved';if(!savedView)viewMode=b.dataset.view;refresh();}if(b.dataset.days!==undefined){days=Number(b.dataset.days);$('archive-date').value='';document.querySelectorAll('[data-days]').forEach(el=>el.classList.toggle('active',el===b));refresh();}if(b.dataset.read){read.has(b.dataset.read)?read.delete(b.dataset.read):read.add(b.dataset.read);persist();render();}if(b.dataset.open){read.add(b.dataset.open);persist();}if(b.dataset.save){saved.has(b.dataset.save)?saved.delete(b.dataset.save):saved.add(b.dataset.save);persist();render();}if(b.dataset.share){const url=new URL(location.href);url.search='';url.hash='item-'+b.dataset.share;if(data.items.find(p=>p.id===b.dataset.share)?.journal_relevance?.status==='pending')url.searchParams.set('journal_review','pending');try{await navigator.clipboard.writeText(url.href);toast('条目链接已复制');}catch{toast('复制受限，可从地址栏复制当前链接');location.hash=url.hash;}}});
-  $('query').addEventListener('input',refresh);['sort','unread','archive-date'].forEach(id=>$(id).addEventListener('change',refresh));$('clear').onclick=()=>{reset();refresh();};$('load-more').onclick=()=>{shown+=25;render();};$('saved').onclick=()=>{savedView=true;refresh();};$('home').onclick=()=>{savedView=false;viewMode='recommended';refresh();};$('latest').onclick=()=>{savedView=false;viewMode='latest';refresh();};$('journal-search').oninput=renderJournals;$('journal-close').onclick=()=> $('journal-dialog').close();$('journal-dialog').addEventListener('close',()=> $('open-journals')?.focus());$('journal-clear').onclick=()=>{selectedJournals.clear();refresh();};$('journal-review').onclick=()=>{journalReview=journalReview?'':'pending';if(journalReview){selectedTopics.delete('unclassified');if(topic==='unclassified')topic='';}refresh();};$('source-search').oninput=renderFacets;$('source-close').onclick=()=> $('source-dialog').close();$('source-dialog').addEventListener('close',()=> $('open-sources').focus());$('source-clear').onclick=()=>{selectedSources.clear();refresh();};$('health-toggle').onclick=()=>{const open=$('health').hidden;$('health').hidden=!open;$('health-toggle').setAttribute('aria-expanded',String(open));};
+  let pendingSearch;
+  $("query").addEventListener("input", () => {
+    clearTimeout(pendingSearch);
+    pendingSearch = setTimeout(() => { refresh(false); syncURL(true); }, 180);
+  });
+  function openResults() {
+    const url = new URL(location.href);
+    url.hash = "results";
+    history.replaceState(null, "", url);
+    $("results").focus({preventScroll: true});
+    $("results").scrollIntoView({block: "start"});
+  }
+  $("paper-search").addEventListener("submit", event => {
+    event.preventDefault();
+    clearTimeout(pendingSearch);
+    refresh();
+    openResults();
+  });
+  for (const shortcut of document.querySelectorAll("[data-manor-mode]")) {
+    shortcut.addEventListener("click", event => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      clearTimeout(pendingSearch);
+      reset();
+      savedView = false;
+      kind = "web:paper";
+      viewMode = shortcut.dataset.manorMode === "recent" ? "latest" : "recommended";
+      days = viewMode === "latest" ? 7 : 0;
+      refresh();
+      openResults();
+    });
+  }
+  ['sort','unread','archive-date'].forEach(id=>$(id).addEventListener('change',refresh));$('clear').onclick=()=>{reset();refresh();};$('load-more').onclick=()=>{shown+=25;render();};$('saved').onclick=()=>{savedView=true;refresh();};$('home').onclick=()=>{savedView=false;viewMode='recommended';refresh();};$('latest').onclick=()=>{savedView=false;viewMode='latest';refresh();};$('journal-search').oninput=renderJournals;$('journal-close').onclick=()=> $('journal-dialog').close();$('journal-dialog').addEventListener('close',()=> $('open-journals')?.focus());$('journal-clear').onclick=()=>{selectedJournals.clear();refresh();};$('journal-review').onclick=()=>{journalReview=journalReview?'':'pending';if(journalReview){selectedTopics.delete('unclassified');if(topic==='unclassified')topic='';}refresh();};$('source-search').oninput=renderFacets;$('source-close').onclick=()=> $('source-dialog').close();$('source-dialog').addEventListener('close',()=> $('open-sources').focus());$('source-clear').onclick=()=>{selectedSources.clear();refresh();};$('health-toggle').onclick=()=>{const open=$('health').hidden;$('health').hidden=!open;$('health-toggle').setAttribute('aria-expanded',String(open));};
   $('export-saved').onclick=()=>{const content={exported_at:new Date().toISOString(),items:data.items.filter(p=>saved.has(p.id))};const blob=new Blob([JSON.stringify(content,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='ai4s-hot-collections.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
   $('topic-search').addEventListener('input',()=>{$('topics').innerHTML=topicNavigation();});$('expand-all').onclick=()=>{taxonomyTopics().forEach(t=>expandedTopics.add(t.id));render();};$('collapse-all').onclick=()=>{expandedTopics.clear();selectedTopics.forEach(expandPath);render();};$('topic-toggle').onclick=openDrawer;$('drawer-close').onclick=closeDrawer;$('drawer-backdrop').onclick=closeDrawer;window.addEventListener('popstate',()=>{restoreURL();refresh(false);});$('correction-save').onclick=saveCorrection;$('export-corrections').onclick=()=>downloadJSON(correctionExport(),'ai4s-topic-corrections.json');$('import-corrections').onchange=importCorrections;
   document.addEventListener('keydown',e=>{handleDrawerKeys(e);handleTreeKeys(e);if(e.key==='/'&&!document.querySelector('dialog[open]')&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)){e.preventDefault();$('query').focus();}});
-  restoreURL();if(location.hash.startsWith('#item-')){days=0;const id=location.hash.slice(6);if(data.items.find(p=>p.id===id)?.journal_relevance?.status==='pending'){journalReview='pending';selectedTopics.delete('unclassified');}const index=filtered().findIndex(p=>p.id===id);shown=Math.max(25,index+1);document.querySelectorAll('[data-days]').forEach(b=>b.classList.toggle('active',Number(b.dataset.days)===0));}render();syncURL(true);loadUpdateStatus();if(location.hash)document.getElementById(location.hash.slice(1))?.scrollIntoView();
+  restoreURL();
+  $("more-filters").open = Boolean(selectedJournals.size || selectedSources.size || journalReview || $("archive-date").value || $("unread").checked || $("sort").value === "indexed");
+  if(location.hash.startsWith('#item-')){days=0;const id=location.hash.slice(6);if(data.items.find(p=>p.id===id)?.journal_relevance?.status==='pending'){journalReview='pending';selectedTopics.delete('unclassified');}const index=filtered().findIndex(p=>p.id===id);shown=Math.max(25,index+1);document.querySelectorAll('[data-days]').forEach(b=>b.classList.toggle('active',Number(b.dataset.days)===0));}render();syncURL(true);loadUpdateStatus();if(location.hash)document.getElementById(location.hash.slice(1))?.scrollIntoView();
 }catch{$('updated').textContent='归档暂时无法读取';$('coverage').textContent='请刷新页面，或查看 GitHub Actions 的最近运行';$('entries').innerHTML='<div class="empty"><b>归档暂时不可用</b>请稍后刷新页面。<br><a href="https://github.com/Grenzlinie/ai4s-hot/actions">查看更新任务</a></div>';}}
 
 function validateUpdateStatus(value){const fields=['schema_version','status','stage','last_attempt','last_success','error_type','failed_item_id','run_url','retryable'];if(!value||typeof value!=='object'||Array.isArray(value)||Object.keys(value).some(k=>!fields.includes(k))||!['ok','error'].includes(value.status)||!['taxonomy','classification','validation','build'].includes(value.stage)||typeof value.retryable!=='boolean'||typeof value.last_attempt!=='string'||!Number.isFinite(Date.parse(value.last_attempt)))return null;if(value.schema_version!==undefined&&value.schema_version!==1)return null;if(value.last_success!==null&&value.last_success!==undefined&&(typeof value.last_success!=='string'||!Number.isFinite(Date.parse(value.last_success))))return null;for(const key of ['error_type','failed_item_id','run_url'])if(value[key]!==undefined&&(typeof value[key]!=='string'||value[key].length>500))return null;return value;}
 function updateHealth(){if(updateStatus?.status==='error'){const stages={taxonomy:'目录同步',classification:'分类',validation:'数据校验',build:'页面构建'};return `<p class="update-warning">本次更新失败（${escapeText(stages[updateStatus.stage])}），保留上次结果。尝试时间：${escapeText(date(updateStatus.last_attempt,true))}；最近成功：${escapeText(date(updateStatus.last_success,true))}。${updateStatus.retryable?'可在后续任务重试。':''}${updateStatus.run_url?` <a href="${escapeText(safeURL(updateStatus.run_url))}" target="_blank" rel="noopener noreferrer">查看更新任务</a>`:''}</p>`;}return Date.now()-Date.parse(data.generated_at)>36*3600000?'<p class="update-warning">归档已超过 36 小时未更新，内容可能过期；已保留现有阅读记录。</p>':'';}
 async function loadUpdateStatus(){try{const response=await fetch('./update-status.json',{cache:'no-cache',signal:AbortSignal.timeout(4000)});if(response.ok)updateStatus=validateUpdateStatus(await response.json());}catch{}health();if(updateStatus?.status==='error'||updateHealth()){$('health').hidden=false;$('health-toggle').setAttribute('aria-expanded','true');}render();}
 
-function clearFilter(key){if(key.startsWith('topic:'))selectedTopics.delete(key.slice(6));else if(key.startsWith('source:'))selectedSources.delete(key.slice(7));else if(key.startsWith('journal:'))selectedJournals.delete(key.slice(8));else if(key==='journals')selectedJournals.clear();else if(key==='journal-review')journalReview='';else if(key==='sources')selectedSources.clear();else if(key==='domain')domain='';else if(key==='kind')kind='';else if(key==='signal')legacySignal='';else if(key==='all')reset();else if(key==='days')days=0;else if(key==='channel')channel='';else if(key==='saved')savedView=false;else if(key==='unread')$('unread').checked=false;else $(key).value='';}
+function clearFilter(key){if(key.startsWith('topic:'))selectedTopics.delete(key.slice(6));else if(key.startsWith('source:'))selectedSources.delete(key.slice(7));else if(key.startsWith('journal:'))selectedJournals.delete(key.slice(8));else if(key==='journals')selectedJournals.clear();else if(key==='journal-review')journalReview='';else if(key==='sources')selectedSources.clear();else if(key==='domain')domain='';else if(key==='kind')kind='';else if(key==='signal')legacySignal='';else if(key==='all')reset();else if(key==='days')days=0;else if(key==='time'){days=0;$('archive-date').value='';}else if(key==='channel')channel='';else if(key==='saved')savedView=false;else if(key==='unread')$('unread').checked=false;else $(key).value='';}
 function downloadJSON(content,name){const url=URL.createObjectURL(new Blob([JSON.stringify(content,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 function correctionExport(){return {schema_version:1,overrides:Object.entries(corrections).map(([item_id,row])=>({item_id,topic_ids:row.topic_ids.map(resolveTopic),reason:row.reason||'',created_at:row.created_at,author:'local visitor',version:1}))};}
 function openCorrection(id){correctionItem=id;const p=data.items.find(p=>p.id===id);const ids=new Set(leafIDs(p));$('correction-options').innerHTML=activeTopics().map(t=>`<label><input type="checkbox" value="${escapeText(t.id)}" ${ids.has(t.id)?'checked':''}>${escapeText(t.path||t.name)}</label>`).join('');$('correction-reason').value=corrections[id]?.reason||'';$('correction-dialog').showModal();}

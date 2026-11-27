@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#275da6" />
+    <meta name="theme-color" content="#2e5cbe" />
     <title>研究图谱 · AI4S Hot</title>
     <link rel="icon" href="./favicon.svg" />
-    <link rel="stylesheet" href="./landscape.css" />
-    <script src="./landscape.js" defer></script>
+    <link rel="stylesheet" href="./landscape.css?v=manor-1" />
+    <script src="./landscape.js?v=manor-1" defer></script>
   </head>
   <body>
     <a class="skip" href="#papers">跳到论文列表</a>
@@ -16,13 +16,16 @@
       ><a href="./">返回阅读站</a>
     </header>
     <main>
-      <div class="intro">
+      <div class="intro manor-intro">
+        <div class="guide-perch" aria-hidden="true"><img src="./manor-guide.webp" alt="" width="108" height="108" onerror="this.hidden=true"></div>
         <div>
-          <h1>论文图谱</h1>
-          <p>从相近研究、领域分布和每周发表趋势找到论文。</p>
+          <p class="manor-kicker">科研庄园 · 研究地图</p>
+          <h1>找到你的下一篇论文</h1>
+          <p>搜一个关键词，或点选地图中的相近研究。</p>
         </div>
         <p id="updated"></p>
       </div>
+      <div class="paper-search"><label for="paper-query">搜索论文</label><input id="paper-query" type="search" placeholder="标题关键词，例如 catalyst、agent、battery…" autocomplete="off"><button id="query-clear" type="button" hidden>清除关键词</button></div>
       <section class="toolbar" aria-label="图谱筛选">
         <div id="windows" role="group" aria-label="发表时间">
           <button data-window="30">近 30 天</button
@@ -55,7 +58,7 @@
             <p id="unmapped" class="note"></p>
           </section>
           <aside class="panel">
-            <h2>研究簇</h2>
+            <h2>相近研究</h2>
             <p class="note">按当前筛选的论文数排序。点选研究簇查看论文。</p>
             <div
               id="clusters"

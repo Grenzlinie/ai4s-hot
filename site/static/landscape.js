@@ -26,6 +26,7 @@
     "#a05c6b",
   ];
   let data,
+    query = "",
     area = "",
     cluster = "",
     windowDays = 90,
@@ -75,6 +76,7 @@
   function matches(p, ignore = "") {
     const t = dateNumber(p.date);
     return (
+      (!query || String(p.title).toLocaleLowerCase().includes(query.toLocaleLowerCase())) &&
       (!area || ignore === "area" || p.area === area) &&
       (!cluster ||
         ignore === "cluster" ||
@@ -95,6 +97,8 @@
   }
   function readURL() {
     const q = new URL(location.href).searchParams;
+    query = (q.get("q") || "").trim();
+    $("paper-query").value = query;
     area =
       data.areas.some((a) => a.id === q.get("area")) ||
       q.get("area") === "other"
@@ -116,6 +120,7 @@
     const u = new URL(location.href);
     u.search = "";
     for (const [k, v] of Object.entries({
+      q: query,
       area,
       cluster,
       window: String(windowDays),
@@ -147,7 +152,9 @@
     $("updated").textContent =
       "归档更新于 " + (data.generated_at || "").slice(0, 10);
     $("status").textContent = `${list.length} 篇论文 · ${groups.size} 个研究簇`;
+    $("query-clear").hidden = !query;
     $("selection").textContent = [
+      query ? "关键词：" + query : "",
       area ? areaName(area) : "全部领域",
       cluster ? clusterName(cluster) : "全部研究簇",
       windowDays ? "近 " + windowDays + " 天" : "全部归档",
@@ -357,7 +364,10 @@
     } else if (b.dataset.week) {
       week = week === b.dataset.week ? "" : b.dataset.week;
       change();
+    } else if (b.id === "query-clear") {
+      query = ""; $("paper-query").value = ""; change(); $("paper-query").focus();
     } else if (b.id === "clear" || b.dataset.reset !== undefined) {
+      query = ""; $("paper-query").value = "";
       area = "";
       cluster = "";
       week = "";
@@ -365,6 +375,7 @@
       change();
     }
   });
+  $("paper-query").addEventListener("input", () => { query = $("paper-query").value.trim(); if(data) change(); });
   $("more").onclick = () => {
     shown += 30;
     renderList();

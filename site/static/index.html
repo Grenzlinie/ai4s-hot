@@ -4,19 +4,46 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="AI4S Hot：每天聚合论文、模型、科研工具与研究报告，跨来源阅读科学与 AI 前沿进展。">
-  <meta name="theme-color" content="#17695b">
+  <meta name="theme-color" content="#eaf4ff">
   <title>AI4S Hot · 科研进展阅读站</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css?v=landscape-20261127">
-  <script src="./app.js?v=landscape-20261127" defer></script>
+  <link rel="stylesheet" href="./style.css?v=manor-1">
+  <link rel="stylesheet" href="./manor.css?v=1">
+  <script src="./app.js?v=manor-1" defer></script>
 </head>
 <body>
 <a class="skip" href="#stream">跳到内容</a>
-<header class="header">
+<header class="header manor-header">
   <a class="brand" href="./" aria-label="AI4S Hot 首页">AI4S <b>Hot.</b></a>
-  <a class="header-link landscape-link" href="./landscape.html">论文图谱</a>
-  <a class="header-link" href="https://github.com/Grenzlinie/ai4s-hot" target="_blank" rel="noopener noreferrer">GitHub</a>
+  <nav class="manor-nav" aria-label="主导航">
+    <a href="#results" aria-current="page">阅读站</a>
+    <a href="./landscape.html">论文图谱</a>
+    <a href="https://github.com/Grenzlinie/ai4s-hot" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </nav>
 </header>
+<section class="manor-hero" aria-labelledby="site-heading">
+  <div class="manor-copy">
+    <span class="manor-kicker">科研庄园</span>
+    <h1 id="site-heading">今天读点什么？</h1>
+    <p class="lede">找论文、看最新进展，把想读的留在书架上。</p>
+    <form id="paper-search" class="manor-search" role="search">
+      <label class="sr-only" for="query">搜索标题、摘要、作者、DOI 或来源</label>
+      <input id="query" type="search" placeholder="搜索论文、作者或 DOI" autocomplete="off" enterkeyhint="search">
+      <button type="submit" class="manor-press manor-primary">
+        <img class="manor-button-guide" src="./manor-guide.webp" width="32" height="32" alt="">
+        <span>搜索</span>
+      </button>
+    </form>
+    <nav class="manor-shortcuts" aria-label="论文快捷入口">
+      <a class="manor-press" href="?kind=web%3Apaper&amp;days=0#results" data-manor-mode="papers">全部论文</a>
+      <a class="manor-press" href="?kind=web%3Apaper&amp;days=7&amp;view=latest#results" data-manor-mode="recent">近 7 天论文</a>
+      <a class="manor-press" href="./landscape.html">按领域探索</a>
+    </nav>
+  </div>
+  <figure class="manor-illustration">
+    <img src="./manor-hero.webp" alt="手捧书本的小研究员站在图书馆和实验温室前" width="1200" height="800" fetchpriority="high">
+  </figure>
+</section>
 <div class="layout">
   <button id="topic-toggle" class="topic-toggle" aria-expanded="false" aria-controls="topic-drawer">按研究主题细筛</button>
   <div id="drawer-backdrop" class="drawer-backdrop" hidden></div>
@@ -33,26 +60,35 @@
     <div class="rail-exports"><button id="export-saved" class="text-button">导出收藏</button><button id="export-corrections" class="text-button">导出本机分类修正</button><label class="text-button import-label">导入本机修正 <input id="import-corrections" type="file" accept="application/json" class="sr-only"></label></div>
   </aside>
   <main id="stream">
-    <section class="intro" aria-labelledby="site-heading">
-      <div class="eyebrow">THE RESEARCH BRIEF</div>
-      <div class="heading"><div><h1 id="site-heading">科研进展，持续阅读。</h1><p class="lede">每天浏览新论文、模型发布、科研工具和研究报告。</p></div><span id="updated" class="updated">正在读取归档</span></div>
-      <nav class="reading-modes" aria-label="阅读方式"><button id="home" class="nav-button active" aria-pressed="true">综合推荐</button><button id="latest" class="nav-button" aria-pressed="false">最新</button><button id="saved" class="nav-button" aria-pressed="false">收藏 <span id="saved-count">0</span></button></nav>
-    </section>
+    <div class="reading-top">
+      <nav class="reading-modes" aria-label="阅读方式">
+        <button id="home" class="nav-button active" aria-pressed="true">推荐</button>
+        <button id="latest" class="nav-button" aria-pressed="false">最新</button>
+        <button id="saved" class="nav-button" aria-pressed="false">我的书架 <span id="saved-count">0</span></button>
+      </nav>
+      <span id="updated" class="updated">正在读取归档</span>
+    </div>
     <div id="update-alert" class="update-alert" aria-live="polite" hidden></div>
     <section class="controls" aria-label="搜索与归档筛选">
-      <div class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><label class="sr-only" for="query">搜索标题、摘要、作者或来源</label><input id="query" type="search" placeholder="搜索论文、模型、机构或关键词…" autocomplete="off"><kbd>/</kbd></div>
       <div class="facet-row"><span class="facet-label" id="domain-label">领域</span><div id="domains" class="chips" role="group" aria-labelledby="domain-label"></div></div>
       <div class="facet-row"><span class="facet-label" id="kind-label">类型</span><div id="kinds" class="chips" role="group" aria-labelledby="kind-label"></div></div>
-      <div class="facet-row sourcebar"><span class="facet-label" id="sources-label">来源</span><div id="sources" class="chips source-chips" role="group" aria-labelledby="sources-label"></div></div>
-      <div id="journal-facet" hidden><div class="facet-row journalbar"><span class="facet-label" id="journals-label">期刊</span><div id="journals" class="chips source-chips journal-chips" role="group" aria-labelledby="journals-label"></div></div><div class="journal-review-row"><button id="journal-review" title="当前按所选条件统计，全部为归档中的待确认期刊文章" type="button" aria-pressed="false">相关性待确认</button><p id="journal-review-note" hidden>这里收录等待补充材料 AI 相关性信息的期刊文章。</p></div></div>
       <div class="filter-row">
         <div class="periods" id="periods" aria-label="时间范围"><button data-days="7">近 7 天</button><button data-days="30" class="active">近 30 天</button><button data-days="0">全部归档</button></div>
+      </div>
+      <details class="more-filters" id="more-filters">
+        <summary>期刊、来源与日期</summary>
+        <div class="advanced-options">
+      <div class="facet-row sourcebar"><span class="facet-label" id="sources-label">来源</span><div id="sources" class="chips source-chips" role="group" aria-labelledby="sources-label"></div></div>
+      <div id="journal-facet" hidden><div class="facet-row journalbar"><span class="facet-label" id="journals-label">期刊</span><div id="journals" class="chips source-chips journal-chips" role="group" aria-labelledby="journals-label"></div></div><div class="journal-review-row"><button id="journal-review" title="当前按所选条件统计，全部为归档中的待确认期刊文章" type="button" aria-pressed="false">相关性待确认</button><p id="journal-review-note" hidden>这里收录等待补充材料 AI 相关性信息的期刊文章。</p></div></div>
+      <div class="filter-row advanced-dates">
         <label class="date-label">收录日期 <input id="archive-date" type="date"></label>
         <label class="unread"><input id="unread" type="checkbox">只看未读</label>
         <label class="sort-label" for="sort">日期依据 <select id="sort"><option value="recent">发表日期优先</option><option value="indexed">收录日期</option></select></label>
       </div>
+        </div>
+      </details>
     </section>
-    <div class="results-header"><h2 id="results-title">综合推荐</h2><span id="result-count" role="status" aria-live="polite"></span><span id="sort-info" class="sort-info"></span><button id="clear" class="text-button">重置筛选</button></div>
+    <div class="results-header" id="results" tabindex="-1"><h2 id="results-title">综合推荐</h2><span id="result-count" role="status" aria-live="polite"></span><span id="sort-info" class="sort-info"></span><button id="clear" class="text-button">重置筛选</button></div>
     <div id="active-filters" class="active-filters" aria-label="生效的筛选条件"></div>
     <div id="entries"><div class="loading" role="status">正在加载研究归档…</div></div>
     <button id="load-more" class="load-more" hidden>继续阅读</button>
