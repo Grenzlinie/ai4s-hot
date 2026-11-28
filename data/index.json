@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T03:40:11.105516+00:00",
+  "generated_at": "2026-11-28T04:56:56.815388+00:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -26,17 +26,22 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [],
+      "authors": [
+        "Huai Guan",
+        "Ye Tian",
+        "Jia-Ji Chen",
+        "Hai-Jun Jin"
+      ],
       "journal_id": "acta-materialia",
       "journal_title": "Acta Materialia",
       "journal_issns": [
         "1359-6454"
       ],
       "publisher": "Elsevier",
-      "doi": null,
+      "doi": "10.1016/j.actamat.2026.122958",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": null,
+      "indexed_at": "2026-11-27T05:13:20+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -69,9 +74,10 @@
       ],
       "topic_method": "public_coarse_v1",
       "topic_coverage": 0.8333,
-      "topic_cache_token": "637ae30646dbddab80e99283ece15d221e437804799b43b40f2139ed72153bb5",
+      "topic_cache_token": "d194bcc2b880c5a88bf63bcd0327f2ef60d9b6f204178a55202386f5c26ca28c",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "topic_history": []
     },
     {
       "id": "f9c49dac6d70266fa3117072",
@@ -105,8 +111,8 @@
       "publisher": "AAAS",
       "doi": "10.1126/sciadv.aen9562",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-27T00:00:00+00:00",
+      "indexed_at": "2026-11-27T19:12:06+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -141,1591 +147,8 @@
       "topic_coverage": 0.4444,
       "topic_cache_token": "8414312d24cd68af676cf4133d04ba34a7ab8adb1d00b94541f9367501f40ad3",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "f95ec3a149920bf446df7837",
-      "url": "https://doi.org/10.1126/sciadv.aei3813",
-      "title": "Physics-embedded neural spectral wave model",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Guangyu Gary Yang, Haoyu Jiang, Wenfang Lu, Dong Wang"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aei3813",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.5,
-      "topic_cache_token": "45ad838254eccccfc3f739b0a850a8303e5715a5ff4772f795ebf10addfe6a9b",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "f1fd80965c64f55fdf45a77b",
-      "url": "https://doi.org/10.1126/sciadv.aef8931",
-      "title": "Nanoconfined interfacial polymerization engineers thin films with interconnected angstrom pores for ion/molecule separation",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Kai Zhang, Bingxin Gu, Fan Zheng, Zhaobin Sun, Shijie Xie, Mingjie Yin, Yan-Li Ji, Quan-Fu An, Congjie Gao"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aef8931",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:materials",
-        "web:chemistry"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.6667,
-      "topic_cache_token": "88468a3ad1af5a3b03ae4b98d93ebceb605b9b91fa575de5706b1bbcdbd4d936",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "e6167ac2133118e80ced12fc",
-      "url": "https://doi.org/10.1126/sciadv.aej3700",
-      "title": "Designing tunable, low-toxicity zwitterionic solvents to overcome DMSO limitations in in vivo applications",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Takeru Ishizaki, Yusuke Kubota, Ken Owaki, Ayako Hohsaka, Junko Nagao, Sonomi Imakawa, Hitoshi Ando, Takiko Daikoku, Noriko Gotoh, Mahadi Hasan, Eishu Hirata, Kojiro Ishibashi, Eikichi Kamimura, Anowara Khatun, Isao Kobayashi, Kenta Kumakura, Yosuke Niko, Kazuaki Ninomiya, Yuta Saito, Makoto Shirakawa, Yasuto Takeuchi, Daisuke Tanaka, Kenji F. Tanaka, Kyosei Tashiro, Natsumi Toyoda, Huazi Zhang, Kosuke Kuroda"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aej3700",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.5,
-      "topic_cache_token": "65efd951c7a6f22edb04cc1eb643e0a118877a1b0e36ed626cbcb3153c3cd60e",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "e00b4a338e8341052d996ed0",
-      "url": "https://doi.org/10.1126/sciadv.aei3606",
-      "title": "Drug candidate CT7-1 promotes antitumor immunity by targeting SETMAR to activate cGAS-STING-IFN signaling in breast cancer",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Jian Chen, Kaiyuan Ji, Dong Chen, Weiye Pan, Chengkuan Liu, Meng Liu, Junlin Qian, Junchang Huang, Yuwei Peng, Cheng Tao, Xian Lin"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aei3606",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:life_sciences"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.3846,
-      "topic_cache_token": "cf40aa7facc3df539a50cad04072977ff3c5372787e17fe6268cd1b81f811899",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "dfba959b44c9ffdf4a9f2476",
-      "url": "https://doi.org/10.1126/sciadv.aef5318",
-      "title": "Principles of locus-specific chromatin remodeling induced by therapeutic DNA integration",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Qian Qi, Yichao Li, Tiffany Yee, Lance Palmer, Yan Ju, Lei Han, Sheng Zhou, Yong Cheng"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aef5318",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:biology",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "公开标题或摘要出现此领域的明确术语，仅作领域宽分类；不推断具体体系或研究方法。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:biology"
-      ],
-      "topic_ids": [
-        "public:area:biology",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.625,
-      "topic_cache_token": "d470b1efda610276cb3d3049bfc78bbc84da83b164814f159d97b26da350daf4",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "df64f7fd85362a1dc51537af",
-      "url": "https://doi.org/10.1126/sciadv.aeh4232",
-      "title": "Functional buffering potential of generalist-rich microbiomes is associated with coral thermotolerance",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Chuanzhu Bai, Jian Zhang, Lei Jiang, Pan Zhang, Si Zhang, Hui Huang, Jie Li"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aeh4232",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.375,
-      "topic_cache_token": "5654a9507f0cea92e31b93a686a505d18bb768718fa9b831f9b3674a6bfad8f9",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "dc6de0edc210af27a67c8673",
-      "url": "https://doi.org/10.1126/sciadv.aej3404",
-      "title": "Quantitative decoupling of texture and material properties with a fingertip-inspired multidimensional haptic sensor",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Ye Qiu, Guangqiang Zhang, Jiajun Zhu, Zhimu Yi, Yiai He, Jie Zhou, Weilang Hu, Ziao Shen, Ye Tian, Yi Song, Aiping Liu, Hanqing Jiang, Huaping Wu"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aej3404",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
-          "facet": "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7",
-          "method": "local_lexical_v2",
-          "score": 0.54,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题直接命中定义关键词：material；未使用摘要，需复核。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
-      ],
-      "topic_ids": [
-        "zotero:8a7ebc3046ad1fa4b607a9d918e7d8c7"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:materials"
-      ],
-      "topic_method": "local_lexical_v2",
-      "topic_coverage": 0.6667,
-      "topic_cache_token": "e708981e6f811647d7dadbd646e084125116b41f71046b0c8f8a8c3f1edaeb2b",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "d987ddfadaf9d14f37c76a69",
-      "url": "https://doi.org/10.1126/sciadv.aef3864",
-      "title": "Partitioning biological and physical sources of N2 supersaturation in inland waters using natural 15N15N signatures",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Yankai Shang, Hao Yan, Fengtai Tong, Huiming Bao"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aef3864",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:life_sciences"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.5,
-      "topic_cache_token": "1590ad0b0ac37186b8473431f3993335ba025755c0153460cdb9535015427628",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "cd6f3ad50fe1e0d4a6bb8ea5",
-      "url": "https://doi.org/10.1126/sciadv.aee7475",
-      "title": "Melanocortin-responsive arcuate Kiss1 neurons drive BAT thermogenesis through glutamatergic input to the dorsomedial hypothalamus",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Rajae Talbi, Todd L. Stincic, Nicole Lynch, Encarnacion Torres, Kaitlin Ferrari, Choi Ji Hae, Elizabeth Medve, Karol Walec, Samuel T. Zdon, Sarah Ramírez, Sidney A. Pereira, Carrie E. Mahoney, Martha A. Bosch, Larry Zweifel, Oline K. Rønnekleiv, Rona S. Carroll, Alexander S. Banks, Natalia L. S. Machado, Martin J. Kelly, Víctor M. Navarro"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aee7475",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.3333,
-      "topic_cache_token": "a595098d9ae138cb47801c1a07e9105d8643b6d5570072d3996d73b245cbc9cf",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "c0a638e26c35ecf9650555fa",
-      "url": "https://doi.org/10.1126/sciadv.aei8376",
-      "title": "Small-molecule targeting of CMTM6 induces dual degradation of PD-L1 and SLC1A5 to enhance cancer immunotherapy",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Thanh-Nam Phan, Quang-Khanh Truong, Okhwa Kim, Jiyeon Choi, Jae-Hyeon Jeong, Jae-Hee Ahn, Nara Tae, Sehoon Moon, Hyungseok Seo, Dae-Hee Kim, Hyun-Jeong Ko, Jeong-Hyung Lee"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aei8376",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:chemistry"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.6364,
-      "topic_cache_token": "0995892c87847c90b6f532f4a7d9e96f65519b204c6edf5bcf24266bdd6847ef",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "becd65b7dd343e8f4af79380",
-      "url": "https://doi.org/10.1126/sciadv.aej4653",
-      "title": "Selective synthesis of 1T and 2H MoS2 via atomic spacing-tuned magnetic susceptibility",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Yongchao Rao, Zhen Xiang, Chunhua Sun, Kai Yao, Yang Yang, Bin Yuan, Wei Lu"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aej4653",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.7143,
-      "topic_cache_token": "1ced39e0405f3448f4e92e116cce455c20203ea53f4b098a02e7671165ac8b8a",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "bab04a832c1c2a9d5f2ffec9",
-      "url": "https://doi.org/10.1126/sciadv.aek4787",
-      "title": "From lethality to yield: The “Goldilocks” protein OsMED16 orchestrates grain size and its own dosage via an OsKNAT7-OsNAC31/24 circuit",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Fei Li, Nuo Gong, Peijie Han, Yile Sheng, Chun Ye, Zhengyang Liu, Yingchun Han, Hongzheng Sun, Chunbo Miao, Quanzhi Zhao, Junzhou Li, Yanxiu Du"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aek4787",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:biology",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "公开标题或摘要出现此领域的明确术语，仅作领域宽分类；不推断具体体系或研究方法。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:biology"
-      ],
-      "topic_ids": [
-        "public:area:biology",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:life_sciences"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.5833,
-      "topic_cache_token": "dc777cb18111f3bfa5db48c819a5c675a3cc74bd420cb3ab66139a295ea544ee",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "a8d345b96ef873b9fcfb8a0d",
-      "url": "https://doi.org/10.1126/sciadv.aeh6977",
-      "title": "Future warming reduces the buffering of preceding wet years on La Niña droughts in the US Southwest",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Yelin Jiang, Jason E. Smerdon, Richard Seager, Benjamin I. Cook, Mingfang Ting"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aeh6977",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.5556,
-      "topic_cache_token": "4fe8b1255136ea11018bfa676acf547f34b16d271d8cdf9bbda6574f442494ce",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "a47acec24e2ac86fdebe50da",
-      "url": "https://doi.org/10.1126/sciadv.aek0033",
-      "title": "Structural basis for Ca2+-dependent and RyR2-selective modulation by Ryanozole",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Yuya Otori, Takashi Murayama, Ayuna Tsutsumi, Ryosuke Ishida, Sho Takeuchi, Raymond Burton-Smith, Kazuyoshi Murata, Takashi Sakurai, Hiroyuki Kagechika, Nagomi Kurebayashi, Haruo Ogawa"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aek0033",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.4286,
-      "topic_cache_token": "7eada0c505b6731542586e9473e1f7a1029c4021dd9f33dd68cbe9f0e4bace8a",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "9c4df66ec29f12da860797bf",
-      "url": "https://doi.org/10.1126/sciadv.aej0478",
-      "title": "Meridional ocean temperature gradient drives climate stability in the Late Ordovician",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Joseph Naar, Yannick Donnadieu, Alexandre Pohl, Guillaume Le Hir, Jean-Baptiste Ladant, Daniel J. Lunt"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aej0478",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.4444,
-      "topic_cache_token": "fc86c0bec2f81436cedbfee14bd23b11d18151f8efeb9842399855ba23054d16",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "98660232728029f2755a3ad5",
-      "url": "https://doi.org/10.1126/sciadv.aec3205",
-      "title": "Cardioprotective effects of AMPK activation in H1N1 influenza virus infection",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Steve Leumi, Matthew McFadden, Naresh Kumar, Sameer Salam Matoo, Jack Roettger, Samuel Speaks, Benjamin Liu, Shreenath Mohan, Brendan Reznik, Jana M. Cable, Parker J. Denz, Mona El Refaey, Murugesan V. S. Rajaram, Adriana Forero, Jacob S. Yount"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aec3205",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.25,
-      "topic_cache_token": "2349af6bd9c3ab9a11fa4337cc938023de448a7dac152a52a87926ae53da7f04",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "9310889c1d0993a8bc992ca3",
-      "url": "https://doi.org/10.1126/sciadv.aek4295",
-      "title": "Structural and functional modulation of GluA1 AMPA receptor by type I TARP γ4 and type II TARP γ7",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Laura Y. Yen, Thomas P. Newton, Maria V. Yelshanskaya, Muhammed Aktolun, Maria G. Kurnikova, Alexander I. Sobolevsky"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aek4295",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.4,
-      "topic_cache_token": "619bdcf85c88a79c37166027c74f37d48e045ef61f1c2413d141feca148dd076",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "9163fe36155183ea11518db5",
-      "url": "https://doi.org/10.1126/sciadv.aeg4662",
-      "title": "Whole-animal functional integration shaped the evolution of mammalian stance and gait",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Peter J. Bishop, Richard W. Blob, Stephanie E. Pierce"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aeg4662",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.5,
-      "topic_cache_token": "7b969a38b87a84cbd62d6f85195a6283016b215e436baaed593e0d46feb93aa1",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "8dc74361690d7462be00d2c8",
-      "url": "https://doi.org/10.1126/sciadv.aei9139",
-      "title": "A self-oscillator expands the recordable radius of deep and local biosignals",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Chengmei Jiang, Yiming Ai, Qihang Zeng, Michael Raphael Panganiban, Xiaoyan Liu, Peng Tang, Kexin Zheng, Maria Wobith, Teh Jun Liang, Sarah Shuyun Tang, Yiyuan Yang, Jimmy Bok Yan So, Denys Nikolayev, Chwee Teck Lim, Yuxin Liu"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aei9139",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.4286,
-      "topic_cache_token": "5a1a287e17a54e68cac8cd2acd52b88dc87179f1f481d1507155fb54e2f685af",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "8c3d64bc5213b9766b26c395",
-      "url": "https://doi.org/10.1126/sciadv.aec9816",
-      "title": "Hyperactive alternative RNA splicing facilitates immune escape in small cell lung cancer",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Manli Wang, Xiangmeng Luo, Yucui Shang, Jiabo Zhang, Xuelan Chen, Liting You, Xiangyu Pan, Jiewei Liu, Jingyao Chen, Chengjian Zhao, Yu Liu, Chong Chen, Feifei Na"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aec9816",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:biology",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "公开标题或摘要出现此领域的明确术语，仅作领域宽分类；不推断具体体系或研究方法。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:biology"
-      ],
-      "topic_ids": [
-        "public:area:biology",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.6364,
-      "topic_cache_token": "61fc510d04a7712d1ab4b1f50b3adf17f26aee979de86e712b4870884ca9e169",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "867f615102718fb686f93f66",
-      "url": "https://doi.org/10.1126/sciadv.aee7280",
-      "title": "Laminin-based basement membrane network governs tissue morphogenesis and biomechanical stabilization of developing cardiac valves",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Newsha Mortazavi, Richard Gonda, Behrouz Mirabdi, Saskia Baum, Carlo Bevilacqua, Sanjay Sunil Kumar, Karina Mildner, Dagmar Zeuschner, Martin Stehling, Stefan Schulte-Merker, Alba Diz-Muñoz, Robert Prevedel, Sara A. Wickström, Felix Gunawan"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aee7280",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.3333,
-      "topic_cache_token": "fd82c6d36d689e92d401c1dcf72b2003333280953db969a6d33ee61b27e40d1f",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "848ade14e0882dc2ec9dbdef",
-      "url": "https://doi.org/10.1126/sciadv.aej3973",
-      "title": "Observation and control of spontaneous magnon emission from spin ensembles in 2D hexagonal boron nitride",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Ling-Jie Zhou, Jayakrishnan M. P. Nair, Senlei Li, Thomas Poirier, Yiran Zhao, Zelong Xiong, Sumedh Rathi, Jingcheng Zhou, Zhigang Jiang, Hailong Wang, James H. Edgar, Benedetta Flebus, Chunhui Rita Du"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aej3973",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:physics",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "公开标题或摘要出现此领域的明确术语，仅作领域宽分类；不推断具体体系或研究方法。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:physics"
-      ],
-      "topic_ids": [
-        "public:area:physics",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.6,
-      "topic_cache_token": "22395060c300c4169b8325ce65f479c32e81f945d4beaa7757fddf7c4235d864",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "topic_history": []
     },
     {
       "id": "84793fa8c25e079f18a7d54c",
@@ -1747,11 +170,21 @@
       ],
       "published_at": "2026-11-27T08:00:00+00:00",
       "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
+      "excerpt": "Vascular calcification is a life-threatening complication of chronic kidney disease (CKD), yet the metabolic changes that cause blood vessels to harden remain unclear. We found that the pathologically enhanced relocation of a lipid-producing enzyme, alkylglycerone phosphate synthase (AGPS), into cellular compartments called peroxisomes acts as a critical driver of this disease. This spatial shift, triggered by the protein PKCη (protein kinase C η), causes a surge in specific lipids that promote cell death and mineral buildup in the vessels. To disrupt this destructive process, we used generative artificial intelligence (AI) to design a custom peptide that blocks the interaction between AGPS and PKCη. When delivered systemically using lipid nanoparticles, this AI-designed therapeutic successfully prevented the enzyme’s excessive relocation, stopped toxic lipid accumulation, and profoundly reduced aortic calcification in CKD mice. Our findings uncover a crucial metabolic trigger for vascular calcification and highlight AI-guided nanotherapeutics as a promising strategy for treating vascular diseases.",
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Qing Li, Calin Zhang, Yuan Liu, Hui Li, Quanji Wang, Qian Jiang, Zihan Wang, Yanan Wang, Jin Li, Gang Xu, Fan He"
+        "Qing Li",
+        "Calin Zhang",
+        "Yuan Liu",
+        "Hui Li",
+        "Quanji Wang",
+        "Qian Jiang",
+        "Zihan Wang",
+        "Yanan Wang",
+        "Jin Li",
+        "Gang Xu",
+        "Fan He"
       ],
       "journal_id": "science-advances",
       "journal_title": "Science Advances",
@@ -1761,1268 +194,43 @@
       "publisher": "AAAS",
       "doi": "10.1126/sciadv.aeh3708",
       "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
+      "published_print_at": "2026-11-27T00:00:00+00:00",
+      "indexed_at": "2026-11-27T19:12:26+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
+        "reason": "relationship_requires_review",
         "version": "1"
       },
       "topic_labels": [
         {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
+          "id": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
           "confidence": "low",
           "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：artificial intelligence。"
         }
       ],
       "topic_leaf_ids": [
-        "public:area:general"
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
       ],
       "topic_ids": [
-        "public:area:general",
-        "public:content"
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
       ],
       "topic_status": "broad_only",
       "topic_scope": "research",
       "content_kind": "web:paper",
       "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.2,
-      "topic_cache_token": "4801fe675f053ebc2fa9fcf79e2bb6da88ef072d10c887c50f5c25dd6402bf97",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "7eb8383ad12970044a320526",
-      "url": "https://doi.org/10.1126/sciadv.aej6470",
-      "title": "SSN-guided enzyme mining for an intramolecular Stetter reaction: Access to chiral tertiary α-alkyl cyclopentanones",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Keke Zou, Jingran Yang, Tiantian Liu, Wei Zhang, Xuesi Chen, Huangong Li, Jingyu Zhang, Xueting Liu, Yonggui Robin Chi, Lixin Zhang, Nicholas J. Turner, Yongtao Xie"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aej6470",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:biology",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "公开标题或摘要出现此领域的明确术语，仅作领域宽分类；不推断具体体系或研究方法。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:biology"
-      ],
-      "topic_ids": [
-        "public:area:biology",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:chemistry"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.3636,
-      "topic_cache_token": "e1cfd6398adb58dd767b878713ed3fb33bce3257b11084b1cdd94df93cf084aa",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "7e3cbc54b36609e191814593",
-      "url": "https://doi.org/10.1126/sciadv.aej2582",
-      "title": "Embodied mechanical sensing through self-generated motion in climbing plants",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Amir Ohad, Amir Porat, Yasmine Meroz"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aej2582",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:embodied",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "公开标题或摘要出现此领域的明确术语，仅作领域宽分类；不推断具体体系或研究方法。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:embodied"
-      ],
-      "topic_ids": [
-        "public:area:embodied",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.75,
-      "topic_cache_token": "c3fb08138a9b61c0029889b942fd6c36e9b25a899f6ede131835a76f2b1ba9c8",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "6ea10e72b7c6d4232f69d7ec",
-      "url": "https://doi.org/10.1126/sciadv.aeg6278",
-      "title": "Community and metabolic cues gate arsenate uptake via a promiscuous glycerol-3-phosphate transporter",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Emilio Bueno, Diego Rey, Laura Alvarez, Erik Björn, Andre Mateus, Felipe Cava"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aeg6278",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.4444,
-      "topic_cache_token": "ddfccb73fce56df082b94f84a03835da846696b7a8ad94cfd9f50a4a0cf060a4",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "5f3cf57898aa05952eba9f9c",
-      "url": "https://doi.org/10.1126/sciadv.aeh0765",
-      "title": "Nanos remodels Drosophila germ granules into multiphase condensates for germ cell specification",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Kwan Yin Lee, Harathi Jonnagaddala, Marcus D. Kilwein, Akira Nakamura, Marian Kalocsay, Elizabeth R. Gavis"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aeh0765",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.2,
-      "topic_cache_token": "8326fb1cc53c51bed4bba65ec291c057cbcfd3b95e1c4d5704e7b99073d80620",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "561c65307bfa03f539d604b3",
-      "url": "https://doi.org/10.1126/sciadv.aei2118",
-      "title": "Ligand stabilization enables physiological GITR signaling and antitumor immunity",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Tesfahun Dessale Admasu, Keerthi Sadanala, Dnyaneshwar Kalyane, Hongqiang Wang, Seokyoung Yoon, Kim WooHyun, Madhusudhanarao Katiki, Jeremy Rudnick, Ramachandran Murali, John S. Yu"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aei2118",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.375,
-      "topic_cache_token": "720528383aa5902b45081f229f8c2adb0bd871990245de607bbfff08252a93b3",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "4fa116e8a1dd32b0eff958e4",
-      "url": "https://doi.org/10.1126/sciadv.aeh5474",
-      "title": "Chromatin association promotes UBR5-mediated degradation of Rb",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Shuyuan Zhang, Joshua Konschnik, Michael C. Lanz, Jan M. Skotheim"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aeh5474",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.4,
-      "topic_cache_token": "5c5f5dcbea215c1f263be5fd925c365a87c9fea182b7da356088ff9c0edbab95",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "49257812eda9dea45d2d5d2c",
-      "url": "https://doi.org/10.1126/sciadv.aej2249",
-      "title": "Structural anisotropy governs mechanical response of fibrous hydrogel to multiaxial spherically symmetric deformation",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Xiao He, Yuhang Huang, Durgesh Kavishvar, Sofia Morozova, Arun Ramachandran, Hossein Salahshoor, Sergey Panyukov, Michael Rubinstein, Eugenia Kumacheva"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aej2249",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:materials",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "公开标题或摘要出现此领域的明确术语，仅作领域宽分类；不推断具体体系或研究方法。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:materials"
-      ],
-      "topic_ids": [
-        "public:area:materials",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.6364,
-      "topic_cache_token": "73be40a352c4fe4929482cca8824940711de6e076defb8e131cc04e4c2657bb8",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "42ca72230de2b4fed9c99cf0",
-      "url": "https://doi.org/10.1126/sciadv.aej4551",
-      "title": "Heat flow in Mare Crisium: The first robotic measurement on the Moon",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Seiichi Nagihara, Suzzane E. Smrekar, Matthias Grott, Joerg Knollenberg, Matthew A. Siegler, Clive R. Neal, Kris Zacny, Peter Ngo, Luke Sanasarian, Roshan Misra"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aej4551",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:embodied",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "公开标题或摘要出现此领域的明确术语，仅作领域宽分类；不推断具体体系或研究方法。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:embodied"
-      ],
-      "topic_ids": [
-        "public:area:embodied",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.625,
-      "topic_cache_token": "18bc41e2fca3c27f8a19876a2b1483e57a32974d81ef72b60b93d849dc83b7ac",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "3a6e3601a2bf2f749f5e3de9",
-      "url": "https://doi.org/10.1126/sciadv.aej2503",
-      "title": "qRL7 orchestrates a kinase-glycosylation cascade to promote rice primary root growth",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Zhibo Huang, Yongqi He, Jia Zhao, Zixuan Zeng, Mengzhen Tian, Shufei Yin, Chengkai Shi, Xiaoli Yang, Yuqi Yan, Zihe Li, Zhoufei Wang"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aej2503",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.5556,
-      "topic_cache_token": "80453d54cc2431bf6a7154df5aebd86075e81c390d95580d08d5cad7da482a81",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "36165f760ba08f255474c7e3",
-      "url": "https://doi.org/10.1126/sciadv.aek1703",
-      "title": "Efficient and durable direct seawater electrolysis coupled with CO2 mineralization",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Hao Shi, Ruixin Zhou, Tanyuan Wang, Fanhao Zeng, Shuxia Liu, Yinghe Zhao, Chao Wang, Bo Shen, Yunhui Huang, Qing Li"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aek1703",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.625,
-      "topic_cache_token": "77b57c613ffc0d3c4e0ebfd167d3ce451eaf20e7b5efa7c53535433a149240bb",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "29058902fb42dfcf1b6e2b28",
-      "url": "https://doi.org/10.1126/sciadv.aeh6538",
-      "title": "Sinking cities: Latent flood risk in Africa’s coastal megacities",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Oluwaseyi A. Dasho, Manoochehr Shirzaei, Leonard O. Ohenhen, Sonam Futi Sherpa, Rafael Almar"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aeh6538",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.25,
-      "topic_cache_token": "410216565f31f14253b8c6767955ef0233757593bc34ea9be13d202c3740b007",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "23d4d940c854738752f9254d",
-      "url": "https://doi.org/10.1126/sciadv.aee7920",
-      "title": "SAP30BP links aberrant splicing and metabolic reprogramming to drive T cell leukemogenesis",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Ting Qiu, Cheng Lv, Dongmei Zhang, Xuying Pei, Meiling Sun, Wangshi Li, Xingxing Du, Wanning Zhang, Xinyu Li, Jingyu Chen, Yue Wu, Binyu Yao, Linqing Tang, Yao Chen, Yu Wang, Zheqi Zhao, Xingzhi Lv, Ruolin Xiu, Qizhao Li, Fukai Liu, Yue Li, Jin Wang, Yuting Dai, Yanhong Zhao, Shengjin Fan, Gang Greg Wang, Shuqian Xu, Xiaojun Huang, Shuijie Li, Dapeng Hao, Huitao Fan"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aee7920",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.3333,
-      "topic_cache_token": "8f3b1976e24fe06aa12eeddea718f55754de07b1ddf19b2ba8137adcac4ee248",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "1e01c982744c85b65ee7303f",
-      "url": "https://doi.org/10.1126/sciadv.aej8962",
-      "title": "Mosquito-inspired gentle vibration enhances oral absorption of macromolecular drugs at the mucoadhesive interface",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Chong Zhang, Guangyao Zhao, Yidan Lyu, Runyu Bai, Ningjie Du, Jialu Zhang, Huihui Hu, Hao Song, Junjie Zeng, Yunlong Fan, Tianran Wang, Meng Wang, Qiuju Han, Hien T. T. Duong, Di Wu, Xinge Yu, Kewang Nan"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aej8962",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:chemistry",
         "web:life_sciences"
       ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.5,
-      "topic_cache_token": "7b00ca379ed92eb12ea5ef692e379b17eb01b52ece11d24614db975e670aa418",
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.4732,
+      "topic_cache_token": "b5117b7e395200b88a35f24aad7690811c96015a264727cf3500c9be9d47d5c7",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "1601235f02c253152496a4a2",
-      "url": "https://doi.org/10.1126/sciadv.aej9472",
-      "title": "Dual-q chirality from chirality-polarity coupling in polar nematic fluids",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Luyao Sun, Yu Zou, Yang Ding, Jidan Yang, Xiang Huang, Mingjun Huang, Yanqing Lu, Bingxiang Li, Satoshi Aya"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aej9472",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.4286,
-      "topic_cache_token": "8e1c8160c6ff2f4fbf842d48179cc823ee74c0c879343d0774a76fb3c0143827",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "0dcd5227a9d6b085f2d17653",
-      "url": "https://doi.org/10.1126/sciadv.aeg1405",
-      "title": "PRR12 variants cause intellectual disability by disrupting neuronal differentiation and maturation",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Xia Qu, Chun-Hui Duan, Xiao-Li Liu, Ting-Wei Mi, Xin-Li Ou Yang, Xiao-Li Chen, Hua Xie, Shi-Lin Gao, Ling Liu, Gui-Feng Xu, Tian-Yun Wang, Pei-Pei Liu, Lin Wang, Chang-Mei Liu"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aeg1405",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:general_ai"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.4444,
-      "topic_cache_token": "bcb6ae22b06be298ee9ca1135ebea69e3a5c2479514f07baf9cdc3b7aa051b39",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "0ab9387a9821b2af6625577a",
-      "url": "https://doi.org/10.1126/sciadv.aej1916",
-      "title": "Chemical speciation disparity underlies apparent preferential bioaccumulation of anthropogenic radioiodine in marine ecosystems",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Yuanzhi Qi, Haruka Kusuno, Hiroyuki Matsuzaki, Miwako Toya, Raman Novikau, Yosuke Miyairi, Marina Kawamoto, Naohiko Ohkouchi, Xiaolin Hou"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aej1916",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:general",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:general"
-      ],
-      "topic_ids": [
-        "public:area:general",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:chemistry"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.4545,
-      "topic_cache_token": "6e455796497ab7561cae68330925e6c16b87580a16c8effe2093e44671f928cd",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
-    },
-    {
-      "id": "08d718958130d44501224788",
-      "url": "https://doi.org/10.1126/sciadv.aeh1555",
-      "title": "Whole-plant visualization of endogenous RNA with an RNA-sensing fluorescence reporter toward single-molecule imaging",
-      "source_ids": [
-        "journal-science-advances"
-      ],
-      "source_names": [
-        "Science Advances"
-      ],
-      "group": "science",
-      "groups": [
-        "science"
-      ],
-      "type": "paper",
-      "tags": [
-        "materials"
-      ],
-      "published_at": "2026-11-27T08:00:00+00:00",
-      "first_seen": "2026-11-28T03:40:11.105516+00:00",
-      "excerpt": "",
-      "summary": "",
-      "summary_kind": "source_excerpt",
-      "authors": [
-        "Jiuyuan Bai, Jiayu Zhang, Hongpei Ren, Shan Pan, Yiran Tao, Miaomiao Lei, Mengyue Dong, Sha Liu, Jia Yi, Fang Chen, Yucheng Shen, Yazhou Chen, Jiang Li, Chunhai Fan, Yun Zhao"
-      ],
-      "journal_id": "science-advances",
-      "journal_title": "Science Advances",
-      "journal_issns": [
-        "2375-2548"
-      ],
-      "publisher": "AAAS",
-      "doi": "10.1126/sciadv.aeh1555",
-      "published_online_at": null,
-      "published_print_at": null,
-      "indexed_at": null,
-      "journal_relevance": {
-        "status": "pending",
-        "method": "rule-v1",
-        "reason": "abstract_missing_or_insufficient",
-        "version": "1"
-      },
-      "topic_labels": [
-        {
-          "id": "public:area:biology",
-          "facet": "public:content",
-          "method": "public_coarse_v1",
-          "score": null,
-          "confidence": "low",
-          "status": "broad_only",
-          "public_reason": "公开标题或摘要出现此领域的明确术语，仅作领域宽分类；不推断具体体系或研究方法。"
-        }
-      ],
-      "topic_leaf_ids": [
-        "public:area:biology"
-      ],
-      "topic_ids": [
-        "public:area:biology",
-        "public:content"
-      ],
-      "topic_status": "broad_only",
-      "topic_scope": "research",
-      "content_kind": "web:paper",
-      "domain_facets": [
-        "web:chemistry"
-      ],
-      "topic_method": "public_coarse_v1",
-      "topic_coverage": 0.4,
-      "topic_cache_token": "7c35cd61e4faf80396cc5ae0adc70e9e0a0e22fb19175f008ad8f6536a8448e6",
-      "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "topic_history": []
     },
     {
       "id": "f9ac11eeb270067446bcf65f",
@@ -4772,7 +1980,8 @@
       "topic_coverage": 1.0,
       "topic_cache_token": "f5dffe96140dd2ec3dd99e6f1a89808bd25624ba4110c09af8aeb34f06489faf",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "topic_history": []
     },
     {
       "id": "fc442a39901a1461372c8373",
@@ -4845,7 +2054,8 @@
       "topic_coverage": 0.5,
       "topic_cache_token": "ce72cad5690cfee22918ea1b46b1ea525793a35994907f48f846206e88bca4f7",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "topic_history": []
     },
     {
       "id": "a6788c61ec56aa55b766610c",
@@ -4918,7 +2128,8 @@
       "topic_coverage": 0.5385,
       "topic_cache_token": "b659bb3038de5ca257178a38b227a6e3a2d19165615f70a76c3b457feaa71aed",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "topic_history": []
     },
     {
       "id": "82dd1860cdb46f28f40dc6cb",
@@ -5018,7 +2229,8 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Eduardo Sampaio and Iain D. Couzin"
+        "Eduardo Sampaio",
+        "Iain D. Couzin"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -5462,7 +2674,11 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Gideon Erkenswick, Mrinalini Watsa, Elena Kazamia, Oliver A. Ryder, and Liliana Cortés Ortiz"
+        "Gideon Erkenswick",
+        "Mrinalini Watsa",
+        "Elena Kazamia",
+        "Oliver A. Ryder",
+        "Liliana Cortés Ortiz"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -5610,7 +2826,8 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Seow Qi Ng and Wai Leong Tam"
+        "Seow Qi Ng",
+        "Wai Leong Tam"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -5684,7 +2901,25 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Lucas Ferrante, Lizandro Lui, André Luiz Marenco dos Santos, Natália Sátyro, Letícia Sarturi Pereira, Eric Williams, Jeremias Leão, Alexandre Celestino Leite Almeida, Leticia Souza Reis, Ruth Camargo Vassão, Cristiana Losekann, Unaí Tupinambás, Kei Otsuki, Philip Martin Fearnside, Izeni Farias, Tomas Hrbek, Luis Schiesari, Célio Fernando Baptista Haddad, and Leonor Patrícia Cerdeira Morellato"
+        "Lucas Ferrante",
+        "Lizandro Lui",
+        "André Luiz Marenco dos Santos",
+        "Natália Sátyro",
+        "Letícia Sarturi Pereira",
+        "Eric Williams",
+        "Jeremias Leão",
+        "Alexandre Celestino Leite Almeida",
+        "Leticia Souza Reis",
+        "Ruth Camargo Vassão",
+        "Cristiana Losekann",
+        "Unaí Tupinambás",
+        "Kei Otsuki",
+        "Philip Martin Fearnside",
+        "Izeni Farias",
+        "Tomas Hrbek",
+        "Luis Schiesari",
+        "Célio Fernando Baptista Haddad",
+        "Leonor Patrícia Cerdeira Morellato"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -5906,7 +3141,21 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Michael Funk, and Jesse Smith, Dale Dorsett, Marc S. Lavine, Angela Hessler, Keith T. Smith, Christiana N. Fogg, Jake S. Yeston, Sacha Vignieri, Michael A Funk, Yevgeniya Nusinovich, Sarah H. Ross, Priscilla N. Kelly, Stella M. Hurtley, Jelena Stajic, and John Foley"
+        "Jesse Smith",
+        "Dale Dorsett",
+        "Marc S. Lavine",
+        "Angela Hessler",
+        "Keith T. Smith",
+        "Christiana N. Fogg",
+        "Jake S. Yeston",
+        "Sacha Vignieri",
+        "Michael A Funk",
+        "Yevgeniya Nusinovich",
+        "Sarah H. Ross",
+        "Priscilla N. Kelly",
+        "Stella M. Hurtley",
+        "Jelena Stajic",
+        "John Foley"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -6202,7 +3451,13 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Corinne Simonti, and Jesse Smith, Joana Osório, Cheri Sirois, Priscilla N. Kelly, Yury Suleymanov, Di Jiang, Marc S. Lavine, and Keith T. Smith"
+        "Joana Osório",
+        "Cheri Sirois",
+        "Priscilla N. Kelly",
+        "Yury Suleymanov",
+        "Di Jiang",
+        "Marc S. Lavine",
+        "Keith T. Smith"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -8199,7 +5454,7 @@
       "doi": "10.1038/s42256-026-01334-5",
       "published_online_at": "2026-11-26T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-26T10:16:16+00:00",
+      "indexed_at": "2026-11-27T13:17:11+00:00",
       "journal_relevance": {
         "status": "relevant",
         "method": "rule-v1",
@@ -8523,17 +5778,25 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [],
+      "authors": [
+        "Daniel Pepin Fowan",
+        "Alexandre Boulle",
+        "Olivier Castelnau",
+        "Richard Mayet",
+        "Arthur Souesme",
+        "Catherine Dejoie",
+        "René Guinebretière"
+      ],
       "journal_id": "acta-materialia",
       "journal_title": "Acta Materialia",
       "journal_issns": [
         "1359-6454"
       ],
       "publisher": "Elsevier",
-      "doi": null,
+      "doi": "10.1016/j.actamat.2026.122991",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": null,
+      "indexed_at": "2026-11-27T01:10:18+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -8566,9 +5829,10 @@
       ],
       "topic_method": "public_coarse_v1",
       "topic_coverage": 0.6667,
-      "topic_cache_token": "d681f680d154bed3f1d1ff5b18b63d5b0cf24aafa5b350cd20ebc056fee14990",
+      "topic_cache_token": "038a3b3d94c5aed774893ea6bd270b4651f59bc71979dab67a2b4cc4f1d0a680",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "topic_history": []
     },
     {
       "id": "7ed746480bf86cce7797abf8",
@@ -8593,17 +5857,26 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [],
+      "authors": [
+        "Bai-Qian Wang",
+        "Nian-Ke Chen",
+        "Yao-Jie Wang",
+        "Jia Sun",
+        "Yu-Ting Huang",
+        "Ming Xu",
+        "Shengbai Zhang",
+        "Xian-Bin Li"
+      ],
       "journal_id": "acta-materialia",
       "journal_title": "Acta Materialia",
       "journal_issns": [
         "1359-6454"
       ],
       "publisher": "Elsevier",
-      "doi": null,
+      "doi": "10.1016/j.actamat.2026.122982",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": null,
+      "indexed_at": "2026-11-26T18:11:35+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -8636,9 +5909,10 @@
       ],
       "topic_method": "public_coarse_v1",
       "topic_coverage": 0.6667,
-      "topic_cache_token": "16d5cad6ab44db1c5b03bc185510e70fbbc6a4fed261be8f108680bd0981a10c",
+      "topic_cache_token": "7104e923ec2a57d9ec693561aab6e22b76c9f081979a8e614fc8496281a27d6e",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "topic_history": []
     },
     {
       "id": "6d2dd0e1d1f4cc6407917895",
@@ -8663,17 +5937,26 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [],
+      "authors": [
+        "Haodong Wu",
+        "Zexian Wang",
+        "Juan Yang",
+        "Lvping Fu",
+        "Shengli Jin",
+        "Yawei Li",
+        "Xinmei Hou",
+        "Yajie Dai"
+      ],
       "journal_id": "acta-materialia",
       "journal_title": "Acta Materialia",
       "journal_issns": [
         "1359-6454"
       ],
       "publisher": "Elsevier",
-      "doi": null,
+      "doi": "10.1016/j.actamat.2026.122972",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": null,
+      "indexed_at": "2026-11-26T06:12:03+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -8717,7 +6000,7 @@
       ],
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.6667,
-      "topic_cache_token": "4dc52e0864f319cce27379b827e40819fe21c2c6f2e03e50a992a21266319135",
+      "topic_cache_token": "8255262b7e1ee674594111a2009a87fc6c190173efe8680e0e617ea7fb936f98",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -8744,17 +6027,22 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [],
+      "authors": [
+        "A. Zois",
+        "H. Wang",
+        "K.T. Marquardt",
+        "C.M. Gourlay"
+      ],
       "journal_id": "acta-materialia",
       "journal_title": "Acta Materialia",
       "journal_issns": [
         "1359-6454"
       ],
       "publisher": "Elsevier",
-      "doi": null,
+      "doi": "10.1016/j.actamat.2026.122989",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": null,
+      "indexed_at": "2026-11-26T09:16:53+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -8786,7 +6074,7 @@
       ],
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.9091,
-      "topic_cache_token": "7f933c24d7ec28cde15ab1b738221256bcd4e7fc204127d2da5090f78d866694",
+      "topic_cache_token": "9e573fd5a79eaae2f8314511a594ebffcc563c4596561693ff50e599c5fad7cc",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -8813,17 +6101,23 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [],
+      "authors": [
+        "Sajjad Hossain",
+        "Xiaochuan Tang",
+        "Bernd Gludovatz",
+        "Gregory B. Thompson",
+        "Christopher R. Weinberger"
+      ],
       "journal_id": "acta-materialia",
       "journal_title": "Acta Materialia",
       "journal_issns": [
         "1359-6454"
       ],
       "publisher": "Elsevier",
-      "doi": null,
+      "doi": "10.1016/j.actamat.2026.122986",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": null,
+      "indexed_at": "2026-11-27T17:13:02+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -8856,9 +6150,10 @@
       ],
       "topic_method": "public_coarse_v1",
       "topic_coverage": 0.9091,
-      "topic_cache_token": "0bd8e6e27bcc2cc83c45e0d40bafe4e388f0dded44bf12d6495b7bb1ebb0d212",
+      "topic_cache_token": "5d99125bc3ace1321fc614b650182b9be6b4456a1b09beaa45cec23e9574e140",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "topic_history": []
     },
     {
       "id": "104be6f23f04f8de21f1afcc",
@@ -8883,17 +6178,20 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [],
+      "authors": [
+        "Ilya Slobodkin",
+        "Shmuel Osovski"
+      ],
       "journal_id": "acta-materialia",
       "journal_title": "Acta Materialia",
       "journal_issns": [
         "1359-6454"
       ],
       "publisher": "Elsevier",
-      "doi": null,
+      "doi": "10.1016/j.actamat.2026.122971",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": null,
+      "indexed_at": "2026-11-27T01:10:20+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -8926,9 +6224,10 @@
       ],
       "topic_method": "public_coarse_v1",
       "topic_coverage": 0.5714,
-      "topic_cache_token": "be211e2c7e194b6b8486606edde8abc938cba309a340e39a39a1a2c5eb5c3c77",
+      "topic_cache_token": "cb79ba237786b28291d31db28c4ffc88092b3250f76cc339b714779300844470",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "topic_history": []
     },
     {
       "id": "07e7dfab786ea402d526d8d9",
@@ -8953,17 +6252,35 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [],
+      "authors": [
+        "Ding Ma",
+        "Jingtao Zhang",
+        "Jiangxue Ma",
+        "Yu Gao",
+        "Shuai Chen",
+        "Jie Xiong",
+        "Mengwei He",
+        "Tao Zhang",
+        "Xiaoyan Li",
+        "Tienchong Chang",
+        "Hongjie Xu",
+        "Wenjun Kuang",
+        "Peter K. Liaw",
+        "David J. Srolovitz",
+        "Yong-Wei Zhang",
+        "Tong-Yi Zhang",
+        "Huajian Gao"
+      ],
       "journal_id": "acta-materialia",
       "journal_title": "Acta Materialia",
       "journal_issns": [
         "1359-6454"
       ],
       "publisher": "Elsevier",
-      "doi": null,
+      "doi": "10.1016/j.actamat.2026.122992",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": null,
+      "indexed_at": "2026-11-27T01:10:18+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -8996,7 +6313,7 @@
       ],
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.7692,
-      "topic_cache_token": "3b91962412e44cc5d3995679661a19eacb3483c60e858483fa150fdd0ee20b01",
+      "topic_cache_token": "feeb22ed8137043eb333220b5068bf3cd9d3cdd294f541fa954abeb4525baf8f",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -9164,8 +6481,8 @@
       "summary": "本文提出并实现了一个联合超胞内禀环境优化（COSINE）与准幺正展开的理论和计算框架，用于在存在原子和纳米尺度关联无序的固体中计算磁振子谱函数。该框架可用于结合自旋信息机器学习势，预测缺陷或无序引起的磁振子谱模糊及自旋刚度等宏观性质；其准确性与可推广性受限于所依赖的训练势和近似处理，原文未给出经独立验证的性能数字。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Alex Moorhouse",
-        "Joseph Barker",
+        "A. Moorhouse",
+        "J. Barker",
         "Michele Simoncelli"
       ],
       "topic_labels": [
@@ -10231,7 +7548,7 @@
       "summary_kind": "ai_summary",
       "authors": [
         "Ryuji Yamaguchi",
-        "Miyuki Matsuo"
+        "M. Matsuo"
       ],
       "topic_labels": [
         {
@@ -10395,7 +7712,27 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Wooseok Kim, Bosung Kim, Dae Han Kim, Pei Liu, Doyoung Kim, Hee Kyu Lee, Sang Uk Park, Janghoon Joo, Byeong Woon Lee, Se Gi Lee, Bogeun Kim, Jaejun Lim, Changsoon Choi, Jong-Woong Kim, Geumbee Lee, Jae-Young Yoo, Sejin Kim, Joohoon Kang, Raudel Avila, Jong Uk Kim, Sang Min Won"
+        "Wooseok Kim",
+        "Bosung Kim",
+        "Dae Han Kim",
+        "Pei Liu",
+        "Doyoung Kim",
+        "Hee Kyu Lee",
+        "Sang Uk Park",
+        "Janghoon Joo",
+        "Byeong Woon Lee",
+        "Se Gi Lee",
+        "Bogeun Kim",
+        "Jaejun Lim",
+        "Changsoon Choi",
+        "Jong-Woong Kim",
+        "Geumbee Lee",
+        "Jae-Young Yoo",
+        "Sejin Kim",
+        "Joohoon Kang",
+        "Raudel Avila",
+        "Jong Uk Kim",
+        "Sang Min Won"
       ],
       "journal_id": "science-advances",
       "journal_title": "Science Advances",
@@ -15615,17 +12952,28 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [],
+      "authors": [
+        "S. Neumeier",
+        "M. Kolb",
+        "F. Houllé",
+        "M. Lenz",
+        "C. Schmidt",
+        "K. Durst",
+        "A. Bezold",
+        "E. Bitzek",
+        "E. Spiecker",
+        "M. Göken"
+      ],
       "journal_id": "acta-materialia",
       "journal_title": "Acta Materialia",
       "journal_issns": [
         "1359-6454"
       ],
       "publisher": "Elsevier",
-      "doi": null,
+      "doi": "10.1016/j.actamat.2026.122987",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": null,
+      "indexed_at": "2026-11-25T08:15:59+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -15658,9 +13006,10 @@
       ],
       "topic_method": "public_coarse_v1",
       "topic_coverage": 0.75,
-      "topic_cache_token": "5c7a0ed0fd7b7ccc2e442a5169dde7af2fbf163e4e744ec21283d401ceeb13c6",
+      "topic_cache_token": "a48cb9d148e72b2118f5c03a75f4c2e0c427211804564a8ae49eb8f322a6fe6f",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "topic_history": []
     },
     {
       "id": "0a2256644462d840ef84a843",
@@ -15685,17 +13034,24 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [],
+      "authors": [
+        "Nuojin Wang",
+        "Yuanxiang Zhang",
+        "Feng Fang",
+        "Yang Wang",
+        "Guo Yuan",
+        "Guodong Wang"
+      ],
       "journal_id": "acta-materialia",
       "journal_title": "Acta Materialia",
       "journal_issns": [
         "1359-6454"
       ],
       "publisher": "Elsevier",
-      "doi": null,
+      "doi": "10.1016/j.actamat.2026.122990",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": null,
+      "indexed_at": "2026-11-26T08:15:08+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -15728,9 +13084,10 @@
       ],
       "topic_method": "public_coarse_v1",
       "topic_coverage": 0.875,
-      "topic_cache_token": "41a399ed0c7e51139bf2018ea48b78e5c34243ba061421cac384d6313788669c",
+      "topic_cache_token": "6dc3862e07b2c10bf080c838eab5227020abafdf652de96b9213c627561a84ad",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "topic_history": []
     },
     {
       "id": "09c66c92e0bbaffc546b707b",
@@ -15755,17 +13112,21 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [],
+      "authors": [
+        "Jae Heung Lee",
+        "Heeyeon Kim",
+        "Hyoung Seop Kim"
+      ],
       "journal_id": "acta-materialia",
       "journal_title": "Acta Materialia",
       "journal_issns": [
         "1359-6454"
       ],
       "publisher": "Elsevier",
-      "doi": null,
+      "doi": "10.1016/j.actamat.2026.122985",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": null,
+      "indexed_at": "2026-11-25T08:15:57+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -15809,7 +13170,7 @@
       ],
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.8182,
-      "topic_cache_token": "2f2ce2d8c394291eefcf13d7ce8e2d5657e0ae5cb5553bef1a17ca1245777c09",
+      "topic_cache_token": "e0282bc6fe3c41f7b1b672627923f70e3b878877f539396c692b6b6702288f31",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -15836,17 +13197,27 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [],
+      "authors": [
+        "Bingqiang Wei",
+        "Ling Tang",
+        "Jiaqi Yu",
+        "Haobo Wang",
+        "Wenyu Huang",
+        "Paul Canfield",
+        "Matt Kramer",
+        "Cai-Zhuang Wang",
+        "Lin Zhou"
+      ],
       "journal_id": "acta-materialia",
       "journal_title": "Acta Materialia",
       "journal_issns": [
         "1359-6454"
       ],
       "publisher": "Elsevier",
-      "doi": null,
+      "doi": "10.1016/j.actamat.2026.122988",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": null,
+      "indexed_at": "2026-11-26T01:11:18+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -15879,7 +13250,7 @@
       ],
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.8182,
-      "topic_cache_token": "5d936263b24cd757f86ec5b3dd765e26e11e5dc05cf740bd989e2f9b023f6b85",
+      "topic_cache_token": "b8f61fdcf3b91bb39954d5b520fe32d48d92e290669b950df1d9a8bf2c0cf51c",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -17457,10 +14828,7 @@
       "summary": "本文综述了如何按脑特异性生物学、物理与转化设计需求来系统性选择与工程化ECM模拟水凝胶支架，并讨论了利用AI通过代理建模、数字孪生和闭环优化来导航高维材料设计空间。该框架可用于指导脑类器官培养中更具可重复性和可扩展性的支架设计，但其结论基于综述性论述，摘要未给出经实验验证的具体性能数字，且原文对Matrigel等基质的组成不确定性和批次差异等限制的讨论仍构成当前转化障碍。",
       "summary_kind": "ai_summary",
       "authors": [
-        "Eun Saem Kang",
-        "Rian Kim",
-        "Sehun Lim",
-        "Mikyung Shin"
+        "Eun Saem Kang, Rian Kim, Sehun Lim, Mikyung Shin"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -19330,17 +16698,28 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [],
+      "authors": [
+        "Zhichao Zhu",
+        "Shang Zhao",
+        "Jingyu Cheng",
+        "Guoning Ji",
+        "Zhenxiong Yuan",
+        "Ying Chang",
+        "Cunyu Wang",
+        "Xu Sun",
+        "Kai Wang",
+        "Yiping Lu"
+      ],
       "journal_id": "acta-materialia",
       "journal_title": "Acta Materialia",
       "journal_issns": [
         "1359-6454"
       ],
       "publisher": "Elsevier",
-      "doi": null,
+      "doi": "10.1016/j.actamat.2026.122952",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": null,
+      "indexed_at": "2026-11-24T19:26:12+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -19373,7 +16752,7 @@
       ],
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.7143,
-      "topic_cache_token": "8a21dd25dfc7890b3d0f7de17a5966028ea40e25798b8b3c112c2dc6d3900acd",
+      "topic_cache_token": "e8bfaacbe68c135f1c7fcd831beb25d58df7fd0f3d21bb13268d1401cffa4c36",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -19400,17 +16779,27 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [],
+      "authors": [
+        "Rui Su",
+        "Yun Xia",
+        "Haixiang Guo",
+        "Runbin Cao",
+        "Yaqiang Wang",
+        "Kai Wu",
+        "Jinyu Zhang",
+        "Gang Liu",
+        "Jun Sun"
+      ],
       "journal_id": "acta-materialia",
       "journal_title": "Acta Materialia",
       "journal_issns": [
         "1359-6454"
       ],
       "publisher": "Elsevier",
-      "doi": null,
+      "doi": "10.1016/j.actamat.2026.122984",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": null,
+      "indexed_at": "2026-11-25T01:11:46+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -19443,9 +16832,10 @@
       ],
       "topic_method": "public_coarse_v1",
       "topic_coverage": 0.75,
-      "topic_cache_token": "2e1f3af90b3fb1636651de3291ad78e5207c6db714093c6b40378889a3c7cc6f",
+      "topic_cache_token": "eeaad89077b4a7bddd2762a55ad57241a5d529f578f4cd96d85cdeb784a74441",
       "topic_version": "faceted-local-v2.5.1",
-      "topic_backend": "lexical"
+      "topic_backend": "lexical",
+      "topic_history": []
     },
     {
       "id": "07b96dd42c103d2cb8c86ff4",
@@ -19470,17 +16860,28 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [],
+      "authors": [
+        "Weizhang Wang",
+        "Yafei Zhang",
+        "Kezhi Cen",
+        "Guangsheng Huang",
+        "Xianhua Chen",
+        "Xiang Chen",
+        "Kaihong Zheng",
+        "Jianbo Li",
+        "Bin Jiang",
+        "Fusheng Pan"
+      ],
       "journal_id": "acta-materialia",
       "journal_title": "Acta Materialia",
       "journal_issns": [
         "1359-6454"
       ],
       "publisher": "Elsevier",
-      "doi": null,
+      "doi": "10.1016/j.actamat.2026.122983",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": null,
+      "indexed_at": "2026-11-27T17:13:22+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -19513,7 +16914,7 @@
       ],
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.7333,
-      "topic_cache_token": "3faa80f957230e5b4cbb69ba9c4eacd0d60b3839eefc232a9541f4dc93c4ca30",
+      "topic_cache_token": "88e24c9802598cf624c0f8c66c6f8cd66f6117b6203f5805b7167af5c50bfcb2",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -20304,13 +17705,13 @@
       "authors": [
         "Xiang Meng",
         "Shuhei Shinzato",
-        "Zhiqiang Zhao",
-        "Linfeng Yu",
+        "Zhi-Qiang Zhao",
+        "Lin-Feng Yu",
         "Jian Guo",
-        "Liangli Chu",
-        "Kepeng Ouyang",
-        "Shigenobu Ogata",
-        "Zhuhua Zhang"
+        "Liang-Li Chu",
+        "K. Ouyang",
+        "S. Ogata",
+        "Zhu-Hua Zhang"
       ],
       "topic_labels": [
         {
@@ -20652,7 +18053,7 @@
       "summary_kind": "upstream_tldr",
       "authors": [
         "Harry Sevi",
-        "Joonatan E. M. Laulainen"
+        "J. Laulainen"
       ],
       "topic_labels": [
         {
@@ -21518,7 +18919,7 @@
       "doi": "10.1016/j.actamat.2026.122979",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-23T08:14:43+00:00",
+      "indexed_at": "2026-11-27T22:12:44+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -23378,11 +20779,7 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Huiting Niu",
-        "Haoyu Wang",
-        "Lei Huang",
-        "Ho Seok Park",
-        "Bao Yu Xia"
+        "Huiting Niu, Haoyu Wang, Lei Huang, Ho Seok Park, Bao Yu Xia"
       ],
       "journal_id": "advanced-materials",
       "journal_title": "Advanced Materials",
@@ -24309,17 +21706,20 @@
       "excerpt": "",
       "summary": "",
       "summary_kind": "source_excerpt",
-      "authors": [],
+      "authors": [
+        "Amrutdyuti Swamy",
+        "Pabitra Choudhury"
+      ],
       "journal_id": "acta-materialia",
       "journal_title": "Acta Materialia",
       "journal_issns": [
         "1359-6454"
       ],
       "publisher": "Elsevier",
-      "doi": null,
+      "doi": "10.1016/j.actamat.2026.122981",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": null,
+      "indexed_at": "2026-11-24T00:29:29+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -24351,7 +21751,7 @@
       ],
       "topic_method": "local_lexical_v2",
       "topic_coverage": 0.7692,
-      "topic_cache_token": "48f67662e5c7e826b1dd7e67fde4e5b1d3b3d01294f6ee4fec10639d908745ee",
+      "topic_cache_token": "66bae475837e616d516e835b76fd176268f146b9f3f6e18dfa0ebbc67d264f75",
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical"
     },
@@ -24387,9 +21787,9 @@
       "summary_kind": "upstream_tldr",
       "authors": [
         "Chaiyawat Kaewmeechai",
-        "Louie Slocombe",
-        "Alexis G. Manche",
-        "David O. Scanlon"
+        "L. Slocombe",
+        "A. Manche",
+        "D. Scanlon"
       ],
       "topic_labels": [
         {
@@ -33034,7 +30434,7 @@
       "doi": "10.1016/j.actamat.2026.122973",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-20T17:18:13+00:00",
+      "indexed_at": "2026-11-27T17:13:02+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -43440,7 +40840,7 @@
       "doi": "10.1016/j.actamat.2026.122965",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T19:15:25+00:00",
+      "indexed_at": "2026-11-27T22:12:48+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -45400,7 +42800,7 @@
       "doi": "10.1016/j.actamat.2026.122964",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-18T16:26:04+00:00",
+      "indexed_at": "2026-11-28T02:10:01+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -57173,7 +54573,7 @@
       "doi": "10.1016/j.actamat.2026.122956",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:15:48+00:00",
+      "indexed_at": "2026-11-28T04:09:57+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -61248,7 +58648,7 @@
       "doi": "10.1016/j.actamat.2026.122951",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:16:03+00:00",
+      "indexed_at": "2026-11-27T12:09:58+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -61412,7 +58812,7 @@
       "doi": "10.1016/j.actamat.2026.122938",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:14:57+00:00",
+      "indexed_at": "2026-11-27T12:12:53+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -61592,7 +58992,7 @@
       "doi": "10.1016/j.actamat.2026.122955",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:14:17+00:00",
+      "indexed_at": "2026-11-28T01:11:55+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -62031,7 +59431,7 @@
       "doi": "10.1016/j.actamat.2026.122946",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:16:28+00:00",
+      "indexed_at": "2026-11-27T12:27:16+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -67901,7 +65301,7 @@
       "doi": "10.1016/j.actamat.2026.122947",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:17:08+00:00",
+      "indexed_at": "2026-11-27T20:14:46+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -68067,7 +65467,7 @@
       "doi": "10.1016/j.actamat.2026.122948",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:16:50+00:00",
+      "indexed_at": "2026-11-27T11:13:07+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -68222,7 +65622,7 @@
       "doi": "10.1016/j.actamat.2026.122950",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:14:34+00:00",
+      "indexed_at": "2026-11-27T15:23:28+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -68971,7 +66371,7 @@
       "doi": "10.1016/j.actamat.2026.122949",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:14:31+00:00",
+      "indexed_at": "2026-11-28T01:11:47+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -73669,7 +71069,7 @@
       "doi": "10.1016/j.actamat.2026.122940",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-12T00:29:10+00:00",
+      "indexed_at": "2026-11-27T11:13:13+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -78346,7 +75746,7 @@
       "doi": "10.1016/j.actamat.2026.122911",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:15:47+00:00",
+      "indexed_at": "2026-11-27T16:11:49+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -79201,7 +76601,7 @@
       "doi": "10.1016/j.actamat.2026.122935",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:16:14+00:00",
+      "indexed_at": "2026-11-27T12:09:59+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -79276,7 +76676,7 @@
       "doi": "10.1016/j.actamat.2026.122943",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-27T09:14:36+00:00",
+      "indexed_at": "2026-11-27T18:12:35+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -85182,7 +82582,7 @@
       "doi": "10.1016/j.actamat.2026.122902",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:15:10+00:00",
+      "indexed_at": "2026-11-27T10:14:35+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -86053,7 +83453,7 @@
       "doi": "10.1016/j.actamat.2026.122919",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:17:11+00:00",
+      "indexed_at": "2026-11-27T21:12:06+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -86128,7 +83528,7 @@
       "doi": "10.1016/j.actamat.2026.122920",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:13:45+00:00",
+      "indexed_at": "2026-11-27T12:10:14+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -90605,7 +88005,7 @@
       "doi": "10.1016/j.actamat.2026.122933",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-27T09:14:36+00:00",
+      "indexed_at": "2026-11-28T02:13:27+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -107128,7 +104528,7 @@
       "doi": "10.1016/j.actamat.2026.122904",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-27T01:14:39+00:00",
+      "indexed_at": "2026-11-28T04:09:56+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -110586,7 +107986,7 @@
       "doi": "10.1016/j.actamat.2026.122923",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-27T06:17:21+00:00",
+      "indexed_at": "2026-11-27T18:17:26+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -118676,7 +116076,7 @@
       "doi": "10.1016/j.actamat.2026.122890",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T17:14:45+00:00",
+      "indexed_at": "2026-11-27T20:11:30+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -121828,6 +119228,81 @@
         "sha256": "9b9d06279403b7bd3530b6506b85ad8198264ab5aac49cb1ce73c2c9fe4beb44",
         "chars": 12000
       }
+    },
+    {
+      "id": "245535cd27682b8da0a5c419",
+      "url": "https://doi.org/10.1038/s42256-026-01323-8",
+      "title": "AI needs meaningful versioning",
+      "source_ids": [
+        "journal-nature-machine-intelligence"
+      ],
+      "source_names": [
+        "Nature Machine Intelligence"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-11-02T00:00:00+00:00",
+      "first_seen": "2026-11-28T04:56:56.815388+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Vasilios Mavroudis",
+        "Dan Ristea",
+        "Lauritz Morlock",
+        "Carlos Mougan"
+      ],
+      "journal_id": "nature-machine-intelligence",
+      "journal_title": "Nature Machine Intelligence",
+      "journal_issns": [
+        "2522-5839"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s42256-026-01323-8",
+      "published_online_at": "2026-11-02T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-27T13:18:43+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "public:area:general",
+          "facet": "public:content",
+          "method": "public_coarse_v1",
+          "score": null,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "public:area:general"
+      ],
+      "topic_ids": [
+        "public:area:general",
+        "public:content"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "public_coarse_v1",
+      "topic_coverage": 0.6667,
+      "topic_cache_token": "f91dce6f2c010e22369f491e77cf432d7a690e4014237e4025f6d754eb3d8d15",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
     },
     {
       "id": "b8beba02ddf24dd982afe656",
@@ -125531,7 +123006,7 @@
       "doi": "10.1016/j.actamat.2026.122883",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-27T05:09:48+00:00",
+      "indexed_at": "2026-11-27T20:11:25+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -128128,7 +125603,7 @@
       "doi": "10.1016/j.actamat.2026.122905",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-27T02:14:14+00:00",
+      "indexed_at": "2026-11-28T00:12:25+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -128291,7 +125766,7 @@
       "doi": "10.1016/j.actamat.2026.122885",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-27T09:14:31+00:00",
+      "indexed_at": "2026-11-27T20:12:38+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -140438,7 +137913,7 @@
       "doi": "10.1016/j.actamat.2026.122900",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T22:10:38+00:00",
+      "indexed_at": "2026-11-27T22:10:12+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -150229,7 +147704,7 @@
       "doi": "10.1016/j.actamat.2026.122888",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T14:13:58+00:00",
+      "indexed_at": "2026-11-28T00:10:17+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -164719,7 +162194,7 @@
       "doi": "10.1038/s42256-026-01326-5",
       "published_online_at": "2026-10-23T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-24T03:55:13+00:00",
+      "indexed_at": "2026-11-27T15:21:29+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -164756,6 +162231,79 @@
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical",
       "topic_history": []
+    },
+    {
+      "id": "1b378204cce7326bbd1e1b43",
+      "url": "https://doi.org/10.1038/s42256-026-01331-8",
+      "title": "Guidelines for evaluating structure-based methods for protein-ligand binding prediction",
+      "source_ids": [
+        "journal-nature-machine-intelligence"
+      ],
+      "source_names": [
+        "Nature Machine Intelligence"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "first_seen": "2026-11-28T04:56:56.815388+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Viet-Khoa Tran-Nguyen",
+        "Pedro J. Ballester"
+      ],
+      "journal_id": "nature-machine-intelligence",
+      "journal_title": "Nature Machine Intelligence",
+      "journal_issns": [
+        "2522-5839"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s42256-026-01331-8",
+      "published_online_at": "2026-10-23T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-27T13:16:47+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "public:area:biology",
+          "facet": "public:content",
+          "method": "public_coarse_v1",
+          "score": null,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "公开标题或摘要出现此领域的明确术语，仅作领域宽分类；不推断具体体系或研究方法。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "public:area:biology"
+      ],
+      "topic_ids": [
+        "public:area:biology",
+        "public:content"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:life_sciences"
+      ],
+      "topic_method": "public_coarse_v1",
+      "topic_coverage": 0.8333,
+      "topic_cache_token": "5fbe325c9612edcd1aebfddbfb8261d686fd008f0c0a8939c89a8745323bbff7",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
     },
     {
       "id": "432fbf08fcbe1cb31f903630",
@@ -184535,7 +182083,7 @@
       "doi": "10.1038/s42256-026-01318-5",
       "published_online_at": "2026-10-20T00:00:00+00:00",
       "published_print_at": null,
-      "indexed_at": "2026-11-18T19:25:19+00:00",
+      "indexed_at": "2026-11-27T13:16:47+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -184572,6 +182120,158 @@
       "topic_version": "faceted-local-v2.5.1",
       "topic_backend": "lexical",
       "topic_history": []
+    },
+    {
+      "id": "477f37b23b0bce4f86433260",
+      "url": "https://doi.org/10.1038/s42256-026-01319-4",
+      "title": "Physics-informed machine learning: a hybrid lens for fluid dynamics",
+      "source_ids": [
+        "journal-nature-machine-intelligence"
+      ],
+      "source_names": [
+        "Nature Machine Intelligence"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-20T00:00:00+00:00",
+      "first_seen": "2026-11-28T04:56:56.815388+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Kai Fukami",
+        "Romit Maulik"
+      ],
+      "journal_id": "nature-machine-intelligence",
+      "journal_title": "Nature Machine Intelligence",
+      "journal_issns": [
+        "2522-5839"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s42256-026-01319-4",
+      "published_online_at": "2026-10-20T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-27T13:18:46+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.54,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；仅依据公开标题直接命中定义关键词：learning；未使用摘要，需复核。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 1.0,
+      "topic_cache_token": "7796d6c216f3dd4ea4d00a6ad5fc50d9ec82a25c3a4ea8351fcfb3281395e0c3",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
+    },
+    {
+      "id": "25d4e6a13ea8a58a8daa6581",
+      "url": "https://doi.org/10.1038/s42256-026-01316-7",
+      "title": "Lagrangian-Eulerian learning of flow field and trajectories with TrajectoryFlowNet",
+      "source_ids": [
+        "journal-nature-machine-intelligence"
+      ],
+      "source_names": [
+        "Nature Machine Intelligence"
+      ],
+      "group": "science",
+      "groups": [
+        "science"
+      ],
+      "type": "paper",
+      "tags": [
+        "materials"
+      ],
+      "published_at": "2026-10-20T00:00:00+00:00",
+      "first_seen": "2026-11-28T04:56:56.815388+00:00",
+      "excerpt": "",
+      "summary": "",
+      "summary_kind": "source_excerpt",
+      "authors": [
+        "Jingdi Wan",
+        "Hongping Wang",
+        "Bo Liu",
+        "Xiaolei Yang",
+        "Xiaodong Hu",
+        "Shengze Cai",
+        "Guowei He",
+        "Yang Liu"
+      ],
+      "journal_id": "nature-machine-intelligence",
+      "journal_title": "Nature Machine Intelligence",
+      "journal_issns": [
+        "2522-5839"
+      ],
+      "publisher": "Springer Nature",
+      "doi": "10.1038/s42256-026-01316-7",
+      "published_online_at": "2026-10-20T00:00:00+00:00",
+      "published_print_at": null,
+      "indexed_at": "2026-11-27T14:20:33+00:00",
+      "journal_relevance": {
+        "status": "pending",
+        "method": "rule-v1",
+        "reason": "abstract_missing_or_insufficient",
+        "version": "1"
+      },
+      "topic_labels": [
+        {
+          "id": "public:area:general",
+          "facet": "public:content",
+          "method": "public_coarse_v1",
+          "score": null,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "现有公开标题与摘要不足以确定具体研究领域，归入综合研究；未推断细分类。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "public:area:general"
+      ],
+      "topic_ids": [
+        "public:area:general",
+        "public:content"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "public_coarse_v1",
+      "topic_coverage": 0.6667,
+      "topic_cache_token": "75accf105c7ceffa63fae15d9dec21f125e00d7f4318255f6e79f9890044aeef",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical"
     },
     {
       "id": "4307681734380e042782f6ce",
@@ -193128,7 +190828,7 @@
       "doi": "10.1016/j.actamat.2026.122840",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-11T06:23:34+00:00",
+      "indexed_at": "2026-11-28T03:10:58+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -193288,7 +190988,7 @@
       "doi": "10.1016/j.actamat.2026.122848",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-11T06:23:51+00:00",
+      "indexed_at": "2026-11-27T16:09:34+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -193516,7 +191216,7 @@
       "doi": "10.1016/j.actamat.2026.122844",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-11T06:23:31+00:00",
+      "indexed_at": "2026-11-28T01:11:55+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -193592,7 +191292,7 @@
       "doi": "10.1016/j.actamat.2026.122859",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-11T06:23:04+00:00",
+      "indexed_at": "2026-11-27T22:11:26+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -195079,7 +192779,7 @@
       "doi": "10.1016/j.actamat.2026.122836",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-11T06:23:37+00:00",
+      "indexed_at": "2026-11-28T01:11:47+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -205382,7 +203082,39 @@
       "summary": "",
       "summary_kind": "source_excerpt",
       "authors": [
-        "Jasper Butcher, Rohith Krishna, Raktim Mitra, Seth M. Woodbury, Donghyo Kim, Rafael I. Brent, Yanjing Li, Nathaniel Corley, Andrew Favor, Anqi Chen, Paul T. Kim, Jonathan Funk, Gabriela Bastidas Reinoso, Kejia Wu, Aiko Muraishi, Helen E. Eisenach, Saman Salike, Simon Mathis, Tuscan Rock Thompson, Antonia Ruder, Enisha Sehgal, Andrew Kubaney, Jie Chen, Yuliya Politanska, Brian Coventry, Odin Zhang, Florence J. Hardy, Bo Qiang, Kieran Didi, Maxwell Kazman, Lars L. Schaaf, Frank DiMaio, David Baker"
+        "Jasper Butcher",
+        "Rohith Krishna",
+        "Raktim Mitra",
+        "Seth M. Woodbury",
+        "Donghyo Kim",
+        "Rafael I. Brent",
+        "Yanjing Li",
+        "Nathaniel Corley",
+        "Andrew Favor",
+        "Anqi Chen",
+        "Paul T. Kim",
+        "Jonathan Funk",
+        "Gabriela Bastidas Reinoso",
+        "Kejia Wu",
+        "Aiko Muraishi",
+        "Helen E. Eisenach",
+        "Saman Salike",
+        "Simon Mathis",
+        "Tuscan Rock Thompson",
+        "Antonia Ruder",
+        "Enisha Sehgal",
+        "Andrew Kubaney",
+        "Jie Chen",
+        "Yuliya Politanska",
+        "Brian Coventry",
+        "Odin Zhang",
+        "Florence J. Hardy",
+        "Bo Qiang",
+        "Kieran Didi",
+        "Maxwell Kazman",
+        "Lars L. Schaaf",
+        "Frank DiMaio",
+        "David Baker"
       ],
       "journal_id": "science",
       "journal_title": "Science",
@@ -208338,7 +206070,7 @@
       "doi": "10.1016/j.actamat.2026.122837",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-19T16:42:52+00:00",
+      "indexed_at": "2026-11-27T18:12:49+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -210959,7 +208691,7 @@
       "doi": "10.1016/j.actamat.2026.122847",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-11T06:23:10+00:00",
+      "indexed_at": "2026-11-27T22:14:22+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -213584,7 +211316,7 @@
       "doi": "10.1016/j.actamat.2026.122768",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-10-19T16:42:08+00:00",
+      "indexed_at": "2026-11-27T17:13:02+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -213828,7 +211560,7 @@
       "doi": "10.1016/j.actamat.2026.122825",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-27T06:17:22+00:00",
+      "indexed_at": "2026-11-27T17:13:27+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -215351,7 +213083,7 @@
       "doi": "10.1016/j.actamat.2026.122762",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-25T23:59:31+00:00",
+      "indexed_at": "2026-11-27T20:15:07+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -215430,7 +213162,7 @@
       "doi": "10.1016/j.actamat.2026.122828",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-26T10:59:23+00:00",
+      "indexed_at": "2026-11-27T16:13:12+00:00",
       "journal_relevance": {
         "status": "relevant",
         "method": "rule-v1",
@@ -226875,7 +224607,7 @@
       "doi": "10.1016/j.actamat.2026.122842",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-11T06:23:06+00:00",
+      "indexed_at": "2026-11-27T17:10:47+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -226952,7 +224684,7 @@
       "doi": "10.1016/j.actamat.2026.122843",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-11T06:23:12+00:00",
+      "indexed_at": "2026-11-27T15:17:20+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -288659,7 +286391,7 @@
       "doi": "10.1016/j.actamat.2026.122813",
       "published_online_at": null,
       "published_print_at": null,
-      "indexed_at": "2026-11-27T06:17:25+00:00",
+      "indexed_at": "2026-11-27T16:12:56+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -295836,7 +293568,7 @@
       "doi": "10.1126/sciadv.aeg8394",
       "published_online_at": null,
       "published_print_at": "2026-09-18T00:00:00+00:00",
-      "indexed_at": "2026-10-23T20:26:32+00:00",
+      "indexed_at": "2026-11-27T21:39:02+00:00",
       "journal_relevance": {
         "status": "pending",
         "method": "rule-v1",
@@ -370778,6 +368510,73 @@
       "topic_backend": "lexical"
     },
     {
+      "id": "f6a99783cee2bb28fefd8615",
+      "url": "https://arxiv.org/abs/2511.11051",
+      "title": "NP-LoRA: Null Space Projection for Subject-Style LoRA Fusion",
+      "source_ids": [
+        "alphaxiv"
+      ],
+      "source_names": [
+        "alphaXiv Hot"
+      ],
+      "group": "papers",
+      "groups": [
+        "papers"
+      ],
+      "type": "paper",
+      "tags": [
+        "tools"
+      ],
+      "published_at": "2025-11-14T08:06:01+00:00",
+      "first_seen": "2026-11-28T04:56:56.815388+00:00",
+      "excerpt": "Low-Rank Adaptation (LoRA) fusion enables the composition of subject and style representations for controllable generation without retraining. However, existing approaches primarily operate through weight-level merging, without explicitly modeling how independently trained LoRAs interact in the shared parameter space. We adopt a geometric perspective on LoRA fusion, interpreting content and style LoRAs as occupying overlapping, non-orthogonal low-rank subspaces, where such overlap can lead to conflicting parameter updates that affect generation quality. This observation motivates us to reformulate LoRA fusion not merely as parameter combination, but as a problem of controlling how updates from overlapping subspaces are combined. Based on this insight, we propose Null Space Projection LoRA (NP-LoRA), a training-free framework that employs projection as a fusion operator to explicitly modulate cross-LoRA interactions. Specifically, NP-LoRA uses principal directions of the style LoRA to define a projection subspace and projects the content LoRA onto the complementary subspace (i.e., the null space of the style LoRA), suppressing interference along dominant style directions while preserving complementary information. To avoid the overly aggressive suppression of hard projection, we further formulate soft projection as a regularized optimization problem that balances content preservation against style-subspace suppression. This objective admits a closed-form solution, yielding a projection operator controlled by a single parameter that continuously interpolates between linear merging and hard projection. Extensive experiments across multiple pretrained LoRA pairs show that NP-LoRA achieves more balanced content-style composition compared to strong baselines, without requiring retraining. Code is available at https://github.com/blackzebra7/NP-LoRA.",
+      "summary": "本文提出NP-LoRA，一种无需训练的LoRA融合框架，通过将内容LoRA投影到风格LoRA的主导方向所定义的补空间（即零空间）并引入可由单参数连续调节的软投影闭式解，来显式调制独立训练的内容与风格LoRA在共享参数子空间中的交互。据摘要，该方法面向对象与风格LoRA的事后组合，声称在多个预训练LoRA对上相比强基线可获得更均衡的内容-风格组合且无需重训练；但所用对比、评测范围与具体效果仅见摘要及有限摘录，未声称已阅读或核验完整全文。",
+      "summary_kind": "ai_summary",
+      "alpha_rank": 5,
+      "authors": [
+        "Chuheng Chen",
+        "Xiaofei Zhou",
+        "Geyuan Zhang",
+        "Yong Huang",
+        "Gang Xiong"
+      ],
+      "topic_labels": [
+        {
+          "id": "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+          "facet": "zotero:66b65554745b3fedd18e5d0b817c6bb5",
+          "method": "local_lexical_v2",
+          "score": 0.66,
+          "confidence": "low",
+          "status": "broad_only",
+          "public_reason": "仅定义匹配，暂无参考样本；公开标题或摘要包含定义关键词：training、optimization。"
+        }
+      ],
+      "topic_leaf_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87"
+      ],
+      "topic_ids": [
+        "zotero:24e1ffde3198d1dcc2b87f5b528e2a87",
+        "zotero:66b65554745b3fedd18e5d0b817c6bb5"
+      ],
+      "topic_status": "broad_only",
+      "topic_scope": "research",
+      "content_kind": "web:paper",
+      "domain_facets": [
+        "web:general_ai"
+      ],
+      "topic_method": "local_lexical_v2",
+      "topic_coverage": 0.7581,
+      "topic_cache_token": "c6fb0d9a97133ca5aa05b52740f8e7f0a05c9b2311aeb343614ce6342ac44ce3",
+      "topic_version": "faceted-local-v2.5.1",
+      "topic_backend": "lexical",
+      "summary_basis": {
+        "kind": "public_html",
+        "url": "https://arxiv.org/html/2511.11051",
+        "sha256": "073622d659c9a6f383fbf5cefcfeb50dcf884f4e0628ac5057202e45797f9bb3",
+        "chars": 12000
+      }
+    },
+    {
       "id": "4110fd7021820ccef266618c",
       "url": "https://arxiv.org/abs/2510.13397",
       "title": "Assessing the robustness of heterogeneous treatment effects in survival analysis under informative censoring",
@@ -371819,12 +369618,12 @@
     "identity_key_id": "67e56da94050471e13ed5cd3e815bb5b",
     "version": "7b59d2f834f8c7e4f6289646fcb89f5ac5fb7ea234d008cf9fb4068946ea6d44",
     "status": "ok",
-    "last_success": "2026-11-28T03:40:11.105516+00:00",
+    "last_success": "2026-11-28T04:56:56.815388+00:00",
     "method": "Local private evidence; public definitions; independent facets",
     "definition_version": "catalog-v2.1",
     "classification": {
       "status": "ok",
-      "classified": 69,
+      "classified": 22,
       "unclassified": 0,
       "algorithm": "faceted-local-v2.5.1",
       "calibration_status": "pending_human_gold",
@@ -371945,8 +369744,8 @@
       "id": "alphaxiv",
       "name": "alphaXiv Hot",
       "url": "https://api.alphaxiv.org/mcp/v1",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 12
     },
@@ -371954,7 +369753,7 @@
       "id": "anthropic-engineering",
       "name": "Claude Code / Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
       "last_success": "2026-10-20T02:03:53.178022+00:00",
       "status": "error",
       "count": 0,
@@ -371965,8 +369764,8 @@
       "id": "anthropic-news",
       "name": "Anthropic",
       "url": "https://www.anthropic.com/news",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 4
     },
@@ -371974,8 +369773,8 @@
       "id": "arxiv-ai4s",
       "name": "arXiv / AI4S",
       "url": "https://arxiv.org/",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 12
     },
@@ -371983,8 +369782,8 @@
       "id": "cuspai",
       "name": "CuspAI",
       "url": "https://cusp.ai/blog/rss.xml",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 2
     },
@@ -371992,8 +369791,8 @@
       "id": "deep-principle",
       "name": "深度原理 Deep Principle",
       "url": "https://blog.deepprinciple.com/rss/",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 1
     },
@@ -372001,8 +369800,8 @@
       "id": "deepmind",
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 12
     },
@@ -372010,8 +369809,8 @@
       "id": "deepseek-models",
       "name": "DeepSeek 模型发布",
       "url": "https://huggingface.co/deepseek-ai",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 0
     },
@@ -372019,8 +369818,8 @@
       "id": "entalpic",
       "name": "Entalpic",
       "url": "https://entalpic.ai/feed/",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 1
     },
@@ -372028,8 +369827,8 @@
       "id": "hf-daily",
       "name": "Hugging Face Daily Papers",
       "url": "https://huggingface.co/papers",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 12
     },
@@ -372037,8 +369836,8 @@
       "id": "isomorphic",
       "name": "Isomorphic Labs",
       "url": "https://www.isomorphiclabs.com/news",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 2
     },
@@ -372049,20 +369848,18 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-27T10:05:16.076342+00:00",
+      "status": "ok",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "count": 244,
       "counters": {
         "relevant": 4,
         "pending": 240,
         "excluded": 3,
-        "fetched": 93,
+        "fetched": 272,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "journal-advanced-energy-materials",
@@ -372071,20 +369868,18 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-27T09:11:39.615547+00:00",
+      "status": "ok",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "count": 105,
       "counters": {
         "relevant": 13,
         "pending": 92,
         "excluded": 324,
-        "fetched": 209,
+        "fetched": 273,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "journal-advanced-functional-materials",
@@ -372094,14 +369889,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "count": 215,
       "counters": {
         "relevant": 35,
         "pending": 180,
         "excluded": 1636,
-        "fetched": 938,
+        "fetched": 881,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -372114,14 +369909,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "count": 193,
       "counters": {
         "relevant": 19,
         "pending": 174,
         "excluded": 926,
-        "fetched": 779,
+        "fetched": 745,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -372134,7 +369929,7 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
       "last_success": "2026-11-27T10:05:16.076342+00:00",
       "count": 115,
       "counters": {
@@ -372156,14 +369951,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "count": 69,
       "counters": {
         "relevant": 1,
         "pending": 68,
         "excluded": 900,
-        "fetched": 274,
+        "fetched": 234,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -372176,13 +369971,13 @@
       "group": "science",
       "type": "paper",
       "status": "partial",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
       "last_success": "2026-11-09T02:57:46.342559+00:00",
       "count": 1133,
       "counters": {
         "relevant": 13,
         "pending": 1120,
-        "excluded": 1207,
+        "excluded": 1208,
         "fetched": 8,
         "abstracts_recovered": 0
       },
@@ -372197,20 +369992,18 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-27T10:05:16.076342+00:00",
+      "status": "ok",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "count": 17,
       "counters": {
         "relevant": 3,
         "pending": 14,
         "excluded": 8,
-        "fetched": 8,
+        "fetched": 9,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "journal-nature-machine-intelligence",
@@ -372219,20 +370012,18 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-27T10:05:16.076342+00:00",
-      "count": 3,
+      "status": "ok",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
+      "count": 7,
       "counters": {
         "relevant": 1,
-        "pending": 2,
-        "excluded": 13,
-        "fetched": 8,
+        "pending": 6,
+        "excluded": 14,
+        "fetched": 26,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "journal-nature-materials",
@@ -372242,14 +370033,14 @@
       "group": "science",
       "type": "paper",
       "status": "ok",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "count": 27,
       "counters": {
         "relevant": 1,
         "pending": 26,
         "excluded": 48,
-        "fetched": 32,
+        "fetched": 29,
         "abstracts_recovered": 0
       },
       "errors": []
@@ -372261,20 +370052,18 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-27T10:05:16.076342+00:00",
+      "status": "ok",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "count": 170,
       "counters": {
         "relevant": 2,
         "pending": 168,
         "excluded": 261,
-        "fetched": 36,
+        "fetched": 110,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "journal-science-advances",
@@ -372283,27 +370072,25 @@
       "kind": "journal",
       "group": "science",
       "type": "paper",
-      "status": "partial",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-27T09:11:39.615547+00:00",
-      "count": 71,
+      "status": "ok",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
+      "count": 32,
       "counters": {
         "relevant": 3,
-        "pending": 68,
-        "excluded": 858,
-        "fetched": 86,
+        "pending": 29,
+        "excluded": 899,
+        "fetched": 205,
         "abstracts_recovered": 0
       },
-      "errors": [
-        "crossref_request_or_parse_failed"
-      ]
+      "errors": []
     },
     {
       "id": "kairos-materials",
       "name": "开物纪 Kairos Materials",
       "url": "https://www.kairosmaterials.com/news/",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 3
     },
@@ -372311,8 +370098,8 @@
       "id": "kimi-models",
       "name": "Kimi 模型发布",
       "url": "https://huggingface.co/moonshotai",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 1
     },
@@ -372320,8 +370107,8 @@
       "id": "matlantis",
       "name": "Matlantis",
       "url": "https://matlantis.com/ja/resources/blog/feed/",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 5
     },
@@ -372329,8 +370116,8 @@
       "id": "openai",
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 12
     },
@@ -372338,8 +370125,8 @@
       "id": "periodic-labs",
       "name": "Periodic Labs",
       "url": "https://periodic.com/news",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 2
     },
@@ -372347,8 +370134,8 @@
       "id": "qwen-models",
       "name": "Qwen 模型发布",
       "url": "https://huggingface.co/Qwen",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 0
     },
@@ -372356,8 +370143,8 @@
       "id": "radical-ai",
       "name": "Radical AI",
       "url": "https://www.radical-ai.com/news",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 5
     },
@@ -372365,8 +370152,8 @@
       "id": "recursion",
       "name": "Recursion",
       "url": "https://www.recursion.com/blogs",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 0
     },
@@ -372374,8 +370161,8 @@
       "id": "semantic-scholar",
       "name": "Semantic Scholar",
       "url": "https://www.semanticscholar.org/",
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
-      "last_success": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
+      "last_success": "2026-11-28T04:56:56.815388+00:00",
       "status": "ok",
       "count": 12
     },
@@ -372384,7 +370171,7 @@
       "name": "Zotero 为你推荐",
       "status": "ok",
       "count": 0,
-      "last_attempt": "2026-11-28T03:40:11.105516+00:00",
+      "last_attempt": "2026-11-28T04:56:56.815388+00:00",
       "last_success": "2026-11-28T03:39:10.078905+00:00",
       "run_id": "46103829452",
       "url": "https://github.com/Grenzlinie/ai4s-hot/actions/workflows/main.yml"
@@ -372392,13 +370179,13 @@
   ],
   "summaries": {
     "status": "ok",
-    "generated": 8,
+    "generated": 1,
     "failed": 0,
     "model": "deepseek/deepseek-v4.1-flash",
     "enrichment": {
       "status": "partial",
-      "attempted": 8,
-      "public_html": 7,
+      "attempted": 2,
+      "public_html": 1,
       "bohr_graph": 0,
       "fallback": 1,
       "bohr_calls": 0
